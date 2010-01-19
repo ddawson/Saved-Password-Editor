@@ -1,0 +1,3 @@
+content	savedpasswordeditor	content/
+locale	savedpasswordeditor	en-US	locale/en-US/
+overlay chrome://passwordmgr/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgroverlay.xul

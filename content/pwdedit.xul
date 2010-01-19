@@ -1,0 +1,80 @@
+<?xml version="1.0"?>
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
+<!DOCTYPE window SYSTEM
+"chrome://savedpasswordeditor/locale/pwdedit.dtd">
+
+<dialog id="pwdedit"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        buttons="accept,cancel"
+        ondialogaccept="setNewSignon();"
+        ondialogcancel="window.close();"
+        persist="width height">
+  <dialogheader title="&editpassword.label;"/>
+  <groupbox>
+    <caption label="&signontype.label;"/>
+    <radiogroup id="signon_type">
+      <radio label="&type_form.label;" selected="true"/>
+      <radio label="&type_httpauth.label;"/>
+    </radiogroup>
+  </groupbox>
+  <script type="text/javascript"
+          src="chrome://savedpasswordeditor/content/pwdedit.js"/>
+  <grid>
+    <columns>
+      <column flex="0"/>
+      <column flex="1"/>
+    </columns>
+    <rows>
+      <row>
+        <label control="hostname_text" value="&hostname.label;"/>
+        <textbox id="hostname_text" tooltiptext="&hostname.tooltip;"/>
+      </row>
+      <row id="formSubmitURL_row">
+        <label control="formSubmitURL_text" value="&formSubmitURL.label;"/>
+        <textbox id="formSubmitURL_text" tooltiptext="&formSubmitURL.tooltip;"/>
+      </row>
+      <row id="httpRealm_row" collapsed="true">
+        <label control="httpRealm_text" value="&httpRealm.label;"/>
+        <textbox id="httpRealm_text" tooltiptext="&httpRealm.tooltip;"/>
+      </row>
+      <row>
+        <label control="username_text" value="&username.label;"/>
+        <textbox id="username_text" tooltiptext="&username.tooltip;"/>
+      </row>
+      <row>
+        <label control="password_text" value="&password.label;"/>
+        <textbox id="password_text" tooltiptext="&password.tooltip;"/>
+      </row>
+      <row id="usernameField_row">
+        <label control="usernameField_text" value="&usernameField.label;"/>
+        <textbox id="usernameField_text" tooltiptext="&usernameField.tooltip;"/>
+      </row>
+      <row id="passwordField_row">
+        <label control="passwordField_text" value="&passwordField.label;"/>
+        <textbox id="passwordField_text" tooltiptext="&passwordField.tooltip;"/>
+      </row>
+    </rows>
+  </grid>
+  <button id="guessfrompage_btn" label="&guessfrompage.label;"
+          accesskey="&guessfrompage.accesskey;" oncommand="guessParameters();"
+  />
+</dialog>

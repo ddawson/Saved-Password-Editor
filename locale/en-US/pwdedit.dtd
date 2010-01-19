@@ -1,0 +1,41 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<!ENTITY editpassword.label "Edit password">
+<!ENTITY signontype.label "Type">
+<!ENTITY type_form.label "Web form">
+<!ENTITY type_httpauth.label "HTTP authentication">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip
+  "Protocol/hostname to which password applies (e.g. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Submit prefix">
+<!ENTITY formSubmitURL.tooltip "Prefix of form submission address">
+<!ENTITY httpRealm.label "HTTP realm">
+<!ENTITY httpRealm.tooltip "HTTP realm to match">
+<!ENTITY username.label "Username">
+<!ENTITY username.tooltip "The username to remember">
+<!ENTITY password.label "Password">
+<!ENTITY password.tooltip "The password to remember">
+<!ENTITY usernameField.label "Username field name">
+<!ENTITY usernameField.tooltip
+  "The name attribute for the appropriate username field in the form">
+<!ENTITY passwordField.label "Password field name">
+<!ENTITY passwordField.tooltip
+  "The name attribute for the appropriate password field in the form">
+<!ENTITY guessfrompage.label "Guess from current page">
+<!ENTITY guessfrompage.accesskey "G">
