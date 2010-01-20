@@ -26,10 +26,10 @@
           src="chrome://savedpasswordeditor/content/pwdmgroverlay.js"/>
   <hbox id="SignonViewerButtons">
     <button id="newSignon" icon="add" label="&newentry.label;"
-            accesskey="&newentry.accesskey;" oncommand="NewSignon();"
+            accesskey="&newentry.accesskey;" oncommand="spEditor.newSignon();"
             insertafter="removeAllSignons"/>
     <button id="editSignon" icon="properties" label="&editentry.label;"
-            accesskey="&editentry.accesskey;" oncommand="EditSignon();"
+            accesskey="&editentry.accesskey;" oncommand="spEditor.editSignon();"
             disabled="true" insertafter="removeAllSignons"/>
   </hbox>
 </overlay>

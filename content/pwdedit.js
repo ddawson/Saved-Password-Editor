@@ -16,62 +16,70 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-var okCallback;
+var stringsBundle, nologinform_string;
 
-function init (oldSignon, callback) {
+function el (name) {
+  return document.getElementById(name);
+}
+
+function init (oldSignon) {
   if (!oldSignon) {
     oldSignon = Components.classes["@mozilla.org/login-manager/loginInfo;1"].
                   createInstance(Components.interfaces.nsILoginInfo);
     oldSignon.init("", "", "", "", "", "", "");
   }
-  with (document) {
-    getElementById("hostname_text").value = oldSignon.hostname;
-    getElementById("formSubmitURL_text").value = oldSignon.formSubmitURL;
-    getElementById("httpRealm_text").value = oldSignon.httpRealm;
-    getElementById("username_text").value = oldSignon.username;
-    getElementById("password_text").value = oldSignon.password;
-    getElementById("usernameField_text").value = oldSignon.usernameField;
-    getElementById("passwordField_text").value = oldSignon.passwordField;
-    var st = getElementById("signon_type");
-    st.addEventListener("command", handle_typeSelect, false);
-    if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
-      st.selectedIndex = 1;
-      handle_typeSelect(null);
-    }
+
+  el("hostname_text").value = oldSignon.hostname;
+  el("formSubmitURL_text").value = oldSignon.formSubmitURL;
+  el("httpRealm_text").value = oldSignon.httpRealm;
+  el("username_text").value = oldSignon.username;
+  el("password_text").value = oldSignon.password;
+  el("usernameField_text").value = oldSignon.usernameField;
+  el("passwordField_text").value = oldSignon.passwordField;
+  var st = el("signon_type");
+  st.addEventListener("command", handle_typeSelect, false);
+  if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
+    st.selectedIndex = 1;
+    handle_typeSelect(null);
   }
-  okCallback = callback;
 }
 
+window.addEventListener(
+  "load",
+  function (ev) {
+    stringsBundle = document.getElementById("string-bundle");
+    nologinform_string = stringsBundle.getString("nologinform");
+    init(window.arguments[0]);
+  },
+  false);
+
 function handle_typeSelect (evt) {
-  with (document) {
-    var idx = getElementById("signon_type").selectedIndex;
-    if (idx == 0) {
-      getElementById("formSubmitURL_row").collapsed = false;
-      getElementById("httpRealm_row").collapsed = true;
-      getElementById("usernameField_row").collapsed = false;
-      getElementById("passwordField_row").collapsed = false;
-      getElementById("guessfrompage_btn").collapsed = false;
-    } else {
-      getElementById("formSubmitURL_row").collapsed = true;
-      getElementById("httpRealm_row").collapsed = false;
-      getElementById("usernameField_row").collapsed = true;
-      getElementById("passwordField_row").collapsed = true;
-      getElementById("guessfrompage_btn").collapsed = true;
-    }
+  var idx = el("signon_type").selectedIndex;
+  if (idx == 0) {
+    el("formSubmitURL_row").collapsed = false;
+    el("httpRealm_row").collapsed = true;
+    el("usernameField_row").collapsed = false;
+    el("passwordField_row").collapsed = false;
+    el("guessfrompage_btn").collapsed = false;
+  } else {
+    el("formSubmitURL_row").collapsed = true;
+    el("httpRealm_row").collapsed = false;
+    el("usernameField_row").collapsed = true;
+    el("passwordField_row").collapsed = true;
+    el("guessfrompage_btn").collapsed = true;
   }
-  return false;
 }
 
 function guessParameters () {
-  // Locate the content window for the last seen tab
-  var wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
-             getService(Components.interfaces.nsIWindowMediator);
-  var curWin = wm.getMostRecentWindow("navigator:browser");
-  var curBrowser = curWin.document.getElementById("content").selectedBrowser;
-  var curBrWin = curBrowser.contentWindow;
+  // Locate the browser object for the last seen tab
+  var curBrowser =
+    Components.classes["@mozilla.org/appshell/window-mediator;1"].
+    getService(Components.interfaces.nsIWindowMediator).
+    getMostRecentWindow("navigator:browser").document.
+    getElementById("content").selectedBrowser;
 
   // Get the host prefix
-  var curLocation = curBrWin.location;
+  var curLocation = curBrowser.contentWindow.location;
   var hostname = curLocation.protocol + "//" + curLocation.host;
 
   // Locate a likely login form and its fields
@@ -80,7 +88,7 @@ function guessParameters () {
     '//form//input[@type="password"]', curDoc, null,
     XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   if (!pwdField) {
-    window.alert("No login form found!");
+    window.alert(nologinform_string);
     return;
   }
   var form = pwdField.form;
@@ -88,59 +96,57 @@ function guessParameters () {
     './/input[@type="text" and not(preceding::input[@type="password"])][last()]',
     form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   if (!unameField) {
-    window.alert("No login form found!");
+    window.alert(nologinform_string);
     return;
   }
 
   // Construct the submit prefix
   var formAction = form.getAttribute("action");
   var re = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//;
-  var ary = re.exec(formAction);
+  var res = re.exec(formAction);
   var formSubmitURL;
-  if (ary)
-    formSubmitURL = ary[1];
+  if (res)
+    formSubmitURL = res[1];
   else
     formSubmitURL = hostname;
 
   // Get the field names and values
-  usernameField = unameField.getAttribute("name");
-  username = unameField.value;
-  passwordField = pwdField.getAttribute("name");
-  password = pwdField.value;
+  var usernameField = unameField.getAttribute("name");
+  var username = unameField.value;
+  var passwordField = pwdField.getAttribute("name");
+  var password = pwdField.value;
 
   // Populate the editor form
-  with (document) {
-    getElementById("hostname_text").value = hostname;
-    getElementById("formSubmitURL_text").value = formSubmitURL;
-    getElementById("username_text").value = username;
-    getElementById("password_text").value = password;
-    getElementById("usernameField_text").value = usernameField;
-    getElementById("passwordField_text").value = passwordField;
-  }
+  el("hostname_text").value = hostname;
+  el("formSubmitURL_text").value = formSubmitURL;
+  el("username_text").value = username;
+  el("password_text").value = password;
+  el("usernameField_text").value = usernameField;
+  el("passwordField_text").value = passwordField;
 }
-  
+
 function setNewSignon () {
-  with (document) {
-    var hostname = getElementById("hostname_text").value;
-    var formSubmitURL, httpRealm;
-    var username = getElementById("username_text").value;
-    var password = getElementById("password_text").value;
-    var usernameField, passwordField;
-    var idx = getElementById("signon_type").selectedIndex;
-    if (idx == 0) {
-      formSubmitURL = getElementById("formSubmitURL_text").value;
-      httpRealm = null;
-      usernameField = getElementById("usernameField_text").value;
-      passwordField = getElementById("passwordField_text").value;
-    } else {
-      formSubmitURL = null;
-      httpRealm = getElementById("httpRealm_text").value;
-      usernameField = passwordField = "";
-    }
+  var hostname = el("hostname_text").value,
+    formSubmitURL, httpRealm,
+    username = el("username_text").value,
+    password = el("password_text").value,
+    usernameField, passwordField;
+  var idx = el("signon_type").selectedIndex;
+
+  if (idx == 0) {
+    formSubmitURL = el("formSubmitURL_text").value;
+    httpRealm = null;
+    usernameField = el("usernameField_text").value;
+    passwordField = el("passwordField_text").value;
+  } else {
+    formSubmitURL = null;
+    httpRealm = el("httpRealm_text").value;
+    usernameField = passwordField = "";
   }
+
   var newSignon = Components.classes["@mozilla.org/login-manager/loginInfo;1"].
                     createInstance(Components.interfaces.nsILoginInfo);
   newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
                  usernameField, passwordField);
-  okCallback(newSignon);
+  window.arguments[1].newSignon = newSignon;
 }

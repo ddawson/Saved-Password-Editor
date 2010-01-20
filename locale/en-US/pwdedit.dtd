@@ -16,7 +16,6 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!ENTITY editpassword.label "Edit password">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Web form">
 <!ENTITY type_httpauth.label "HTTP authentication">

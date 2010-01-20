@@ -16,58 +16,44 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-function handleSelection () {
-  var selections = GetTreeSelections(signonsTree);
-  if (selections.length == 1 && !gSelectUserInUse)
-    document.getElementById("editSignon").removeAttribute("disabled");
-  else
-    document.getElementById("editSignon").setAttribute("disabled", "true");
-}
+document.getElementById("signonsTree").addEventListener(
+  "select",
+  function () {
+    var selections = GetTreeSelections(signonsTree);
+    if (selections.length == 1 && !gSelectUserInUse)
+      document.getElementById("editSignon").removeAttribute("disabled");
+    else
+      document.getElementById("editSignon").setAttribute("disabled", "true");
+  },
+  false);
 
-document.getElementById("signonsTree").
-  addEventListener("select", handleSelection, false);
-
-function EditSignon () {
-  var selections = GetTreeSelections(signonsTree);
-  if (selections.length == 1) {
+var spEditor = {
+  editSignon: function () {
+    var selections = GetTreeSelections(signonsTree);
+    if (selections.length != 1) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
     var signon = table[selections[0]];
-    var win = window.openDialog(
+    var ret = { newSignon: null };
+    window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome");
-    win.addEventListener(
-      "load",
-      function (evt) {
-        win.init(
-          signon,
-          function (newSignon) {
-            passwordmanager.modifyLogin(signon, newSignon);
-            LoadSignons();
-          });
-      },
-      false);
-  }
-}
+      "centerscreen,dependent,dialog,chrome,modal", signon, ret);
+    if (!ret.newSignon) return;
+    passwordmanager.modifyLogin(signon, ret.newSignon);
+    LoadSignons();
+  },
 
-function NewSignon () {
-  var origWin = window;
-  var win = window.openDialog(
-    "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-    "centerscreen,dependent,dialog,chrome");
-  win.addEventListener(
-    "load",
-    function (evt) {
-      win.init(
-        null,
-        function (newSignon) {
-          try {
-            var res = passwordmanager.addLogin(newSignon);
-            LoadSignons();
-          } catch (e) {
-            window.alert(e.message);
-          }
-        });
-    },
-    false);
+  newSignon: function () {
+    var ret = { newSignon: null };
+    window.openDialog(
+      "chrome://savedpasswordeditor/content/pwdedit.xul", "",
+      "centerscreen,dependent,dialog,chrome,modal", null, ret);
+    if (!ret.newSignon) return;
+    try {
+      passwordmanager.addLogin(ret.newSignon);
+      LoadSignons();
+    } catch (e) {
+      window.alert(e.message);
+    }
+  },
 }
