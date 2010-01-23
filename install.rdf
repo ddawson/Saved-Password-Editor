@@ -4,7 +4,7 @@
   <RDF:Description about="urn:mozilla:install-manifest">
     <id>savedpasswordeditor@daniel.dawson</id>
     <name>Saved password editor</name>
-    <version>0.3</version>
+    <version>0.4</version>
     <creator>Daniel Dawson</creator>
     <description>
       Adds the ability to create and edit password entries in the password

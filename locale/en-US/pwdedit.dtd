@@ -37,5 +37,9 @@
 <!ENTITY passwordField.label "Password field name">
 <!ENTITY passwordField.tooltip
   "The name attribute for the appropriate password field in the form">
+<!ENTITY passwordview.label "Show">
+<!ENTITY passwordview.accesskey "S">
+<!ENTITY passwordview.tooltip "Toggle password visibility">
 <!ENTITY guessfrompage.label "Guess from current page">
 <!ENTITY guessfrompage.accesskey "G">
+<!ENTITY guessfrompage.tooltip "Fill in this form based on a likely login form on the current page">

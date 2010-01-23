@@ -47,6 +47,7 @@
     <columns>
       <column flex="0"/>
       <column flex="1"/>
+      <column flex="0"/>
     </columns>
     <rows>
       <row>
@@ -67,7 +68,12 @@
       </row>
       <row>
         <label control="password_text" value="&password.label;"/>
-        <textbox id="password_text" tooltiptext="&password.tooltip;"/>
+        <textbox type="password" id="password_text"
+                 tooltiptext="&password.tooltip;"/>
+        <button id="passwordView_btn" label="&passwordview.label;"
+                accesskey="&passwordview.accesskey;"
+                tooltiptext="&passwordview.tooltip;"
+                oncommand="togglePasswordView();"/>
       </row>
       <row id="usernameField_row">
         <label control="usernameField_text" value="&usernameField.label;"/>
@@ -81,6 +87,7 @@
   </grid>
   <button id="guessfrompage_btn" label="&guessfrompage.label;"
           accesskey="&guessfrompage.accesskey;"
+          tooltiptext="&guessfrompage.tooltip;"
           oncommand="guessParameters();"
   />
 </dialog>

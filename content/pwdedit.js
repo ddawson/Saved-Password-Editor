@@ -69,6 +69,20 @@ function handle_typeSelect (evt) {
   }
 }
 
+function togglePasswordView () {
+  var pwdField = el("password_text");
+  var pwdViewButton = el("passwordView_btn");
+  if (pwdField.type == "password") {
+    pwdField.removeAttribute("type");
+    pwdViewButton.label = strBundle.getString("hide");
+    pwdViewButton.accessKey = strBundle.getString("hideaccesskey");
+  } else {
+    pwdField.setAttribute("type", "password");
+    pwdViewButton.label = strBundle.getString("show");
+    pwdViewButton.accessKey = strBundle.getString("showaccesskey");
+  }
+}
+
 function guessParameters () {
   // Locate the browser object for the last seen tab
   var curBrowser =
