@@ -16,40 +16,39 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-var stringsBundle, nologinform_string;
-
 function el (name) {
   return document.getElementById(name);
 }
 
-function init (oldSignon) {
-  if (!oldSignon) {
-    oldSignon = Components.classes["@mozilla.org/login-manager/loginInfo;1"].
-                  createInstance(Components.interfaces.nsILoginInfo);
-    oldSignon.init("", "", "", "", "", "", "");
-  }
+const Cc = Components.classes, Ci = Components.interfaces;
 
-  el("hostname_text").value = oldSignon.hostname;
-  el("formSubmitURL_text").value = oldSignon.formSubmitURL;
-  el("httpRealm_text").value = oldSignon.httpRealm;
-  el("username_text").value = oldSignon.username;
-  el("password_text").value = oldSignon.password;
-  el("usernameField_text").value = oldSignon.usernameField;
-  el("passwordField_text").value = oldSignon.passwordField;
-  var st = el("signon_type");
-  st.addEventListener("command", handle_typeSelect, false);
-  if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
-    st.selectedIndex = 1;
-    handle_typeSelect(null);
-  }
-}
+var strBundle;
+var oldSignon;
 
 window.addEventListener(
   "load",
   function (ev) {
-    stringsBundle = document.getElementById("string-bundle");
-    nologinform_string = stringsBundle.getString("nologinform");
-    init(window.arguments[0]);
+    strBundle = el("string-bundle");
+    oldSignon = window.arguments[0];
+    if (!oldSignon) {
+      oldSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
+                    createInstance(Ci.nsILoginInfo);
+      oldSignon.init("", "", "", "", "", "", "");
+      el("header").setAttribute("title", strBundle.getString("newlogin"));
+    } else
+      el("header").setAttribute("title", strBundle.getString("editlogin"));
+
+    el("hostname_text").value = oldSignon.hostname;
+    el("formSubmitURL_text").value = oldSignon.formSubmitURL;
+    el("httpRealm_text").value = oldSignon.httpRealm;
+    el("username_text").value = oldSignon.username;
+    el("password_text").value = oldSignon.password;
+    el("usernameField_text").value = oldSignon.usernameField;
+    el("passwordField_text").value = oldSignon.passwordField;
+    if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
+      el("signon_type").selectedIndex = 1;
+      handle_typeSelect(null);
+    }
   },
   false);
 
@@ -73,10 +72,9 @@ function handle_typeSelect (evt) {
 function guessParameters () {
   // Locate the browser object for the last seen tab
   var curBrowser =
-    Components.classes["@mozilla.org/appshell/window-mediator;1"].
-    getService(Components.interfaces.nsIWindowMediator).
-    getMostRecentWindow("navigator:browser").document.
-    getElementById("content").selectedBrowser;
+    Cc["@mozilla.org/appshell/window-mediator;1"].
+    getService(Ci.nsIWindowMediator).getMostRecentWindow("navigator:browser").
+    document.getElementById("content").selectedBrowser;
 
   // Get the host prefix
   var curLocation = curBrowser.contentWindow.location;
@@ -88,7 +86,10 @@ function guessParameters () {
     '//form//input[@type="password"]', curDoc, null,
     XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   if (!pwdField) {
-    window.alert(nologinform_string);
+    Cc["@mozilla.org/embedcomp/prompt-service;1"].
+      getService(Ci.nsIPromptService).
+      alert(window, strBundle.getString("error"),
+            strBundle.getString("nologinform"));
     return;
   }
   var form = pwdField.form;
@@ -96,33 +97,29 @@ function guessParameters () {
     './/input[@type="text" and not(preceding::input[@type="password"])][last()]',
     form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
   if (!unameField) {
-    window.alert(nologinform_string);
+    Cc["@mozilla.org/embedcomp/prompt-service;1"].
+      getService(Ci.nsIPromptService).
+      alert(window, strBundle.getString("error"),
+            strBundle.getString("nologinform"));
     return;
   }
 
   // Construct the submit prefix
   var formAction = form.getAttribute("action");
-  var re = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//;
-  var res = re.exec(formAction);
+  var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
   var formSubmitURL;
   if (res)
     formSubmitURL = res[1];
   else
     formSubmitURL = hostname;
 
-  // Get the field names and values
-  var usernameField = unameField.getAttribute("name");
-  var username = unameField.value;
-  var passwordField = pwdField.getAttribute("name");
-  var password = pwdField.value;
-
   // Populate the editor form
   el("hostname_text").value = hostname;
   el("formSubmitURL_text").value = formSubmitURL;
-  el("username_text").value = username;
-  el("password_text").value = password;
-  el("usernameField_text").value = usernameField;
-  el("passwordField_text").value = passwordField;
+  el("username_text").value = unameField.value;
+  el("password_text").value = pwdField.value;
+  el("usernameField_text").value = unameField.getAttribute("name");
+  el("passwordField_text").value = pwdField.getAttribute("name");
 }
 
 function setNewSignon () {
@@ -144,8 +141,8 @@ function setNewSignon () {
     usernameField = passwordField = "";
   }
 
-  var newSignon = Components.classes["@mozilla.org/login-manager/loginInfo;1"].
-                    createInstance(Components.interfaces.nsILoginInfo);
+  var newSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
+                    createInstance(Ci.nsILoginInfo);
   newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
                  usernameField, passwordField);
   window.arguments[1].newSignon = newSignon;

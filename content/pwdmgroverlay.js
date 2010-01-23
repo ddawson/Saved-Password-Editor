@@ -21,13 +21,21 @@ document.getElementById("signonsTree").addEventListener(
   function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length == 1 && !gSelectUserInUse)
-      document.getElementById("editSignon").removeAttribute("disabled");
+      document.getElementById("editSignon").disabled = false;
     else
-      document.getElementById("editSignon").setAttribute("disabled", "true");
+      document.getElementById("editSignon").disabled = true;
   },
   false);
 
-var spEditor = {
+window.addEventListener(
+  "load",
+  function (ev) {
+    spEditor.strBundle = document.getElementById("savedpwdedit-stringbundle");
+  },
+  false);
+
+const spEditor = {
+  strBundle: null,
   editSignon: function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length != 1) return;
@@ -53,7 +61,10 @@ var spEditor = {
       passwordmanager.addLogin(ret.newSignon);
       LoadSignons();
     } catch (e) {
-      window.alert(e.message);
+      Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
+        getService(Components.interfaces.nsIPromptService).
+        alert(window, this.strBundle.getString("error"),
+              this.strBundle.getFormattedString("badnewentry", [e.message]));
     }
   },
 }

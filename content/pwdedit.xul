@@ -24,7 +24,7 @@
 
 <dialog id="pwdedit"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-        title="Saved password editor"
+        title="&savedpasswordeditor.title;"
         buttons="accept,cancel"
         ondialogaccept="setNewSignon();"
         ondialogcancel="window.close();"
@@ -33,15 +33,16 @@
     <stringbundle id="string-bundle"
                   src="chrome://savedpasswordeditor/locale/pwdedit.properties"/>
   </stringbundleset>
+  <script type="text/javascript"
+          src="chrome://savedpasswordeditor/content/pwdedit.js"/>
+  <dialogheader id="header"/>
   <groupbox>
     <caption label="&signontype.label;"/>
-    <radiogroup id="signon_type">
+    <radiogroup id="signon_type" oncommand="handle_typeSelect();">
       <radio label="&type_form.label;" selected="true"/>
       <radio label="&type_httpauth.label;"/>
     </radiogroup>
   </groupbox>
-  <script type="text/javascript"
-          src="chrome://savedpasswordeditor/content/pwdedit.js"/>
   <grid>
     <columns>
       <column flex="0"/>

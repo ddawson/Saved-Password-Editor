@@ -1,17 +1,21 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#" xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>savedpasswordeditor@daniel.dawson</em:id>
-    <em:name>Saved password editor</em:name>
-    <em:version>0.2</em:version>
-    <em:creator>Daniel Dawson</em:creator>
-    <em:description>Adds the ability to create and edit password entries in the password manager</em:description>
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- firefox -->
-        <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.6.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-  </Description>
-</RDF>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description about="urn:mozilla:install-manifest">
+    <id>savedpasswordeditor@daniel.dawson</id>
+    <name>Saved password editor</name>
+    <version>0.3</version>
+    <creator>Daniel Dawson</creator>
+    <description>
+      Adds the ability to create and edit password entries in the password
+      manager.
+    </description>
+    <targetApplication>
+      <RDF:Description>
+        <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- firefox -->
+        <minVersion>3.0</minVersion>
+        <maxVersion>3.6.*</maxVersion>
+      </RDF:Description>
+    </targetApplication>
+  </RDF:Description>
+</RDF:RDF>
