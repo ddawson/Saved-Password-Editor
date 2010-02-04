@@ -3,18 +3,19 @@
          xmlns="http://www.mozilla.org/2004/em-rdf#">
   <RDF:Description about="urn:mozilla:install-manifest">
     <id>savedpasswordeditor@daniel.dawson</id>
-    <name>Saved password editor</name>
-    <version>0.4</version>
+    <name>Saved Password Editor</name>
+    <version>1.0</version>
     <creator>Daniel Dawson</creator>
     <description>
-      Adds the ability to create and edit password entries in the password
-      manager.
+      Adds the ability to create and edit password entries in the password manager.
     </description>
+    <iconURL>chrome://savedpasswordeditor/skin/spe-icon_32.png</iconURL>
+    <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
     <targetApplication>
       <RDF:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- firefox -->
         <minVersion>3.0</minVersion>
-        <maxVersion>3.6.*</maxVersion>
+        <maxVersion>3.7a1pre</maxVersion>
       </RDF:Description>
     </targetApplication>
   </RDF:Description>

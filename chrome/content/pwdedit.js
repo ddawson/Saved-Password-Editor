@@ -27,7 +27,7 @@ var oldSignon;
 
 window.addEventListener(
   "load",
-  function (ev) {
+  function loadHandler (ev) {
     strBundle = el("string-bundle");
     oldSignon = window.arguments[0];
     if (!oldSignon) {
@@ -47,12 +47,14 @@ window.addEventListener(
     el("passwordField_text").value = oldSignon.passwordField;
     if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
       el("signon_type").selectedIndex = 1;
-      handle_typeSelect(null);
+      handle_typeSelect();
     }
+
+    window.removeEventListener("load", loadHandler, false);
   },
   false);
 
-function handle_typeSelect (evt) {
+function handle_typeSelect () {
   var idx = el("signon_type").selectedIndex;
   if (idx == 0) {
     el("formSubmitURL_row").collapsed = false;
@@ -96,20 +98,25 @@ function guessParameters () {
 
   // Locate a likely login form and its fields
   var curDoc = curBrowser.contentDocument;
-  var pwdField = curDoc.evaluate(
+  var pwdFields = curDoc.evaluate(
     '//form//input[@type="password"]', curDoc, null,
-    XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-  if (!pwdField) {
+    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+  if (pwdFields.snapshotLength == 0) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
       alert(window, strBundle.getString("error"),
             strBundle.getString("nologinform"));
     return;
   }
-  var form = pwdField.form;
-  var unameField = curDoc.evaluate(
-    './/input[@type="text" and not(preceding::input[@type="password"])][last()]',
-    form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+  for (var i = 0; i < pwdFields.snapshotLength; i++) {
+    var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
+    var unameField = curDoc.evaluate(
+      './/input[@type="text" and not(preceding::input[@type="password"])]' +
+        '[last()]',
+      form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
+    if (unameField) break;
+  }
+
   if (!unameField) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).

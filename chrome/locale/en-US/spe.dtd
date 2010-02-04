@@ -16,6 +16,20 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
+<!ENTITY toolbarbutton.label "Saved Passwords">
+<!ENTITY toolbarbutton.tooltip "Open the Saved Passwords dialog">
+<!ENTITY prefwindow.title "Saved Password Editor preferences">
+<!ENTITY alwaysLogin.label "Force login when editing a password">
+<!ENTITY alwaysLogin.tooltip
+  "Forces you to enter your master password (if you have one) every time you edit a password">
+<!--<!ENTITY logoutOnCloseGroup.label "Log out when closing password manager">
+<!ENTITY logoutOnCloseNever.label "Never">
+<!ENTITY logoutOnCloseAlways.label "Always">
+<!ENTITY logoutOnCloseAsk.label "Ask">-->
+<!ENTITY newentry.label "New">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Edit">
+<!ENTITY editentry.accesskey "E">
 <!ENTITY savedpasswordeditor.title "Saved password editor">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Web form">
@@ -42,4 +56,23 @@
 <!ENTITY passwordview.tooltip "Toggle password visibility">
 <!ENTITY guessfrompage.label "Guess from current page">
 <!ENTITY guessfrompage.accesskey "G">
-<!ENTITY guessfrompage.tooltip "Fill in this form based on a likely login form on the current page">
+<!ENTITY guessfrompage.tooltip
+  "Fill in this form based on a likely login form on the current page">
+<!ENTITY welcometospe "Welcome to Saved Password Editor">
+<!ENTITY welcomepara1
+"Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may
+access the editing functionality by going to the password manager (find the
+&quot;<a id='security'>Security</a>&quot; pane in the preferences window
+(Tools &gt; Options or Edit &gt; Preferences, depending on you operating
+system), and click on the &quot;Saved Passwords&quot; button. The dialog now
+contains &quot;Edit&quot; and &quot;Add&quot; buttons.">
+<!ENTITY welcomepara2
+"Here is a <a id='shortcut'>shortcut</a> for now. Note, however, that this page
+will not appear again. A toolbar button is also available (View &gt; Toolbars
+&gt; Customize...) for your convenience.">
+<!ENTITY welcomepara3
+"Note that the Saved Passwords dialog is a base component of Firefox, and is
+not being provided by this extension, except for the two added buttons. The
+toolbar button is provided only for convenience, in the expectation that some
+users of this extension will want to access the dialog much more frequently
+than they might otherwise.">

@@ -1,0 +1,46 @@
+<?xml version="1.0"?>
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<!DOCTYPE prefwindow SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
+
+<prefwindow
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+    title="&prefwindow.title;">
+  <prefpane>
+    <preferences>
+      <preference id="pref-always-login"
+                  name="extensions.savedpasswordeditor.always_login"
+                  type="bool"/>
+      <!--<preference id="pref-logout-on-close"
+                  name="extensions.savedpasswordeditor.logout_on_close"
+                  type="int"/>-->
+    </preferences>
+    <checkbox label="&alwaysLogin.label;" tooltiptext="&alwaysLogin.tooltip;"
+              preference="pref-always-login"/>
+    <!--<groupbox>
+      <caption label="&logoutOnCloseGroup.label;"/>
+      <radiogroup preference="pref-logout-on-close">
+        <radio label="&logoutOnCloseNever.label;" value="0"/>
+        <radio label="&logoutOnCloseAlways.label;" value="1"/>
+        <radio label="&logoutOnCloseAsk.label;" value="2"/>
+      </radiogroup>
+    </groupbox>-->
+  </prefpane>
+</prefwindow>

@@ -17,14 +17,13 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!DOCTYPE overlay SYSTEM
-"chrome://savedpasswordeditor/locale/pwdmgroverlay.dtd">
+<!DOCTYPE overlay SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
 
 <overlay id="savedpasswordeditorOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <stringbundleset>
     <stringbundle id="savedpwdedit-stringbundle"
-      src="chrome://savedpasswordeditor/locale/pwdmgroverlay.properties"/>
+                  src="chrome://savedpasswordeditor/locale/spe.properties"/>
   </stringbundleset>
   <script type="text/javascript"
           src="chrome://savedpasswordeditor/content/pwdmgroverlay.js"/>

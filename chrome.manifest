@@ -1,3 +1,6 @@
-content	savedpasswordeditor	content/
-locale	savedpasswordeditor	en-US	locale/en-US/
+content	savedpasswordeditor	chrome/content/
+locale	savedpasswordeditor	en-US	chrome/locale/en-US/
+skin	savedpasswordeditor	default	chrome/skin/
+overlay chrome://browser/content/browser.xul chrome://savedpasswordeditor/content/browseroverlay.xul
+overlay chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/content/browseroverlay.xul
 overlay chrome://passwordmgr/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgroverlay.xul
