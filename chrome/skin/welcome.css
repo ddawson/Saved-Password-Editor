@@ -1,0 +1,26 @@
+@namespace "http://www.w3.org/1999/xhtml";
+
+body {
+  background-color: #DDE;
+  color: black;
+  padding-left: 64px;
+  padding-right: 32px;
+}
+
+h1 {
+  vertical-align: middle;
+}
+
+h1:before {
+  display: inline-block;
+  position: relative;
+  left: -48px;
+  width: 0px;
+  overflow: visible;
+  vertical-align: middle;
+  content: url("chrome://savedpasswordeditor/skin/spe-icon_32.png");
+}
+
+p {
+  text-align: justify;
+}

@@ -20,7 +20,7 @@ window.addEventListener(
   "load",
   function loadHandler (ev) {
     const PREFNAME = "currentVersion",
-            THISVERSION = "1.0",
+            THISVERSION = "1.0.1",
             COMPAREVERSION = "1.0",
             Cc = Components.classes, Ci = Components.interfaces;
     var prefs = Cc["@mozilla.org/preferences-service;1"].
@@ -31,7 +31,8 @@ window.addEventListener(
       var vAnalysis = version.split(".");
       var ctAnalysis = compareTo.split(".");
 
-      for (let i = 0; i < vAnalysis.length; i++) {
+      for (let i = 0; i < ctAnalysis.length; i++) {
+        if (i == vAnalysis.length) return true;
         var vNum = Number(vAnalysis[i]), ctNum = Number(ctAnalysis[i]);
         if (isNaN(vNum) || i >= ctAnalysis.length || vNum < ctNum) {
           return true;
@@ -63,8 +64,8 @@ window.addEventListener(
   false);
 
 function speOpenSavedPasswords () {
-  var spWin = Cc["@mozilla.org/appshell/window-mediator;1"].
-                getService(Ci.nsIWindowMediator).
+  var spWin = Components.classes["@mozilla.org/appshell/window-mediator;1"].
+                getService(Components.interfaces.nsIWindowMediator).
                 getMostRecentWindow("Toolkit:PasswordManager");
   if (spWin)
     spWin.focus();

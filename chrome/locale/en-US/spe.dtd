@@ -30,7 +30,7 @@
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Edit">
 <!ENTITY editentry.accesskey "E">
-<!ENTITY savedpasswordeditor.title "Saved password editor">
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Web form">
 <!ENTITY type_httpauth.label "HTTP authentication">

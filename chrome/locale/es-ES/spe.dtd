@@ -1,0 +1,82 @@
+<!--
+    Saved password editor, complemento para Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    Este programa es gratuito y se puede redistribuir y/o modificar
+    bajo las condiciones de la Licencia Pública GNU original de
+    Free Software Foundation (Fundación de Software Gratuito), ya sea la
+    versión 3 de la Licencia o cualquier versión posterior.
+
+    Este programa se distribuye con la esperanza de que sea provechoso
+    pero SIN GARANTIA ALGUNA, ni siquiera garantía implícita de
+    COMERCIALIZACION o IDONEIDAD PARA ALGUN PROPOSITO EN PARTICULAR. Para
+    mayores detalles se puede consultar la Licencia Pública GNU.
+
+    Seguramente ha recibido una copia de la Licencia Pública
+    GNU junto con este programa. En caso contrario consultar
+    <http://www.gnu.org/licenses/>.
+-->
+
+<!ENTITY toolbarbutton.label "Contraseñas guardadas">
+<!ENTITY toolbarbutton.tooltip
+  "Abrir el administrador de contraseñas guardadas">
+<!ENTITY prefwindow.title "Preferencias de Saved password editor">
+<!ENTITY alwaysLogin.label "Obligar a aplicar login al editar una contraseña">
+<!ENTITY alwaysLogin.tooltip
+  "De existir, obliga a escribir la contraseña maestra cada vez que se edite una contraseña">
+<!--<!ENTITY logoutOnCloseGroup.label "Salir al cerrar el administrador de contraseñas">
+<!ENTITY logoutOnCloseNever.label "Nunca">
+<!ENTITY logoutOnCloseAlways.label "Siempre">
+<!ENTITY logoutOnCloseAsk.label "Preguntar">-->
+<!ENTITY newentry.label "Agregar">
+<!ENTITY newentry.accesskey "A">
+<!ENTITY editentry.label "Editar">
+<!ENTITY editentry.accesskey "E">
+<!ENTITY savedpasswordeditor.title "Saved password editor">
+<!ENTITY signontype.label "Tipo">
+<!ENTITY type_form.label "Login">
+<!ENTITY type_httpauth.label "HTTP - autenticación">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip
+  "Protocolo/Host al cual se aplica la contraseña (ej. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Prefijo">
+<!ENTITY formSubmitURL.tooltip "Prefijo de ruta de login">
+<!ENTITY httpRealm.label "HTTP - dominio">
+<!ENTITY httpRealm.tooltip "HTTP - dominio a aplicar">
+<!ENTITY username.label "Usuario">
+<!ENTITY username.tooltip "Usuario a recordar">
+<!ENTITY password.label "Contraseña">
+<!ENTITY password.tooltip "Contraseña a recordar">
+<!ENTITY usernameField.label "Nombre de campo de usuario">
+<!ENTITY usernameField.tooltip
+  "Nombre de campo de usuario apropiado para login">
+<!ENTITY passwordField.label "Nombre de campo de contraseña">
+<!ENTITY passwordField.tooltip
+  "Nombre de campo de contraseña apropiado para login">
+<!ENTITY passwordview.label "Mostrar">
+<!ENTITY passwordview.accesskey "M">
+<!ENTITY passwordview.tooltip "Mostrar/Ocultar contraseña">
+<!ENTITY guessfrompage.label "Captar datos de sitio actual">
+<!ENTITY guessfrompage.accesskey "D">
+<!ENTITY guessfrompage.tooltip
+  "Llenar esta forma de acuerdo a probable campo de login en sitio actual">
+<!ENTITY welcometospe "Bienvenido(a) a Saved password editor">
+<!ENTITY welcomepara1
+"Gracias por utilizar <a id='addonlink'>Saved password editor</a>. Se puede
+usar la función de edición mediante el administrador de contraseñas (ir al
+panel de &quot;<a id='security'>Seguridad</a>&quot; en la ventana de
+preferencias (Herramientas &gt; Opciones o Editar &gt; Preferencias en base al
+sistema operativo) y pulsar el comando &quot;Contraseñas guardadas&quot;. El
+administrador presentará los comandos &quot;Editar&quot; y
+&quot;Agregar&quot;.">
+<!ENTITY welcomepara2
+"Por ahora, éste es un <a id='shortcut'>acceso directo</a>. Sin embargo, esta
+página no volverá a aparecer. También estará disponible a conveniencia un
+comando de barra de herramientas (Ver &gt; Barras de herramientas &gt;
+Personalizar...).">
+<!ENTITY welcomepara3
+"El administrador de contraseñas guardadas es un componente esencial de Firefox
+y no forma parte de este complemento excepto por los dos comandos agregados. El
+comando de barra de herramientas es solamente un elemento adicional ante la
+posibilidad de que algunos usuarios de este complemento deseen utilizar el
+administrador con mayor frecuencia que otros.">

@@ -1,6 +1,21 @@
-content	savedpasswordeditor	chrome/content/
+# Functional content
+content	savedpasswordeditor		chrome/content/
+
+# Language-specific content
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
+locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
+
+# Appearance
 skin	savedpasswordeditor	default	chrome/skin/
+
+# What goes where
+## Browser windows
 overlay chrome://browser/content/browser.xul chrome://savedpasswordeditor/content/browseroverlay.xul
+overlay chrome://navigator/content/navigator.xul chrome://savedpasswordeditor/content/browseroverlay.xul
+
+## Needed to style the toolbar button in the palette
 overlay chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/content/browseroverlay.xul
+
+## Password Manager (why does SeaMonkey have two?)
 overlay chrome://passwordmgr/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgroverlay.xul
+overlay chrome://communicator/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgroverlay.xul
