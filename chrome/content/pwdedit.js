@@ -26,17 +26,20 @@ var strBundle;
 var oldSignon;
 
 window.addEventListener(
-  "load",
+  "DOMContentLoaded",
   function loadHandler (ev) {
     strBundle = el("string-bundle");
     oldSignon = window.arguments[0];
+    var haveOldSignon = false;
     if (!oldSignon) {
       oldSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
                     createInstance(Ci.nsILoginInfo);
       oldSignon.init("", "", "", "", "", "", "");
       el("header").setAttribute("title", strBundle.getString("newlogin"));
-    } else
+    } else {
       el("header").setAttribute("title", strBundle.getString("editlogin"));
+      haveOldSignon = true;
+    }
 
     el("hostname_text").value = oldSignon.hostname;
     el("formSubmitURL_text").value = oldSignon.formSubmitURL;
@@ -45,29 +48,53 @@ window.addEventListener(
     el("password_text").value = oldSignon.password;
     el("usernameField_text").value = oldSignon.usernameField;
     el("passwordField_text").value = oldSignon.passwordField;
-    if (oldSignon.httpRealm != null && oldSignon.httpRealm != "") {
-      el("signon_type").selectedIndex = 1;
-      handle_typeSelect();
+
+    if (!oldSignon.httpRealm)
+      el("type_group").selectedIndex = 0;
+    else if (oldSignon.hostname.match(/^http/))
+      el("type_group").selectedIndex = 1;
+    else
+      el("type_group").selectedIndex = 2;
+
+    var xai = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
+    switch (xai.ID) {
+    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}":  // Thunderbird
+      el("type_form").hidden = true;
+      if (!haveOldSignon)
+        el("type_group").selectedIndex = 1;
+      break;
+
+    case "{718e30fb-e89b-41dd-9da7-e25a45638b28}":  // Sunbird
+      el("type_groupbox").hidden = true;
+      el("type_group").selectedIndex = 2;
+      break;
+
+    // Nothing to do for Firefox and SeaMonkey
     }
 
-    window.removeEventListener("load", loadHandler, false);
+    handle_typeSelect();
+
+    if (haveOldSignon)
+      el("type_group").disabled = true;
+
+    window.removeEventListener("DOMContentLoaded", loadHandler, false);
   },
   false);
 
 function handle_typeSelect () {
-  var idx = el("signon_type").selectedIndex;
+  var idx = el("type_group").selectedIndex;
   if (idx == 0) {
     el("formSubmitURL_row").collapsed = false;
     el("httpRealm_row").collapsed = true;
     el("usernameField_row").collapsed = false;
     el("passwordField_row").collapsed = false;
-    el("guessfrompage_btn").collapsed = false;
+    el("guessFromPage_btn").collapsed = false;
   } else {
     el("formSubmitURL_row").collapsed = true;
-    el("httpRealm_row").collapsed = false;
+    el("httpRealm_row").collapsed = idx == 2;
     el("usernameField_row").collapsed = true;
     el("passwordField_row").collapsed = true;
-    el("guessfrompage_btn").collapsed = true;
+    el("guessFromPage_btn").collapsed = true;
   }
 }
 
@@ -149,7 +176,7 @@ function setNewSignon () {
     username = el("username_text").value,
     password = el("password_text").value,
     usernameField, passwordField;
-  var idx = el("signon_type").selectedIndex;
+  var idx = el("type_group").selectedIndex;
 
   if (idx == 0) {
     formSubmitURL = el("formSubmitURL_text").value;
@@ -158,7 +185,7 @@ function setNewSignon () {
     passwordField = el("passwordField_text").value;
   } else {
     formSubmitURL = null;
-    httpRealm = el("httpRealm_text").value;
+    httpRealm = idx == 1 ? el("httpRealm_text").value : hostname;
     usernameField = passwordField = "";
   }
 

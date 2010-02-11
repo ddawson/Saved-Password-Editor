@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+/*
     Saved Password Editor, extension for Firefox 3.0+
     Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
 
@@ -15,21 +14,15 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
+*/
 
-<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
-
-<prefwindow
-    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-    title="&prefwindow.title;">
-  <prefpane>
-    <preferences>
-      <preference id="pref-always-login"
-                  name="extensions.savedpasswordeditor.always_login"
-                  type="bool"/>
-    </preferences>
-    <checkbox label="&alwaysLogin.label;" tooltiptext="&alwaysLogin.tooltip;"
-              preference="pref-always-login"/>
-  </prefpane>
-</prefwindow>
+function speOpenSavedPasswords () {
+  var spWin = Components.classes["@mozilla.org/appshell/window-mediator;1"].
+                getService(Components.interfaces.nsIWindowMediator).
+                getMostRecentWindow("Toolkit:PasswordManager");
+  if (spWin)
+    spWin.focus();
+  else
+    window.openDialog("chrome://passwordmgr/content/passwordManager.xul",
+                      "", "chrome,titlebar,toolbar,centerscreen");
+}

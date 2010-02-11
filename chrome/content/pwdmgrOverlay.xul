@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Firefox 3.0+
     Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
@@ -26,13 +26,14 @@
                   src="chrome://savedpasswordeditor/locale/spe.properties"/>
   </stringbundleset>
   <script type="text/javascript"
-          src="chrome://savedpasswordeditor/content/pwdmgroverlay.js"/>
+          src="chrome://savedpasswordeditor/content/pwdmgrOverlay.js"/>
   <hbox id="SignonViewerButtons">
     <button id="newSignon" icon="add" label="&newentry.label;"
             accesskey="&newentry.accesskey;" oncommand="spEditor.newSignon();"
             insertafter="removeAllSignons"/>
     <button id="editSignon" icon="properties" label="&editentry.label;"
-            accesskey="&editentry.accesskey;" oncommand="spEditor.editSignon();"
-            disabled="true" insertafter="removeAllSignons"/>
+            accesskey="&editentry.accesskey;"
+            oncommand="spEditor.editSignon();" disabled="true"
+            insertafter="removeAllSignons"/>
   </hbox>
 </overlay>

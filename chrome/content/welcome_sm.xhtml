@@ -17,19 +17,21 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
-<!DOCTYPE prefwindow SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
+<!DOCTYPE html SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
 
-<prefwindow
-    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-    title="&prefwindow.title;">
-  <prefpane>
-    <preferences>
-      <preference id="pref-always-login"
-                  name="extensions.savedpasswordeditor.always_login"
-                  type="bool"/>
-    </preferences>
-    <checkbox label="&alwaysLogin.label;" tooltiptext="&alwaysLogin.tooltip;"
-              preference="pref-always-login"/>
-  </prefpane>
-</prefwindow>
+<?xml-stylesheet type="text/css"
+  href="chrome://savedpasswordeditor/skin/welcome.css"?>
+
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="&locale;" lang="&locale;"
+      dir="&layoutdirection;">
+  <head>
+    <script type="text/javascript"
+            src="chrome://savedpasswordeditor/content/welcome.js"/>
+    <title>&welcometospe;</title>
+  </head>
+  <body>
+    <h1>&welcometospe;</h1>
+    <p>&welcomepara1_sm;</p>
+    <p>&welcomepara2;</p>
+  </body>
+</html>

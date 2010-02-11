@@ -24,51 +24,6 @@ window.addEventListener(
   },
   false);
 
-/*
-window.addEventListener(
-  "unload",
-  function unloadHandler (ev) {
-    const Cc = Components.classes, Ci = Components.interfaces;
-
-    var mpSlot = Cc["@mozilla.org/security/pkcs11moduledb;1"].
-                   getService(Ci.nsIPKCS11ModuleDB).findSlotByName("");
-    if (mpSlot) {
-      let status = mpSlot.status;
-      if (status != Ci.nsIPKCS11ModuleDB.SLOT_UNINITIALIZED &&
-            status != Ci.nsIPKCS11ModuleDB.SLOT_READY) {
-        switch (spEditor.prefs.getIntPref("logout_on_close")) {
-        case 2:
-          let ps = Cc["@mozilla.org/embedcomp/prompt-service;1"].
-            getService(Ci.nsIPromptService);
-          var check = { value: false };
-          var answer =
-            ps.confirmEx(window, spEditor.strBundle.getString("logout"),
-                         spEditor.strBundle.getString("logoutquestion"),
-                         ps.BUTTON_POS_0*ps.BUTTON_TITLE_YES +
-                           ps.BUTTON_POS_1*ps.BUTTON_TITLE_NO +
-                           ps.BUTTON_POS_0_DEFAULT,
-                         null, null, null,
-                         spEditor.strBundle.getString("dontaskmeagain"),
-                         check);
-          answer = answer == 0 ? true : false;
-          if (check.value)
-            spEditor.prefs.setIntPref("logout_on_close", answer ? 1 : 0);
-          if (!answer) return;
-
-        // Fall through
-        case 1:
-          Cc["@mozilla.org/security/pk11tokendb;1"].
-            createInstance(Ci.nsIPK11TokenDB).getInternalKeyToken().
-            logoutAndDropAuthenticatedResources();
-          break;
-        }
-      }
-    }
-    window.removeEventListener("unload", unloadHandler, false);
-  },
-  false);
-*/
-
 document.getElementById("signonsTree").addEventListener(
   "select",
   function (ev) {

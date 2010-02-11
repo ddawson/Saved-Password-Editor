@@ -16,11 +16,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-window.addEventListener(
-  "load",
-  function loadHandler (ev) {
+{
+  let checkVersion = function () {
     const PREFNAME = "currentVersion",
-            THISVERSION = "1.0.1",
+            THISVERSION = "1.1",
             COMPAREVERSION = "1.0",
             Cc = Components.classes, Ci = Components.interfaces;
     var prefs = Cc["@mozilla.org/preferences-service;1"].
@@ -44,8 +43,15 @@ window.addEventListener(
     }
 
     function welcome () {
-      gBrowser.selectedTab =
-        gBrowser.addTab("chrome://savedpasswordeditor/content/welcome.xhtml");
+      if (Application.id == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}") {
+        // Firefox
+        var url = "chrome://savedpasswordeditor/content/welcome_fx.xhtml";
+      } else {
+        // SeaMonkey
+        var url = "chrome://savedpasswordeditor/content/welcome_sm.xhtml";
+      }
+
+      gBrowser.selectedTab = gBrowser.addTab(url);
     }
 
     if (prefs.prefHasUserValue(PREFNAME)) {
@@ -58,18 +64,13 @@ window.addEventListener(
       welcome();
       prefs.setCharPref(PREFNAME, THISVERSION);
     }
+  };
 
-    window.removeEventListener("load", loadHandler, false);
-  },
-  false);
-
-function speOpenSavedPasswords () {
-  var spWin = Components.classes["@mozilla.org/appshell/window-mediator;1"].
-                getService(Components.interfaces.nsIWindowMediator).
-                getMostRecentWindow("Toolkit:PasswordManager");
-  if (spWin)
-    spWin.focus();
-  else
-    window.openDialog("chrome://passwordmgr/content/passwordManager.xul",
-                      "", "chrome,titlebar,toolbar,centerscreen");
+  window.addEventListener(
+    "load",
+    function loadHandler (ev) {
+      window.setTimeout(checkVersion, 1500);
+      window.removeEventListener("load", loadHandler, false);
+    },
+    false);
 }

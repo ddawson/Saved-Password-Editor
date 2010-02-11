@@ -28,30 +28,34 @@ window.addEventListener(
       return chromeWin.openPreferences("paneSecurity");
     }
 
+    function openPwdPane () {
+      var chromeWin = Cc["@mozilla.org/appshell/window-mediator;1"].
+                        getService(Ci.nsIWindowMediator).
+                        getMostRecentWindow("navigator:browser");
+      chromeWin.goPreferences("passwords_pane");
+    }
+
     function el (name) {
       return document.getElementById(name);
     }
 
+    var appId = Cc["@mozilla.org/xre/app-info;1"].
+                  getService(Ci.nsIXULAppInfo).ID;
+    var appType =
+      appId == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" ? 0  // Firefox
+                                                        : 1; // SeaMonkey
     el("addonlink").setAttribute(
       "href", "https://addons.mozilla.org/firefox/addon/60265/");
-    el("security").setAttribute("href", "javascript:void(0);");
-    el("security").addEventListener(
-      "click", function (ev) { openSecPane() }, false);
-    el("shortcut").setAttribute("href", "javascript:void(0);");
-    el("shortcut").addEventListener(
-      "click",
-      function clickHandler (ev) {
-        var win = openSecPane();
-        win.addEventListener(
-          "load",
-          function loadHandler () {
-            win.document.documentElement.currentPane.ownerDocument.defaultView.
-              gSecurityPane.showPasswords();  // Jeez, that's a long path!
-            win.removeEventListener("load", loadHandler, false);
-          },
-          false);
-      },
-      false);
+    if (appType == 0) {
+      el("security").setAttribute("href", "javascript:void(0);");
+      el("security").addEventListener(
+        "click", function (ev) { openSecPane() }, false);
+    } else {
+      el("passwords").setAttribute("href", "javascript:void(0);");
+      el("passwords").addEventListener(
+        "click", function (ev) { openPwdPane(); }, false);
+    }
+    el("appname").textContent = Application.name;
     window.removeEventListener("load", loadHandler, false);
   },
   false);

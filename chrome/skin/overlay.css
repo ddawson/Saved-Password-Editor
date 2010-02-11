@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="utf-8"?>
-<!--
+/*
     Saved Password Editor, extension for Firefox 3.0+
     Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
 
@@ -15,26 +14,18 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
+*/
 
-<!DOCTYPE html SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
+@namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
-<?xml-stylesheet type="text/css"
-  href="chrome://savedpasswordeditor/skin/welcome.css"?>
+#savedpasswordeditor-menuitem {
+  list-style-image: url("chrome://savedpasswordeditor/skin/sp-icon_16.png");
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml">
-  <head>
-    <script type="text/javascript"
-            src="chrome://savedpasswordeditor/content/welcome.js"/>
-    <title>&welcometospe;</title>
-  </head>
-  <body>
-    <h1>&welcometospe;</h1>
+#savedpasswordeditor-button {
+  list-style-image: url("chrome://savedpasswordeditor/skin/sp-icon_24.png");
+}
 
-    <p>&welcomepara1;</p>
-
-    <p>&welcomepara2;</p>
-
-    <p>&welcomepara3;</p>
-  </body>
-</html>
+toolbar[iconsize="small"] #savedpasswordeditor-button {
+  list-style-image: url("chrome://savedpasswordeditor/skin/sp-icon_16.png");
+}

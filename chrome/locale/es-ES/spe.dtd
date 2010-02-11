@@ -1,33 +1,51 @@
 <!--
-    Saved password editor, complemento para Firefox 3.0+
+    Saved Password Editor, extension for Firefox 3.0+
     Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+    Spanish (es-ES) translation
+        copyright (C) 2010  Ricardo A. Rivas <rivica@gmail.com>
 
-    Este programa es gratuito y se puede redistribuir y/o modificar
-    bajo las condiciones de la Licencia Pública GNU original de
-    Free Software Foundation (Fundación de Software Gratuito), ya sea la
-    versión 3 de la Licencia o cualquier versión posterior.
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
 
-    Este programa se distribuye con la esperanza de que sea provechoso
-    pero SIN GARANTIA ALGUNA, ni siquiera garantía implícita de
-    COMERCIALIZACION o IDONEIDAD PARA ALGUN PROPOSITO EN PARTICULAR. Para
-    mayores detalles se puede consultar la Licencia Pública GNU.
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
 
-    Seguramente ha recibido una copia de la Licencia Pública
-    GNU junto con este programa. En caso contrario consultar
-    <http://www.gnu.org/licenses/>.
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!ENTITY toolbarbutton.label "Contraseñas guardadas">
-<!ENTITY toolbarbutton.tooltip
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     <http://www.ietf.org/rfc/rfc1766.txt>. COUNTRY is for dialectal variation
+     and is not necessary for locales without such variation. You can probably
+     copy the locale tag of your localized Mozilla application (Firefox, etc.).
+     Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+-->
+<!ENTITY locale "es-ES">
+
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left
+     Generally, this should follow the direction of your writing system. -->
+<!ENTITY layoutdirection "LTR">
+
+<!-- Strings to be localized -->
+<!ENTITY savedpasswords.label "Contraseñas guardadas">
+<!ENTITY savedpasswords.accesskey "g">
+<!ENTITY savedpasswords.tooltip
   "Abrir el administrador de contraseñas guardadas">
 <!ENTITY prefwindow.title "Preferencias de Saved password editor">
 <!ENTITY alwaysLogin.label "Obligar a aplicar login al editar una contraseña">
 <!ENTITY alwaysLogin.tooltip
   "De existir, obliga a escribir la contraseña maestra cada vez que se edite una contraseña">
-<!--<!ENTITY logoutOnCloseGroup.label "Salir al cerrar el administrador de contraseñas">
-<!ENTITY logoutOnCloseNever.label "Nunca">
-<!ENTITY logoutOnCloseAlways.label "Siempre">
-<!ENTITY logoutOnCloseAsk.label "Preguntar">-->
 <!ENTITY newentry.label "Agregar">
 <!ENTITY newentry.accesskey "A">
 <!ENTITY editentry.label "Editar">
@@ -35,10 +53,14 @@
 <!ENTITY savedpasswordeditor.title "Saved password editor">
 <!ENTITY signontype.label "Tipo">
 <!ENTITY type_form.label "Login">
+<!ENTITY type_form.accesskey "L">
 <!ENTITY type_httpauth.label "HTTP - autenticación">
-<!ENTITY hostname.label "Host">
+<!ENTITY type_httpauth.accesskey "H">
+<!ENTITY type_other.label "Otro">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY hostname.label "Dominio">
 <!ENTITY hostname.tooltip
-  "Protocolo/Host al cual se aplica la contraseña (ej. http://www.example.com)">
+  "Dominio al cual se aplica la contraseña (ej. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Prefijo">
 <!ENTITY formSubmitURL.tooltip "Prefijo de ruta de login">
 <!ENTITY httpRealm.label "HTTP - dominio">
@@ -53,30 +75,59 @@
 <!ENTITY passwordField.label "Nombre de campo de contraseña">
 <!ENTITY passwordField.tooltip
   "Nombre de campo de contraseña apropiado para login">
-<!ENTITY passwordview.label "Mostrar">
-<!ENTITY passwordview.accesskey "M">
-<!ENTITY passwordview.tooltip "Mostrar/Ocultar contraseña">
+<!ENTITY showPassword.label "Mostrar">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Mostrar/Ocultar contraseña">
+<!ENTITY hidePassword.label "Ocultar">
+<!ENTITY hidePassword.accesskey "c">
 <!ENTITY guessfrompage.label "Captar datos de sitio actual">
-<!ENTITY guessfrompage.accesskey "D">
+<!ENTITY guessfrompage.accesskey "d">
 <!ENTITY guessfrompage.tooltip
   "Llenar esta forma de acuerdo a probable campo de login en sitio actual">
+
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The &lt; and &gt;
+     codes produce < and > respectively, but don't reverse them; that will be
+     done automatically for right-to-left text. &quot; produces a double quote
+     character. Please substitute whatever is appropriate in your locale, but
+     anything other than <, >, ", ', and & must be in UTF-8 or use numerical
+     entities (e.g. &#x89ab;); named entities other than the ones for those
+     five characters (&lt; &gt; &quot; &apos; &amp;) are NOT defined in this
+     context. Double quote characters must be encoded as &quot; since the
+     strings are already double-quote delimited.
+-->
 <!ENTITY welcometospe "Bienvenido(a) a Saved password editor">
-<!ENTITY welcomepara1
-"Gracias por utilizar <a id='addonlink'>Saved password editor</a>. Se puede
-usar la función de edición mediante el administrador de contraseñas (ir al
-panel de &quot;<a id='security'>Seguridad</a>&quot; en la ventana de
-preferencias (Herramientas &gt; Opciones o Editar &gt; Preferencias en base al
-sistema operativo) y pulsar el comando &quot;Contraseñas guardadas&quot;. El
-administrador presentará los comandos &quot;Editar&quot; y
-&quot;Agregar&quot;.">
+
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx
+"Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Es posible
+aplicar la función de edición mediante el menú Herramientas &gt; Opciones, o el
+menú Editar &gt; Preferencias (en base al sistema operativo). Se elige
+&quot;<a id='security'>Seguridad</a>&quot; y luego se pulsa el comando
+&quot;Contraseñas guardadas…&quot;. El administrador presentará los comandos
+&quot;Editar&quot; y &quot;Agregar&quot;. También estará disponible a
+conveniencia un comando de barra de herramientas. Para utilizarlo elegir el
+menú Ver &gt; Barras de herramientas &gt; Personalizar…, o hacer click derecho
+en la barra de herramientas y elegir &quot;Personalizar…&quot;.">
+
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- TRANSLATORS: Note the lack of View > Toolbars > Customize… -->
+<!ENTITY welcomepara1_sm
+"Gracias por utilizar <a id='addonlink'>Saved Password Editor</a> Es posible
+aplicar la función de edición mediante el menú Herramientas &gt; Opciones, o el
+menú Editar &gt; Preferencias (en base al sistema operativo). Se elige
+&quot;<a id='passwords'>Contraseñas</a>&quot; y luego se pulsa el comando
+&quot;Administrar contraseñas guardadas&quot;. También estará disponible a
+conveniencia un comando de barra de herramientas. Para utilizarlo, hacer click
+derecho en la barra de herramientas y elegir &quot;Personalizar…&quot;">
+
+<!-- Paragraph 2 -->
+<!-- The <span> element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2
-"Por ahora, éste es un <a id='shortcut'>acceso directo</a>. Sin embargo, esta
-página no volverá a aparecer. También estará disponible a conveniencia un
-comando de barra de herramientas (Ver &gt; Barras de herramientas &gt;
-Personalizar...).">
-<!ENTITY welcomepara3
-"El administrador de contraseñas guardadas es un componente esencial de Firefox
-y no forma parte de este complemento excepto por los dos comandos agregados. El
-comando de barra de herramientas es solamente un elemento adicional ante la
-posibilidad de que algunos usuarios de este complemento deseen utilizar el
-administrador con mayor frecuencia que otros.">
+"El administrador de contraseñas guardadas es un componente esencial de
+<span id='appname'/> y no forma parte de este complemento excepto por los dos
+comandos agregados. Solamente por conveniencia se agrega un comando de barra de
+herramientas debido a la posibilidad de que algunos usuarios de este
+complemento deseen utilizar el administrador con mayor frecuencia que otros.">

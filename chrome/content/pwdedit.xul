@@ -1,4 +1,4 @@
-<?xml version="1.0"?>
+<?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Firefox 3.0+
     Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
@@ -26,7 +26,6 @@
         title="&savedpasswordeditor.title;"
         buttons="accept,cancel"
         ondialogaccept="setNewSignon();"
-        ondialogcancel="window.close();"
         persist="width height">
   <stringbundleset id="stringbundleset">
     <stringbundle id="string-bundle"
@@ -35,19 +34,18 @@
   <script type="text/javascript"
           src="chrome://savedpasswordeditor/content/pwdedit.js"/>
   <dialogheader id="header"/>
-  <groupbox>
-    <caption label="&signontype.label;"/>
-    <radiogroup id="signon_type" oncommand="handle_typeSelect();">
-      <radio label="&type_form.label;" selected="true"/>
-      <radio label="&type_httpauth.label;"/>
+  <groupbox id="type_groupbox">
+    <caption id="type_caption" label="&signontype.label;"/>
+    <radiogroup id="type_group" oncommand="handle_typeSelect();">
+      <radio id="type_form" label="&type_form.label;"
+             accesskey="&type_form.accesskey;"/>
+      <radio id="type_httpauth" label="&type_httpauth.label;"
+             accesskey="&type_httpauth.accesskey;"/>
+      <radio id="type_other" label="&type_other.label;"
+             accesskey="&type_other.accesskey;"/>
     </radiogroup>
   </groupbox>
   <grid>
-    <columns>
-      <column flex="0"/>
-      <column flex="1"/>
-      <column flex="0"/>
-    </columns>
     <rows>
       <row>
         <label control="hostname_text" value="&hostname.label;"/>
@@ -69,22 +67,24 @@
         <label control="password_text" value="&password.label;"/>
         <textbox type="password" id="password_text"
                  tooltiptext="&password.tooltip;"/>
-        <button id="passwordView_btn" label="&passwordview.label;"
-                accesskey="&passwordview.accesskey;"
-                tooltiptext="&passwordview.tooltip;"
+        <button id="passwordView_btn" label="&showPassword.label;"
+                accesskey="&showPassword.accesskey;"
+                tooltiptext="&showPassword.tooltip;"
                 oncommand="togglePasswordView();"/>
       </row>
       <row id="usernameField_row">
         <label control="usernameField_text" value="&usernameField.label;"/>
-        <textbox id="usernameField_text" tooltiptext="&usernameField.tooltip;"/>
+        <textbox id="usernameField_text"
+                 tooltiptext="&usernameField.tooltip;"/>
       </row>
       <row id="passwordField_row">
         <label control="passwordField_text" value="&passwordField.label;"/>
-        <textbox id="passwordField_text" tooltiptext="&passwordField.tooltip;"/>
+        <textbox id="passwordField_text"
+                 tooltiptext="&passwordField.tooltip;"/>
       </row>
     </rows>
   </grid>
-  <button id="guessfrompage_btn" label="&guessfrompage.label;"
+  <button id="guessFromPage_btn" label="&guessfrompage.label;"
           accesskey="&guessfrompage.accesskey;"
           tooltiptext="&guessfrompage.tooltip;"
           oncommand="guessParameters();"
