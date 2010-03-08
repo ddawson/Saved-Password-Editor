@@ -2,8 +2,15 @@
 content	savedpasswordeditor		chrome/content/
 
 # Language-specific content
+locale	savedpasswordeditor	de-DE	chrome/locale/de-DE/
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
 locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
+locale	savedpasswordeditor	fr	chrome/locale/fr/
+locale	savedpasswordeditor	hu	chrome/locale/hu/
+locale	savedpasswordeditor	nl	chrome/locale/nl/
+locale	savedpasswordeditor	pt-BR	chrome/locale/pt-BR/
+locale	savedpasswordeditor	ru	chrome/locale/ru/
+locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/
 
 # Appearance
 skin	savedpasswordeditor	default	chrome/skin/

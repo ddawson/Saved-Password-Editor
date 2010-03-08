@@ -103,12 +103,12 @@ function togglePasswordView () {
   var pwdViewButton = el("passwordView_btn");
   if (pwdField.type == "password") {
     pwdField.removeAttribute("type");
-    pwdViewButton.label = strBundle.getString("hide");
-    pwdViewButton.accessKey = strBundle.getString("hideaccesskey");
+    pwdViewButton.label = strBundle.getString("hidePassword");
+    pwdViewButton.accessKey = strBundle.getString("hidePasswordAccesskey");
   } else {
     pwdField.setAttribute("type", "password");
-    pwdViewButton.label = strBundle.getString("show");
-    pwdViewButton.accessKey = strBundle.getString("showaccesskey");
+    pwdViewButton.label = strBundle.getString("showPassword");
+    pwdViewButton.accessKey = strBundle.getString("showPasswordAccesskey");
   }
 }
 

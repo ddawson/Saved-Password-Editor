@@ -1,0 +1,107 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
+<!ENTITY locale "hu">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Mentett jelszavak">
+<!ENTITY savedpasswords.accesskey "j">
+<!ENTITY savedpasswords.tooltip "Mentett jelszavak megjelenítése">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Mentett jelszavak - szerkesztő">
+<!ENTITY alwaysLogin.label "Bejelentkezés újra a jelszó szerkesztésekor">
+<!ENTITY alwaysLogin.tooltip "Mesterjelszó megadása (ha be van állítva) mindig, ha jelszót szerkeszt">
+<!-- SAVED PASSWORDS DIALOG -->
+<!ENTITY newentry.label "Új adat">
+<!ENTITY newentry.accesskey "a">
+<!ENTITY editentry.label "Szerkesztés">
+<!ENTITY editentry.accesskey "z">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Mentett jelszavak - szerkesztő">
+<!ENTITY signontype.label "Típus">
+<!ENTITY type_form.label "Űrlap">
+<!ENTITY type_form.accesskey "p">
+<!ENTITY type_httpauth.label "HTTP azonosítás">
+<!ENTITY type_httpauth.accesskey "a">
+<!ENTITY type_other.label "Más típus">
+<!ENTITY type_other.accesskey "t">
+<!ENTITY hostname.label "Kiszolgáló">
+<!ENTITY hostname.tooltip "Protokol/kiszolgáló amelyen a jelszó lesz használva (pl. http://www.pelda.com)">
+<!ENTITY formSubmitURL.label "Előtag elküldése">
+<!ENTITY formSubmitURL.tooltip "Az elküldött űrlap címének előtagja">
+<!ENTITY httpRealm.label "HTTP azonosítás">
+<!ENTITY httpRealm.tooltip "Megegyező HTTP azonosítás keresése">
+<!ENTITY username.label "Felhasználónév">
+<!ENTITY username.tooltip "Megjegyezendő felhasználónév">
+<!ENTITY password.label "Jelszó">
+<!ENTITY password.tooltip "Megjegyezendő jelszó">
+<!ENTITY usernameField.label "Felhasználónév-mező neve">
+<!ENTITY usernameField.tooltip "A felhasználónév-mező név attribútuma">
+<!ENTITY passwordField.label "Jelszó-mező neve">
+<!ENTITY passwordField.tooltip "A jelszó-mező név attribútuma">
+<!ENTITY showPassword.label "Megjelenítés">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Jelszó megjelenítése/elrejtése">
+<!ENTITY hidePassword.label "Elrejtés">
+<!ENTITY hidePassword.accesskey "E">
+<!ENTITY guessfrompage.label "Betöltés a jelenlegi weboldalról">
+<!ENTITY guessfrompage.accesskey "w">
+<!ENTITY guessfrompage.tooltip "Az adat betöltésének megkísérlése a jelenlegi weboldalról">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+-->
+<!ENTITY welcometospe "Üdvözöljük a Saved Password Editor kiterjesztében">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Köszönjük, hogy a <a id='addonlink'>Saved Password Editor</a> kiterjesztést választotta. A szerkesztés funkció elérhető az Eszközök &gt; Beállítások, vagy Szerkesztés &gt; Beállítások (az operációs rendszertől függően) menüből a &quot;<a id='security'>Biztonság</a>&quot; panel kiválasztásával. Kattintson a &quot;Mentett jelszavak…&quot; gombra. A megjelenő párbeszédablak tartalmazza a &quot;Szerkesztés&quot; és &quot;Új&quot; gombokat. Egy eszköztár gomb is rendelkezésre áll, amely a Nézet &gt; Eszköztárak &gt; Testreszabás…, vagy jobb kattintással az eszköztáron és a &quot;Testreszabás…&quot; menüpont kiválasztásával érhető el.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX -->
+<!ENTITY welcomepara1_sm "Köszönjük, hogy a <a id='addonlink'>Saved Password Editor</a> kiterjesztést választotta. A szerkesztés funkció elérhető az Eszközök &gt; Beállítások, vagy Szerkesztés &gt; Beállítások (az operációs rendszertől függően) menüből a &quot;<a id='passwords'>Jelszavak</a>&quot; panel kiválasztásával az &quot;Adatvédelem &amp; Biztonság&quot;-ra, majd a &quot;Mentett jelszavak kezelése&quot; gombra kattintva. A megjelenő párbeszédablak tartalmazza a &quot;Szerkesztés&quot; és &quot;Új&quot; gombokat. Egy eszköztár gomb is rendelkezésre áll, jobb kattintással az eszköztáron és a &quot;Testreszabás…&quot; menüpont kiválasztásával érhető el.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Jegyezze meg, hogy a Mentett jelszavak párbeszédablak <span id='appname'/> komponensen alapszik, és nem kizárólag e kiterjesztés által érhető el. Kivételt képez a két hozzáadott gomb. Az eszköztár gomb csak a gyorsabb elérhetőség érdekében lett beépítve.">

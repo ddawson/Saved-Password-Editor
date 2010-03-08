@@ -1,0 +1,105 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
+<!ENTITY locale "pt-BR">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Senhas Salvas">
+<!ENTITY savedpasswords.accesskey "S">
+<!ENTITY savedpasswords.tooltip "Abre a janela de Senhas Salvas">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Preferências do Editor de Senhas Salvas">
+<!ENTITY alwaysLogin.label "Forçar a entrada ao editar senhas">
+<!ENTITY alwaysLogin.tooltip "Força a entrada de sua senha mestre (se houver) toda vez que editar uma senha">
+<!-- SAVED PASSWORDS DIALOG -->
+<!ENTITY newentry.label "Nova">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Editar">
+<!ENTITY editentry.accesskey "E">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Editor de Senhas Salvas">
+<!ENTITY signontype.label "Tipo">
+<!ENTITY type_form.label "Formulário Web">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "Autenticação HTTP">
+<!ENTITY type_httpauth.accesskey "A">
+<!ENTITY type_other.label "Outro">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY hostname.label "Domínio">
+<!ENTITY hostname.tooltip "Domínio ao qual se aplica a senha (e.g. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Pré-definição da Entrada">
+<!ENTITY formSubmitURL.tooltip "Define valor em campo de formulário">
+<!ENTITY httpRealm.label "Domínio HTTP">
+<!ENTITY httpRealm.tooltip "Domínio HTTP a aplicar">
+<!ENTITY username.label "Nome de Usuário">
+<!ENTITY username.tooltip "Nome de Usuário a relembrar">
+<!ENTITY password.label "Senha">
+<!ENTITY password.tooltip "Senha a relembrar">
+<!ENTITY usernameField.label "Nome do campo de usuário">
+<!ENTITY usernameField.tooltip "O nome para o campo de usuário do formulário">
+<!ENTITY passwordField.label "Nome do campo de senha">
+<!ENTITY passwordField.tooltip "O nome para o campo de senha do formulário">
+<!ENTITY showPassword.label "Mostrar">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Alternar visibilidade da senha">
+<!ENTITY hidePassword.label "Esconder">
+<!ENTITY hidePassword.accesskey "E">
+<!ENTITY guessfrompage.label "Obter dados da página atual">
+<!ENTITY guessfrompage.accesskey "g">
+<!ENTITY guessfrompage.tooltip "Preencha o formulário com base em um formulário de login provável na página atual">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+-->
+<!ENTITY welcometospe "Bem-Vindo ao Editor de Senhas Salvas">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível aplicar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), escolhendo &quot;<a id='security'>Segurança</a>&quot; e depois teclando no botão &quot;senhas salvas…&quot;. Os botões &quot;Editar&quot; e &quot;Novo&quot; estarão disponíveis na barra de ferramentas. Para utilizá-los, selecione Exibir &gt; Barra de ferramentas &gt; Personalizar…, ou clique com o botão direito na barra de ferramentas e escolha &quot;Personalizar…&quot;">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- TRANSLATORS: Note the lack of View > Toolbars > Customize… -->
+<!ENTITY welcomepara1_sm "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível aplicar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), indo até &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade &amp; Segurança&quot;, depois clicando no botão &quot;Gerenciar Senhas Salvas&quot;. Botões &quot;Editar&quot; e &quot;Novo&quot; estarão disponíveis. Para acessá-los clique com o botão direito na barra de ferramentas e escolha &quot;Personalizar…&quot;">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "O administrador de Senhas Salvas é um componente nativo do <span id='appname'/> e não é fornecido pela extensão Editor de Senhas Salvas, exceto no caso dos dois botões que acrescenta. O botão da barra de ferramentas é fornecido apenas para sua conveniência, na expectativa de que alguns usuários desta extensão gostariam de acessar a ferramenta com muito mais freqüência do que usualmente.">

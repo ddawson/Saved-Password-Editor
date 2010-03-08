@@ -1,0 +1,112 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     <http://www.ietf.org/rfc/rfc1766.txt>. COUNTRY is for dialectal variation
+     and is not necessary for locales without such variation. You can probably
+     copy the locale tag of your localized Mozilla application (Firefox, etc.).
+     Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+
+-->
+<!ENTITY locale "fr">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left
+     Generally, this should follow the direction of your writing system. 
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Mots de passe enregistrés">
+<!ENTITY savedpasswords.accesskey "p">
+<!ENTITY savedpasswords.tooltip "Ouvre la fenêtre de dialogue des mots de passe sauvegardés">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
+<!ENTITY alwaysLogin.label "Demander obligatoirement un identifiant pour modifier un mot de passe">
+<!ENTITY alwaysLogin.tooltip "Force à entrer votre mot de passe principal (s'il existe) à chaque modification du mot de passe">
+<!-- SAVED PASSWORDS DIALOG -->
+<!ENTITY newentry.label "Nouveau">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Modifier">
+<!ENTITY editentry.accesskey "M">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Type">
+<!ENTITY type_form.label "Forumlaire Web">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "Authentification HTTP">
+<!ENTITY type_httpauth.accesskey "A">
+<!ENTITY type_other.label "Autre">
+<!ENTITY type_other.accesskey "u">
+<!ENTITY hostname.label "Hôte">
+<!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (e.g. http://www.exemple.com)">
+<!ENTITY formSubmitURL.label "Soumettre un préfixe">
+<!ENTITY formSubmitURL.tooltip "Préfixe de l'adresse pour soumettre un formulaire">
+<!ENTITY httpRealm.label "Domaine HTTP">
+<!ENTITY httpRealm.tooltip "Domaine HTTP à retrouver">
+<!ENTITY username.label "Nom d'utilisateur">
+<!ENTITY username.tooltip "Nom d'utilisateur à retenir">
+<!ENTITY password.label "Mot de passe">
+<!ENTITY password.tooltip "Mot de passe à retenir">
+<!ENTITY usernameField.label "Champ du nom d'utilisateur">
+<!ENTITY usernameField.tooltip "L'attribut du nom pour le champ de saisie du nom d'utilisateur">
+<!ENTITY passwordField.label "Nom du champ de mot de passe">
+<!ENTITY passwordField.tooltip "L'attribut du nom pour le champ de saisie du mot de passe">
+<!ENTITY showPassword.label "Afficher">
+<!ENTITY showPassword.accesskey "A">
+<!ENTITY showPassword.tooltip "Bascule afficher/masquer le mot de passe">
+<!ENTITY hidePassword.label "Masquer">
+<!ENTITY hidePassword.accesskey "M">
+<!ENTITY guessfrompage.label "Essai pour la page courante">
+<!ENTITY guessfrompage.accesskey "E">
+<!ENTITY guessfrompage.tooltip "Remplit ce champ en essayant l'identifiant probable de la page courante">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+-->
+<!ENTITY welcometospe "Bienvenue dans l'extension Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre sytème d'exploitation), puis le panneau &quot;<a id='security'>Sécurité</a>&quot;, puis en cliquant sur le bouton &quot;Mots de passe enregistrés…&quot;. Le dialogue propose maintenant les boutons &quot;Modifier&quot; et &quot;Nouveau&quot;. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien cliquez droit dans la barre d'outils
+et choisissez &quot;Personnaliser…&quot;">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX -->
+<!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis naviguez jusqu'au panneau &quot;<a id='passwords'>Mots de passe</a>&quot; dans la catégorie &quot;<a id='security'>Confidentialité et sécurité</a>&quot;, puis cliquez sur le bouton &quot;Mots de passe enregistrés…&quot;. Le dialogue propose maintenant les boutons &quot;Modifier&quot; et &quot;Nouveau&quot;. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot;">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Notez que le dialogue des mots de passe enregistrés est un composant de base de <span id='appname'/>, et qu'il n'est pas fourni avec l'extension, sauf les deux boutons ajoutés. Le bouton de la barre d'outils n'est fourni que pour votre confort, dans l'espoir que certains utilisateurs de cette extension voudront accéder au dialogue beaucoup plus souvent qu'avec une autre solution.">

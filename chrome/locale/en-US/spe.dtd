@@ -14,39 +14,42 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
 
+-->
 <!-- LOCALE
 
      Format: language-COUNTRY according to RFC 1766
-     <http://www.ietf.org/rfc/rfc1766.txt>. COUNTRY is for dialectal variation
-     and is not necessary for locales without such variation. You can probably
-     copy the locale tag of your localized Mozilla application (Firefox, etc.).
-     Examples:
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
 
      en-US  - English in US
      en-GB  - English in Great Britain
      de-DE  - German in Germany
      ru     - Russian (no specific country)
+
 -->
 <!ENTITY locale "en-US">
-
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left
-     Generally, this should follow the direction of your writing system. -->
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
 <!ENTITY layoutdirection "LTR">
-
 <!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
 <!ENTITY savedpasswords.label "Saved Passwords">
 <!ENTITY savedpasswords.accesskey "v">
 <!ENTITY savedpasswords.tooltip "Open the Saved Passwords dialog">
+<!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Saved Password Editor preferences">
 <!ENTITY alwaysLogin.label "Force login when editing a password">
-<!ENTITY alwaysLogin.tooltip
-  "Forces you to enter your master password (if you have one) every time you edit a password">
+<!ENTITY alwaysLogin.tooltip "Forces you to enter your master password (if you have one) every time you edit a password">
+<!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "New">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Edit">
 <!ENTITY editentry.accesskey "E">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Web form">
@@ -56,8 +59,7 @@
 <!ENTITY type_other.label "Other">
 <!ENTITY type_other.accesskey "O">
 <!ENTITY hostname.label "Host">
-<!ENTITY hostname.tooltip
-  "Protocol/hostname to which password applies (e.g. http://www.example.com)">
+<!ENTITY hostname.tooltip "Protocol/hostname to which password applies (e.g. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Submit prefix">
 <!ENTITY formSubmitURL.tooltip "Prefix of form submission address">
 <!ENTITY httpRealm.label "HTTP realm">
@@ -67,11 +69,9 @@
 <!ENTITY password.label "Password">
 <!ENTITY password.tooltip "The password to remember">
 <!ENTITY usernameField.label "Username field name">
-<!ENTITY usernameField.tooltip
-  "The name attribute for the appropriate username field in the form">
+<!ENTITY usernameField.tooltip "The name attribute for the appropriate username field in the form">
 <!ENTITY passwordField.label "Password field name">
-<!ENTITY passwordField.tooltip
-  "The name attribute for the appropriate password field in the form">
+<!ENTITY passwordField.tooltip "The name attribute for the appropriate password field in the form">
 <!ENTITY showPassword.label "Show">
 <!ENTITY showPassword.accesskey "S">
 <!ENTITY showPassword.tooltip "Toggle password visibility">
@@ -79,53 +79,29 @@
 <!ENTITY hidePassword.accesskey "H">
 <!ENTITY guessfrompage.label "Guess from current page">
 <!ENTITY guessfrompage.accesskey "G">
-<!ENTITY guessfrompage.tooltip
-  "Fill in this form based on a likely login form on the current page">
-
+<!ENTITY guessfrompage.tooltip "Fill in this form based on a likely login form on the current page">
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The &lt; and &gt;
-     codes produce < and > respectively, but don't reverse them; that will be
-     done automatically for right-to-left text. &quot; produces a double quote
-     character. Please substitute whatever is appropriate in your locale, but
-     anything other than <, >, ", ', and & must be in UTF-8 or use numerical
-     entities (e.g. &#x89ab;); named entities other than the ones for those
-     five characters (&lt; &gt; &quot; &apos; &amp;) are NOT defined in this
-     context. Double quote characters must be encoded as &quot; since the
-     strings are already double-quote delimited.
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
 -->
 <!ENTITY welcometospe "Welcome to Saved Password Editor">
-
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx
-"Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may
-access the editing functionality by going to Tools &gt; Options, or
-Edit &gt; Preferences (depending on your operating system), selecting the
-&quot;<a id='security'>Security</a>&quot; pane, then clicking on the
-&quot;Saved Passwords…&quot; button. The dialog now contains &quot;Edit&quot;
-and &quot;New&quot; buttons. A toolbar button is also available for your
-convenience. To access it, select View &gt; Toolbars &gt; Customize…, or
-right-click on the toolbar and select &quot;Customize…&quot;">
-
+<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. The dialog now contains &quot;Edit&quot; and &quot;New&quot; buttons. A toolbar button is also available for your convenience. To access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;">
 <!-- Paragraph 1, SeaMonkey version -->
-<!-- TRANSLATORS: Note the lack of View > Toolbars > Customize… -->
-<!ENTITY welcomepara1_sm
-"Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may
-access the editing functionality by going to Tools &gt; Options, or
-Edit &gt; Preferences (depending on your operating system), navigating to the
-&quot;<a id='passwords'>Passwords</a>&quot; pane under
-&quot;Privacy &amp; Security&quot;, then clicking on the &quot;Manage Stored
-Passwords&quot; button. The dialog now contains &quot;Edit&quot; and
-&quot;New&quot; buttons. A toolbar button is also available for your
-convenience. To access it, right-click on the toolbar and select
-&quot;Customize…&quot;">
-
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX -->
+<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy &amp; Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. The dialog now contains &quot;Edit&quot; and &quot;New&quot; buttons. A toolbar button is also available for your convenience. To access it, right-click on the toolbar and select &quot;Customize…&quot;">
 <!-- Paragraph 2 -->
-<!-- The <span> element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2
-"Note that the Saved Passwords dialog is a base component of
-<span id='appname'/>, and is not being provided by this extension, except for
-the two added buttons. The toolbar button is provided only for convenience, in
-the expectation that some users of this extension will want to access the
-dialog much more frequently than they might otherwise.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the two added buttons. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">
