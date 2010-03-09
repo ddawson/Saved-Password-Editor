@@ -113,61 +113,73 @@ function togglePasswordView () {
 }
 
 function guessParameters () {
+  function walkTree (win) {
+    var curDoc = win.document;
+    
+    try {
+      // Get the host prefix;
+      var curLocation = win.location;
+      var hostname = curLocation.protocol + "//" + curLocation.host;
+
+      // Locate a likely login form and its fields
+      var pwdFields = curDoc.evaluate(
+        '//form//input[@type="password"]', curDoc, null,
+        XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+      if (pwdFields.snapshotLength == 0) throw null;
+
+      for (var i = 0; i < pwdFields.snapshotLength; i++) {
+        var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
+        var unameField = curDoc.evaluate(
+          './/input[@type="text" ' +
+                   'and not(preceding::input[@type="password"])][last()]',
+          form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
+            singleNodeValue;
+        if (unameField) break;
+      }
+
+      if (!unameField) throw null;
+
+      // Construct the submit prefix
+      var formAction = form.getAttribute("action");
+      var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
+      var formSubmitURL;
+      if (res)
+        formSubmitURL = res[1];
+      else
+        formSubmitURL = hostname;
+
+      // Populate the editor form
+      el("hostname_text").value = hostname;
+      el("formSubmitURL_text").value = formSubmitURL;
+      el("username_text").value = unameField.value;
+      el("password_text").value = pwdField.value;
+      el("usernameField_text").value = unameField.getAttribute("name");
+      el("passwordField_text").value = pwdField.getAttribute("name");
+      return true;
+    } catch (ex) {}
+
+    // See if any frame or iframe contains a login form
+    var frames = win.frames;
+    for (var i = 0; i < frames.length; i++) {
+      if (walkTree(frames[i])) return true;
+    }
+
+    return false;
+  }
+
   // Locate the browser object for the last seen tab
-  var curBrowser =
+  var curWin =
     Cc["@mozilla.org/appshell/window-mediator;1"].
     getService(Ci.nsIWindowMediator).getMostRecentWindow("navigator:browser").
-    document.getElementById("content").selectedBrowser;
+    document.getElementById("content").selectedBrowser.contentWindow;
 
-  // Get the host prefix
-  var curLocation = curBrowser.contentWindow.location;
-  var hostname = curLocation.protocol + "//" + curLocation.host;
-
-  // Locate a likely login form and its fields
-  var curDoc = curBrowser.contentDocument;
-  var pwdFields = curDoc.evaluate(
-    '//form//input[@type="password"]', curDoc, null,
-    XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-  if (pwdFields.snapshotLength == 0) {
+  // Attempt to find a login form
+  if (!walkTree(curWin)) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
       alert(window, strBundle.getString("error"),
             strBundle.getString("nologinform"));
-    return;
   }
-  for (var i = 0; i < pwdFields.snapshotLength; i++) {
-    var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
-    var unameField = curDoc.evaluate(
-      './/input[@type="text" and not(preceding::input[@type="password"])]' +
-        '[last()]',
-      form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).singleNodeValue;
-    if (unameField) break;
-  }
-
-  if (!unameField) {
-    Cc["@mozilla.org/embedcomp/prompt-service;1"].
-      getService(Ci.nsIPromptService).
-      alert(window, strBundle.getString("error"),
-            strBundle.getString("nologinform"));
-    return;
-  }
-
-  // Construct the submit prefix
-  var formAction = form.getAttribute("action");
-  var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
-  var formSubmitURL;
-  if (res)
-    formSubmitURL = res[1];
-  else
-    formSubmitURL = hostname;
-
-  // Populate the editor form
-  el("hostname_text").value = hostname;
-  el("formSubmitURL_text").value = formSubmitURL;
-  el("username_text").value = unameField.value;
-  el("password_text").value = pwdField.value;
-  el("usernameField_text").value = unameField.getAttribute("name");
-  el("passwordField_text").value = pwdField.getAttribute("name");
 }
 
 function setNewSignon () {
