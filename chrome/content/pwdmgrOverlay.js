@@ -63,7 +63,7 @@ const spEditor = {
     var ret = { newSignon: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal", signon, ret);
+      "centerscreen,dependent,dialog,chrome,modal,resizable", signon, ret);
     if (!ret.newSignon) return;
     passwordmanager.modifyLogin(signon, ret.newSignon);
     LoadSignons();
@@ -73,7 +73,7 @@ const spEditor = {
     var ret = { newSignon: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal", null, ret);
+      "centerscreen,dependent,dialog,chrome,modal,resizable", null, ret);
     if (!ret.newSignon) return;
     try {
       passwordmanager.addLogin(ret.newSignon);
