@@ -42,8 +42,9 @@ window.addEventListener(
     var appId = Cc["@mozilla.org/xre/app-info;1"].
                   getService(Ci.nsIXULAppInfo).ID;
     var appType =
-      appId == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}" ? 0  // Firefox
-                                                        : 1; // SeaMonkey
+      (appId == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"          // Firefox
+       || appId == "{a463f10c-3994-11da-9945-000d60ca027b}") ? 0  // Flock
+                                                             : 1; // SeaMonkey
     el("addonlink").setAttribute(
       "href", "https://addons.mozilla.org/firefox/addon/60265/");
     if (appType == 0) {

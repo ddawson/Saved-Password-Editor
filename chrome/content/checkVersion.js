@@ -19,7 +19,7 @@
 {
   let checkVersion = function () {
     const PREFNAME = "currentVersion",
-            THISVERSION = "1.1.1",
+            THISVERSION = "1.1.4",
             COMPAREVERSION = "1.0",
             Cc = Components.classes, Ci = Components.interfaces;
     var prefs = Cc["@mozilla.org/preferences-service;1"].
@@ -43,8 +43,9 @@
     }
 
     function welcome () {
-      if (Application.id == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}") {
-        // Firefox
+      if (Application.id == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
+          || Application.id == "{a463f10c-3994-11da-9945-000d60ca027b}") {
+        // Firefox/Flock
         var url = "chrome://savedpasswordeditor/content/welcome_fx.xhtml";
       } else {
         // SeaMonkey
