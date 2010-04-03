@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>savedpasswordeditor@daniel.dawson</em:id>
     <em:name>Saved Password Editor</em:name>
-    <em:version>1.1.4</em:version>
+    <em:version>1.1.5</em:version>
     <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
     <em:translator>de-DE: /usr/bin/tux (BabelZilla)</em:translator>
     <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
@@ -13,6 +13,7 @@
     <em:translator>nl: markh (BabelZilla)</em:translator>
     <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
     <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+    <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
     <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
     <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
     <em:localized>
@@ -27,6 +28,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</em:description>
       </Description>
@@ -41,6 +43,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</em:description>
       </Description>
@@ -55,6 +58,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</em:description>
       </Description>
@@ -69,6 +73,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Jelszavak szerkesztése a jelszókezelőben.</em:description>
       </Description>
@@ -83,6 +88,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</em:description>
       </Description>
@@ -97,6 +103,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
       </Description>
@@ -111,8 +118,24 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</em:description>
+      </Description>
+      <Description>
+        <em:locale>vi</em:locale>
+        <em:name>Saved Password Editor</em:name>
+        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
+        <em:translator>de-DE: /usr/bin/tux (BabelZilla)</em:translator>
+        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
+        <em:translator>fr: Goofy (BabelZilla)</em:translator>
+        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
+        <em:translator>nl: markh (BabelZilla)</em:translator>
+        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
+        <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
+        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
+        <em:description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</em:description>
       </Description>
       <Description>
         <em:locale>zh-CN</em:locale>
@@ -125,6 +148,7 @@
         <em:translator>nl: markh (BabelZilla)</em:translator>
         <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
         <em:translator>ru: Pyryatynsky Vitaly "PiVV" (BabelZilla)</em:translator>
+        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
         <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
         <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
       </Description>
