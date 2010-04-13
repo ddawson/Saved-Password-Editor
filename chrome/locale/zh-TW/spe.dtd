@@ -1,0 +1,112 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+
+-->
+<!ENTITY locale "zh-TW">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "已存密碼">
+<!ENTITY savedpasswords.accesskey "v">
+<!ENTITY savedpasswords.tooltip "開啟密碼管理員">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Saved Password Editor 偏好設定">
+<!ENTITY alwaysLogin.label "編輯密碼時強制登入">
+<!ENTITY alwaysLogin.tooltip "強制每次編輯密碼時都必須輸入主控密碼（如果有設定）">
+<!-- SAVED PASSWORDS DIALOG -->
+<!ENTITY newentry.label "新增">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "編輯">
+<!ENTITY editentry.accesskey "E">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "類型">
+<!ENTITY type_form.label "網頁表單">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "HTTP 驗證">
+<!ENTITY type_httpauth.accesskey "a">
+<!ENTITY type_other.label "其他">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY hostname.label "主機（Host）">
+<!ENTITY hostname.tooltip "密碼要套用的協定/主機名稱（例：http://www.example.com）">
+<!ENTITY formSubmitURL.label "提交前置詞（Prefix）">
+<!ENTITY formSubmitURL.tooltip "表單送出目標位址的前置詞">
+<!ENTITY httpRealm.label "HTTP realm">
+<!ENTITY httpRealm.tooltip "要符合的 HTTP realm">
+<!ENTITY username.label "使用者名稱">
+<!ENTITY username.tooltip "要記憶的使用者名稱">
+<!ENTITY password.label "密碼">
+<!ENTITY password.tooltip "要記憶的密碼">
+<!ENTITY usernameField.label "帳號欄位名稱">
+<!ENTITY usernameField.tooltip "表單中對應使用者名稱欄位的NAME屬性">
+<!ENTITY passwordField.label "密碼欄位名稱">
+<!ENTITY passwordField.tooltip "表單中對應密碼欄位的NAME屬性">
+<!ENTITY showPassword.label "顯示">
+<!ENTITY showPassword.accesskey "S">
+<!ENTITY showPassword.tooltip "切換密碼可見性">
+<!ENTITY hidePassword.label "隱藏">
+<!ENTITY hidePassword.accesskey "H">
+<!ENTITY guessfrompage.label "由目前頁面推測">
+<!ENTITY guessfrompage.accesskey "G">
+<!ENTITY guessfrompage.tooltip "以目前頁面上相似的登入表單為基準填寫此表單">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+-->
+<!ENTITY welcometospe "Welcome to Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以從工具 &gt; 選項、或者編輯 &gt; 偏好設定（依作業系統而定），選擇「<a id='security'>安全</a>」面板後點選「已存密碼…」按鈕來使用編輯功能；對話視窗上已經加入了「編輯」和「新增」的按鈕。為方便起見也有工具列按鈕，選擇檢視 &gt; 工具列 &gt; 自訂…、或者在工具列上按右鍵選擇「自訂…」即可設定使用。">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
+<!ENTITY welcomepara1_sm "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以 Tools &gt; Options、或者 Edit &gt; Preferences（依作業系統而定），移至 &quot;Privacy &amp; Security&quot; 分類下的「<a id='passwords'>Passwords</a>」面板後點選「Manage Stored Passwords」按鈕來使用編輯功能；對話視窗上已經加入了「編輯」和「新增」的按鈕。為方便起見也有工具列按鈕，在工具列上按右鍵選擇「Customize…」即可設定使用。">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "請注意，已存密碼的對話視窗是 <span id='appname'/> 的基本元件，由本擴充套件提供的僅有新增的兩個按鈕。工具列按鈕則是預期本套件的部份使用者需要開啟密碼管理員的次數可能比想像還頻繁，為便於使用而提供。">

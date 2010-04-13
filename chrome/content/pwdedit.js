@@ -116,29 +116,28 @@ function guessParameters () {
   function walkTree (win) {
     var curDoc = win.document;
     
-    try {
-      // Get the host prefix;
-      var curLocation = win.location;
-      var hostname = curLocation.protocol + "//" + curLocation.host;
+    // Get the host prefix;
+    var curLocation = win.location;
+    var hostname = curLocation.protocol + "//" + curLocation.host;
 
-      // Locate a likely login form and its fields
-      var pwdFields = curDoc.evaluate(
-        '//form//input[@type="password"]', curDoc, null,
-        XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-      if (pwdFields.snapshotLength == 0) throw null;
+    // Locate a likely login form and its fields
+    var pwdFields = curDoc.evaluate(
+      '//form//input[translate(@type, "PASWORD", "pasword")="password"]',
+      curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+    if (pwdFields.snapshotLength == 0) throw null;
 
-      for (var i = 0; i < pwdFields.snapshotLength; i++) {
-        var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
-        var unameField = curDoc.evaluate(
-          './/input[@type="text" ' +
-                   'and not(preceding::input[@type="password"])][last()]',
-          form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
-            singleNodeValue;
-        if (unameField) break;
-      }
+    for (var i = 0; i < pwdFields.snapshotLength; i++) {
+      var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
+      var unameField = curDoc.evaluate(
+        '(.//input[(not(@type) or translate(@type, "TEX", "tex")="text") ' +
+          'and not(preceding::input[' +
+          'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
+        form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
+          singleNodeValue;
+      if (unameField) break;
+    }
 
-      if (!unameField) throw null;
-
+    if (unameField) {
       // Construct the submit prefix
       var formAction = form.getAttribute("action");
       var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
@@ -156,7 +155,7 @@ function guessParameters () {
       el("usernameField_text").value = unameField.getAttribute("name");
       el("passwordField_text").value = pwdField.getAttribute("name");
       return true;
-    } catch (ex) {}
+    }
 
     // See if any frame or iframe contains a login form
     var frames = win.frames;

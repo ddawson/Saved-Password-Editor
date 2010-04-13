@@ -12,6 +12,7 @@ locale	savedpasswordeditor	pt-BR	chrome/locale/pt-BR/
 locale	savedpasswordeditor	ru	chrome/locale/ru/
 locale	savedpasswordeditor	vi	chrome/locale/vi/
 locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/
+locale	savedpasswordeditor	zh-TW	chrome/locale/zh-TW/
 
 # Appearance
 skin	savedpasswordeditor	default	chrome/skin/
