@@ -24,5 +24,5 @@ function speOpenSavedPasswords () {
     spWin.focus();
   else
     window.openDialog("chrome://passwordmgr/content/passwordManager.xul",
-                      "", "chrome,titlebar,toolbar,centerscreen");
+                      "", "chrome,titlebar,toolbar,centerscreen,resizable");
 }

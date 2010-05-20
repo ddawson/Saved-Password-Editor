@@ -19,7 +19,7 @@
 {
   let checkVersion = function () {
     const PREFNAME = "currentVersion",
-            THISVERSION = "1.1.4",
+            THISVERSION = "1.1.7",
             COMPAREVERSION = "1.0",
             Cc = Components.classes, Ci = Components.interfaces;
     var prefs = Cc["@mozilla.org/preferences-service;1"].

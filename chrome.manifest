@@ -2,13 +2,14 @@
 content	savedpasswordeditor		chrome/content/
 
 # Language-specific content
-locale	savedpasswordeditor	de-DE	chrome/locale/de-DE/
+locale	savedpasswordeditor	de	chrome/locale/de/
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
 locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
 locale	savedpasswordeditor	fr	chrome/locale/fr/
 locale	savedpasswordeditor	hu	chrome/locale/hu/
 locale	savedpasswordeditor	nl	chrome/locale/nl/
 locale	savedpasswordeditor	pt-BR	chrome/locale/pt-BR/
+locale	savedpasswordeditor	pt-PT	chrome/locale/pt-PT/
 locale	savedpasswordeditor	ru	chrome/locale/ru/
 locale	savedpasswordeditor	vi	chrome/locale/vi/
 locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/

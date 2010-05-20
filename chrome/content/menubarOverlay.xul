@@ -36,4 +36,6 @@
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
+  <script type="text/javascript"
+          src="chrome://savedpasswordeditor/content/menubarOverlay.js"/>
 </overlay>

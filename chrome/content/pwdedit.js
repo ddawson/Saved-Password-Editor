@@ -124,7 +124,7 @@ function guessParameters () {
     var pwdFields = curDoc.evaluate(
       '//form//input[translate(@type, "PASWORD", "pasword")="password"]',
       curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-    if (pwdFields.snapshotLength == 0) throw null;
+    if (pwdFields.snapshotLength == 0) return false;
 
     for (var i = 0; i < pwdFields.snapshotLength; i++) {
       var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
