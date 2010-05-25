@@ -1,0 +1,112 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+
+-->
+<!ENTITY locale "sr">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Сачуване лозинке">
+<!ENTITY savedpasswords.accesskey "С">
+<!ENTITY savedpasswords.tooltip "Отвори прозорче сачуваних лозинки">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Saved Password Editor поставке">
+<!ENTITY alwaysLogin.label "Присили пријављивање у току измене лозинке">
+<!ENTITY alwaysLogin.tooltip "Присиљава Вас да унесете своју главну лозинку (ако је имате) сваки пут када измените лозинку">
+<!-- SAVED PASSWORDS DIALOG -->
+<!ENTITY newentry.label "Ново">
+<!ENTITY newentry.accesskey "Н">
+<!ENTITY editentry.label "Уреди">
+<!ENTITY editentry.accesskey "У">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Врста">
+<!ENTITY type_form.label "Веб образац">
+<!ENTITY type_form.accesskey "В">
+<!ENTITY type_httpauth.label "HTTP пријављивање">
+<!ENTITY type_httpauth.accesskey "п">
+<!ENTITY type_other.label "Остало">
+<!ENTITY type_other.accesskey "О">
+<!ENTITY hostname.label "Домаћин">
+<!ENTITY hostname.tooltip "Протокол/домаћин на којем се лозинка примењује (нпр. http://www.primer.com)">
+<!ENTITY formSubmitURL.label "Пошаљи префикс">
+<!ENTITY formSubmitURL.tooltip "Префикс форме адресе за подношење">
+<!ENTITY httpRealm.label "HTTP област">
+<!ENTITY httpRealm.tooltip "HTTP област за поклапање">
+<!ENTITY username.label "Корисничко име">
+<!ENTITY username.tooltip "Корисничко име за памћење">
+<!ENTITY password.label "Лозинка">
+<!ENTITY password.tooltip "Лозинка за памћење">
+<!ENTITY usernameField.label "Поље корисничког имена">
+<!ENTITY usernameField.tooltip "Особина имена за одговарајуће поље корисничког имена у формулару">
+<!ENTITY passwordField.label "Поље за лозинку">
+<!ENTITY passwordField.tooltip "Особина имена за одговарајуће поље лозинке у формулару">
+<!ENTITY showPassword.label "Прикажи">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Промени видљивост лозинке">
+<!ENTITY hidePassword.label "Сакриј">
+<!ENTITY hidePassword.accesskey "С">
+<!ENTITY guessfrompage.label "Претпостави из тренутне странице">
+<!ENTITY guessfrompage.accesskey "р">
+<!ENTITY guessfrompage.tooltip "Попуните овај образац који је погодан за пријављивање на тренутној страници">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+-->
+<!ENTITY welcometospe "Добро дошли у Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Хвала Вам што користите <a id='addonlink'>Saved Password Editor</a>. Почните с коришћењем додатка тако што ћете ићи на Алатке &gt; Опције, или Уређивање &gt; Подешавања (у зависности од тога који оперативни систем користите). Изаберите „<a id='security'>Безбедност</a>“ језичак и кликните на дугме „Сачуване лозинке…“. Појавиће се прозорче које садржи дугмиће „Уреди“ и „Ново“. Алатница је такође доступна на Вашу погодност. Да бисте јој приступили, изаберите Приказ &gt; Панели алата &gt; Прилагоди…, или идите десни клик на алатницу и изаберите „Прилагоди…“.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
+<!ENTITY welcomepara1_sm "Хвала Вам што користите <a id='addonlink'>Saved Password Editor</a>. Почните с коришћењем додатка тако што ћете ићи на Tools &gt; Options, или Edit &gt; Preferences (у зависности од тога који оперативни систем користите). Изаберите језичак „<a id='passwords'>Passwords</a>“ под „Privacy &amp; Security“ и кликните на дугме „Manage Stored Passwords“. Појавиће се прозорче које садржи дугмиће „Edit“ и „New“. Алатница је такође доступна на Вашу погодност. Да бисте јој приступили, идите десни клик на алатницу и изаберите „Customize…“.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Упамтите да је прозорче „Сачуване лозинке“ главна компонента <span id='appname'></span>, и није обезбеђена од стране овог додатка, осим за два додана дугмета. Алатница је само ту у нади да ће неки корисници желети да приступе прозорчету доста чешће него када не би било ње.">

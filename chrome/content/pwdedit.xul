@@ -46,6 +46,11 @@
     </radiogroup>
   </groupbox>
   <grid>
+    <columns>
+      <column/>
+      <column flex="1"/>
+      <column/>
+    </columns>
     <rows>
       <row>
         <label control="hostname_text" value="&hostname.label;"/>
