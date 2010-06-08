@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "pt-PT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -50,11 +53,22 @@
 <!ENTITY prefwindow.title "Preferências do Editor de Senhas guardadas">
 <!ENTITY alwaysLogin.label "Forçar o início de sessão ao editar a senha">
 <!ENTITY alwaysLogin.tooltip "Força-o a ter que escrever a sua senha mestra (se tiver) a cada vez que editar uma senha">
+<!ENTITY displayMenuitem.label "Incluir atalho no menu ferramentas">
+<!ENTITY displayMenuitem.tooltip "Adiciona o &quot;Saved Passwords&quot; ao menu ferramentas como um atalho para o gestor de senhas">
+<!ENTITY cloneButton_behavior.label "Comportamento do botão de clonagem">
+<!ENTITY cloneButton_disable.label "Desactivar">
+<!ENTITY cloneButton_disable.tooltip "Desactivar a função de clonagem completamente">
+<!ENTITY cloneButton_normal.label "Normal">
+<!ENTITY cloneButton_normal.tooltip "Mostrar um botão de clonar separado entre Editar e Novo">
+<!ENTITY cloneButton_combine.label "Combinar">
+<!ENTITY cloneButton_combine.tooltip "Novo botão actua como clone ao seleccionar a senha">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Novo">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Editar">
 <!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "Clonar">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Editor de Senhas guardadas">
 <!ENTITY signontype.label "Tipo">
@@ -101,6 +115,7 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "Bem vindo ao Editor de Senhas guardadas">
 <!-- Paragraph 1, Firefox version -->
@@ -109,6 +124,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 -->
 <!ENTITY welcomepara1_sm "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode usar a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), indo ao painel &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade e segurança&quot;, depois clicar no botão &quot;Gerir senhas guardadas&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">

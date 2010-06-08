@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "vi">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,11 +50,22 @@
 <!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
 <!ENTITY alwaysLogin.label "Bắt buộc đăng nhập khi sửa mật khẩu">
 <!ENTITY alwaysLogin.tooltip "Bắt buộc phải điền mật khẩu quản lý (nếu có) mỗi lần sửa mật khẩu">
+<!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
+<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào thanh Công Cụ để làm lệnh tắt gọi trình quản lý mật khẩu">
+<!ENTITY cloneButton_behavior.label "Chức năng của nút Nhân Bản">
+<!ENTITY cloneButton_disable.label "Tắt">
+<!ENTITY cloneButton_disable.tooltip "Tắt toàn bộ chức năng Nhân Bản">
+<!ENTITY cloneButton_normal.label "Bình thường">
+<!ENTITY cloneButton_normal.tooltip "Hiển thị một nút Nhân bản riêng biệt giữa Điều Chỉnh và Tạo Mới">
+<!ENTITY cloneButton_combine.label "Kết hợp">
+<!ENTITY cloneButton_combine.tooltip "Nút Tạo Mới hoạt động như nút Nhân Bản khi mật khẩu được chọn">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Tạo mới">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Sửa">
 <!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "Nhân Bản">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Kiểu">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Chào mừng bạn đến với Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -105,6 +120,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
 <!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;<a id='passwords'>Passwords</a>&quot; nằm ở &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Hộp thoại giờ sẽ chứa các nút &quot;Sửa&quot; và &quot;Tạo mới&quot;. Cũng sẽ có thêm một nút công cụ để tiện sử dụng hơn. Để dùng nó, hãy ấn chuột phải vào thanh Công Cụ và chọn &quot;Customize…&quot;">
 <!-- Paragraph 2 -->

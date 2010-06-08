@@ -15,6 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
 -->
 <!-- LOCALE
 
@@ -29,10 +30,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "pt-BR">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- Strings to be localized -->
@@ -44,13 +47,24 @@
 <!ENTITY prefwindow.title "Preferências do Editor de Senhas Salvas">
 <!ENTITY alwaysLogin.label "Forçar a entrada ao editar senhas">
 <!ENTITY alwaysLogin.tooltip "Força a entrada de sua senha mestre (se houver) toda vez que editar uma senha">
+<!ENTITY displayMenuitem.label "Incluir Atalhos no menu de Ferramentas">
+<!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas como um atalho para o gerenciados de senhas">
+<!ENTITY cloneButton_behavior.label "Comportamento do botão Clone">
+<!ENTITY cloneButton_disable.label "Desativar">
+<!ENTITY cloneButton_disable.tooltip "Desativa a função Clone completamente">
+<!ENTITY cloneButton_normal.label "Normal">
+<!ENTITY cloneButton_normal.tooltip "Exibe um botão Clone separado, entre Editar e Novo">
+<!ENTITY cloneButton_combine.label "Combinar">
+<!ENTITY cloneButton_combine.tooltip "O novo botão age como Clone quando uma senha é selecionada">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Nova">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Editar">
 <!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "Clone">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
-<!ENTITY savedpasswordeditor.title "Editor de Senhas Salvas">
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Tipo">
 <!ENTITY type_form.label "Formulário Web">
 <!ENTITY type_form.accesskey "W">
@@ -92,6 +106,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 -->
 <!ENTITY welcometospe "Bem-Vindo ao Editor de Senhas Salvas">

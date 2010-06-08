@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "ru">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,11 +50,22 @@
 <!ENTITY prefwindow.title "Редактор сохранённых паролей — Настройки">
 <!ENTITY alwaysLogin.label "Авторизоваться перед редактированием пароля">
 <!ENTITY alwaysLogin.tooltip "Заставляет вводить мастер-пароль (если он задан) каждый раз, когда вы редактируете пароль">
+<!ENTITY displayMenuitem.label "Добавить в меню Инструменты пункт быстрого вызова">
+<!ENTITY displayMenuitem.tooltip "Добавляет в меню Инструменты пункт «Сохранённые пароли» для быстрого вызова менеджера паролей">
+<!ENTITY cloneButton_behavior.label "Поведение кнопки «Дублировать»">
+<!ENTITY cloneButton_disable.label "Отключить">
+<!ENTITY cloneButton_disable.tooltip "Полностью отключает функцию дублирования">
+<!ENTITY cloneButton_normal.label "Обычная">
+<!ENTITY cloneButton_normal.tooltip "Отображает отдельную кнопку «Дублировать» между «Править» и «Новая»">
+<!ENTITY cloneButton_combine.label "Совмещённая">
+<!ENTITY cloneButton_combine.tooltip "Кнопка «Новая» при выборе пароля действует как «Дублировать»">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Новая">
 <!ENTITY newentry.accesskey "Н">
 <!ENTITY editentry.label "Править">
 <!ENTITY editentry.accesskey "П">
+<!ENTITY cloneentry.label "Дублировать">
+<!ENTITY cloneentry.accesskey "Д">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Редактор сохранённых паролей">
 <!ENTITY signontype.label "Тип">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Добро пожаловать в редактор сохранённых паролей">
 <!-- Paragraph 1, Firefox version -->
@@ -104,7 +119,8 @@
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX -->
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Спасибо за использование <a id='addonlink'>Редактора сохранённых паролей</a>. Получить доступ к функциям редактирования вы сможете через меню «Инструменты|Настройки…» или «Правка|Настройки…» (в зависимости от вашей операционной системы), переместившись на панель <a id='passwords'>«Пароли»</a> в раскрывающемся списке «Приватность и защита» и нажав кнопку «Управление сохранёнными паролями». Теперь диалоговое окно содержит кнопки «Править» и «Новая». Также, для вашего удобства, доступна кнопка панели инструментов. Чтобы добавить кнопку на панель щёлкните правой кнопкой мыши на панели инструментов и выберите «Настроить…».">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->

@@ -15,6 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
 -->
 <!-- LOCALE
 
@@ -29,10 +30,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "de-DE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- Strings to be localized -->
@@ -44,11 +47,22 @@
 <!ENTITY prefwindow.title "Einstellungen für den Passworteditor">
 <!ENTITY alwaysLogin.label "Anmeldung beim Ändern eines Passwortes erzwingen">
 <!ENTITY alwaysLogin.tooltip "Zwingt Sie dazu, jedes Mal Ihr Masterpasswort (falls vorhanden) einzugeben, wenn Sie ein Passwort ändern">
+<!ENTITY displayMenuitem.label "Eintrag im Extras-Menü anzeigen">
+<!ENTITY displayMenuitem.tooltip "Fügt &quot;Gespeicherte Passwörter&quot; zum Aufruf der Passwortverwaltung dem Extras-Menü hinzu">
+<!ENTITY cloneButton_behavior.label "Schaltflächenverhalten klonen">
+<!ENTITY cloneButton_disable.label "Deaktivieren">
+<!ENTITY cloneButton_disable.tooltip "Schaltet die Klonen-Funktion vollständig ab">
+<!ENTITY cloneButton_normal.label "Normal">
+<!ENTITY cloneButton_normal.tooltip "Zeigt eine separate Klonen-Schaltfläche zwischen &quot;Ändern&quot; und &quot;Neu&quot; an">
+<!ENTITY cloneButton_combine.label "Kombinieren">
+<!ENTITY cloneButton_combine.tooltip "Die &quot;Neu&quot;-Schaltfläche verhält sich wie &quot;Klonen&quot;, wenn ein Passwort ausgewählt ist">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Neu">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Ändern">
 <!ENTITY editentry.accesskey "e">
+<!ENTITY cloneentry.label "Klonen">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Passworteditor">
 <!ENTITY signontype.label "Typ">
@@ -93,6 +107,7 @@
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Willkommen im Passworteditor">
 <!-- Paragraph 1, Firefox version -->
@@ -100,7 +115,8 @@
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX -->
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;<a id='passwords'>Passwörter</a>&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Der Dialog enthält nun die Schaltflächen &quot;Ändern&quot; und &quot;Neu&quot;. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->

@@ -31,6 +31,10 @@
     <button id="newSignon" icon="add" label="&newentry.label;"
             accesskey="&newentry.accesskey;" oncommand="spEditor.newSignon();"
             insertafter="removeAllSignons"/>
+    <button id="cloneSignon" label="&cloneentry.label;"
+            accesskey="&cloneentry.accesskey;"
+            oncommand="spEditor.cloneSignon();" disabled="true"
+            insertafter="removeAllSignons"/>
     <button id="editSignon" icon="properties" label="&editentry.label;"
             accesskey="&editentry.accesskey;"
             oncommand="spEditor.editSignon();" disabled="true"

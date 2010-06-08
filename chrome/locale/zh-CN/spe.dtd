@@ -50,11 +50,22 @@
 <!ENTITY prefwindow.title "已保存密码编辑器 选项">
 <!ENTITY alwaysLogin.label "安全验证">
 <!ENTITY alwaysLogin.tooltip "如果您有设置管理密码，则每次编辑时都需要输入密码验证身份。">
+<!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
+<!ENTITY displayMenuitem.tooltip "在「工具」菜单中添加「已保存密码」快捷方式。">
+<!ENTITY cloneButton_behavior.label "克隆按键行为">
+<!ENTITY cloneButton_disable.label "禁用模式">
+<!ENTITY cloneButton_disable.tooltip "完全禁用克隆功能。">
+<!ENTITY cloneButton_normal.label "常规模式">
+<!ENTITY cloneButton_normal.tooltip "在编辑和新建按钮之间显示一个单独的克隆按钮。">
+<!ENTITY cloneButton_combine.label "混合模式">
+<!ENTITY cloneButton_combine.tooltip "当密码被选择时，新的按键行为类似于克隆。">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "新建">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "编辑">
 <!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "克隆">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "已保存密码编辑器">
 <!ENTITY signontype.label "类型">
@@ -101,6 +112,8 @@
 
 
 
+
+
 -->
 <!ENTITY welcometospe "欢迎使用 Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -108,7 +121,9 @@
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX -->
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+-->
 <!ENTITY welcomepara1_sm "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），导航至「隐私和安全」下的「<a id='passwords'>密码</a>」面板，点击「管理保存的密码」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。在工具栏上点击鼠标右键，选择「定制…」即可。">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->

@@ -28,8 +28,36 @@
       <preference id="pref-always-login"
                   name="extensions.savedpasswordeditor.always_login"
                   type="bool"/>
+      <preference id="pref-display-menuitem"
+                  name="extensions.savedpasswordeditor.display_menuitem"
+                  type="bool"/>
+      <preference id="pref-clonebutton"
+                  name="extensions.savedpasswordeditor.clonebutton"
+                  type="int"/>
     </preferences>
     <checkbox label="&alwaysLogin.label;" tooltiptext="&alwaysLogin.tooltip;"
               preference="pref-always-login"/>
+    <checkbox id="displayMenuitem_ck" label="&displayMenuitem.label;"
+              tooltiptext="&displayMenuitem.tooltip;"
+              preference="pref-display-menuitem"/>
+    <groupbox>
+      <caption label="&cloneButton_behavior.label;"/>
+      <radiogroup preference="pref-clonebutton">
+        <radio label="&cloneButton_disable.label;"
+               tooltiptext="&cloneButton_disable.tooltip;" value="0"/>
+        <radio label="&cloneButton_normal.label;"
+               tooltiptext="&cloneButton_normal.tooltip;" value="1"/>
+        <radio label="&cloneButton_combine.label;"
+               tooltiptext="&cloneButton_combine.tooltip;" value="2"/>
+      </radiogroup>
+    </groupbox>
   </prefpane>
+  <script type="text/javascript">
+  //<![CDATA[
+    if (Components.classes["@mozilla.org/xre/app-info;1"].
+        getService(Components.interfaces.nsIXULAppInfo).
+        ID == "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}")
+      document.getElementById("displayMenuitem_ck").hidden = true;
+  //]]>
+  </script>
 </prefwindow>

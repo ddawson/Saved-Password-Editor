@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "nl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,11 +50,22 @@
 <!ENTITY prefwindow.title "Saved Password Editor voorkeuren">
 <!ENTITY alwaysLogin.label "Aanmelden forceren bij bewerken van wachtwoord">
 <!ENTITY alwaysLogin.tooltip "Dwingt u om elke keer als u een wachtwoord bewerkt een hoofdwachtwoord in te geven (als u er één heeft)">
+<!ENTITY displayMenuitem.label "Snelkoppeling in menu Extra opnemen">
+<!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” toe aan het menu Extra als een snelkoppeling naar de wachtwoordbeheerder">
+<!ENTITY cloneButton_behavior.label "Gedrag knop Kopiëren">
+<!ENTITY cloneButton_disable.label "Uitschakelen">
+<!ENTITY cloneButton_disable.tooltip "Kopieerfunctie volledig uitschakelen">
+<!ENTITY cloneButton_normal.label "Normaal">
+<!ENTITY cloneButton_normal.tooltip "Aparte knop Kopiëren weergeven tussen Bewerken en Nieuw">
+<!ENTITY cloneButton_combine.label "Combineren">
+<!ENTITY cloneButton_combine.tooltip "Nieuwe knop gedraagt zich als Kopiëren wanneer een wachtwoord wordt geselecteerd">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Nieuw">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Bewerken">
 <!ENTITY editentry.accesskey "k">
+<!ENTITY cloneentry.label "Kopiëren">
+<!ENTITY cloneentry.accesskey "p">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Bewerken opgeslagen wachtwoord">
 <!ENTITY signontype.label "Type">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Welkom bij Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -104,7 +119,8 @@
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX -->
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel <a id='passwords'>Wachtwoorden</a> navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. Het dialoogvenster bevat nu de knoppen ‘Bewerken’ en ‘Nieuw’. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->

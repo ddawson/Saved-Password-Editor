@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "fr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,15 +50,26 @@
 <!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
 <!ENTITY alwaysLogin.label "Demander obligatoirement un identifiant pour modifier un mot de passe">
 <!ENTITY alwaysLogin.tooltip "Force à entrer votre mot de passe principal (s'il existe) à chaque modification du mot de passe">
+<!ENTITY displayMenuitem.label "Inclure le raccourci dans le menu Outils">
+<!ENTITY displayMenuitem.tooltip "Ajoute &quot;Mots de passe enregistrés&quot; au menu Outils comme raccourci pour le gestionnaire de mots de passe">
+<!ENTITY cloneButton_behavior.label "Cloner le comportement du bouton">
+<!ENTITY cloneButton_disable.label "Désactiver">
+<!ENTITY cloneButton_disable.tooltip "Désactiver complètement la fonction de clonage">
+<!ENTITY cloneButton_normal.label "Normal">
+<!ENTITY cloneButton_normal.tooltip "Afficher un bouton Cloner distinct entre Modifier et Nouveau">
+<!ENTITY cloneButton_combine.label "Combiner">
+<!ENTITY cloneButton_combine.tooltip "Le nouveau bouton se comporte comme Cloner quand le mot de passe est sélectionné">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Nouveau">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Modifier">
 <!ENTITY editentry.accesskey "M">
+<!ENTITY cloneentry.label "Cloner">
+<!ENTITY cloneentry.accesskey "o">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Type">
-<!ENTITY type_form.label "Forumlaire Web">
+<!ENTITY type_form.label "Formulaire Web">
 <!ENTITY type_form.accesskey "W">
 <!ENTITY type_httpauth.label "Authentification HTTP">
 <!ENTITY type_httpauth.accesskey "A">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Bienvenue dans l'extension Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -105,7 +120,8 @@ et choisissez &quot;Personnaliser…&quot;">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX -->
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis naviguez jusqu'au panneau &quot;<a id='passwords'>Mots de passe</a>&quot; dans la catégorie &quot;<a id='security'>Confidentialité et sécurité</a>&quot;, puis cliquez sur le bouton &quot;Mots de passe enregistrés…&quot;. Le dialogue propose maintenant les boutons &quot;Modifier&quot; et &quot;Nouveau&quot;. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot;">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->

@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "zh-TW">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,11 +50,22 @@
 <!ENTITY prefwindow.title "Saved Password Editor 偏好設定">
 <!ENTITY alwaysLogin.label "編輯密碼時強制登入">
 <!ENTITY alwaysLogin.tooltip "強制每次編輯密碼時都必須輸入主控密碼（如果有設定）">
+<!ENTITY displayMenuitem.label "在工具選單顯示捷徑">
+<!ENTITY displayMenuitem.tooltip "將 &quot;已存密碼&quot; 加入工具選單作為密碼管理員的捷徑">
+<!ENTITY cloneButton_behavior.label "複製按鈕運作方式">
+<!ENTITY cloneButton_disable.label "停用">
+<!ENTITY cloneButton_disable.tooltip "完全停用複製功能">
+<!ENTITY cloneButton_normal.label "正常">
+<!ENTITY cloneButton_normal.tooltip "在編輯和新增之間顯示為獨立按鈕">
+<!ENTITY cloneButton_combine.label "合併">
+<!ENTITY cloneButton_combine.tooltip "已選擇密碼時新增按鈕的功能轉換為複製">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "新增">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "編輯">
 <!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "複製">
+<!ENTITY cloneentry.accesskey "l">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "類型">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Welcome to Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -105,6 +120,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
 <!ENTITY welcomepara1_sm "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以 Tools &gt; Options、或者 Edit &gt; Preferences（依作業系統而定），移至 &quot;Privacy &amp; Security&quot; 分類下的「<a id='passwords'>Passwords</a>」面板後點選「Manage Stored Passwords」按鈕來使用編輯功能；對話視窗上已經加入了「編輯」和「新增」的按鈕。為方便起見也有工具列按鈕，在工具列上按右鍵選擇「Customize…」即可設定使用。">
 <!-- Paragraph 2 -->

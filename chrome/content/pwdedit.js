@@ -22,20 +22,24 @@ function el (name) {
 
 const Cc = Components.classes, Ci = Components.interfaces;
 
-var strBundle;
-var oldSignon;
+var strBundle, oldSignon, cloneSignon;
 
 window.addEventListener(
   "DOMContentLoaded",
   function loadHandler (ev) {
     strBundle = el("string-bundle");
     oldSignon = window.arguments[0];
+    cloneSignon = window.arguments[1];
+  
     var haveOldSignon = false;
     if (!oldSignon) {
       oldSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
                     createInstance(Ci.nsILoginInfo);
       oldSignon.init("", "", "", "", "", "", "");
       el("header").setAttribute("title", strBundle.getString("newlogin"));
+    } else if (cloneSignon) {
+      el("header").setAttribute("title", strBundle.getString("clonelogin"));
+      haveOldSignon = true;
     } else {
       el("header").setAttribute("title", strBundle.getString("editlogin"));
       haveOldSignon = true;
@@ -74,7 +78,7 @@ window.addEventListener(
 
     handle_typeSelect();
 
-    if (haveOldSignon)
+    if (haveOldSignon && !cloneSignon)
       el("type_group").disabled = true;
 
     window.removeEventListener("DOMContentLoaded", loadHandler, false);
@@ -204,5 +208,5 @@ function setNewSignon () {
                     createInstance(Ci.nsILoginInfo);
   newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
                  usernameField, passwordField);
-  window.arguments[1].newSignon = newSignon;
+  window.arguments[2].newSignon = newSignon;
 }

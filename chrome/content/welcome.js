@@ -21,11 +21,17 @@ const Cc = Components.classes, Ci = Components.interfaces;
 window.addEventListener(
   "load",
   function loadHandler (ev) {
+    var appId;
+
     function openSecPane () {
-      var chromeWin = Cc["@mozilla.org/appshell/window-mediator;1"].
-                        getService(Ci.nsIWindowMediator).
-                        getMostRecentWindow("navigator:browser");
-      return chromeWin.openPreferences("paneSecurity");
+      var wm = Cc["@mozilla.org/appshell/window-mediator;1"].
+                 getService(Ci.nsIWindowMediator);
+      if (appId == "{3550f703-e582-4d05-9a08-453d09bdfdc6}")
+          wm.getMostRecentWindow("mail:3pane").
+            openOptionsDialog("paneSecurity");
+      else
+          wm.getMostRecentWindow("navigator:browser").
+            openPreferences("paneSecurity");
     }
 
     function openPwdPane () {
@@ -39,14 +45,20 @@ window.addEventListener(
       return document.getElementById(name);
     }
 
-    var appId = Cc["@mozilla.org/xre/app-info;1"].
-                  getService(Ci.nsIXULAppInfo).ID;
+    appId = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo).ID;
     var appType =
-      (appId == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"          // Firefox
-       || appId == "{a463f10c-3994-11da-9945-000d60ca027b}") ? 0  // Flock
-                                                             : 1; // SeaMonkey
+      (appId == "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}") ? 1 : 0; // SeaMonkey
+    var appName = "firefox";
+    switch (appId) {
+    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}":
+      appName = "thunderbird";
+      break;
+    case "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}":
+      appName = "seamonkey";
+      break;
+    }
     el("addonlink").setAttribute(
-      "href", "https://addons.mozilla.org/firefox/addon/60265/");
+      "href", "https://addons.mozilla.org/" + appName + "/addon/60265/");
     if (appType == 0) {
       el("security").setAttribute("href", "javascript:void(0);");
       el("security").addEventListener(

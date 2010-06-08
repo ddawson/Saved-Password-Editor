@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "sr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -47,11 +50,22 @@
 <!ENTITY prefwindow.title "Saved Password Editor поставке">
 <!ENTITY alwaysLogin.label "Присили пријављивање у току измене лозинке">
 <!ENTITY alwaysLogin.tooltip "Присиљава Вас да унесете своју главну лозинку (ако је имате) сваки пут када измените лозинку">
+<!ENTITY displayMenuitem.label "Додај пречицу у менију „Алатке“">
+<!ENTITY displayMenuitem.tooltip "Додаје „Сачуване лозинке“ у менију „Алатке“ као пречицу до управљача лозинкама">
+<!ENTITY cloneButton_behavior.label "Понашање дугмета за клонирање">
+<!ENTITY cloneButton_disable.label "Онемогући">
+<!ENTITY cloneButton_disable.tooltip "У потпуности онемогући опцију клонирања">
+<!ENTITY cloneButton_normal.label "Нормално">
+<!ENTITY cloneButton_normal.tooltip "Прикажи одвојене дугмиће клонирања између „Уреди“ и „Ново“">
+<!ENTITY cloneButton_combine.label "Споји">
+<!ENTITY cloneButton_combine.tooltip "Ново дугме се понаша као клон када је лозинка изабрана">
 <!-- SAVED PASSWORDS DIALOG -->
 <!ENTITY newentry.label "Ново">
 <!ENTITY newentry.accesskey "Н">
 <!ENTITY editentry.label "Уреди">
 <!ENTITY editentry.accesskey "У">
+<!ENTITY cloneentry.label "Клон">
+<!ENTITY cloneentry.accesskey "К">
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Врста">
@@ -97,6 +111,7 @@
      & quot; since the strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Добро дошли у Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -105,6 +120,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
 <!ENTITY welcomepara1_sm "Хвала Вам што користите <a id='addonlink'>Saved Password Editor</a>. Почните с коришћењем додатка тако што ћете ићи на Tools &gt; Options, или Edit &gt; Preferences (у зависности од тога који оперативни систем користите). Изаберите језичак „<a id='passwords'>Passwords</a>“ под „Privacy &amp; Security“ и кликните на дугме „Manage Stored Passwords“. Појавиће се прозорче које садржи дугмиће „Edit“ и „New“. Алатница је такође доступна на Вашу погодност. Да бисте јој приступили, идите десни клик на алатницу и изаберите „Customize…“.">
 <!-- Paragraph 2 -->
