@@ -16,11 +16,12 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-function el (name) {
-  return document.getElementById(name);
-}
+function el (name) document.getElementById(name);
 
-const Cc = Components.classes, Ci = Components.interfaces;
+const Cc = Components.classes,
+      Ci = Components.interfaces,
+      THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+      SUNBIRD = "{718e30fb-e89b-41dd-9da7-e25a45638b28}";
 
 var strBundle, oldSignon, cloneSignon;
 
@@ -62,13 +63,13 @@ window.addEventListener(
 
     var xai = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
     switch (xai.ID) {
-    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}":  // Thunderbird
+    case THUNDERBIRD:
       el("type_form").hidden = true;
       if (!haveOldSignon)
         el("type_group").selectedIndex = 1;
       break;
 
-    case "{718e30fb-e89b-41dd-9da7-e25a45638b28}":  // Sunbird
+    case SUNBIRD:
       el("type_groupbox").hidden = true;
       el("type_group").selectedIndex = 2;
       break;
@@ -119,7 +120,8 @@ function togglePasswordView () {
 function guessParameters () {
   function walkTree (win) {
     var curDoc = win.document;
-    
+    if (!(curDoc instanceof HTMLDocument)) return false;
+
     // Get the host prefix;
     var curLocation = win.location;
     var hostname = curLocation.protocol + "//" + curLocation.host;
@@ -154,8 +156,10 @@ function guessParameters () {
       // Populate the editor form
       el("hostname_text").value = hostname;
       el("formSubmitURL_text").value = formSubmitURL;
-      el("username_text").value = unameField.value;
-      el("password_text").value = pwdField.value;
+      if (pwdField.value != "") {
+        el("username_text").value = unameField.value;
+        el("password_text").value = pwdField.value;
+      }
       el("usernameField_text").value = unameField.getAttribute("name");
       el("passwordField_text").value = pwdField.getAttribute("name");
       return true;

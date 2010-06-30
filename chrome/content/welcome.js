@@ -16,7 +16,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-const Cc = Components.classes, Ci = Components.interfaces;
+const Cc = Components.classes,
+      Ci = Components.interfaces,
+      SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
+      THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}";
 
 window.addEventListener(
   "load",
@@ -26,7 +29,7 @@ window.addEventListener(
     function openSecPane () {
       var wm = Cc["@mozilla.org/appshell/window-mediator;1"].
                  getService(Ci.nsIWindowMediator);
-      if (appId == "{3550f703-e582-4d05-9a08-453d09bdfdc6}")
+      if (appId == THUNDERBIRD)
           wm.getMostRecentWindow("mail:3pane").
             openOptionsDialog("paneSecurity");
       else
@@ -41,24 +44,22 @@ window.addEventListener(
       chromeWin.goPreferences("passwords_pane");
     }
 
-    function el (name) {
-      return document.getElementById(name);
-    }
+    function el (name) document.getElementById(name);
 
     appId = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo).ID;
-    var appType =
-      (appId == "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}") ? 1 : 0; // SeaMonkey
+    var appType = (appId == SEAMONKEY) ? 1 : 0;
     var appName = "firefox";
     switch (appId) {
-    case "{3550f703-e582-4d05-9a08-453d09bdfdc6}":
+    case THUNDERBIRD:
       appName = "thunderbird";
       break;
-    case "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}":
+    case SEAMONKEY:
       appName = "seamonkey";
       break;
     }
     el("addonlink").setAttribute(
       "href", "https://addons.mozilla.org/" + appName + "/addon/60265/");
+
     if (appType == 0) {
       el("security").setAttribute("href", "javascript:void(0);");
       el("security").addEventListener(

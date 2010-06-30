@@ -4,7 +4,7 @@
   <Description about="urn:mozilla:install-manifest">
     <em:id>savedpasswordeditor@daniel.dawson</em:id>
     <em:name>Saved Password Editor</em:name>
-    <em:version>1.5</em:version>
+    <em:version>1.5.1</em:version>
     <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
     <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
     <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
@@ -21,6 +21,7 @@
     <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
     <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
     <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
+
     <em:localized>
       <Description>
         <em:locale>bg-BG</em:locale>
@@ -303,22 +304,26 @@
         <em:description>在密碼管理員中加入新增與編輯密碼的功能。</em:description>
       </Description>
     </em:localized>
+
     <em:iconURL>chrome://savedpasswordeditor/skin/spe-icon_32.png</em:iconURL>
     <em:optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</em:optionsURL>
+
     <em:targetApplication>
       <Description>
         <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
         <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.7a5pre</em:maxVersion>
+        <em:maxVersion>3.7a6pre</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description>
         <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id> <!-- SeaMonkey -->
         <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>2.1a2</em:maxVersion>
+        <em:maxVersion>2.1a3</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description>
         <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Thunderbird -->
@@ -326,6 +331,7 @@
         <em:maxVersion>3.2a1pre</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description>
         <em:id>{718e30fb-e89b-41dd-9da7-e25a45638b28}</em:id> <!-- Sunbird -->
@@ -333,6 +339,7 @@
         <em:maxVersion>1.0pre</em:maxVersion>
       </Description>
     </em:targetApplication>
+
     <em:targetApplication>
       <Description>
         <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id> <!-- Flock -->

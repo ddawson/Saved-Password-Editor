@@ -19,18 +19,27 @@
 const Cc = Components.classes,
     Ci = Components.interfaces,
     Cu = Components.utils,
+    FIREFOX = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+    FLOCK = "{a463f10c-3994-11da-9945-000d60ca027b}",
+    SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
+    THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
     PREFNAME = "currentVersion",
-    THISVERSION = "1.5",
+    THISVERSION = "1.5.1",
     COMPAREVERSION = "1.0",
-    WELCOMEURL = "chrome://savedpasswordeditor/content/welcome.xhtml",
-    WELCOMEURL_SM = "chrome://savedpasswordeditor/content/welcome_sm.xhtml";
-Cu.import("resource://gre/modules/XPCOMUtils.jsm");
+    CONTENT = "chrome://savedpasswordeditor/content/",
+    WELCOMEURL = CONTENT + "welcome.xhtml",
+    WELCOMEURL_SM = CONTENT + "welcome_sm.xhtml",
+    prefs = Cc["@mozilla.org/preferences-service;1"].
+      getService(Ci.nsIPrefService).
+      getBranch("extensions.savedpasswordeditor."),
+    os = Cc["@mozilla.org/observer-service;1"].
+      getService(Ci.nsIObserverService),
+    cm = Cc["@mozilla.org/categorymanager;1"].
+      getService(Ci.nsICategoryManager),
+    wm = Cc["@mozilla.org/appshell/window-mediator;1"].
+      getService(Ci.nsIWindowMediator);
 
-var wm = Cc["@mozilla.org/appshell/window-mediator;1"].
-         getService(Ci.nsIWindowMediator);
-var prefs = Cc["@mozilla.org/preferences-service;1"].
-              getService(Ci.nsIPrefService).
-              getBranch("extensions.savedpasswordeditor.");
+Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
 function SavedPasswordEditorStartup () {}
 
@@ -39,46 +48,23 @@ SavedPasswordEditorStartup.prototype = {
   classID:           Components.ID("{bbfefd70-d9a5-4419-bc83-fc2686ad3026}"),
   contractID:        "@daniel.dawson/savedpasswordeditor-startup;1",
   _xpcom_categories: [{ category: "app-startup", service: true }],
-  QueryInterface:    XPCOMUtils.generateQI([
-                       Ci.nsISavedPasswordEditorStartup,
-                       Ci.nsIObserver]),
+  QueryInterface:    XPCOMUtils.generateQI([Ci.nsIObserver]),
 
-  welcome: function () {
-    var appId = Cc["@mozilla.org/xre/app-info;1"].
-                getService(Ci.nsIXULAppInfo).ID;
+  observe: function (aSubject, aTopic, aData) {
+    switch (aTopic) {
+    case "app-startup":
+      os.addObserver(this, "final-ui-startup", false);
+      break;
 
-    if (appId == "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}"
-        || appId == "{a463f10c-3994-11da-9945-000d60ca027b}") {
-      // Firefox/Flock
-      var curWin = wm.getMostRecentWindow("navigator:browser");
-      curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL);
-    } else if (appId == "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}") {
-      // SeaMonkey
-      var curWin = wm.getMostRecentWindow("navigator:browser");
+    case "final-ui-startup":
+      os.removeObserver(this, "final-ui-startup");
+      this.check_version();
+      break;
 
-      if (!curWin) {
-        var cmdLine = {
-          handleFlagWithParam: function (flag, caseSensitive) {
-            return flag == "browser" ? WELCOMEURL_SM : null;
-          },
-          handleFlag: function (flag, caseSensitive) {
-            return false;
-          },
-          preventDefault: true
-        };
-
-        const clh_prefix = 
-          "@mozilla.org/commandlinehandler/general-startup;1";
-        Cc[clh_prefix + "?type=browser"].
-          getService(Ci.nsICommandLineHandler).handle(cmdLine);
-      } else
-        curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL_SM);
-    } else if (appId == "{3550f703-e582-4d05-9a08-453d09bdfdc6}") {
-      // Thunderbird
-      var curWin = wm.getMostRecentWindow("mail:3pane");
-      curWin.focus()
-      curWin.document.getElementById("tabmail").openTab(
-        "contentTab", { contentPage: WELCOMEURL });
+    case "timer-callback":
+      this.welcome();
+      delete this.timer;
+      break;
     }
   },
 
@@ -101,44 +87,63 @@ SavedPasswordEditorStartup.prototype = {
       return false;
     }
 
-    function set_welcome() {
-      this.timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
-      timer.initWithCallback ({
-        notify: function (timer) {
-          comp.welcome();
-          delete this.timer;
-        }}, 3000, Ci.nsITimer.TYPE_ONE_SHOT);
+    function set_welcome (comp) {
+      var timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
+      timer.init(comp, 3000, Ci.nsITimer.TYPE_ONE_SHOT);
+      comp.timer = timer;
     }
 
     if (prefs.prefHasUserValue(PREFNAME)) {
       var lastVersion = prefs.getCharPref(PREFNAME);
       if (isOlder(lastVersion, COMPAREVERSION))
-        set_welcome();
+        set_welcome(this);
       if (isOlder(lastVersion, THISVERSION))
         prefs.setCharPref(PREFNAME, THISVERSION);
     } else {
-      set_welcome();
+      set_welcome(this);
       prefs.setCharPref(PREFNAME, THISVERSION);
     }
   },
 
-  observe: function (aSubject, aTopic, aData) {
-    var os = Cc["@mozilla.org/observer-service;1"].
-             getService(Ci.nsIObserverService);
-    var comp = this;
-    switch (aTopic) {
-    case "app-startup":
-      os.addObserver(this, "final-ui-startup", false);
+  welcome: function () {
+    var appId = Cc["@mozilla.org/xre/app-info;1"].
+                getService(Ci.nsIXULAppInfo).ID;
+
+    switch (appId) {
+    case FIREFOX:
+    case FLOCK:
+      var curWin = wm.getMostRecentWindow("navigator:browser");
+      curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL);
       break;
 
-    case "final-ui-startup":
-      os.removeObserver(this, "final-ui-startup");
-      this.check_version();
+    case SEAMONKEY:
+      var curWin = wm.getMostRecentWindow("navigator:browser");
+
+      if (!curWin) {
+        var cmdLine = {
+          handleFlagWithParam: function (flag, caseSensitive)
+            flag == "browser" ? WELCOMEURL_SM : null,
+          handleFlag: function (flag, caseSensitive) false,
+          preventDefault: true
+        };
+
+        const clh_prefix = 
+          "@mozilla.org/commandlinehandler/general-startup;1";
+        Cc[clh_prefix + "?type=browser"].
+          getService(Ci.nsICommandLineHandler).handle(cmdLine);
+      } else
+        curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL_SM);
+      break;
+
+    case THUNDERBIRD:
+      var curWin = wm.getMostRecentWindow("mail:3pane");
+      curWin.focus()
+      curWin.document.getElementById("tabmail").openTab(
+        "contentTab", { contentPage: WELCOMEURL });
       break;
     }
   },
 };
 
-function NSGetModule (compMgr, fileSpec) {
-  return XPCOMUtils.generateModule([SavedPasswordEditorStartup]);
-}
+function NSGetModule (compMgr, fileSpec)
+  XPCOMUtils.generateModule([SavedPasswordEditorStartup]);

@@ -111,7 +111,7 @@
 -->
 <!ENTITY welcometospe "Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[ツール] メニュー &gt; [オプション...] または、[編集] メニュー &amp;gt [設定...] (OS によって異なります) を選択し、[<a id='security'>セキュリティ</a>] ペインを選択、[保存されているパスワード...] ボタンをクリックしてアクセスします。ダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、[表示] メニュー &gt; [ツールバー] &gt; [カスタマイズ...] を選択するか、ツールバーを右クリックして [カスタマイズ...] を選択します。">
+<!ENTITY welcomepara1_fx "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[ツール] メニュー &gt; [オプション...] または、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[<a id='security'>セキュリティ</a>] ペインを選択、[保存されているパスワード...] ボタンをクリックしてアクセスします。ダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、[表示] メニュー &gt; [ツールバー] &gt; [カスタマイズ...] を選択するか、ツールバーを右クリックして [カスタマイズ...] を選択します。">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
