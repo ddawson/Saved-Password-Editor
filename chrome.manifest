@@ -1,4 +1,9 @@
 # Functional content
+## Component
+component	{bbfefd70-d9a5-4419-bc83-fc2686ad3026}	components/SavedPasswordEditorStartup.js
+contract	@daniel.dawson/savedpasswordeditor-startup;1	{bbfefd70-d9a5-4419-bc83-fc2686ad3026}
+category	profile-after-change	SavedPasswordEditorStartup	@daniel.dawson/savedpasswordeditor-startup;1
+## Chrome
 content	savedpasswordeditor		chrome/content/
 
 # Language-specific content

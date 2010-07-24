@@ -53,7 +53,7 @@
 <!ENTITY displayMenuitem.tooltip "Agregar &quot;Contraseñas guardadas&quot; a Herramientas como atajo para administrador de contraseñas">
 <!ENTITY cloneButton_behavior.label "Actividad del comando Clonar">
 <!ENTITY cloneButton_disable.label "Inhabilitar">
-<!ENTITY cloneButton_disable.tooltip "Inhabilitar totalmente Clonar>
+<!ENTITY cloneButton_disable.tooltip "Inhabilitar totalmente Clonar">
 <!ENTITY cloneButton_normal.label "Normal">
 <!ENTITY cloneButton_normal.tooltip "Mostrar comando Clonar individual entre Editar y Nuevo">
 <!ENTITY cloneButton_combine.label "Combinar">

@@ -24,7 +24,7 @@ const Cc = Components.classes,
     SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
     THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
     PREFNAME = "currentVersion",
-    THISVERSION = "1.5.1",
+    THISVERSION = "1.6",
     COMPAREVERSION = "1.0",
     CONTENT = "chrome://savedpasswordeditor/content/",
     WELCOMEURL = CONTENT + "welcome.xhtml",
@@ -53,6 +53,7 @@ SavedPasswordEditorStartup.prototype = {
   observe: function (aSubject, aTopic, aData) {
     switch (aTopic) {
     case "app-startup":
+    case "profile-after-change":
       os.addObserver(this, "final-ui-startup", false);
       break;
 
@@ -145,5 +146,9 @@ SavedPasswordEditorStartup.prototype = {
   },
 };
 
-function NSGetModule (compMgr, fileSpec)
-  XPCOMUtils.generateModule([SavedPasswordEditorStartup]);
+if (XPCOMUtils.generateNSGetFactory)
+  var NSGetFactory =
+    XPCOMUtils.generateNSGetFactory([SavedPasswordEditorStartup]);
+else
+  var NSGetModule =
+    XPCOMUtils.generateNSGetModule([SavedPasswordEditorStartup]);
