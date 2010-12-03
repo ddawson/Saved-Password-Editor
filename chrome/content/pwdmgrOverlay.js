@@ -55,15 +55,16 @@ const spEditor = {
         try {
           token.login(true);
         } catch (e) { }
+        return token.isLoggedIn();
       }
-      if (!token.isLoggedIn()) return;
     }
+    return true;
   },
 
   editSignon: function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length != 1) return;
-    this.login();
+    if (!this.login()) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
     var signon = table[selections[0]];
@@ -80,7 +81,7 @@ const spEditor = {
   cloneSignon: function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length != 1) return;
-    this.login();
+    if (!this.login()) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
     var signon = table[selections[0]];
