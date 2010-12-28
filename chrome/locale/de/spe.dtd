@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "de-DE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -45,25 +48,36 @@
 <!ENTITY savedpasswords.tooltip "Öffne den Gespeicherte-Passwörter-Dialog">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Einstellungen für den Passworteditor">
-<!ENTITY alwaysLogin.label "Anmeldung beim Ändern eines Passwortes erzwingen">
-<!ENTITY alwaysLogin.tooltip "Zwingt Sie dazu, jedes Mal Ihr Masterpasswort (falls vorhanden) einzugeben, wenn Sie ein Passwort ändern">
-<!ENTITY displayMenuitem.label "Eintrag im Extras-Menü anzeigen">
-<!ENTITY displayMenuitem.tooltip "Fügt &quot;Gespeicherte Passwörter&quot; zum Aufruf der Passwortverwaltung dem Extras-Menü hinzu">
-<!ENTITY cloneButton_behavior.label "Schaltflächenverhalten klonen">
-<!ENTITY cloneButton_disable.label "Deaktivieren">
-<!ENTITY cloneButton_disable.tooltip "Schaltet die Klonen-Funktion vollständig ab">
-<!ENTITY cloneButton_normal.label "Normal">
-<!ENTITY cloneButton_normal.tooltip "Zeigt eine separate Klonen-Schaltfläche zwischen &quot;Ändern&quot; und &quot;Neu&quot; an">
-<!ENTITY cloneButton_combine.label "Kombinieren">
-<!ENTITY cloneButton_combine.tooltip "Die &quot;Neu&quot;-Schaltfläche verhält sich wie &quot;Klonen&quot;, wenn ein Passwort ausgewählt ist">
+<!ENTITY displayMenuitem.label "Schnellzugriff in Menüs einfügen">
+<!ENTITY displayMenuitem.tooltip "Fügt &quot;Gespeicherte Passwörter&quot; zum Aufruf der Passwortverwaltung dem Extras-Menü und dem Firefox-Button hinzu">
+<!ENTITY passwordfield_caption.label "Passwortfeld im Editorfenster">
+<!ENTITY passwordfield_alwayshide.label "Passwort beim Öffnen des Editorfensters immer verstecken">
+<!ENTITY passwordfield_alwaysshow.label "Passwort beim Öffnen des Editorfensters immer zeigen">
+<!ENTITY passwordfield_rememberlast.label "Letzten Zustand merken">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Neu">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Ändern">
 <!ENTITY editentry.accesskey "e">
 <!ENTITY cloneentry.label "Klonen">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Passworteditor">
 <!ENTITY signontype.label "Typ">
 <!ENTITY type_form.label "Webformular">
@@ -94,30 +108,19 @@
 <!ENTITY guessfrompage.label "Von aktueller Seite holen">
 <!ENTITY guessfrompage.accesskey "h">
 <!ENTITY guessfrompage.tooltip "Füllt dieses Formular anhand eines vermuteten Anmeldeformulars auf der aktuellen Seite aus">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
--->
-<!ENTITY welcometospe "Willkommen im Passworteditor">
+<!ENTITY category.label "Kategorie">
+<!ENTITY category.tooltip "Passwortkategorie (für Erweiterung Passwortkategorien)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den Tab &quot;<a id='security'>Sicherheit</a>&quot; öffnen und dort den Button &quot;Gespeicherte Passwörter…&quot; betätigen. Der Dialog enthält nun die Schaltflächen &quot;Ändern&quot; und &quot;Neu&quot;. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, wählen Sie Ansicht &gt; Symbolleisten &gt; Anpassen… aus oder klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen…&quot;.">
+<!ENTITY welcometospe "Willkommen im Passworteditor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den Tab &quot;<a id='security'>Sicherheit</a>&quot; öffnen und dort den Button &quot;Gespeicherte Passwörter…&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; oder (in Firefox 4 unter Windows) dem Firefox-Menü aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, wählen Sie Ansicht &gt; Symbolleisten &gt; Anpassen… aus oder klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen…&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern, und in FIrefox 4 enthält das Kontextmenü zudem die Befehle &quot;Ändern&quot; und &quot;Klonen&quot;.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;<a id='passwords'>Passwörter</a>&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Der Dialog enthält nun die Schaltflächen &quot;Ändern&quot; und &quot;Neu&quot;. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;<a id='passwords'>Passwörter</a>&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Beachten Sie, dass der Gespeicherte-Passwörter-Dialog eine Kernkomponente von <span id='appname'/> ist und abgesehen von den zwei hinzugefügten Schaltflächen nicht von dieser Erweiterung bereitgestellt wird. Die Symbolleistenschaltfläche wird nur der Bequemlichkeit wegen in der Erwartung angeboten, dass einige Benutzer dieser Erweiterung den Dialog nun weit häufiger nutzen werden, als es sonst der Fall wäre.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Beachten Sie, dass der Gespeicherte-Passwörter-Dialog eine Kernkomponente von <span id='appname'></span> ist und abgesehen von den zwei hinzugefügten Schaltflächen nicht von dieser Erweiterung bereitgestellt wird. Die Symbolleistenschaltfläche wird nur der Bequemlichkeit wegen in der Erwartung angeboten, dass einige Benutzer dieser Erweiterung den Dialog nun weit häufiger nutzen werden, als es sonst der Fall wäre.">

@@ -23,9 +23,11 @@
 }
 
 #savedpasswordeditor-button {
-  list-style-image: url('chrome://savedpasswordeditor/skin/key24.png');
+  list-style-image: url('chrome://savedpasswordeditor/skin/key16in18.png');
 }
 
-toolbar[iconsize="small"] #savedpasswordeditor-button {
-  list-style-image: url('chrome://savedpasswordeditor/skin/key16.png');
+#savedpasswordeditor-button > .toolbarbutton-icon {
+  margin: 0px !important;
+  width: auto !important;
+  height: auto !important;
 }

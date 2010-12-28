@@ -1,0 +1,128 @@
+<!--
+    Saved Password Editor, extension for Firefox 3.0+
+    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+-->
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+
+-->
+<!ENTITY locale "sv-SE">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system.
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEMS AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Sparade lösenord">
+<!ENTITY savedpasswords.accesskey "l">
+<!ENTITY savedpasswords.tooltip "Öppna dialogen &quot;Sparade lösenord&quot;">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Inställningar för Saved Password Editor">
+<!ENTITY displayMenuitem.label "Inkludera genväg i menyer">
+<!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows programmeny som en genväg till lösenordshanteraren">
+<!ENTITY passwordfield_caption.label "Lösenordsfält i redigeringsfönstret">
+<!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
+<!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">
+<!ENTITY passwordfield_rememberlast.label "Kom ihåg senaste status">
+<!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+-->
+<!ENTITY newentry.label "Nytt">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Redigera">
+<!ENTITY editentry.accesskey "R">
+<!ENTITY cloneentry.label "Klona">
+<!ENTITY cloneentry.accesskey "l">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Saved Password Editor: Redigera sparade lösenord">
+<!ENTITY signontype.label "Typ">
+<!ENTITY type_form.label "Webbformulär">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "HTTP-autentisering">
+<!ENTITY type_httpauth.accesskey "H">
+<!ENTITY type_other.label "Annan">
+<!ENTITY type_other.accesskey "A">
+<!ENTITY hostname.label "Värd">
+<!ENTITY hostname.tooltip "Protokoll/värdnamn för vilket lösenordet gäller (t.ex. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Skicka prefix">
+<!ENTITY formSubmitURL.tooltip "Prefix för formulärets inlämningsadress">
+<!ENTITY httpRealm.label "HTTP-sfär">
+<!ENTITY httpRealm.tooltip "HTTP-sfären som skall matchas">
+<!ENTITY username.label "Användarnamn">
+<!ENTITY username.tooltip "Användarnamnet som skall kommas ihåg">
+<!ENTITY password.label "Lösenord">
+<!ENTITY password.tooltip "Lösenordet som skall kommas ihåg">
+<!ENTITY usernameField.label "Användarnamnfältets namn">
+<!ENTITY usernameField.tooltip "Namnattributet för lämpligt användarnamnfält i formuläret">
+<!ENTITY passwordField.label "Lösenordsfältets namn">
+<!ENTITY passwordField.tooltip "Namnattributet för lämpligt lösenordsfält i formuläret">
+<!ENTITY showPassword.label "Visa">
+<!ENTITY showPassword.accesskey "V">
+<!ENTITY showPassword.tooltip "Växla lösenordens synlighet">
+<!ENTITY hidePassword.label "Göm">
+<!ENTITY hidePassword.accesskey "G">
+<!ENTITY guessfrompage.label "Gissa utifrån aktuell sida">
+<!ENTITY guessfrompage.accesskey "i">
+<!ENTITY guessfrompage.tooltip "Fyll i det här formuläret baserat på ett lämpligt inloggningsformulär på den aktuella sidan">
+<!ENTITY category.label "Kategori">
+<!ENTITY category.tooltip "Lösenordskategori (för tillägget Password Categories)">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+
+-->
+<!ENTITY welcometospe "Välkommen till Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), välja panelen &quot;<a id='security'>Säkerhet</a>&quot; och slutligen klicka på knappen &quot;Sparade lösenord…&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn eller (i Firefox 4 på Windows-datorer) programmenyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, välj Visa &gt; Verktygsfält &gt; Anpassa…, eller högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp med kommandon för att lägga till och redigera lösenord, och i Firefox 4.0 innehåller snabbmenyn även kommandona &quot;Redigera&quot; och &quot;Klona&quot;.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+-->
+<!ENTITY welcomepara1_sm "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), navigera sedan till &quot;<a id='passwords'>Lösenord</a>&quot;-panelen under &quot;Sekretess &amp; Säkerhet&quot; och klicka slutligen på knappen &quot;Hantera sparade lösenord&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp med kommandon för att lägga till och redigera lösenord.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Observera att dialogen &quot;Sparade lösenord&quot; är en baskomponent av <span id='appname'/> och inte tillhandahålls av det här tillägget, med undantag för de tillagda funktionerna som nämns härovan. Verktygsfältsknappen tillhandahålls enkom av bekvämlighetsskäl, med förhoppningen att några av användarna av det här tillägget kommer att vilja öppna dialogen mycket oftare än de annars kanske skulle göra.">

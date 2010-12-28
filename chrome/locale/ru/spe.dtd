@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "ru">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,25 +51,37 @@
 <!ENTITY savedpasswords.tooltip "Открыть диалоговое окно «Сохранённые пароли»">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Редактор сохранённых паролей — Настройки">
-<!ENTITY alwaysLogin.label "Авторизоваться перед редактированием пароля">
-<!ENTITY alwaysLogin.tooltip "Заставляет вводить мастер-пароль (если он задан) каждый раз, когда вы редактируете пароль">
-<!ENTITY displayMenuitem.label "Добавить в меню Инструменты пункт быстрого вызова">
-<!ENTITY displayMenuitem.tooltip "Добавляет в меню Инструменты пункт «Сохранённые пароли» для быстрого вызова менеджера паролей">
-<!ENTITY cloneButton_behavior.label "Поведение кнопки «Дублировать»">
-<!ENTITY cloneButton_disable.label "Отключить">
-<!ENTITY cloneButton_disable.tooltip "Полностью отключает функцию дублирования">
-<!ENTITY cloneButton_normal.label "Обычная">
-<!ENTITY cloneButton_normal.tooltip "Отображает отдельную кнопку «Дублировать» между «Править» и «Новая»">
-<!ENTITY cloneButton_combine.label "Совмещённая">
-<!ENTITY cloneButton_combine.tooltip "Кнопка «Новая» при выборе пароля действует как «Дублировать»">
+<!ENTITY displayMenuitem.label "Добавить ярлык в меню">
+<!ENTITY displayMenuitem.tooltip "Добавляет в меню Инструменты и окно Настройки пункт «Сохранённые пароли» для быстрого вызова менеджера паролей">
+<!ENTITY passwordfield_caption.label "При открытии окна редактора паролей">
+<!ENTITY passwordfield_alwayshide.label "всегда скрывать пароли">
+<!ENTITY passwordfield_alwaysshow.label "всегда отображать пароли">
+<!ENTITY passwordfield_rememberlast.label "запоминать последнее состояние">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Новая">
 <!ENTITY newentry.accesskey "Н">
 <!ENTITY editentry.label "Править">
 <!ENTITY editentry.accesskey "П">
 <!ENTITY cloneentry.label "Дублировать">
 <!ENTITY cloneentry.accesskey "Д">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Редактор сохранённых паролей">
 <!ENTITY signontype.label "Тип">
 <!ENTITY type_form.label "Веб-форма">
@@ -97,31 +112,19 @@
 <!ENTITY guessfrompage.label "Взять с текущей страницы">
 <!ENTITY guessfrompage.accesskey "В">
 <!ENTITY guessfrompage.tooltip "Заполнить эту форму опираясь на подходящую идентификационную форму на текущей странице">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
-
--->
-<!ENTITY welcometospe "Добро пожаловать в редактор сохранённых паролей">
+<!ENTITY category.label "Категория">
+<!ENTITY category.tooltip "Категория пароля (для расширения Password Categories)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Спасибо за использование <a id='addonlink'>Редактора сохранённых паролей</a>. Получить доступ к функциям редактирования вы сможете через меню «Инструменты|Настройки…» или «Правка|Настройки…» (в зависимости от вашей операционной системы), выбрав панель <a id='security'>«Защита»</a> и нажав кнопку «Сохранённые пароли…». Теперь диалоговое окно содержит кнопки «Править» и «Новая». Также, для вашего удобства, доступна кнопка панели инструментов. Чтобы добавить кнопку на панель выберите в меню «Вид|Панели инструментов|Настроить…» или щёлкните правой кнопкой мыши на панели инструментов и выберите «Настроить…».">
+<!ENTITY welcometospe "Добро пожаловать в редактор сохранённых паролей">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Спасибо за использование <a id='addonlink'>Редактора сохранённых паролей</a>. Получить доступ к функциям редактирования вы сможете через меню «Инструменты|Настройки…» или «Правка|Настройки…» (в зависимости от вашей операционной системы), выбрав панель <a id='security'>«Защита»</a> и нажав кнопку «Сохранённые пароли…». Кроме того, вы можете получить доступ к сохранённым  паролям прямо из меню Инструменты или (только Firefox 4 для Windows) меню приложения. Также, для вашего удобства, доступна кнопка панели инструментов. Чтобы добавить кнопку на панель выберите в меню «Вид|Панели инструментов|Настроить…» или щёлкните правой кнопкой мыши на панели инструментов и выберите «Настроить…». Теперь диалоговое окно содержит кнопку-меню с командами добавления и правки пароля, а в Firefox 4.0 ещё и пункты контекстного меню «Править» и «Дублировать».">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Спасибо за использование <a id='addonlink'>Редактора сохранённых паролей</a>. Получить доступ к функциям редактирования вы сможете через меню «Инструменты|Настройки…» или «Правка|Настройки…» (в зависимости от вашей операционной системы), переместившись на панель <a id='passwords'>«Пароли»</a> в раскрывающемся списке «Приватность и защита» и нажав кнопку «Управление сохранёнными паролями». Теперь диалоговое окно содержит кнопки «Править» и «Новая». Также, для вашего удобства, доступна кнопка панели инструментов. Чтобы добавить кнопку на панель щёлкните правой кнопкой мыши на панели инструментов и выберите «Настроить…».">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Спасибо за использование <a id='addonlink'>Редактора сохранённых паролей</a>. Получить доступ к функциям редактирования вы сможете через меню «Инструменты|Настройки…» или «Правка|Настройки…» (в зависимости от вашей операционной системы), переместившись на панель <a id='passwords'>«Пароли»</a> в раскрывающемся списке «Приватность и защита» и нажав кнопку «Управление сохранёнными паролями». Кроме того, вы можете получить доступ к сохранённым  паролям прямо из меню Инструменты. Также, для вашего удобства, доступна кнопка панели инструментов. Чтобы добавить кнопку на панель щёлкните правой кнопкой мыши на панели инструментов и выберите «Настроить…». Теперь диалоговое окно содержит кнопку-меню с командами добавления и правки пароля.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Заметьте, что диалоговое окно «Сохранённые пароли» является частью <span id='appname'/> и не предоставляется этим расширением, за исключением двух дополнительных кнопок. Кнопка панели инструментов предоставляется только с целью более удобного вызова диалогового окна, в расчёте на то, что некоторые из пользователей этого расширения будут обращаться к нему более часто, чем они делали бы это традиционным способом.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Заметьте, что диалоговое окно «Сохранённые пароли» является частью <span id='appname'/> и не предоставляется этим расширением, за исключением дополнительных функций упомянутых выше. Кнопка панели инструментов предоставляется только с целью более удобного вызова диалогового окна, в расчёте на то, что некоторые из пользователей этого расширения будут обращаться к нему более часто, чем они делали бы это традиционным способом.">

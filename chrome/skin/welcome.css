@@ -36,7 +36,7 @@ h1:before {
   padding-left: 0px;
   padding-right: 16px;
   vertical-align: middle;
-  content: url("chrome://savedpasswordeditor/skin/spe-icon_32.png");
+  content: url("chrome://savedpasswordeditor/skin/key32.png");
 }
 
 html[dir="RTL"] h1:before {

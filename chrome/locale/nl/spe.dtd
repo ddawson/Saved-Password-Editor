@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "nl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,25 +51,37 @@
 <!ENTITY savedpasswords.tooltip "Het dialoogvenster Opgeslagen wachtwoorden openen">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Saved Password Editor voorkeuren">
-<!ENTITY alwaysLogin.label "Aanmelden forceren bij bewerken van wachtwoord">
-<!ENTITY alwaysLogin.tooltip "Dwingt u om elke keer als u een wachtwoord bewerkt een hoofdwachtwoord in te geven (als u er één heeft)">
-<!ENTITY displayMenuitem.label "Snelkoppeling in menu Extra opnemen">
-<!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” toe aan het menu Extra als een snelkoppeling naar de wachtwoordbeheerder">
-<!ENTITY cloneButton_behavior.label "Gedrag knop Kopiëren">
-<!ENTITY cloneButton_disable.label "Uitschakelen">
-<!ENTITY cloneButton_disable.tooltip "Kopieerfunctie volledig uitschakelen">
-<!ENTITY cloneButton_normal.label "Normaal">
-<!ENTITY cloneButton_normal.tooltip "Aparte knop Kopiëren weergeven tussen Bewerken en Nieuw">
-<!ENTITY cloneButton_combine.label "Combineren">
-<!ENTITY cloneButton_combine.tooltip "Nieuwe knop gedraagt zich als Kopiëren wanneer een wachtwoord wordt geselecteerd">
+<!ENTITY displayMenuitem.label "Snelkoppeling in menu’s opnemen">
+<!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” toe aan de menu’s Extra en Windowstoepassingen als een snelkoppeling naar de wachtwoordbeheerder">
+<!ENTITY passwordfield_caption.label "Wachtwoordveld in bewerkingsvenster">
+<!ENTITY passwordfield_alwayshide.label "Wachtwoord altijd verbergen wanneer bewerkingsvenster wordt geopend">
+<!ENTITY passwordfield_alwaysshow.label "Wachtwoord altijd weergeven wanneer bewerkingsvenster wordt geopend">
+<!ENTITY passwordfield_rememberlast.label "Laatste instelling onthouden">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Nieuw">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Bewerken">
 <!ENTITY editentry.accesskey "k">
 <!ENTITY cloneentry.label "Kopiëren">
 <!ENTITY cloneentry.accesskey "p">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Bewerken opgeslagen wachtwoord">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Webformulier">
@@ -97,31 +112,19 @@
 <!ENTITY guessfrompage.label "Raden van huidige pagina">
 <!ENTITY guessfrompage.accesskey "R">
 <!ENTITY guessfrompage.tooltip "Vul dit formulier in op basis van een waarschijnlijk aanmeldingsformulier op de huidige pagina">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
-
--->
-<!ENTITY welcometospe "Welkom bij Saved Password Editor">
+<!ENTITY category.label "Categorie">
+<!ENTITY category.tooltip "Wachtwoordcategorie (voor de add-on Password Categories)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), het paneel <a id='security'>Beveiliging</a> te selecteren en vervolgens op de knop ‘Opgeslagen wachtwoorden…’ te klikken. Het dialoogvenster bevat nu de knoppen ‘Bewerken’ en ‘Nieuw’. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u Beeld &gt; Werkbalken &gt; Aanpassen… selecteren of rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren.">
+<!ENTITY welcometospe "Welkom bij Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), het paneel <a id='security'>Beveiliging</a> te selecteren en vervolgens op de knop ‘Opgeslagen wachtwoorden…’ te klikken. U kunt ook eenvoudigweg de Opgeslagen wachtwoorden oproepen via het menu Extra of (in Firefox 4 voor Windows) het menu Toepassingen. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u Beeld &gt; Werkbalken &gt; Aanpassen… selecteren of rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop met opdrachten voor het toevoegen en bewerken van wachtwoorden, en in Firefox 4 bevat het contextmenu ook de opdrachten ‘Bewerken’ en ‘Klonen’.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel <a id='passwords'>Wachtwoorden</a> navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. Het dialoogvenster bevat nu de knoppen ‘Bewerken’ en ‘Nieuw’. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel <a id='passwords'>Wachtwoorden</a> navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. U kunt ook eenvoudigeweg de Opgeslagen wachtwoorden oproepen via het menu Extra. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'/> en niet wordt geleverd door deze extensie, met uitzondering van de twee toegevoegde knoppen. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'></span> en niet wordt geleverd door deze extensie, met uitzondering van de hierboven genoemde toegevoegde functies. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">

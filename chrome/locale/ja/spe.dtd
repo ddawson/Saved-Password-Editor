@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "ja">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -45,25 +48,36 @@
 <!ENTITY savedpasswords.tooltip "保存されているパスワードのダイアログを開きます">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Saved Password Editor 設定">
-<!ENTITY alwaysLogin.label "パスワードの編集時にログインを強制する">
-<!ENTITY alwaysLogin.tooltip "パスワードの編集時に、(設定されている場合) マスターパスワードの入力を強制します">
-<!ENTITY displayMenuitem.label "ツールメニューにショートカットメニューを追加する">
-<!ENTITY displayMenuitem.tooltip "ツールメニューに、パスワードマネージャを開く [保存されているパスワード] メニューを追加します">
-<!ENTITY cloneButton_behavior.label "複製ボタンの動作">
-<!ENTITY cloneButton_disable.label "無効化">
-<!ENTITY cloneButton_disable.tooltip "複製機能を完全に無効化します">
-<!ENTITY cloneButton_normal.label "通常">
-<!ENTITY cloneButton_normal.tooltip "編集画面と新規作成画面に個別の複製ボタンを表示します">
-<!ENTITY cloneButton_combine.label "結合">
-<!ENTITY cloneButton_combine.tooltip "パスワードが選択されている時は、新規作成ボタンが複製ボタンと同じ動作になります">
+<!ENTITY displayMenuitem.label "メニューにショートカットメニューを追加する">
+<!ENTITY displayMenuitem.tooltip "[ツール] メニューと Windows アプリメニューに、パスワードマネージャを開く [保存されているパスワード] メニューを追加します">
+<!ENTITY passwordfield_caption.label "編集ウィンドウのパスワードフィールド">
+<!ENTITY passwordfield_alwayshide.label "編集ウィンドウを開いた時、常にパスワードを隠す">
+<!ENTITY passwordfield_alwaysshow.label "編集ウィンドウを開いた時、常にパスワードを表示する">
+<!ENTITY passwordfield_rememberlast.label "最後の表示状態を記憶する">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "新規作成">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "編集">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "複製">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "サインオン形式">
 <!ENTITY type_form.label "Web フォーム">
@@ -94,30 +108,19 @@
 <!ENTITY guessfrompage.label "現在のページから取得">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "現在のページ上のログインフォームを読み取り、上記のフォームに入力します">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
--->
-<!ENTITY welcometospe "Saved Password Editor">
+<!ENTITY category.label "カテゴリ">
+<!ENTITY category.tooltip "パスワードのカテゴリ (Password Categories アドオン用)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[ツール] メニュー &gt; [オプション...] または、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[<a id='security'>セキュリティ</a>] ペインを選択、[保存されているパスワード...] ボタンをクリックしてアクセスします。ダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、[表示] メニュー &gt; [ツールバー] &gt; [カスタマイズ...] を選択するか、ツールバーを右クリックして [カスタマイズ...] を選択します。">
+<!ENTITY welcometospe "Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[ツール] メニュー &gt; [オプション...] または、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[<a id='security'>セキュリティ</a>] ペインを選択、[保存されているパスワード...] ボタンをクリックしてアクセスします。または、[ツール] メニューや Firefox 4 のアプリメニューから簡単にアクセスすることもできます。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、[表示] メニュー &gt; [ツールバー] &gt; [カスタマイズ...] を選択するか、ツールバーを右クリックして [カスタマイズ...] を選択します。保存されているパスワードのダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。また、Firefox 4.0 ではコンテキストメニューに [編集] と [複製] が追加されます。">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[プライバシーとセキュリティ] 下の [<a id='passwords'>パスワード</a>] ペインを選択、[保存したパスワードの管理] ボタンをクリックします。ダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、ツールバーを右クリックして [カスタマイズ...] を選択します。">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[プライバシーとセキュリティ] 下の [<a id='passwords'>パスワード</a>] ペインを選択、[保存したパスワードの管理] ボタンをクリックします。[ツール] メニューから簡単にアクセスすることもできます。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、ツールバーを右クリックして [カスタマイズ...] を選択します。保存されているパスワードのダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "注意: 保存されているパスワードのダイアログは、<span id='appname'/> の基本コンポーネントであり、この拡張機能が提供している機能ではありません ([編集] ボタンと [新規作成] ボタンを除く)。ツールバーボタンは、ダイアログをよく開くユーザの利便性のために、この拡張機能が提供しています。">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "注意: 保存されているパスワードのダイアログは、<span id='appname'/> の基本コンポーネントであり、この拡張機能が提供している機能ではありません (上記の機能を除く)。ツールバーボタンは、ダイアログをよく開くユーザの利便性のために、この拡張機能が提供しています。">

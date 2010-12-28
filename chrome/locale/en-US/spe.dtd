@@ -15,7 +15,6 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
-
 -->
 <!-- LOCALE
 
@@ -34,29 +33,29 @@
 -->
 <!ENTITY locale "en-US">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
+     Generally, this should follow the direction of your writing system.
 
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- Strings to be localized -->
-<!-- MENU ITEM AND TOOLBAR BUTTON -->
+<!-- MENU ITEMS AND TOOLBAR BUTTON -->
 <!ENTITY savedpasswords.label "Saved Passwords">
 <!ENTITY savedpasswords.accesskey "v">
 <!ENTITY savedpasswords.tooltip "Open the Saved Passwords dialog">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Saved Password Editor preferences">
-<!ENTITY alwaysLogin.label "Force login when editing a password">
-<!ENTITY alwaysLogin.tooltip "Forces you to enter your master password (if you have one) every time you edit a password">
-<!ENTITY displayMenuitem.label "Include shortcut in Tools menu">
-<!ENTITY displayMenuitem.tooltip "Adds &quot;Saved Passwords&quot; to Tools menu as a shortcut to the password manager">
-<!ENTITY cloneButton_behavior.label "Clone button behavior">
-<!ENTITY cloneButton_disable.label "Disable">
-<!ENTITY cloneButton_disable.tooltip "Disable the Clone function completely">
-<!ENTITY cloneButton_normal.label "Normal">
-<!ENTITY cloneButton_normal.tooltip "Display a separate Clone button between Edit and New">
-<!ENTITY cloneButton_combine.label "Combine">
-<!ENTITY cloneButton_combine.tooltip "New button acts like Clone when password selected">
+<!ENTITY displayMenuitem.label "Include shortcut in menus">
+<!ENTITY displayMenuitem.tooltip "Adds &quot;Saved Passwords&quot; to Tools menu and Windows app menu as a shortcut to the password manager">
+<!ENTITY passwordfield_caption.label "Password field in editor window">
+<!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
+<!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
+<!ENTITY passwordfield_rememberlast.label "Remember last state">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+-->
 <!ENTITY newentry.label "New">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Edit">
@@ -94,6 +93,8 @@
 <!ENTITY guessfrompage.label "Guess from current page">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Fill in this form based on a likely login form on the current page">
+<!ENTITY category.label "Category">
+<!ENTITY category.tooltip "Password category (for Password Categories add-on)">
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
@@ -101,23 +102,27 @@
      & gt; codes produce < and > respectively, but don't reverse them; that
      will be done automatically for right-to-left text. & quot; produces a
      double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
 
 
 -->
 <!ENTITY welcometospe "Welcome to Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. The dialog now contains &quot;Edit&quot; and &quot;New&quot; buttons. A toolbar button is also available for your convenience. To access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;">
+<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. You may also simply access Saved Passwords from the Tools menu or (on Firefox 4 under Windows) the app menu. A toolbar button is also available for your convenience; to access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords, and on Firefox 4.0, the context menu also contains the &quot;Edit&quot; and &quot;Clone&quot; commands.">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy &amp; Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. The dialog now contains &quot;Edit&quot; and &quot;New&quot; buttons. A toolbar button is also available for your convenience. To access it, right-click on the toolbar and select &quot;Customize…&quot;">
+<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy &amp; Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. You may also simply access Saved Passwords from the Tools menu. A toolbar button is also available for your convenience; to access it, right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the two added buttons. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">
+<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">

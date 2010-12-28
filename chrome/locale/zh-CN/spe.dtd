@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "zh-CN">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,25 +51,39 @@
 <!ENTITY savedpasswords.tooltip "打开 已保存密码">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "已保存密码编辑器 选项">
-<!ENTITY alwaysLogin.label "安全验证">
-<!ENTITY alwaysLogin.tooltip "如果您有设置管理密码，则每次编辑时都需要输入密码验证身份。">
 <!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
 <!ENTITY displayMenuitem.tooltip "在「工具」菜单中添加「已保存密码」快捷方式。">
-<!ENTITY cloneButton_behavior.label "克隆按键行为">
-<!ENTITY cloneButton_disable.label "禁用模式">
-<!ENTITY cloneButton_disable.tooltip "完全禁用克隆功能。">
-<!ENTITY cloneButton_normal.label "常规模式">
-<!ENTITY cloneButton_normal.tooltip "在编辑和新建按钮之间显示一个单独的克隆按钮。">
-<!ENTITY cloneButton_combine.label "混合模式">
-<!ENTITY cloneButton_combine.tooltip "当密码被选择时，新的按键行为类似于克隆。">
+<!ENTITY passwordfield_caption.label "Password field in editor window">
+<!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
+<!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
+<!ENTITY passwordfield_rememberlast.label "Remember last state">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "新建">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "编辑">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "克隆">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "已保存密码编辑器">
 <!ENTITY signontype.label "类型">
 <!ENTITY type_form.label "网页表单">
@@ -97,34 +114,20 @@
 <!ENTITY guessfrompage.label "从当前页猜测">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "在当前页面寻找类似于登录的表单并自动填充">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
-
-
-
--->
-<!ENTITY welcometospe "欢迎使用 Saved Password Editor">
+<!ENTITY category.label "Category">
+<!ENTITY category.tooltip "Password category (for Password Categories add-on)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），选择「<a id='security'>安全</a>」面板，点击「已保存密码…」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。打开菜单 查看 &gt; 工具栏 &gt; 定制…，或者在工具栏上点击鼠标右键，选择「定制…」即可。">
+<!ENTITY welcometospe "欢迎使用 Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. You may also simply access Saved Passwords from the Tools menu or (on Firefox 4 under Windows) the app menu. A toolbar button is also available for your convenience; to access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords, and on Firefox 4.0, the context menu also contains the &quot;Edit&quot; and &quot;Clone&quot; commands.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
-<!ENTITY welcomepara1_sm "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），导航至「隐私和安全」下的「<a id='passwords'>密码</a>」面板，点击「管理保存的密码」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。在工具栏上点击鼠标右键，选择「定制…」即可。">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy & Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. You may also simply access Saved Passwords from the Tools menu. A toolbar button is also available for your convenience; to access it, right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "注意：「已保存密码」对话框是 <span id='appname'/> 的一个基本组件，本扩展只是增加了两个按钮。工具栏快捷按钮也只是为方便用户使用「已保存密码」而增加的。">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">

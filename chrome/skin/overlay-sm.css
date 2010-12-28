@@ -18,12 +18,16 @@
 
 @namespace "http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul";
 
+#savedpasswordeditor-menuitem {
+  list-style-image: url('chrome://savedpasswordeditor/skin/key16.png');
+}
+
 /* Toolbar icons for SeaMonkey - why does it use such odd sizes? */
 
 #savedpasswordeditor-button {
-  list-style-image: url("chrome://savedpasswordeditor/skin/sp-icon_29.png");
+  list-style-image: url("chrome://savedpasswordeditor/skin/key29.png");
 }
 
 toolbar[iconsize="small"] #savedpasswordeditor-button {
-  list-style-image: url("chrome://savedpasswordeditor/skin/sp-icon_19.png");
+  list-style-image: url("chrome://savedpasswordeditor/skin/key19.png");
 }

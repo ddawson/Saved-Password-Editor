@@ -61,13 +61,13 @@ window.addEventListener(
       "href", "https://addons.mozilla.org/" + appName + "/addon/60265/");
 
     if (appType == 0) {
-      el("security").setAttribute("href", "javascript:void(0);");
-      el("security").addEventListener(
-        "click", function (ev) { openSecPane() }, false);
+      //el("security").setAttribute("href", "javascript:void(0);");
+      //el("security").addEventListener(
+      //  "click", function (ev) { openSecPane() }, false);
     } else {
-      el("passwords").setAttribute("href", "javascript:void(0);");
-      el("passwords").addEventListener(
-        "click", function (ev) { openPwdPane(); }, false);
+      //el("passwords").setAttribute("href", "javascript:void(0);");
+      //el("passwords").addEventListener(
+      //  "click", function (ev) { openPwdPane(); }, false);
     }
     el("appname").textContent = Application.name;
     window.removeEventListener("load", loadHandler, false);

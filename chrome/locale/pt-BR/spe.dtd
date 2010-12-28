@@ -16,6 +16,7 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
 
+
 -->
 <!-- LOCALE
 
@@ -31,10 +32,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "pt-BR">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -45,25 +48,36 @@
 <!ENTITY savedpasswords.tooltip "Abre a janela de Senhas Salvas">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Preferências do Editor de Senhas Salvas">
-<!ENTITY alwaysLogin.label "Forçar a entrada ao editar senhas">
-<!ENTITY alwaysLogin.tooltip "Força a entrada de sua senha mestre (se houver) toda vez que editar uma senha">
-<!ENTITY displayMenuitem.label "Incluir Atalhos no menu de Ferramentas">
-<!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas como um atalho para o gerenciados de senhas">
-<!ENTITY cloneButton_behavior.label "Comportamento do botão Clone">
-<!ENTITY cloneButton_disable.label "Desativar">
-<!ENTITY cloneButton_disable.tooltip "Desativa a função Clone completamente">
-<!ENTITY cloneButton_normal.label "Normal">
-<!ENTITY cloneButton_normal.tooltip "Exibe um botão Clone separado, entre Editar e Novo">
-<!ENTITY cloneButton_combine.label "Combinar">
-<!ENTITY cloneButton_combine.tooltip "O novo botão age como Clone quando uma senha é selecionada">
+<!ENTITY displayMenuitem.label "Incluir atalhos nos menus">
+<!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas e janela do complemento como um atalho para o gerenciados de senhas">
+<!ENTITY passwordfield_caption.label "Campo senha na janela do editor">
+<!ENTITY passwordfield_alwayshide.label "Sempre ocultar senhas ao abrir a janela do editor">
+<!ENTITY passwordfield_alwaysshow.label "Sempre exibir senhas ao abrir a janela do editor">
+<!ENTITY passwordfield_rememberlast.label "Lembrar última escolha">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Nova">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Editar">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Clone">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Tipo">
 <!ENTITY type_form.label "Formulário Web">
@@ -94,27 +108,15 @@
 <!ENTITY guessfrompage.label "Obter dados da página atual">
 <!ENTITY guessfrompage.accesskey "g">
 <!ENTITY guessfrompage.tooltip "Preencha o formulário com base em um formulário de login provável na página atual">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
--->
-<!ENTITY welcometospe "Bem-Vindo ao Editor de Senhas Salvas">
+<!ENTITY category.label "Categoria">
+<!ENTITY category.tooltip "Categoria da senha (para o complemento Password Categories)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível aplicar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), escolhendo &quot;<a id='security'>Segurança</a>&quot; e depois teclando no botão &quot;senhas salvas…&quot;. Os botões &quot;Editar&quot; e &quot;Novo&quot; estarão disponíveis na barra de ferramentas. Para utilizá-los, selecione Exibir &gt; Barra de ferramentas &gt; Personalizar…, ou clique com o botão direito na barra de ferramentas e escolha &quot;Personalizar…&quot;">
+<!ENTITY welcometospe "Bem-Vindo ao Editor de Senhas Salvas">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível acessar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), escolhendo &quot;<a id='security'>Segurança</a>&quot; e depois teclando no botão &quot;senhas salvas…&quot;. Você pode também simplesmente acessar Senhas Salvas no menu de Ferramentas ou (no Firefox 4 no Windows)no menu do aplicativo. Um botão de Ferramentas também está disponível, para sua conveniência: selecione Ver &gt; Barras de Ferramentas &gt; Personalizar..., ou clique com o botão direito na barra de ferramentas e selecione &quot;Personalizar…&quot;. Os avisos de Senhas Salvas agora tem um botão-menu com comandos para adicionar e editar senhas e, no Firefox 4, o menu de contexto também contém os comandos &quot;Editar&quot; e &quot;Clonar&quot;">
 <!-- TRANSLATORS: Note the lack of View > Toolbars > Customize… -->
-<!ENTITY welcomepara1_sm "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível aplicar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), indo até &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade &amp; Segurança&quot;, depois clicando no botão &quot;Gerenciar Senhas Salvas&quot;. Botões &quot;Editar&quot; e &quot;Novo&quot; estarão disponíveis. Para acessá-los clique com o botão direito na barra de ferramentas e escolha &quot;Personalizar…&quot;">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Obrigado por utilizar <a id='addonlink'>Editor de Senhas Salvas</a>. É possível acessar a função de edição indo a Ferramentas &gt; Opções, ou a Editar &gt; Preferências (dependendo do sistema operacional), indo até &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade &amp; Segurança&quot;, depois clicando no botão &quot;Gerenciar Senhas Armazenadas&quot;. Você pode também simplesmente acessar Senhas Salvas no menu de Ferramentas. Um botão da barra de ferramentas também está disponível, para sua conveniência: clique com o botão direito na Barras de Ferramentas e selecione &quot;Personalizar…&quot;. O aviso Senhas Salva agora tem um botão-menu com comandos para adicionar e editar senhas.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "O administrador de Senhas Salvas é um componente nativo do <span id='appname'/> e não é fornecido pela extensão Editor de Senhas Salvas, exceto no caso dos dois botões que acrescenta. O botão da barra de ferramentas é fornecido apenas para sua conveniência, na expectativa de que alguns usuários desta extensão gostariam de acessar a ferramenta com muito mais freqüência do que usualmente.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Repare que o aviso Senhas Salvas é um componente nativo do <span id='appname'/> e não é fornecido por nossa extensão, exceto no caso das funções mencionadas acima. O botão da barra de ferramentas é fornecido apenas para sua conveniência, na expectativa de que alguns usuários desta extensão gostariam de acessar a ferramenta com maior freqüência.">

@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "bg-BG">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,18 +51,17 @@
 <!ENTITY savedpasswords.tooltip "Отваря диалог със записаните пароли">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Редактор на преференциите за записаните парола">
-<!ENTITY alwaysLogin.label "Принудителен вход при промяна на парола">
-<!ENTITY alwaysLogin.tooltip "Принуждава Ви да въведете главната си парола (ако имате такава) всеки път, когато промените парола">
 <!ENTITY displayMenuitem.label "Включи пряк пръ в менюто Tools(Инструмнти)">
 <!ENTITY displayMenuitem.tooltip "Добавя &quot;Записани пароли&quot; към менюто Инструменти като препратка към мениджъра на пароли">
-<!ENTITY cloneButton_behavior.label "Поведение на бутона Клонирай">
-<!ENTITY cloneButton_disable.label "Забрани">
-<!ENTITY cloneButton_disable.tooltip "Изцяло забрани функцията Клониране">
-<!ENTITY cloneButton_normal.label "Нормално">
-<!ENTITY cloneButton_normal.tooltip "Покажи отделен бутон Клонирай между Редактиране и Нова">
-<!ENTITY cloneButton_combine.label "Слей">
-<!ENTITY cloneButton_combine.tooltip "Когато e избранa парола се появява нов бутон като Клонирай.">
+<!ENTITY passwordfield_caption.label "Password field in editor window">
+<!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
+<!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
+<!ENTITY passwordfield_rememberlast.label "Remember last state">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any
+     of those contexts -->
 <!ENTITY newentry.label "Нова">
 <!ENTITY newentry.accesskey "Н">
 <!ENTITY editentry.label "Редакция">
@@ -97,6 +99,8 @@
 <!ENTITY guessfrompage.label "Познай от текущата страница">
 <!ENTITY guessfrompage.accesskey "П">
 <!ENTITY guessfrompage.tooltip "Попълнете тази форма на базата на вероятната форма вход на текущата страница">
+<!ENTITY category.label "Category">
+<!ENTITY category.tooltip "Password category (for Password Categories add-on)">
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
@@ -110,19 +114,16 @@
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
 
-
-
 -->
-<!ENTITY welcometospe "Добре дошли в Редактора на записани парола">
+<!ENTITY welcometospe "Welcome to Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Благодарим Ви, че използвате <a id='addonlink'>Редактора на запазени пароли</a>. Можете да редактирате функционалността, като отидете на Инструменти &gt; Настройки или Редакция &gt; Преференции (в зависимост от вашата операционна система), изберете панела &quot;<a id='security'>Сигурност</a>&quot;, след това щраккнете на бутона &quot;Запазени пароли…&quot;. Диалоговият прозорец вече съдържа бутони &quot;Редакция&quot; и &quot;Нова&quot;. Бутонът в лентата с инструменти е за Ваше удобство. За да го отворите, изберете Изглед &gt;Лентата с инструменти&gt;Персонализиране..., или щракнете с десния бутон в лентата с инструменти и изберете &quot;Персонализиране...&quot;">
+<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. You may also simply access Saved Passwords from the Tools menu or (on Firefox 4 under Windows) the app menu. A toolbar button is also available for your convenience; to access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords, and on Firefox 4.0, the context menu also contains the &quot;Edit&quot; and &quot;Clone&quot; commands. ">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
-
 -->
-<!ENTITY welcomepara1_sm "Благодарим Ви, че използвате <a id='addonlink'>Редактора на записани пароли</a>. Можете да редактиране функционалността, като отидете на Tools &gt; Options или Edit &gt; Preferences (в зависимост от вашата операционна система), навигация с &quot;<a id='passwords'>Passwords</a>&quot; панела под &quot;Privacy &amp; Security&quot;, а след това щракнете върху бутона &quot;Manage Stored Passwords&quot;. В диалоговия прозорец вече има бутони &quot;Edit&quot; and &quot;New&quot;. За Ваше удобство има и бутон в лентата с инструменти. За да го отворите, щракнете с десния бутон в лентата с инструменти и изберете &quot;Персонализиране ...&quot;">
+<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy & Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. You may also simply access Saved Passwords from the Tools menu. A toolbar button is also available for your convenience; to access it, right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Имайте предвид, че диалоговият прозорец за Saved Passwords е основа част от <span id='appname'/> и не е предвидено в това разширение, с изключение на два допълнителни бутона. Бутонът в лентата с инструменти е предоставен само за удобство, с надеждата, че някои потребители на това разширение ще искат да имат  по-чест достъп до диалоговия прозорец, отколкото по друг начин.">
+<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">

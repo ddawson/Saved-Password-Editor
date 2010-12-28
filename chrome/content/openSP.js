@@ -23,6 +23,8 @@ function speOpenSavedPasswords () {
   if (spWin)
     spWin.focus();
   else
-    window.openDialog("chrome://passwordmgr/content/passwordManager.xul",
-                      "", "chrome,titlebar,toolbar,centerscreen,resizable");
+    Components.classes["@mozilla.org/embedcomp/window-watcher;1"].
+      getService(Components.interfaces.nsIWindowWatcher).
+      openWindow(null, "chrome://passwordmgr/content/passwordManager.xul",
+                 "", "chrome,titlebar,toolbar,centerscreen,resizable", null);
 }

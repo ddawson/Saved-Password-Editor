@@ -25,8 +25,10 @@ window.addEventListener(
       getBranch("extensions.savedpasswordeditor.");
 
     function menuitemDynamic (evt) {
-      document.getElementById("savedpasswordeditor-menuitem").hidden =
-        !prefBranch.getBoolPref("display_menuitem");
+      var hidden = !prefBranch.getBoolPref("display_menuitem");
+      document.getElementById("savedpasswordeditor-menuitem").hidden = hidden;
+      document.getElementById("savedpasswordeditor-appmenuitem").hidden =
+        hidden;
       return true;
     }
 
@@ -37,6 +39,7 @@ window.addEventListener(
 
     register_menuitemDynamic(document.getElementById("menu_ToolsPopup"));
     register_menuitemDynamic(document.getElementById("taskPopup"));
+    register_menuitemDynamic(document.getElementById("appmenu-popup"));
     window.removeEventListener("load", init_menuitemDynamic, false);
   },
   false);

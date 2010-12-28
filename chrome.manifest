@@ -1,8 +1,9 @@
 # Functional content
-## Component
+## Components
 component	{bbfefd70-d9a5-4419-bc83-fc2686ad3026}	components/SavedPasswordEditorStartup.js
 contract	@daniel.dawson/savedpasswordeditor-startup;1	{bbfefd70-d9a5-4419-bc83-fc2686ad3026}
 category	profile-after-change	SavedPasswordEditorStartup	@daniel.dawson/savedpasswordeditor-startup;1
+
 ## Chrome
 content	savedpasswordeditor		chrome/content/
 
@@ -19,6 +20,8 @@ locale	savedpasswordeditor	pt-BR	chrome/locale/pt-BR/
 locale	savedpasswordeditor	pt-PT	chrome/locale/pt-PT/
 locale	savedpasswordeditor	ru	chrome/locale/ru/
 locale	savedpasswordeditor	sr	chrome/locale/sr/
+locale	savedpasswordeditor	sv-SE	chrome/locale/sv-SE/
+locale	savedpasswordeditor	tr-TR	chrome/locale/tr-TR/
 locale	savedpasswordeditor	vi	chrome/locale/vi/
 locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/
 locale	savedpasswordeditor	zh-TW	chrome/locale/zh-TW/
@@ -32,6 +35,7 @@ overlay chrome://browser/content/browser.xul chrome://savedpasswordeditor/conten
 overlay chrome://browser/content/browser.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
 
 ## SeaMonkey browser windows
+overlay chrome://navigator/content/navigatorOverlay.xul chrome://savedpasswordeditor/content/menubarOverlay.xul
 overlay chrome://navigator/content/navigator.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
 
 ## Mail windows
@@ -51,8 +55,13 @@ overlay chrome://communicator/content/passwordManager.xul chrome://savedpassword
 # Additional styles
 ## Toolbar button
 style chrome://browser/content/browser.xul chrome://savedpasswordeditor/skin/overlay.css
+style chrome://browser/content/browser.xul chrome://savedpasswordeditor/skin/overlay-winfx4.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1pre os=WINNT
+style chrome://browser/content/browser.xul chrome://savedpasswordeditor/skin/overlay-macfx4.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1pre os=Darwin
 style chrome://navigator/content/navigator.xul chrome://savedpasswordeditor/skin/overlay-sm.css
+style chrome://navigator/content/navigatorOverlay.xul chrome://savedpasswordeditor/skin/overlay-sm.css
 style chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/skin/overlay.css
+style chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/skin/overlay-winfx4.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1pre os=WINNT
+style chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/skin/overlay-macfx4.css application={ec8030f7-c20a-464f-9b0e-13a3a9e97384} appversion>=4.0b1pre os=Darwin
 style chrome://global/content/customizeToolbar.xul chrome://savedpasswordeditor/skin/overlay-sm.css application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
 style chrome://messenger/content/messenger.xul chrome://savedpasswordeditor/skin/overlay.css
 style chrome://messenger/content/messenger.xul chrome://savedpasswordeditor/skin/overlay-sm.css application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}

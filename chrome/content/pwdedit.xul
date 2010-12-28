@@ -70,7 +70,7 @@
       </row>
       <row>
         <label control="password_text" value="&password.label;"/>
-        <textbox type="password" id="password_text"
+        <textbox persist="type" id="password_text"
                  tooltiptext="&password.tooltip;"/>
         <button id="passwordView_btn" label="&showPassword.label;"
                 accesskey="&showPassword.accesskey;"
@@ -92,6 +92,10 @@
   <button id="guessFromPage_btn" label="&guessfrompage.label;"
           accesskey="&guessfrompage.accesskey;"
           tooltiptext="&guessfrompage.tooltip;"
-          oncommand="guessParameters();"
-  />
+          oncommand="guessParameters();"/>
+  <hbox id="category_box">
+    <label control="category_text" value="&category.label;"/>
+    <textbox id="category_text" flex="1"
+             tooltiptext="&category.tooltip;"/>
+  </hbox>
 </dialog>

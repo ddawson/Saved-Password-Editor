@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "vi">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,25 +51,37 @@
 <!ENTITY savedpasswords.tooltip "Mở hộp thoại Saved Passwords">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
-<!ENTITY alwaysLogin.label "Bắt buộc đăng nhập khi sửa mật khẩu">
-<!ENTITY alwaysLogin.tooltip "Bắt buộc phải điền mật khẩu quản lý (nếu có) mỗi lần sửa mật khẩu">
 <!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
-<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào thanh Công Cụ để làm lệnh tắt gọi trình quản lý mật khẩu">
-<!ENTITY cloneButton_behavior.label "Chức năng của nút Nhân Bản">
-<!ENTITY cloneButton_disable.label "Tắt">
-<!ENTITY cloneButton_disable.tooltip "Tắt toàn bộ chức năng Nhân Bản">
-<!ENTITY cloneButton_normal.label "Bình thường">
-<!ENTITY cloneButton_normal.tooltip "Hiển thị một nút Nhân bản riêng biệt giữa Điều Chỉnh và Tạo Mới">
-<!ENTITY cloneButton_combine.label "Kết hợp">
-<!ENTITY cloneButton_combine.tooltip "Nút Tạo Mới hoạt động như nút Nhân Bản khi mật khẩu được chọn">
+<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và danh sách ứng dụng Windows để làm lệnh tắt gọi trình quản lý mật khẩu">
+<!ENTITY passwordfield_caption.label "Hộp mật khẩu trong cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_alwayshide.label "Luôn ẩn mật khẩu khi mở cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_alwaysshow.label "Luôn hiện mật khẩu khi mở cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_rememberlast.label "Nhớ trạng thái lần trước">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Tạo mới">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Sửa">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Nhân Bản">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Kiểu">
 <!ENTITY type_form.label "Điền mẫu Web">
@@ -97,32 +112,20 @@
 <!ENTITY guessfrompage.label "Đoán từ trang hiện tại">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Điền mẫu này dựa trên mẫu điền đăng nhập phù hợp trên trang hiện tại">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
-
--->
-<!ENTITY welcometospe "Chào mừng bạn đến với Saved Password Editor">
+<!ENTITY category.label "Danh mục">
+<!ENTITY category.tooltip "Danh mục mật khẩu (sử dụng cho tiện tích &quot;Password Categories&quot;)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), chọn thẻ &quot;<a id='security'>Security</a>&quot; sau đó ấn nút &quot;Saved Passwords…&quot;. Hộp thoại giờ sẽ chứa các nút &quot;Sửa&quot; và &quot;Tạo mới&quot;. Cũng sẽ có thêm một nút công cụ để tiện sử dụng hơn. Để dùng nó, hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh Công Cụ và chọn &quot;Customize…&quot;">
+<!ENTITY welcometospe "Chào mừng bạn đến với Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa mật khẩu bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), chọn thẻ &quot;<a id='security'>Security</a>&quot; sau đó ấn nút &quot;Saved Passwords…&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools hoặc từ danh sách ứng dụng (trong Firefox4 trên Windows). Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu, và trên Firefox 4.0, bạn còn có thể sử dụng lệnh &quot;Chỉnh sửa&quot; và &quot;Sao chép&quot; từ trình đơn ngữ cảnh.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
-<!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;<a id='passwords'>Passwords</a>&quot; nằm ở &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Hộp thoại giờ sẽ chứa các nút &quot;Sửa&quot; và &quot;Tạo mới&quot;. Cũng sẽ có thêm một nút công cụ để tiện sử dụng hơn. Để dùng nó, hãy ấn chuột phải vào thanh Công Cụ và chọn &quot;Customize…&quot;">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;<a id='passwords'>Passwords</a>&quot; nằm ở thẻ &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools. Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu, và trên Firefox 4.0, bạn còn có thể sử dụng lệnh &quot;Chỉnh sửa&quot; và &quot;Sao chép&quot; từ trình đơn ngữ cảnh.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Lưu ý rằng hộp thoại Saved Passwords là một thành phần cơ bản của <span id='appname'/>, và hiện không được cung cấp bởi ứng dụng mở rộng này, ngoại trừ 2 nút được thêm vào. Nút Công Cụ được cung cấp chỉ với mục đích thuận tiện hơn, với hy vọng là một số người sử dụng ứng dụng mở rộng này sẽ muốn truy cập vào hộp thoại thường xuyên hơn mức thông thường.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Lưu ý rằng hộp thoại Saved Passwords là một thành phần cơ bản của <span id='appname'/>, và hiện không được cung cấp bởi tiện ích này, ngoại trừ các chức năng phụ được nêu ở trên. Nút Công Cụ được cung cấp nhằm giúp những ai cần truy cập nhiều vào hộp thoại quản lý mật khẩu làm việc thuận lợi hơn.">

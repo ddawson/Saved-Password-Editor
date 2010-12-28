@@ -16,26 +16,41 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-window.addEventListener(
-  "load",
-  function loadHandler (ev) {
-    spEditor.strBundle = document.getElementById("savedpwdedit-stringbundle");
-    if (spEditor.prefs.getIntPref("clonebutton") != 1)
-      document.getElementById("cloneSignon").hidden = true;
-    window.removeEventListener("load", loadHandler, false);
-  },
-  false);
-
 document.getElementById("signonsTree").addEventListener(
   "select",
   function (ev) {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length == 1 && !gSelectUserInUse) {
-      document.getElementById("cloneSignon").disabled = false;
-      document.getElementById("editSignon").disabled = false;
+      document.getElementById("key_editSignon").removeAttribute("disabled");
+      document.getElementById("key_cloneSignon").removeAttribute("disabled");
+      document.getElementById("edit_signon").removeAttribute("disabled");
+      document.getElementById("clone_signon").removeAttribute("disabled");
+      document.getElementById("speMenuBtn_editSignon").
+        removeAttribute("disabled");
+      document.getElementById("speMenuBtn_cloneSignon").
+        removeAttribute("disabled");
+      if (!spEditor.userChangedMenuBtn) {
+        document.getElementById("speMenuBtn").command = "edit_signon";
+        document.getElementById("speMenuBtn").
+          setAttribute("icon", "properties");
+      }
     } else {
-      document.getElementById("cloneSignon").disabled = true;
-      document.getElementById("editSignon").disabled = true;
+      document.getElementById("speMenuBtn").command = "new_signon";
+      document.getElementById("speMenuBtn").
+        setAttribute("icon", "add");
+      document.getElementById("key_editSignon").
+        setAttribute("disabled", "true");
+      document.getElementById("key_cloneSignon").
+        setAttribute("disabled", "true");
+      document.getElementById("edit_signon").
+        setAttribute("disabled", "true");
+      document.getElementById("clone_signon").
+        setAttribute("disabled", "true");
+      document.getElementById("speMenuBtn_editSignon").
+        setAttribute("disabled", "true");
+      document.getElementById("speMenuBtn_cloneSignon").
+        setAttribute("disabled", "true");
+      spEditor.userChangedMenuBtn = false;
     }
   },
   false);
@@ -46,25 +61,37 @@ const spEditor = {
          getService(Components.interfaces.nsIPrefService).
          getBranch("extensions.savedpasswordeditor."),
 
-  login: function () {
-    if (this.prefs.getBoolPref("always_login")) {
-      var token = Components.classes["@mozilla.org/security/pk11tokendb;1"].
-                    createInstance(Components.interfaces.nsIPK11TokenDB).
-                    getInternalKeyToken();
-      if (!token.checkPassword("")) {
-        try {
-          token.login(true);
-        } catch (e) { }
-        return token.isLoggedIn();
-      }
+  userChangedMenuBtn: false,
+
+  menuBtnSel: function (ev, elem) {
+    var mb = document.getElementById("speMenuBtn");
+    switch(elem.id) {
+    case "speMenuBtn_editSignon":
+      mb.command = "edit_signon";
+      mb.setAttribute("icon", "properties");
+      this.editSignon();
+      break;
+
+    case "speMenuBtn_cloneSignon":
+      mb.command = "clone_signon";
+      mb.removeAttribute("icon");
+      this.cloneSignon();
+      break;
+
+    case "speMenuBtn_newSignon":
+      mb.command = "new_signon";
+      mb.setAttribute("icon", "add");
+      this.newSignon();
+      break;
     }
-    return true;
+
+    this.userChangedMenuBtn = true;
+    ev.stopPropagation();
   },
 
   editSignon: function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length != 1) return;
-    if (!this.login()) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
     var signon = table[selections[0]];
@@ -81,7 +108,6 @@ const spEditor = {
   cloneSignon: function () {
     var selections = GetTreeSelections(signonsTree);
     if (selections.length != 1) return;
-    if (!this.login()) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
     var signon = table[selections[0]];
@@ -103,14 +129,6 @@ const spEditor = {
   },
 
   newSignon: function () {
-    if (this.prefs.getIntPref("clonebutton") == 2) {
-      var selections = GetTreeSelections(signonsTree);
-      if (selections.length == 1) {
-        this.cloneSignon();
-        return;
-      }
-    }
-
     var ret = { newSignon: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",

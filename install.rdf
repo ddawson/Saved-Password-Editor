@@ -1,351 +1,443 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<RDF xmlns="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:em="http://www.mozilla.org/2004/em-rdf#">
-  <Description about="urn:mozilla:install-manifest">
-    <em:id>savedpasswordeditor@daniel.dawson</em:id>
-    <em:name>Saved Password Editor</em:name>
-    <em:version>1.5.4</em:version>
-    <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-    <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-    <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-    <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-    <em:translator>fr: Goofy (BabelZilla)</em:translator>
-    <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-    <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-    <em:translator>nl: markh (BabelZilla)</em:translator>
-    <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-    <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-    <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-    <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-    <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-    <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-    <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-    <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
+<RDF:RDF xmlns:RDF="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+         xmlns="http://www.mozilla.org/2004/em-rdf#">
+  <RDF:Description about="urn:mozilla:install-manifest">
+    <id>savedpasswordeditor@daniel.dawson</id>
+    <name>Saved Password Editor</name>
+    <version>2.0</version>
+    <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+    <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
+    <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+    <translator>de: /usr/bin/tux (BabelZilla)</translator>
+    <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+    <translator>fr: Goofy (BabelZilla)</translator>
+    <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+    <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+    <translator>nl: markh (BabelZilla)</translator>
+    <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+    <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+    <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+    <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+    <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+    <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+    <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+    <translator>zh-CN: Loviny (BabelZilla)</translator>
+    <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+    <description>Adds the ability to create and edit password entries in the password manager.</description>
 
-    <em:localized>
-      <Description>
-        <em:locale>bg-BG</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
-      </Description>
-      <Description>
-        <em:locale>de</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</em:description>
-      </Description>
-      <Description>
-        <em:locale>es-ES</em:locale>
-        <em:name>Saved password editor (Editor de contraseñas)</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</em:description>
-      </Description>
-      <Description>
-        <em:locale>fr</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</em:description>
-      </Description>
-      <Description>
-        <em:locale>hu</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Jelszavak szerkesztése a jelszókezelőben.</em:description>
-      </Description>
-      <Description>
-        <em:locale>ja</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</em:description>
-      </Description>
-      <Description>
-        <em:locale>nl</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</em:description>
-      </Description>
-      <Description>
-        <em:locale>pt-BR</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Adds the ability to create and edit password entries in the password manager.</em:description>
-      </Description>
-      <Description>
-        <em:locale>pt-PT</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</em:description>
-      </Description>
-      <Description>
-        <em:locale>ru</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</em:description>
-      </Description>
-      <Description>
-        <em:locale>sr</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Додаје могућност прављења и уређивања лозинки.</em:description>
-      </Description>
-      <Description>
-        <em:locale>vi</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</em:description>
-      </Description>
-      <Description>
-        <em:locale>zh-CN</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>在「已保存密码」管理中增加新建与编辑密码的功能。</em:description>
-      </Description>
-      <Description>
-        <em:locale>zh-TW</em:locale>
-        <em:name>Saved Password Editor</em:name>
-        <em:creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</em:creator>
-        <em:translator>bg-BG: ExaFlop (BabelZilla)</em:translator>
-        <em:translator>de: /usr/bin/tux (BabelZilla)</em:translator>
-        <em:translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</em:translator>
-        <em:translator>fr: Goofy (BabelZilla)</em:translator>
-        <em:translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</em:translator>
-        <em:translator>ja: Masahiko Imanaka (BabelZilla)</em:translator>
-        <em:translator>nl: markh (BabelZilla)</em:translator>
-        <em:translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</em:translator>
-        <em:translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</em:translator>
-        <em:translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</em:translator>
-        <em:translator>sr: Charmed94 (BabelZilla)</em:translator>
-        <em:translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</em:translator>
-        <em:translator>zh-CN: Loviny (BabelZilla)</em:translator>
-        <em:translator>zh-TW: Velociraptor (BabelZilla)</em:translator>
-        <em:description>在密碼管理員中加入新增與編輯密碼的功能。</em:description>
-      </Description>
-    </em:localized>
+    <localized>
+      <RDF:Description>
+        <locale>bg-BG</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, ДакСРБИЈА (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Adds the ability to create and edit password entries in the password manager.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>de</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>es-ES</locale>
+        <name>Saved password editor (Editor de contraseñas)</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>fr</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>hu</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Jelszavak szerkesztése a jelszókezelőben.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>ja</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>nl</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>pt-BR</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Adds the ability to create and edit password entries in the password manager.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>pt-PT</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>ru</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, ДакСРБИЈА (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>sr</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, ДакСРБИЈА (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Додаје могућност прављења и уређивања лозинки.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>sv-SE</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Lägger till funktioner för att skapa och redigera lösenordsposter i lösenordshanteraren.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>tr-TR</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Adds the ability to create and edit password entries in the password manager.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>vi</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>zh-CN</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>在「已保存密码」管理中增加新建与编辑密码的功能。</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>zh-TW</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>在密碼管理員中加入新增與編輯密碼的功能。</description>
+      </RDF:Description>
+    </localized>
 
-    <em:iconURL>chrome://savedpasswordeditor/skin/spe-icon_32.png</em:iconURL>
-    <em:optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</em:optionsURL>
+    <iconURL>chrome://savedpasswordeditor/skin/key48.png</iconURL>
+    <icon64URL>chrome://savedpasswordeditor/skin/key64.png</icon64URL>
+    <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</em:id> <!-- Firefox -->
-        <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>4.0b8pre</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+    <targetApplication>
+      <RDF:Description>
+        <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- Firefox -->
+        <minVersion>3.0</minVersion>
+        <maxVersion>4.0b9pre</maxVersion>
+      </RDF:Description>
+    </targetApplication>
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</em:id> <!-- SeaMonkey -->
-        <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>2.1b2</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+    <targetApplication>
+      <RDF:Description>
+        <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!-- SeaMonkey -->
+        <minVersion>2.0</minVersion>
+        <maxVersion>2.1b2</maxVersion>
+      </RDF:Description>
+    </targetApplication>
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</em:id> <!-- Thunderbird -->
-        <em:minVersion>3.0</em:minVersion>
-        <em:maxVersion>3.3a2pre</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+    <targetApplication>
+      <RDF:Description>
+        <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
+        <minVersion>3.0</minVersion>
+        <maxVersion>3.3a2pre</maxVersion>
+      </RDF:Description>
+    </targetApplication>
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{718e30fb-e89b-41dd-9da7-e25a45638b28}</em:id> <!-- Sunbird -->
-        <em:minVersion>1.0b1</em:minVersion>
-        <em:maxVersion>1.0pre</em:maxVersion>
-      </Description>
-    </em:targetApplication>
+    <targetApplication>
+      <RDF:Description>
+        <id>{a79fe89b-6662-4ff4-8e88-09950ad4dfde}</id> <!-- Conkeror -->
+        <minVersion>0.9</minVersion>
+        <maxVersion>0.9.*</maxVersion>
+      </RDF:Description>
+    </targetApplication>
 
-    <em:targetApplication>
-      <Description>
-        <em:id>{a463f10c-3994-11da-9945-000d60ca027b}</em:id> <!-- Flock -->
-        <em:minVersion>2.0</em:minVersion>
-        <em:maxVersion>2.5.*</em:maxVersion>
-      </Description>
-    </em:targetApplication>
-  </Description>
-</RDF>
+    <targetApplication>
+      <RDF:Description>
+        <id>{718e30fb-e89b-41dd-9da7-e25a45638b28}</id> <!-- Sunbird -->
+        <minVersion>1.0b1</minVersion>
+        <maxVersion>1.0pre</maxVersion>
+      </RDF:Description>
+    </targetApplication>
+  </RDF:Description>
+</RDF:RDF>

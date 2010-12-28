@@ -20,19 +20,53 @@ function el (name) document.getElementById(name);
 
 const Cc = Components.classes,
       Ci = Components.interfaces,
+      prefs = Components.classes["@mozilla.org/preferences-service;1"].
+              getService(Components.interfaces.nsIPrefService).
+              getBranch("extensions.savedpasswordeditor."),
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+      CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
       SUNBIRD = "{718e30fb-e89b-41dd-9da7-e25a45638b28}";
 
-var strBundle, oldSignon, cloneSignon;
+var strBundle, catStorage, haveOldSignon, oldSignon, cloneSignon;
 
 window.addEventListener(
   "DOMContentLoaded",
   function loadHandler (ev) {
     strBundle = el("string-bundle");
+
+    try {
+      catStorage = Cc["@daniel.dawson/signoncategorystorage;1"].
+                   getService(Ci.ddISignonCategoryStorage);
+    } catch (e) {
+      catStorage = null;
+    }
+
     oldSignon = window.arguments[0];
     cloneSignon = window.arguments[1];
+
+    var showpwd = prefs.getIntPref("showpassword");
+    var pwdField = el("password_text");
+    var pwdCurHidden = (pwdField.type == "password");
+    pwdField.setAttribute("type", "password");
+    var pwdViewButton = el("passwordView_btn");
+    switch (showpwd) {
+    case 1:
+      pwdCurHidden = false;
+      // Fall through
+    case 2:
+      if (!pwdCurHidden && login())
+        pwdField.removeAttribute("type");
+      break;
+    }
+    if (pwdField.hasAttribute("type") && pwdField.type == "password") {
+      pwdViewButton.label = strBundle.getString("showPassword");
+      pwdViewButton.accessKey = strBundle.getString("showPasswordAccesskey");
+    } else {
+      pwdViewButton.label = strBundle.getString("hidePassword");
+      pwdViewButton.accessKey = strBundle.getString("hidePasswordAccesskey");
+    }
   
-    var haveOldSignon = false;
+    haveOldSignon = false;
     if (!oldSignon) {
       oldSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
                     createInstance(Ci.nsILoginInfo);
@@ -53,6 +87,11 @@ window.addEventListener(
     el("password_text").value = oldSignon.password;
     el("usernameField_text").value = oldSignon.usernameField;
     el("passwordField_text").value = oldSignon.passwordField;
+
+    if (catStorage)
+      el("category_text").value = catStorage.getCategory(oldSignon);
+    else
+      el("category_box").hidden = true;
 
     if (!oldSignon.httpRealm)
       el("type_group").selectedIndex = 0;
@@ -86,6 +125,19 @@ window.addEventListener(
   },
   false);
 
+function login () {
+  var token = Components.classes["@mozilla.org/security/pk11tokendb;1"].
+                createInstance(Components.interfaces.nsIPK11TokenDB).
+                getInternalKeyToken();
+  if (!token.checkPassword("")) {
+    try {
+      token.login(true);
+    } catch (e) { }
+    return token.isLoggedIn();
+  }
+  return true;
+}
+
 function handle_typeSelect () {
   var idx = el("type_group").selectedIndex;
   if (idx == 0) {
@@ -107,6 +159,7 @@ function togglePasswordView () {
   var pwdField = el("password_text");
   var pwdViewButton = el("passwordView_btn");
   if (pwdField.type == "password") {
+    if (!login()) return;
     pwdField.removeAttribute("type");
     pwdViewButton.label = strBundle.getString("hidePassword");
     pwdViewButton.accessKey = strBundle.getString("hidePasswordAccesskey");
@@ -176,9 +229,9 @@ function guessParameters () {
 
   // Locate the browser object for the last seen tab
   var curWin =
-    Cc["@mozilla.org/appshell/window-mediator;1"].
-    getService(Ci.nsIWindowMediator).getMostRecentWindow("navigator:browser").
-    document.getElementById("content").selectedBrowser.contentWindow;
+      Cc["@mozilla.org/appshell/window-mediator;1"].
+      getService(Ci.nsIWindowMediator).
+      getMostRecentWindow("navigator:browser").getBrowser().contentWindow;
 
   // Attempt to find a login form
   if (!walkTree(curWin)) {
@@ -194,6 +247,7 @@ function setNewSignon () {
     formSubmitURL, httpRealm,
     username = el("username_text").value,
     password = el("password_text").value,
+    category = el("category_text").value,
     usernameField, passwordField;
   var idx = el("type_group").selectedIndex;
 
@@ -209,8 +263,12 @@ function setNewSignon () {
   }
 
   var newSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
-                    createInstance(Ci.nsILoginInfo);
+                  createInstance(Ci.nsILoginInfo);
   newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
                  usernameField, passwordField);
   window.arguments[2].newSignon = newSignon;
+  if (catStorage) {
+    if (haveOldSignon && !cloneSignon) catStorage.setCategory(oldSignon, "");
+    catStorage.setCategory(newSignon, category);
+  }
 }

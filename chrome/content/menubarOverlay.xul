@@ -36,6 +36,13 @@
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
+  <vbox id="appmenuSecondaryPane">
+    <menuitem id="savedpasswordeditor-appmenuitem"
+              class="menuitem-iconic"
+              label="&savedpasswords.label;"
+              insertafter="appmenu_addons"
+              oncommand="speOpenSavedPasswords();"/>
+  </vbox>
   <script type="text/javascript"
           src="chrome://savedpasswordeditor/content/menubarOverlay.js"/>
 </overlay>

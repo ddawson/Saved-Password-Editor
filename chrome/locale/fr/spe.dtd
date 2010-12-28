@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "fr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -48,25 +51,37 @@
 <!ENTITY savedpasswords.tooltip "Ouvre la fenêtre de dialogue des mots de passe sauvegardés">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
-<!ENTITY alwaysLogin.label "Demander obligatoirement un identifiant pour modifier un mot de passe">
-<!ENTITY alwaysLogin.tooltip "Force à entrer votre mot de passe principal (s'il existe) à chaque modification du mot de passe">
-<!ENTITY displayMenuitem.label "Inclure le raccourci dans le menu Outils">
-<!ENTITY displayMenuitem.tooltip "Ajoute &quot;Mots de passe enregistrés&quot; au menu Outils comme raccourci pour le gestionnaire de mots de passe">
-<!ENTITY cloneButton_behavior.label "Cloner le comportement du bouton">
-<!ENTITY cloneButton_disable.label "Désactiver">
-<!ENTITY cloneButton_disable.tooltip "Désactiver complètement la fonction de clonage">
-<!ENTITY cloneButton_normal.label "Normal">
-<!ENTITY cloneButton_normal.tooltip "Afficher un bouton Cloner distinct entre Modifier et Nouveau">
-<!ENTITY cloneButton_combine.label "Combiner">
-<!ENTITY cloneButton_combine.tooltip "Le nouveau bouton se comporte comme Cloner quand le mot de passe est sélectionné">
+<!ENTITY displayMenuitem.label "Inclure le raccourci dans les menus">
+<!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
+<!ENTITY passwordfield_caption.label "Champ de mot de passe dans la fenêtre de l'éditeur">
+<!ENTITY passwordfield_alwayshide.label "Toujours masquer le mot de passe à l'ouverture de la fenêtre de l'éditeur">
+<!ENTITY passwordfield_alwaysshow.label "Toujours afficher le mot de passe à l'ouverture de la fenêtre de l'éditeur">
+<!ENTITY passwordfield_rememberlast.label "Se souvenir du dernier état choisi">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Nouveau">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Modifier">
 <!ENTITY editentry.accesskey "M">
 <!ENTITY cloneentry.label "Cloner">
 <!ENTITY cloneentry.accesskey "o">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Type">
 <!ENTITY type_form.label "Formulaire Web">
@@ -97,32 +112,19 @@
 <!ENTITY guessfrompage.label "Essai pour la page courante">
 <!ENTITY guessfrompage.accesskey "E">
 <!ENTITY guessfrompage.tooltip "Remplit ce champ en essayant l'identifiant probable de la page courante">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
-
-
-
--->
-<!ENTITY welcometospe "Bienvenue dans l'extension Saved Password Editor">
+<!ENTITY category.label "Catégorie">
+<!ENTITY category.tooltip "Catégorie de mot de passe (pour l'extension Password Categories)">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre sytème d'exploitation), puis le panneau &quot;<a id='security'>Sécurité</a>&quot;, puis en cliquant sur le bouton &quot;Mots de passe enregistrés…&quot;. Le dialogue propose maintenant les boutons &quot;Modifier&quot; et &quot;Nouveau&quot;. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien cliquez droit dans la barre d'outils
-et choisissez &quot;Personnaliser…&quot;">
+<!ENTITY welcometospe "Bienvenue dans l'extension Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis le panneau &quot;<a id='security'>Sécurité</a>&quot;, puis en cliquant sur le bouton &quot;Mots de passe enregistrés…&quot;. Vous pouvez aussi simplement accéder à l'extension Save Passwords depuis le menu Outils ou encore (avec Firefox 4 sous Windows) par le menu des applications. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot;. La fenêtre de dialogue de l'extension Saved Passwords comporte un bouton de menu avec des commandes pour ajouter/modifier les mots de passe, et dans Firefox 4.0 le menu contextuel contient aussi les commandes « Modifier » et « Cloner ».">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis naviguez jusqu'au panneau &quot;<a id='passwords'>Mots de passe</a>&quot; dans la catégorie &quot;<a id='security'>Confidentialité et sécurité</a>&quot;, puis cliquez sur le bouton &quot;Mots de passe enregistrés…&quot;. Le dialogue propose maintenant les boutons &quot;Modifier&quot; et &quot;Nouveau&quot;. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot;">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Merci d'utiliser l'extension <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis naviguez jusqu'au panneau &quot;<a id='passwords'>Mots de passe</a>&quot; dans la catégorie &quot;<a id='security'>Confidentialité et sécurité</a>&quot;, puis cliquez sur le bouton &quot;Mots de passe enregistrés…&quot;. Vous pouvez aussi simplement accéder à l'extension Save Passwords depuis le menu Outils. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot; La fenêtre de dialogue de l'extension Saved Passwords comporte un bouton de menu avec des commandes pour ajouter/modifier les mots de passe.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Notez que le dialogue des mots de passe enregistrés est un composant de base de <span id='appname'/>, et qu'il n'est pas fourni avec l'extension, sauf les deux boutons ajoutés. Le bouton de la barre d'outils n'est fourni que pour votre confort, dans l'espoir que certains utilisateurs de cette extension voudront accéder au dialogue beaucoup plus souvent qu'avec une autre solution.">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Notez que le dialogue des mots de passe enregistrés est un composant de base de <span id='appname'></span>, et qu'il n'est pas fourni avec l'extension, sauf les deux boutons ajoutés. Le bouton de la barre d'outils n'est fourni que pour votre confort, dans l'espoir que certains utilisateurs de cette extension voudront accéder au dialogue beaucoup plus souvent qu'avec une autre solution.">
