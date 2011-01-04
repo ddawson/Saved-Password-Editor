@@ -25,6 +25,7 @@ const Cc = Components.classes,
               getBranch("extensions.savedpasswordeditor."),
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
       CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
+      SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}",
       SUNBIRD = "{718e30fb-e89b-41dd-9da7-e25a45638b28}";
 
 var strBundle, catStorage, haveOldSignon, oldSignon, cloneSignon;
@@ -103,6 +104,7 @@ window.addEventListener(
     var xai = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
     switch (xai.ID) {
     case THUNDERBIRD:
+    case SPICEBIRD:
       el("type_form").hidden = true;
       if (!haveOldSignon)
         el("type_group").selectedIndex = 1;
@@ -175,47 +177,49 @@ function guessParameters () {
     var curDoc = win.document;
     if (!(curDoc instanceof HTMLDocument)) return false;
 
-    // Get the host prefix;
-    var curLocation = win.location;
-    var hostname = curLocation.protocol + "//" + curLocation.host;
+    inpage: {
+      // Get the host prefix;
+      var curLocation = win.location;
+      var hostname = curLocation.protocol + "//" + curLocation.host;
 
-    // Locate a likely login form and its fields
-    var pwdFields = curDoc.evaluate(
-      '//form//input[translate(@type, "PASWORD", "pasword")="password"]',
-      curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-    if (pwdFields.snapshotLength == 0) return false;
+      // Locate a likely login form and its fields
+      var pwdFields = curDoc.evaluate(
+        '//form//input[translate(@type, "PASWORD", "pasword")="password"]',
+        curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+      if (pwdFields.snapshotLength == 0) break inpage;
 
-    for (var i = 0; i < pwdFields.snapshotLength; i++) {
-      var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
-      var unameField = curDoc.evaluate(
-        '(.//input[(not(@type) or translate(@type, "TEX", "tex")="text") ' +
-          'and not(preceding::input[' +
-          'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
-        form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
-          singleNodeValue;
-      if (unameField) break;
-    }
-
-    if (unameField) {
-      // Construct the submit prefix
-      var formAction = form.getAttribute("action");
-      var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
-      var formSubmitURL;
-      if (res)
-        formSubmitURL = res[1];
-      else
-        formSubmitURL = hostname;
-
-      // Populate the editor form
-      el("hostname_text").value = hostname;
-      el("formSubmitURL_text").value = formSubmitURL;
-      if (pwdField.value != "") {
-        el("username_text").value = unameField.value;
-        el("password_text").value = pwdField.value;
+      for (var i = 0; i < pwdFields.snapshotLength; i++) {
+        var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
+        var unameField = curDoc.evaluate(
+          '(.//input[(not(@type) or translate(@type, "TEX", "tex")="text") ' +
+            'and not(preceding::input[' +
+            'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
+          form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
+            singleNodeValue;
+        if (unameField) break;
       }
-      el("usernameField_text").value = unameField.getAttribute("name");
-      el("passwordField_text").value = pwdField.getAttribute("name");
-      return true;
+
+      if (unameField) {
+        // Construct the submit prefix
+        var formAction = form.getAttribute("action");
+        var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
+        var formSubmitURL;
+        if (res)
+          formSubmitURL = res[1];
+        else
+          formSubmitURL = hostname;
+
+        // Populate the editor form
+        el("hostname_text").value = hostname;
+        el("formSubmitURL_text").value = formSubmitURL;
+        if (pwdField.value != "") {
+          el("username_text").value = unameField.value;
+          el("password_text").value = pwdField.value;
+        }
+        el("usernameField_text").value = unameField.getAttribute("name");
+        el("passwordField_text").value = pwdField.getAttribute("name");
+        return true;
+      }
     }
 
     // See if any frame or iframe contains a login form

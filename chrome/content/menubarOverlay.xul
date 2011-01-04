@@ -36,6 +36,13 @@
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
+  <menupopup id="tools-menupopup">
+    <menuitem id="savedpasswordeditor-menuitem"
+              class="menuitem-iconic"
+              label="&savedpasswords.label;"
+              accesskey="&savedpasswords.accesskey;"
+              oncommand="speOpenSavedPasswords();"/>
+  </menupopup>
   <vbox id="appmenuSecondaryPane">
     <menuitem id="savedpasswordeditor-appmenuitem"
               class="menuitem-iconic"

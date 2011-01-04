@@ -27,8 +27,10 @@
     <stringbundle id="savedpwdedit-stringbundle"
                   src="chrome://savedpasswordeditor/locale/spe.properties"/>
   </stringbundleset>
+
   <script type="text/javascript"
           src="chrome://savedpasswordeditor/content/pwdmgrOverlay.js"/>
+
   <commandset>
     <command id="edit_signon"
              label="&editentry.label;" accesskey="&editentry.accesskey;"
@@ -40,6 +42,7 @@
              label="&newentry.label;" accesskey="&newentry.accesskey;"
              oncommand="spEditor.newSignon();"/>
   </commandset>
+
   <keyset>
     <key id="key_editSignon" key="&editentry.accesskey;"
          modifiers="access" oncommand="spEditor.editSignon();"
@@ -50,10 +53,18 @@
     <key id="key_newSignon" key="&newentry.accesskey;"
          modifiers="access" oncommand="spEditor.newSignon();"/>
   </keyset>
-  <menupopup id="signonsTreeContextMenu">
-    <menuitem id="menu_editSignon" command="edit_signon"/>
-    <menuitem id="menu_cloneSignon" command="clone_signon"/>
-  </menupopup>
+
+  <window id="SignonViewerDialog">
+    <popupset id="signonsTreeContextSet">
+      <menupopup id="signonsTreeContextMenu">
+        <menuitem id="menu_editSignon" command="edit_signon"/>
+        <menuitem id="menu_cloneSignon" command="clone_signon"/>
+      </menupopup>
+    </popupset>
+  </window>
+
+  <tree id="signonsTree" context="signonsTreeContextMenu"/>
+
   <hbox id="SignonViewerButtons">
     <button id="speMenuBtn" type="menu-button" command="new_signon" icon="add"
             insertafter="removeAllSignons">

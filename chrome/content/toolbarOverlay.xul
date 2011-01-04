@@ -50,4 +50,11 @@
                    tooltiptext="&savedpasswords.tooltip;"
                    oncommand="speOpenSavedPasswords();"/>
   </toolbarpalette>
+  <toolbarpalette id="framework-toolpalette">
+    <toolbarbutton id="savedpasswordeditor-button"
+                   class="framework-toolbarbutton padded-toolbarbutton"
+                   label="&savedpasswords.label;"
+                   tooltiptext="&savedpasswords.tooltip;"
+                   oncommand="speOpenSavedPasswords();"/>
+  </toolbarpalette>
 </overlay>

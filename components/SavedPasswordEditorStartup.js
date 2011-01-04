@@ -23,8 +23,9 @@ const Cc = Components.classes,
     FLOCK = "{a463f10c-3994-11da-9945-000d60ca027b}",
     SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
     THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+    SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}",
     PREFNAME = "currentVersion",
-    THISVERSION = "2.0",
+    THISVERSION = "2.0.1",
     COMPAREVERSION = "2.0",
     CONTENT = "chrome://savedpasswordeditor/content/",
     WELCOMEURL = CONTENT + "welcome.xhtml",
@@ -138,8 +139,15 @@ SavedPasswordEditorStartup.prototype = {
 
     case THUNDERBIRD:
       var curWin = wm.getMostRecentWindow("mail:3pane");
-      curWin.focus()
+      curWin.focus();
       curWin.document.getElementById("tabmail").openTab(
+        "contentTab", { contentPage: WELCOMEURL });
+      break;
+
+    case SPICEBIRD:
+      var curWin = wm.getMostRecentWindow("collab:main");
+      curWin.focus();
+      curWin.document.getElementById("tabcollab").openTab(
         "contentTab", { contentPage: WELCOMEURL });
       break;
     }

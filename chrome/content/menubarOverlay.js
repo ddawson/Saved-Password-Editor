@@ -27,8 +27,6 @@ window.addEventListener(
     function menuitemDynamic (evt) {
       var hidden = !prefBranch.getBoolPref("display_menuitem");
       document.getElementById("savedpasswordeditor-menuitem").hidden = hidden;
-      document.getElementById("savedpasswordeditor-appmenuitem").hidden =
-        hidden;
       return true;
     }
 
@@ -37,9 +35,21 @@ window.addEventListener(
         popup.addEventListener("popupshowing", menuitemDynamic, false);
     }
 
+    function appmenuitemDynamic (evt) {
+      var hidden = !prefBranch.getBoolPref("display_menuitem");
+      document.getElementById("savedpasswordeditor-appmenuitem").hidden =
+        hidden;
+      return true;
+    }
+
+    function register_appmenuitemDynamic (popup) {
+      if (popup)
+        popup.addEventListener("popupshowing", appmenuitemDynamic, false);
+    }
+
     register_menuitemDynamic(document.getElementById("menu_ToolsPopup"));
     register_menuitemDynamic(document.getElementById("taskPopup"));
-    register_menuitemDynamic(document.getElementById("appmenu-popup"));
+    register_appmenuitemDynamic(document.getElementById("appmenu-popup"));
     window.removeEventListener("load", init_menuitemDynamic, false);
   },
   false);
