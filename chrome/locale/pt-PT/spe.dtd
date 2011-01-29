@@ -14,11 +14,6 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
-
-
-
-
 -->
 <!-- LOCALE
 
@@ -32,19 +27,10 @@
      en-GB  - English in Great Britain
      de-DE  - German in Germany
      ru     - Russian (no specific country)
-
-
-
-
-
 -->
 <!ENTITY locale "pt-PT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
-
-
-
-
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- Strings to be localized -->
@@ -112,17 +98,16 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
-
 -->
-<!ENTITY welcometospe "Bem vindo ao Editor de Senhas guardadas">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;<a id='security'>Security</a>&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. You may also simply access Saved Passwords from the Tools menu or (on Firefox 4 under Windows) the app menu. A toolbar button is also available for your convenience; to access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords, and on Firefox 4.0, the context menu also contains the &quot;Edit&quot; and &quot;Clone&quot; commands.">
+<!ENTITY welcometospe "Bem vindo ao Editor de Senhas guardadas">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode usar a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), seleccionando o painel &quot;<a id='security'>segurança</a>&quot; e clicar no botão &quot;Senhas guardadas…&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, seleccione Ver &gt; Barra de ferramentas &gt; Personalizar…, ou clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 -->
-<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;<a id='passwords'>Passwords</a>&quot; pane under &quot;Privacy & Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. You may also simply access Saved Passwords from the Tools menu. A toolbar button is also available for your convenience; to access it, right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains a menu-button with commands for adding and editing passwords.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode ir para a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), indo ao painel &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade e segurança&quot;, depois clicar no botão &quot;Gerir senhas guardadas&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">
+<!ENTITY welcomepara2 "Tenha em atenção que o diálogo Senhas guardadas é um componente base do <span id='appname'></span>, e não é fornecido por esta extensão, excepto pelos dois botões fornecidos. A barra de ferramentas é fornecida por conveniência, na expectativa que alguns utilizadores desta extensão desejam aceder ao diálogo com muita mais frequência que a normal.">
