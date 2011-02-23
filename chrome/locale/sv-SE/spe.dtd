@@ -15,6 +15,7 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 
+
 -->
 <!-- LOCALE
 
@@ -30,10 +31,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "sv-SE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -55,6 +58,7 @@
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 -->
 <!ENTITY newentry.label "Nytt">
 <!ENTITY newentry.accesskey "N">
@@ -93,8 +97,8 @@
 <!ENTITY guessfrompage.label "Gissa utifrån aktuell sida">
 <!ENTITY guessfrompage.accesskey "i">
 <!ENTITY guessfrompage.tooltip "Fyll i det här formuläret baserat på ett lämpligt inloggningsformulär på den aktuella sidan">
-<!ENTITY category.label "Kategori">
-<!ENTITY category.tooltip "Lösenordskategori (för tillägget Password Categories)">
+<!ENTITY tags.label "Taggar">
+<!ENTITY tags.tooltip "Lösenordstaggar (för tillägget &quot;Password Tags&quot;)">
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
@@ -111,6 +115,7 @@
      strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Välkommen till Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -121,8 +126,9 @@
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
 <!ENTITY welcomepara1_sm "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), navigera sedan till &quot;<a id='passwords'>Lösenord</a>&quot;-panelen under &quot;Sekretess &amp; Säkerhet&quot; och klicka slutligen på knappen &quot;Hantera sparade lösenord&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp med kommandon för att lägga till och redigera lösenord.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Observera att dialogen &quot;Sparade lösenord&quot; är en baskomponent av <span id='appname'/> och inte tillhandahålls av det här tillägget, med undantag för de tillagda funktionerna som nämns härovan. Verktygsfältsknappen tillhandahålls enkom av bekvämlighetsskäl, med förhoppningen att några av användarna av det här tillägget kommer att vilja öppna dialogen mycket oftare än de annars kanske skulle göra.">
+<!ENTITY welcomepara2 "Observera att dialogen &quot;Sparade lösenord&quot; är en baskomponent av <span id='appname'></span> och inte tillhandahålls av det här tillägget, med undantag för de tillagda funktionerna som nämns härovan. Verktygsfältsknappen tillhandahålls enkom av bekvämlighetsskäl, med förhoppningen att några av användarna av det här tillägget kommer att vilja öppna dialogen mycket oftare än de annars kanske skulle göra.">

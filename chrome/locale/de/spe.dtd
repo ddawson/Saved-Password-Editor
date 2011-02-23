@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "de-DE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -77,6 +80,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Passworteditor">
 <!ENTITY signontype.label "Typ">
@@ -108,8 +112,8 @@
 <!ENTITY guessfrompage.label "Von aktueller Seite holen">
 <!ENTITY guessfrompage.accesskey "h">
 <!ENTITY guessfrompage.tooltip "Füllt dieses Formular anhand eines vermuteten Anmeldeformulars auf der aktuellen Seite aus">
-<!ENTITY category.label "Kategorie">
-<!ENTITY category.tooltip "Passwortkategorie (für Erweiterung Passwortkategorien)">
+<!ENTITY tags.label "Tags">
+<!ENTITY tags.tooltip "Passworttags (für die Erweiterung &quot;Password Tags&quot;)">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Willkommen im Passworteditor">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -118,9 +122,10 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;<a id='passwords'>Passwörter</a>&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!---->
 <!ENTITY welcomepara2 "Beachten Sie, dass der Gespeicherte-Passwörter-Dialog eine Kernkomponente von <span id='appname'></span> ist und abgesehen von den zwei hinzugefügten Schaltflächen nicht von dieser Erweiterung bereitgestellt wird. Die Symbolleistenschaltfläche wird nur der Bequemlichkeit wegen in der Erwartung angeboten, dass einige Benutzer dieser Erweiterung den Dialog nun weit häufiger nutzen werden, als es sonst der Fall wäre.">

@@ -17,6 +17,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -33,10 +34,12 @@
 
 
 
+
 -->
 <!ENTITY locale "ja">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -77,6 +80,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "サインオン形式">
@@ -108,8 +112,8 @@
 <!ENTITY guessfrompage.label "現在のページから取得">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "現在のページ上のログインフォームを読み取り、上記のフォームに入力します">
-<!ENTITY category.label "カテゴリ">
-<!ENTITY category.tooltip "パスワードのカテゴリ (Password Categories アドオン用)">
+<!ENTITY tags.label "タグ">
+<!ENTITY tags.tooltip "パスワードタグ (&quot;Password Tags&quot; アドオン用)">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -118,9 +122,10 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "<a id='addonlink'>Saved Password Editor</a> のご利用ありがとうございます。 パスワードの編集機能は、[編集] メニュー &gt; [設定...] (OS によって異なります) を選択し、[プライバシーとセキュリティ] 下の [<a id='passwords'>パスワード</a>] ペインを選択、[保存したパスワードの管理] ボタンをクリックします。[ツール] メニューから簡単にアクセスすることもできます。ツールバーボタンからアクセスすることもできます。ツールバーにボタンを追加するには、ツールバーを右クリックして [カスタマイズ...] を選択します。保存されているパスワードのダイアログには、[編集] ボタンと [新規作成] ボタンが追加されています。">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!---->
 <!ENTITY welcomepara2 "注意: 保存されているパスワードのダイアログは、<span id='appname'/> の基本コンポーネントであり、この拡張機能が提供している機能ではありません (上記の機能を除く)。ツールバーボタンは、ダイアログをよく開くユーザの利便性のために、この拡張機能が提供しています。">

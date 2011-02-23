@@ -14,6 +14,13 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
+
+
+
+
+
+
+
 -->
 <!-- LOCALE
 
@@ -27,10 +34,23 @@
      en-GB  - English in Great Britain
      de-DE  - German in Germany
      ru     - Russian (no specific country)
+
+
+
+
+
+
+
 -->
 <!ENTITY locale "pt-PT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
+
+
+
+
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- Strings to be localized -->
@@ -47,13 +67,33 @@
 <!ENTITY passwordfield_alwaysshow.label "Mostrar sempre senha ao abrir a janela de edição">
 <!ENTITY passwordfield_rememberlast.label "Lembrar o último estado">
 <!-- SAVED PASSWORDS DIALOG -->
+<!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Novo">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Editar">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Clonar">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
+     numerical entities (e.g. & #x89ab;); named entities other than the ones
+     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
+     defined in this context. Double quote characters must be encoded as
+     & quot; since the strings are already double-quote delimited.
+
+
+
+
+
+
+
+-->
 <!ENTITY savedpasswordeditor.title "Editor de senhas guardadas">
 <!ENTITY signontype.label "Tipo">
 <!ENTITY type_form.label "Formulário web">
@@ -84,21 +124,8 @@
 <!ENTITY guessfrompage.label "Adivinhar a partir da página actual">
 <!ENTITY guessfrompage.accesskey "g">
 <!ENTITY guessfrompage.tooltip "Preencha este formulário baseado num nome de início de sessão para a página actual">
-<!ENTITY category.label "Categoria">
-<!ENTITY category.tooltip "Categoria da senha (para o extra Password Categories)">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but anything other than <, >, ", ', and & must be in UTF-8 or use
-     numerical entities (e.g. & #x89ab;); named entities other than the ones
-     for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
-     defined in this context. Double quote characters must be encoded as
-     & quot; since the strings are already double-quote delimited.
--->
+<!ENTITY tags.label "Etiquetas">
+<!ENTITY tags.tooltip "Etiquetas de senhas (para o extra &quot;Password Tags&quot; )">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Bem vindo ao Editor de Senhas guardadas">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -106,8 +133,14 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
+
+
+
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode ir para a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), indo ao painel &quot;<a id='passwords'>Senhas</a>&quot; em &quot;Privacidade e segurança&quot;, depois clicar no botão &quot;Gerir senhas guardadas&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Tenha em atenção que o diálogo Senhas guardadas é um componente base do <span id='appname'></span>, e não é fornecido por esta extensão, excepto pelos dois botões fornecidos. A barra de ferramentas é fornecida por conveniência, na expectativa que alguns utilizadores desta extensão desejam aceder ao diálogo com muita mais frequência que a normal.">

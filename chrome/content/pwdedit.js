@@ -20,8 +20,8 @@ function el (name) document.getElementById(name);
 
 const Cc = Components.classes,
       Ci = Components.interfaces,
-      prefs = Components.classes["@mozilla.org/preferences-service;1"].
-              getService(Components.interfaces.nsIPrefService).
+      prefs = Cc["@mozilla.org/preferences-service;1"].
+              getService(Ci.nsIPrefService).
               getBranch("extensions.savedpasswordeditor."),
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
       CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
@@ -35,12 +35,9 @@ window.addEventListener(
   function loadHandler (ev) {
     strBundle = el("string-bundle");
 
-    try {
-      catStorage = Cc["@daniel.dawson/signoncategorystorage;1"].
-                   getService(Ci.ddISignonCategoryStorage);
-    } catch (e) {
-      catStorage = null;
-    }
+    var scsCid = "@daniel.dawson/signoncategorystorage;1";
+    catStorage = scsCid in Cc ?
+                 Cc[scsCid].getService(Ci.ddISignonCategoryStorage) : null;
 
     oldSignon = window.arguments[0];
     cloneSignon = window.arguments[1];
@@ -90,9 +87,9 @@ window.addEventListener(
     el("passwordField_text").value = oldSignon.passwordField;
 
     if (catStorage)
-      el("category_text").value = catStorage.getCategory(oldSignon);
+      el("tags_text").value = catStorage.getCategory(oldSignon);
     else
-      el("category_box").hidden = true;
+      el("tags_box").hidden = true;
 
     if (!oldSignon.httpRealm)
       el("type_group").selectedIndex = 0;
@@ -251,7 +248,7 @@ function setNewSignon () {
     formSubmitURL, httpRealm,
     username = el("username_text").value,
     password = el("password_text").value,
-    category = el("category_text").value,
+    tags = el("tags_text").value,
     usernameField, passwordField;
   var idx = el("type_group").selectedIndex;
 
@@ -273,6 +270,6 @@ function setNewSignon () {
   window.arguments[2].newSignon = newSignon;
   if (catStorage) {
     if (haveOldSignon && !cloneSignon) catStorage.setCategory(oldSignon, "");
-    catStorage.setCategory(newSignon, category);
+    catStorage.setCategory(newSignon, tags);
   }
 }

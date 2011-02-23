@@ -18,6 +18,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -35,10 +36,12 @@
 
 
 
+
 -->
 <!ENTITY locale "sr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -81,6 +84,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Уређивач сачуваних лозинки">
 <!ENTITY signontype.label "Врста">
@@ -112,8 +116,8 @@
 <!ENTITY guessfrompage.label "Погоди из тренутне странице">
 <!ENTITY guessfrompage.accesskey "р">
 <!ENTITY guessfrompage.tooltip "Попуните овај образац који је сличан оном за пријављивање на тренутној страници">
-<!ENTITY category.label "Категорија">
-<!ENTITY category.tooltip "Категорија лозинке (за додатак „Категорија лозинке”)">
+<!ENTITY tags.label "Ознаке">
+<!ENTITY tags.tooltip "Ознаке лозинки (за додатак Password Tags)">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Добро дошли у уређивач сачуваних лозинки">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -123,9 +127,10 @@
      XXXXX Be careful if you copy and paste. XXXXX 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Хвала Вам што користите <a id='addonlink'>уређивач сачуваних лозинки</a>. Почните с коришћењем додатка тако што ћете ићи на Алатке &gt; Опције, или Уређивање &gt; Подешавања (у зависности од тога који оперативни систем користите). Изаберите језичак „<a id='passwords'>Лозинке</a>” под „Приватност и безбедност” и кликните на дугме „Уреди сачуване лозинке”. Иста ставка је доступна и у менију „Алатке”. Доступно Вам је и дугме за траку са алаткама, које можете да уметнете на следећи начин: притисните десни клик на траку са алаткама и изаберите „Прилагоди…”. Прозор уређивача лозинки сада садржи и дугме са менијем за додавање и уређивање лозинки.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!---->
 <!ENTITY welcomepara2 "Упамтите да је прозор „Сачуване лозинке” главна компонента додатка <span id='appname'/> и не долази уз овај, осим за горенаведене функције. Трака са алаткама је намењена корисницима који често отварају прозор.">

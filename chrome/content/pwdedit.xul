@@ -93,9 +93,9 @@
           accesskey="&guessfrompage.accesskey;"
           tooltiptext="&guessfrompage.tooltip;"
           oncommand="guessParameters();"/>
-  <hbox id="category_box">
-    <label control="category_text" value="&category.label;"/>
-    <textbox id="category_text" flex="1"
-             tooltiptext="&category.tooltip;"/>
+  <hbox id="tags_box">
+    <label control="tags_text" value="&tags.label;"/>
+    <textbox id="tags_text" flex="1"
+             tooltiptext="&tags.tooltip;"/>
   </hbox>
 </dialog>

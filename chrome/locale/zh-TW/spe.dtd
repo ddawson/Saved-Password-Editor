@@ -18,6 +18,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -35,10 +36,12 @@
 
 
 
+
 -->
 <!ENTITY locale "zh-TW">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -81,6 +84,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "類型">
@@ -112,8 +116,8 @@
 <!ENTITY guessfrompage.label "由目前頁面推測">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "以目前頁面上相似的登入表單為基準填寫此表單">
-<!ENTITY category.label "分類">
-<!ENTITY category.tooltip "密碼分類（配合 Password Categories 套件）">
+<!ENTITY tags.label "標籤">
+<!ENTITY tags.tooltip "密碼標籤（配合 Password Tags 套件）">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "歡迎使用 Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -123,9 +127,10 @@
      XXXXX Be careful if you copy and paste. XXXXX 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以從 Tools &gt; Options、或者 Edit &gt; Preferences（依作業系統而定），移至 &quot;Privacy &amp; Security&quot; 分類下的「<a id='passwords'>Passwords</a>」面板後點選「Manage Stored Passwords」按鈕來使用編輯功能；從工具選單也能輕鬆叫出已存密碼。為方便起見，在工具列上按右鍵選擇「Customize…」還能找到工具列按鈕。密碼管理員視窗已經加上能夠新增或編輯密碼的選單按鈕了。">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "請注意，已存密碼的對話視窗是 <span id='appname'/> 的基本元件，由本擴充套件提供的僅有前述的選單按鈕。工具列按鈕則是預期本套件的部份使用者需要開啟密碼管理員的次數可能比想像還頻繁，為便於使用而提供。">
+<!---->
+<!ENTITY welcomepara2 "請注意，已存密碼的對話視窗是 <span id='appname'></span> 的基本元件，由本擴充套件提供的僅有前述的選單按鈕。工具列按鈕則是預期本套件的部份使用者需要開啟密碼管理員的次數可能比想像還頻繁，為便於使用而提供。">

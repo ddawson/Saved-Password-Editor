@@ -14,6 +14,7 @@ locale	savedpasswordeditor	en-US	chrome/locale/en-US/
 locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
 locale	savedpasswordeditor	fr	chrome/locale/fr/
 locale	savedpasswordeditor	hu	chrome/locale/hu/
+locale	savedpasswordeditor	id-ID	chrome/locale/id-ID/
 locale	savedpasswordeditor	ja	chrome/locale/ja/
 locale	savedpasswordeditor	nl	chrome/locale/nl/
 locale	savedpasswordeditor	pl	chrome/locale/pl/
@@ -53,7 +54,7 @@ overlay chrome://sunbird/content/calendar.xul chrome://savedpasswordeditor/conte
 overlay chrome://collab/content/collab.xul chrome://savedpasswordeditor/content/menubarOverlay.xul
 overlay chrome://collab/content/collab.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
 
-## Password Manager (why does SeaMonkey have two?)
+## Password Manager
 overlay chrome://passwordmgr/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgrOverlay.xul
 overlay chrome://communicator/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgrOverlay.xul
 

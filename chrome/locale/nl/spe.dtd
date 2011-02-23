@@ -18,6 +18,7 @@
 
 
 
+
 -->
 <!-- LOCALE
 
@@ -35,10 +36,12 @@
 
 
 
+
 -->
 <!ENTITY locale "nl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -81,6 +84,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Bewerken opgeslagen wachtwoord">
 <!ENTITY signontype.label "Type">
@@ -112,8 +116,8 @@
 <!ENTITY guessfrompage.label "Raden van huidige pagina">
 <!ENTITY guessfrompage.accesskey "R">
 <!ENTITY guessfrompage.tooltip "Vul dit formulier in op basis van een waarschijnlijk aanmeldingsformulier op de huidige pagina">
-<!ENTITY category.label "Categorie">
-<!ENTITY category.tooltip "Wachtwoordcategorie (voor de add-on Password Categories)">
+<!ENTITY tags.label "Labels">
+<!ENTITY tags.tooltip "Wachtwoordlabels (voor de add-on ‘Password Tags’)">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Welkom bij Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
@@ -122,9 +126,10 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel <a id='passwords'>Wachtwoorden</a> navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. U kunt ook eenvoudigeweg de Opgeslagen wachtwoorden oproepen via het menu Extra. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!---->
 <!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'></span> en niet wordt geleverd door deze extensie, met uitzondering van de hierboven genoemde toegevoegde functies. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">

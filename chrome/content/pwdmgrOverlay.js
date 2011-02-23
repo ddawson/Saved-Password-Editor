@@ -16,6 +16,14 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+document.addEventListener(
+  "DOMContentLoaded",
+  function dclHandler (ev) {
+    spEditor.strBundle = document.getElementById("savedpwdedit-stringbundle");
+    document.removeEventListener("DOMContentLoaded", dclHandler, false);
+  },
+  false);
+
 document.getElementById("signonsTree").addEventListener(
   "select",
   function (ev) {
@@ -102,7 +110,9 @@ const spEditor = {
       signon, false, ret);
     if (!ret.newSignon) return;
     passwordmanager.modifyLogin(signon, ret.newSignon);
-    LoadSignons();
+    var fv = document.getElementById("filter").value;
+    setFilter("");
+    setFilter(fv);
   },
 
   cloneSignon: function () {
@@ -119,7 +129,9 @@ const spEditor = {
     if (!ret.newSignon) return;
     try {
       passwordmanager.addLogin(ret.newSignon);
-      LoadSignons();
+      var fv = document.getElementById("filter").value;
+      setFilter("");
+      setFilter(fv);
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
@@ -137,7 +149,9 @@ const spEditor = {
     if (!ret.newSignon) return;
     try {
       passwordmanager.addLogin(ret.newSignon);
-      LoadSignons();
+      var fv = document.getElementById("filter").value;
+      setFilter("");
+      setFilter(fv);
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).

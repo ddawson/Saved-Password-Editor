@@ -1,48 +1,14 @@
-<!--
-    Saved Password Editor, extension for Firefox 3.0+
-    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
-
-    This program is free software: you can redistribute it and/or modify
-    it under the terms of the GNU General Public License as published by
-    the Free Software Foundation, either version 3 of the License, or
-    (at your option) any later version.
-
-    This program is distributed in the hope that it will be useful,
-    but WITHOUT ANY WARRANTY; without even the implied warranty of
-    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
-    GNU General Public License for more details.
-
-    You should have received a copy of the GNU General Public License
-    along with this program.  If not, see <http://www.gnu.org/licenses/>.
-
--->
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
-
--->
+<!---->
+<!---->
 <!ENTITY locale "pl">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system.
-
--->
+<!---->
 <!ENTITY layoutdirection "LTR">
-<!-- Strings to be localized -->
-<!-- MENU ITEMS AND TOOLBAR BUTTON -->
+<!---->
+<!---->
 <!ENTITY savedpasswords.label "Zapamiętane hasła">
 <!ENTITY savedpasswords.accesskey "h">
 <!ENTITY savedpasswords.tooltip "Otwórz okno zapamiętanych haseł">
-<!-- PREFERENCES WINDOW -->
+<!---->
 <!ENTITY prefwindow.title "Preferencje edytora zapamiętanych haseł">
 <!ENTITY displayMenuitem.label "Umieść skrót w menu">
 <!ENTITY displayMenuitem.tooltip "Dodaje pozycję &quot;Zapamiętane hasła&quot; do menu Narzędzia i okna aplikacji jako skrót do menadżera haseł">
@@ -50,19 +16,15 @@
 <!ENTITY passwordfield_alwayshide.label "Zawsze ukrywaj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_alwaysshow.label "Zawsze pokazuj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_rememberlast.label "Pamiętaj ostatni stan">
-<!-- SAVED PASSWORDS DIALOG -->
-<!-- TRANSLATORS - be aware that these access keys are used in several places:
-     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
-     keys for the whole window. Make sure your choices don't conflict in any of
-     those contexts. 
--->
+<!---->
+<!---->
 <!ENTITY newentry.label "Nowe">
 <!ENTITY newentry.accesskey "N">
 <!ENTITY editentry.label "Edytuj">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Sklonuj">
 <!ENTITY cloneentry.accesskey "l">
-<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!---->
 <!ENTITY savedpasswordeditor.title "Edytor zapamiętanych haseł">
 <!ENTITY signontype.label "Rodzaj">
 <!ENTITY type_form.label "Formularz sieciowy">
@@ -93,36 +55,15 @@
 <!ENTITY guessfrompage.label "Zgadnij z zawartości bieżącej strony">
 <!ENTITY guessfrompage.accesskey "g">
 <!ENTITY guessfrompage.tooltip "Wypełnij ten formularzu w oparciu o prawdopodobny formularz logowania na bieżącej stronie">
-<!ENTITY category.label "Kategoria">
-<!ENTITY category.tooltip "Kategoria hasła (dla dodatku kategorii haseł)">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
-
--->
+<!ENTITY tags.label "Tags">
+<!ENTITY tags.tooltip "Password tags (for &quot;Password Tags&quot; add-on)">
+<!---->
 <!ENTITY welcometospe "Witaj w Edytorze zapamiętanych haseł">
-<!-- Paragraph 1, Firefox version -->
+<!---->
 <!ENTITY welcomepara1_fx "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;<a id='security'>Bezpieczeństwo</a>&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejsć poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł, także w Firefoksie 4.0 menu kontekstowe zawiera komendy &quot;Edytuj&quot; i &quot;Sklonuj&quot;.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
-
--->
+<!---->
+<!---->
 <!ENTITY welcomepara1_sm "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;<a id='security'>Bezpieczeństwo</a>&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejsć poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!---->
+<!---->
 <!ENTITY welcomepara2 "Zauważ, że okno zapamiętanych haseł jest podstawą komponentu <span id='appname'/> i nie jest dostarczane przez ten dodatek, z wyjątkiem wspomnianych powyżej dodanych funkcji. Przycisk paska narzędzi dostarczany jest tylko dla ułatwienia dostępu dla niektórych użytkowników tego dodatku, którzy będą chcieli zaglądać do okna haseł częściej niż zazwyczaj.">
