@@ -24,11 +24,11 @@ document.addEventListener(
   },
   false);
 
-document.getElementById("signonsTree").addEventListener(
+document.getElementById("passwordsTree").addEventListener(
   "select",
   function (ev) {
-    var selections = GetTreeSelections(signonsTree);
-    if (selections.length == 1 && !gSelectUserInUse) {
+    var selections = gDataman.getTreeSelections(gPasswords.tree);
+    if (selections.length == 1) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
       document.getElementById("key_cloneSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
@@ -42,7 +42,7 @@ document.getElementById("signonsTree").addEventListener(
         document.getElementById("speMenuBtn").
           setAttribute("icon", "properties");
       }
-    } else {
+    } else if (!spEditor.refreshing) {
       document.getElementById("speMenuBtn").command = "new_signon";
       document.getElementById("speMenuBtn").
         setAttribute("icon", "add");
@@ -70,6 +70,7 @@ const spEditor = {
          getBranch("extensions.savedpasswordeditor."),
 
   userChangedMenuBtn: false,
+  refreshing: false,
 
   menuBtnSel: function (ev, elem) {
     var mb = document.getElementById("speMenuBtn");
@@ -97,66 +98,88 @@ const spEditor = {
     ev.stopPropagation();
   },
 
+  mcbWrapper: function (method) {
+    var myThis = this;
+    return function () method.apply(myThis, arguments);
+  },
+
+  showErrorAlert: function (e) {
+    let prompt = Components.classes["@mozilla.org/prompter;1"].
+        getService(Components.interfaces.nsIPromptFactory).
+        getPrompt(window.top, Components.interfaces.nsIPrompt),
+      bag = prompt.QueryInterface(
+        Components.interfaces.nsIWritablePropertyBag2);
+    bag.setPropertyAsBool("allowTabModal", true);
+    prompt.alert(this.strBundle.getString("error"),
+                 this.strBundle.getFormattedString("badnewentry",
+                                                   [e.message]));
+  },
+
+  SPE_WINDOW_NAME: "danieldawson:savedpasswordeditor",
+
+  openSPEDialog: function (signon, cloning, ret) {
+    var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].
+      getService(Components.interfaces.nsIWindowWatcher);
+    var oldWin = ww.getWindowByName(this.SPE_WINDOW_NAME, null);
+    if (!oldWin)
+      return window.openDialog(
+        "chrome://savedpasswordeditor/content/pwdedit.xul",
+        this.SPE_WINDOW_NAME, "centerscreen,dependent,dialog,chrome,resizable",
+        signon, cloning, ret);
+    else {
+      oldWin.focus();
+      return oldWin;
+    }
+  },
+
   editSignon: function () {
-    var selections = GetTreeSelections(signonsTree);
+    var selections = gDataman.getTreeSelections(gPasswords.tree);
     if (selections.length != 1) return;
-    var table =
-      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
-    var signon = table[selections[0]];
-    var ret = { newSignon: null, callback: null };
-    window.openDialog(
-      "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
-      signon, false, ret);
-    if (!ret.newSignon) return;
-    passwordmanager.modifyLogin(signon, ret.newSignon);
-    var fv = document.getElementById("filter").value;
-    setFilter("");
-    setFilter(fv);
+    var signon = gPasswords.displayedSignons[selections[0]];
+
+    function __finish (newSignon) {
+      try {
+        gLocSvc.pwd.modifyLogin(signon, newSignon);
+        this.refreshing = true;
+        gPasswords.initialize();
+        gPasswords.tree.view.selection.select(selections[0]);
+        this.refreshing = false;
+      } catch (e) {
+        window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e)
+      }
+    }
+      
+    var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
+    var dlg = this.openSPEDialog(signon, false, ret);
   },
 
   cloneSignon: function () {
-    var selections = GetTreeSelections(signonsTree);
+    var selections = gDataman.getTreeSelections(gPasswords.tree);
     if (selections.length != 1) return;
-    var table =
-      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
-    var signon = table[selections[0]];
-    var ret = { newSignon: null, callback: null };
-    window.openDialog(
-      "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
-      signon, true, ret);
-    if (!ret.newSignon) return;
-    try {
-      passwordmanager.addLogin(ret.newSignon);
-      var fv = document.getElementById("filter").value;
-      setFilter("");
-      setFilter(fv);
-    } catch (e) {
-      Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
-        getService(Components.interfaces.nsIPromptService).
-        alert(window, this.strBundle.getString("error"),
-              this.strBundle.getFormattedString("badnewentry", [e.message]));
+    var signon = gPasswords.displayedSignons[selections[0]];
+
+    function __finish (newSignon) {
+      try {
+        gLocSvc.pwd.addLogin(newSignon);
+      } catch (e) {
+        window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
+      }
     }
+
+    var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
+    this.openSPEDialog(signon, true, ret);
   },
 
   newSignon: function () {
-    var ret = { newSignon: null, callback: null };
-    window.openDialog(
-      "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
-      null, false, ret);
-    if (!ret.newSignon) return;
-    try {
-      passwordmanager.addLogin(ret.newSignon);
-      var fv = document.getElementById("filter").value;
-      setFilter("");
-      setFilter(fv);
-    } catch (e) {
-      Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
-        getService(Components.interfaces.nsIPromptService).
-        alert(window, this.strBundle.getString("error"),
-              this.strBundle.getFormattedString("badnewentry", [e.message]));
+    function __finish (newSignon) {
+      try {
+        gLocSvc.pwd.addLogin(newSignon);
+      } catch (e) {
+        window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
+      }
     }
+
+    var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
+    this.openSPEDialog(null, false, ret);
   },
 }

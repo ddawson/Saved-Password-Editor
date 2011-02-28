@@ -267,7 +267,11 @@ function setNewSignon () {
                   createInstance(Ci.nsILoginInfo);
   newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
                  usernameField, passwordField);
-  window.arguments[2].newSignon = newSignon;
+  if (window.arguments[2].callback)
+    window.arguments[2].callback(newSignon);
+  else
+    window.arguments[2].newSignon = newSignon;
+
   if (catStorage) {
     if (haveOldSignon && !cloneSignon) catStorage.setCategory(oldSignon, "");
     catStorage.setCategory(newSignon, tags);

@@ -57,6 +57,8 @@ overlay chrome://collab/content/collab.xul chrome://savedpasswordeditor/content/
 ## Password Manager
 overlay chrome://passwordmgr/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgrOverlay.xul
 overlay chrome://communicator/content/passwordManager.xul chrome://savedpasswordeditor/content/pwdmgrOverlay.xul
+overlay chrome://communicator/content/dataman/dataman.xul chrome://savedpasswordeditor/content/pwdmgrOverlay-sm.xul
+overlay about:data chrome://savedpasswordeditor/content/pwdmgrOverlay-sm.xul
 
 # Additional styles
 ## Toolbar button
