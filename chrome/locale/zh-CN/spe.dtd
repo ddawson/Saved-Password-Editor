@@ -50,16 +50,16 @@
 <!-- Strings to be localized -->
 <!-- MENU ITEM AND TOOLBAR BUTTON -->
 <!ENTITY savedpasswords.label "已保存密码">
-<!ENTITY savedpasswords.accesskey "v">
-<!ENTITY savedpasswords.tooltip "打开 已保存密码">
+<!ENTITY savedpasswords.accesskey "V">
+<!ENTITY savedpasswords.tooltip "打开 已保存密码 对话框">
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "已保存密码编辑器 选项">
 <!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
 <!ENTITY displayMenuitem.tooltip "在「工具」菜单中添加「已保存密码」快捷方式。">
-<!ENTITY passwordfield_caption.label "Password field in editor window">
-<!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
-<!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
-<!ENTITY passwordfield_rememberlast.label "Remember last state">
+<!ENTITY passwordfield_caption.label "编辑器窗口中的密码字段">
+<!ENTITY passwordfield_alwayshide.label "打开编辑器窗口时总是隐藏密码">
+<!ENTITY passwordfield_alwaysshow.label "打开编辑器窗口时总是显示密码">
+<!ENTITY passwordfield_rememberlast.label "记住最后状态">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "新建">
@@ -67,7 +67,7 @@
 <!ENTITY editentry.label "编辑">
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "克隆">
-<!ENTITY cloneentry.accesskey "l">
+<!ENTITY cloneentry.accesskey "L">
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
@@ -96,8 +96,8 @@
 <!ENTITY type_httpauth.accesskey "a">
 <!ENTITY type_other.label "其它">
 <!ENTITY type_other.accesskey "O">
-<!ENTITY hostname.label "主机地址">
-<!ENTITY hostname.tooltip "响应表单的主机或协议地址(例如 http://www.example.com)">
+<!ENTITY hostname.label "主机">
+<!ENTITY hostname.tooltip "响应表单的主机或协议地址（例如 http://www.example.com）">
 <!ENTITY formSubmitURL.label "提交前缀">
 <!ENTITY formSubmitURL.tooltip "表单提交地址的前缀">
 <!ENTITY httpRealm.label "HTTP 域">
@@ -118,10 +118,10 @@
 <!ENTITY guessfrompage.label "从当前页猜测">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "在当前页面寻找类似于登录的表单并自动填充">
-<!ENTITY tags.label "Tags">
-<!ENTITY tags.tooltip "Password tags (for &quot;Password Tags&quot; add-on)">
+<!ENTITY tags.label "标签">
+<!ENTITY tags.tooltip "密码标签（用于附加组件“Password Tags”）">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcometospe "欢迎使用 Saved Password Editor">
+<!ENTITY welcometospe "欢迎使用已保存密码编辑器">
 <!-- Paragraph 1, SeaMonkey version -->
 <!ENTITY welcomepara1_fx "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），选择「<a id='security'>安全</a>」面板，点击「已保存密码…」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。打开菜单 查看 &gt; 工具栏 &gt; 定制…，或者在工具栏上点击鼠标右键，选择「定制…」即可。">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
@@ -134,5 +134,5 @@
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），导航至「隐私和安全」下的「<a id='passwords'>密码</a>」面板，点击「管理保存的密码」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。在工具栏上点击鼠标右键，选择「定制…」即可。">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!---->
-<!ENTITY welcomepara2 "注意：「已保存密码」对话框是 <span id='appname'/> 的一个基本组件，本扩展只是增加了两个按钮。工具栏快捷按钮也只是为方便用户使用「已保存密码」而增加的。">
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "注意：「已保存密码」对话框是 <span id='appname'></span> 的一个基本组件，本扩展只是增加了两个按钮。工具栏快捷按钮也只是为方便用户使用「已保存密码」而增加的。">

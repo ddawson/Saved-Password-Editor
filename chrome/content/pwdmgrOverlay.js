@@ -111,6 +111,7 @@ const spEditor = {
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
       signon, false, ret);
+    this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     passwordmanager.modifyLogin(signon, ret.newSignon);
     var fv = document.getElementById("filter").value;
@@ -119,7 +120,6 @@ const spEditor = {
     setFilter(fv);
     signonsTreeView.selection.select(selections[0]);
     signonsTree.treeBoxObject.scrollToRow(scr);
-    this.selectionsEnabled = true;
   },
 
   cloneSignon: function () {
@@ -134,6 +134,7 @@ const spEditor = {
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
       signon, true, ret);
+    this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
       passwordmanager.addLogin(ret.newSignon);
@@ -148,8 +149,6 @@ const spEditor = {
         getService(Components.interfaces.nsIPromptService).
         alert(window, this.strBundle.getString("error"),
               this.strBundle.getFormattedString("badnewentry", [e.message]));
-    } finally {
-      this.selectionsEnabled = true;
     }
   },
 
@@ -160,6 +159,7 @@ const spEditor = {
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
       null, false, ret);
+    this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
       passwordmanager.addLogin(ret.newSignon);
@@ -173,8 +173,6 @@ const spEditor = {
         getService(Components.interfaces.nsIPromptService).
         alert(window, this.strBundle.getString("error"),
               this.strBundle.getFormattedString("badnewentry", [e.message]));
-    } finally {
-      this.selectionsEnabled = true;
     }
   },
 }

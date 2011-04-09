@@ -5,7 +5,7 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.0.5</version>
+    <version>2.0.6</version>
     <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
     <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
@@ -24,7 +24,7 @@
     <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
     <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
     <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-    <translator>zh-CN: Loviny (BabelZilla)</translator>
+    <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
     <translator>zh-TW: Velociraptor (BabelZilla)</translator>
     <description>Adds the ability to create and edit password entries in the password manager.</description>
 
@@ -50,7 +50,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Добавя възможност за създаване и редактиране на пароли в менажерът за пароли на браузъра.</description>
       </RDF:Description>
@@ -75,7 +75,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
       </RDF:Description>
@@ -100,7 +100,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</description>
       </RDF:Description>
@@ -125,7 +125,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
       </RDF:Description>
@@ -150,7 +150,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Jelszavak szerkesztése a jelszókezelőben.</description>
       </RDF:Description>
@@ -175,7 +175,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Menambahkan kemampuan untuk membuat dan menyunting entri kata sandi di pengatur kata sandi.</description>
       </RDF:Description>
@@ -200,7 +200,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</description>
       </RDF:Description>
@@ -225,7 +225,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</description>
       </RDF:Description>
@@ -250,7 +250,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Dodaje możliwość tworzenia i edytowania wpisów haseł w menadżerze haseł.</description>
       </RDF:Description>
@@ -275,7 +275,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Acrescenta a capacidade de criar e editar entradas de senhas no gerenciador de senhas.</description>
       </RDF:Description>
@@ -300,7 +300,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</description>
       </RDF:Description>
@@ -325,7 +325,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</description>
       </RDF:Description>
@@ -350,7 +350,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Додаје могућност прављења и мењања лозинки у управљачу лозинкама.</description>
       </RDF:Description>
@@ -375,7 +375,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Lägger till funktioner för att skapa och redigera lösenordsposter i lösenordshanteraren.</description>
       </RDF:Description>
@@ -400,7 +400,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Şifre yöneticisindeki şifrelere yaratma ve değiştirme yetenekleri ekler.</description>
       </RDF:Description>
@@ -425,7 +425,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</description>
       </RDF:Description>
@@ -450,7 +450,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>在「已保存密码」管理中增加新建与编辑密码的功能。</description>
       </RDF:Description>
@@ -475,7 +475,7 @@
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
         <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>在密碼管理員中加入新增與編輯密碼的功能。</description>
       </RDF:Description>
@@ -489,7 +489,7 @@
       <RDF:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- Firefox -->
         <minVersion>3.0</minVersion>
-        <maxVersion>4.0.*</maxVersion>
+        <maxVersion>4.2a1pre</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -497,7 +497,7 @@
       <RDF:Description>
         <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!-- SeaMonkey -->
         <minVersion>2.0</minVersion>
-        <maxVersion>2.1b3</maxVersion>
+        <maxVersion>2.2a1pre</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -505,7 +505,7 @@
       <RDF:Description>
         <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
         <minVersion>3.0</minVersion>
-        <maxVersion>3.3a3pre</maxVersion>
+        <maxVersion>3.3a4pre</maxVersion>
       </RDF:Description>
     </targetApplication>
 

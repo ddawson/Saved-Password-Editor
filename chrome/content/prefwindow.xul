@@ -22,7 +22,7 @@
 
 <prefwindow
     xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
-    title="&prefwindow.title;">
+    id="savedpasswordeditor-prefwindow" title="&prefwindow.title;">
   <prefpane>
     <preferences>
       <preference id="pref-display-menuitem"

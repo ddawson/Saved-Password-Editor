@@ -181,14 +181,16 @@ function guessParameters () {
 
       // Locate a likely login form and its fields
       var pwdFields = curDoc.evaluate(
-        '//form//input[translate(@type, "PASWORD", "pasword")="password"]',
+        '//form//input[@name and @name!="" ' +
+          'and translate(@type, "PASWORD", "pasword")="password"]',
         curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       if (pwdFields.snapshotLength == 0) break inpage;
 
       for (var i = 0; i < pwdFields.snapshotLength; i++) {
         var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
         var unameField = curDoc.evaluate(
-          '(.//input[(not(@type) or translate(@type, "TEX", "tex")="text") ' +
+          '(.//input[@name and @name!="" ' +
+            'and (not(@type) or translate(@type, "TEX", "tex")="text") ' +
             'and not(preceding::input[' +
             'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
           form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
