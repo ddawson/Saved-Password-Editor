@@ -28,14 +28,10 @@ document.getElementById("passwordsTree").addEventListener(
   "select",
   function (ev) {
     var selections = gDataman.getTreeSelections(gPasswords.tree);
-    if (selections.length == 1) {
+    if (selections.length > 0) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
-      document.getElementById("key_cloneSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
-      document.getElementById("clone_signon").removeAttribute("disabled");
       document.getElementById("speMenuBtn_editSignon").
-        removeAttribute("disabled");
-      document.getElementById("speMenuBtn_cloneSignon").
         removeAttribute("disabled");
       if (!spEditor.userChangedMenuBtn) {
         document.getElementById("speMenuBtn").command = "edit_signon";
@@ -48,17 +44,25 @@ document.getElementById("passwordsTree").addEventListener(
         setAttribute("icon", "add");
       document.getElementById("key_editSignon").
         setAttribute("disabled", "true");
-      document.getElementById("key_cloneSignon").
-        setAttribute("disabled", "true");
       document.getElementById("edit_signon").
-        setAttribute("disabled", "true");
-      document.getElementById("clone_signon").
         setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_editSignon").
         setAttribute("disabled", "true");
+      spEditor.userChangedMenuBtn = false;
+    }
+
+    if (selections.length == 1) {
+      document.getElementById("key_cloneSignon").removeAttribute("disabled");
+      document.getElementById("clone_signon").removeAttribute("disabled");
+      document.getElementById("speMenuBtn_cloneSignon").
+        removeAttribute("disabled");
+    } else if (!spEditor.refreshing) {
+      document.getElementById("key_cloneSignon").
+        setAttribute("disabled", "true");
+      document.getElementById("clone_signon").
+        setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_cloneSignon").
         setAttribute("disabled", "true");
-      spEditor.userChangedMenuBtn = false;
     }
   },
   false);
@@ -132,14 +136,32 @@ const spEditor = {
     }
   },
 
+  _mergeSignonProps: function (oldSignon, newProps) {
+    var copy = Object.create(newProps);
+    for (prop in copy)
+      if (copy[prop] === undefined)
+        copy[prop] = oldSignon[prop];
+
+    var newSignon =
+      Components.classes["@mozilla.org/login-manager/loginInfo;1"].
+      createInstance(Ci.nsILoginInfo);
+    newSignon.init(copy.hostname, copy.formSubmitURL,
+                   copy.httpRealm, copy.username, copy.password,
+                   copy.usernameField, copy.passwordField);
+    return newSignon;
+  },
+
   editSignon: function () {
     var selections = gDataman.getTreeSelections(gPasswords.tree);
-    if (selections.length != 1) return;
-    var signon = gPasswords.displayedSignons[selections[0]];
+    if (selections.length == 0) return;
+    var selSignons =
+      selections.map(function (el) gPasswords.displayedSignons[el]);
 
     function __finish (newSignon) {
       try {
-        gLocSvc.pwd.modifyLogin(signon, newSignon);
+        for (let i = 0; i < signons.length; i++)
+          gLocSvc.pwd.modifyLogin(
+            signons[i], this._mergeSignonProps(selSignons[i], newSignon));
         this.refreshing = true;
         gPasswords.initialize();
         gPasswords.tree.view.selection.select(selections[0]);
@@ -150,7 +172,8 @@ const spEditor = {
     }
       
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    var dlg = this.openSPEDialog(signon, false, ret);
+    var dlg =
+      this.openSPEDialog(selSignons, false, ret);
   },
 
   cloneSignon: function () {
@@ -167,7 +190,7 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog(signon, true, ret);
+    this.openSPEDialog([signon], true, ret);
   },
 
   newSignon: function () {
@@ -180,6 +203,6 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog(null, false, ret);
+    this.openSPEDialog([], false, ret);
   },
 }

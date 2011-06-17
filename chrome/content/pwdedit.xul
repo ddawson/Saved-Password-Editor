@@ -18,6 +18,8 @@
 -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://savedpasswordeditor/skin/qtextbox.css"
+                 type="text/css"?>
 
 <!DOCTYPE dialog SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
 
@@ -25,7 +27,7 @@
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         title="&savedpasswordeditor.title;"
         buttons="accept,cancel"
-        ondialogaccept="setNewSignon();"
+        ondialogaccept="return setNewSignon();"
         persist="width height">
   <stringbundleset id="stringbundleset">
     <stringbundle id="string-bundle"
@@ -54,23 +56,27 @@
     <rows>
       <row>
         <label control="hostname_text" value="&hostname.label;"/>
-        <textbox id="hostname_text" tooltiptext="&hostname.tooltip;"/>
+        <textbox id="hostname_text" class="qtextbox"
+                 tooltiptext="&hostname.tooltip;"/>
       </row>
       <row id="formSubmitURL_row">
         <label control="formSubmitURL_text" value="&formSubmitURL.label;"/>
-        <textbox id="formSubmitURL_text" tooltiptext="&formSubmitURL.tooltip;"/>
+        <textbox id="formSubmitURL_text" class="qtextbox"
+                 tooltiptext="&formSubmitURL.tooltip;"/>
       </row>
       <row id="httpRealm_row" collapsed="true">
         <label control="httpRealm_text" value="&httpRealm.label;"/>
-        <textbox id="httpRealm_text" tooltiptext="&httpRealm.tooltip;"/>
+        <textbox id="httpRealm_text" class="qtextbox"
+                 tooltiptext="&httpRealm.tooltip;"/>
       </row>
       <row>
         <label control="username_text" value="&username.label;"/>
-        <textbox id="username_text" tooltiptext="&username.tooltip;"/>
+        <textbox id="username_text" class="qtextbox"
+                 tooltiptext="&username.tooltip;"/>
       </row>
       <row>
         <label control="password_text" value="&password.label;"/>
-        <textbox persist="type" id="password_text"
+        <textbox persist="type" id="password_text" class="qtextbox"
                  tooltiptext="&password.tooltip;"/>
         <button id="passwordView_btn" label="&showPassword.label;"
                 accesskey="&showPassword.accesskey;"
@@ -79,12 +85,12 @@
       </row>
       <row id="usernameField_row">
         <label control="usernameField_text" value="&usernameField.label;"/>
-        <textbox id="usernameField_text"
+        <textbox id="usernameField_text" class="qtextbox"
                  tooltiptext="&usernameField.tooltip;"/>
       </row>
       <row id="passwordField_row">
         <label control="passwordField_text" value="&passwordField.label;"/>
-        <textbox id="passwordField_text"
+        <textbox id="passwordField_text" class="qtextbox"
                  tooltiptext="&passwordField.tooltip;"/>
       </row>
     </rows>

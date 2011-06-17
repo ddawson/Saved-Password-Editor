@@ -29,14 +29,10 @@ document.getElementById("signonsTree").addEventListener(
   function (ev) {
     if (!spEditor.selectionsEnabled) return;
     var selections = GetTreeSelections(signonsTree);
-    if (selections.length == 1 && !gSelectUserInUse) {
+    if (selections.length > 0 && !gSelectUserInUse) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
-      document.getElementById("key_cloneSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
-      document.getElementById("clone_signon").removeAttribute("disabled");
       document.getElementById("speMenuBtn_editSignon").
-        removeAttribute("disabled");
-      document.getElementById("speMenuBtn_cloneSignon").
         removeAttribute("disabled");
       if (!spEditor.userChangedMenuBtn) {
         document.getElementById("speMenuBtn").command = "edit_signon";
@@ -49,17 +45,25 @@ document.getElementById("signonsTree").addEventListener(
         setAttribute("icon", "add");
       document.getElementById("key_editSignon").
         setAttribute("disabled", "true");
-      document.getElementById("key_cloneSignon").
-        setAttribute("disabled", "true");
       document.getElementById("edit_signon").
-        setAttribute("disabled", "true");
-      document.getElementById("clone_signon").
         setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_editSignon").
         setAttribute("disabled", "true");
+      spEditor.userChangedMenuBtn = false;
+    }
+
+    if (selections.length == 1 && !gSelectUserInUse) {
+      document.getElementById("key_cloneSignon").removeAttribute("disabled");
+      document.getElementById("clone_signon").removeAttribute("disabled");
+      document.getElementById("speMenuBtn_cloneSignon").
+        removeAttribute("disabled");
+    } else {
+      document.getElementById("key_cloneSignon").
+        setAttribute("disabled", "true");
+      document.getElementById("clone_signon").
+        setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_cloneSignon").
         setAttribute("disabled", "true");
-      spEditor.userChangedMenuBtn = false;
     }
   },
   false);
@@ -99,21 +103,39 @@ const spEditor = {
     ev.stopPropagation();
   },
 
+  _mergeSignonProps: function (oldSignon, newProps) {
+    var copy = Object.create(newProps);
+    for (prop in copy)
+      if (copy[prop] === undefined)
+        copy[prop] = oldSignon[prop];
+
+    var newSignon =
+      Components.classes["@mozilla.org/login-manager/loginInfo;1"].
+      createInstance(Components.interfaces.nsILoginInfo);
+    newSignon.init(copy.hostname, copy.formSubmitURL,
+                   copy.httpRealm, copy.username, newProps.password,
+                   copy.usernameField, copy.passwordField);
+    return newSignon;
+  },
+
   editSignon: function () {
     this.selectionsEnabled = false;
     var selections = GetTreeSelections(signonsTree);
-    if (selections.length != 1) return;
+    if (selections.length < 1) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
-    var signon = table[selections[0]];
+    var selSignons = selections.map(function (el) table[el]);
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      signon, false, ret);
+      selSignons, false, ret);
+
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
-    passwordmanager.modifyLogin(signon, ret.newSignon);
+    for (let i = 0; i < selSignons.length; i++)
+      passwordmanager.modifyLogin(
+        selSignons[i], this._mergeSignonProps(selSignons[i], ret.newSignon));
     var fv = document.getElementById("filter").value;
     var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
     setFilter("");
@@ -133,11 +155,11 @@ const spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      signon, true, ret);
+      [signon], true, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
-      passwordmanager.addLogin(ret.newSignon);
+      passwordmanager.addLogin(this._mergeSignonProps(signon, ret.newSignon));
       var fv = document.getElementById("filter").value;
       var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
       setFilter("");
@@ -158,11 +180,18 @@ const spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      null, false, ret);
+      [], false, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
-      passwordmanager.addLogin(ret.newSignon);
+      let newSignon =
+        Components.classes["@mozilla.org/login-manager/loginInfo;1"].
+        createInstance(Components.interfaces.nsILoginInfo);
+      newSignon.init(ret.newSignon.hostname, ret.newSignon.formSubmitURL,
+                     ret.newSignon.httpRealm, ret.newSignon.username,
+                     ret.newSignon.password, ret.newSignon.usernameField,
+                     ret.newSignon.passwordField);
+      passwordmanager.addLogin(newSignon);
       var fv = document.getElementById("filter").value;
       var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
       setFilter("");

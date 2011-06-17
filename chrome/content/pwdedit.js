@@ -25,10 +25,9 @@ const Cc = Components.classes,
               getBranch("extensions.savedpasswordeditor."),
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
       CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
-      SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}",
-      SUNBIRD = "{718e30fb-e89b-41dd-9da7-e25a45638b28}";
+      SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}";
 
-var strBundle, catStorage, haveOldSignon, oldSignon, cloneSignon;
+var strBundle, catStorage, haveOldSignon, oldSignons, cloneSignon;
 
 window.addEventListener(
   "DOMContentLoaded",
@@ -39,7 +38,7 @@ window.addEventListener(
     catStorage = scsCid in Cc ?
                  Cc[scsCid].getService(Ci.ddISignonCategoryStorage) : null;
 
-    oldSignon = window.arguments[0];
+    oldSignons = window.arguments[0];
     cloneSignon = window.arguments[1];
 
     var showpwd = prefs.getIntPref("showpassword");
@@ -65,38 +64,68 @@ window.addEventListener(
     }
   
     haveOldSignon = false;
-    if (!oldSignon) {
-      oldSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
-                    createInstance(Ci.nsILoginInfo);
-      oldSignon.init("", "", "", "", "", "", "");
+    if (oldSignons.length == 0) {
+      oldSignons[0] = { hostname: "", formSubmitURL: "", httpRealm: "",
+                        username: "", password: "", usernameField: "",
+                        passwordField: "" };
       el("header").setAttribute("title", strBundle.getString("newlogin"));
     } else if (cloneSignon) {
       el("header").setAttribute("title", strBundle.getString("clonelogin"));
       haveOldSignon = true;
     } else {
-      el("header").setAttribute("title", strBundle.getString("editlogin"));
+      el("header").setAttribute(
+        "title", strBundle.getString(oldSignons.length > 1 ? "editmultlogin"
+                                                           : "editlogin"));
       haveOldSignon = true;
     }
 
-    el("hostname_text").value = oldSignon.hostname;
-    el("formSubmitURL_text").value = oldSignon.formSubmitURL;
-    el("httpRealm_text").value = oldSignon.httpRealm;
-    el("username_text").value = oldSignon.username;
-    el("password_text").value = oldSignon.password;
-    el("usernameField_text").value = oldSignon.usernameField;
-    el("passwordField_text").value = oldSignon.passwordField;
+    var compositeSignon = intersectSignonProps(oldSignons);
 
-    if (catStorage)
+    var props = [ "hostname", "formSubmitURL", "httpRealm",
+                  "username", "password", "usernameField", "passwordField" ];
+    for (let i = 0; i < props.length; i++) {
+      let propName = props[i], tbox = el(propName + "_text");
+      if (compositeSignon[propName] !== undefined) {
+        tbox.indefinite = false;
+        tbox.autoreindef = false;
+        tbox.value = compositeSignon[propName];
+      } else
+        tbox.indefinite = true;
+        tbox.autoreindef = true;
+    }
+
+    if (catStorage && oldSignons.length == 1)
       el("tags_text").value = catStorage.getCategory(oldSignon);
     else
       el("tags_box").hidden = true;
 
-    if (!oldSignon.httpRealm)
-      el("type_group").selectedIndex = 0;
-    else if (oldSignon.hostname.match(/^http/))
-      el("type_group").selectedIndex = 1;
+    var type;
+    if (!oldSignons[0].httpRealm)
+      type = 0;
+    else if (oldSignons[0].hostname.match(/^http/))
+      type = 1;
     else
-      el("type_group").selectedIndex = 2;
+      type = 2;
+    el("type_group").selectedIndex = type;
+
+    for (let i = 1; i < oldSignons.length; i++) {
+      let otherType;
+      if (!oldSignons[i].httpRealm)
+        otherType = 0;
+      else if (oldSignons[i].hostname.match(/^http/))
+        otherType = 1;
+      else
+        otherType = 2;
+
+      if (otherType != type) {
+        Cc["@mozilla.org/embedcomp/prompt-service;1"].
+          getService(Ci.nsIPromptService).
+          alert(window, strBundle.getString("error"),
+                strBundle.getString("typemismatch"));
+        window.close();
+        return;
+      }
+    }
 
     var xai = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
     switch (xai.ID) {
@@ -105,11 +134,6 @@ window.addEventListener(
       el("type_form").hidden = true;
       if (!haveOldSignon)
         el("type_group").selectedIndex = 1;
-      break;
-
-    case SUNBIRD:
-      el("type_groupbox").hidden = true;
-      el("type_group").selectedIndex = 2;
       break;
 
     // Nothing to do for Firefox and SeaMonkey
@@ -123,6 +147,24 @@ window.addEventListener(
     window.removeEventListener("DOMContentLoaded", loadHandler, false);
   },
   false);
+
+function intersectSignonProps (signons) {
+  var intersection = new Object();
+  var propList = [ "hostname", "formSubmitURL", "httpRealm", "username",
+                   "password", "usernameField", "passwordField" ];
+  for (var i = 0; i < signons.length; i++) {
+    let signon = signons[i];
+    for (var j = 0; j < propList.length; j++) {
+      let prop = propList[j];
+      if (!intersection.hasOwnProperty(prop))
+        intersection[prop] = signon[prop];
+      else if (signon[prop] != intersection[prop])
+        intersection[prop] = undefined;
+    }
+  }
+
+  return intersection;
+}
 
 function login () {
   var token = Components.classes["@mozilla.org/security/pk11tokendb;1"].
@@ -246,36 +288,51 @@ function guessParameters () {
 }
 
 function setNewSignon () {
-  var hostname = el("hostname_text").value,
-    formSubmitURL, httpRealm,
-    username = el("username_text").value,
-    password = el("password_text").value,
-    tags = el("tags_text").value,
-    usernameField, passwordField;
-  var idx = el("type_group").selectedIndex;
+  var hostname = el("hostname_text"),
+      formSubmitURL = el("formSubmitURL_text"),
+      httpRealm = el("httpRealm_text"),
+      username = el("username_text"),
+      password = el("password_text"),
+      usernameField = el("usernameField_text"),
+      passwordField = el("passwordField_text");
+  var newProps = {
+    hostname: hostname.qvalue,
+    username: username.qvalue,
+    password: password.qvalue,
+  };
+  if (oldSignons.length == 1) var tags = el("tags_text").value;
 
+  var idx = el("type_group").selectedIndex;
   if (idx == 0) {
-    formSubmitURL = el("formSubmitURL_text").value;
-    httpRealm = null;
-    usernameField = el("usernameField_text").value;
-    passwordField = el("passwordField_text").value;
+    newProps.formSubmitURL = formSubmitURL.qvalue;
+    newProps.httpRealm = null;
+    newProps.usernameField = usernameField.qvalue;
+    newProps.passwordField = passwordField.qvalue;
   } else {
-    formSubmitURL = null;
-    httpRealm = idx == 1 ? el("httpRealm_text").value : hostname;
-    usernameField = passwordField = "";
+    newProps.formSubmitURL = null;
+    newProps.httpRealm = idx == 1 ? httpRealm.qvalue : newProps.hostname;
+    newProps.usernameField = newProps.passwordField = "";
   }
 
-  var newSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
-                  createInstance(Ci.nsILoginInfo);
-  newSignon.init(hostname, formSubmitURL, httpRealm, username, password,
-                 usernameField, passwordField);
+  var type = el("type_group").selectedIndex;
+  if (oldSignons.length > 1 && newProps.hostname !== undefined
+      && newProps.username !== undefined
+      && (type == 0 ? newProps.formSubmitURL !== undefined
+          : type == 1 ? newProps.httpRealm !== undefined : true)) {
+    Cc["@mozilla.org/embedcomp/prompt-service;1"].
+      getService(Ci.nsIPromptService).
+      alert(window, strBundle.getString("error"),
+            strBundle.getString("multduplogins"));
+    return false;
+  }
+
   if (window.arguments[2].callback)
     window.arguments[2].callback(newSignon);
   else
-    window.arguments[2].newSignon = newSignon;
+    window.arguments[2].newSignon = newProps;
 
-  if (catStorage) {
+  if (oldSignons.length == 1 && catStorage) {
     if (haveOldSignon && !cloneSignon) catStorage.setCategory(oldSignon, "");
-    catStorage.setCategory(newSignon, tags);
+    catStorage.setCategory(newProps, tags);
   }
 }

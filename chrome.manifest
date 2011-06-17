@@ -46,10 +46,6 @@ overlay chrome://messenger/content/mailWindowOverlay.xul chrome://savedpassworde
 overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://savedpasswordeditor/content/menubarOverlay.xul
 overlay chrome://messenger/content/messengercompose/messengercompose.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
 
-## Sunbird Calendar
-overlay chrome://sunbird/content/calendar.xul chrome://savedpasswordeditor/content/menubarOverlay.xul
-overlay chrome://sunbird/content/calendar.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
-
 ## Synovel Spicebird
 overlay chrome://collab/content/collab.xul chrome://savedpasswordeditor/content/menubarOverlay.xul
 overlay chrome://collab/content/collab.xul chrome://savedpasswordeditor/content/toolbarOverlay.xul
@@ -78,4 +74,3 @@ style chrome://messenger/content/messageWindow.xul chrome://savedpasswordeditor/
 style chrome://messenger/content/messengercompose/messengercompose.xul chrome://savedpasswordeditor/skin/overlay.css
 style chrome://messenger/content/messengercompose/messengercompose.xul chrome://savedpasswordeditor/skin/overlay-sm.css application={92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}
 style chrome://collab/content/collab.xul chrome://savedpasswordeditor/skin/overlay-spbd.css
-style chrome://sunbird/content/calendar.xul chrome://savedpasswordeditor/skin/overlay.css
