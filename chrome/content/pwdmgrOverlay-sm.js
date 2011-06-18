@@ -136,19 +136,24 @@ const spEditor = {
     }
   },
 
+  _makeLoginInfo: function (props) {
+    for (var prop in props) window.alert(prop + ": " + props[prop]);
+    var li =
+      Components.classes["@mozilla.org/login-manager/loginInfo;1"].
+      createInstance(Components.interfaces.nsILoginInfo);
+    li.init(props.hostname, props.formSubmitURL, props.httpRealm,
+            props.username, props.password, props.usernameField,
+            props.passwordField);
+    return li;
+  },
+
   _mergeSignonProps: function (oldSignon, newProps) {
     var copy = Object.create(newProps);
     for (prop in copy)
       if (copy[prop] === undefined)
         copy[prop] = oldSignon[prop];
 
-    var newSignon =
-      Components.classes["@mozilla.org/login-manager/loginInfo;1"].
-      createInstance(Ci.nsILoginInfo);
-    newSignon.init(copy.hostname, copy.formSubmitURL,
-                   copy.httpRealm, copy.username, copy.password,
-                   copy.usernameField, copy.passwordField);
-    return newSignon;
+    return this._makeLoginInfo(copy);
   },
 
   editSignon: function () {
@@ -159,9 +164,9 @@ const spEditor = {
 
     function __finish (newSignon) {
       try {
-        for (let i = 0; i < signons.length; i++)
+        for (let i = 0; i < selSignons.length; i++)
           gLocSvc.pwd.modifyLogin(
-            signons[i], this._mergeSignonProps(selSignons[i], newSignon));
+            selSignons[i], this._mergeSignonProps(selSignons[i], newSignon));
         this.refreshing = true;
         gPasswords.initialize();
         gPasswords.tree.view.selection.select(selections[0]);
@@ -183,7 +188,8 @@ const spEditor = {
 
     function __finish (newSignon) {
       try {
-        gLocSvc.pwd.addLogin(newSignon);
+        var newLI = this._makeLoginInfo(newSignon);
+        gLocSvc.pwd.addLogin(newLI);
       } catch (e) {
         window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
       }
@@ -196,7 +202,8 @@ const spEditor = {
   newSignon: function () {
     function __finish (newSignon) {
       try {
-        gLocSvc.pwd.addLogin(newSignon);
+        var newLI = this._makeLoginInfo(newSignon);
+        gLocSvc.pwd.addLogin(newLI);
       } catch (e) {
         window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
       }

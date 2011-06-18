@@ -95,7 +95,7 @@ window.addEventListener(
     }
 
     if (catStorage && oldSignons.length == 1)
-      el("tags_text").value = catStorage.getCategory(oldSignon);
+      el("tags_text").value = catStorage.getCategory(oldSignons[0]);
     else
       el("tags_box").hidden = true;
 
@@ -327,7 +327,7 @@ function setNewSignon () {
   }
 
   if (window.arguments[2].callback)
-    window.arguments[2].callback(newSignon);
+    window.arguments[2].callback(newProps);
   else
     window.arguments[2].newSignon = newProps;
 
