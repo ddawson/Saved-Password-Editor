@@ -1,6 +1,6 @@
 /*
-    Saved Password Editor, extension for Firefox 3.0+
-    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+    Saved Password Editor, extension for Gecko applications
+    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -137,7 +137,6 @@ const spEditor = {
   },
 
   _makeLoginInfo: function (props) {
-    for (var prop in props) window.alert(prop + ": " + props[prop]);
     var li =
       Components.classes["@mozilla.org/login-manager/loginInfo;1"].
       createInstance(Components.interfaces.nsILoginInfo);
@@ -165,7 +164,7 @@ const spEditor = {
     function __finish (newSignon) {
       try {
         for (let i = 0; i < selSignons.length; i++)
-          gLocSvc.pwd.modifyLogin(
+          this.loginSvc.modifyLogin(
             selSignons[i], this._mergeSignonProps(selSignons[i], newSignon));
         this.refreshing = true;
         gPasswords.initialize();
@@ -189,7 +188,7 @@ const spEditor = {
     function __finish (newSignon) {
       try {
         var newLI = this._makeLoginInfo(newSignon);
-        gLocSvc.pwd.addLogin(newLI);
+        this.loginSvc.addLogin(newLI);
       } catch (e) {
         window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
       }
@@ -203,7 +202,7 @@ const spEditor = {
     function __finish (newSignon) {
       try {
         var newLI = this._makeLoginInfo(newSignon);
-        gLocSvc.pwd.addLogin(newLI);
+        this.loginSvc.addLogin(newLI);
       } catch (e) {
         window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e);
       }
@@ -213,3 +212,7 @@ const spEditor = {
     this.openSPEDialog([], false, ret);
   },
 }
+
+XPCOMUtils.defineLazyServiceGetter(spEditor, "loginSvc",
+                                   "@mozilla.org/login-manager;1",
+                                   "nsILoginManager");

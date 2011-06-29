@@ -1,6 +1,6 @@
 /*
-    Saved Password Editor, extension for Firefox 3.0+
-    Copyright (C) 2010  Daniel Dawson <ddawson@icehouse.net>
+    Saved Password Editor, extension for Gecko applications
+    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
