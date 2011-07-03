@@ -1,0 +1,110 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
+<!ENTITY locale "eo">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system.
+
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEMS AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Konservitaj pasvortoj">
+<!ENTITY savedpasswords.accesskey "v">
+<!ENTITY savedpasswords.tooltip "Malfermi la dialogon de konservitaj pasvortoj">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Agordoj de Saved Password Editor">
+<!ENTITY displayMenuitem.label "Inkluzivi fulmklavojn en menuoj">
+<!ENTITY displayMenuitem.tooltip "Aldonas &quot;Saved Passwords&quot; al la menuo &quot;Ilaro&quot; kaj la aplikaĵa menuo de Vindozo kiel fulmoklavo al la pasvorta administrilo">
+<!ENTITY passwordfield_caption.label "Pasvortkampo en la redaktila fenestro">
+<!ENTITY passwordfield_alwayshide.label "Ĉiam kaŝi pasvorton dum la redaktila fenestro estas malfermata">
+<!ENTITY passwordfield_alwaysshow.label "Ĉiam montri pasvorton, dum redaktila fenestro estas malfermata">
+<!ENTITY passwordfield_rememberlast.label "Memorteni lastan staton">
+<!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+
+-->
+<!ENTITY newentry.label "Nova">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Redakti">
+<!ENTITY editentry.accesskey "R">
+<!ENTITY cloneentry.label "Kloni">
+<!ENTITY cloneentry.accesskey "l">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Tipo">
+<!ENTITY type_form.label "Retformularo">
+<!ENTITY type_form.accesskey "f">
+<!ENTITY type_httpauth.label "HTTP-aŭtentikigo">
+<!ENTITY type_httpauth.accesskey "H">
+<!ENTITY type_other.label "Alia">
+<!ENTITY type_other.accesskey "A">
+<!ENTITY hostname.label "Gastiga servilo">
+<!ENTITY hostname.tooltip "Protokolo/nomo de la gastiga servilo, al kiu la pasvorto estas aplikata (ekz. http://www.ekzemplo.com)">
+<!ENTITY formSubmitURL.label "Senda prefikso">
+<!ENTITY formSubmitURL.tooltip "Prefikso de la formulara celadreso">
+<!ENTITY httpRealm.label "HTTP-sfero">
+<!ENTITY httpRealm.tooltip "HTTP-sfero, kiu estu kongrua">
+<!ENTITY username.label "Uzantnomo">
+<!ENTITY username.tooltip "Memortenota uzantnomo">
+<!ENTITY password.label "Pasvorto">
+<!ENTITY password.tooltip "La memortenota pasvorto">
+<!ENTITY usernameField.label "Nomo de la uzantnoma kampo">
+<!ENTITY usernameField.tooltip "La noma atributo por la respektiva uzantnoma kampo en la formularo">
+<!ENTITY passwordField.label "Nomo de la pasvorta kampo">
+<!ENTITY passwordField.tooltip "La noma atributo por la respektiva pasvorta kampo en la formularo">
+<!ENTITY showPassword.label "Montri">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Ŝalti pasvortvideblecon">
+<!ENTITY hidePassword.label "Kaŝi">
+<!ENTITY hidePassword.accesskey "K">
+<!ENTITY guessfrompage.label "Diveni el aktuala paĝo">
+<!ENTITY guessfrompage.accesskey "D">
+<!ENTITY guessfrompage.tooltip "Plenigi ĉi tiun formularon surbaze de supozata ensaluta formularo sur la aktuala paĝo">
+<!ENTITY tags.label "Etikedoj">
+<!ENTITY tags.tooltip "Pasvortaj etikedoj (por la aldonaĵo &quot;Password Tags&quot;)">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
+<!ENTITY welcometospe "Bonvenon al Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Opcioj aŭ Modifi &gt; Preferoj (depende de via operaciumo), elektante la langeton &quot;Sekureco&quot;, alklakante la butonon &quot;Konservitaj pasvortoj…&quot;. Vi ankaŭ povas simple atingi Saved Password Editor el la menuo Iloj aŭ (ekde Firefox 4 sub Vindozo) el la menuo &quot;Firefox&quot;. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, elektu Vidi &gt; Ilaraj strioj &gt; Persone agordi…, aŭ alklaku la ilobreton per la dekstra musklavo kaj elektu &quot;Persone agordi…&quot;. La dialogo de konservitaj pasvortoj nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn kaj ekde Firefox 4 la kunteksta menuo ankaŭ enhavas la komandojn &quot;Redakti&quot; kaj &quot;Kloni&quot;.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+-->
+<!ENTITY welcomepara1_sm "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Agordoj... aŭ Redakti &gt; Agordoj... (depende de via operaciumo), navigante al la langeto &quot;Pasvortoj&quot;, sub &quot;Privateco &amp; sekureco&quot;, alklakante la butonon &quot;Administri konservitajn pasvortojn&quot;. Vi ankaŭ povas simple atingi Saved Password Editor el la menuo Iloj. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, alklaku la ilobreton per dekstra musklavo kaj elektu &quot;Akomodi…,&quot; La dialogo &quot;Konservitaj pasvortoj&quot; nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Konsideru, ke la dialogo &quot;Konservitaj pasvortoj&quot; estas baza komponanto de <span id='appname'></span> kaj ne estas provizata per ĉi tiu ĉetendaĵo, escepte por la supre menciitaj aldonitaj funkcioj. La ilobreta butono estas provizata je via dispono, ekspektante, ke kelkaj uzantoj de ĉi tiu etendaĵo volas atingi la dialogon multe pli ofte ol ili povus fari tion alikaze.">
