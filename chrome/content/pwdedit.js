@@ -40,6 +40,7 @@ window.addEventListener(
 
     oldSignons = window.arguments[0];
     cloneSignon = window.arguments[1];
+    var pwdShownInSPWin = window.arguments[2];
 
     var showpwd = prefs.getIntPref("showpassword");
     var pwdField = el("password_text");
@@ -51,7 +52,11 @@ window.addEventListener(
       pwdCurHidden = false;
       // Fall through
     case 2:
-      if (!pwdCurHidden && login())
+      if (!pwdCurHidden && pwdShownInSPWin ? true : login())
+        pwdField.removeAttribute("type");
+      break;
+    case 3:
+      if (pwdShownInSPWin)
         pwdField.removeAttribute("type");
       break;
     }
@@ -326,10 +331,10 @@ function setNewSignon () {
     return false;
   }
 
-  if (window.arguments[2].callback)
-    window.arguments[2].callback(newProps);
+  if (window.arguments[3].callback)
+    window.arguments[3].callback(newProps);
   else
-    window.arguments[2].newSignon = newProps;
+    window.arguments[3].newSignon = newProps;
 
   if (oldSignons.length == 1 && catStorage) {
     if (haveOldSignon && !cloneSignon)

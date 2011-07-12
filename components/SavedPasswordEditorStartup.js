@@ -25,7 +25,7 @@ const Cc = Components.classes,
     THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
     SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}",
     PREFNAME = "currentVersion",
-    THISVERSION = "2.1",
+    THISVERSION = "2.1.0.100branch1showpwdfollowspwin",
     COMPAREVERSION = "2.0",
     CONTENT = "chrome://savedpasswordeditor/content/",
     WELCOMEURL = CONTENT + "welcome.xhtml",
@@ -35,10 +35,10 @@ const Cc = Components.classes,
       getBranch("extensions.savedpasswordeditor."),
     os = Cc["@mozilla.org/observer-service;1"].
       getService(Ci.nsIObserverService),
-    cm = Cc["@mozilla.org/categorymanager;1"].
-      getService(Ci.nsICategoryManager),
     wm = Cc["@mozilla.org/appshell/window-mediator;1"].
-      getService(Ci.nsIWindowMediator);
+      getService(Ci.nsIWindowMediator),
+    vc = Cc["@mozilla.org/xpcom/version-comparator;1"].
+      getService(Ci.nsIVersionComparator);
 
 Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 
@@ -71,24 +71,6 @@ SavedPasswordEditorStartup.prototype = {
   },
 
   check_version: function () {
-    var comp = this;
-
-    function isOlder (version, compareTo) {
-      var vAnalysis = version.split(".");
-      var ctAnalysis = compareTo.split(".");
-
-      for (let i = 0; i < ctAnalysis.length; i++) {
-        if (i == vAnalysis.length) return true;
-        var vNum = Number(vAnalysis[i]), ctNum = Number(ctAnalysis[i]);
-        if (isNaN(vNum) || i >= ctAnalysis.length || vNum < ctNum) {
-          return true;
-        }
-        if (vNum > ctNum)  // Was a newer version?? Not going to deal with it!
-          break;
-      }
-      return false;
-    }
-
     function set_welcome (comp) {
       var timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
       timer.init(comp, 3000, Ci.nsITimer.TYPE_ONE_SHOT);
@@ -97,9 +79,9 @@ SavedPasswordEditorStartup.prototype = {
 
     if (prefs.prefHasUserValue(PREFNAME)) {
       var lastVersion = prefs.getCharPref(PREFNAME);
-      if (isOlder(lastVersion, COMPAREVERSION))
+      if (vc.compare(lastVersion, COMPAREVERSION) < 0)
         set_welcome(this);
-      if (isOlder(lastVersion, THISVERSION))
+      if (vc.compare(lastVersion, THISVERSION) < 0)
         prefs.setCharPref(PREFNAME, THISVERSION);
     } else {
       set_welcome(this);

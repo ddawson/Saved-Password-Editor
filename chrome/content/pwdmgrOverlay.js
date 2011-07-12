@@ -129,7 +129,7 @@ const spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      selSignons, false, ret);
+      selSignons, false, showingPasswords, ret);
 
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
@@ -155,7 +155,7 @@ const spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      [signon], true, ret);
+      [signon], true, showingPasswords, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
@@ -180,7 +180,7 @@ const spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal,resizable",
-      [], false, ret);
+      [], false, showingPasswords, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {

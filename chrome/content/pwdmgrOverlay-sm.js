@@ -177,7 +177,7 @@ const spEditor = {
       
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
     var dlg =
-      this.openSPEDialog(selSignons, false, ret);
+      this.openSPEDialog(selSignons, false, gPasswords.showPasswords, ret);
   },
 
   cloneSignon: function () {
@@ -195,7 +195,7 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog([signon], true, ret);
+    this.openSPEDialog([signon], true, gPasswords.showPasswords, ret);
   },
 
   newSignon: function () {
@@ -209,7 +209,7 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog([], false, ret);
+    this.openSPEDialog([], false, gPasswords.showPasswords, ret);
   },
 }
 

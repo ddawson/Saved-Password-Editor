@@ -40,7 +40,10 @@
       <radiogroup preference="pref-showpassword">
         <radio label="&passwordfield_alwayshide.label;" value="0"/>
         <radio label="&passwordfield_alwaysshow.label;" value="1"/>
-        <radio label="&passwordfield_rememberlast.label;" value="2"/>
+        <radio label="&passwordfield_rememberlast.label;" value="2"
+               tooltiptext="&passwordfield_rememberlast.tooltip;"/>
+        <radio label="&passwordfield_followspwin.label;" value="3"
+               tooltiptext="&passwordfield_followspwin.tooltip;"/>
       </radiogroup>
     </groupbox>
   </prefpane>

@@ -33,6 +33,9 @@
 <!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
 <!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
 <!ENTITY passwordfield_rememberlast.label "Remember last state">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">
 
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
