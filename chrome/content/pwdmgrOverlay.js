@@ -104,17 +104,19 @@ const spEditor = {
   },
 
   _mergeSignonProps: function (oldSignon, newProps) {
-    var copy = Object.create(newProps);
-    for (prop in copy)
-      if (copy[prop] === undefined)
-        copy[prop] = oldSignon[prop];
+    var merged = {};
+    for (prop in newProps)
+      if (newProps[prop] === undefined)
+        merged[prop] = oldSignon[prop];
+      else
+        merged[prop] = newProps[prop];
 
     var newSignon =
       Components.classes["@mozilla.org/login-manager/loginInfo;1"].
       createInstance(Components.interfaces.nsILoginInfo);
-    newSignon.init(copy.hostname, copy.formSubmitURL,
-                   copy.httpRealm, copy.username, newProps.password,
-                   copy.usernameField, copy.passwordField);
+    newSignon.init(merged.hostname, merged.formSubmitURL,
+                   merged.httpRealm, merged.username, merged.password,
+                   merged.usernameField, merged.passwordField);
     return newSignon;
   },
 

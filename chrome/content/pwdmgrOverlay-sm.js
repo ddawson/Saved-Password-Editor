@@ -147,12 +147,14 @@ const spEditor = {
   },
 
   _mergeSignonProps: function (oldSignon, newProps) {
-    var copy = Object.create(newProps);
-    for (prop in copy)
-      if (copy[prop] === undefined)
-        copy[prop] = oldSignon[prop];
+    var merged = {};
+    for (prop in newProps)
+      if (newProps[prop] === undefined)
+        merged[prop] = oldSignon[prop];
+      else
+        merged[prop] = newProps[prop];
 
-    return this._makeLoginInfo(copy);
+    return this._makeLoginInfo(merged);
   },
 
   editSignon: function () {
