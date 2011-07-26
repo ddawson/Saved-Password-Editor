@@ -95,10 +95,20 @@
       </row>
     </rows>
   </grid>
-  <button id="guessFromPage_btn" label="&guessfrompage.label;"
-          accesskey="&guessfrompage.accesskey;"
-          tooltiptext="&guessfrompage.tooltip;"
-          oncommand="guessParameters();"/>
+  <hbox id="guessFromPage_box">
+    <button id="guessFromPage_btn" label="&guessfrompage.label;"
+            accesskey="&guessfrompage.accesskey;"
+            tooltiptext="&guessfrompage.tooltip;"
+            oncommand="guessParameters();" flex="1"/>
+    <button id="prevForm_btn" label="&prevform.label;"
+            accesskey="&prevform.accesskey;"
+            tooltiptext="&prevform.tooltip;" oncommand="prevForm();"
+            hidden="true" flex="1"/>
+    <button id="nextForm_btn" label="&nextform.label;"
+            accesskey="&nextform.accesskey;"
+            tooltiptext="&nextform.tooltip;" oncommand="nextForm();"
+            hidden="true" flex="1"/>
+  </hbox>
   <hbox id="tags_box">
     <label control="tags_text" value="&tags.label;"/>
     <textbox id="tags_text" flex="1"

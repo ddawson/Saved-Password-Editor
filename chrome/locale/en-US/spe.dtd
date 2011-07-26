@@ -81,6 +81,12 @@
 <!ENTITY guessfrompage.label "Guess from current page">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Fill in this form based on a likely login form on the current page">
+<!ENTITY prevform.label "Previous form">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Try the previous form from the page">
+<!ENTITY nextform.label "Next form">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Try the next form from the page">
 <!ENTITY tags.label "Tags">
 <!ENTITY tags.tooltip "Password tags (for &quot;Password Tags&quot; add-on)">
 

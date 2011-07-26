@@ -27,7 +27,8 @@ const Cc = Components.classes,
       CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
       SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}";
 
-var strBundle, catStorage, haveOldSignon, oldSignons, cloneSignon;
+var strBundle, catStorage, haveOldSignon, oldSignons, cloneSignon, loginForms,
+    curLoginIdx, oldUsername, oldPassword;
 
 window.addEventListener(
   "DOMContentLoaded",
@@ -219,62 +220,50 @@ function togglePasswordView () {
 function guessParameters () {
   function walkTree (win) {
     var curDoc = win.document;
-    if (!(curDoc instanceof HTMLDocument)) return false;
+    if (!(curDoc instanceof HTMLDocument)) return;
 
-    inpage: {
-      // Get the host prefix;
-      var curLocation = win.location;
-      var hostname = curLocation.protocol + "//" + curLocation.host;
+    // Get the host prefix;
+    var curLocation = win.location;
+    var hostname = curLocation.protocol + "//" + curLocation.host;
 
-      // Locate a likely login form and its fields
-      var pwdFields = curDoc.evaluate(
-        '//form//input[@name and @name!="" ' +
-          'and translate(@type, "PASWORD", "pasword")="password"]',
-        curDoc, null, XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-      if (pwdFields.snapshotLength == 0) break inpage;
+    // Locate a likely login form and its fields
+    var pwdFields = curDoc.evaluate(
+      '//xhtml:form//xhtml:input[@name and @name!="" ' +
+        'and translate(@type, "PASWORD", "pasword")="password"]',
+      curDoc, _htmlNamespaceResolver,
+      XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
 
-      for (var i = 0; i < pwdFields.snapshotLength; i++) {
-        var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
-        var unameField = curDoc.evaluate(
-          '(.//input[@name and @name!="" ' +
-            'and (not(@type) or translate(@type, "TEX", "tex")="text") ' +
-            'and not(preceding::input[' +
-            'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
-          form, null, XPathResult.FIRST_ORDERED_NODE_TYPE, null).
-            singleNodeValue;
-        if (unameField) break;
-      }
+    for (var i = 0; i < pwdFields.snapshotLength; i++) {
+      var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
+      let rng = curDoc.createRange();
+      rng.selectNode(form);
+      let restrForm = rng.cloneContents().firstChild;
+      var unameField = curDoc.evaluate(
+        '(.//xhtml:input[@name and @name!="" ' +
+          'and (not(@type) or translate(@type, "TEX", "tex")="text") ' +
+          'and not(preceding::xhtml:input[' +
+          'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
+        restrForm, _htmlNamespaceResolver,
+        XPathResult.FIRST_ORDERED_NODE_TYPE, null).
+          singleNodeValue;
 
       if (unameField) {
         // Construct the submit prefix
-        var formAction = form.getAttribute("action");
-        var res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
-        var formSubmitURL;
-        if (res)
-          formSubmitURL = res[1];
-        else
-          formSubmitURL = hostname;
-
-        // Populate the editor form
-        el("hostname_text").value = hostname;
-        el("formSubmitURL_text").value = formSubmitURL;
-        if (pwdField.value != "") {
-          el("username_text").value = unameField.value;
-          el("password_text").value = pwdField.value;
-        }
-        el("usernameField_text").value = unameField.getAttribute("name");
-        el("passwordField_text").value = pwdField.getAttribute("name");
-        return true;
+        let formAction = form.getAttribute("action");
+        let res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
+        loginForms.push({
+          hostname: hostname, formSubmitURL: res ? res[1] : hostname,
+          username: unameField.value, password: pwdField.value,
+          usernameField: unameField.getAttribute("name"),
+          passwordField: pwdField.getAttribute("name") });
       }
     }
 
     // See if any frame or iframe contains a login form
     var frames = win.frames;
     for (var i = 0; i < frames.length; i++) {
-      if (walkTree(frames[i])) return true;
+      walkTree(frames[i]);
     }
-
-    return false;
   }
 
   // Locate the browser object for the last seen tab
@@ -284,12 +273,65 @@ function guessParameters () {
       getMostRecentWindow("navigator:browser").getBrowser().contentWindow;
 
   // Attempt to find a login form
-  if (!walkTree(curWin)) {
+  loginForms = [];
+  oldUsername = el("username_text").value;
+  oldPassword = el("password_text").value;
+
+  walkTree(curWin);
+  if (loginForms.length == 0) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
       alert(window, strBundle.getString("error"),
             strBundle.getString("nologinform"));
+    return;
   }
+
+  if (loginForms.length > 1) {
+    el("prevForm_btn").hidden = false;
+    el("nextForm_btn").hidden = false;
+  } else {
+    el("prevForm_btn").hidden = true;
+    el("nextForm_btn").hidden = true;
+  }
+
+  _fillFromForm(0);
+}
+
+function _htmlNamespaceResolver (aPrefix)
+  aPrefix == "xhtml" ? "http://www.w3.org/1999/xhtml" : null
+
+function _fillFromForm (aIdx) {
+  curLoginIdx = aIdx;
+  var loginForm = loginForms[aIdx];
+  el("hostname_text").value = loginForm.hostname;
+  el("formSubmitURL_text").value = loginForm.formSubmitURL;
+  el("usernameField_text").value = loginForm.usernameField;
+  el("passwordField_text").value = loginForm.passwordField;
+  if (loginForm.password == "") {
+    el("username_text").value = oldUsername;
+    el("password_text").value = oldPassword;
+  } else {
+    el("username_text").value = loginForm.username;
+    el("password_text").value = loginForm.password;
+  }
+
+  if (curLoginIdx == 0)
+    el("prevForm_btn").disabled = true;
+  else
+    el("prevForm_btn").disabled = false;
+
+  if (curLoginIdx == loginForms.length - 1)
+    el("nextForm_btn").disabled = true;
+  else
+    el("nextForm_btn").disabled = false;
+}
+
+function prevForm () {
+  if (curLoginIdx > 0) _fillFromForm(curLoginIdx - 1);
+}
+
+function nextForm () {
+  if (curLoginIdx < loginForms.length - 1) _fillFromForm(curLoginIdx + 1);
 }
 
 function setNewSignon () {
