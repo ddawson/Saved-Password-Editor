@@ -15,10 +15,12 @@
 
 
 
+
 -->
 <!ENTITY locale "nl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -38,6 +40,9 @@
 <!ENTITY passwordfield_alwayshide.label "Wachtwoord altijd verbergen wanneer bewerkingsvenster wordt geopend">
 <!ENTITY passwordfield_alwaysshow.label "Wachtwoord altijd weergeven wanneer bewerkingsvenster wordt geopend">
 <!ENTITY passwordfield_rememberlast.label "Laatste instelling onthouden">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Nieuw">
@@ -58,6 +63,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -94,6 +100,12 @@
 <!ENTITY guessfrompage.label "Raden van huidige pagina">
 <!ENTITY guessfrompage.accesskey "R">
 <!ENTITY guessfrompage.tooltip "Vul dit formulier in op basis van een waarschijnlijk aanmeldingsformulier op de huidige pagina">
+<!ENTITY prevform.label "Previous form">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Try the previous form from the page">
+<!ENTITY nextform.label "Next form">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Try the next form from the page">
 <!ENTITY tags.label "Labels">
 <!ENTITY tags.tooltip "Wachtwoordlabels (voor de add-on ‘Password Tags’)">
 <!-- Paragraph 1, Firefox version -->
@@ -105,9 +117,10 @@
      XXXXX Be careful if you copy and paste. XXXXX 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel Wachtwoorden navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. U kunt ook eenvoudigeweg de Opgeslagen wachtwoorden oproepen via het menu Extra. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!---->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'></span> en niet wordt geleverd door deze extensie, met uitzondering van de hierboven genoemde toegevoegde functies. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">

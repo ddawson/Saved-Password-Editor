@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "id-ID">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 
 -->
@@ -32,11 +34,15 @@
 <!ENTITY passwordfield_alwayshide.label "Selalu sembunyikan kata sandi ketika membuka jendela editor">
 <!ENTITY passwordfield_alwaysshow.label "Selalu tampilkan kata sandi ketika membuka jendela editor">
 <!ENTITY passwordfield_rememberlast.label "Ingat keadaan terakhir">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 
 -->
 <!ENTITY newentry.label "Baru">
@@ -76,6 +82,12 @@
 <!ENTITY guessfrompage.label "Tebak dari halaman sekarang">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Isi di formulir ini berdasarkan formulir login pada halaman sekarang">
+<!ENTITY prevform.label "Previous form">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Try the previous form from the page">
+<!ENTITY nextform.label "Next form">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Try the next form from the page">
 <!ENTITY tags.label "Tag">
 <!ENTITY tags.tooltip "Tag kata sandi (untuk add-on &quot;Tag Kata Sandi&quot;)">
 <!-- WELCOME PAGE
@@ -93,6 +105,7 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Selamat datang di Editor Simpanan Kata Sandi">
 <!-- Paragraph 1, Firefox version -->
@@ -102,6 +115,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 -->
 <!ENTITY welcomepara1_sm "Terima kasih telah menggunakan <a id='addonlink'>Editor Simpanan Kata Sandi</a>. Anda bisa mengakses fungsionalitas suntingan dengan pergi ke Peralatan &gt; Opsi, atau Edit &gt; Preferensi (tergantung sistem operasi Anda), navigasikan ke tab &quot;Kata Sandi&quot; di bawah &quot;Privacy &amp; Security&quot;, lalu klik pada tombol &quot;Atur Simpanan Kata Sandi&quot;. Anda bisa dengan mudah mengakses Simpanan Kata Sandi dari menu Peralatan. Tombol toolbar juga tersedia untuk kemudahan Anda; untuk mengaksesnya, klik kanan pada toolbar dan pilih &quot;Kustomisasi…&quot;. Dialog Simpanan Kata Sandi sekarang mengandung tombol menu dengan perintah-perintah untuk menambah dan menyunting kata sandi.">

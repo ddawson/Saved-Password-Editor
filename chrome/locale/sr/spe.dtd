@@ -15,10 +15,12 @@
 
 
 
+
 -->
 <!ENTITY locale "sr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -38,6 +40,9 @@
 <!ENTITY passwordfield_alwayshide.label "Увек сакриј лозинку када се отвара прозор за уређивање">
 <!ENTITY passwordfield_alwaysshow.label "Увек прикажи лозинку када се отвара прозор за уређивање">
 <!ENTITY passwordfield_rememberlast.label "Запамти последње стање">
+<!ENTITY passwordfield_rememberlast.tooltip "Прикажи или сакриј исто као и прошли пут када је прозор био отворен">
+<!ENTITY passwordfield_followspwin.label "Прати списак сачуваних лозинки">
+<!ENTITY passwordfield_followspwin.tooltip "Прикажи само ако су лозинке приказане у сачуваним лозинкама">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Ново">
@@ -58,6 +63,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -94,6 +100,12 @@
 <!ENTITY guessfrompage.label "Погоди с текуће странице">
 <!ENTITY guessfrompage.accesskey "о">
 <!ENTITY guessfrompage.tooltip "Попуните овај образац који је сличан обрасцу за пријаву на текућој страници">
+<!ENTITY prevform.label "Претходни образац">
+<!ENTITY prevform.accesskey "П">
+<!ENTITY prevform.tooltip "Пробајте претходни образац странице">
+<!ENTITY nextform.label "Следећи образац">
+<!ENTITY nextform.accesskey "С">
+<!ENTITY nextform.tooltip "Пробајте претходни образац странице">
 <!ENTITY tags.label "Ознаке">
 <!ENTITY tags.tooltip "Ознаке лозинки (за додатак Password Tags)">
 <!-- Paragraph 1, Firefox version -->
@@ -103,6 +115,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

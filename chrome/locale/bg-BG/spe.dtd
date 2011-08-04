@@ -15,10 +15,12 @@
 
 
 
+
 -->
 <!ENTITY locale "bg-BG">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -38,6 +40,9 @@
 <!ENTITY passwordfield_alwayshide.label "Винаги скривай паролата когато отваряш полето за редактиране">
 <!ENTITY passwordfield_alwaysshow.label "Винаги показвай паролата когато отваряш полето за редактиране">
 <!ENTITY passwordfield_rememberlast.label "Запомни последното положение">
+<!ENTITY passwordfield_rememberlast.tooltip "Покажи или скрий същото, както когато беше беше отворен предишния път прозорецът">
+<!ENTITY passwordfield_followspwin.label "Следвай запаметения списък с паролите">
+<!ENTITY passwordfield_followspwin.tooltip "Покажи ако и само ако паролите са показани в момента в &quot;Пароли мениджъра&quot;">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Нова">
@@ -58,6 +63,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -94,6 +100,12 @@
 <!ENTITY guessfrompage.label "Познай от текущата страница">
 <!ENTITY guessfrompage.accesskey "П">
 <!ENTITY guessfrompage.tooltip "Попълнете тази форма на базата на вероятната форма вход на текущата страница">
+<!ENTITY prevform.label "Предишно поле">
+<!ENTITY prevform.accesskey "З">
+<!ENTITY prevform.tooltip "Опитай предишно поле от страницата">
+<!ENTITY nextform.label "Следващо поле">
+<!ENTITY nextform.accesskey "Х">
+<!ENTITY nextform.tooltip "Опитай следващото поле от страницата">
 <!ENTITY tags.label "Бележки">
 <!ENTITY tags.tooltip "Бележки за паролата">
 <!-- Paragraph 1, Firefox version -->
@@ -103,6 +115,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

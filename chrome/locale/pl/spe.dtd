@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "pl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 
 -->
@@ -32,11 +34,15 @@
 <!ENTITY passwordfield_alwayshide.label "Zawsze ukrywaj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_alwaysshow.label "Zawsze pokazuj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_rememberlast.label "Pamiętaj ostatni stan">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 
 -->
 <!ENTITY newentry.label "Nowe">
@@ -76,6 +82,12 @@
 <!ENTITY guessfrompage.label "Wypełnij pola na podstawie zawartości bieżącej strony">
 <!ENTITY guessfrompage.accesskey "g">
 <!ENTITY guessfrompage.tooltip "Wypełnij ten formularzu w oparciu o prawdopodobny formularz logowania na bieżącej stronie">
+<!ENTITY prevform.label "Previous form">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Try the previous form from the page">
+<!ENTITY nextform.label "Next form">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Try the next form from the page">
 <!ENTITY tags.label "Tagi">
 <!ENTITY tags.tooltip "Tagi haseł (dla dodatku &quot;Tagi haseł&quot;)">
 <!-- WELCOME PAGE
@@ -93,6 +105,7 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Witaj w Edytorze zapamiętanych haseł">
 <!-- Paragraph 1, Firefox version -->
@@ -102,6 +115,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 -->
 <!ENTITY welcomepara1_sm "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;Bezpieczeństwo&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejść poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł.">

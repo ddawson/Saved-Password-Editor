@@ -5,7 +5,7 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.1.1.100branch1showpwdfollowspwin</version>
+    <version>2.2</version>
     <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
     <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
@@ -508,7 +508,7 @@
       <RDF:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- Firefox -->
         <minVersion>3.5</minVersion>
-        <maxVersion>7.0a1</maxVersion>
+        <maxVersion>8.0a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -516,7 +516,7 @@
       <RDF:Description>
         <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!-- SeaMonkey -->
         <minVersion>2.0</minVersion>
-        <maxVersion>2.4a1</maxVersion>
+        <maxVersion>2.5a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -524,7 +524,7 @@
       <RDF:Description>
         <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
         <minVersion>3.0</minVersion>
-        <maxVersion>7.0a1</maxVersion>
+        <maxVersion>8.0a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 

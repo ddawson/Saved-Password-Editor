@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "eo">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 
 -->
@@ -32,11 +34,15 @@
 <!ENTITY passwordfield_alwayshide.label "Ĉiam kaŝi pasvorton dum la redaktila fenestro estas malfermata">
 <!ENTITY passwordfield_alwaysshow.label "Ĉiam montri pasvorton, dum redaktila fenestro estas malfermata">
 <!ENTITY passwordfield_rememberlast.label "Memorteni lastan staton">
+<!ENTITY passwordfield_rememberlast.tooltip "Montri aŭ kaŝi la saman, kiam la fenestro estis malfermita la lastan fojon">
+<!ENTITY passwordfield_followspwin.label "Sekvi la liston de konservitaj pasvortoj">
+<!ENTITY passwordfield_followspwin.tooltip "Montri, se kaj nur se pasvortoj estas aktuale montrataj en la fenestro de konservitaj pasvortoj">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 
 -->
 <!ENTITY newentry.label "Nova">
@@ -76,6 +82,12 @@
 <!ENTITY guessfrompage.label "Diveni el aktuala paĝo">
 <!ENTITY guessfrompage.accesskey "D">
 <!ENTITY guessfrompage.tooltip "Plenigi ĉi tiun formularon surbaze de supozata ensaluta formularo sur la aktuala paĝo">
+<!ENTITY prevform.label "Antaŭa formularo">
+<!ENTITY prevform.accesskey "A">
+<!ENTITY prevform.tooltip "Provi la antaŭan formularon el la paĝo">
+<!ENTITY nextform.label "Sekvonta formularo">
+<!ENTITY nextform.accesskey "S">
+<!ENTITY nextform.tooltip "Provi la sekvontan formularon el la paĝo">
 <!ENTITY tags.label "Etikedoj">
 <!ENTITY tags.tooltip "Pasvortaj etikedoj (por la aldonaĵo &quot;Password Tags&quot;)">
 <!-- WELCOME PAGE
@@ -93,6 +105,7 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Bonvenon al Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -102,6 +115,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 -->
 <!ENTITY welcomepara1_sm "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Agordoj... aŭ Redakti &gt; Agordoj... (depende de via operaciumo), navigante al la langeto &quot;Pasvortoj&quot;, sub &quot;Privateco &amp; sekureco&quot;, alklakante la butonon &quot;Administri konservitajn pasvortojn&quot;. Vi ankaŭ povas simple atingi Saved Password Editor el la menuo Iloj. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, alklaku la ilobreton per dekstra musklavo kaj elektu &quot;Akomodi…,&quot; La dialogo &quot;Konservitaj pasvortoj&quot; nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn.">

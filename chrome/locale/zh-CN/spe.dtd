@@ -15,10 +15,12 @@
 
 
 
+
 -->
 <!ENTITY locale "zh-CN">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -38,6 +40,9 @@
 <!ENTITY passwordfield_alwayshide.label "打开编辑器窗口时总是隐藏密码">
 <!ENTITY passwordfield_alwaysshow.label "打开编辑器窗口时总是显示密码">
 <!ENTITY passwordfield_rememberlast.label "记住最后状态">
+<!ENTITY passwordfield_rememberlast.tooltip "显示或隐藏与上次打开的相同的窗口">
+<!ENTITY passwordfield_followspwin.label "关注已保存密码列表">
+<!ENTITY passwordfield_followspwin.tooltip "显示如果并且仅当密码显示在已保存密码窗口中时">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "新建">
@@ -58,6 +63,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -96,6 +102,12 @@
 <!ENTITY guessfrompage.label "从当前页猜测">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "在当前页面寻找类似于登录的表单并自动填充">
+<!ENTITY prevform.label "上一个表单">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "尝试页面的上一个表单">
+<!ENTITY nextform.label "下一个表单">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "尝试页面的下一个表单">
 <!ENTITY tags.label "标签">
 <!ENTITY tags.tooltip "密码标签（用于附加组件“Password Tags”）">
 <!-- Paragraph 1, Firefox version -->
@@ -105,6 +117,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

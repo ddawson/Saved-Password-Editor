@@ -14,10 +14,12 @@
 
 
 
+
 -->
 <!ENTITY locale "hu">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -36,6 +38,9 @@
 <!ENTITY passwordfield_alwayshide.label "Jelszavak elrejtése mindig a szerkesztő megnyitásakor">
 <!ENTITY passwordfield_alwaysshow.label "Jelszavak megjelenítése mindig a szerkesztő megnyitásakor">
 <!ENTITY passwordfield_rememberlast.label "Utolsó állapot megjegyzése">
+<!ENTITY passwordfield_rememberlast.tooltip "Azonosak megjelenítése vagy elrejtése a legutolsó ablaknyitásnak megfelelően">
+<!ENTITY passwordfield_followspwin.label "Mentett jelszavak listájának követése">
+<!ENTITY passwordfield_followspwin.tooltip "Megjelenítés akkor és csak akkor, ha a jelszavak jelenleg láthatóak a mentett jelszavak ablakban">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Új adat">
@@ -56,6 +61,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -91,6 +97,12 @@
 <!ENTITY guessfrompage.label "Betöltés a jelenlegi weboldalról">
 <!ENTITY guessfrompage.accesskey "w">
 <!ENTITY guessfrompage.tooltip "Az adat betöltésének megkísérlése a jelenlegi weboldalról">
+<!ENTITY prevform.label "Előző forma">
+<!ENTITY prevform.accesskey "E">
+<!ENTITY prevform.tooltip "Az oldal korábbi formájának kipróbálása">
+<!ENTITY nextform.label "Következő forma">
+<!ENTITY nextform.accesskey "K">
+<!ENTITY nextform.tooltip "Az oldal következő formájának kipróbálása">
 <!ENTITY tags.label "Címkék">
 <!ENTITY tags.tooltip "Jelszó címkék (a &quot;Password Tags&quot; kiegészítőhöz)">
 <!-- Paragraph 1, Firefox version -->
@@ -102,9 +114,10 @@
      XXXXX Be careful if you copy and paste. XXXXX 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Köszönjük, hogy a <a id='addonlink'>Saved Password Editor</a> kiterjesztést választotta. A szerkesztés funkció elérhető az Eszközök &gt; Beállítások, vagy Szerkesztés &gt; Beállítások (az operációs rendszertől függően) menüből a &quot;Jelszavak&quot; panel kiválasztásával az &quot;Adatvédelem &amp; Biztonság&quot;-ra, majd a &quot;Mentett jelszavak kezelése&quot; gombra kattintva. A mentett jelszavak az eszközök menüből is elérhetőek. Egy eszköztár gomb is rendelkezésre áll, jobb kattintással az eszköztáron és a &quot;Testreszabás…&quot; menüpont kiválasztásával érhető el. A mentett jelszavak párbeszédablak tartalmaz egy menü-gombot, amellyel gyorsan elérhető a jelszavak hozzáadása és szerkesztése.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!---->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Jegyezze meg, hogy a Mentett jelszavak párbeszédablak <span id='appname'/> komponensen alapszik, és nem kizárólag e kiterjesztés által érhető el. Kivételt képez a két hozzáadott gomb. Az eszköztár gomb csak a gyorsabb elérhetőség érdekében lett beépítve, mert több felhasználó gyakrabban kíván hozzáférni a párbeszédablakhoz.">

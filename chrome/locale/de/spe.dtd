@@ -14,10 +14,12 @@
 
 
 
+
 -->
 <!ENTITY locale "de-DE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -36,6 +38,9 @@
 <!ENTITY passwordfield_alwayshide.label "Passwort beim Öffnen des Editorfensters immer verstecken">
 <!ENTITY passwordfield_alwaysshow.label "Passwort beim Öffnen des Editorfensters immer zeigen">
 <!ENTITY passwordfield_rememberlast.label "Letzten Zustand merken">
+<!ENTITY passwordfield_rememberlast.tooltip "Zeigen oder verstecken wie beim letzten Öffnen des Fensters">
+<!ENTITY passwordfield_followspwin.label "Liste der gespeicherten Passwörter folgen">
+<!ENTITY passwordfield_followspwin.tooltip "Nur dann zeigen, wenn Passwörter derzeit im Gespeicherte-Passwörter-Fenster angezeigt werden">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Neu">
@@ -56,6 +61,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -91,6 +97,12 @@
 <!ENTITY guessfrompage.label "Von aktueller Seite holen">
 <!ENTITY guessfrompage.accesskey "h">
 <!ENTITY guessfrompage.tooltip "Füllt dieses Formular anhand eines vermuteten Anmeldeformulars auf der aktuellen Seite aus">
+<!ENTITY prevform.label "Vorheriges Formular">
+<!ENTITY prevform.accesskey "V">
+<!ENTITY prevform.tooltip "Das vorherige Formular auf der Webseite ausprobieren">
+<!ENTITY nextform.label "Nächstes Formular">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Das nächste Formular auf der Webseite ausprobieren">
 <!ENTITY tags.label "Tags">
 <!ENTITY tags.tooltip "Passworttags (für die Erweiterung &quot;Password Tags&quot;)">
 <!-- Paragraph 1, Firefox version -->
@@ -102,9 +114,10 @@
      XXXXX Be careful if you copy and paste. XXXXX 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;Passwörter&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!---->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Beachten Sie, dass der Gespeicherte-Passwörter-Dialog eine Kernkomponente von <span id='appname'></span> ist und abgesehen von den zwei hinzugefügten Schaltflächen nicht von dieser Erweiterung bereitgestellt wird. Die Symbolleistenschaltfläche wird nur der Bequemlichkeit wegen in der Erwartung angeboten, dass einige Benutzer dieser Erweiterung den Dialog nun weit häufiger nutzen werden, als es sonst der Fall wäre.">

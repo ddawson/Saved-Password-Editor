@@ -15,10 +15,12 @@
 
 
 
+
 -->
 <!ENTITY locale "vi">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -38,6 +40,9 @@
 <!ENTITY passwordfield_alwayshide.label "Luôn ẩn mật khẩu khi mở cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_alwaysshow.label "Luôn hiện mật khẩu khi mở cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_rememberlast.label "Nhớ trạng thái lần trước">
+<!ENTITY passwordfield_rememberlast.tooltip "Ẩn hoặc hiện y như cửa sổ được mở lần gần đây nhất">
+<!ENTITY passwordfield_followspwin.label "Danh sách theo đuôi Saved Passwords">
+<!ENTITY passwordfield_followspwin.tooltip "Chỉ hiển thị nếu các mật khẩu hiện đang được hiển thị trong cửa sổ Saved Passwords">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Tạo mới">
@@ -58,6 +63,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -94,6 +100,12 @@
 <!ENTITY guessfrompage.label "Đoán từ trang hiện tại">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Điền mẫu này dựa trên mẫu điền đăng nhập phù hợp trên trang hiện tại">
+<!ENTITY prevform.label "Mẫu điền trước">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Thử mẫu điền trước từ trang">
+<!ENTITY nextform.label "Mẫu điền sau">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Thử mẫu điền sau từ trang">
 <!ENTITY tags.label "Nhãn">
 <!ENTITY tags.tooltip "Nhãn mật khẩu (Cho tiện ích &quot;Password Tags&quot;)">
 <!-- Paragraph 1, Firefox version -->
@@ -106,9 +118,10 @@
 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;Passwords&quot; nằm ở thẻ &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools. Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu, và trên Firefox 4.0, bạn còn có thể sử dụng lệnh &quot;Chỉnh sửa&quot; và &quot;Sao chép&quot; từ trình đơn ngữ cảnh.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!---->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Lưu ý rằng hộp thoại Saved Passwords là một thành phần cơ bản của <span id='appname'></span>, và hiện không được cung cấp bởi tiện ích này, ngoại trừ các chức năng phụ được nêu ở trên. Nút Công Cụ được cung cấp nhằm giúp những ai cần truy cập nhiều vào hộp thoại quản lý mật khẩu làm việc thuận lợi hơn.">

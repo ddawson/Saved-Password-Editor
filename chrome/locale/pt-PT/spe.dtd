@@ -17,10 +17,12 @@
 
 
 
+
 -->
 <!ENTITY locale "pt-PT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -42,6 +44,9 @@
 <!ENTITY passwordfield_alwayshide.label "Ocultar sempre senha ao abrir a janela de edição">
 <!ENTITY passwordfield_alwaysshow.label "Mostrar sempre senha ao abrir a janela de edição">
 <!ENTITY passwordfield_rememberlast.label "Lembrar o último estado">
+<!ENTITY passwordfield_rememberlast.tooltip "Mostrar ou ocultar o mesmo que a última vez em que a janela estava aberta">
+<!ENTITY passwordfield_followspwin.label "Lista de senhas guardadas">
+<!ENTITY passwordfield_followspwin.tooltip "Mostrar se e apenas se as senhas são atualmente apresentadas na janela Senhas guardadas">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY newentry.label "Novo">
@@ -62,6 +67,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -100,6 +106,12 @@
 <!ENTITY guessfrompage.label "Adivinhar a partir da página actual">
 <!ENTITY guessfrompage.accesskey "g">
 <!ENTITY guessfrompage.tooltip "Preencha este formulário baseado num nome de início de sessão para a página actual">
+<!ENTITY prevform.label "Formulário anterior">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Tente o formulário anterior a partir da página">
+<!ENTITY nextform.label "Formulário seguinte">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Tente o seguinte formulário na página">
 <!ENTITY tags.label "Etiquetas">
 <!ENTITY tags.tooltip "Etiquetas de senhas (para o extra &quot;Password Tags&quot; )">
 <!-- Paragraph 1, Firefox version -->
@@ -109,6 +121,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

@@ -13,10 +13,12 @@
 
 
 
+
 -->
 <!ENTITY locale "sv-SE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 
 -->
@@ -34,11 +36,15 @@
 <!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_rememberlast.label "Kom ihåg senaste status">
+<!ENTITY passwordfield_rememberlast.tooltip "Kom ihåg visningsläget tills nästa gång fönstret öppnas">
+<!ENTITY passwordfield_followspwin.label "Följ listan över sparade lösenord">
+<!ENTITY passwordfield_followspwin.tooltip "Visa endast om lösenord för närvarande visas i Sparade lösenord-fönstret">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 
 -->
 <!ENTITY newentry.label "Nytt">
@@ -78,6 +84,12 @@
 <!ENTITY guessfrompage.label "Gissa utifrån aktuell sida">
 <!ENTITY guessfrompage.accesskey "i">
 <!ENTITY guessfrompage.tooltip "Fyll i det här formuläret baserat på ett lämpligt inloggningsformulär på den aktuella sidan">
+<!ENTITY prevform.label "Föregående formulär">
+<!ENTITY prevform.accesskey "F">
+<!ENTITY prevform.tooltip "Testa föregående formulär från sidan">
+<!ENTITY nextform.label "Nästa formulär">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Testa nästa formulär från sidan">
 <!ENTITY tags.label "Taggar">
 <!ENTITY tags.tooltip "Lösenordstaggar (för tillägget &quot;Password Tags&quot;)">
 <!-- WELCOME PAGE
@@ -97,6 +109,7 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "Välkommen till Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -106,6 +119,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 -->

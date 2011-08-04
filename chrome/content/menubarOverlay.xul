@@ -26,6 +26,7 @@
     <menuitem id="savedpasswordeditor-menuitem"
               class="menuitem-iconic"
               label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
@@ -33,6 +34,7 @@
     <menuitem id="savedpasswordeditor-menuitem"
               class="menuitem-iconic"
               label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
@@ -40,6 +42,7 @@
     <menuitem id="savedpasswordeditor-menuitem"
               class="menuitem-iconic"
               label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
               accesskey="&savedpasswords.accesskey;"
               oncommand="speOpenSavedPasswords();"/>
   </menupopup>
@@ -47,6 +50,7 @@
     <menuitem id="savedpasswordeditor-appmenuitem"
               class="menuitem-iconic"
               label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
               insertafter="appmenu_addons"
               oncommand="speOpenSavedPasswords();"/>
   </vbox>

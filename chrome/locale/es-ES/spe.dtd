@@ -10,19 +10,19 @@
      en-GB  - English in Great Britain
      de-DE  - German in Germany
      ru     - Russian (no specific country)
+
 -->
 <!ENTITY locale "es-ES">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
-
 <!-- Strings to be localized -->
 <!-- MENU ITEM AND TOOLBAR BUTTON -->
 <!ENTITY savedpasswords.label "Contraseñas guardadas">
 <!ENTITY savedpasswords.accesskey "g">
 <!ENTITY savedpasswords.tooltip "Abrir el administrador de contraseñas guardadas">
-
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Preferencias de Saved Password Editor">
 <!ENTITY displayMenuitem.label "Incluir acceso directo en menúes">
@@ -31,12 +31,15 @@
 <!ENTITY passwordfield_alwayshide.label "Ocultar contraseña al abrir ventana del editor">
 <!ENTITY passwordfield_alwaysshow.label "Mostrar contraseña al abrir ventana del editor">
 <!ENTITY passwordfield_rememberlast.label "Recordar estado más reciente">
-
+<!ENTITY passwordfield_rememberlast.tooltip "Mostrar u ocultar elementos recientes en esta ventana">
+<!ENTITY passwordfield_followspwin.label "Seguir Lista de contraseñas guardadas">
+<!ENTITY passwordfield_followspwin.tooltip "Mostrar SOLAMENTE si aparecen las contraseñas en la ventana de contraseñas guardadas">
 <!-- SAVED PASSWORDS DIALOG -->
 <!-- TRANSLATORS - be aware that these access keys are used in several places:
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 -->
 <!ENTITY newentry.label "Agregar">
 <!ENTITY newentry.accesskey "A">
@@ -44,7 +47,6 @@
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Clonar">
 <!ENTITY cloneentry.accesskey "l">
-
 <!-- SAVED PASSWORD EDITOR DIALOG -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Tipo">
@@ -76,9 +78,14 @@
 <!ENTITY guessfrompage.label "Captar datos de sitio actual">
 <!ENTITY guessfrompage.accesskey "d">
 <!ENTITY guessfrompage.tooltip "Llenar esta forma de acuerdo a probable campo de login en sitio actual">
+<!ENTITY prevform.label "Forma anterior">
+<!ENTITY prevform.accesskey "A">
+<!ENTITY prevform.tooltip "Probar con la forma anterior del sitio">
+<!ENTITY nextform.label "Forma siguiente">
+<!ENTITY nextform.accesskey "S">
+<!ENTITY nextform.tooltip "Probar con la forma siguiente del sitio">
 <!ENTITY tags.label "Etiquetas">
 <!ENTITY tags.tooltip "Etiquetas de contraseñas (para el complemento &quot;Password Tags&quot;)">
-
 <!-- WELCOME PAGE
 
      This needs a little care. There is some embedded markup (sorry about
@@ -93,6 +100,7 @@
      & amp;) are NOT defined in this context. Double quote characters must be
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
+
 -->
 <!ENTITY welcometospe "Bienvenido(a) a Saved password editor">
 <!-- Paragraph 1, Firefox version -->
@@ -103,6 +111,7 @@
            entre otras cosas
      
 Se debe tener cuidado al copiar y pegar. 
+
 -->
 <!ENTITY welcomepara1_sm "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo); se selecciona el panel &quot;Contraseñas&quot; bajo &quot;Privacidad &amp; Seguridad&quot; y luego el comando  &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas. Se puede usar a conveniencia un comando de la barra de herramientas. Para hallarlo, hacer clic derecho en la barra y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas.">
 <!-- Paragraph 2 -->
