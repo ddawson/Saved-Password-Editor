@@ -1,0 +1,119 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
+<!ENTITY locale "hsb">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system.
+
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEMS AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Składowane hesła">
+<!ENTITY savedpasswords.accesskey "S">
+<!ENTITY savedpasswords.tooltip "Dialog składowanych hesłow wočinić">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
+<!ENTITY displayMenuitem.label "Skrótšenku do menijow zapřijeć">
+<!ENTITY displayMenuitem.tooltip "Přidawa zapisk &quot;Składowane hesła&quot; menijej Nastroje a menijej pod tłóčatkom Firefox jako spěšny wotkaz  k zrjadowakej hesłow">
+<!ENTITY passwordfield_caption.label "Hesłowe polo we woknje editora">
+<!ENTITY passwordfield_alwayshide.label "Hesło přeco schować, hdyž so wokno editora wočinja">
+<!ENTITY passwordfield_alwaysshow.label "Hesło přeco pokazać, hdyž so wokno editora wočinja">
+<!ENTITY passwordfield_rememberlast.label "Posledni staw sej spomjatkować">
+<!ENTITY passwordfield_rememberlast.tooltip "Samsne pokazać abo schować kaž posledni raz hdyž wokno je wočinjene było">
+<!ENTITY passwordfield_followspwin.label "Lisćinje składowanych hesłow slědować">
+<!ENTITY passwordfield_followspwin.tooltip "Pokazać, jeli a jenož jeli hesła so tuchwilu we woknje składowanych hesłow pokazuja">
+<!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+
+-->
+<!ENTITY newentry.label "Nowy">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Wobdźěłać">
+<!ENTITY editentry.accesskey "b">
+<!ENTITY cloneentry.label "Klonować">
+<!ENTITY cloneentry.accesskey "l">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Editor składowanych hesłow">
+<!ENTITY signontype.label "Typ">
+<!ENTITY type_form.label "Webformular">
+<!ENTITY type_form.accesskey "f">
+<!ENTITY type_httpauth.label "HTTP-awtentifikacija">
+<!ENTITY type_httpauth.accesskey "a">
+<!ENTITY type_other.label "Druhi">
+<!ENTITY type_other.accesskey "D">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Protokol/hostowe mjeno, na kotrež so hesło wužiwa (na př. http://www.přikład.com)">
+<!ENTITY formSubmitURL.label "Słanski prefiks">
+<!ENTITY formSubmitURL.tooltip "Prefiks wotesyłanskeje adresy formulara">
+<!ENTITY httpRealm.label "HTTP-wobwod">
+<!ENTITY httpRealm.tooltip "HTTP-wobwod, kotryž ma jenak być">
+<!ENTITY username.label "Wužiwarske mjeno">
+<!ENTITY username.tooltip "Wužiwarske mjeno, kotrež ma so składować">
+<!ENTITY password.label "Hesło">
+<!ENTITY password.tooltip "Hesło, kotrež ma so składować">
+<!ENTITY usernameField.label "Pólne mjeno wužiwarskeho mjena">
+<!ENTITY usernameField.tooltip "Atribut &quot;name&quot; za wotpowědne polo wužiwarskeho mjena we formularje">
+<!ENTITY passwordField.label "Mjeno hesłoweho pola">
+<!ENTITY passwordField.tooltip "Atribut &quot;name&quot; za wotpowědne hesłowe polo we formularje">
+<!ENTITY showPassword.label "Pokazać">
+<!ENTITY showPassword.accesskey "P">
+<!ENTITY showPassword.tooltip "Widźomnosć hesłow přepinać">
+<!ENTITY hidePassword.label "Schować">
+<!ENTITY hidePassword.accesskey "h">
+<!ENTITY guessfrompage.label "Z aktualneje strony wuhódać">
+<!ENTITY guessfrompage.accesskey "Z">
+<!ENTITY guessfrompage.tooltip "Tutón formular na zakładźe přihódneho formulara na aktualnej stronje wupjelnić">
+<!ENTITY prevform.label "Předchadny formular">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Wopytajće předchadny formular ze strony">
+<!ENTITY nextform.label "Přichodny formular">
+<!ENTITY nextform.accesskey "i">
+<!ENTITY nextform.tooltip "Wopytajće přichodny formular ze strony">
+<!ENTITY tags.label "Marki">
+<!ENTITY tags.tooltip "Hesłowe marki (za přidatk &quot;Password Tags&quot;)">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
+<!ENTITY welcometospe "Witajće do editora składowanych hesłow">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo rejtark &quot;Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła...&quot;. Móžeće tež prosće z menija Nastroje abo (we Firefox wot wersije 4 pod Windowsom) z tłóčatka Firefox přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, wubjerće Napohlad &gt; Gratowe lajsty &gt; Přiměrić..., abo klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow, a we Firefox wot wersije 4.0, kontekstowy meni wobsahuje přikazaj &quot;Wobdźěłać&quot; a &quot;Klonować&quot;.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+-->
+<!ENTITY welcomepara1_sm "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo &quot;Hesła&quot; na rejtarku &quot;Priwatnosć a Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła zrjadować&quot;. Móžeće tež prosće z menija Nastroje přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Wobkedźbujće, zo dialog składowanych hesłow je zakładna komponenta z <span id='appname'/>, a njesłuša k tutomu rozšěrjenju, nimo horjeka naspomnjenych přidatych funkcijow. Tłóčatko gratoweje lajsty steji jenož komfortabelnosće dla  k dispoziciji, wočakujo, zo někotři wužiwarjo chcedźa husćišo na tón dialog přistup měć, hač woni měli to hewak.">
