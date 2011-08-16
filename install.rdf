@@ -13,6 +13,7 @@
     <translator>eo: milupo (BabelZilla)</translator>
     <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
     <translator>fr: Goofy (BabelZilla)</translator>
+    <translator>hsb-DE: milupo (BabelZilla)</translator>
     <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
     <translator>id-ID: XCen (BabelZilla)</translator>
     <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -40,6 +41,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -66,6 +68,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -83,6 +86,33 @@
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
       </RDF:Description>
       <RDF:Description>
+        <locale>eo</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>eo: milupo (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>id-ID: XCen (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pl: Marcin Borowczyk "MarcinB" (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Disponigas eblecon ŝanĝi konservitajn pasvortojn kaj aldoni novajn en la pasvorta administrilo.</description>
+      </RDF:Description>
+      <RDF:Description>
         <locale>es-ES</locale>
         <name>Saved password editor (Editor de contraseñas)</name>
         <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
@@ -92,6 +122,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -118,6 +149,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -135,6 +167,33 @@
         <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
       </RDF:Description>
       <RDF:Description>
+        <locale>hsb-DE</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>eo: milupo (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>id-ID: XCen (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pl: Marcin Borowczyk "MarcinB" (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Staja móžnosć k dispoziciji, składowane hesła w zrjadowaku hesłow změnić abo nowe přidać.</description>
+      </RDF:Description>
+      <RDF:Description>
         <locale>hu</locale>
         <name>Saved Password Editor</name>
         <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
@@ -144,6 +203,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -170,6 +230,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -196,6 +257,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -222,6 +284,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -248,6 +311,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -274,6 +338,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -300,6 +365,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -326,6 +392,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -352,6 +419,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -378,6 +446,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -404,6 +473,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -430,6 +500,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -456,6 +527,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -482,6 +554,7 @@
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb-DE: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
