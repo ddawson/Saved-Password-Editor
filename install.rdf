@@ -574,7 +574,6 @@
     </localized>
 
     <iconURL>chrome://savedpasswordeditor/skin/key48.png</iconURL>
-    <icon64URL>chrome://savedpasswordeditor/skin/key64.png</icon64URL>
     <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
 
     <targetApplication>
