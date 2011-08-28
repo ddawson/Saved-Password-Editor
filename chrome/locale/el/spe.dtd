@@ -1,0 +1,119 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
+<!ENTITY locale "el">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system.
+
+
+-->
+<!ENTITY layoutdirection "LTR">
+<!-- Strings to be localized -->
+<!-- MENU ITEMS AND TOOLBAR BUTTON -->
+<!ENTITY savedpasswords.label "Αποθηκευμένοι κωδικοί πρόσβασης">
+<!ENTITY savedpasswords.accesskey "π">
+<!ENTITY savedpasswords.tooltip "Άνοιγμα του πλαισίου διαλόγου &quot;Αποθηκευμένοι κωδικοί πρόσβασης&quot;">
+<!-- PREFERENCES WINDOW -->
+<!ENTITY prefwindow.title "Προτιμήσεις για το Saved Password Editor">
+<!ENTITY displayMenuitem.label "Συμπερίληψη συντόμευσης στα μενού">
+<!ENTITY displayMenuitem.tooltip "Προσθήκη του στοιχείου μενού &quot;Αποθηκευμένοι κωδικοί πρόσβασης; στο μενού &quot;Εργαλεία&quot; και στο μενού παραθύρου εφαρμογής, ως συντόμευση προς το διαχειριστή κωδικών πρόσβασης">
+<!ENTITY passwordfield_caption.label "Πεδίο κωδικού πρόσβασης στο παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_alwayshide.label "Πάντα απόκρυψη του κωδικού πρόσβασης όταν ανοίγεται το παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_alwaysshow.label "Πάντα εμφάνιση του κωδικού πρόσβασης όταν ανοίγεται το παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_rememberlast.label "Απομνημόνευση της τελευταίας κατάστασης">
+<!ENTITY passwordfield_rememberlast.tooltip "Εμφάνιση ή απόκρυψη, όπως κατά την τελευταία φορά που ανοίχτηκε το παράθυρο">
+<!ENTITY passwordfield_followspwin.label "Ως έχει στη λίστα αποθηκευμένων κωδικών πρόσβασης">
+<!ENTITY passwordfield_followspwin.tooltip "Εμφάνιση του κωδικού εάν και μόνο εάν οι κωδικοί πρόσβασης είναι σε εμφάνιση, επίσης και στο παράθυρο &quot;Αποθηκευμένοι κωδικοί&quot;">
+<!-- SAVED PASSWORDS DIALOG -->
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+
+-->
+<!ENTITY newentry.label "Νέος">
+<!ENTITY newentry.accesskey "Ν">
+<!ENTITY editentry.label "Επεξεργασία">
+<!ENTITY editentry.accesskey "Ε">
+<!ENTITY cloneentry.label "Κλωνοποίηση">
+<!ENTITY cloneentry.accesskey "ω">
+<!-- SAVED PASSWORD EDITOR DIALOG -->
+<!ENTITY savedpasswordeditor.title "Επεξεργαστής αποθηκευμένων κωδικών">
+<!ENTITY signontype.label "Τύπος">
+<!ENTITY type_form.label "Φόρμα ιστού">
+<!ENTITY type_form.accesskey "Φ">
+<!ENTITY type_httpauth.label "Επαλήθευση ταυτότητας HTTP">
+<!ENTITY type_httpauth.accesskey "θ">
+<!ENTITY type_other.label "Άλλη">
+<!ENTITY type_other.accesskey "λ">
+<!ENTITY hostname.label "Κεντρικός υπολογιστής">
+<!ENTITY hostname.tooltip "Πρωτόκολλο/όνομα κεντρικού υπολογιστή για το οποίο ισχύει ο κωδικός (π.χ. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Πρόθεμα υποβολής">
+<!ENTITY formSubmitURL.tooltip "Πρόθεμα διεύθυνσης υποβολής της φόρμας">
+<!ENTITY httpRealm.label "Τομέας HTTP">
+<!ENTITY httpRealm.tooltip "Τομέας HTTP που ταιριάζει">
+<!ENTITY username.label "Όνομα χρήστη">
+<!ENTITY username.tooltip "Το όνομα χρήστη προς απομνημόνευση">
+<!ENTITY password.label "Κωδικός πρόσβασης">
+<!ENTITY password.tooltip "Ο κωδικός πρόσβασης προς απομνημόνευση">
+<!ENTITY usernameField.label "Όνομα πεδίου ονόματος χρήστη">
+<!ENTITY usernameField.tooltip "Το χαρακτηριστικό όνομα για το κατάλληλο πεδίο ονόματος χρήστη στη φόρμα">
+<!ENTITY passwordField.label "Όνομα πεδίου κωδικού πρόσβασης">
+<!ENTITY passwordField.tooltip "Το χαρακτηριστικό όνομα για το κατάλληλο πεδίο κωδικού πρόσβασης στη φόρμα">
+<!ENTITY showPassword.label "Εμφάνιση">
+<!ENTITY showPassword.accesskey "Ε">
+<!ENTITY showPassword.tooltip "Εναλλαγή ορατότητας κωδικού πρόσβασης">
+<!ENTITY hidePassword.label "Απόκρυψη">
+<!ENTITY hidePassword.accesskey "Α">
+<!ENTITY guessfrompage.label "Εκτίμηση από την τρέχουσα σελίδα">
+<!ENTITY guessfrompage.accesskey "τ">
+<!ENTITY guessfrompage.tooltip "Συμπλήρωση αυτής της φόρμας, βάση πιθανής φόρμας σύνδεσης στην τρέχουσα σελίδα">
+<!ENTITY prevform.label "Προηγούμενη φόρμα">
+<!ENTITY prevform.accesskey "Π">
+<!ENTITY prevform.tooltip "Δοκιμάστε την προηγούμενη φόρμα από την σελίδα">
+<!ENTITY nextform.label "Επόμενη φόρμα">
+<!ENTITY nextform.accesskey "Ε">
+<!ENTITY nextform.tooltip "Δοκιμάστε την επόμενη φόρμα από την σελίδα">
+<!ENTITY tags.label "Ετικέτες">
+<!ENTITY tags.tooltip "Ετικέτες κωδικών πρόσβασης (για το πρόσθετο &quot;Password Tags&quot;)">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
+<!ENTITY welcometospe "Καλώς ήλθατε στο πρόσθετο &quot;Saved Password Editor&quot; (Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης)">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Σας ευχαριστούμε για τη χρήση του πρόσθετου <a id='addonlink'>Saved Password Editor</a>. Μπορείτε να έχετε πρόσβαση στη λειτουργία επεξεργασίας μεταβαίνοντας στο μενού Εργαλεία &gt; Επιλογές, ή στο μενού Επεξεργασία &gt; Προτιμήσεις (ανάλογα με το λειτουργικό σας σύστημα), επιλέγοντας το τμήμα παραθύρου &quot;Ασφάλεια&quot; και στη συνέχεια, κάνοντας κλικ στο κουμπί &quot;Αποθηκευμένοι κωδικοί...&quot;. Επίσης, μπορείτε απλά να έχετε πρόσβαση στους αποθηκευμένους κωδικούς από το μενού &quot;Εργαλεία&quot; ή (στον Firefox 4 σε Windows) από το μενού της εφαρμογής. Επίσης, για ευκολία σας, διατίθεται και ένα κουμπί εργαλειοθήκης· για πρόσβαση σε αυτό, επιλέξτε Προβολή &gt; Εργαλειοθήκες &gt; Προσαρμογή..., ή κάντε δεξί κλικ στην εργαλειοθήκη και επιλέξτε &quot;Προσαρμογή...&quot;. Το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; περιέχει τώρα ένα κουμπί-μενού με εντολές για την προσθήκη και επεξεργασία κωδικών πρόσβασης και στον Firefox 4.0, το μενού περιεχομένου περιέχει επίσης και τις εντολές &quot;Επεξεργασία&quot; και &quot;Κλωνοποίηση&quot;.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+-->
+<!ENTITY welcomepara1_sm "Σας ευχαριστούμε για τη χρήση του πρόσθετου <a id='addonlink'>Saved Password Editor</a>. Μπορείτε να έχετε πρόσβαση στη λειτουργία επεξεργασίας μεταβαίνοντας στο μενού Εργαλεία &gt; Επιλογές, ή στο μενού Επεξεργασία &gt; Προτιμήσεις (ανάλογα με το λειτουργικό σας σύστημα), περιηγούμενοι στο τμήμα παραθύρου &quot;Κωδικοί&quot; σε &quot;Απόρρητο &amp; Ασφάλεια&quot; και στη συνέχεια, κάνοντας κλικ στο κουμπί &quot;Διαχείριση Αποθηκευμένων Κωδικών&quot;. Επίσης, μπορείτε απλά να έχετε πρόσβαση στους αποθηκευμένους κωδικούς από το μενού &quot;Εργαλεία&quot;. Επίσης, για ευκολία σας, διατίθεται και ένα κουμπί εργαλειοθήκης· για πρόσβαση σε αυτό, κάντε δεξί κλικ στην εργαλειοθήκη και επιλέξτε &quot;Προσαρμογή...&quot;. Το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; περιέχει τώρα ένα κουμπί-μενού με εντολές για την προσθήκη και επεξεργασία κωδικών πρόσβασης.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Έχετε υπόψιν σας ότι το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; είναι ένα βασικό στοιχείο του <span id='appname'></span> και δεν παρέχεται από αυτήν την επέκταση, εκτός από τις προστεθείσες λειτουργίες που αναφέρονται παραπάνω. Το κουμπί εργαλειοθήκης παρέχεται μόνο για λόγους ευκολίας, υπό την προοπτική ότι ορισμένοι χρήστες αυτής της επέκτασης θα θέλουν να έχουν πρόσβαση στο πλαίσιο διαλόγου πολύ πιο συχνά απ' ό,τι ενδέχεται διαφορετικά.">

@@ -10,6 +10,7 @@ content	savedpasswordeditor		chrome/content/
 # Language-specific content
 locale	savedpasswordeditor	bg-BG	chrome/locale/bg-BG/
 locale	savedpasswordeditor	de	chrome/locale/de/
+locale	savedpasswordeditor	el	chrome/locale/el/
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
 locale	savedpasswordeditor	eo	chrome/locale/eo/
 locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/

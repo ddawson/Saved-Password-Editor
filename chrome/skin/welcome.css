@@ -18,30 +18,39 @@
 
 @namespace "http://www.w3.org/1999/xhtml";
 
+html {
+  direction: ltr;
+}
+
+html[dir="RTL"] {
+  direction: rtl;
+}
+
 body {
   margin-left: 0px;
   margin-right: 0px;
-  padding-left: 64px;
-  padding-right: 64px;
+  padding-left: 96px;
+  padding-right: 16px;
   background-color: #DDE;
   color: black;
 }
 
-h1 {
-  vertical-align: middle;
-  text-indent: -48px;
+html[dir="RTL"] > body {
+  padding-left: 16px;
+  padding-right: 96px;
 }
 
 h1:before {
-  padding-left: 0px;
-  padding-right: 16px;
-  vertical-align: middle;
-  content: url("chrome://savedpasswordeditor/skin/key32.png");
+  margin-left: -80px;
+  margin-right: 16px;
+  float: left;
+  content: url("chrome://savedpasswordeditor/skin/key64.png");
 }
 
 html[dir="RTL"] h1:before {
-  padding-left: 16px;
-  padding-right: 0px;
+  margin-left: 16px;
+  margin-right: -80px;
+  float: right;
 }
 
 p {

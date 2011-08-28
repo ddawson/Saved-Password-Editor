@@ -121,7 +121,7 @@ const spEditor = {
 
   SPE_WINDOW_NAME: "danieldawson:savedpasswordeditor",
 
-  openSPEDialog: function (signon, cloning, ret) {
+  openSPEDialog: function (signon, cloning, showingPasswords, ret) {
     var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].
       getService(Components.interfaces.nsIWindowWatcher);
     var oldWin = ww.getWindowByName(this.SPE_WINDOW_NAME, null);
@@ -129,7 +129,7 @@ const spEditor = {
       return window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul",
         this.SPE_WINDOW_NAME, "centerscreen,dependent,dialog,chrome,resizable",
-        signon, cloning, ret);
+        signon, cloning, showingPasswords, ret);
     else {
       oldWin.focus();
       return oldWin;
