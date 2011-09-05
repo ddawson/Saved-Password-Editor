@@ -14,10 +14,12 @@
 
 
 
+
 -->
 <!ENTITY locale "sv-SE">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system.
+
 
 
 
@@ -31,7 +33,7 @@
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Inställningar för Saved Password Editor">
 <!ENTITY displayMenuitem.label "Inkludera genväg i menyer">
-<!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows programmeny som en genväg till lösenordshanteraren">
+<!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows/Linux Firefoxmeny som en genväg till lösenordshanteraren">
 <!ENTITY passwordfield_caption.label "Lösenordsfält i redigeringsfönstret">
 <!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">
@@ -44,6 +46,7 @@
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 
 
 -->
@@ -110,15 +113,17 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "Välkommen till Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), välja panelen &quot;Säkerhet&quot; och slutligen klicka på knappen &quot;Sparade lösenord…&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn eller (i Firefox 4 på Windows-datorer) programmenyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, välj Visa &gt; Verktygsfält &gt; Anpassa…, eller högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp med kommandon för att lägga till och redigera lösenord, och i Firefox 4.0 innehåller snabbmenyn även kommandona &quot;Redigera&quot; och &quot;Klona&quot;.">
+<!ENTITY welcomepara1_fx "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), välja panelen &quot;Säkerhet&quot; och slutligen klicka på knappen &quot;Sparade lösenord…&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn eller (i Firefox 4 eller senare på Windows- och Linux-datorer) Firefoxmenyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, välj Visa &gt; Verktygsfält &gt; Anpassa…, eller högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp och en snabbmeny med kommandon för att lägga till och redigera lösenord.">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

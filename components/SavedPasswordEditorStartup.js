@@ -73,7 +73,7 @@ SavedPasswordEditorStartup.prototype = {
   check_version: function () {
     function set_welcome (comp) {
       var timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
-      timer.init(comp, 3000, Ci.nsITimer.TYPE_ONE_SHOT);
+      timer.init(comp, 3500, Ci.nsITimer.TYPE_ONE_SHOT);
       comp.timer = timer;
     }
 

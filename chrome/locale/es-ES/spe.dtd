@@ -26,7 +26,7 @@
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Preferencias de Saved Password Editor">
 <!ENTITY displayMenuitem.label "Incluir acceso directo en menúes">
-<!ENTITY displayMenuitem.tooltip "Agrega &quot;Contraseñas Guardadas&quot; al menú de Herramientas y el menú de aplicaciones de Windows como acceso directo al administrador de contraseñas guardadas">
+<!ENTITY displayMenuitem.tooltip "Agrega &quot;Contraseñas guardadas&quot; al menú Herramientas y al menú de Firefox en Windows/Linux como acceso directo al administrador de contraseñas guardadas">
 <!ENTITY passwordfield_caption.label "Campo de contraseña en ventana del editor">
 <!ENTITY passwordfield_alwayshide.label "Ocultar contraseña al abrir ventana del editor">
 <!ENTITY passwordfield_alwaysshow.label "Mostrar contraseña al abrir ventana del editor">
@@ -104,7 +104,7 @@
 -->
 <!ENTITY welcometospe "Bienvenido(a) a Saved password editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo); se selecciona &quot;Seguridad&quot; y luego se pulsa el comando &quot;Contraseñas guardadas…&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas o (en Firefox 4 bajo Windows) el menú de aplicaciones. También se puede utilizar a conveniencia un comando de barra de herramientas. Al efecto, elegir el menú Ver &gt; Barras de herramientas &gt; Personalizar… o hacer clic derecho en la  barra de herramientas y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas, y en Firefox 4.0, el menú contextual presentará las opciones &quot;Editar&quot; y &quot;Clonar&quot;.">
+<!ENTITY welcomepara1_fx "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo). Se selecciona el panel &quot;Seguridad&quot; y luego el comando &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas o (en Firefox 4 y posteriores en Windows y Linux) el menú de Firefox. Se puede usar a conveniencia un comando de la barra de herramientas. Para hallarlo, elegir Ver &gt; Barras de herramientas &gt; Personalizar… o hacer clic derecho en la barra y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas en un comando de menú y el menú contextual.">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- ADVERTENCIA PARA TRADUCTORES: 
      SeaMonkey NO PRESENTA Ver > Barras de herramientas > Personalizar…
@@ -113,7 +113,7 @@
 Se debe tener cuidado al copiar y pegar. 
 
 -->
-<!ENTITY welcomepara1_sm "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo); se selecciona el panel &quot;Contraseñas&quot; bajo &quot;Privacidad &amp; Seguridad&quot; y luego el comando  &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas. Se puede usar a conveniencia un comando de la barra de herramientas. Para hallarlo, hacer clic derecho en la barra y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas.">
+<!ENTITY welcomepara1_sm "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo). Se elige el panel &quot;Contraseñas&quot; bajo &quot;Privacidad &amp; Seguridad&quot; y luego se pulsa el comando &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas. Asimismo se puede utilizar a conveniencia un comando de barra de herramientas. Al efecto, hacer clic derecho en la barra de herramientas y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas en un comando de menú y el menú contextual.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Se debe destacar que el administrador de contraseñas es un elemento esencial de  <span id='appname'/> y que no forma parte de este complemento, excepto por las funciones agregadas y mencionadas. Se presenta el comando de barra de herramientas por mera conveniencia, ya que es probable que algunos usuarios de este complemento deseen utilizar el administrador con mucha mayor frecuencia que otros.">

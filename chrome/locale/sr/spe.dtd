@@ -16,10 +16,12 @@
 
 
 
+
 -->
 <!ENTITY locale "sr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -63,6 +65,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -115,6 +118,7 @@
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 

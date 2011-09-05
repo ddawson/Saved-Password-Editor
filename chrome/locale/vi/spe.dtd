@@ -16,10 +16,12 @@
 
 
 
+
 -->
 <!ENTITY locale "vi">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -35,7 +37,7 @@
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
 <!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
-<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và danh sách ứng dụng Windows để làm lệnh tắt gọi trình quản lý mật khẩu">
+<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và trình đơn Firefox của Windows/Linux để làm lệnh tắt gọi trình quản lý mật khẩu">
 <!ENTITY passwordfield_caption.label "Hộp mật khẩu trong cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_alwayshide.label "Luôn ẩn mật khẩu khi mở cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_alwaysshow.label "Luôn hiện mật khẩu khi mở cửa sổ đổi mật khẩu">
@@ -69,6 +71,7 @@
 
 
 
+
 -->
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Kiểu">
@@ -96,7 +99,7 @@
 <!ENTITY showPassword.accesskey "S">
 <!ENTITY showPassword.tooltip "Ẩn/hiện mật khẩu">
 <!ENTITY hidePassword.label "Ẩn">
-<!ENTITY hidePassword.accesskey "H">
+<!ENTITY hidePassword.accesskey "n">
 <!ENTITY guessfrompage.label "Đoán từ trang hiện tại">
 <!ENTITY guessfrompage.accesskey "G">
 <!ENTITY guessfrompage.tooltip "Điền mẫu này dựa trên mẫu điền đăng nhập phù hợp trên trang hiện tại">
@@ -111,7 +114,7 @@
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "Chào mừng bạn đến với Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
-<!ENTITY welcomepara1_fx "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa mật khẩu bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), chọn thẻ &quot;Security&quot; sau đó ấn nút &quot;Saved Passwords…&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools hoặc từ danh sách ứng dụng (trong Firefox4 trên Windows). Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu, và trên Firefox 4.0, bạn còn có thể sử dụng lệnh &quot;Chỉnh sửa&quot; và &quot;Sao chép&quot; từ trình đơn ngữ cảnh.">
+<!ENTITY welcomepara1_fx "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa mật khẩu bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), chọn thẻ &quot;Security&quot; sau đó ấn nút &quot;Saved Passwords…&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools hoặc từ trình đơn Firefox (từ phiên bản Firefox 4 trở đi trên Windows và Linux). Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu trong cả nút trình đơn, và trình đơn ngữ cảnh.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
@@ -119,9 +122,9 @@
 
 
 
+
 -->
 <!-- Paragraph 2 -->
-<!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;Passwords&quot; nằm ở thẻ &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools. Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu, và trên Firefox 4.0, bạn còn có thể sử dụng lệnh &quot;Chỉnh sửa&quot; và &quot;Sao chép&quot; từ trình đơn ngữ cảnh.">
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;Passwords&quot; nằm ở thẻ &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools. Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu trong cả nút trình đơn, và trình đơn ngữ cảnh.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Lưu ý rằng hộp thoại Saved Passwords là một thành phần cơ bản của <span id='appname'></span>, và hiện không được cung cấp bởi tiện ích này, ngoại trừ các chức năng phụ được nêu ở trên. Nút Công Cụ được cung cấp nhằm giúp những ai cần truy cập nhiều vào hộp thoại quản lý mật khẩu làm việc thuận lợi hơn.">
