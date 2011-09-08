@@ -1,5 +1,5 @@
 /*
-    Saved Password Editor, extension for Firefox 3.0+
+    Saved Password Editor, extension for Firefox 3.5+
     Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
@@ -25,7 +25,7 @@ const Cc = Components.classes,
     THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
     SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}",
     PREFNAME = "currentVersion",
-    THISVERSION = "2.2.1.100",
+    THISVERSION = "2.2.3",
     COMPAREVERSION = "2.0",
     CONTENT = "chrome://savedpasswordeditor/content/",
     WELCOMEURL = CONTENT + "welcome.xhtml",

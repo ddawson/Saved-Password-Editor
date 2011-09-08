@@ -5,7 +5,8 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.2.2</version>
+    <version>2.2.3</version>
+    <description>Adds the ability to create and edit entries in the password manager.</description>
     <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
     <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
@@ -29,7 +30,6 @@
     <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
     <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
     <translator>zh-TW: Velociraptor (BabelZilla)</translator>
-    <description>Adds the ability to create and edit password entries in the password manager.</description>
 
     <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
     <homepageURL>https://addons.mozilla.org/addon/saved-password-editor/</homepageURL>
@@ -157,7 +157,7 @@
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
         <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
-        <description>Προσθέτει τη δυνατότητα να δημιουργήσετε και να επεξεργαστείτε καταχωρήσεις κωδικών πρόσβασης στο διαχειριστή κωδικών πρόσβασης.</description>
+        <description>Προσθέτει τη δυνατότητα να δημιουργήσετε και να επεξεργαστείτε καταχωρίσεις κωδικών πρόσβασης στο διαχειριστή κωδικών πρόσβασης.</description>
       </RDF:Description>
       <RDF:Description>
         <locale>eo</locale>
