@@ -16,10 +16,12 @@
 
 
 
+
 -->
 <!ENTITY locale "zh-TW">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -35,7 +37,7 @@
 <!-- PREFERENCES WINDOW -->
 <!ENTITY prefwindow.title "Saved Password Editor 偏好設定">
 <!ENTITY displayMenuitem.label "在選單內加入捷徑">
-<!ENTITY displayMenuitem.tooltip "將 &quot;已存密碼&quot; 加入工具選單及 Windows 程式功能表作為密碼管理員的捷徑">
+<!ENTITY displayMenuitem.tooltip "將 &quot;已存密碼&quot; 加入工具選單及 Windows/Linux 程式功能表作為密碼管理員的捷徑">
 <!ENTITY passwordfield_caption.label "編輯視窗中的密碼欄位">
 <!ENTITY passwordfield_alwayshide.label "開啟編輯視窗時總是隱藏密碼">
 <!ENTITY passwordfield_alwaysshow.label "開啟編輯視窗時總是顯示密碼">
@@ -63,6 +65,7 @@
      for those five characters (& lt; & gt; & quot; & apos; & amp;) are NOT
      defined in this context. Double quote characters must be encoded as
      & quot; since the strings are already double-quote delimited.
+
 
 
 
@@ -111,7 +114,7 @@
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcometospe "歡迎使用 Saved Password Editor">
 <!-- Paragraph 1, SeaMonkey version -->
-<!ENTITY welcomepara1_fx "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以從工具 &gt; 選項、或者編輯 &gt; 偏好設定（依作業系統而定），選擇「安全」面板後點選「已存密碼…」按鈕來使用編輯功能。您也能從工具選單或（在 Windows 系統的 Firefox 4）應用程式選單輕鬆叫出已存密碼。為了方便起見，從檢視 &gt; 工具列 &gt; 自訂…，或者在工具列上按右鍵選擇「自訂…」，還能找到工具列按鈕。密碼管理員視窗已經加入了能夠新增或編輯密碼的選單按鈕，而在 Firefox 4.0 版本，編輯視窗的右鍵功能表中也有「編輯」和「複製」的指令。">
+<!ENTITY welcomepara1_fx "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以從工具 &gt; 選項、或者編輯 &gt; 偏好設定（依作業系統而定），選擇「安全」面板後點選「已存密碼…」按鈕來使用編輯功能。您也能從工具選單或（在 Windows與 Linux 系統的 Firefox 4）應用程式選單輕鬆叫出已存密碼。為了方便起見，從檢視 &gt; 工具列 &gt; 自訂…，或者在工具列上按右鍵選擇「自訂…」，還能找到工具列按鈕。密碼管理員視窗已經加入了能夠新增或編輯密碼的選單按鈕，而在 Firefox 4.0 版本，編輯視窗的右鍵功能表中也有「編輯」和「複製」的指令。">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize… XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
@@ -119,9 +122,9 @@
 
 
 
+
 -->
 <!-- Paragraph 2 -->
 <!ENTITY welcomepara1_sm "感謝您使用 <a id='addonlink'>Saved Password Editor</a>。您可以從 Tools &gt; Options、或者 Edit &gt; Preferences（依作業系統而定），移至 &quot;Privacy &amp; Security&quot; 分類下的「Passwords」面板後點選「Manage Stored Passwords」按鈕來使用編輯功能；從工具選單也能輕鬆叫出已存密碼。為方便起見，在工具列上按右鍵選擇「Customize…」還能找到工具列按鈕。密碼管理員視窗已經加上能夠新增或編輯密碼的選單按鈕了。">
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "請注意，已存密碼的對話視窗是 <span id='appname'></span> 的基本元件，由本擴充套件提供的僅有前述的選單按鈕。工具列按鈕則是預期本套件的部份使用者需要開啟密碼管理員的次數可能比想像還頻繁，為便於使用而提供。">
