@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Tallennetun salasanan muokkaus">
+<!ENTITY signontype.label "Tyyppi">
+<!ENTITY type_form.label "Weblomake">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "HTTP-varmennus">
+<!ENTITY type_httpauth.accesskey "v">
+<!ENTITY type_other.label "Muu">
+<!ENTITY type_other.accesskey "m">
+<!ENTITY hostname.label "Isäntä">
+<!ENTITY hostname.tooltip "Protokolla/isäntäkoneen nimi, johon salasana liitetään (esim. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Lähetyksen etuliite">
+<!ENTITY formSubmitURL.tooltip "Lomakkeen lähetysosoitteen etuliite">
+<!ENTITY httpRealm.label "HTTP-alue">
+<!ENTITY httpRealm.tooltip "HTTP-alue, jonka tulee täsmätä">
+<!ENTITY username.label "Käyttäjätunnus">
+<!ENTITY username.tooltip "Tallennettava käyttäjänimi">
+<!ENTITY password.label "Salasana">
+<!ENTITY password.tooltip "Tallennettava salasana">
+<!ENTITY usernameField.label "Käyttäjätunnuskentän nimi">
+<!ENTITY usernameField.tooltip "Oikean käyttäjätunnuskentän nimiattribuutti">
+<!ENTITY passwordField.label "Salasanakentän nimi">
+<!ENTITY passwordField.tooltip "Oikean salasanakentän nimiattibuutti">
+<!ENTITY showPassword.label "Näytä">
+<!ENTITY showPassword.accesskey "N">
+<!ENTITY showPassword.tooltip "Muuta salasanan näkyvyyttä">
+<!ENTITY hidePassword.label "Piilota">
+<!ENTITY hidePassword.accesskey "P">
+<!ENTITY guessfrompage.label "Arvaa nykyiseltä sivulta">
+<!ENTITY guessfrompage.accesskey "A">
+<!ENTITY guessfrompage.tooltip "Täytä tämä lomake nykyiseltä sivulta löytyvän todennäköisen kirjautumislomakkeen tietojen perusteella">
+<!ENTITY prevform.label "Edellinen lomake">
+<!ENTITY prevform.accesskey "E">
+<!ENTITY prevform.tooltip "Kokeile edellistä sivulla löytyvää lomaketta">
+<!ENTITY nextform.label "Seuraava lomake">
+<!ENTITY nextform.accesskey "S">
+<!ENTITY nextform.tooltip "Kokeile seuraavaa sivulla löytyvää lomaketta">
+<!ENTITY tags.label "Tunnisteet">
+<!ENTITY tags.tooltip "Salasanatunnisteet (”Password Tags”-lisäosaa varten)">

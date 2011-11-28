@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Saved Password Editor preferences">
+<!ENTITY displayMenuitem.label "Include shortcut in menus">
+<!ENTITY displayMenuitem.tooltip "Adds &quot;Saved Passwords&quot; to Tools menu and Windows/Linux Firefox menu as a shortcut to the password manager">
+<!ENTITY passwordfield_caption.label "Password field in editor window">
+<!ENTITY passwordfield_alwayshide.label "Always hide password when opening editor window">
+<!ENTITY passwordfield_alwaysshow.label "Always show password when opening editor window">
+<!ENTITY passwordfield_rememberlast.label "Remember last state">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">

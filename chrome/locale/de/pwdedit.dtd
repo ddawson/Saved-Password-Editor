@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Passworteditor">
+<!ENTITY signontype.label "Typ">
+<!ENTITY type_form.label "Webformular">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "HTTP-Authentifizierung">
+<!ENTITY type_httpauth.accesskey "A">
+<!ENTITY type_other.label "Anderer">
+<!ENTITY type_other.accesskey "n">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Protokoll/Hostname, für das/den das Passwort gilt (z.B. http://www.beispiel.de)">
+<!ENTITY formSubmitURL.label "Übermittlungspräfix">
+<!ENTITY formSubmitURL.tooltip "Präfix der Formularzieladresse">
+<!ENTITY httpRealm.label "HTTP-Bereich">
+<!ENTITY httpRealm.tooltip "HTTP-Bereich, der übereinstimmen soll">
+<!ENTITY username.label "Benutzername">
+<!ENTITY username.tooltip "Der zu speichernde Benutzername">
+<!ENTITY password.label "Passwort">
+<!ENTITY password.tooltip "Das zu speichernde Passwort">
+<!ENTITY usernameField.label "Feldname Benutzername">
+<!ENTITY usernameField.tooltip "Das name-Attribut für das passende Benutzernamensfeld im Formular">
+<!ENTITY passwordField.label "Feldname Passwort">
+<!ENTITY passwordField.tooltip "Das name-Attribut für das passende Passwortfeld im Formular">
+<!ENTITY showPassword.label "Zeigen">
+<!ENTITY showPassword.accesskey "Z">
+<!ENTITY showPassword.tooltip "Passwortsichtbarkeit umschalten">
+<!ENTITY hidePassword.label "Verstecken">
+<!ENTITY hidePassword.accesskey "V">
+<!ENTITY guessfrompage.label "Von aktueller Seite holen">
+<!ENTITY guessfrompage.accesskey "h">
+<!ENTITY guessfrompage.tooltip "Füllt dieses Formular anhand eines vermuteten Anmeldeformulars auf der aktuellen Seite aus">
+<!ENTITY prevform.label "Vorheriges Formular">
+<!ENTITY prevform.accesskey "V">
+<!ENTITY prevform.tooltip "Das vorherige Formular auf der Webseite ausprobieren">
+<!ENTITY nextform.label "Nächstes Formular">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Das nächste Formular auf der Webseite ausprobieren">
+<!ENTITY tags.label "Tags">
+<!ENTITY tags.tooltip "Passworttags (für die Erweiterung &quot;Password Tags&quot;)">

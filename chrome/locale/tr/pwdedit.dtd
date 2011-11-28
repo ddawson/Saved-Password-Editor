@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Kayıtlı Şifre Yöneticisi">
+<!ENTITY signontype.label "Tip">
+<!ENTITY type_form.label "Web form">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "HTTP doğrulama">
+<!ENTITY type_httpauth.accesskey "u">
+<!ENTITY type_other.label "Diğer">
+<!ENTITY type_other.accesskey "d">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Şifre içeren Protokol/hostadı (ö.r. http://www.ornek.com)">
+<!ENTITY formSubmitURL.label "Sayfa öneki">
+<!ENTITY formSubmitURL.tooltip "Form gönderme adresinin ekleri">
+<!ENTITY httpRealm.label "HTTP eki">
+<!ENTITY httpRealm.tooltip "HTTP erişim eki">
+<!ENTITY username.label "Kullanıcı adı">
+<!ENTITY username.tooltip "Hatırlanacak kullanıcı adı">
+<!ENTITY password.label "Şifre">
+<!ENTITY password.tooltip "Hatırlanacak şifre">
+<!ENTITY usernameField.label "Kullanıcı adı alan yeri">
+<!ENTITY usernameField.tooltip "Kullanıcı adını uygun forma aktarıcak özellik">
+<!ENTITY passwordField.label "Şifre alan yeri">
+<!ENTITY passwordField.tooltip "Şifreyi uygun forma aktarıcak özellik">
+<!ENTITY showPassword.label "Göster">
+<!ENTITY showPassword.accesskey "S">
+<!ENTITY showPassword.tooltip "Şifre görünürlüğünü değiştir">
+<!ENTITY hidePassword.label "Gizle">
+<!ENTITY hidePassword.accesskey "g">
+<!ENTITY guessfrompage.label "Şimdiki sayfadan tahmin et">
+<!ENTITY guessfrompage.accesskey "T">
+<!ENTITY guessfrompage.tooltip "Sayfadaki giriş formu gibi bu formu doldur">
+<!ENTITY prevform.label "Önceki form">
+<!ENTITY prevform.accesskey "O">
+<!ENTITY prevform.tooltip "Sayfadan geçmiş formu dene">
+<!ENTITY nextform.label "İlerki form">
+<!ENTITY nextform.accesskey "I">
+<!ENTITY nextform.tooltip "Sayfadan ilerki formu dene">
+<!ENTITY tags.label "Etiketler">
+<!ENTITY tags.tooltip "Şifre etiketleri ( &quot;Password Tags&quot; eklentisi için)">

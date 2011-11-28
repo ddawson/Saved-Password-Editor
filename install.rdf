@@ -5,17 +5,18 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.2.5</version>
+    <version>2.2.6a1</version>
     <description>Adds the ability to create and edit entries in the password manager.</description>
     <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
     <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
     <translator>de: /usr/bin/tux (BabelZilla)</translator>
-    <translator>el: George Malamas (BabelZilla)</translator>
+    <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
     <translator>eo: milupo (BabelZilla)</translator>
     <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+    <translator>fi: Jiipee (BabelZilla)</translator>
     <translator>fr: Goofy (BabelZilla)</translator>
-    <translator>hsb-DE: milupo (BabelZilla)</translator>
+    <translator>hsb: milupo (BabelZilla)</translator>
     <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
     <translator>id-ID: XCen (BabelZilla)</translator>
     <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -26,9 +27,9 @@
     <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
     <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
     <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-    <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator> <!-- NOTE: omrakin joined but hasn't updated anything yet. -->
+    <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
     <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-    <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+    <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
     <translator>zh-TW: Velociraptor (BabelZilla)</translator>
 
     <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
@@ -54,7 +55,7 @@
       <RDF:Description>
         <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
         <minVersion>3.0</minVersion>
-        <maxVersion>9.0a1</maxVersion>
+        <maxVersion>10.0a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -82,11 +83,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -97,9 +99,9 @@
         <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, ДакСРБИЈА, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Добавя възможност за създаване и редактиране на пароли в менажерът за пароли на браузъра.</description>
       </RDF:Description>
@@ -110,11 +112,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -125,9 +128,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
       </RDF:Description>
@@ -138,11 +141,12 @@
         <contributor>PlastikManiac (εικονίδιο κλειδιού)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: Γιώργος Μαλαμάς (BabelZilla)</translator>
+        <translator>el: Γιώργος Μαλαμάς "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -153,9 +157,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Προσθέτει τη δυνατότητα να δημιουργήσετε και να επεξεργαστείτε καταχωρίσεις κωδικών πρόσβασης στο διαχειριστή κωδικών πρόσβασης.</description>
       </RDF:Description>
@@ -166,11 +170,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -181,9 +186,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Disponigas eblecon ŝanĝi konservitajn pasvortojn kaj aldoni novajn en la pasvorta administrilo.</description>
       </RDF:Description>
@@ -194,11 +199,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -209,11 +215,40 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</description>
+      </RDF:Description>
+      <RDF:Description>
+        <locale>fi</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
+        <translator>eo: milupo (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>id-ID: XCen (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pl: Marcin Borowczyk "MarcinB" (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Adds the ability to create and edit entries in the password manager.</description>
       </RDF:Description>
       <RDF:Description>
         <locale>fr</locale>
@@ -222,11 +257,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -237,24 +273,25 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
       </RDF:Description>
       <RDF:Description>
-        <locale>hsb-DE</locale>
+        <locale>hsb</locale>
         <name>Saved Password Editor</name>
         <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -265,9 +302,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Staja móžnosć k dispoziciji, składowane hesła w zrjadowaku hesłow změnić abo nowe přidać.</description>
       </RDF:Description>
@@ -278,11 +315,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -293,9 +331,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Jelszavak szerkesztése a jelszókezelőben.</description>
       </RDF:Description>
@@ -306,11 +344,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -321,9 +360,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Menambahkan kemampuan untuk membuat dan menyunting entri kata sandi di pengatur kata sandi.</description>
       </RDF:Description>
@@ -334,11 +373,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -349,9 +389,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</description>
       </RDF:Description>
@@ -362,11 +402,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -377,9 +418,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</description>
       </RDF:Description>
@@ -390,11 +431,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -405,9 +447,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Dodaje możliwość tworzenia i edytowania wpisów haseł w menadżerze haseł.</description>
       </RDF:Description>
@@ -418,11 +460,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -433,9 +476,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Acrescenta a capacidade de criar e editar entradas de senhas no gerenciador de senhas.</description>
       </RDF:Description>
@@ -446,11 +489,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -461,9 +505,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</description>
       </RDF:Description>
@@ -474,11 +518,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -489,9 +534,9 @@
         <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, ДакСРБИЈА, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</description>
       </RDF:Description>
@@ -502,11 +547,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -517,9 +563,9 @@
         <translator>ru: Пирятинский Виталий "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, ДакСРБИЈА, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Додаје могућност прављења и мењања лозинки у управљачу лозинкама.</description>
       </RDF:Description>
@@ -530,11 +576,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -545,24 +592,25 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Lägger till funktioner för att skapa och redigera lösenordsposter i lösenordshanteraren.</description>
       </RDF:Description>
       <RDF:Description>
-        <locale>tr-TR</locale>
+        <locale>tr</locale>
         <name>Saved Password Editor</name>
         <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -573,9 +621,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Şifre yöneticisindeki şifrelere yaratma ve değiştirme yetenekleri ekler.</description>
       </RDF:Description>
@@ -586,11 +634,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -601,9 +650,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</description>
       </RDF:Description>
@@ -614,11 +663,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -629,9 +679,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>在「已保存密码」管理中增加新建与编辑密码的功能。</description>
       </RDF:Description>
@@ -642,11 +692,12 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
-        <translator>el: George Malamas (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
         <translator>fr: Goofy (BabelZilla)</translator>
-        <translator>hsb-DE: milupo (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
         <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
         <translator>id-ID: XCen (BabelZilla)</translator>
         <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
@@ -657,9 +708,9 @@
         <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
         <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
         <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
-        <translator>tr-TR: Anil Kilic - www.guncem.net "ua_anil", nikneyim (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
-        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt; (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
         <description>在密碼管理員中加入新增與編輯密碼的功能。</description>
       </RDF:Description>

@@ -17,7 +17,8 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!DOCTYPE overlay SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
+<!DOCTYPE overlay SYSTEM
+          "chrome://savedpasswordeditor/locale/browserOverlay.dtd">
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <script type="text/javascript"

@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Type">
+<!ENTITY type_form.label "Formulaire Web">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_httpauth.label "Authentification HTTP">
+<!ENTITY type_httpauth.accesskey "A">
+<!ENTITY type_other.label "Autre">
+<!ENTITY type_other.accesskey "u">
+<!ENTITY hostname.label "Hôte">
+<!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (e.g. http://www.exemple.com)">
+<!ENTITY formSubmitURL.label "Soumettre un préfixe">
+<!ENTITY formSubmitURL.tooltip "Préfixe de l'adresse pour soumettre un formulaire">
+<!ENTITY httpRealm.label "Domaine HTTP">
+<!ENTITY httpRealm.tooltip "Domaine HTTP à retrouver">
+<!ENTITY username.label "Nom d'utilisateur">
+<!ENTITY username.tooltip "Nom d'utilisateur à retenir">
+<!ENTITY password.label "Mot de passe">
+<!ENTITY password.tooltip "Mot de passe à retenir">
+<!ENTITY usernameField.label "Champ du nom d'utilisateur">
+<!ENTITY usernameField.tooltip "L'attribut du nom pour le champ de saisie du nom d'utilisateur">
+<!ENTITY passwordField.label "Nom du champ de mot de passe">
+<!ENTITY passwordField.tooltip "L'attribut du nom pour le champ de saisie du mot de passe">
+<!ENTITY showPassword.label "Afficher">
+<!ENTITY showPassword.accesskey "A">
+<!ENTITY showPassword.tooltip "Bascule afficher/masquer le mot de passe">
+<!ENTITY hidePassword.label "Masquer">
+<!ENTITY hidePassword.accesskey "M">
+<!ENTITY guessfrompage.label "Essai pour la page courante">
+<!ENTITY guessfrompage.accesskey "E">
+<!ENTITY guessfrompage.tooltip "Remplit ce champ en essayant l'identifiant probable de la page courante">
+<!ENTITY prevform.label "Formulaire précédent">
+<!ENTITY prevform.accesskey "p">
+<!ENTITY prevform.tooltip "Essayer le formulaire précédent de la page">
+<!ENTITY nextform.label "Formulaire suivant">
+<!ENTITY nextform.accesskey "S">
+<!ENTITY nextform.tooltip "Essayer le formulaire suivant de la page">
+<!ENTITY tags.label "Étiquettes (tags)">
+<!ENTITY tags.tooltip "Étiquettes du mot de passe (pour l'extension &quot;Password Tags&quot;)">

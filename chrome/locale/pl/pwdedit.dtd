@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Edytor zapisanych haseł">
+<!ENTITY signontype.label "Rodzaj">
+<!ENTITY type_form.label "Formularz sieciowy">
+<!ENTITY type_form.accesskey "s">
+<!ENTITY type_httpauth.label "Uwierzytelnienie HTTP">
+<!ENTITY type_httpauth.accesskey "w">
+<!ENTITY type_other.label "Inny">
+<!ENTITY type_other.accesskey "I">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Protokół/nazwa hosta, z którym działa hasło (np. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Przekaż prefiks">
+<!ENTITY formSubmitURL.tooltip "Prefiks zgłaszanego adresu formularza">
+<!ENTITY httpRealm.label "Sfera HTTP">
+<!ENTITY httpRealm.tooltip "Sfera HTTP do przyrównania">
+<!ENTITY username.label "Użytkownik">
+<!ENTITY username.tooltip "Użytkownik do zapamiętania">
+<!ENTITY password.label "Hasło">
+<!ENTITY password.tooltip "Hasło do zapamiętania">
+<!ENTITY usernameField.label "Nazwa pola użytkownika">
+<!ENTITY usernameField.tooltip "Atrybut nazwy dla właściwego pola użytkownika w formularzu">
+<!ENTITY passwordField.label "Nazwa pola hasła">
+<!ENTITY passwordField.tooltip "Atrybut nazwy dla właściwego pola hasła w formularzu">
+<!ENTITY showPassword.label "Pokaż">
+<!ENTITY showPassword.accesskey "P">
+<!ENTITY showPassword.tooltip "Przełącz widoczność hasła">
+<!ENTITY hidePassword.label "Ukryj">
+<!ENTITY hidePassword.accesskey "U">
+<!ENTITY guessfrompage.label "Wypełnij pola na podstawie zawartości bieżącej strony">
+<!ENTITY guessfrompage.accesskey "g">
+<!ENTITY guessfrompage.tooltip "Wypełnij ten formularzu w oparciu o prawdopodobny formularz logowania na bieżącej stronie">
+<!ENTITY prevform.label "Previous form">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Try the previous form from the page">
+<!ENTITY nextform.label "Next form">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Try the next form from the page">
+<!ENTITY tags.label "Tagi">
+<!ENTITY tags.tooltip "Tagi haseł (dla dodatku &quot;Tagi haseł&quot;)">

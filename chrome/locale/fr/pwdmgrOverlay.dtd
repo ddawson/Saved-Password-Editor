@@ -1,0 +1,6 @@
+<!ENTITY newentry.label "Nouveau">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Modifier">
+<!ENTITY editentry.accesskey "M">
+<!ENTITY cloneentry.label "Cloner">
+<!ENTITY cloneentry.accesskey "o">

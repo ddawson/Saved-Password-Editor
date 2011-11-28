@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Редактор на записаните пароли">
+<!ENTITY signontype.label "Тип">
+<!ENTITY type_form.label "Уеб форма">
+<!ENTITY type_form.accesskey "У">
+<!ENTITY type_httpauth.label "HTTP удостоверяване">
+<!ENTITY type_httpauth.accesskey "б">
+<!ENTITY type_other.label "Друго">
+<!ENTITY type_other.accesskey "д">
+<!ENTITY hostname.label "Хост">
+<!ENTITY hostname.tooltip "Протокол/Име на хост за който е приложена паролата (напр. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Подаване на префикс">
+<!ENTITY formSubmitURL.tooltip "Префикс на адреса на формата за подаване">
+<!ENTITY httpRealm.label "HTTP област">
+<!ENTITY httpRealm.tooltip "HTTP област за съвпадение">
+<!ENTITY username.label "Потр.име">
+<!ENTITY username.tooltip "Потр.име за запомняне">
+<!ENTITY password.label "Парола">
+<!ENTITY password.tooltip "Парола за запомяне">
+<!ENTITY usernameField.label "Име на поле за потр. име">
+<!ENTITY usernameField.tooltip "Атрибутът за името за съответната област за потребителско име във формата">
+<!ENTITY passwordField.label "Име на поле за парола">
+<!ENTITY passwordField.tooltip "Атрибут на името за съответното поле за парола във формата">
+<!ENTITY showPassword.label "Покажи">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Превкл. видимостта на паролите">
+<!ENTITY hidePassword.label "Скрий">
+<!ENTITY hidePassword.accesskey "С">
+<!ENTITY guessfrompage.label "Познай от текущата страница">
+<!ENTITY guessfrompage.accesskey "П">
+<!ENTITY guessfrompage.tooltip "Попълнете тази форма на базата на вероятната форма вход на текущата страница">
+<!ENTITY prevform.label "Предишно поле">
+<!ENTITY prevform.accesskey "З">
+<!ENTITY prevform.tooltip "Опитай предишно поле от страницата">
+<!ENTITY nextform.label "Следващо поле">
+<!ENTITY nextform.accesskey "Х">
+<!ENTITY nextform.tooltip "Опитай следващото поле от страницата">
+<!ENTITY tags.label "Бележки">
+<!ENTITY tags.tooltip "Бележки за паролата">

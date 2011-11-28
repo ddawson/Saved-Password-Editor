@@ -14,8 +14,9 @@ locale	savedpasswordeditor	el	chrome/locale/el/
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
 locale	savedpasswordeditor	eo	chrome/locale/eo/
 locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
+locale	savedpasswordeditor	fi	chrome/locale/fi/
 locale	savedpasswordeditor	fr	chrome/locale/fr/
-locale	savedpasswordeditor	hsb-DE	chrome/locale/hsb-DE/
+locale	savedpasswordeditor	hsb	chrome/locale/hsb/
 locale	savedpasswordeditor	hu	chrome/locale/hu/
 locale	savedpasswordeditor	id-ID	chrome/locale/id-ID/
 locale	savedpasswordeditor	ja	chrome/locale/ja/
@@ -26,7 +27,7 @@ locale	savedpasswordeditor	pt-PT	chrome/locale/pt-PT/
 locale	savedpasswordeditor	ru	chrome/locale/ru/
 locale	savedpasswordeditor	sr	chrome/locale/sr/
 locale	savedpasswordeditor	sv-SE	chrome/locale/sv-SE/
-locale	savedpasswordeditor	tr-TR	chrome/locale/tr-TR/
+locale	savedpasswordeditor	tr	chrome/locale/tr/
 locale	savedpasswordeditor	vi	chrome/locale/vi/
 locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/
 locale	savedpasswordeditor	zh-TW	chrome/locale/zh-TW/

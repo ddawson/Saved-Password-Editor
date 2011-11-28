@@ -1,0 +1,43 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+-->
+<!ENTITY locale "en-US">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.n     Generally, this should follow the direction of your writing system.nnnn-->
+<!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+-->
+<!ENTITY welcometospe "Welcome to Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), selecting the &quot;Security&quot; pane, then clicking on the &quot;Saved Passwords…&quot; button. You may also simply access Saved Passwords from the Tools menu or (on Firefox 4 and later under Windows and Linux) the Firefox menu. A toolbar button is also available for your convenience; to access it, select View &gt; Toolbars &gt; Customize…, or right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains commands for adding and editing passwords in both a menu-button and the context menu.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX -->
+<!ENTITY welcomepara1_sm "Thank you for using <a id='addonlink'>Saved Password Editor</a>. You may access the editing functionality by going to Tools &gt; Options, or Edit &gt; Preferences (depending on your operating system), navigating to the &quot;Passwords&quot; pane under &quot;Privacy &amp; Security&quot;, then clicking on the &quot;Manage Stored Passwords&quot; button. You may also simply access Saved Passwords from the Tools menu. A toolbar button is also available for your convenience; to access it, right-click on the toolbar and select &quot;Customize…&quot;. The Saved Passwords dialog now contains commands for adding and editing passwords in both a menu-button and the context menu.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">

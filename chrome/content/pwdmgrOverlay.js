@@ -19,7 +19,10 @@
 document.addEventListener(
   "DOMContentLoaded",
   function dclHandler (ev) {
-    spEditor.strBundle = document.getElementById("savedpwdedit-stringbundle");
+    spEditor.genStrBundle =
+      document.getElementById("savedpwdedit-gen-stringbundle");
+    spEditor.pmoStrBundle =
+      document.getElementById("savedpwdedit-overlay-stringbundle");
     document.removeEventListener("DOMContentLoaded", dclHandler, false);
   },
   false);
@@ -69,7 +72,8 @@ document.getElementById("signonsTree").addEventListener(
   false);
 
 const spEditor = {
-  strBundle: null,
+  genStrBundle: null,
+  pmoStrBundle: null,
   prefs: Components.classes["@mozilla.org/preferences-service;1"].
          getService(Components.interfaces.nsIPrefService).
          getBranch("extensions.savedpasswordeditor."),
@@ -171,8 +175,9 @@ const spEditor = {
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
-        alert(window, this.strBundle.getString("error"),
-              this.strBundle.getFormattedString("badnewentry", [e.message]));
+        alert(window, this.genStrBundle.getString("error"),
+              this.pmoStrBundle.getFormattedString("badnewentry",
+                                                   [e.message]));
     }
   },
 
@@ -202,8 +207,9 @@ const spEditor = {
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
-        alert(window, this.strBundle.getString("error"),
-              this.strBundle.getFormattedString("badnewentry", [e.message]));
+        alert(window, this.genStrBundle.getString("error"),
+              this.pmoStrBundle.getFormattedString("badnewentry",
+                                                   [e.message]));
     }
   },
 }

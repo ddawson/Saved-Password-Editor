@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
+<!ENTITY displayMenuitem.label "Inclure le raccourci dans les menus">
+<!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
+<!ENTITY passwordfield_caption.label "Champ de mot de passe dans la fenêtre de l'éditeur">
+<!ENTITY passwordfield_alwayshide.label "Toujours masquer le mot de passe à l'ouverture de la fenêtre de l'éditeur">
+<!ENTITY passwordfield_alwaysshow.label "Toujours afficher le mot de passe à l'ouverture de la fenêtre de l'éditeur">
+<!ENTITY passwordfield_rememberlast.label "Se souvenir du dernier état choisi">
+<!ENTITY passwordfield_rememberlast.tooltip "Masquer/afficher exactement comme lors de la précédente fenêtre ouverte">
+<!ENTITY passwordfield_followspwin.label "Suivre la liste de mots de passe enregistrés">
+<!ENTITY passwordfield_followspwin.tooltip "Afficher seulement si les mots de passe sont affichés en ce moment dans la fenêtre des mots de passe enregistrés.">

@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Редактор на преференциите за записаните парола">
+<!ENTITY displayMenuitem.label "Включи пряк пръ в менюто Tools(Инструмнти)">
+<!ENTITY displayMenuitem.tooltip "Добавя &quot;Записани пароли&quot; към менюто Инструменти като препратка към мениджъра на пароли">
+<!ENTITY passwordfield_caption.label "Поле за парола в редактиращия прозорец">
+<!ENTITY passwordfield_alwayshide.label "Винаги скривай паролата когато отваряш полето за редактиране">
+<!ENTITY passwordfield_alwaysshow.label "Винаги показвай паролата когато отваряш полето за редактиране">
+<!ENTITY passwordfield_rememberlast.label "Запомни последното положение">
+<!ENTITY passwordfield_rememberlast.tooltip "Покажи или скрий същото, както когато беше беше отворен предишния път прозорецът">
+<!ENTITY passwordfield_followspwin.label "Следвай запаметения списък с паролите">
+<!ENTITY passwordfield_followspwin.tooltip "Покажи ако и само ако паролите са показани в момента в &quot;Пароли мениджъра&quot;">

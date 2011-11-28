@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Επεξεργαστής αποθηκευμένων κωδικών">
+<!ENTITY signontype.label "Τύπος">
+<!ENTITY type_form.label "Φόρμα ιστού">
+<!ENTITY type_form.accesskey "Φ">
+<!ENTITY type_httpauth.label "Επαλήθευση ταυτότητας HTTP">
+<!ENTITY type_httpauth.accesskey "θ">
+<!ENTITY type_other.label "Άλλη">
+<!ENTITY type_other.accesskey "λ">
+<!ENTITY hostname.label "Κεντρικός υπολογιστής">
+<!ENTITY hostname.tooltip "Πρωτόκολλο/όνομα κεντρικού υπολογιστή για το οποίο ισχύει ο κωδικός (π.χ. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Πρόθεμα υποβολής">
+<!ENTITY formSubmitURL.tooltip "Πρόθεμα διεύθυνσης υποβολής της φόρμας">
+<!ENTITY httpRealm.label "Τομέας HTTP">
+<!ENTITY httpRealm.tooltip "Τομέας HTTP που ταιριάζει">
+<!ENTITY username.label "Όνομα χρήστη">
+<!ENTITY username.tooltip "Το όνομα χρήστη προς απομνημόνευση">
+<!ENTITY password.label "Κωδικός πρόσβασης">
+<!ENTITY password.tooltip "Ο κωδικός πρόσβασης προς απομνημόνευση">
+<!ENTITY usernameField.label "Όνομα πεδίου ονόματος χρήστη">
+<!ENTITY usernameField.tooltip "Το χαρακτηριστικό όνομα για το κατάλληλο πεδίο ονόματος χρήστη στη φόρμα">
+<!ENTITY passwordField.label "Όνομα πεδίου κωδικού πρόσβασης">
+<!ENTITY passwordField.tooltip "Το χαρακτηριστικό όνομα για το κατάλληλο πεδίο κωδικού πρόσβασης στη φόρμα">
+<!ENTITY showPassword.label "Εμφάνιση">
+<!ENTITY showPassword.accesskey "Ε">
+<!ENTITY showPassword.tooltip "Εναλλαγή ορατότητας κωδικού πρόσβασης">
+<!ENTITY hidePassword.label "Απόκρυψη">
+<!ENTITY hidePassword.accesskey "Α">
+<!ENTITY guessfrompage.label "Εκτίμηση από την τρέχουσα σελίδα">
+<!ENTITY guessfrompage.accesskey "τ">
+<!ENTITY guessfrompage.tooltip "Συμπλήρωση αυτής της φόρμας, βάση πιθανής φόρμας σύνδεσης στην τρέχουσα σελίδα">
+<!ENTITY prevform.label "Προηγούμενη φόρμα">
+<!ENTITY prevform.accesskey "Π">
+<!ENTITY prevform.tooltip "Δοκιμάστε την προηγούμενη φόρμα από την σελίδα">
+<!ENTITY nextform.label "Επόμενη φόρμα">
+<!ENTITY nextform.accesskey "Ε">
+<!ENTITY nextform.tooltip "Δοκιμάστε την επόμενη φόρμα από την σελίδα">
+<!ENTITY tags.label "Ετικέτες">
+<!ENTITY tags.tooltip "Ετικέτες κωδικών πρόσβασης (για το πρόσθετο &quot;Password Tags&quot;)">

@@ -27,13 +27,24 @@ const Cc = Components.classes,
       CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
       SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}";
 
-var strBundle, catStorage, haveOldSignon, oldSignons, cloneSignon, loginForms,
-    curLoginIdx, oldUsername, oldPassword;
+var pwdCurHidden, genStrBundle, peStrBundle, catStorage, haveOldSignon,
+    oldSignons, cloneSignon, loginForms, curLoginIdx, oldUsername, oldPassword;
 
 window.addEventListener(
   "DOMContentLoaded",
+  function dclHandler (ev) {
+    var pwdField = el("password_text");
+    pwdCurHidden = (pwdField.type == "password");
+    pwdField.setAttribute("type", "password");
+    window.removeEventListener("DOMContentLoaded", dclHandler, false);
+  },
+  false);
+
+window.addEventListener(
+  "load",
   function loadHandler (ev) {
-    strBundle = el("string-bundle");
+    genStrBundle = el("general-string-bundle");
+    peStrBundle = el("pwdedit-string-bundle");
 
     var scsCid = "@daniel.dawson/signoncategorystorage;1";
     catStorage = scsCid in Cc ?
@@ -41,46 +52,19 @@ window.addEventListener(
 
     oldSignons = window.arguments[0];
     cloneSignon = window.arguments[1];
-    var pwdShownInSPWin = window.arguments[2];
 
-    var showpwd = prefs.getIntPref("showpassword");
-    var pwdField = el("password_text");
-    var pwdCurHidden = (pwdField.type == "password");
-    pwdField.setAttribute("type", "password");
-    var pwdViewButton = el("passwordView_btn");
-    switch (showpwd) {
-    case 1:
-      pwdCurHidden = false;
-      // Fall through
-    case 2:
-      if (!pwdCurHidden && pwdShownInSPWin ? true : login())
-        pwdField.removeAttribute("type");
-      break;
-    case 3:
-      if (pwdShownInSPWin)
-        pwdField.removeAttribute("type");
-      break;
-    }
-    if (pwdField.hasAttribute("type") && pwdField.type == "password") {
-      pwdViewButton.label = strBundle.getString("showPassword");
-      pwdViewButton.accessKey = strBundle.getString("showPasswordAccesskey");
-    } else {
-      pwdViewButton.label = strBundle.getString("hidePassword");
-      pwdViewButton.accessKey = strBundle.getString("hidePasswordAccesskey");
-    }
-  
     haveOldSignon = false;
     if (oldSignons.length == 0) {
       oldSignons[0] = { hostname: "", formSubmitURL: "", httpRealm: "",
                         username: "", password: "", usernameField: "",
                         passwordField: "" };
-      el("header").setAttribute("title", strBundle.getString("newlogin"));
+      el("header").setAttribute("title", peStrBundle.getString("newlogin"));
     } else if (cloneSignon) {
-      el("header").setAttribute("title", strBundle.getString("clonelogin"));
+      el("header").setAttribute("title", peStrBundle.getString("clonelogin"));
       haveOldSignon = true;
     } else {
       el("header").setAttribute(
-        "title", strBundle.getString(oldSignons.length > 1 ? "editmultlogin"
+        "title", peStrBundle.getString(oldSignons.length > 1 ? "editmultlogin"
                                                            : "editlogin"));
       haveOldSignon = true;
     }
@@ -126,8 +110,8 @@ window.addEventListener(
       if (otherType != type) {
         Cc["@mozilla.org/embedcomp/prompt-service;1"].
           getService(Ci.nsIPromptService).
-          alert(window, strBundle.getString("error"),
-                strBundle.getString("typemismatch"));
+          alert(window, genStrBundle.getString("error"),
+                peStrBundle.getString("typemismatch"));
         window.close();
         return;
       }
@@ -150,9 +134,44 @@ window.addEventListener(
     if (haveOldSignon && !cloneSignon)
       el("type_group").disabled = true;
 
-    window.removeEventListener("DOMContentLoaded", loadHandler, false);
+    window.setTimeout(afterLoadHandler, 0);
+    window.removeEventListener("load", loadHandler, false);
   },
   false);
+
+function afterLoadHandler () {
+  var pwdShownInSPWin = window.arguments[2];
+  var showpwd = prefs.getIntPref("showpassword");
+  var pwdField = el("password_text");
+  var showpwdButton = el("showPassword_btn");
+  var hidepwdButton = el("hidePassword_btn");
+  switch (showpwd) {
+  case 0:
+    pwdCurHidden = true;
+    break;
+  case 1:
+    if (pwdShownInSPWin || (haveOldSignon ? login() : true))
+      pwdCurHidden = false;
+    break;
+  case 2:
+    if (!pwdCurHidden && !pwdShownInSPWin
+        && (haveOldSignon ? !login() : false))
+      pwdCurHidden = true;
+    break;
+  case 3:
+    pwdCurHidden = !pwdShownInSPWin;
+    break;
+  }
+  if (!pwdCurHidden) pwdField.removeAttribute("type");
+
+  if (pwdField.hasAttribute("type") && pwdField.type == "password") {
+    showpwdButton.hidden = false;
+    hidepwdButton.hidden = true;
+  } else {
+    showpwdButton.hidden = true;
+    hidepwdButton.hidden = false;
+  }
+}
 
 function intersectSignonProps (signons) {
   var intersection = new Object();
@@ -204,16 +223,17 @@ function handle_typeSelect () {
 
 function togglePasswordView () {
   var pwdField = el("password_text");
-  var pwdViewButton = el("passwordView_btn");
+  var showpwdButton = el("showPassword_btn");
+  var hidepwdButton = el("hidePassword_btn");
   if (pwdField.type == "password") {
-    if (!login()) return;
+    if (pwdField.value != "" && !login()) return;
     pwdField.removeAttribute("type");
-    pwdViewButton.label = strBundle.getString("hidePassword");
-    pwdViewButton.accessKey = strBundle.getString("hidePasswordAccesskey");
+    showpwdButton.hidden = true;
+    hidepwdButton.hidden = false;
   } else {
     pwdField.setAttribute("type", "password");
-    pwdViewButton.label = strBundle.getString("showPassword");
-    pwdViewButton.accessKey = strBundle.getString("showPasswordAccesskey");
+    showpwdButton.hidden = false;
+    hidepwdButton.hidden = true;
   }
 }
 
@@ -281,8 +301,8 @@ function guessParameters () {
   if (loginForms.length == 0) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
-      alert(window, strBundle.getString("error"),
-            strBundle.getString("nologinform"));
+      alert(window, genStrBundle.getString("error"),
+            peStrBundle.getString("nologinform"));
     return;
   }
 
@@ -313,6 +333,13 @@ function _fillFromForm (aIdx) {
   } else {
     el("username_text").value = loginForm.username;
     el("password_text").value = loginForm.password;
+  }
+
+  for each (let prfx in ["hostname", "formSubmitURL", "username", "password",
+                         "usernameField", "passwordField"]) {
+    let chgEvt = document.createEvent("Event");
+    chgEvt.initEvent("change", true, true);
+    el(prfx + "_text").dispatchEvent(chgEvt);
   }
 
   if (curLoginIdx == 0)
@@ -368,8 +395,8 @@ function setNewSignon () {
           : type == 1 ? newProps.httpRealm !== undefined : true)) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
-      alert(window, strBundle.getString("error"),
-            strBundle.getString("multduplogins"));
+      alert(window, genStrBundle.getString("error"),
+            peStrBundle.getString("multduplogins"));
     return false;
   }
 

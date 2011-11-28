@@ -1,0 +1,38 @@
+<!ENTITY savedpasswordeditor.title "Уређивач сачуваних лозинки">
+<!ENTITY signontype.label "Врста">
+<!ENTITY type_form.label "Веб образац">
+<!ENTITY type_form.accesskey "В">
+<!ENTITY type_httpauth.label "HTTP идентификација">
+<!ENTITY type_httpauth.accesskey "и">
+<!ENTITY type_other.label "Друго">
+<!ENTITY type_other.accesskey "Д">
+<!ENTITY hostname.label "Домаћин">
+<!ENTITY hostname.tooltip "Протокол/домаћин на којем се лозинка примењује (нпр. http://www.primer.com)">
+<!ENTITY formSubmitURL.label "Префикс слања">
+<!ENTITY formSubmitURL.tooltip "Префикс адресе за подношење обрасца">
+<!ENTITY httpRealm.label "HTTP област">
+<!ENTITY httpRealm.tooltip "HTTP област поклапања">
+<!ENTITY username.label "Корисничко име">
+<!ENTITY username.tooltip "Корисничко име за памћење">
+<!ENTITY password.label "Лозинка">
+<!ENTITY password.tooltip "Лозинка за памћење">
+<!ENTITY usernameField.label "Поље корисничког имена">
+<!ENTITY usernameField.tooltip "Особина имена за одговарајуће поље корисничког имена у обрасцу">
+<!ENTITY passwordField.label "Поље лозинке">
+<!ENTITY passwordField.tooltip "Особина имена за одговарајуће поље лозинке у обрасцу">
+<!ENTITY showPassword.label "Прикажи">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Промени видљивост лозинке">
+<!ENTITY hidePassword.label "Сакриј">
+<!ENTITY hidePassword.accesskey "С">
+<!ENTITY guessfrompage.label "Погоди с текуће странице">
+<!ENTITY guessfrompage.accesskey "о">
+<!ENTITY guessfrompage.tooltip "Попуните овај образац који је сличан обрасцу за пријаву на текућој страници">
+<!ENTITY prevform.label "Претходни образац">
+<!ENTITY prevform.accesskey "П">
+<!ENTITY prevform.tooltip "Пробајте претходни образац странице">
+<!ENTITY nextform.label "Следећи образац">
+<!ENTITY nextform.accesskey "С">
+<!ENTITY nextform.tooltip "Пробајте претходни образац странице">
+<!ENTITY tags.label "Ознаке">
+<!ENTITY tags.tooltip "Ознаке лозинки (за додатак Password Tags)">

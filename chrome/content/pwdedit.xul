@@ -21,7 +21,7 @@
 <?xml-stylesheet href="chrome://savedpasswordeditor/skin/qtextbox.css"
                  type="text/css"?>
 
-<!DOCTYPE dialog SYSTEM "chrome://savedpasswordeditor/locale/spe.dtd">
+<!DOCTYPE dialog SYSTEM "chrome://savedpasswordeditor/locale/pwdedit.dtd">
 
 <dialog id="pwdedit"
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
@@ -30,8 +30,10 @@
         ondialogaccept="return setNewSignon();"
         persist="width height">
   <stringbundleset id="stringbundleset">
-    <stringbundle id="string-bundle"
+    <stringbundle id="general-string-bundle"
                   src="chrome://savedpasswordeditor/locale/spe.properties"/>
+    <stringbundle id="pwdedit-string-bundle"
+                 src="chrome://savedpasswordeditor/locale/pwdedit.properties"/>
   </stringbundleset>
   <script type="text/javascript"
           src="chrome://savedpasswordeditor/content/pwdedit.js"/>
@@ -78,8 +80,12 @@
         <label control="password_text" value="&password.label;"/>
         <textbox persist="type" id="password_text" class="qtextbox"
                  tooltiptext="&password.tooltip;"/>
-        <button id="passwordView_btn" label="&showPassword.label;"
+        <button id="showPassword_btn" label="&showPassword.label;"
                 accesskey="&showPassword.accesskey;"
+                tooltiptext="&showPassword.tooltip;"
+                oncommand="togglePasswordView();"/>
+        <button id="hidePassword_btn" label="&hidePassword.label;"
+                accesskey="&hidePassword.accesskey;"
                 tooltiptext="&showPassword.tooltip;"
                 oncommand="togglePasswordView();"/>
       </row>
