@@ -87,7 +87,7 @@
         <button id="hidePassword_btn" label="&hidePassword.label;"
                 accesskey="&hidePassword.accesskey;"
                 tooltiptext="&showPassword.tooltip;"
-                oncommand="togglePasswordView();"/>
+                oncommand="togglePasswordView();" hidden="true"/>
       </row>
       <row id="usernameField_row">
         <label control="usernameField_text" value="&usernameField.label;"/>
