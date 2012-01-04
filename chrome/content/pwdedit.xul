@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -42,11 +42,14 @@
     <caption id="type_caption" label="&signontype.label;"/>
     <radiogroup id="type_group" oncommand="handle_typeSelect();">
       <radio id="type_form" label="&type_form.label;"
-             accesskey="&type_form.accesskey;"/>
-      <radio id="type_httpauth" label="&type_httpauth.label;"
-             accesskey="&type_httpauth.accesskey;"/>
+             accesskey="&type_form.accesskey;"
+             tooltiptext="&type_form.tooltip;"/>
+      <radio id="type_annotated" label="&type_annotated.label;"
+             accesskey="&type_annotated.accesskey;"
+             tooltiptext="&type_annotated.tooltip;"/>
       <radio id="type_other" label="&type_other.label;"
-             accesskey="&type_other.accesskey;"/>
+             accesskey="&type_other.accesskey;"
+             tooltiptext="&type_other.tooltip;"/>
     </radiogroup>
   </groupbox>
   <grid>
@@ -57,27 +60,32 @@
     </columns>
     <rows>
       <row>
-        <label control="hostname_text" value="&hostname.label;"/>
+        <label control="hostname_text" value="&hostname.label;"
+               tooltiptext="&hostname.tooltip;"/>
         <textbox id="hostname_text" class="qtextbox"
                  tooltiptext="&hostname.tooltip;"/>
       </row>
       <row id="formSubmitURL_row">
-        <label control="formSubmitURL_text" value="&formSubmitURL.label;"/>
+        <label control="formSubmitURL_text" value="&formSubmitURL.label;"
+               tooltiptext="&formSubmitURL.tooltip;"/>
         <textbox id="formSubmitURL_text" class="qtextbox"
                  tooltiptext="&formSubmitURL.tooltip;"/>
       </row>
       <row id="httpRealm_row" collapsed="true">
-        <label control="httpRealm_text" value="&httpRealm.label;"/>
+        <label control="httpRealm_text" value="&annotation.label;"
+               tooltiptext="&annotation.tooltip;"/>
         <textbox id="httpRealm_text" class="qtextbox"
-                 tooltiptext="&httpRealm.tooltip;"/>
+                 tooltiptext="&annotation.tooltip;"/>
       </row>
       <row>
-        <label control="username_text" value="&username.label;"/>
+        <label control="username_text" value="&username.label;"
+               tooltiptext="&username.tooltip;"/>
         <textbox id="username_text" class="qtextbox"
                  tooltiptext="&username.tooltip;"/>
       </row>
       <row>
-        <label control="password_text" value="&password.label;"/>
+        <label control="password_text" value="&password.label;"
+               tooltiptext="&password.tooltip;"/>
         <textbox persist="type" id="password_text" class="qtextbox"
                  tooltiptext="&password.tooltip;"/>
         <button id="showPassword_btn" label="&showPassword.label;"
@@ -90,12 +98,14 @@
                 oncommand="togglePasswordView();" hidden="true"/>
       </row>
       <row id="usernameField_row">
-        <label control="usernameField_text" value="&usernameField.label;"/>
+        <label control="usernameField_text" value="&usernameField.label;"
+               tooltiptext="&usernameField.tooltip;"/>
         <textbox id="usernameField_text" class="qtextbox"
                  tooltiptext="&usernameField.tooltip;"/>
       </row>
       <row id="passwordField_row">
-        <label control="passwordField_text" value="&passwordField.label;"/>
+        <label control="passwordField_text" value="&passwordField.label;"
+               tooltiptext="&passwordField.tooltip;"/>
         <textbox id="passwordField_text" class="qtextbox"
                  tooltiptext="&passwordField.tooltip;"/>
       </row>
@@ -116,7 +126,8 @@
             hidden="true" flex="1"/>
   </hbox>
   <hbox id="tags_box">
-    <label control="tags_text" value="&tags.label;"/>
+    <label control="tags_text" value="&tags.label;"
+           tooltiptext="&tags.tooltip;"/>
     <textbox id="tags_text" flex="1"
              tooltiptext="&tags.tooltip;"/>
   </hbox>

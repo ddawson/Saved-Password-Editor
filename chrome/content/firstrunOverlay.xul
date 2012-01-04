@@ -17,23 +17,16 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 -->
 
-<!DOCTYPE html SYSTEM "chrome://savedpasswordeditor/locale/welcome.dtd">
-
-<?xml-stylesheet type="text/css"
-  href="chrome://savedpasswordeditor/skin/welcome.css"?>
-
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="&locale;" lang="&locale;"
-      dir="&layoutdirection;">
-  <head>
-    <script type="text/javascript"
-            src="chrome://savedpasswordeditor/content/welcome.js"/>
-    <link rel="icon" href="chrome://savedpasswordeditor/skin/key16.png"/>
-    <title>&welcometospe;</title>
-  </head>
-  <body>
-    <h1>&welcometospe;</h1>
-    <p>&welcomepara1_fx;</p>
-    <p>&welcomepara2;</p>
-    <p>&welcomepara3;</p>
-  </body>
-</html>
+<overlay
+    xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
+  <script type="application/javascript"><![CDATA[
+    window.addEventListener(
+      "load",
+      function _loadHandler () {
+        Components.utils.import(
+          "resource://savedpasswordeditor/firstrun.jsm");
+        window.removeEventListener("load", _loadHandler, false);
+      },
+      false);
+  ]]></script>
+</overlay>

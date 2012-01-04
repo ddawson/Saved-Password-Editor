@@ -12,7 +12,8 @@
      ru     - Russian (no specific country)
 -->
 <!ENTITY locale "en-US">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.n     Generally, this should follow the direction of your writing system.nnnn-->
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
 
@@ -41,3 +42,5 @@
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Note that the Saved Passwords dialog is a base component of <span id='appname'/>, and is not being provided by this extension, except for the added functions mentioned above. The toolbar button is provided only for convenience, in the expectation that some users of this extension will want to access the dialog much more frequently than they might otherwise.">
+<!-- Paragraph 3 -->
+<!ENTITY welcomepara3 "You may also manipulate logins associated with a particular web form by right-clicking on any of its fields and selecting an action.">

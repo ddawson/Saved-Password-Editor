@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -121,7 +121,7 @@ const spEditor = {
 
   SPE_WINDOW_NAME: "danieldawson:savedpasswordeditor",
 
-  openSPEDialog: function (signon, cloning, showingPasswords, ret) {
+  openSPEDialog: function (signon, mode, showingPasswords, ret) {
     var ww = Components.classes["@mozilla.org/embedcomp/window-watcher;1"].
       getService(Components.interfaces.nsIWindowWatcher);
     var oldWin = ww.getWindowByName(this.SPE_WINDOW_NAME, null);
@@ -129,7 +129,7 @@ const spEditor = {
       return window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul",
         this.SPE_WINDOW_NAME, "centerscreen,dependent,dialog,chrome,resizable",
-        signon, cloning, showingPasswords, ret);
+        signon, mode, showingPasswords, ret);
     else {
       oldWin.focus();
       return oldWin;
@@ -179,7 +179,7 @@ const spEditor = {
       
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
     var dlg =
-      this.openSPEDialog(selSignons, false, gPasswords.showPasswords, ret);
+      this.openSPEDialog(selSignons, 1, gPasswords.showPasswords, ret);
   },
 
   cloneSignon: function () {
@@ -197,7 +197,7 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog([signon], true, gPasswords.showPasswords, ret);
+    this.openSPEDialog([signon], 2, gPasswords.showPasswords, ret);
   },
 
   newSignon: function () {
@@ -211,7 +211,7 @@ const spEditor = {
     }
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
-    this.openSPEDialog([], false, gPasswords.showPasswords, ret);
+    this.openSPEDialog([], 0, gPasswords.showPasswords, ret);
   },
 }
 

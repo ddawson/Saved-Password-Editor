@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -24,11 +24,10 @@ const Cc = Components.classes,
               getService(Ci.nsIPrefService).
               getBranch("extensions.savedpasswordeditor."),
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
-      CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}",
-      SPICEBIRD = "{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}";
+      CONKEROR = "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}";
 
 var pwdCurHidden, genStrBundle, peStrBundle, catStorage, haveOldSignon,
-    oldSignons, cloneSignon, loginForms, curLoginIdx, oldUsername, oldPassword;
+    oldSignons, editorMode, loginForms, curLoginIdx, oldUsername, oldPassword;
 
 window.addEventListener(
   "DOMContentLoaded",
@@ -51,37 +50,37 @@ window.addEventListener(
                  Cc[scsCid].getService(Ci.ddISignonCategoryStorage) : null;
 
     oldSignons = window.arguments[0];
-    cloneSignon = window.arguments[1];
+    editorMode = window.arguments[1];
 
-    haveOldSignon = false;
-    if (oldSignons.length == 0) {
+    haveOldSignon = oldSignons.length > 0;
+    if (!haveOldSignon)
       oldSignons[0] = { hostname: "", formSubmitURL: "", httpRealm: "",
                         username: "", password: "", usernameField: "",
                         passwordField: "" };
+
+    if (editorMode == 0)
       el("header").setAttribute("title", peStrBundle.getString("newlogin"));
-    } else if (cloneSignon) {
+    else if (editorMode == 2)
       el("header").setAttribute("title", peStrBundle.getString("clonelogin"));
-      haveOldSignon = true;
-    } else {
+    else
       el("header").setAttribute(
         "title", peStrBundle.getString(oldSignons.length > 1 ? "editmultlogin"
                                                            : "editlogin"));
-      haveOldSignon = true;
-    }
 
     var compositeSignon = intersectSignonProps(oldSignons);
 
     var props = [ "hostname", "formSubmitURL", "httpRealm",
                   "username", "password", "usernameField", "passwordField" ];
-    for (let i = 0; i < props.length; i++) {
+    for (let i in props) {
       let propName = props[i], tbox = el(propName + "_text");
       if (compositeSignon[propName] !== undefined) {
         tbox.indefinite = false;
         tbox.autoreindef = false;
         tbox.value = compositeSignon[propName];
-      } else
+      } else {
         tbox.indefinite = true;
         tbox.autoreindef = true;
+      }
     }
 
     if (catStorage && oldSignons.length == 1)
@@ -92,7 +91,8 @@ window.addEventListener(
     var type;
     if (!oldSignons[0].httpRealm)
       type = 0;
-    else if (oldSignons[0].hostname.match(/^http/))
+    else if (el("httpRealm_text").indefinite
+             || oldSignons[0].hostname != oldSignons[0].httpRealm)
       type = 1;
     else
       type = 2;
@@ -120,7 +120,6 @@ window.addEventListener(
     var xai = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo);
     switch (xai.ID) {
     case THUNDERBIRD:
-    case SPICEBIRD:
       el("type_form").hidden = true;
       if (!haveOldSignon)
         el("type_group").selectedIndex = 1;
@@ -131,10 +130,10 @@ window.addEventListener(
 
     handle_typeSelect();
 
-    if (haveOldSignon && !cloneSignon)
+    if (editorMode == 1)
       el("type_group").disabled = true;
 
-    window.setTimeout(afterLoadHandler, 0);
+    window.setTimeout(afterLoadHandler, 1);
     window.removeEventListener("load", loadHandler, false);
   },
   false);
@@ -182,7 +181,7 @@ function intersectSignonProps (signons) {
     for (var j = 0; j < propList.length; j++) {
       let prop = propList[j];
       if (!intersection.hasOwnProperty(prop))
-        intersection[prop] = signon[prop];
+        intersection[prop] = signon[prop] !== undefined ? signon[prop] : null;
       else if (signon[prop] != intersection[prop])
         intersection[prop] = undefined;
     }
@@ -406,7 +405,7 @@ function setNewSignon () {
     window.arguments[3].newSignon = newProps;
 
   if (oldSignons.length == 1 && catStorage) {
-    if (haveOldSignon && !cloneSignon)
+    if (editorMode == 1)
       catStorage.setCategory(oldSignons[0], "");
     catStorage.setCategory(newProps, tags);
   }

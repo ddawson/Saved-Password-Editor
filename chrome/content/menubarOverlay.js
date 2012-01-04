@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,7 +26,8 @@ window.addEventListener(
 
     function menuitemDynamic (evt) {
       var hidden = !prefBranch.getBoolPref("display_menuitem");
-      document.getElementById("savedpasswordeditor-menuitem").hidden = hidden;
+      document.getElementById("savedpasswordeditor-toolsmenuitem").hidden =
+        hidden;
       return true;
     }
 

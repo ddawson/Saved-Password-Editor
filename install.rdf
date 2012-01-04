@@ -5,7 +5,7 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.2.6</version>
+    <version>2.5pre1</version>
     <description>Adds the ability to create and edit entries in the password manager.</description>
     <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
@@ -32,14 +32,16 @@
     <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
     <translator>zh-TW: Velociraptor (BabelZilla)</translator>
 
+    <iconURL>chrome://savedpasswordeditor/skin/key32.png</iconURL>
+    <icon64URL>chrome://savedpasswordeditor/skin/key64.png</icon64URL>
     <optionsURL>chrome://savedpasswordeditor/content/prefwindow.xul</optionsURL>
     <homepageURL>https://addons.mozilla.org/addon/saved-password-editor/</homepageURL>
 
     <targetApplication>
       <RDF:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- Firefox -->
-        <minVersion>3.5</minVersion>
-        <maxVersion>11.0a1</maxVersion>
+        <minVersion>3.6</minVersion>
+        <maxVersion>12.0a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -47,15 +49,15 @@
       <RDF:Description>
         <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!-- SeaMonkey -->
         <minVersion>2.0</minVersion>
-        <maxVersion>2.8a1</maxVersion>
+        <maxVersion>2.9a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
     <targetApplication>
       <RDF:Description>
         <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
-        <minVersion>3.0</minVersion>
-        <maxVersion>11.0a1</maxVersion>
+        <minVersion>3.1</minVersion>
+        <maxVersion>12.0a1</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -64,14 +66,6 @@
         <id>{a79fe89b-6662-4ff4-8e88-09950ad4dfde}</id> <!-- Conkeror -->
         <minVersion>0.9</minVersion>
         <maxVersion>1.0.*</maxVersion>
-      </RDF:Description>
-    </targetApplication>
-
-    <targetApplication>
-      <RDF:Description>
-        <id>{ee53ece0-255c-4cc6-8a7e-81a8b6e5ba2c}</id> <!-- Spicebird -->
-        <minVersion>0.8</minVersion>
-        <maxVersion>0.8.*</maxVersion>
       </RDF:Description>
     </targetApplication>
 
