@@ -221,6 +221,7 @@ function handle_typeSelect () {
 }
 
 function togglePasswordView () {
+  var focusTarget;
   var pwdField = el("password_text");
   var showpwdButton = el("showPassword_btn");
   var hidepwdButton = el("hidePassword_btn");
@@ -229,11 +230,15 @@ function togglePasswordView () {
     pwdField.removeAttribute("type");
     showpwdButton.hidden = true;
     hidepwdButton.hidden = false;
+    focusTarget = hidepwdButton;
   } else {
     pwdField.setAttribute("type", "password");
     showpwdButton.hidden = false;
     hidepwdButton.hidden = true;
+    focusTarget = showpwdButton;
   }
+
+  window.setTimeout(function () { focusTarget.focus(); }, 1);
 }
 
 function guessParameters () {
@@ -245,37 +250,42 @@ function guessParameters () {
     var curLocation = win.location;
     var hostname = curLocation.protocol + "//" + curLocation.host;
 
-    // Locate a likely login form and its fields
-    var pwdFields = curDoc.evaluate(
-      '//xhtml:form//xhtml:input[@name and @name!="" ' +
-        'and translate(@type, "PASWORD", "pasword")="password"]',
-      curDoc, _htmlNamespaceResolver,
-      XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-
-    for (var i = 0; i < pwdFields.snapshotLength; i++) {
-      var pwdField = pwdFields.snapshotItem(i), form = pwdField.form;
-      let rng = curDoc.createRange();
-      rng.selectNode(form);
-      let restrForm = rng.cloneContents().firstChild;
-      var unameField = curDoc.evaluate(
-        '(.//xhtml:input[@name and @name!="" ' +
-          'and (not(@type) or translate(@type, "TEX", "tex")="text") ' +
-          'and not(preceding::xhtml:input[' +
-          'translate(@type, "PASWORD", "pasword")="password"])])[last()]',
-        restrForm, _htmlNamespaceResolver,
-        XPathResult.FIRST_ORDERED_NODE_TYPE, null).
-          singleNodeValue;
-
-      if (unameField) {
-        // Construct the submit prefix
-        let formAction = form.getAttribute("action");
-        let res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
-        loginForms.push({
-          hostname: hostname, formSubmitURL: res ? res[1] : hostname,
-          username: unameField.value, password: pwdField.value,
-          usernameField: unameField.getAttribute("name"),
-          passwordField: pwdField.getAttribute("name") });
+    // Locate likely login forms and their fields
+    var forms = curDoc.evaluate("//xhtml:form", curDoc, _htmlNamespaceResolver,
+                                XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+    for (var i = 0; i < forms.snapshotLength; i++) {
+      let form = forms.snapshotItem(i), pwdField = null, j;
+      for (j = 0; j < form.elements.length; j++) {
+        let element = form.elements[j];
+        if (element instanceof Ci.nsIDOMHTMLInputElement
+            && element.type == "password") {
+          pwdField = element;
+          break;
+        }
       }
+      if (!pwdField) continue;
+
+      let unameField = null;
+      for (j = j - 1; j >= 0; j--) {
+        let element = form.elements[j];
+        if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
+        let elType = element.getAttribute("type");
+        if (!elType || elType == "text" || elType == "email" || elType == "url"
+            || elType == "tel" || elType == "number") {
+          unameField = element;
+          break;
+        }
+      }
+      if (!unameField) continue;
+
+      // Construct the submit prefix
+      let formAction = form.getAttribute("action");
+      let res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
+      loginForms.push({
+        hostname: hostname, formSubmitURL: res ? res[1] : hostname,
+        username: unameField.value, password: pwdField.value,
+        usernameField: unameField.getAttribute("name"),
+        passwordField: pwdField.getAttribute("name") });
     }
 
     // See if any frame or iframe contains a login form
@@ -291,7 +301,7 @@ function guessParameters () {
       getService(Ci.nsIWindowMediator).
       getMostRecentWindow("navigator:browser").getBrowser().contentWindow;
 
-  // Attempt to find a login form
+  // Attempt to find login form(s)
   loginForms = [];
   oldUsername = el("username_text").value;
   oldPassword = el("password_text").value;
