@@ -11,6 +11,7 @@
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
     <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
     <translator>de: /usr/bin/tux (BabelZilla)</translator>
+    <translator>dsb: milupo (BabelZilla)</translator>
     <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
     <translator>eo: milupo (BabelZilla)</translator>
     <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -77,6 +78,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -106,6 +108,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -129,12 +132,43 @@
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
       </RDF:Description>
       <RDF:Description>
+        <locale>dsb</locale>
+        <name>Saved Password Editor</name>
+        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <contributor>PlastikManiac (key icon)</contributor>
+        <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
+        <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
+        <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
+        <translator>eo: milupo (BabelZilla)</translator>
+        <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
+        <translator>fi: Jiipee (BabelZilla)</translator>
+        <translator>fr: Goofy (BabelZilla)</translator>
+        <translator>hsb: milupo (BabelZilla)</translator>
+        <translator>hu: MIKES KASZMÁN István "Cashman" (BabelZilla)</translator>
+        <translator>id-ID: XCen (BabelZilla)</translator>
+        <translator>ja: Masahiko Imanaka "mar" (BabelZilla)</translator>
+        <translator>nl: markh (BabelZilla)</translator>
+        <translator>pl: Marcin Borowczyk "MarcinB" (BabelZilla)</translator>
+        <translator>pt-BR: Edgard Dias Magalhaes "edgard.magalhaes" (BabelZilla)</translator>
+        <translator>pt-PT: Carlos Simão "lloco" (BabelZilla)</translator>
+        <translator>ru: Pyriatynskyi Vytalyi "PiVV" (BabelZilla)</translator>
+        <translator>sr: Charmed94, DakSrbija, Rancher (BabelZilla)</translator>
+        <translator>sv-SE: Mikael Hiort af Ornäs "Lakrits" (BabelZilla)</translator>
+        <translator>tr: Anil Kilic - www.guncem.net "ua_anil", nikneyim, omrakin (BabelZilla)</translator>
+        <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
+        <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
+        <translator>zh-TW: Velociraptor (BabelZilla)</translator>
+        <description>Staja móžnosć k dispoziciji, składowane gronidła w zastojniku gronidłow změniś abo nowe pśidaś.</description>
+      </RDF:Description>
+      <RDF:Description>
         <locale>el</locale>
         <name>Saved Password Editor</name>
         <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
         <contributor>PlastikManiac (εικονίδιο κλειδιού)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: Γιώργος Μαλαμάς "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -164,6 +198,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -193,6 +228,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -222,6 +258,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -251,6 +288,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -280,6 +318,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -309,6 +348,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -338,6 +378,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -367,6 +408,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -396,6 +438,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -425,6 +468,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -454,6 +498,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -483,6 +528,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -512,6 +558,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -541,6 +588,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -570,6 +618,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -599,6 +648,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -628,6 +678,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -657,6 +708,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
@@ -686,6 +738,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>bg-BG: ExaFlop, arris (BabelZilla)</translator>
         <translator>de: /usr/bin/tux (BabelZilla)</translator>
+        <translator>dsb: milupo (BabelZilla)</translator>
         <translator>el: George Malamas "Grg68" (BabelZilla)</translator>
         <translator>eo: milupo (BabelZilla)</translator>
         <translator>es-ES: Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
