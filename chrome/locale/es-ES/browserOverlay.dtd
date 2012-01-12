@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "Contraseñas guardadas">
+<!ENTITY savedpasswords.accesskey "g">
+<!ENTITY savedpasswords.tooltip "Abrir el administrador de contraseñas guardadas">
+<!ENTITY ctx_savelogininfo.label "Guardar datos de acceso">
+<!ENTITY ctx_savelogininfo.accesskey "G">
+<!ENTITY ctx_savelogininfo.tooltip "Agregar una contraseña guardada para esta forma">
+<!ENTITY ctx_editlogininfo.label "Editar datos de acceso">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "Editar una contraseña guardada para esta forma">
+<!ENTITY ctx_deletelogininfo.label "Eliminar datos de acceso">
+<!ENTITY ctx_deletelogininfo.accesskey "B">
+<!ENTITY ctx_deletelogininfo.tooltip "Borrar una contraseña guardada para esta forma">

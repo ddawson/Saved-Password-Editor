@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Inställningar för Saved Password Editor">
+<!ENTITY displayMenuitem.label "Inkludera genväg i menyer">
+<!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows/Linux Firefoxmeny som en genväg till lösenordshanteraren">
+<!ENTITY passwordfield_caption.label "Lösenordsfält i redigeringsfönstret">
+<!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
+<!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">
+<!ENTITY passwordfield_rememberlast.label "Kom ihåg senaste status">
+<!ENTITY passwordfield_rememberlast.tooltip "Kom ihåg visningsläget tills nästa gång fönstret öppnas">
+<!ENTITY passwordfield_followspwin.label "Följ listan över sparade lösenord">
+<!ENTITY passwordfield_followspwin.tooltip "Visa endast om lösenord för närvarande visas i Sparade lösenord-fönstret">

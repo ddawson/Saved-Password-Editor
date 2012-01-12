@@ -1,0 +1,41 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "サインオン形式">
+<!ENTITY type_form.label "Web フォーム">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Web ページに含まれるフォーム">
+<!ENTITY type_annotated.label "アノテーション">
+<!ENTITY type_annotated.accesskey "A">
+<!ENTITY type_annotated.tooltip "サービスを特定するためホストに文字列を追加する必要があるログイン (HTTP 認証など)">
+<!ENTITY type_other.label "その他">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY type_other.tooltip "ホスト、ユーザ名、パスワードのみが必要なログイン">
+<!ENTITY hostname.label "ホスト">
+<!ENTITY hostname.tooltip "パスワードを適用するプロトコル/ホスト名 (例、http://www.example.com)">
+<!ENTITY formSubmitURL.label "送信 URL のプレフィクス">
+<!ENTITY formSubmitURL.tooltip "フォームを送信するアドレスのプレフィクス">
+<!ENTITY annotation.label "アノテーション">
+<!ENTITY annotation.tooltip "追加の文字列は、認証するサービスを特定します (HTTP レルムなど)">
+<!ENTITY username.label "ユーザ名">
+<!ENTITY username.tooltip "記憶させるユーザ名">
+<!ENTITY password.label "パスワード">
+<!ENTITY password.tooltip "記憶させるパスワード">
+<!ENTITY usernameField.label "ユーザ名欄の name 属性">
+<!ENTITY usernameField.tooltip "フォーム内のユーザ名欄に対応する name 属性の値">
+<!ENTITY passwordField.label "パスワード欄の name 属性">
+<!ENTITY passwordField.tooltip "フォーム内のパスワード欄に対応する name 属性の値">
+<!ENTITY showPassword.label "表示">
+<!ENTITY showPassword.accesskey "S">
+<!ENTITY showPassword.tooltip "パスワードの表示と非表示を切り替えます">
+<!ENTITY hidePassword.label "隠す">
+<!ENTITY hidePassword.accesskey "H">
+<!ENTITY guessfrompage.label "現在のページから取得">
+<!ENTITY guessfrompage.accesskey "G">
+<!ENTITY guessfrompage.tooltip "現在のページ上のログインフォームを読み取り、上記のフォームに入力します">
+<!ENTITY prevform.label "前のフォーム">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "ページ内の前のフォームを試します">
+<!ENTITY nextform.label "次のフォーム">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "ページ内の次のフォームを試します">
+<!ENTITY tags.label "タグ">
+<!ENTITY tags.tooltip "パスワードタグ (&quot;Password Tags&quot; アドオン用)">

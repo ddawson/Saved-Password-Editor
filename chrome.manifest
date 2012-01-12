@@ -6,7 +6,22 @@ resource	savedpasswordeditor	chrome/content/
 content	savedpasswordeditor		chrome/content/
 
 # Language-specific content
+locale	savedpasswordeditor	de	chrome/locale/de/
+locale	savedpasswordeditor	dsb	chrome/locale/dsb/
+locale	savedpasswordeditor	el	chrome/locale/el/
 locale	savedpasswordeditor	en-US	chrome/locale/en-US/
+locale	savedpasswordeditor	eo	chrome/locale/eo/
+locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
+locale	savedpasswordeditor	fi	chrome/locale/fi/
+locale	savedpasswordeditor	fr	chrome/locale/fr/
+locale	savedpasswordeditor	hsb	chrome/locale/hsb/
+locale	savedpasswordeditor	ja	chrome/locale/ja/
+locale	savedpasswordeditor	nl	chrome/locale/nl/
+locale	savedpasswordeditor	sr	chrome/locale/sr/
+locale	savedpasswordeditor	sv-SE	chrome/locale/sv-SE/
+locale	savedpasswordeditor	tr	chrome/locale/tr/
+locale	savedpasswordeditor	vi	chrome/locale/vi/
+locale	savedpasswordeditor	zh-TW	chrome/locale/zh-TW/
 
 # Appearance
 skin	savedpasswordeditor	default	chrome/skin/

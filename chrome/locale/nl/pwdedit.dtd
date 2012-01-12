@@ -1,0 +1,41 @@
+<!ENTITY savedpasswordeditor.title "Bewerken opgeslagen wachtwoord">
+<!ENTITY signontype.label "Type">
+<!ENTITY type_form.label "Webformulier">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Een formulier op een webpagina">
+<!ENTITY type_annotated.label "Geannoteerd">
+<!ENTITY type_annotated.accesskey "a">
+<!ENTITY type_annotated.tooltip "Een aanmelding waarbij een tekstdeel bij de host moet staan om de dienst te identificeren (b.v. HTTP-aanmelding)">
+<!ENTITY type_other.label "Overig">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY type_other.tooltip "Een aanmelding waarvoor alleen een host, gebruikersnaam en wachtwoord nodig is">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Protocol/hostnaam waar het wachtwoord op van toepassing is (b.v. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Indieningsprefix">
+<!ENTITY formSubmitURL.tooltip "Prefix van het formulierindieningsadres">
+<!ENTITY annotation.label "Annotatie">
+<!ENTITY annotation.tooltip "Aanvullend tekstdeel waarmee de te authenticeren dienst wordt geïdentificeerd (b.v. het HTTP-gebied)">
+<!ENTITY username.label "Gebruikersnaam">
+<!ENTITY username.tooltip "De te onthouden gebruikersnaam">
+<!ENTITY password.label "Wachtwoord">
+<!ENTITY password.tooltip "Het te onthouden wachtwoord">
+<!ENTITY usernameField.label "Gebruikersnaamveldnaam">
+<!ENTITY usernameField.tooltip "Het naamattribuut voor het van toepassing zijnde gebruikersnaamveld in het formulier">
+<!ENTITY passwordField.label "Wachtwoordveldnaam">
+<!ENTITY passwordField.tooltip "Het naamattribuut voor het van toepassing zijnde wachtwoordveld in het formulier">
+<!ENTITY showPassword.label "Weergeven">
+<!ENTITY showPassword.accesskey "g">
+<!ENTITY showPassword.tooltip "Zichtbaarheid wachtwoord wisselen">
+<!ENTITY hidePassword.label "Verbergen">
+<!ENTITY hidePassword.accesskey "b">
+<!ENTITY guessfrompage.label "Raden van huidige pagina">
+<!ENTITY guessfrompage.accesskey "R">
+<!ENTITY guessfrompage.tooltip "Vul dit formulier in op basis van een waarschijnlijk aanmeldingsformulier op de huidige pagina">
+<!ENTITY prevform.label "Vorig formulier">
+<!ENTITY prevform.accesskey "V">
+<!ENTITY prevform.tooltip "Het vorige formulier op de pagina proberen">
+<!ENTITY nextform.label "Volgend formulier">
+<!ENTITY nextform.accesskey "l">
+<!ENTITY nextform.tooltip "Het volgende formulier op de pagina proberen">
+<!ENTITY tags.label "Labels">
+<!ENTITY tags.tooltip "Wachtwoordlabels (voor de add-on ‘Password Tags’)">

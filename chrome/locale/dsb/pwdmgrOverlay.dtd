@@ -1,0 +1,6 @@
+<!ENTITY newentry.label "Nowy">
+<!ENTITY newentry.accesskey "N">
+<!ENTITY editentry.label "Wobźěłaś">
+<!ENTITY editentry.accesskey "W">
+<!ENTITY cloneentry.label "Klonowaś">
+<!ENTITY cloneentry.accesskey "l">

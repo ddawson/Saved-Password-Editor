@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "Mots de passe enregistrés">
+<!ENTITY savedpasswords.accesskey "p">
+<!ENTITY savedpasswords.tooltip "Ouvre la fenêtre de dialogue des mots de passe enregistrés">
+<!ENTITY ctx_savelogininfo.label "Enregistrer les informations de connexion">
+<!ENTITY ctx_savelogininfo.accesskey "E">
+<!ENTITY ctx_savelogininfo.tooltip "Ajoute un mot de passe enregistré à ce formulaire">
+<!ENTITY ctx_editlogininfo.label "Modifier les informations de connexion">
+<!ENTITY ctx_editlogininfo.accesskey "M">
+<!ENTITY ctx_editlogininfo.tooltip "Modifie un mot de passe enregistré pour ce formulaire">
+<!ENTITY ctx_deletelogininfo.label "Supprimer les informations de connexion">
+<!ENTITY ctx_deletelogininfo.accesskey "S">
+<!ENTITY ctx_deletelogininfo.tooltip "Supprimer un mot de passe pour ce formulaire">

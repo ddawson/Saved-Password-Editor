@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
+<!ENTITY displayMenuitem.label "Skrotconku do menijow zapśimjeś">
+<!ENTITY displayMenuitem.tooltip "Pśidawa zapisk &quot;Składowane gronidła&quot; menijoju Rědy a menijoju pód tłocaškom Firefox ako spěšny wótkaz  k zastojnikoju gronidłow">
+<!ENTITY passwordfield_caption.label "Gronidłowe pólo we woknje editora">
+<!ENTITY passwordfield_alwayshide.label "Pśecej gronidło schowaś, gaž wokno editora se wócynja">
+<!ENTITY passwordfield_alwaysshow.label "Pśecej gronidło pokazaś, gaž wokno editora se wócynja">
+<!ENTITY passwordfield_rememberlast.label "Slědny staw se spomnjeś">
+<!ENTITY passwordfield_rememberlast.tooltip "Ten samy staw pokazaś abo schowaś, ako slědny raz, gaž wokno jo wócinjone było">
+<!ENTITY passwordfield_followspwin.label "Lisćinje składowanych gronidło slědowaś">
+<!ENTITY passwordfield_followspwin.tooltip "Pokazaś, jolic a jano jolic gronidła se tuchylu we woknje składowanych gronidłow pokazuju">

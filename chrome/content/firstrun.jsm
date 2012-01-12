@@ -18,85 +18,85 @@
 
 var EXPORTED_SYMBOLS = [];
 
-const Cc = Components.classes,
-      Ci = Components.interfaces,
-      Cu = Components.utils,
-      FIREFOX = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
-      SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
-      THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
-      PREFNAME = "currentVersion",
-      THISVERSION = "2.5pre2",
-      COMPAREVERSION = "2.5pre1",
-      CONTENT = "chrome://savedpasswordeditor/content/",
-      WELCOMEURL = CONTENT + "welcome.xhtml",
-      WELCOMEURL_SM = CONTENT + "welcome_sm.xhtml";
-
-Cu.import("resource://gre/modules/XPCOMUtils.jsm");
-XPCOMUtils.defineLazyServiceGetter(
-  this, "wm", "@mozilla.org/appshell/window-mediator;1", "nsIWindowMediator");
-
-var timer;
-
-function welcome () {
-  delete timer;
-  var appId = Cc["@mozilla.org/xre/app-info;1"].
-              getService(Ci.nsIXULAppInfo).ID;
-
-  switch (appId) {
-  case FIREFOX:
-    var curWin = wm.getMostRecentWindow("navigator:browser");
-    curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL);
-    break;
-
-  case SEAMONKEY:
-    var curWin = wm.getMostRecentWindow("navigator:browser");
-
-    if (!curWin) {
-      var cmdLine = {
-        handleFlagWithParam: function (flag, caseSensitive)
-          flag == "browser" ? WELCOMEURL_SM : null,
-        handleFlag: function (flag, caseSensitive) false,
-        preventDefault: true
-      };
-
-      const clh_prefix = 
-        "@mozilla.org/commandlinehandler/general-startup;1";
-      Cc[clh_prefix + "?type=browser"].
-        getService(Ci.nsICommandLineHandler).handle(cmdLine);
-    } else
-      curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL_SM);
-    break;
-
-  case THUNDERBIRD:
-    var curWin = wm.getMostRecentWindow("mail:3pane");
-    curWin.focus();
-    curWin.document.getElementById("tabmail").openTab(
-      "contentTab", { contentPage: WELCOMEURL });
-    break;
-  }
-}
-
-function set_welcome () {
-  timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
-  timer.initWithCallback({ notify: function () { welcome(); } },
-                         500, Ci.nsITimer.TYPE_ONE_SHOT);
-}
-
 {
-  let prefs = Cc["@mozilla.org/preferences-service;1"].
-              getService(Ci.nsIPrefService).
-              getBranch("extensions.savedpasswordeditor."),
+  const Cc = Components.classes,
+        Ci = Components.interfaces,
+        Cu = Components.utils,
+        FIREFOX = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
+        SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
+        THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
+        PREFNAME = "currentVersion",
+        THISVERSION = "2.5pre3",
+        COMPAREVERSION = "2.5pre1",
+        CONTENT = "chrome://savedpasswordeditor/content/",
+        WELCOMEURL = CONTENT + "welcome.xhtml",
+        WELCOMEURL_SM = CONTENT + "welcome_sm.xhtml";
 
-  if (prefs.prefHasUserValue(PREFNAME)) {
-    let vc = Cc["@mozilla.org/xpcom/version-comparator;1"].
-             getService(Ci.nsIVersionComparator),
-        lastVersion = prefs.getCharPref(PREFNAME);
-    if (vc.compare(lastVersion, COMPAREVERSION) < 0)
+  let timer;
+
+  function welcome () {
+    delete timer;
+    var wm = Cc["@mozilla.org/appshell/window-mediator;1"].
+             getService(Ci.nsIWindowMediator),
+        appId = Cc["@mozilla.org/xre/app-info;1"].
+                getService(Ci.nsIXULAppInfo).ID;
+
+    switch (appId) {
+    case FIREFOX:
+      var curWin = wm.getMostRecentWindow("navigator:browser");
+      curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL);
+      break;
+
+    case SEAMONKEY:
+      var curWin = wm.getMostRecentWindow("navigator:browser");
+
+      if (!curWin) {
+        var cmdLine = {
+          handleFlagWithParam: function (flag, caseSensitive)
+            flag == "browser" ? WELCOMEURL_SM : null,
+          handleFlag: function (flag, caseSensitive) false,
+          preventDefault: true
+        };
+
+        const clh_prefix = 
+          "@mozilla.org/commandlinehandler/general-startup;1";
+        Cc[clh_prefix + "?type=browser"].
+          getService(Ci.nsICommandLineHandler).handle(cmdLine);
+      } else
+        curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL_SM);
+      break;
+
+    case THUNDERBIRD:
+      var curWin = wm.getMostRecentWindow("mail:3pane");
+      curWin.focus();
+      curWin.document.getElementById("tabmail").openTab(
+        "contentTab", { contentPage: WELCOMEURL });
+      break;
+    }
+  }
+
+  function set_welcome () {
+    timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
+    timer.initWithCallback({ notify: function () { welcome(); } },
+                           500, Ci.nsITimer.TYPE_ONE_SHOT);
+  }
+
+  {
+    let prefs = Cc["@mozilla.org/preferences-service;1"].
+                getService(Ci.nsIPrefService).
+                getBranch("extensions.savedpasswordeditor.");
+
+    if (prefs.prefHasUserValue(PREFNAME)) {
+      let vc = Cc["@mozilla.org/xpcom/version-comparator;1"].
+               getService(Ci.nsIVersionComparator),
+          lastVersion = prefs.getCharPref(PREFNAME);
+      if (vc.compare(lastVersion, COMPAREVERSION) < 0)
+        set_welcome();
+      if (vc.compare(lastVersion, THISVERSION) < 0)
+        prefs.setCharPref(PREFNAME, THISVERSION);
+    } else {
       set_welcome();
-    if (vc.compare(lastVersion, THISVERSION) < 0)
       prefs.setCharPref(PREFNAME, THISVERSION);
-  } else {
-    set_welcome();
-    prefs.setCharPref(PREFNAME, THISVERSION);
+    }
   }
 }

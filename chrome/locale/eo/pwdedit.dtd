@@ -1,0 +1,41 @@
+<!ENTITY savedpasswordeditor.title "Konservitaj pasvortoj">
+<!ENTITY signontype.label "Tipo">
+<!ENTITY type_form.label "Retformularo">
+<!ENTITY type_form.accesskey "f">
+<!ENTITY type_form.tooltip "Formularo en retpaĝo">
+<!ENTITY type_annotated.label "Komentita">
+<!ENTITY type_annotated.accesskey "K">
+<!ENTITY type_annotated.tooltip "Ensaluto, kiu bezonas signoĉenon aldone al la gastiga komputilo por identigi la servon (ekz. HTTP-aŭtentikigon)">
+<!ENTITY type_other.label "Alia">
+<!ENTITY type_other.accesskey "A">
+<!ENTITY type_other.tooltip "Ensaluto, kiu bezonas nur gastigan komputilon, uzantnomon kaj pasvorton">
+<!ENTITY hostname.label "Gastiga servilo">
+<!ENTITY hostname.tooltip "Protokolo/nomo de la gastiga servilo, al kiu la pasvorto estas aplikata (ekz. http://www.ekzemplo.com)">
+<!ENTITY formSubmitURL.label "Senda prefikso">
+<!ENTITY formSubmitURL.tooltip "Prefikso de la formulara celadreso">
+<!ENTITY annotation.label "Komento">
+<!ENTITY annotation.tooltip "Aldona signoĉeno, kiu identigas la aŭtentikigan servon (ekz. HTTP-regiono)">
+<!ENTITY username.label "Uzantnomo">
+<!ENTITY username.tooltip "Memortenota uzantnomo">
+<!ENTITY password.label "Pasvorto">
+<!ENTITY password.tooltip "La memortenota pasvorto">
+<!ENTITY usernameField.label "Nomo de la uzantnoma kampo">
+<!ENTITY usernameField.tooltip "La noma atributo por la respektiva uzantnoma kampo en la formularo">
+<!ENTITY passwordField.label "Nomo de la pasvorta kampo">
+<!ENTITY passwordField.tooltip "La noma atributo por la respektiva pasvorta kampo en la formularo">
+<!ENTITY showPassword.label "Montri">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Ŝalti pasvortvideblecon">
+<!ENTITY hidePassword.label "Kaŝi">
+<!ENTITY hidePassword.accesskey "K">
+<!ENTITY guessfrompage.label "Diveni el aktuala paĝo">
+<!ENTITY guessfrompage.accesskey "D">
+<!ENTITY guessfrompage.tooltip "Plenigi ĉi tiun formularon surbaze de supozata ensaluta formularo sur la aktuala paĝo">
+<!ENTITY prevform.label "Antaŭa formularo">
+<!ENTITY prevform.accesskey "A">
+<!ENTITY prevform.tooltip "Provi la antaŭan formularon el la paĝo">
+<!ENTITY nextform.label "Sekvonta formularo">
+<!ENTITY nextform.accesskey "S">
+<!ENTITY nextform.tooltip "Provi la sekvontan formularon el la paĝo">
+<!ENTITY tags.label "Etikedoj">
+<!ENTITY tags.tooltip "Pasvortaj etikedoj (por la aldonaĵo &quot;Password Tags&quot;)">
