@@ -159,7 +159,7 @@
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
         <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
-        <description>Staja móžnosć k dispoziciji, składowane gronidła w zastojniku gronidłow změniś abo nowe pśidaś.</description>
+        <description>Staja móžnosć k dispoziciji, zapiski w zastojniku gronidłow napóraś a wobźěłaś.</description>
       </RDF:Description>
       <RDF:Description>
         <locale>el</locale>
@@ -219,7 +219,7 @@
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
         <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
-        <description>Disponigas eblecon ŝanĝi konservitajn pasvortojn kaj aldoni novajn en la pasvorta administrilo.</description>
+        <description>Disponigas eblecon krei kaj redakti enskribojn en la pasvorta administrilo.</description>
       </RDF:Description>
       <RDF:Description>
         <locale>es-ES</locale>
@@ -339,7 +339,7 @@
         <translator>vi: Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh" (BabelZilla)</translator>
         <translator>zh-CN: Loviny, yfdyh000 &lt;yfdyh000@gmail.com&gt;, arris (BabelZilla)</translator>
         <translator>zh-TW: Velociraptor (BabelZilla)</translator>
-        <description>Staja móžnosć k dispoziciji, składowane hesła w zrjadowaku hesłow změnić abo nowe přidać.</description>
+        <description>Staja móžnosć k dispoziciji, zapiski w zrjadowaku hesłow wutworić a wobdźěłać.</description>
       </RDF:Description>
       <RDF:Description>
         <locale>hu</locale>
