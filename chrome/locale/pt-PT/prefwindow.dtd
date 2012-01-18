@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Preferências do Editor de senhas guardadas">
+<!ENTITY displayMenuitem.label "Incluir atalho no menu ferramentas">
+<!ENTITY displayMenuitem.tooltip "Adiciona o &quot;Saved Passwords&quot; ao menu ferramentas como um atalho para o gestor de senhas">
+<!ENTITY passwordfield_caption.label "Campo da senha na janela de edição">
+<!ENTITY passwordfield_alwayshide.label "Ocultar sempre senha ao abrir a janela de edição">
+<!ENTITY passwordfield_alwaysshow.label "Mostrar sempre senha ao abrir a janela de edição">
+<!ENTITY passwordfield_rememberlast.label "Lembrar o último estado">
+<!ENTITY passwordfield_rememberlast.tooltip "Mostrar ou ocultar o mesmo que a última vez em que a janela estava aberta">
+<!ENTITY passwordfield_followspwin.label "Lista de senhas guardadas">
+<!ENTITY passwordfield_followspwin.tooltip "Mostrar se e apenas se as senhas são atualmente apresentadas na janela Senhas guardadas">

@@ -3,7 +3,7 @@
 <!ENTITY type_form.label "網頁表單">
 <!ENTITY type_form.accesskey "W">
 <!ENTITY type_form.tooltip "網頁中的表單">
-<!ENTITY type_annotated.label "註解">
+<!ENTITY type_annotated.label "註釋">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "此登入類型需要一組字串使主機能夠辨識伺服器（例：HTTP authentication）">
 <!ENTITY type_other.label "其他">

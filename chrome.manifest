@@ -6,6 +6,7 @@ resource	savedpasswordeditor	chrome/content/
 content	savedpasswordeditor		chrome/content/
 
 # Language-specific content
+locale	savedpasswordeditor	bg-BG	chrome/locale/bg-BG/
 locale	savedpasswordeditor	de	chrome/locale/de/
 locale	savedpasswordeditor	dsb	chrome/locale/dsb/
 locale	savedpasswordeditor	el	chrome/locale/el/
@@ -15,12 +16,19 @@ locale	savedpasswordeditor	es-ES	chrome/locale/es-ES/
 locale	savedpasswordeditor	fi	chrome/locale/fi/
 locale	savedpasswordeditor	fr	chrome/locale/fr/
 locale	savedpasswordeditor	hsb	chrome/locale/hsb/
+locale	savedpasswordeditor	hu	chrome/locale/hu/
+locale	savedpasswordeditor	id-ID	chrome/locale/id-ID/
 locale	savedpasswordeditor	ja	chrome/locale/ja/
 locale	savedpasswordeditor	nl	chrome/locale/nl/
+locale	savedpasswordeditor	pl	chrome/locale/pl/
+locale	savedpasswordeditor	pt-BR	chrome/locale/pt-BR/
+locale	savedpasswordeditor	pt-PT	chrome/locale/pt-PT/
+locale	savedpasswordeditor	ru	chrome/locale/ru/
 locale	savedpasswordeditor	sr	chrome/locale/sr/
 locale	savedpasswordeditor	sv-SE	chrome/locale/sv-SE/
 locale	savedpasswordeditor	tr	chrome/locale/tr/
 locale	savedpasswordeditor	vi	chrome/locale/vi/
+locale	savedpasswordeditor	zh-CN	chrome/locale/zh-CN/
 locale	savedpasswordeditor	zh-TW	chrome/locale/zh-TW/
 
 # Appearance

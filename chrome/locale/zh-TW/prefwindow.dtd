@@ -6,5 +6,5 @@
 <!ENTITY passwordfield_alwaysshow.label "開啟編輯視窗時總是顯示密碼">
 <!ENTITY passwordfield_rememberlast.label "記住上次的狀態">
 <!ENTITY passwordfield_rememberlast.tooltip "顯示或隱藏沿用上次視窗開始時的狀態">
-<!ENTITY passwordfield_followspwin.label "跟隨已存密碼清單">
-<!ENTITY passwordfield_followspwin.tooltip "只當密碼正顯示於已存密碼視窗時顯示">
+<!ENTITY passwordfield_followspwin.label "沿用已存密碼清單狀態">
+<!ENTITY passwordfield_followspwin.tooltip "只在已存密碼視窗有顯示密碼時才會顯示">

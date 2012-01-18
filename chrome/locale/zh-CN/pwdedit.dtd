@@ -1,0 +1,41 @@
+<!ENTITY savedpasswordeditor.title "已保存密码编辑器">
+<!ENTITY signontype.label "类型">
+<!ENTITY type_form.label "网页表单">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "A form contained in a web page">
+<!ENTITY type_annotated.label "Annotated">
+<!ENTITY type_annotated.accesskey "A">
+<!ENTITY type_annotated.tooltip "A login that requires a string in addition to the host to identify the service (e.g. HTTP authentication)">
+<!ENTITY type_other.label "其它">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY type_other.tooltip "A login that requires only a host, username, and password">
+<!ENTITY hostname.label "主机">
+<!ENTITY hostname.tooltip "响应表单的主机或协议地址（例如 http://www.example.com）">
+<!ENTITY formSubmitURL.label "提交前缀">
+<!ENTITY formSubmitURL.tooltip "表单提交地址的前缀">
+<!ENTITY annotation.label "Annotation">
+<!ENTITY annotation.tooltip "Additional string identifying the service to authenticate to (e.g. HTTP realm)">
+<!ENTITY username.label "用户名">
+<!ENTITY username.tooltip "要保存的用户名">
+<!ENTITY password.label "密码">
+<!ENTITY password.tooltip "要保存的密码">
+<!ENTITY usernameField.label "用户名字段名称">
+<!ENTITY usernameField.tooltip "表单源码中用户字段的名称属性">
+<!ENTITY passwordField.label "密码字段名称">
+<!ENTITY passwordField.tooltip "表单源码中密码字段的名称属性">
+<!ENTITY showPassword.label "显示">
+<!ENTITY showPassword.accesskey "S">
+<!ENTITY showPassword.tooltip "切换密码的可见性">
+<!ENTITY hidePassword.label "隐藏">
+<!ENTITY hidePassword.accesskey "H">
+<!ENTITY guessfrompage.label "从当前页猜测">
+<!ENTITY guessfrompage.accesskey "G">
+<!ENTITY guessfrompage.tooltip "在当前页面寻找类似于登录的表单并自动填充">
+<!ENTITY prevform.label "上一个表单">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "尝试页面的上一个表单">
+<!ENTITY nextform.label "下一个表单">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "尝试页面的下一个表单">
+<!ENTITY tags.label "标签">
+<!ENTITY tags.tooltip "密码标签（用于附加组件“Password Tags”）">
