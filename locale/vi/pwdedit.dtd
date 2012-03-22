@@ -1,0 +1,39 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Kiểu">
+<!ENTITY type_form.label "Điền mẫu Web">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Mẫu điền nằm trong một trang web">
+<!ENTITY type_annotated.label "Chú thích">
+<!ENTITY type_annotated.accesskey "C">
+<!ENTITY type_annotated.tooltip "Việc đăng nhập cần một chuỗi, đi kèm với máy chủ để nhận diện dịch vụ (ví dụ: xác thực HTTP)">
+<!ENTITY type_other.label "Khác">
+<!ENTITY type_other.accesskey "O">
+<!ENTITY type_other.tooltip "Việc đăng nhập chỉ cần một máy chủ, tên đăng nhập và mật khẩu">
+<!ENTITY hostname.label "Máy chủ">
+<!ENTITY hostname.tooltip "Giao thức/tên máy chủ mà mật khẩu được áp dụng (ví dụ: http://www.example.com)">
+<!ENTITY formSubmitURL.label "Nhập tiền tố">
+<!ENTITY formSubmitURL.tooltip "Tiền tố của mẫu địa chỉ đệ trình">
+<!ENTITY annotation.label "Chú thích">
+<!ENTITY annotation.tooltip "Chuỗi phụ trợ nhận diện dịch vụ để xác thực (ví dụ: lĩnh vực HTTP)">
+<!ENTITY username.label "Tên sử dụng">
+<!ENTITY username.tooltip "Tên sử dụng để ghi nhớ">
+<!ENTITY password.label "Mật khẩu">
+<!ENTITY password.tooltip "Mẩu khẩu để ghi nhớ">
+<!ENTITY usernameField.label "Tên của vùng điền Tên sử dụng">
+<!ENTITY usernameField.tooltip "Tên dùng cho vùng điền tên sử dụng thích hợp trong mẫu điền">
+<!ENTITY passwordField.label "Tên của vùng điền Mật Khẩu">
+<!ENTITY passwordField.tooltip "Tên dùng cho vùng điền mật khẩu thích hợp trong mẫu điền">
+<!ENTITY showPassword.label "Hiển thị">
+<!ENTITY showPassword.accesskey "S">
+<!ENTITY showPassword.tooltip "Ẩn/hiện mật khẩu">
+<!ENTITY hidePassword.label "Ẩn">
+<!ENTITY hidePassword.accesskey "n">
+<!ENTITY guessfrompage.label "Đoán từ trang hiện tại">
+<!ENTITY guessfrompage.accesskey "G">
+<!ENTITY guessfrompage.tooltip "Điền mẫu này dựa trên mẫu điền đăng nhập phù hợp trên trang hiện tại">
+<!ENTITY prevform.label "Mẫu điền trước">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Thử mẫu điền trước từ trang">
+<!ENTITY nextform.label "Mẫu điền sau">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Thử mẫu điền sau từ trang">

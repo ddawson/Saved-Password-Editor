@@ -1,0 +1,128 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Saved Password Editor, extension for Gecko applications
+    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
+
+    This program is free software: you can redistribute it and/or modify
+    it under the terms of the GNU General Public License as published by
+    the Free Software Foundation, either version 3 of the License, or
+    (at your option) any later version.
+
+    This program is distributed in the hope that it will be useful,
+    but WITHOUT ANY WARRANTY; without even the implied warranty of
+    MERCHANTABILITY or FITNESS FOR A PARTICULAR PURPOSE.  See the
+    GNU General Public License for more details.
+
+    You should have received a copy of the GNU General Public License
+    along with this program.  If not, see <http://www.gnu.org/licenses/>.
+-->
+
+<?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://savedpasswordeditor/skin/qtextbox.css"
+                 type="text/css"?>
+
+<!DOCTYPE dialog SYSTEM "chrome://savedpasswordeditor/locale/pwdedit.dtd">
+
+<dialog id="pwdedit"
+        xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
+        title="&savedpasswordeditor.title;"
+        buttons="accept,cancel"
+        ondialogaccept="return setNewSignon();"
+        persist="width height">
+  <stringbundleset id="stringbundleset">
+    <stringbundle id="general-string-bundle"
+                  src="chrome://savedpasswordeditor/locale/spe.properties"/>
+    <stringbundle id="pwdedit-string-bundle"
+                 src="chrome://savedpasswordeditor/locale/pwdedit.properties"/>
+  </stringbundleset>
+  <script type="text/javascript"
+          src="chrome://savedpasswordeditor/content/pwdedit.js"/>
+  <dialogheader id="header"/>
+  <groupbox id="type_groupbox">
+    <caption id="type_caption" label="&signontype.label;"/>
+    <radiogroup id="type_group" oncommand="handle_typeSelect();">
+      <radio id="type_form" label="&type_form.label;"
+             accesskey="&type_form.accesskey;"
+             tooltiptext="&type_form.tooltip;"/>
+      <radio id="type_annotated" label="&type_annotated.label;"
+             accesskey="&type_annotated.accesskey;"
+             tooltiptext="&type_annotated.tooltip;"/>
+      <radio id="type_other" label="&type_other.label;"
+             accesskey="&type_other.accesskey;"
+             tooltiptext="&type_other.tooltip;"/>
+    </radiogroup>
+  </groupbox>
+  <grid>
+    <columns>
+      <column/>
+      <column flex="1"/>
+      <column/>
+    </columns>
+    <rows>
+      <row>
+        <label control="hostname_text" value="&hostname.label;"
+               tooltiptext="&hostname.tooltip;"/>
+        <textbox id="hostname_text" class="qtextbox"
+                 tooltiptext="&hostname.tooltip;"/>
+      </row>
+      <row id="formSubmitURL_row">
+        <label control="formSubmitURL_text" value="&formSubmitURL.label;"
+               tooltiptext="&formSubmitURL.tooltip;"/>
+        <textbox id="formSubmitURL_text" class="qtextbox"
+                 tooltiptext="&formSubmitURL.tooltip;"/>
+      </row>
+      <row id="httpRealm_row" collapsed="true">
+        <label control="httpRealm_text" value="&annotation.label;"
+               tooltiptext="&annotation.tooltip;"/>
+        <textbox id="httpRealm_text" class="qtextbox"
+                 tooltiptext="&annotation.tooltip;"/>
+      </row>
+      <row>
+        <label control="username_text" value="&username.label;"
+               tooltiptext="&username.tooltip;"/>
+        <textbox id="username_text" class="qtextbox"
+                 tooltiptext="&username.tooltip;"/>
+      </row>
+      <row>
+        <label control="password_text" value="&password.label;"
+               tooltiptext="&password.tooltip;"/>
+        <textbox persist="type" id="password_text" class="qtextbox"
+                 tooltiptext="&password.tooltip;"/>
+        <button id="showPassword_btn" label="&showPassword.label;"
+                accesskey="&showPassword.accesskey;"
+                tooltiptext="&showPassword.tooltip;"
+                oncommand="togglePasswordView();"/>
+        <button id="hidePassword_btn" label="&hidePassword.label;"
+                accesskey="&hidePassword.accesskey;"
+                tooltiptext="&showPassword.tooltip;"
+                oncommand="togglePasswordView();" hidden="true"/>
+      </row>
+      <row id="usernameField_row">
+        <label control="usernameField_text" value="&usernameField.label;"
+               tooltiptext="&usernameField.tooltip;"/>
+        <textbox id="usernameField_text" class="qtextbox"
+                 tooltiptext="&usernameField.tooltip;"/>
+      </row>
+      <row id="passwordField_row">
+        <label control="passwordField_text" value="&passwordField.label;"
+               tooltiptext="&passwordField.tooltip;"/>
+        <textbox id="passwordField_text" class="qtextbox"
+                 tooltiptext="&passwordField.tooltip;"/>
+      </row>
+    </rows>
+  </grid>
+  <hbox id="guessFromPage_box">
+    <button id="guessFromPage_btn" label="&guessfrompage.label;"
+            accesskey="&guessfrompage.accesskey;"
+            tooltiptext="&guessfrompage.tooltip;"
+            oncommand="guessParameters();" flex="1"/>
+    <button id="prevForm_btn" label="&prevform.label;"
+            accesskey="&prevform.accesskey;"
+            tooltiptext="&prevform.tooltip;" oncommand="prevForm();"
+            hidden="true" flex="1"/>
+    <button id="nextForm_btn" label="&nextform.label;"
+            accesskey="&nextform.accesskey;"
+            tooltiptext="&nextform.tooltip;" oncommand="nextForm();"
+            hidden="true" flex="1"/>
+  </hbox>
+</dialog>

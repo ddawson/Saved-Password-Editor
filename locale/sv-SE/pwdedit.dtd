@@ -1,0 +1,39 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor: Redigera sparade lösenord">
+<!ENTITY signontype.label "Typ">
+<!ENTITY type_form.label "Webbformulär">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Ett formulär på en webbsida">
+<!ENTITY type_annotated.label "Kommenterad">
+<!ENTITY type_annotated.accesskey "K">
+<!ENTITY type_annotated.tooltip "En inloggning som kräver en sträng i anslutning till värden för att identifiera tjänsten (t.ex. HTTP-autentisering)">
+<!ENTITY type_other.label "Annan">
+<!ENTITY type_other.accesskey "A">
+<!ENTITY type_other.tooltip "En inloggning som endast kräver en värd, ett användarnamn och ett lösenord">
+<!ENTITY hostname.label "Värd">
+<!ENTITY hostname.tooltip "Protokoll/värdnamn för vilket lösenordet gäller (t.ex. http://www.example.com)">
+<!ENTITY formSubmitURL.label "Adressprefix">
+<!ENTITY formSubmitURL.tooltip "Prefix för formulärets inlämningsadress">
+<!ENTITY annotation.label "Kommentar">
+<!ENTITY annotation.tooltip "Tilläggssträng som identifierar tjänsten som skall verifieras (t.ex. HTTP-sfär)">
+<!ENTITY username.label "Användarnamn">
+<!ENTITY username.tooltip "Användarnamnet som skall kommas ihåg">
+<!ENTITY password.label "Lösenord">
+<!ENTITY password.tooltip "Lösenordet som skall kommas ihåg">
+<!ENTITY usernameField.label "Användarnamnfältets namn">
+<!ENTITY usernameField.tooltip "Namnattributet för lämpligt användarnamnfält i formuläret">
+<!ENTITY passwordField.label "Lösenordsfältets namn">
+<!ENTITY passwordField.tooltip "Namnattributet för lämpligt lösenordsfält i formuläret">
+<!ENTITY showPassword.label "Visa">
+<!ENTITY showPassword.accesskey "V">
+<!ENTITY showPassword.tooltip "Växla lösenordens synlighet">
+<!ENTITY hidePassword.label "Dölj">
+<!ENTITY hidePassword.accesskey "D">
+<!ENTITY guessfrompage.label "Gissa utifrån aktuell sida">
+<!ENTITY guessfrompage.accesskey "i">
+<!ENTITY guessfrompage.tooltip "Fyll i det här formuläret baserat på ett lämpligt inloggningsformulär på den aktuella sidan">
+<!ENTITY prevform.label "Föregående formulär">
+<!ENTITY prevform.accesskey "F">
+<!ENTITY prevform.tooltip "Testa föregående formulär från sidan">
+<!ENTITY nextform.label "Nästa formulär">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Testa nästa formulär från sidan">

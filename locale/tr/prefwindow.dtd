@@ -1,0 +1,10 @@
+<!ENTITY prefwindow.title "Kayıtlı Şifre Editör ayarları">
+<!ENTITY displayMenuitem.label "Kısayolu menülere ekle">
+<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
+<!ENTITY passwordfield_caption.label "Editör penceresindeki şifre alanı">
+<!ENTITY passwordfield_alwayshide.label "Editörü açarken şifreyi her zaman gizle">
+<!ENTITY passwordfield_alwaysshow.label "Editörü açarken şifreyi her zaman göster">
+<!ENTITY passwordfield_rememberlast.label "Son hali hatırla">
+<!ENTITY passwordfield_rememberlast.tooltip "Pencerenin en son hali nasılsa aynısını gizle veya göster">
+<!ENTITY passwordfield_followspwin.label "Kayıtlı şifreler listesini izle">
+<!ENTITY passwordfield_followspwin.tooltip "Kayıtlı şifreler listesinde sadece şimdi pencerede görülen şifreler varsa göster">

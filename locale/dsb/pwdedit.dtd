@@ -1,0 +1,39 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Typ">
+<!ENTITY type_form.label "Webformular">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Formular we webboku">
+<!ENTITY type_annotated.label "Komentar">
+<!ENTITY type_annotated.accesskey "K">
+<!ENTITY type_annotated.tooltip "Pśizjawjenje, kótarež pomina se znamuškowy rjeśazk pśidatnje k hostoju, aby identficěrowało słužbu (na pś. HTTP-awtentifikacija)">
+<!ENTITY type_other.label "Drugi">
+<!ENTITY type_other.accesskey "D">
+<!ENTITY type_other.tooltip "Pśizjawjenje, kótarež pomina se jano host, wužywarske mě a gronidło.">
+<!ENTITY hostname.label "Host">
+<!ENTITY hostname.tooltip "Protokol/hostowe mě, na kótarež se gronidło nałožujo (na pś. http://www.pśikład.de)">
+<!ENTITY formSubmitURL.label "Słański prefiks">
+<!ENTITY formSubmitURL.tooltip "Prefiks adrese wótpósłanja formulara">
+<!ENTITY annotation.label "Komentar">
+<!ENTITY annotation.tooltip "Pśidatny znamuškowy rjeśazk, kótaryž identificěrujo awtentifikacisku słužbu (na pś. HTTP-wobcerk)">
+<!ENTITY username.label "Wužywarske mě">
+<!ENTITY username.tooltip "Wužywarske mě, kótarež ma se spomnjeś">
+<!ENTITY password.label "Gronidło">
+<!ENTITY password.tooltip "Gronidło, kótarež ma se spomnjeś">
+<!ENTITY usernameField.label "Mě wužywarskego póla">
+<!ENTITY usernameField.tooltip "Atribut name za pśigódne pólo wužywarskego mjenja w formularje">
+<!ENTITY passwordField.label "Mě gronidłowego póla">
+<!ENTITY passwordField.tooltip "Atribut name za pśigódne gronidłowe pólo w formularje">
+<!ENTITY showPassword.label "Pokazaś">
+<!ENTITY showPassword.accesskey "P">
+<!ENTITY showPassword.tooltip "Widobnosć gronidła pśešaltowaś">
+<!ENTITY hidePassword.label "Schowaś">
+<!ENTITY hidePassword.accesskey "S">
+<!ENTITY guessfrompage.label "Z aktualnego boka wugódaś">
+<!ENTITY guessfrompage.accesskey "b">
+<!ENTITY guessfrompage.tooltip "Toś ten formular na zakłaźe přigódnego formulara na aktualnem boku wupołniś">
+<!ENTITY prevform.label "Pjerwješny formular">
+<!ENTITY prevform.accesskey "w">
+<!ENTITY prevform.tooltip "Pjerwjejšny formular wót boka wopytaś">
+<!ENTITY nextform.label "Pśiducy formular">
+<!ENTITY nextform.accesskey "u">
+<!ENTITY nextform.tooltip "Pśiducy formular wót boka wopytaś">
