@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Agordoj de Saved Password Editor">
+<!ENTITY displayMenuitem.label "Inkluzivi fulmklavojn en menuoj">
+<!ENTITY displayMenuitem.tooltip "Aldonas enskribon &quot;Konservitaj pasvortoj&quot; al la menuo &quot;Ilaro&quot; kaj la menuo sub la butono Firefox kiel fulmoligilo al la pasvorta administrilo">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Pasvortkampo en la redaktila fenestro">
+<!ENTITY passwordfield_alwayshide.label "Ĉiam kaŝi pasvorton dum la redaktila fenestro estas malfermata">
+<!ENTITY passwordfield_alwaysshow.label "Ĉiam montri pasvorton, dum redaktila fenestro estas malfermata">
+<!ENTITY passwordfield_rememberlast.label "Memorteni lastan staton">
+<!ENTITY passwordfield_rememberlast.tooltip "Montri aŭ kaŝi la saman, kiam la fenestro estis malfermita la lastan fojon">
+<!ENTITY passwordfield_followspwin.label "Sekvi la liston de konservitaj pasvortoj">
+<!ENTITY passwordfield_followspwin.tooltip "Montri, se kaj nur se pasvortoj estas aktuale montrataj en la fenestro de konservitaj pasvortoj">

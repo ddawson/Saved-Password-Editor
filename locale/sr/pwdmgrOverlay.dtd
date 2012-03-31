@@ -1,0 +1,6 @@
+<!ENTITY newentry.label "Ново">
+<!ENTITY newentry.accesskey "Н">
+<!ENTITY editentry.label "Уреди">
+<!ENTITY editentry.accesskey "У">
+<!ENTITY cloneentry.label "Клонирај">
+<!ENTITY cloneentry.accesskey "К">

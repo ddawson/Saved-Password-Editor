@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "Senhas Salvas">
+<!ENTITY savedpasswords.accesskey "S">
+<!ENTITY savedpasswords.tooltip "Abre a janela de Senhas Salvas">
+<!ENTITY ctx_savelogininfo.label "Salvar informações de login">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "Acrescentar uma senha salva a este formulário">
+<!ENTITY ctx_editlogininfo.label "Editar informações de login">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "Editar uma senha salva deste formulário">
+<!ENTITY ctx_deletelogininfo.label "Apagar informações de login">
+<!ENTITY ctx_deletelogininfo.accesskey "A">
+<!ENTITY ctx_deletelogininfo.tooltip "Apagar uma senha salva para este formulário">

@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
+<!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
+<!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và trình đơn Firefox của Windows/Linux để làm lệnh tắt gọi trình quản lý mật khẩu">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Hộp mật khẩu trong cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_alwayshide.label "Luôn ẩn mật khẩu khi mở cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_alwaysshow.label "Luôn hiện mật khẩu khi mở cửa sổ đổi mật khẩu">
+<!ENTITY passwordfield_rememberlast.label "Nhớ trạng thái lần trước">
+<!ENTITY passwordfield_rememberlast.tooltip "Ẩn hoặc hiện y như cửa sổ được mở lần gần đây nhất">
+<!ENTITY passwordfield_followspwin.label "Danh sách theo đuôi Saved Passwords">
+<!ENTITY passwordfield_followspwin.tooltip "Chỉ hiển thị nếu các mật khẩu hiện đang được hiển thị trong cửa sổ Saved Passwords">

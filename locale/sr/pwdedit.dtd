@@ -1,0 +1,39 @@
+<!ENTITY savedpasswordeditor.title "Уређивач сачуваних лозинки">
+<!ENTITY signontype.label "Врста">
+<!ENTITY type_form.label "Веб образац">
+<!ENTITY type_form.accesskey "В">
+<!ENTITY type_form.tooltip "Образац који се садржи у веб страници">
+<!ENTITY type_annotated.label "Прибележно">
+<!ENTITY type_annotated.accesskey "П">
+<!ENTITY type_annotated.tooltip "Пријава која захтева ниску заједно са сервером за проверу идентитета домаћина (нпр. HTTP идентификација)">
+<!ENTITY type_other.label "Друго">
+<!ENTITY type_other.accesskey "Д">
+<!ENTITY type_other.tooltip "Пријава која захтева само домаћина, корисничко име и лозинку">
+<!ENTITY hostname.label "Домаћин">
+<!ENTITY hostname.tooltip "Протокол/домаћин на којем се лозинка примењује (нпр. http://www.primer.com)">
+<!ENTITY formSubmitURL.label "Префикс слања">
+<!ENTITY formSubmitURL.tooltip "Префикс адресе за подношење обрасца">
+<!ENTITY annotation.label "Прибелешка">
+<!ENTITY annotation.tooltip "Додатна ниска која препознаје сервис за проверу идентитета (нпр. HTTP домен)">
+<!ENTITY username.label "Корисничко име">
+<!ENTITY username.tooltip "Корисничко име за памћење">
+<!ENTITY password.label "Лозинка">
+<!ENTITY password.tooltip "Лозинка за памћење">
+<!ENTITY usernameField.label "Поље корисничког имена">
+<!ENTITY usernameField.tooltip "Особина имена за одговарајуће поље корисничког имена у обрасцу">
+<!ENTITY passwordField.label "Поље лозинке">
+<!ENTITY passwordField.tooltip "Особина имена за одговарајуће поље лозинке у обрасцу">
+<!ENTITY showPassword.label "Прикажи">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Промени видљивост лозинке">
+<!ENTITY hidePassword.label "Сакриј">
+<!ENTITY hidePassword.accesskey "С">
+<!ENTITY guessfrompage.label "Погоди с текуће странице">
+<!ENTITY guessfrompage.accesskey "о">
+<!ENTITY guessfrompage.tooltip "Попуните овај образац који је сличан обрасцу за пријаву на текућој страници">
+<!ENTITY prevform.label "Претходни образац">
+<!ENTITY prevform.accesskey "П">
+<!ENTITY prevform.tooltip "Пробајте претходни образац странице">
+<!ENTITY nextform.label "Следећи образац">
+<!ENTITY nextform.accesskey "С">
+<!ENTITY nextform.tooltip "Пробајте претходни образац странице">

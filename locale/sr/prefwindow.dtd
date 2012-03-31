@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Поставке">
+<!ENTITY displayMenuitem.label "Додај пречицу у мениje">
+<!ENTITY displayMenuitem.tooltip "Додаје „Сачуване лозинке“ у алатке и мени за програме виндоуза као пречицу до управљача лозинкама">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Поље лозинке у прозору за уређивање">
+<!ENTITY passwordfield_alwayshide.label "Увек сакриј лозинку када се отвара прозор за уређивање">
+<!ENTITY passwordfield_alwaysshow.label "Увек прикажи лозинку када се отвара прозор за уређивање">
+<!ENTITY passwordfield_rememberlast.label "Запамти последње стање">
+<!ENTITY passwordfield_rememberlast.tooltip "Прикажи или сакриј исто као и прошли пут када је прозор био отворен">
+<!ENTITY passwordfield_followspwin.label "Прати списак сачуваних лозинки">
+<!ENTITY passwordfield_followspwin.tooltip "Прикажи само ако су лозинке приказане у сачуваним лозинкама">

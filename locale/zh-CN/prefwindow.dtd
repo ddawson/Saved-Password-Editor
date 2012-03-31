@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "已保存密码编辑器 选项">
+<!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
+<!ENTITY displayMenuitem.tooltip "在「工具」菜单中添加「已保存密码」快捷方式。">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "编辑器窗口中的密码字段">
+<!ENTITY passwordfield_alwayshide.label "打开编辑器窗口时总是隐藏密码">
+<!ENTITY passwordfield_alwaysshow.label "打开编辑器窗口时总是显示密码">
+<!ENTITY passwordfield_rememberlast.label "记住最后状态">
+<!ENTITY passwordfield_rememberlast.tooltip "显示或隐藏与上次打开的相同的窗口">
+<!ENTITY passwordfield_followspwin.label "关注已保存密码列表">
+<!ENTITY passwordfield_followspwin.tooltip "显示如果并且仅当密码显示在已保存密码窗口中时">

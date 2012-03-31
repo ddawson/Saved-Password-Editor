@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Saved Password Editor voorkeuren">
+<!ENTITY displayMenuitem.label "Snelkoppeling in menu’s opnemen">
+<!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” toe aan de menu’s Extra en Windowstoepassingen als een snelkoppeling naar de wachtwoordbeheerder">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Wachtwoordveld in bewerkingsvenster">
+<!ENTITY passwordfield_alwayshide.label "Wachtwoord altijd verbergen wanneer bewerkingsvenster wordt geopend">
+<!ENTITY passwordfield_alwaysshow.label "Wachtwoord altijd weergeven wanneer bewerkingsvenster wordt geopend">
+<!ENTITY passwordfield_rememberlast.label "Laatste instelling onthouden">
+<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
+<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
+<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">

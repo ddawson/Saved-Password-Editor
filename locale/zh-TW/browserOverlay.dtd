@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "已存密碼">
+<!ENTITY savedpasswords.accesskey "v">
+<!ENTITY savedpasswords.tooltip "開啟密碼管理員">
+<!ENTITY ctx_savelogininfo.label "儲存登入資訊">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "新增一組對應此表單的已存密碼">
+<!ENTITY ctx_editlogininfo.label "編輯登入資訊">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "編輯一組對應此表單的已存密碼">
+<!ENTITY ctx_deletelogininfo.label "刪除登入資訊">
+<!ENTITY ctx_deletelogininfo.accesskey "D">
+<!ENTITY ctx_deletelogininfo.tooltip "刪除一組對應此表單的已存密碼">

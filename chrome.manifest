@@ -6,7 +6,26 @@ resource	savedpasswordeditor	content/
 content	savedpasswordeditor		content/
 
 # Language-specific content
+locale	savedpasswordeditor	bg	locale/bg/
+locale	savedpasswordeditor	de	locale/de/
+locale	savedpasswordeditor	dsb	locale/dsb/
+locale	savedpasswordeditor	el	locale/el/
 locale	savedpasswordeditor	en-US	locale/en-US/
+locale	savedpasswordeditor	eo	locale/eo/
+locale	savedpasswordeditor	es-ES	locale/es-ES/
+locale	savedpasswordeditor	fi	locale/fi/
+locale	savedpasswordeditor	fr	locale/fr/
+locale	savedpasswordeditor	hsb	locale/hsb/
+locale	savedpasswordeditor	hu	locale/hu/
+locale	savedpasswordeditor	ja	locale/ja/
+locale	savedpasswordeditor	nl	locale/nl/
+locale	savedpasswordeditor	pt-BR	locale/pt-BR/
+locale	savedpasswordeditor	sr	locale/sr/
+locale	savedpasswordeditor	sv-SE	locale/sv-SE/
+locale	savedpasswordeditor	tr	locale/tr/
+locale	savedpasswordeditor	vi	locale/vi/
+locale	savedpasswordeditor	zh-CN	locale/zh-CN/
+locale	savedpasswordeditor	zh-TW	locale/zh-TW/
 
 # Appearance
 skin	savedpasswordeditor	default	skin/

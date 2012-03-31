@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Προτιμήσεις για τον Επεξεργαστή αποθηκευμένων κωδικών πρόσβασης">
+<!ENTITY displayMenuitem.label "Συμπερίληψη συντόμευσης στα μενού">
+<!ENTITY displayMenuitem.tooltip "Προσθήκη του στοιχείου μενού &quot;Αποθηκευμένοι κωδικοί πρόσβασης&quot; στο μενού &quot;Εργαλεία&quot; και στο μενού του Firefox σε Windows/Linux, ως συντόμευση προς το διαχειριστή κωδικών πρόσβασης">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Πεδίο κωδικού πρόσβασης στο παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_alwayshide.label "Πάντα απόκρυψη του κωδικού πρόσβασης όταν ανοίγεται το παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_alwaysshow.label "Πάντα εμφάνιση του κωδικού πρόσβασης όταν ανοίγεται το παράθυρο του επεξεργαστή">
+<!ENTITY passwordfield_rememberlast.label "Απομνημόνευση της τελευταίας κατάστασης">
+<!ENTITY passwordfield_rememberlast.tooltip "Εμφάνιση ή απόκρυψη, όπως κατά την τελευταία φορά που ανοίχτηκε το παράθυρο">
+<!ENTITY passwordfield_followspwin.label "Ως έχει στη λίστα αποθηκευμένων κωδικών πρόσβασης">
+<!ENTITY passwordfield_followspwin.tooltip "Εμφάνιση του κωδικού εάν και μόνο εάν οι κωδικοί πρόσβασης είναι σε εμφάνιση, επίσης και στο παράθυρο &quot;Αποθηκευμένοι κωδικοί&quot;">

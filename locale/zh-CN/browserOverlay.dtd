@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "已保存密码">
+<!ENTITY savedpasswords.accesskey "V">
+<!ENTITY savedpasswords.tooltip "打开 已保存密码 对话框">
+<!ENTITY ctx_savelogininfo.label "保存登录信息">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "添加已保存密码到此表单">
+<!ENTITY ctx_editlogininfo.label "编辑登录信息">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "编辑此表单的已保存密码">
+<!ENTITY ctx_deletelogininfo.label "删除登录信息">
+<!ENTITY ctx_deletelogininfo.accesskey "D">
+<!ENTITY ctx_deletelogininfo.tooltip "删除此表单的已保存密码">

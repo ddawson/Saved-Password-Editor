@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "保存されているパスワード">
+<!ENTITY savedpasswords.accesskey "v">
+<!ENTITY savedpasswords.tooltip "保存されているパスワードのダイアログを開きます">
+<!ENTITY ctx_savelogininfo.label "ログイン情報を保存">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "このフォームの保存されたパスワードを追加します">
+<!ENTITY ctx_editlogininfo.label "ログイン情報を編集">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "このフォームの保存されたパスワードを編集します">
+<!ENTITY ctx_deletelogininfo.label "ログイン情報を削除">
+<!ENTITY ctx_deletelogininfo.accesskey "D">
+<!ENTITY ctx_deletelogininfo.tooltip "このフォームの保存されたパスワードを削除します">

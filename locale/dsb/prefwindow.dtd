@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
+<!ENTITY displayMenuitem.label "Skrotconku do menijow zapśimjeś">
+<!ENTITY displayMenuitem.tooltip "Pśidawa zapisk &quot;Składowane gronidła&quot; menijoju Rědy a menijoju pód tłocaškom Firefox ako spěšny wótkaz  k zastojnikoju gronidłow">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Gronidłowe pólo we woknje editora">
+<!ENTITY passwordfield_alwayshide.label "Pśecej gronidło schowaś, gaž wokno editora se wócynja">
+<!ENTITY passwordfield_alwaysshow.label "Pśecej gronidło pokazaś, gaž wokno editora se wócynja">
+<!ENTITY passwordfield_rememberlast.label "Slědny staw se spomnjeś">
+<!ENTITY passwordfield_rememberlast.tooltip "Ten samy staw pokazaś abo schowaś, ako slědny raz, gaž wokno jo wócinjone było">
+<!ENTITY passwordfield_followspwin.label "Lisćinje składowanych gronidło slědowaś">
+<!ENTITY passwordfield_followspwin.tooltip "Pokazaś, jolic a jano jolic gronidła se tuchylu we woknje składowanych gronidłow pokazuju">

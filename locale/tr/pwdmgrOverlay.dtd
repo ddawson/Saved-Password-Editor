@@ -1,0 +1,6 @@
+<!ENTITY newentry.label "Yeni">
+<!ENTITY newentry.accesskey "Y">
+<!ENTITY editentry.label "Düzenle">
+<!ENTITY editentry.accesskey "D">
+<!ENTITY cloneentry.label "Çoğalt">
+<!ENTITY cloneentry.accesskey "K">

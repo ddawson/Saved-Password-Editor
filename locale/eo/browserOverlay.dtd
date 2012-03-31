@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "Konservitaj pasvortoj">
+<!ENTITY savedpasswords.accesskey "K">
+<!ENTITY savedpasswords.tooltip "Malfermi la dialogon de konservitaj pasvortoj">
+<!ENTITY ctx_savelogininfo.label "Konservi ensalutajn informojn">
+<!ENTITY ctx_savelogininfo.accesskey "K">
+<!ENTITY ctx_savelogininfo.tooltip "Aldoni konservitan pasvorton por ĉi tiu formularo">
+<!ENTITY ctx_editlogininfo.label "Redakti ensalutajn informojn">
+<!ENTITY ctx_editlogininfo.accesskey "R">
+<!ENTITY ctx_editlogininfo.tooltip "Redakti konservitan pasvorton por ĉi tiu formularo">
+<!ENTITY ctx_deletelogininfo.label "Forviŝi ensalutajn informojn">
+<!ENTITY ctx_deletelogininfo.accesskey "F">
+<!ENTITY ctx_deletelogininfo.tooltip "Forviŝi konservitan pasvorton por ĉi tiu formularo">

@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Preferencias de Saved Password Editor">
+<!ENTITY displayMenuitem.label "Incluir acceso directo en menúes">
+<!ENTITY displayMenuitem.tooltip "Agrega &quot;Contraseñas guardadas&quot; al menú Herramientas y al menú de Firefox en Windows/Linux como acceso directo al administrador de contraseñas guardadas">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "Campo de contraseña en ventana del editor">
+<!ENTITY passwordfield_alwayshide.label "Ocultar contraseña al abrir ventana del editor">
+<!ENTITY passwordfield_alwaysshow.label "Mostrar contraseña al abrir ventana del editor">
+<!ENTITY passwordfield_rememberlast.label "Recordar estado más reciente">
+<!ENTITY passwordfield_rememberlast.tooltip "Mostrar u ocultar elementos recientes en esta ventana">
+<!ENTITY passwordfield_followspwin.label "Seguir Lista de contraseñas guardadas">
+<!ENTITY passwordfield_followspwin.tooltip "Mostrar SOLAMENTE si aparecen las contraseñas en la ventana de contraseñas guardadas">
