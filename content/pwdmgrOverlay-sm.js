@@ -128,7 +128,7 @@ const spEditor = {
     if (!oldWin)
       return window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul",
-        this.SPE_WINDOW_NAME, "centerscreen,dependent,dialog,chrome,resizable",
+        this.SPE_WINDOW_NAME, "centerscreen,dependent,dialog,chrome",
         signon, mode, showingPasswords, ret);
     else {
       oldWin.focus();

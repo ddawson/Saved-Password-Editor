@@ -27,8 +27,7 @@
         xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul"
         title="&savedpasswordeditor.title;"
         buttons="accept,cancel"
-        ondialogaccept="return setNewSignon();"
-        persist="width height">
+        ondialogaccept="return setNewSignon();">
   <stringbundleset id="stringbundleset">
     <stringbundle id="general-string-bundle"
                   src="chrome://savedpasswordeditor/locale/spe.properties"/>
@@ -65,14 +64,16 @@
         <textbox id="hostname_text" class="qtextbox"
                  tooltiptext="&hostname.tooltip;"/>
       </row>
-      <row id="formSubmitURL_row">
-        <label control="formSubmitURL_text" value="&formSubmitURL.label;"
+      <row>
+        <label id="formSubmitURL_lbl" control="formSubmitURL_text"
+               value="&formSubmitURL.label;"
                tooltiptext="&formSubmitURL.tooltip;"/>
         <textbox id="formSubmitURL_text" class="qtextbox"
                  tooltiptext="&formSubmitURL.tooltip;"/>
       </row>
-      <row id="httpRealm_row" collapsed="true">
-        <label control="httpRealm_text" value="&annotation.label;"
+      <row>
+        <label id="httpRealm_lbl" control="httpRealm_text"
+               value="&annotation.label;"
                tooltiptext="&annotation.tooltip;"/>
         <textbox id="httpRealm_text" class="qtextbox"
                  tooltiptext="&annotation.tooltip;"/>
@@ -97,14 +98,16 @@
                 tooltiptext="&showPassword.tooltip;"
                 oncommand="togglePasswordView();" hidden="true"/>
       </row>
-      <row id="usernameField_row">
-        <label control="usernameField_text" value="&usernameField.label;"
+      <row>
+        <label id="usernameField_lbl" control="usernameField_text"
+               value="&usernameField.label;"
                tooltiptext="&usernameField.tooltip;"/>
         <textbox id="usernameField_text" class="qtextbox"
                  tooltiptext="&usernameField.tooltip;"/>
       </row>
-      <row id="passwordField_row">
-        <label control="passwordField_text" value="&passwordField.label;"
+      <row>
+        <label id="passwordField_lbl" control="passwordField_text"
+               value="&passwordField.label;"
                tooltiptext="&passwordField.tooltip;"/>
         <textbox id="passwordField_text" class="qtextbox"
                  tooltiptext="&passwordField.tooltip;"/>

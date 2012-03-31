@@ -146,7 +146,7 @@ var SavedPasswordEditor = {
     var ret = { newSignon: null, callback: _finish };
     aWindow.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,resizable",
+      "centerscreen,dependent,dialog,chrome",
       [this.curInfo], 0, false, ret);
     this.curInfo = null;
   },
@@ -182,7 +182,7 @@ var SavedPasswordEditor = {
     } else
       window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-        "centerscreen,dependent,dialog,chrome,resizable",
+        "centerscreen,dependent,dialog,chrome",
         [spe._signonMap[target.label]], 1, false,
         { newSignon: null, callback: spe._finishEdit });
 
@@ -232,7 +232,7 @@ var SavedPasswordEditor = {
       this.oldSignon = signons[0];
       aWindow.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-        "centerscreen,dependent,dialog,chrome,resizable",
+        "centerscreen,dependent,dialog,chrome",
         [signons[0]], 1, false,
         { newSignon: null, callback: this._finishEdit });
     } else

@@ -22,15 +22,34 @@ var EXPORTED_SYMBOLS = [];
   const Cc = Components.classes,
         Ci = Components.interfaces,
         Cu = Components.utils,
+        WINDOWID = "chrome://savedpasswordeditor/content/pwdedit.xul#pwdedit",
         FIREFOX = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
         SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
         THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
         PREFNAME = "currentVersion",
-        THISVERSION = "2.5.1",
-        COMPAREVERSION = "2.5pre1",
+        THISVERSION = "2.6",
+        UNPERSISTVERSION = "2.6",
+        WELCOMEVERSION = "2.5pre1",
         CONTENT = "chrome://savedpasswordeditor/content/",
         WELCOMEURL = CONTENT + "welcome.xhtml",
         WELCOMEURL_SM = CONTENT + "welcome_sm.xhtml";
+
+  function unpersist_dimensions () {
+    // Remove previously persisted width and height for password editor window,
+    // so it can be dynamically sized when opened.
+    var rdfSvc = Cc["@mozilla.org/rdf/rdf-service;1"].
+                 getService(Ci.nsIRDFService),
+        localStore = rdfSvc.GetDataSource("rdf:local-store"),
+        src = rdfSvc.GetResource(WINDOWID);
+
+    var arc = rdfSvc.GetResource("width");
+    var valNode = localStore.GetTarget(src, arc, true);
+    if (valNode) localStore.Unassert(src, arc, valNode);
+
+    arc = rdfSvc.GetResource("height");
+    valNode = localStore.GetTarget(src, arc, true);
+    if (valNode) localStore.Unassert(src, arc, valNode);
+  }
 
   let timer;
 
@@ -90,11 +109,14 @@ var EXPORTED_SYMBOLS = [];
       let vc = Cc["@mozilla.org/xpcom/version-comparator;1"].
                getService(Ci.nsIVersionComparator),
           lastVersion = prefs.getCharPref(PREFNAME);
-      if (vc.compare(lastVersion, COMPAREVERSION) < 0)
+      if (vc.compare(lastVersion, UNPERSISTVERSION) < 0)
+        unpersist_dimensions();
+      if (vc.compare(lastVersion, WELCOMEVERSION) < 0)
         set_welcome();
       if (vc.compare(lastVersion, THISVERSION) < 0)
         prefs.setCharPref(PREFNAME, THISVERSION);
     } else {
+      unpersist_dimensions();
       set_welcome();
       prefs.setCharPref(PREFNAME, THISVERSION);
     }

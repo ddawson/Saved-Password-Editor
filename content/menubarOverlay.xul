@@ -28,33 +28,33 @@
   <menupopup id="menu_ToolsPopup">
     <menuitem id="savedpasswordeditor-toolsmenuitem"
               class="menuitem-iconic"
-              label="&savedpasswords.label;"
-              tooltiptext="&savedpasswords.tooltip;"
-              accesskey="&savedpasswords.accesskey;"
+              standardlabel="&savedpasswords.label;"
+              standardtooltiptext="&savedpasswords.tooltip;"
+              standardaccesskey="&savedpasswords.accesskey;"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </menupopup>
   <menupopup id="taskPopup">
     <menuitem id="savedpasswordeditor-toolsmenuitem"
               class="menuitem-iconic"
-              label="&savedpasswords.label;"
-              tooltiptext="&savedpasswords.tooltip;"
-              accesskey="&savedpasswords.accesskey;"
+              standardlabel="&savedpasswords.label;"
+              standardtooltiptext="&savedpasswords.tooltip;"
+              standardaccesskey="&savedpasswords.accesskey;"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </menupopup>
   <menupopup id="tools-menupopup">
     <menuitem id="savedpasswordeditor-toolsmenuitem"
               class="menuitem-iconic"
-              label="&savedpasswords.label;"
-              tooltiptext="&savedpasswords.tooltip;"
-              accesskey="&savedpasswords.accesskey;"
+              standardlabel="&savedpasswords.label;"
+              standardtooltiptext="&savedpasswords.tooltip;"
+              standardaccesskey="&savedpasswords.accesskey;"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </menupopup>
   <vbox id="appmenuSecondaryPane">
     <menuitem id="savedpasswordeditor-appmenuitem"
               class="menuitem-iconic"
-              label="&savedpasswords.label;"
-              tooltiptext="&savedpasswords.tooltip;"
-              insertafter="appmenu_addons"
+              standardlabel="&savedpasswords.label;"
+              standardtooltiptext="&savedpasswords.tooltip;"
+              standardinsertafter="appmenu_addons"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </vbox>
   <script type="text/javascript"

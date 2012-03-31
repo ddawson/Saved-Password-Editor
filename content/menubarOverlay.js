@@ -25,9 +25,23 @@ window.addEventListener(
       getBranch("extensions.savedpasswordeditor.");
 
     function menuitemDynamic (evt) {
+      var mi = document.getElementById("savedpasswordeditor-toolsmenuitem");
+      var renameTo =
+        prefBranch.getComplexValue(
+          "rename_menuitem_to", Components.interfaces.nsISupportsString).data;
+      if (renameTo) {
+        mi.setAttribute("label", renameTo);
+        mi.removeAttribute("tooltiptext");
+        mi.removeAttribute("accesskey");
+        mi.setAttribute("style", "list-style-image:none;");
+      } else {
+        mi.setAttribute("label", mi.getAttribute("standardlabel"));
+        mi.setAttribute("tooltiptext", mi.getAttribute("standardtooltiptext"));
+        mi.setAttribute("accesskey", mi.getAttribute("standardaccesskey"));
+        mi.removeAttribute("style");
+      }
       var hidden = !prefBranch.getBoolPref("display_menuitem");
-      document.getElementById("savedpasswordeditor-toolsmenuitem").hidden =
-        hidden;
+      mi.hidden = hidden;
       return true;
     }
 
@@ -37,9 +51,23 @@ window.addEventListener(
     }
 
     function appmenuitemDynamic (evt) {
+      var mi = document.getElementById("savedpasswordeditor-appmenuitem");
+      var renameTo =
+        prefBranch.getComplexValue(
+          "rename_menuitem_to", Components.interfaces.nsISupportsString).data;
+      if (renameTo) {
+        mi.setAttribute("label", renameTo);
+        mi.removeAttribute("tooltiptext");
+        mi.removeAttribute("accesskey");
+        mi.setAttribute("style", "list-style-image:none;");
+      } else {
+        mi.setAttribute("label", mi.getAttribute("standardlabel"));
+        mi.setAttribute("tooltiptext", mi.getAttribute("standardtooltiptext"));
+        mi.setAttribute("accesskey", mi.getAttribute("standardaccesskey"));
+        mi.removeAttribute("style");
+      }
       var hidden = !prefBranch.getBoolPref("display_menuitem");
-      document.getElementById("savedpasswordeditor-appmenuitem").hidden =
-        hidden;
+      mi.hidden = hidden;
       return true;
     }
 

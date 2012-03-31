@@ -29,16 +29,42 @@
       <preference id="pref-display-menuitem"
                   name="extensions.savedpasswordeditor.display_menuitem"
                   type="bool"/>
+      <preference id="pref-rename-menuitem-to"
+                  name="extensions.savedpasswordeditor.rename_menuitem_to"
+                  type="string"/>
+      <preference id="pref-alwaysshowpasswords"
+                  name="extensions.savedpasswordeditor.always_show_passwords"
+                  type="bool"/>
+      <preference id="pref-forcepromptformasterpassword"
+          name="extensions.savedpasswordeditor.force_prompt_for_masterPassword"
+                  type="bool"/>
       <preference id="pref-showpassword"
                   name="extensions.savedpasswordeditor.showpassword"
                   type="int"/>
     </preferences>
     <checkbox id="displayMenuitem_ck" label="&displayMenuitem.label;"
               tooltiptext="&displayMenuitem.tooltip;"
-              preference="pref-display-menuitem"/>
+              preference="pref-display-menuitem"
+              oncommand="toggle_displayMenuitem();"/>
+    <hbox id="renameMenuitem_row" class="indent">
+      <label id="renameMenuitem_lbl"
+             value="&renameMenuitemTo.label;"
+             tooltiptext="&renameMenuitemTo.tooltip;"/>
+      <textbox id="renameMenuitem_text"
+               tooltiptext="&renameMenuitemTo.tooltip;"
+               preference="pref-rename-menuitem-to"/>
+    </hbox>
+    <checkbox id="alwaysshowpasswords_ck" label="&alwaysShowPasswords.label;"
+              tooltiptext="&alwaysShowPasswords.tooltip;"
+              preference="pref-alwaysshowpasswords"
+              oncommand="toggle_alwaysShowPasswords();"/>
+    <checkbox id="forcepromptformasterpassword_ck" class="indent"
+              label="&alwaysPromptForMasterPassword.label;"
+              tooltiptext="&alwaysPromptForMasterPassword.tooltip;"
+              preference="pref-forcepromptformasterpassword"/>
     <groupbox>
       <caption label="&passwordfield_caption.label;"/>
-      <radiogroup preference="pref-showpassword">
+      <radiogroup id="showPassword_rg" preference="pref-showpassword">
         <radio label="&passwordfield_alwayshide.label;" value="0"/>
         <radio label="&passwordfield_alwaysshow.label;" value="1"/>
         <radio label="&passwordfield_rememberlast.label;" value="2"
@@ -48,12 +74,5 @@
       </radiogroup>
     </groupbox>
   </prefpane>
-  <script type="text/javascript">
-  //<![CDATA[
-    if (Components.classes["@mozilla.org/xre/app-info;1"].
-        getService(Components.interfaces.nsIXULAppInfo).
-        ID == "{a79fe89b-6662-4ff4-8e88-09950ad4dfde}")
-      document.getElementById("displayMenuitem_ck").hidden = true;
-  //]]>
-  </script>
+  <script type="text/javascript" src="prefwindow.js"/>
 </prefwindow>

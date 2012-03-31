@@ -27,6 +27,25 @@ document.addEventListener(
   },
   false);
 
+window.addEventListener(
+  "load",
+  function (ev) {
+    if (spEditor.prefs.getBoolPref("always_show_passwords")) {
+      if (spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
+          && !masterPasswordLogin(function () true))
+        return;
+
+      showingPasswords = true;
+      document.getElementById("togglePasswords").label
+        = kSignonBundle.getString("hidePasswords");
+      document.getElementById("togglePasswords").accessKey
+        = kSignonBundle.getString("hidePasswordsAccessKey");
+      document.getElementById("passwordCol").hidden = false;
+      _filterPasswords();
+    }
+  },
+  false);
+
 document.getElementById("signonsTree").addEventListener(
   "select",
   function (ev) {
@@ -134,7 +153,7 @@ const spEditor = {
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
+      "centerscreen,dependent,dialog,chrome,modal",
       selSignons, 1, showingPasswords, ret);
 
     this.selectionsEnabled = true;
@@ -160,7 +179,7 @@ const spEditor = {
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
+      "centerscreen,dependent,dialog,chrome,modal",
       [signon], 2, showingPasswords, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
@@ -186,7 +205,7 @@ const spEditor = {
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
-      "centerscreen,dependent,dialog,chrome,modal,resizable",
+      "centerscreen,dependent,dialog,chrome,modal",
       [], 0, showingPasswords, ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;

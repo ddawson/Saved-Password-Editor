@@ -120,11 +120,15 @@ window.addEventListener(
 
 function afterLoadHandler () {
   var pwdShownInSPWin = window.arguments[2];
+  var alwaysShowPwds = prefs.getBoolPref("always_show_passwords");
   var showpwd = prefs.getIntPref("showpassword");
   var pwdField = el("password_text");
   var showpwdButton = el("showPassword_btn");
   var hidepwdButton = el("hidePassword_btn");
-  switch (showpwd) {
+
+  if (alwaysShowPwds && (pwdShownInSPWin || (haveOldSignon ? login() : true)))
+    pwdCurHidden = false;
+  else switch (showpwd) {
   case 0:
     pwdCurHidden = true;
     break;
@@ -186,17 +190,17 @@ function login () {
 function handle_typeSelect () {
   var idx = el("type_group").selectedIndex;
   if (idx == 0) {
-    el("formSubmitURL_row").collapsed = false;
-    el("httpRealm_row").collapsed = true;
-    el("usernameField_row").collapsed = false;
-    el("passwordField_row").collapsed = false;
-    el("guessFromPage_btn").collapsed = false;
+    el("formSubmitURL_lbl").disabled = el("formSubmitURL_text").disabled =
+      el("usernameField_lbl").disabled = el("usernameField_text").disabled =
+      el("passwordField_lbl").disabled = el("passwordField_text").disabled =
+      el("guessFromPage_btn").disabled = false;
+    el("httpRealm_lbl").disabled = el("httpRealm_text").disabled = true;
   } else {
-    el("formSubmitURL_row").collapsed = true;
-    el("httpRealm_row").collapsed = idx == 2;
-    el("usernameField_row").collapsed = true;
-    el("passwordField_row").collapsed = true;
-    el("guessFromPage_btn").collapsed = true;
+    el("formSubmitURL_lbl").disabled = el("formSubmitURL_text").disabled =
+      el("usernameField_lbl").disabled = el("usernameField_text").disabled =
+      el("passwordField_lbl").disabled = el("passwordField_text").disabled =
+      el("guessFromPage_btn").disabled = true;
+    el("httpRealm_lbl").disabled = el("httpRealm_text").disabled = idx == 2;
   }
 }
 
