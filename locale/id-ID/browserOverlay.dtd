@@ -1,0 +1,14 @@
+<!-- Open Saved Passwords -->
+<!ENTITY savedpasswords.label "Simpanan Kata Sandi">
+<!ENTITY savedpasswords.accesskey "s">
+<!ENTITY savedpasswords.tooltip "Buka dialog Simpanan Kata Sandi">
+<!-- Context menu -->
+<!ENTITY ctx_savelogininfo.label "Save login info">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "Add a saved password for this form">
+<!ENTITY ctx_editlogininfo.label "Edit login info">
+<!ENTITY ctx_editlogininfo.accesskey "E">
+<!ENTITY ctx_editlogininfo.tooltip "Edit a saved password for this form">
+<!ENTITY ctx_deletelogininfo.label "Delete login info">
+<!ENTITY ctx_deletelogininfo.accesskey "D">
+<!ENTITY ctx_deletelogininfo.tooltip "Delete a saved password for this form">

@@ -253,7 +253,7 @@ function guessParameters () {
       for (j = j - 1; j >= 0; j--) {
         let element = form.elements[j];
         if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
-        let elType = element.getAttribute("type");
+        let elType = element.getAttribute("type").toLowerCase();
         if (!elType || elType == "text" || elType == "email" || elType == "url"
             || elType == "tel" || elType == "number") {
           unameField = element;

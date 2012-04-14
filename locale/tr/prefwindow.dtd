@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Kayıtlı Şifre Editör ayarları">
 <!ENTITY displayMenuitem.label "Kısayolu menülere ekle">
 <!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır">
+<!ENTITY renameMenuitemTo.tooltip "Buraya &quot;Kayıtlı Şifreler&quot;, haricinde birşeyi kısayoldan çağırmak için birşeyler girin.İstemiyorsan &quot;Kayıtlı Şifrelere&quot;. dönmek için kutudaki değeri silin. Uyarı: Bu güvenlik için değil; şifreni koruman gerekiyorsa master şifresi kullanmalısın.">
+<!ENTITY alwaysShowPasswords.label "Şifreleri her zaman göster">
+<!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Kayıtlı Şifre Editörü ile ilgili tüm diyalog pencerelerinde Şifre satırı gösterilir.">
+<!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifre sor">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleştirildiğinde, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok işlemde şifre sorulmayacaktır.">
 <!ENTITY passwordfield_caption.label "Editör penceresindeki şifre alanı">
 <!ENTITY passwordfield_alwayshide.label "Editörü açarken şifreyi her zaman gizle">
 <!ENTITY passwordfield_alwaysshow.label "Editörü açarken şifreyi her zaman göster">

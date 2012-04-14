@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Agordoj de Saved Password Editor">
 <!ENTITY displayMenuitem.label "Inkluzivi fulmklavojn en menuoj">
 <!ENTITY displayMenuitem.tooltip "Aldonas enskribon &quot;Konservitaj pasvortoj&quot; al la menuo &quot;Ilaro&quot; kaj la menuo sub la butono Firefox kiel fulmoligilo al la pasvorta administrilo">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Renomi fulmoklavon al:">
+<!ENTITY renameMenuitemTo.tooltip "Enigu ion ĉi tie por elekti alian fulmoklavon ol por &quot;Konservitaj pasvortoj&quot;, se vi volas iomete malevidentigi ĝin por entrudantoj. Forigu la valoron por denove uzi &quot;Konservitaj pasvortoj&quot;. Atentu: tio ne estas anstataŭo por fakta sekureco; vi uzu ĉefpasvorton, se tio estas ebla, se vi devas protekti viajn pasvortojn.">
+<!ENTITY alwaysShowPasswords.label "Ĉiam montri pasvortojn">
+<!ENTITY alwaysShowPasswords.tooltip "Se tio estas ebligita, Saved Password Editor montros la pasvortan kolonon, kiam la dialogo de konservitaj pasvortoj malfermiĝas kaj la pasvorton, kiam la redaktila dialogo malfermiĝas.">
+<!ENTITY alwaysPromptForMasterPassword.label "Ĉiam postuli ĉefpasvorton">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Postulas ĉefpasvorton, kiam pasvortoj montriĝas en la dialogo de konservitaj pasvortoj. Se tio estas ebligita, tio neeviteble kaŭzos, ke duoabla invito aperas almenaŭ unufoje po sesio. Se tio estas malebligita, vi plej ofte ne estas petata enigi la ĉefpasvorton.">
 <!ENTITY passwordfield_caption.label "Pasvortkampo en la redaktila fenestro">
 <!ENTITY passwordfield_alwayshide.label "Ĉiam kaŝi pasvorton dum la redaktila fenestro estas malfermata">
 <!ENTITY passwordfield_alwaysshow.label "Ĉiam montri pasvorton, dum redaktila fenestro estas malfermata">

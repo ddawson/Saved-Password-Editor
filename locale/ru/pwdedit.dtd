@@ -1,0 +1,39 @@
+<!ENTITY savedpasswordeditor.title "Редактор сохранённых паролей">
+<!ENTITY signontype.label "Тип">
+<!ENTITY type_form.label "Веб-форма">
+<!ENTITY type_form.accesskey "В">
+<!ENTITY type_form.tooltip "A form contained in a web page">
+<!ENTITY type_annotated.label "Annotated">
+<!ENTITY type_annotated.accesskey "A">
+<!ENTITY type_annotated.tooltip "A login that requires a string in addition to the host to identify the service (e.g. HTTP authentication)">
+<!ENTITY type_other.label "Другое">
+<!ENTITY type_other.accesskey "Д">
+<!ENTITY type_other.tooltip "A login that requires only a host, username, and password">
+<!ENTITY hostname.label "Сервер">
+<!ENTITY hostname.tooltip "Протокол/имя сервера, к которому применяется пароль (например, http://www.example.com)">
+<!ENTITY formSubmitURL.label "Префикс адресата">
+<!ENTITY formSubmitURL.tooltip "Префикс формы передачи адреса">
+<!ENTITY annotation.label "Annotation">
+<!ENTITY annotation.tooltip "Additional string identifying the service to authenticate to (e.g. HTTP realm)">
+<!ENTITY username.label "Имя пользователя">
+<!ENTITY username.tooltip "Запоминать имя пользователя">
+<!ENTITY password.label "Пароль">
+<!ENTITY password.tooltip "Запоминать пароль">
+<!ENTITY usernameField.label "Имя поля «Имя пользователя»">
+<!ENTITY usernameField.tooltip "Имя атрибута, соответствующего полю имени пользователя в форме">
+<!ENTITY passwordField.label "Имя поля «Пароль»">
+<!ENTITY passwordField.tooltip "Имя атрибута, соответствующего полю пароля в форме">
+<!ENTITY showPassword.label "Показать">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Переключает видимость паролей">
+<!ENTITY hidePassword.label "Спрятать">
+<!ENTITY hidePassword.accesskey "С">
+<!ENTITY guessfrompage.label "Взять с текущей страницы">
+<!ENTITY guessfrompage.accesskey "В">
+<!ENTITY guessfrompage.tooltip "Заполнить эту форму опираясь на подходящую идентификационную форму на текущей странице">
+<!ENTITY prevform.label "Предыдущая форма">
+<!ENTITY prevform.accesskey "П">
+<!ENTITY prevform.tooltip "Попробовать предыдущую форму на странице">
+<!ENTITY nextform.label "Следующая форма">
+<!ENTITY nextform.accesskey "С">
+<!ENTITY nextform.tooltip "Попробовать следующую форму на странице">

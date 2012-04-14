@@ -17,9 +17,13 @@ locale	savedpasswordeditor	fi	locale/fi/
 locale	savedpasswordeditor	fr	locale/fr/
 locale	savedpasswordeditor	hsb	locale/hsb/
 locale	savedpasswordeditor	hu	locale/hu/
+locale	savedpasswordeditor	id-ID	locale/id-ID/
 locale	savedpasswordeditor	ja	locale/ja/
 locale	savedpasswordeditor	nl	locale/nl/
+locale	savedpasswordeditor	pl	locale/pl/
 locale	savedpasswordeditor	pt-BR	locale/pt-BR/
+locale	savedpasswordeditor	pt-PT	locale/pt-PT/
+locale	savedpasswordeditor	ru	locale/ru/
 locale	savedpasswordeditor	sr	locale/sr/
 locale	savedpasswordeditor	sv-SE	locale/sv-SE/
 locale	savedpasswordeditor	tr	locale/tr/

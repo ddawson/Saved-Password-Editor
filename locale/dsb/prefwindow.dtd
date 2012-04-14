@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
 <!ENTITY displayMenuitem.label "Skrotconku do menijow zapśimjeś">
 <!ENTITY displayMenuitem.tooltip "Pśidawa zapisk &quot;Składowane gronidła&quot; menijoju Rědy a menijoju pód tłocaškom Firefox ako spěšny wótkaz  k zastojnikoju gronidłow">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Skrotconku pśemjeniś do:">
+<!ENTITY renameMenuitemTo.tooltip "Zapódajśo něco how, aby wy druge skrotconku nježli za &quot;Skłaźone gronidła&quot; wubrał, jolic cośo to za njewopšawnjonych mjenjej widobnje cynił. Wulašujśo gódnotu, aby wy zasej &quot;Skłaźone gronidła&quot; wužywał. Glědajśo: to njejo narownanje za napšawdnu wěstotu; wy by měł głowne gronidło wužywaś, jolic to jo móžno, jolic musyśo swóje gronidła šćitaś.">
+<!ENTITY alwaysShowPasswords.label "Gronidła pśecej pokazaś">
+<!ENTITY alwaysShowPasswords.tooltip "Jolic to jo zmóžnjone, Saved passwords Editor pokažo słup gronidłow, gaž dialog skłaźonych gronidłow se wócynja a pokažo gronidło, gaž dialog editora se wócynja.">
+<!ENTITY alwaysPromptForMasterPassword.label "Pśecej głowne gronidło se pominaś">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Pomina se głowne gronidło, gaž gronidła pokazuju se w skłaźonych gronidłach. Jolic to jo zmóžnjone, pokažo se dwojne napominanje nanejmjenjej raz na pósejźenje. Jolic to jo znjemóžnjone, w nejwěcej padow was njenapominaju, głowne gronidło zapódaś.">
 <!ENTITY passwordfield_caption.label "Gronidłowe pólo we woknje editora">
 <!ENTITY passwordfield_alwayshide.label "Pśecej gronidło schowaś, gaž wokno editora se wócynja">
 <!ENTITY passwordfield_alwaysshow.label "Pśecej gronidło pokazaś, gaž wokno editora se wócynja">

@@ -1,7 +1,50 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
 <!ENTITY locale "dsb">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
 <!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
 <!ENTITY welcometospe "Witajśo k Saved Password Editor">
+<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Źěkujomy se wam, až wužywaśo <a id='addonlink'>Saved Password Editor</a>. Móžośo wobźěłowańsku funkcionalnosć wužywaś, gaž źośo k Rědy &gt; Opcije abo Wobźěłaś &gt; Nastajenja (we wótwisnosći wót wašogo źěłowego systema), z tym až wuběraśo rejtark &quot;Wěstota&quot;. Klikniśo pótom na tłocašk &quot;Składowane gronidła...&quot;. Móžośo teke jadnorje z menija Rědy abo (we Firefox wót wersije 4 pód Windowsom) z tłocaška Firefox pśistup na składowane gronidła měś. Tłocašk rědoweje kšomy stoj  wam teke k dispoziciji; aby wy jo wužywał, wubjeŕśo Naglěd &gt; Rědowe kšomy &gt; Pśiměriś..., abo klikniśo z pšaweju myškoweju tastu na rědowu kšomu a wubjeŕśo &quot;Pśiměriś...&quot;. Dialog składowanych gronidłow něnto wopśimujo menijowy tłocašk z pśikazami za pśidawanje a wobźěłowanje gronidłow, a we Firefox wót wersije 4.0, kontekstowy meni wopśimujo pśikaza &quot;Wobźěłaś&quot; a &quot;Klonowaś&quot;.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Źěkujomy se wam, až wužywaśo <a id='addonlink'>Saved Password Editor</a>. Móžośo wobźěłowańsku funkcionalnosć wužywaś, gaž źośo k Rědy &gt; Opcije abo Wobźěłaś &gt; Nastajenja (we wótwisnosći wót wašogo źěłowego systema), z tym až wuběraśo &quot;Gronidła&quot; na rejtarku &quot;Priwatnosć a Wěstota&quot;. Klikniśo pótom na tłocašk &quot;Składowane gronidła zastojiś&quot;. Móžośo teke jadnorje z menija Rědy pśistup na składowane gronidła měś. Tłocašk rěddoweje kšomy stoj wam teke k dispoziciji; aby wy jo wužywał, klikniśo z pšaweju myškoweju tastu na rědowu kšomu a wubjeŕśo &quot;Pśiměriś...&quot;. Dialog składowanych gronidłow něnto wopśimujo menijowy tłočašk z pśikazami za pśidawanje a wobźěłowanje gronidłow.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Źiwajśo na to, až dialog składowanych gronidłow jo zakładna komponenta z <span id='appname'></span>, a njesłuša k toś tomu rozšyrjenjeju, mimo górjejce naspomnjonych pśidatych funkcijow. Tłočašk rědoweje kšomy stoj jano komfortabelnosći dla  k dispoziciji, we wócakowanju, až někotare wužywarje kśě cesćej na ten dialog pśistup měś, ako wone by měli to howac.">
+<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Móžośo teke pśizjawjenja manipulěrowaś, kótarež su z wósebnym webformularom zwězane, z tym až kliknjośo z pšaweju tastu na jogo póla a wuběraśo akciju.">

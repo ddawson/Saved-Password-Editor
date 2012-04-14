@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Mentett jelszavak - szerkesztő">
 <!ENTITY displayMenuitem.label "Gyorsbillentyű megjelenítése a menükben">
 <!ENTITY displayMenuitem.tooltip "&quot;Mentett jelszavak&quot; menüpont hozzáadása az eszközök menühöz és a Windows/Linux menühöz mint gyorsbillentyű a jelszókezelőhöz">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Rövidítés átnevezése erre:">
+<!ENTITY renameMenuitemTo.tooltip "Írjon be ide valamit a rövidítés előhívásához a &quot;Saved Passwords&quot; kivételével, ha egyszerűsíteni kívánja azt. Törölje az értéket a &quot;Saved Passwords&quot; visszaállításához. Figyelem: ez nem helyettesíti a biztonságosságot; használja a mesterjelszót (ha lehetséges) a jelszavainak megóvása érdekében.">
+<!ENTITY alwaysShowPasswords.label "Jelszavak megjelenítése mindig">
+<!ENTITY alwaysShowPasswords.tooltip "Ha megjelölve, a Saved Password Editor megkísérli megjeleníteni a Jelszókezelő ablak megnyitásakor a jelszavak oszlopot.">
+<!ENTITY alwaysPromptForMasterPassword.label "Mindig kérje a mesterjelszót">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Rákérdez a mesterjelszóra, ha a Jelszókezelő ablakban megkísérli megjeleníteni a jelszavakat.">
 <!ENTITY passwordfield_caption.label "Jelszó-mező a szerkesztés ablakban">
 <!ENTITY passwordfield_alwayshide.label "Jelszavak elrejtése mindig a szerkesztő megnyitásakor">
 <!ENTITY passwordfield_alwaysshow.label "Jelszavak megjelenítése mindig a szerkesztő megnyitásakor">

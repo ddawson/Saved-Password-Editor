@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Inställningar för Saved Password Editor">
 <!ENTITY displayMenuitem.label "Inkludera genväg i menyer">
 <!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows/Linux Firefoxmeny som en genväg till lösenordshanteraren">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Byt namn på genväg till:">
+<!ENTITY renameMenuitemTo.tooltip "Här kan du ge menygenvägen &quot;Sparade lösenord&quot; ett annat namn, för att göra det mindre tydligt för andra som använder din dator. Ta bort värdet och lämna tomt för at gå tillbaka till &quot;Sparade lösenord&quot;. Varning: Det här ersätter inte riktiga säkerhetslösningar! Du bör använda ett huvudlösenord om du vill skydda dina lösenord.">
+<!ENTITY alwaysShowPasswords.label "Visa alltid lösenord">
+<!ENTITY alwaysShowPasswords.tooltip "Om detta alternativ markeras kommer Saved Password Editor att visa kolumnen Lösenord när fönstret &quot;Sparade lösenord&quot; öppnas och visa lösenordet när redigeringsrutan öppnas.">
+<!ENTITY alwaysPromptForMasterPassword.label "Fråga alltid efter huvudlösenord">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Ber dig att ange huvudlösenord när lösenord visas öppet i &quot;Sparade lösenord&quot;. Om alternativet markeras orsakar detta minst en dubbelt ställd fråga per session. Om det avmarkeras kommer du alltsom oftast inte att tillfrågas om huvudlösenord.">
 <!ENTITY passwordfield_caption.label "Lösenordsfält i redigeringsfönstret">
 <!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">

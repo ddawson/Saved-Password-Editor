@@ -1,0 +1,16 @@
+<!ENTITY prefwindow.title "Редактор сохранённых паролей — Настройки">
+<!ENTITY displayMenuitem.label "Добавить пункт в меню">
+<!ENTITY displayMenuitem.tooltip "Добавляет в меню Инструменты и окно Настройки пункт «Сохранённые пароли» для быстрого вызова менеджера паролей">
+<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY alwaysShowPasswords.label "Always show passwords">
+<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
+<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY passwordfield_caption.label "При открытии окна редактора паролей">
+<!ENTITY passwordfield_alwayshide.label "всегда скрывать пароли">
+<!ENTITY passwordfield_alwaysshow.label "всегда отображать пароли">
+<!ENTITY passwordfield_rememberlast.label "запоминать последнее состояние">
+<!ENTITY passwordfield_rememberlast.tooltip "Показывает или скрывает пароли в зависимости от того, что было выбрано в прошлый раз">
+<!ENTITY passwordfield_followspwin.label "следить за списком">
+<!ENTITY passwordfield_followspwin.tooltip "Показывает пароли тогда и только тогда, если они сейчас отображаются в окне «Сохранённые пароли»">

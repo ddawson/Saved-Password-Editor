@@ -88,7 +88,7 @@ var SavedPasswordEditor = {
     for (var i = 0; i < form.elements.length; i++) {
       let element = form.elements[i];
       if (element instanceof Ci.nsIDOMHTMLInputElement
-          && element.type == "password") {
+          && element.type.toLowerCase() == "password") {
         passwordField = element;
         break;
       }
@@ -99,7 +99,7 @@ var SavedPasswordEditor = {
     for (i = i - 1; i >= 0; i--) {
       let element = form.elements[i];
       if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
-      let elType = element.getAttribute("type");
+      let elType = element.getAttribute("type").toLowerCase();
       if (!elType || elType == "text" || elType == "email" || elType == "url"
           || elType == "tel" || elType == "number") {
         usernameField = element;

@@ -1,0 +1,11 @@
+<!-- TRANSLATORS - be aware that these access keys are used in several places:
+     the context menu introduced in Fx 4.0, my menu-button, and as shortcut
+     keys for the whole window. Make sure your choices don't conflict in any of
+     those contexts. 
+-->
+<!ENTITY newentry.label "Baru">
+<!ENTITY newentry.accesskey "B">
+<!ENTITY editentry.label "Edit">
+<!ENTITY editentry.accesskey "E">
+<!ENTITY cloneentry.label "Klon">
+<!ENTITY cloneentry.accesskey "K">

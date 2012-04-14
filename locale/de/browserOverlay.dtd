@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Gespeicherte Passwörter">
 <!ENTITY savedpasswords.accesskey "p">
 <!ENTITY savedpasswords.tooltip "Öffne den Gespeicherte-Passwörter-Dialog">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Anmeldedaten speichern">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "Füge ein gespeichertes Passwort für dieses Formular hinzu">

@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Opgeslagen wachtwoorden">
 <!ENTITY savedpasswords.accesskey "s">
 <!ENTITY savedpasswords.tooltip "Het dialoogvenster Opgeslagen wachtwoorden openen">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Aanmeldinformatie opslaan">
 <!ENTITY ctx_savelogininfo.accesskey "p">
 <!ENTITY ctx_savelogininfo.tooltip "Opgeslagen wachtwoord voor dit formulier toevoegen">

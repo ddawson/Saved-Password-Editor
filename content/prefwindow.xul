@@ -18,6 +18,7 @@
 -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+
 <!DOCTYPE prefwindow SYSTEM
           "chrome://savedpasswordeditor/locale/prefwindow.dtd">
 
@@ -46,9 +47,8 @@
               tooltiptext="&displayMenuitem.tooltip;"
               preference="pref-display-menuitem"
               oncommand="toggle_displayMenuitem();"/>
-    <hbox id="renameMenuitem_row" class="indent">
-      <label id="renameMenuitem_lbl"
-             value="&renameMenuitemTo.label;"
+    <hbox id="renameMenuitem_row" align="center" class="indent">
+      <label id="renameMenuitem_lbl" value="&renameMenuitemTo.label;"
              tooltiptext="&renameMenuitemTo.tooltip;"/>
       <textbox id="renameMenuitem_text"
                tooltiptext="&renameMenuitemTo.tooltip;"

@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Mots de passe enregistrés">
 <!ENTITY savedpasswords.accesskey "p">
 <!ENTITY savedpasswords.tooltip "Ouvre la fenêtre de dialogue des mots de passe enregistrés">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Enregistrer les informations de connexion">
 <!ENTITY ctx_savelogininfo.accesskey "E">
 <!ENTITY ctx_savelogininfo.tooltip "Ajoute un mot de passe enregistré à ce formulaire">

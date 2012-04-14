@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Saved Passwords">
 <!ENTITY savedpasswords.accesskey "k">
 <!ENTITY savedpasswords.tooltip "Kayıtlı Şifreleri aç">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Giriş bilgisini kaydet">
 <!ENTITY ctx_savelogininfo.accesskey "K">
 <!ENTITY ctx_savelogininfo.tooltip "Bu form için parola ekle">

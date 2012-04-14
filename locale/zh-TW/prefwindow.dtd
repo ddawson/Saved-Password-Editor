@@ -1,16 +1,16 @@
 <!ENTITY prefwindow.title "Saved Password Editor 偏好設定">
 <!ENTITY displayMenuitem.label "在選單內加入捷徑">
-<!ENTITY displayMenuitem.tooltip "將 &quot;已存密碼&quot; 加入工具選單及 Windows/Linux 程式功能表作為密碼管理員的捷徑">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY displayMenuitem.tooltip "將「已存密碼」加入工具選單及 Windows/Linux 程式功能表作為密碼管理員的捷徑">
+<!ENTITY renameMenuitemTo.label "重新命名捷徑:">
+<!ENTITY renameMenuitemTo.tooltip "若您想讓預設的「已存密碼」看起來低調一點，請在此輸入自訂的名稱。清空本欄位會使捷徑名還原為「已存密碼」。請注意：本功能無法確保安全性，若您感到有必要保護好自己的密碼，請使用主控密碼。">
+<!ENTITY alwaysShowPasswords.label "總是顯示密碼">
+<!ENTITY alwaysShowPasswords.tooltip "勾選後，Saved Password Editor 會強制顯示密碼管理員中的密碼欄，編輯密碼視窗中的密碼也會顯示為明碼。">
+<!ENTITY alwaysPromptForMasterPassword.label "總是要求主控密碼">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "在密碼管理員中顯示密碼之前，先提示輸入主控密碼。啟用這個選項後，必然會導致每個瀏覽階段最少會出現一次重複提示。若停用此選項，大部分情況都不會提示您輸入主控密碼。">
 <!ENTITY passwordfield_caption.label "編輯視窗中的密碼欄位">
 <!ENTITY passwordfield_alwayshide.label "開啟編輯視窗時總是隱藏密碼">
 <!ENTITY passwordfield_alwaysshow.label "開啟編輯視窗時總是顯示密碼">
 <!ENTITY passwordfield_rememberlast.label "記住上次的狀態">
 <!ENTITY passwordfield_rememberlast.tooltip "顯示或隱藏沿用上次視窗開始時的狀態">
 <!ENTITY passwordfield_followspwin.label "沿用已存密碼清單狀態">
-<!ENTITY passwordfield_followspwin.tooltip "只在已存密碼視窗有顯示密碼時才會顯示">
+<!ENTITY passwordfield_followspwin.tooltip "只在密碼管理員已設定為顯示密碼時才會顯示">

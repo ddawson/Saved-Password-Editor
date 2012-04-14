@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
 <!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
 <!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và trình đơn Firefox của Windows/Linux để làm lệnh tắt gọi trình quản lý mật khẩu">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Đổi tên đường dẫn tắt thành:">
+<!ENTITY renameMenuitemTo.tooltip "Điền gì đó vào đây để gọi đường dẫn tắt khác với &quot;Saved Passwords&quot;, nếu bạn muốn những người khác không tò mò xem trộm. Xóa giá trị để trở lại dùng &quot;Saved Passwords&quot;. Lưu ý: đây không phải là cách giúp thay thế cho việc tăng cường bảo mật; bạn nên dùng mật khẩu chủ nếu bạn muốn bảo vệ các mật khẩu của mình.">
+<!ENTITY alwaysShowPasswords.label "Luôn hiển thị các mật khẩu">
+<!ENTITY alwaysShowPasswords.tooltip "Nếu được tích, Saved Password Editor sẽ làm cho cột Mật Khẩu hiển thị khi hộp thoại Saved Password mở ra, và hiển thị mật khẩu khi hộp thoại chỉnh sửa mật khẩu được mở.">
+<!ENTITY alwaysPromptForMasterPassword.label "Luôn hỏi mật khẩu chủ">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Hỏi mật khẩu chủ khi hiển thị các mật khẩu trong Saved Passwords. Nếu bật, sẽ không tránh khỏi việc bị hỏi 2 lần trong mỗi phiên. Nếu tắt, trong phần lớn trường hợp, bạn sẽ không bị hỏi mật khẩu chủ.">
 <!ENTITY passwordfield_caption.label "Hộp mật khẩu trong cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_alwayshide.label "Luôn ẩn mật khẩu khi mở cửa sổ đổi mật khẩu">
 <!ENTITY passwordfield_alwaysshow.label "Luôn hiện mật khẩu khi mở cửa sổ đổi mật khẩu">

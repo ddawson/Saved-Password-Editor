@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Saved Password Editor 設定">
 <!ENTITY displayMenuitem.label "メニューにショートカットメニューを追加する">
 <!ENTITY displayMenuitem.tooltip "[ツール] メニューと Windows アプリメニューに、パスワードマネージャを開く [保存されているパスワード] メニューを追加します">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "ショートカットを名前変更:">
+<!ENTITY renameMenuitemTo.tooltip "ショートカット名を &quot;Saved Passwords&quot; から変更します。この文字列を削除して空欄にすると初期値の &quot;Saved Passwords&quot; に戻ります。警告: この設定は適切なセキュリティのための代替にはなりません。パスワードを保護する必要がある時はマスターパスワードを使用してください。">
+<!ENTITY alwaysShowPasswords.label "パスワードを常に表示する">
+<!ENTITY alwaysShowPasswords.tooltip "チェックを入れると、保存されたパスワードダイアログを開いた時に常にパスワードの列が表示されるようになります。">
+<!ENTITY alwaysPromptForMasterPassword.label "常にマスターパスワードの入力を求める">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "保存されたパスワードダイアログでパスワードを表示する時にマスターパスワードの入力が求めらます。この設定を有効にすると、一度のセッションごとに二回求められ、避けることはできません。無効にすると、マスターパスワードの入力は求められません。">
 <!ENTITY passwordfield_caption.label "編集ウィンドウのパスワードフィールド">
 <!ENTITY passwordfield_alwayshide.label "編集ウィンドウを開いた時、常にパスワードを隠す">
 <!ENTITY passwordfield_alwaysshow.label "編集ウィンドウを開いた時、常にパスワードを表示する">

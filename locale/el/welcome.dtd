@@ -1,7 +1,58 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+
+
+-->
 <!ENTITY locale "el">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+
+
+-->
 <!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+
+
+-->
 <!ENTITY welcometospe "Καλώς ήλθατε στον Επεξεργαστή αποθηκευμένων κωδικών πρόσβασης (Saved Password Editor)">
+<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Σας ευχαριστούμε για τη χρήση της επέκτασης <a id='addonlink'>&quot;Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης&quot;</a>. Μπορείτε να έχετε πρόσβαση στη λειτουργία επεξεργασίας μεταβαίνοντας στο μενού &quot;Εργαλεία &gt; Επιλογές&quot;, ή στο μενού &quot;Επεξεργασία &gt; Προτιμήσεις&quot; (ανάλογα με το λειτουργικό σας σύστημα), επιλέγοντας το τμήμα παραθύρου &quot;Ασφάλεια&quot; και στη συνέχεια, κάνοντας κλικ στο κουμπί &quot;Αποθηκευμένοι κωδικοί...&quot;. Επίσης, μπορείτε απλά να έχετε πρόσβαση στους αποθηκευμένους κωδικούς από το μενού &quot;Εργαλεία&quot; ή (στον Firefox 4 και νεότερες εκδόσεις σε Windows και Linux) από το μενού του Firefox. Για ευκολία σας, διατίθεται επίσης και ένα κουμπί εργαλειοθήκης· για πρόσβαση σε αυτό, επιλέξτε &quot;Προβολή &gt; Εργαλειοθήκες &gt; Προσαρμογή...&quot;, ή κάντε δεξί κλικ στην εργαλειοθήκη και επιλέξτε &quot;Προσαρμογή...&quot;. Το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; περιέχει τώρα εντολές για την προσθήκη και επεξεργασία κωδικών πρόσβασης, σε ένα κουμπί-μενού και στο μενού περιεχομένου.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+
+
+-->
 <!ENTITY welcomepara1_sm "Σας ευχαριστούμε για τη χρήση της επέκτασης <a id='addonlink'>&quot;Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης&quot;</a>. Μπορείτε να έχετε πρόσβαση στη λειτουργία επεξεργασίας μεταβαίνοντας στο μενού &quot;Εργαλεία &gt; Επιλογές&quot;, ή στο μενού &quot;Επεξεργασία &gt; Προτιμήσεις&quot; (ανάλογα με το λειτουργικό σας σύστημα), περιηγούμενοι στο τμήμα παραθύρου &quot;Κωδικοί&quot; σε &quot;Ιδιωτικό απόρρητο &amp; Ασφάλεια&quot; και στη συνέχεια, κάνοντας κλικ στο κουμπί &quot;Διαχείριση Αποθηκευμένων Κωδικών&quot;. Επίσης, μπορείτε απλά να έχετε πρόσβαση στους αποθηκευμένους κωδικούς από το μενού &quot;Εργαλεία&quot;. Για ευκολία σας, διατίθεται επίσης και ένα κουμπί εργαλειοθήκης· για πρόσβαση σε αυτό, κάντε δεξί κλικ στην εργαλειοθήκη και επιλέξτε &quot;Προσαρμογή...&quot;. Το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; περιέχει τώρα εντολές για την προσθήκη και επεξεργασία κωδικών πρόσβασης, σε ένα κουμπί-μενού και στο μενού περιεχομένου.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Έχετε υπόψιν σας ότι το πλαίσιο διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot; είναι ένα βασικό στοιχείο του <span id='appname'></span> και δεν παρέχεται από αυτήν την επέκταση, εκτός από τις προστεθείσες λειτουργίες που αναφέρονται παραπάνω. Το κουμπί εργαλειοθήκης παρέχεται μόνο για λόγους ευκολίας, υπό την προοπτική ότι ορισμένοι χρήστες αυτής της επέκτασης θα θέλουν να έχουν πρόσβαση στο πλαίσιο διαλόγου πολύ πιο συχνά απ' ό,τι ενδέχεται διαφορετικά.">
+<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Μπορείτε επίσης να χειριστείτε συνδέσεις, συσχετισμένες με μια συγκεκριμένη φόρμα ιστού, κάνοντας δεξί κλικ σε οποιοδήποτε από τα πεδία της και επιλέγοντας μια ενέργεια.">

@@ -58,33 +58,33 @@
       <column/>
     </columns>
     <rows>
-      <row>
+      <row align="center">
         <label control="hostname_text" value="&hostname.label;"
                tooltiptext="&hostname.tooltip;"/>
         <textbox id="hostname_text" class="qtextbox"
                  tooltiptext="&hostname.tooltip;"/>
       </row>
-      <row>
+      <row align="center">
         <label id="formSubmitURL_lbl" control="formSubmitURL_text"
                value="&formSubmitURL.label;"
                tooltiptext="&formSubmitURL.tooltip;"/>
         <textbox id="formSubmitURL_text" class="qtextbox"
                  tooltiptext="&formSubmitURL.tooltip;"/>
       </row>
-      <row>
+      <row align="center">
         <label id="httpRealm_lbl" control="httpRealm_text"
                value="&annotation.label;"
                tooltiptext="&annotation.tooltip;"/>
         <textbox id="httpRealm_text" class="qtextbox"
                  tooltiptext="&annotation.tooltip;"/>
       </row>
-      <row>
+      <row align="center">
         <label control="username_text" value="&username.label;"
                tooltiptext="&username.tooltip;"/>
         <textbox id="username_text" class="qtextbox"
                  tooltiptext="&username.tooltip;"/>
       </row>
-      <row>
+      <row align="center">
         <label control="password_text" value="&password.label;"
                tooltiptext="&password.tooltip;"/>
         <textbox persist="type" id="password_text" class="qtextbox"
@@ -98,16 +98,16 @@
                 tooltiptext="&showPassword.tooltip;"
                 oncommand="togglePasswordView();" hidden="true"/>
       </row>
-      <row>
+      <row align="center">
         <label id="usernameField_lbl" control="usernameField_text"
                value="&usernameField.label;"
                tooltiptext="&usernameField.tooltip;"/>
         <textbox id="usernameField_text" class="qtextbox"
                  tooltiptext="&usernameField.tooltip;"/>
       </row>
-      <row>
+      <row align="center">
         <label id="passwordField_lbl" control="passwordField_text"
-               value="&passwordField.label;"
+               align="center" value="&passwordField.label;"
                tooltiptext="&passwordField.tooltip;"/>
         <textbox id="passwordField_text" class="qtextbox"
                  tooltiptext="&passwordField.tooltip;"/>

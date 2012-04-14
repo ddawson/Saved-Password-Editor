@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Preferências do Editor de Senhas Salvas">
 <!ENTITY displayMenuitem.label "Incluir atalhos nos menus">
 <!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas e janela do complemento como um atalho para o gerenciados de senhas">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Renomear o atalho para:">
+<!ENTITY renameMenuitemTo.tooltip "Entre um nome para o atalho (diferente de &quot;Senhas Salvas&quot;, para não ser tão óbvio). Deixe em branco para usar o nome &quot;Senhas Salvas&quot;. Aviso: isto não substitui uma segurança adequada; você deve usar uma senha mestre quando possível para proteger suas senhas.">
+<!ENTITY alwaysShowPasswords.label "Sempre exibir senhas">
+<!ENTITY alwaysShowPasswords.tooltip "Se ativada, O Editor de Senhas Salvas fará com que a coluna Senha seja exibida ao abrir a janela Senhas Salvas e exibirá a senha ao abrir o editor.">
+<!ENTITY alwaysPromptForMasterPassword.label "Sempre pedir senha mestre">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Solicita a senha mestre quando for exibir senhas em Senhas Salvas. Se ativado, isto causará um duplo pedido de senha pelo uma vez em cada seção. Se desativado, na maior parte das vezes não será solicitada a senha mestre.">
 <!ENTITY passwordfield_caption.label "Campo senha na janela do editor">
 <!ENTITY passwordfield_alwayshide.label "Sempre ocultar senhas ao abrir a janela do editor">
 <!ENTITY passwordfield_alwaysshow.label "Sempre exibir senhas ao abrir a janela do editor">

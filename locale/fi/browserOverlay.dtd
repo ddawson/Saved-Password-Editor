@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Tallennetut salasanat">
 <!ENTITY savedpasswords.accesskey "e">
 <!ENTITY savedpasswords.tooltip "Avaa tallennettujen salasanojen valintaikkuna">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Tallenna kirjautumistiedot">
 <!ENTITY ctx_savelogininfo.accesskey "T">
 <!ENTITY ctx_savelogininfo.tooltip "Lisää salasana tälle lomakkeelle">

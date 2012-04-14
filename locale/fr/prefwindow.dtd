@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
 <!ENTITY displayMenuitem.label "Inclure le raccourci dans les menus">
 <!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Renommer le raccourci en :">
+<!ENTITY renameMenuitemTo.tooltip "Saisissez ici un autre nom de raccourci que ;Saved Passwords&quot; si vous voulez le rendre moins évident pour les intrus. Effacer cette valeur si vous voulez revenir à ;Saved Passwords&quot;. Attention : ceci n'assure nullement une sécurité particulière. vous devriez utiliser un mot de passe principal autant que possible si vous avez besoin de protéger vos mots de passe.">
+<!ENTITY alwaysShowPasswords.label "Toujours afficher les mots de passe">
+<!ENTITY alwaysShowPasswords.tooltip "Si la case est cochée, Saved Password Editor affichera la colonne des mots de passe à l'ouverture de la fenêtre de l'extension, et le mot de passe sera affiché quand la fenêtre d'édition sera ouverte.">
+<!ENTITY alwaysPromptForMasterPassword.label "Toujours demander le mot de passe principal">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Demande le mot de passe principal quand les mots de passe enregistrés sont affichés. Si cette fonction est activée, vous serez sollicité au moins deux fois par session par cette demande. Si elle est désactivée, dans la plupart des cas on ne vous demandera pas le mot de passe principal.">
 <!ENTITY passwordfield_caption.label "Champ de mot de passe dans la fenêtre de l'éditeur">
 <!ENTITY passwordfield_alwayshide.label "Toujours masquer le mot de passe à l'ouverture de la fenêtre de l'éditeur">
 <!ENTITY passwordfield_alwaysshow.label "Toujours afficher le mot de passe à l'ouverture de la fenêtre de l'éditeur">

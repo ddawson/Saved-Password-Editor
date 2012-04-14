@@ -1,12 +1,12 @@
 <!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
 <!ENTITY displayMenuitem.label "Skrótšenku do menijow zapřijeć">
 <!ENTITY displayMenuitem.tooltip "Přidawa zapisk &quot;Składowane hesła&quot; menijej Nastroje a menijej pod tłóčatkom Firefox jako spěšny wotkaz  k zrjadowakej hesłow">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY renameMenuitemTo.label "Skrótšenki přemjenować do:">
+<!ENTITY renameMenuitemTo.tooltip "Zapodajće něšto tu, zo byšće druhe skrótšenku wubrał, hač za &quot;Składowane hesła&quot;, jeli chceće ju za njewoprawnjenych mjenje wočiwidnje činił. Zhašaj hódnotu, zo byšće zaso &quot;Składowane hesła&quot; wužiwał. Kedźbu: to njeje narunanje za woprawdźitu wěstotu; wy měł hłowne hesło wužiwać, jeli to je móžno, jeli dyrbiće swoje hesła škitać.">
+<!ENTITY alwaysShowPasswords.label "Hesła přeco pokazać">
+<!ENTITY alwaysShowPasswords.tooltip "Jeli to je zmóžnjeny, Saved Passwords Editor pokaza hesłowu špaltu, hdyž dialog składowanych hesłow so wočinja a pokaza hesło, hdyž dialog editora so wočinja.">
+<!ENTITY alwaysPromptForMasterPassword.label "Přeco hłowne hesło žadać">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Žada hłowne hesło, hdyž so hesła w składowanych hesłach pokazuja. Jeli to je zmóžnjene, so na kóždy pad dwójna namołwa znajmjeńša jónu na posedźenje stawa. Jeli to je znjemóžnjene, wam zwjetša njekazaja, hłowne hesło zapodać.">
 <!ENTITY passwordfield_caption.label "Hesłowe polo we woknje editora">
 <!ENTITY passwordfield_alwayshide.label "Hesło přeco schować, hdyž so wokno editora wočinja">
 <!ENTITY passwordfield_alwaysshow.label "Hesło přeco pokazać, hdyž so wokno editora wočinja">

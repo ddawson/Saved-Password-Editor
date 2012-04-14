@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Składowane gronidła">
 <!ENTITY savedpasswords.accesskey "S">
 <!ENTITY savedpasswords.tooltip "Dialog składowanych gronidłow wócyniś">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Pśizjawjeńske informacije składowaś">
 <!ENTITY ctx_savelogininfo.accesskey "P">
 <!ENTITY ctx_savelogininfo.tooltip "Składowane gronidło za toś ten formular pśidaś">
