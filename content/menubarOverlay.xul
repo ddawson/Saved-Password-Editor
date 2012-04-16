@@ -54,7 +54,7 @@
               class="menuitem-iconic"
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
-              standardinsertafter="appmenu_addons"
+              insertafter="appmenu_addons"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </vbox>
   <script type="text/javascript"
