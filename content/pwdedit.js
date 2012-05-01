@@ -82,8 +82,7 @@ window.addEventListener(
     var type;
     if (!oldSignons[0].httpRealm)
       type = 0;
-    else if (el("httpRealm_text").indefinite
-             || oldSignons[0].hostname != oldSignons[0].httpRealm)
+    else if (oldSignons[0].hostname != oldSignons[0].httpRealm)
       type = 1;
     else
       type = 2;
@@ -93,7 +92,7 @@ window.addEventListener(
       let otherType;
       if (!oldSignons[i].httpRealm)
         otherType = 0;
-      else if (oldSignons[i].hostname.match(/^http/))
+      else if (oldSignons[i].hostname != oldSignons[i].httpRealm)
         otherType = 1;
       else
         otherType = 2;

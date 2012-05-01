@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Składowane hesła">
 <!ENTITY savedpasswords.accesskey "S">
 <!ENTITY savedpasswords.tooltip "Dialog składowanych hesłow wočinić">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Přizjewjenske informacije składować">
 <!ENTITY ctx_savelogininfo.accesskey "P">
 <!ENTITY ctx_savelogininfo.tooltip "Składowane hesło za tutón formular přidać">

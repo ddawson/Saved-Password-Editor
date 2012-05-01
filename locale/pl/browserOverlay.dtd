@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Zapamiętane hasła">
 <!ENTITY savedpasswords.accesskey "h">
 <!ENTITY savedpasswords.tooltip "Otwórz okno zapamiętanych haseł">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Save login info">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "Add a saved password for this form">

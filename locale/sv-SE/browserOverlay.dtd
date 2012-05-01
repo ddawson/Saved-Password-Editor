@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Sparade lösenord">
 <!ENTITY savedpasswords.accesskey "l">
 <!ENTITY savedpasswords.tooltip "Öppna dialogen &quot;Sparade lösenord&quot;">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Spara inloggningsuppgifter">
 <!ENTITY ctx_savelogininfo.accesskey "p">
 <!ENTITY ctx_savelogininfo.tooltip "Lägg till ett sparat lösenord för detta formulär">

@@ -1,50 +1,7 @@
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
--->
 <!ENTITY locale "fi">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
--->
 <!ENTITY layoutdirection "LTR">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
--->
 <!ENTITY welcometospe "Tervetuloa tallennettujen salasanojen muokkausohjelmaan">
-<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruutuun ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta tai (Firefox 4:ssä ja myöhemmissä versioissa Windowsissa ja Linuxissa) Firefox-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
--->
 <!ENTITY welcomepara1_sm "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruudun ”Salasanat”-välilehdelle ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Huomaa, että tallennettujen salasanojen valintaikkuna on <span id='appname'></span>-sovelluksen peruskomponentti, eikä sen toteutus tule tämän laajennuksen kautta, lukuun ottamatta edellä mainittuja toimintoja. Työkalupalkkipainike on lisätty käyttömukavuuden parantamiseksi sillä oletuksella, että jotkut laajennuksen käyttäjät saattavat haluta käyttää valintaikkunaa paljon useammin kuin aiemmin.">
-<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Voit myös muokata tiettyyn lomakkeeseen liittyviä kirjautumistietoja napsauttamalla jotakin sen kentistä oikealla painikkeella ja valitsemalla toiminnon.">

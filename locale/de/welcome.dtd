@@ -1,50 +1,7 @@
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
--->
 <!ENTITY locale "de">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
--->
 <!ENTITY layoutdirection "LTR">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
--->
 <!ENTITY welcometospe "Willkommen im Passworteditor">
-<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den Tab &quot;Sicherheit&quot; öffnen und dort den Button &quot;Gespeicherte Passwörter…&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; oder (in Firefox 4 oder höher unter Windows) dem Firefox-Menü aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, wählen Sie Ansicht &gt; Symbolleisten &gt; Anpassen… aus oder klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen…&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern, und in FIrefox 4 enthält das Kontextmenü zudem die Befehle &quot;Ändern&quot; und &quot;Klonen&quot;.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
--->
 <!ENTITY welcomepara1_sm "Danke, dass Sie den <a id='addonlink'>Passworteditor</a> verwenden. Sie können die Editorfunktionen via Extras &gt; Einstellungen… oder Bearbeiten &gt; Einstellungen (abhängig von Ihrem Betriebssystem) aufrufen, indem Sie anschließend den &quot;Passwörter&quot;-Dialog unter &quot;Datenschutz &amp; Sicherheit&quot; aufrufen und dort die Schaltfläche &quot;Gespeicherte Passwörter verwalten&quot; betätigen. Sie können dem Editor auch einfach aus dem Menü &quot;Extras&quot; aufrufen. Eine Symbolleistenschaltfläche steht Ihnen ebenfalls zur Verfügung. Um sie zu verwenden, klicken Sie mit der rechten Maustaste auf die Symbolleiste und klicken Sie auf &quot;Anpassen...&quot;. Der Dialog enthält nun einen Menüeintrag mit Befehlen zum Hinzufügen und Ändern von Passwörtern.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Beachten Sie, dass der Gespeicherte-Passwörter-Dialog eine Kernkomponente von <span id='appname'></span> ist und abgesehen von den zwei hinzugefügten Schaltflächen nicht von dieser Erweiterung bereitgestellt wird. Die Symbolleistenschaltfläche wird nur der Bequemlichkeit wegen in der Erwartung angeboten, dass einige Benutzer dieser Erweiterung den Dialog nun weit häufiger nutzen werden, als es sonst der Fall wäre.">
-<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Sie können auch Anmeldedaten, die mit einem bestimmten Webformular verknüpft sind, ändern, indem Sie mit der rechten Maustaste auf eines seiner Felder klicken und eine Aktion auswählen.">

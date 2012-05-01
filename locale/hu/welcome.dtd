@@ -1,50 +1,7 @@
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
--->
 <!ENTITY locale "hu">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
--->
 <!ENTITY layoutdirection "LTR">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
--->
 <!ENTITY welcometospe "Üdvözöljük a Saved Password Editor kiterjesztében">
-<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Köszönjük, hogy a <a id='addonlink'>Saved Password Editor</a> kiterjesztést használja. A szerkesztés funkció elérhető az Eszközök &gt; Beállítások, vagy Szerkesztés &gt; Beállítások (az operációs rendszertől függően) menüből a &quot;Biztonság&quot; panel kiválasztásával. A mentett jeszavak hozzáférhetőek az eszköztár menüből, vagy (Windows alatt Firefox 4-ben) az alkalmazások menüből. Az eszköztár gomb is elérhető a Nézet &gt; Eszköztár &gt; Testreszabás…, vagy jobb kattintással az eszköztáron és a &quot;Testreszabás…&quot; kiválasztásával. A mentett jelszavak párbeszédablak tartalmaz már egy menü-gombot a jelszavak hozzáadásához és szerkesztéséhez. Firefox 4.0 alatt a helyi menü tartalmaz &quot;Szerkesztés&quot; és &quot;Klónozás&quot; parancsokat is.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
--->
 <!ENTITY welcomepara1_sm "Köszönjük, hogy a <a id='addonlink'>Saved Password Editor</a> kiterjesztést választotta. A szerkesztés funkció elérhető az Eszközök &gt; Beállítások, vagy Szerkesztés &gt; Beállítások (az operációs rendszertől függően) menüből a &quot;Jelszavak&quot; panel kiválasztásával az &quot;Adatvédelem &amp; Biztonság&quot;-ra, majd a &quot;Mentett jelszavak kezelése&quot; gombra kattintva. A mentett jelszavak az eszközök menüből is elérhetőek. Egy eszköztár gomb is rendelkezésre áll, jobb kattintással az eszköztáron és a &quot;Testreszabás…&quot; menüpont kiválasztásával érhető el. A mentett jelszavak párbeszédablak tartalmaz egy menü-gombot, amellyel gyorsan elérhető a jelszavak hozzáadása és szerkesztése.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Jegyezze meg, hogy a Mentett jelszavak párbeszédablak <span id='appname'></span> komponensen alapszik, és nem kizárólag e kiterjesztés által érhető el. Kivételt képez a két hozzáadott gomb. Az eszköztár gomb csak a gyorsabb elérhetőség érdekében lett beépítve, mert több felhasználó gyakrabban kíván hozzáférni a párbeszédablakhoz.">
-<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Bejelentkezési adat módosítása az űrlap bármely mezejére kattintva az egér jobb gombjával és a megfelelő műveletet kiválasztva.">

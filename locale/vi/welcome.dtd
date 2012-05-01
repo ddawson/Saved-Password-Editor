@@ -1,50 +1,7 @@
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
--->
 <!ENTITY locale "vi">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
--->
 <!ENTITY layoutdirection "LTR">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
--->
 <!ENTITY welcometospe "Chào mừng bạn đến với Saved Password Editor">
-<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa mật khẩu bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), chọn thẻ &quot;Security&quot; sau đó ấn nút &quot;Saved Passwords…&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools hoặc từ trình đơn Firefox (từ phiên bản Firefox 4 trở đi trên Windows và Linux). Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn hãy chọn View &gt; Toolbars &gt; Customize…, hoặc ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu trong cả nút trình đơn, và trình đơn ngữ cảnh.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
--->
 <!ENTITY welcomepara1_sm "Cảm ơn bạn đã sử dụng <a id='addonlink'>Saved Password Editor</a>. Bạn có thể sử dụng chức năng chỉnh sửa bằng cách vào Tools &gt; Options, hoặc Edit &gt; Preferences (tùy thuộc vào hệ điều hành bạn đang dùng), tới thẻ &quot;Passwords&quot; nằm ở thẻ &quot;Privacy &amp; Security&quot;, và ấn nút &quot;Manage Stored Passwords&quot;. Đơn giản hơn, bạn còn có thể truy cập vào Saved Passwords từ trình đơn Tools. Có sẵn một thanh chứa các nút công cụ để giúp bạn làm việc thuận tiện hơn; để sử dụng nó, bạn ấn chuột phải vào thanh công cụ và chọn &quot;Customize…&quot;. Hộp thoại Saved Passwords giờ sẽ chứa một danh sách nút mới với các lệnh để thêm hoặc thay đổi mật khẩu trong cả nút trình đơn, và trình đơn ngữ cảnh.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Lưu ý rằng hộp thoại Saved Passwords là một thành phần cơ bản của <span id='appname'></span>, và hiện không được cung cấp bởi tiện ích này, ngoại trừ các chức năng phụ được nêu ở trên. Nút Công Cụ được cung cấp nhằm giúp những ai cần truy cập nhiều vào hộp thoại quản lý mật khẩu làm việc thuận lợi hơn.">
-<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Bạn còn có thể thực hiện việc đăng nhập kết hợp với một mẫu điền web bằng cách nhấp chuột phải lên bất cứ vùng trống nào của nó và chọn lệnh.">

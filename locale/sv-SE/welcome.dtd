@@ -1,50 +1,7 @@
-<!-- LOCALE
-
-     Format: language-COUNTRY according to RFC 1766
-     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
-     variation and is not necessary for locales without such variation. You can
-     probably copy the locale tag of your localized Mozilla application
-     (Firefox, etc.). Examples:
-
-     en-US  - English in US
-     en-GB  - English in Great Britain
-     de-DE  - German in Germany
-     ru     - Russian (no specific country)
-
--->
 <!ENTITY locale "sv-SE">
-<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
-     Generally, this should follow the direction of your writing system. 
--->
 <!ENTITY layoutdirection "LTR">
-<!-- WELCOME PAGE
-
-     This needs a little care. There is some embedded markup (sorry about
-     that). Of course, don't translate any text inside tags. The & lt; and
-     & gt; codes produce < and > respectively, but don't reverse them; that
-     will be done automatically for right-to-left text. & quot; produces a
-     double quote character. Please substitute whatever is appropriate in your
-     locale, but if you are editing this file directly, as opposed to using
-     BabelZilla's interface, anything other than <, >, ", ', and & must be in
-     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
-     than the ones for those five characters (& lt; & gt; & quot; & apos;
-     & amp;) are NOT defined in this context. Double quote characters must be
-     encoded as & quot; (again, if you are editing directly), since the
-     strings are already double-quote delimited.
-
--->
 <!ENTITY welcometospe "Välkommen till Saved Password Editor">
-<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), välja panelen &quot;Säkerhet&quot; och slutligen klicka på knappen &quot;Sparade lösenord…&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn eller (i Firefox 4 eller senare på Windows- och Linux-datorer) Firefoxmenyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, välj Visa &gt; Verktygsfält &gt; Anpassa…, eller högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp och en snabbmeny med kommandon för att lägga till och redigera lösenord.">
-<!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
--->
 <!ENTITY welcomepara1_sm "Tack för att du använder <a id='addonlink'>Saved Password Editor</a>. Du kan komma åt redigeringsfunktionen genom att gå till Verktyg &gt; Inställningar eller Redigera &gt; Inställningar (beroende på ditt operativsystem), navigera sedan till &quot;Lösenord&quot;-panelen under &quot;Sekretess &amp; Säkerhet&quot; och klicka slutligen på knappen &quot;Hantera sparade lösenord&quot;. Du kommer också enkelt åt &quot;Sparade lösenord&quot; via Verktyg-menyn. En verktygsfältsknapp finns också tillgänglig för att göra det enkelt och bekvämt för dig; för att lägga till den i verktygsfältet, högerklicka i verktygsfältet och välj &quot;Anpassa…&quot;. Dialogen &quot;Sparade lösenord&quot; innehåller numera en menyknapp med kommandon för att lägga till och redigera lösenord.">
-<!-- Paragraph 2 -->
-<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Observera att dialogen &quot;Sparade lösenord&quot; är en baskomponent av <span id='appname'></span> och inte tillhandahålls av det här tillägget, med undantag för de tillagda funktionerna som nämns härovan. Verktygsfältsknappen tillhandahålls enkom av bekvämlighetsskäl, med förhoppningen att några av användarna av det här tillägget kommer att vilja öppna dialogen mycket oftare än de annars kanske skulle göra.">
-<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Du kan även påverka inloggningar som är associerade med ett visst webbformulär genom att högerklicka i ett av dess fält och välja en åtgärd.">

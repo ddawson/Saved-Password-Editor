@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Konservitaj pasvortoj">
 <!ENTITY savedpasswords.accesskey "K">
 <!ENTITY savedpasswords.tooltip "Malfermi la dialogon de konservitaj pasvortoj">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Konservi ensalutajn informojn">
 <!ENTITY ctx_savelogininfo.accesskey "K">
 <!ENTITY ctx_savelogininfo.tooltip "Aldoni konservitan pasvorton por ĉi tiu formularo">

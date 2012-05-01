@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Saved Passwords">
 <!ENTITY savedpasswords.accesskey "v">
 <!ENTITY savedpasswords.tooltip "Mở hộp thoại Saved Passwords">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Lưu trữ thông tin đăng nhập">
 <!ENTITY ctx_savelogininfo.accesskey "L">
 <!ENTITY ctx_savelogininfo.tooltip "Thêm một mật khẩu đã lưu cho mẫu điền này">

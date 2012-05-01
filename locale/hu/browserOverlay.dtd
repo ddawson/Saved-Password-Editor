@@ -1,8 +1,6 @@
-<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Mentett jelszavak">
 <!ENTITY savedpasswords.accesskey "j">
 <!ENTITY savedpasswords.tooltip "Mentett jelszavak megjelenítése">
-<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Bejelentkezési adat mentése">
 <!ENTITY ctx_savelogininfo.accesskey "m">
 <!ENTITY ctx_savelogininfo.tooltip "Mentett jelszó hozzáadása az űrlaphoz">
