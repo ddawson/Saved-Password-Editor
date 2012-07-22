@@ -1,12 +1,12 @@
-<!ENTITY prefwindow.title "Kayıtlı Şifre Editör ayarları">
+<!ENTITY prefwindow.title "Kayıtlı Şifre Editör seçenekleri">
 <!ENTITY displayMenuitem.label "Kısayolu menülere ekle">
-<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
-<!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır">
+<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows/Linux program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
+<!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır:">
 <!ENTITY renameMenuitemTo.tooltip "Buraya &quot;Kayıtlı Şifreler&quot;, haricinde birşeyi kısayoldan çağırmak için birşeyler girin.İstemiyorsan &quot;Kayıtlı Şifrelere&quot;. dönmek için kutudaki değeri silin. Uyarı: Bu güvenlik için değil; şifreni koruman gerekiyorsa master şifresi kullanmalısın.">
 <!ENTITY alwaysShowPasswords.label "Şifreleri her zaman göster">
 <!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Kayıtlı Şifre Editörü ile ilgili tüm diyalog pencerelerinde Şifre satırı gösterilir.">
-<!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifre sor">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleştirildiğinde, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok işlemde şifre sorulmayacaktır.">
+<!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifreyi sor">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleşince, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok işlemde şifre sorulmayacaktır.">
 <!ENTITY passwordfield_caption.label "Editör penceresindeki şifre alanı">
 <!ENTITY passwordfield_alwayshide.label "Editörü açarken şifreyi her zaman gizle">
 <!ENTITY passwordfield_alwaysshow.label "Editörü açarken şifreyi her zaman göster">

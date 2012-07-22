@@ -1,4 +1,4 @@
-<!ENTITY savedpasswords.label "Saved Passwords">
+<!ENTITY savedpasswords.label "Kayıtlı Şifreler">
 <!ENTITY savedpasswords.accesskey "k">
 <!ENTITY savedpasswords.tooltip "Kayıtlı Şifreleri aç">
 <!ENTITY ctx_savelogininfo.label "Giriş bilgisini kaydet">
