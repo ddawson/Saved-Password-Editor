@@ -1,12 +1,12 @@
 <!ENTITY savedpasswords.label "Zapamiętane hasła">
 <!ENTITY savedpasswords.accesskey "h">
 <!ENTITY savedpasswords.tooltip "Otwórz okno zapamiętanych haseł">
-<!ENTITY ctx_savelogininfo.label "Save login info">
-<!ENTITY ctx_savelogininfo.accesskey "S">
-<!ENTITY ctx_savelogininfo.tooltip "Add a saved password for this form">
-<!ENTITY ctx_editlogininfo.label "Edit login info">
+<!ENTITY ctx_savelogininfo.label "Zapisz informację o loginie">
+<!ENTITY ctx_savelogininfo.accesskey "Z">
+<!ENTITY ctx_savelogininfo.tooltip "Dodaj zapamiętane hasło dla tego formularza">
+<!ENTITY ctx_editlogininfo.label "Edytuj informację o loginie">
 <!ENTITY ctx_editlogininfo.accesskey "E">
-<!ENTITY ctx_editlogininfo.tooltip "Edit a saved password for this form">
-<!ENTITY ctx_deletelogininfo.label "Delete login info">
-<!ENTITY ctx_deletelogininfo.accesskey "D">
-<!ENTITY ctx_deletelogininfo.tooltip "Delete a saved password for this form">
+<!ENTITY ctx_editlogininfo.tooltip "Edytuj zapamiętane hasło dla tego formularza">
+<!ENTITY ctx_deletelogininfo.label "Usuń informację o loginie">
+<!ENTITY ctx_deletelogininfo.accesskey "U">
+<!ENTITY ctx_deletelogininfo.tooltip "Usuń zapamiętane hasło dla tego formularza">
