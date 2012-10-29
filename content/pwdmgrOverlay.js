@@ -51,7 +51,8 @@ document.getElementById("signonsTree").addEventListener(
   function (ev) {
     if (!spEditor.selectionsEnabled) return;
     var selections = GetTreeSelections(signonsTree);
-    if (selections.length > 0 && !gSelectUserInUse) {
+    if (selections.length > 0
+        && (!window.hasOwnProperty("gSelectUserInUse") || !gSelectUserInUse)) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
       document.getElementById("speMenuBtn_editSignon").
@@ -74,7 +75,8 @@ document.getElementById("signonsTree").addEventListener(
       spEditor.userChangedMenuBtn = false;
     }
 
-    if (selections.length == 1 && !gSelectUserInUse) {
+    if (selections.length == 1
+        && (!window.hasOwnProperty("gSelectUserInUse") || !gSelectUserInUse)) {
       document.getElementById("key_cloneSignon").removeAttribute("disabled");
       document.getElementById("clone_signon").removeAttribute("disabled");
       document.getElementById("speMenuBtn_cloneSignon").
