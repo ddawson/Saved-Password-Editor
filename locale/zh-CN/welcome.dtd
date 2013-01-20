@@ -1,7 +1,50 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
 <!ENTITY locale "zh-CN">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
 <!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
 <!ENTITY welcometospe "欢迎使用已保存密码编辑器">
-<!ENTITY welcomepara1_fx "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），选择「安全」面板，点击「已保存密码…」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。打开菜单 查看 &gt; 工具栏 &gt; 定制…，或者在工具栏上点击鼠标右键，选择「定制…」即可。">
-<!ENTITY welcomepara1_sm "感谢您安装 <a id='addonlink'>已保存密码编辑器</a>！要使用该扩展，请打开菜单 工具 &gt; 选项 或者 编辑 &gt; 选项（依操作系统而定），导航至「隐私和安全」下的「密码」面板，点击「管理保存的密码」按钮。弹出的对话框中现在新包含了「编辑」和「新建」按钮。您也可以自定义工具栏为这个扩展增加快捷按钮。在工具栏上点击鼠标右键，选择「定制…」即可。">
-<!ENTITY welcomepara2 "注意：「已保存密码」对话框是 <span id='appname'></span> 的一个基本组件，本扩展只是增加了两个按钮。工具栏快捷按钮也只是为方便用户使用「已保存密码」而增加的。">
-<!ENTITY welcomepara3 "You may also manipulate logins associated with a particular web form by right-clicking on any of its fields and selecting an action.">
+<!-- Paragraph 1, Firefox version -->
+<!ENTITY welcomepara1_fx "感谢您使用<a id='addonlink'>已保存密码编辑器</a>！要使用编辑功能，请打开工具 &gt; 选项 或者 编辑 &gt; 首选项(依操作系统而定)，选择“安全”面板，点击“已保存密码…”按钮。也可以从工具菜单或 Firefox 菜单(Windows 或 Linux 下的 Firefox 4 及以后版本)快速打开已保存密码编辑器。为了方便使用，您可以添加一个工具栏按钮；选择 查看 &gt; 工具栏 &gt; 定制...，或者右键点击工具栏并选择“定制...”即可找到。已保存密码对话框现已在菜单按钮和上下文菜单中包含了添加和编辑密码的命令。">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
+<!ENTITY welcomepara1_sm "感谢您使用<a id='addonlink'>已保存密码编辑器</a>！要使用编辑功能，请打开工具 &gt; 选项 或者 编辑 &gt; 首选项(依操作系统而定)，导航至“隐私 &amp; 安全”下的“密码”面板，点击“管理保存的密码”按钮。也可以从工具菜单中快速打开已保存密码。为了方便使用，您可以添加一个工具栏按钮；右键点击工具栏并选择“定制...”即可。弹出的对话框中现在新包含了“编辑”和“新建”按钮。已保存密码对话框现已在菜单按钮和上下文菜单中包含了添加和编辑密码的命令。">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
+<!ENTITY welcomepara2 "请注意“已保存密码”对话框是 <span id='appname'/> 的一个基本组件，除了上面提到的功能之外，其它功能并非本扩展提供。工具栏快捷按钮也只是为方便用户而添加的，因为本扩展的某些用户可能会更频繁地使用已保存密码对话。">
+<!-- Paragraph 3 -->
+<!ENTITY welcomepara3 "您也可以操纵某个特定的网页表单的登录信息，直接在表单的任意域上点击右键并选择动作即可。">

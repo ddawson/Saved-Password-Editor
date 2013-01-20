@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Annotated">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "A login that requires a string in addition to the host to identify the service (e.g. HTTP authentication)">
-<!ENTITY type_other.label "Other">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "A login that requires only a host, username, and password">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protocol/hostname to which password applies (e.g. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Submit prefix">

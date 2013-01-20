@@ -1,16 +1,16 @@
-<!ENTITY prefwindow.title "已保存密码编辑器 选项">
+<!ENTITY prefwindow.title "已保存密码编辑器首选项">
 <!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
-<!ENTITY displayMenuitem.tooltip "在「工具」菜单中添加「已保存密码」快捷方式。">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
-<!ENTITY passwordfield_caption.label "编辑器窗口中的密码字段">
+<!ENTITY displayMenuitem.tooltip "在工具菜单和 Windows/Linux 下的 Firefox 菜单中添加“已保存密码”项，作为密码管理器的快捷方式。">
+<!ENTITY renameMenuitemTo.label "更改快捷方式名称为：">
+<!ENTITY renameMenuitemTo.tooltip "在此输入文字更改快捷方式名为“已保存密码”之外的其它名字，以防无关者轻易发现。清空此处文本继续使用“已保存密码”为名称。警告：这并不能替代适当的安全措施，如果你需要保护你的密码，需要使用主密码。">
+<!ENTITY alwaysShowPasswords.label "总是显示密码">
+<!ENTITY alwaysShowPasswords.tooltip "选中此项后，当已保存密码对话打开时，已保存密码编辑器会显示密码列，当编辑器对话打开时，会显示密码。">
+<!ENTITY alwaysPromptForMasterPassword.label "总是提示输入主密码">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "在已保存密码中显示密码时提示输入主密码。启用后，每次会话至少会触发一次双重提示。禁用后，大部分情况下你都不会被提示输入主密码。">
+<!ENTITY passwordfield_caption.label "编辑器窗口中的密码域">
 <!ENTITY passwordfield_alwayshide.label "打开编辑器窗口时总是隐藏密码">
 <!ENTITY passwordfield_alwaysshow.label "打开编辑器窗口时总是显示密码">
-<!ENTITY passwordfield_rememberlast.label "记住最后状态">
-<!ENTITY passwordfield_rememberlast.tooltip "显示或隐藏与上次打开的相同的窗口">
-<!ENTITY passwordfield_followspwin.label "关注已保存密码列表">
-<!ENTITY passwordfield_followspwin.tooltip "显示如果并且仅当密码显示在已保存密码窗口中时">
+<!ENTITY passwordfield_rememberlast.label "记住上次的状态">
+<!ENTITY passwordfield_rememberlast.tooltip "与上次打开的窗口时一致">
+<!ENTITY passwordfield_followspwin.label "与已保存密码列表一致">
+<!ENTITY passwordfield_followspwin.tooltip "显示密码当且仅当密码在已保存密码窗口中显示时">

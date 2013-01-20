@@ -2,27 +2,27 @@
 <!ENTITY signontype.label "类型">
 <!ENTITY type_form.label "网页表单">
 <!ENTITY type_form.accesskey "W">
-<!ENTITY type_form.tooltip "A form contained in a web page">
-<!ENTITY type_annotated.label "Annotated">
+<!ENTITY type_form.tooltip "网页中包含的表单">
+<!ENTITY type_annotated.label "注释">
 <!ENTITY type_annotated.accesskey "A">
-<!ENTITY type_annotated.tooltip "A login that requires a string in addition to the host to identify the service (e.g. HTTP authentication)">
+<!ENTITY type_annotated.tooltip "要求向主机发送附加字符串以识别服务的登录(例如 HTTP 身份验证)">
 <!ENTITY type_other.label "其它">
 <!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "A login that requires only a host, username, and password">
+<!ENTITY type_other.tooltip "仅要求主机、用户名和密码的登录">
 <!ENTITY hostname.label "主机">
-<!ENTITY hostname.tooltip "响应表单的主机或协议地址（例如 http://www.example.com）">
+<!ENTITY hostname.tooltip "密码应用到的协议/主机(例如 http://www.example.com)">
 <!ENTITY formSubmitURL.label "提交前缀">
 <!ENTITY formSubmitURL.tooltip "表单提交地址的前缀">
-<!ENTITY annotation.label "Annotation">
-<!ENTITY annotation.tooltip "Additional string identifying the service to authenticate to (e.g. HTTP realm)">
+<!ENTITY annotation.label "注释">
+<!ENTITY annotation.tooltip "用于识别身份验证的服务的附加字符串(例如 HTTP realm)">
 <!ENTITY username.label "用户名">
-<!ENTITY username.tooltip "要保存的用户名">
+<!ENTITY username.tooltip "要记住的用户名">
 <!ENTITY password.label "密码">
-<!ENTITY password.tooltip "要保存的密码">
-<!ENTITY usernameField.label "用户名字段名称">
-<!ENTITY usernameField.tooltip "表单源码中用户字段的名称属性">
+<!ENTITY password.tooltip "要记住的密码">
+<!ENTITY usernameField.label "用户名域名称">
+<!ENTITY usernameField.tooltip "表单中用户域的 name 属性">
 <!ENTITY passwordField.label "密码字段名称">
-<!ENTITY passwordField.tooltip "表单源码中密码字段的名称属性">
+<!ENTITY passwordField.tooltip "表单中密码域的 name 属性">
 <!ENTITY showPassword.label "显示">
 <!ENTITY showPassword.accesskey "S">
 <!ENTITY showPassword.tooltip "切换密码的可见性">
@@ -30,7 +30,7 @@
 <!ENTITY hidePassword.accesskey "H">
 <!ENTITY guessfrompage.label "从当前页猜测">
 <!ENTITY guessfrompage.accesskey "G">
-<!ENTITY guessfrompage.tooltip "在当前页面寻找类似于登录的表单并自动填充">
+<!ENTITY guessfrompage.tooltip "使用当前页面中最可能的登录表单填写此表">
 <!ENTITY prevform.label "上一个表单">
 <!ENTITY prevform.accesskey "P">
 <!ENTITY prevform.tooltip "尝试页面的上一个表单">
