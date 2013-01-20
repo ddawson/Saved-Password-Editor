@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -79,38 +79,22 @@ window.addEventListener(
       }
     }
 
-    var type;
-    if (!oldSignons[0].httpRealm)
-      type = 0;
-    else if (oldSignons[0].hostname != oldSignons[0].httpRealm)
-      type = 1;
-    else
-      type = 2;
-    el("type_group").selectedIndex = type;
-
-    for (let i = 1; i < oldSignons.length; i++) {
-      let otherType;
-      if (!oldSignons[i].httpRealm)
-        otherType = 0;
-      else if (oldSignons[i].hostname != oldSignons[i].httpRealm)
-        otherType = 1;
+    if (oldSignons.length > 1) {
+      el("type_group").style.display = "none";
+      el("type_caption").style.display = "none";
+    } else {
+      let type;
+      if (!oldSignons[0].httpRealm)
+        type = 0;
       else
-        otherType = 2;
+        type = 1;
+      el("type_group").selectedIndex = type;
 
-      if (otherType != type) {
-        Cc["@mozilla.org/embedcomp/prompt-service;1"].
-          getService(Ci.nsIPromptService).
-          alert(window, genStrBundle.getString("error"),
-                peStrBundle.getString("typemismatch"));
-        window.close();
-        return;
-      }
+      handle_typeSelect();
+
+      if (editorMode == 1)
+        el("type_group").disabled = true;
     }
-
-    handle_typeSelect();
-
-    if (editorMode == 1)
-      el("type_group").disabled = true;
 
     window.setTimeout(afterLoadHandler, 1);
     window.removeEventListener("load", loadHandler, false);
@@ -199,7 +183,7 @@ function handle_typeSelect () {
       el("usernameField_lbl").disabled = el("usernameField_text").disabled =
       el("passwordField_lbl").disabled = el("passwordField_text").disabled =
       el("guessFromPage_btn").disabled = true;
-    el("httpRealm_lbl").disabled = el("httpRealm_text").disabled = idx == 2;
+    el("httpRealm_lbl").disabled = el("httpRealm_text").disabled = false;
   }
 }
 
@@ -367,23 +351,34 @@ function setNewSignon () {
     password: password.qvalue,
   };
 
-  var idx = el("type_group").selectedIndex;
-  if (idx == 0) {
+  if (oldSignons.length > 1)
+    var type = -1;
+  else
+    var type = el("type_group").selectedIndex;
+
+  if (type == -1) {
+    newProps.formSubmitURL =
+      formSubmitURL.indefinite ? undefined : formSubmitURL.qvalue;
+    newProps.httpRealm =
+      httpRealm.indefinite ? undefined : httpRealm.qvalue;
+    newProps.usernameField =
+      usernameField.indefinite ? undefined : usernameField.qvalue;
+    newProps.passwordField =
+      passwordField.indefinite ? undefined : passwordField.qvalue;
+  } else if (type == 0) {
     newProps.formSubmitURL = formSubmitURL.qvalue;
     newProps.httpRealm = null;
     newProps.usernameField = usernameField.qvalue;
     newProps.passwordField = passwordField.qvalue;
   } else {
     newProps.formSubmitURL = null;
-    newProps.httpRealm = idx == 1 ? httpRealm.qvalue : newProps.hostname;
+    newProps.httpRealm = httpRealm.qvalue;
     newProps.usernameField = newProps.passwordField = "";
   }
 
-  var type = el("type_group").selectedIndex;
   if (oldSignons.length > 1 && newProps.hostname !== undefined
       && newProps.username !== undefined
-      && (type == 0 ? newProps.formSubmitURL !== undefined
-          : type == 1 ? newProps.httpRealm !== undefined : true)) {
+      && (newProps.formSubmitURL !== undefined || newProps.httpRealm !== undefined)) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
       alert(window, genStrBundle.getString("error"),

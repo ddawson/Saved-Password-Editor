@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Adds &quot;Saved Passwords&quot; to Tools menu and Windows/Linux Firefox menu as a shortcut to the password manager">
 <!ENTITY renameMenuitemTo.label "Rename shortcut to:">
 <!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
 <!ENTITY alwaysShowPasswords.label "Always show passwords">
 <!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
 <!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">

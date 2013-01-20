@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -170,7 +170,8 @@ const spEditor = {
             selSignons[i], this._mergeSignonProps(selSignons[i], newSignon));
         this.refreshing = true;
         gPasswords.initialize();
-        gPasswords.tree.view.selection.select(selections[0]);
+        for (let i = 0; i < selections.length; i++)
+          gPasswords.tree.view.selection.toggleSelect(selections[i]);
         this.refreshing = false;
       } catch (e) {
         window.setTimeout(this.mcbWrapper(this.showErrorAlert), 0, e)

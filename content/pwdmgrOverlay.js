@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -42,6 +42,26 @@ window.addEventListener(
         = kSignonBundle.getString("hidePasswordsAccessKey");
       document.getElementById("passwordCol").hidden = false;
       _filterPasswords();
+    }
+
+    if (spEditor.prefs.getBoolPref("preselect_current_site")) {
+      let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
+               getService(Components.interfaces.nsIWindowMediator);
+      let brWin = wm.getMostRecentWindow("navigator:browser");
+
+      if (brWin) {
+        let loc = brWin.getBrowser().contentWindow.location;
+        let hostname = loc.protocol + "//" + loc.host;
+        let col = getColumnByName("hostname");
+        for (let i = 0; i < signonsTreeView.rowCount; i++)
+          if (signonsTreeView.getCellText(i, col) == hostname) {
+            signonsTreeView.selection.select(i);
+            setTimeout(function () {
+                         signonsTree.treeBoxObject.ensureRowIsVisible(i);
+                       }, 0);
+            break;
+          }
+      }
     }
   },
   false);
@@ -164,11 +184,9 @@ const spEditor = {
       passwordmanager.modifyLogin(
         selSignons[i], this._mergeSignonProps(selSignons[i], ret.newSignon));
     var fv = document.getElementById("filter").value;
-    var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
     setFilter("");
     setFilter(fv);
-    signonsTreeView.selection.select(selections[0]);
-    signonsTree.treeBoxObject.scrollToRow(scr);
+    signonsTreeView.selection.clearSelection();
   },
 
   cloneSignon: function () {
@@ -188,11 +206,9 @@ const spEditor = {
     try {
       passwordmanager.addLogin(this._mergeSignonProps(signon, ret.newSignon));
       var fv = document.getElementById("filter").value;
-      var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
       setFilter("");
       setFilter(fv);
-      signonsTreeView.selection.select(selections[0]);
-      signonsTree.treeBoxObject.scrollToRow(scr);
+      signonsTreeView.selection.clearSelection();
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
@@ -221,10 +237,9 @@ const spEditor = {
                      ret.newSignon.passwordField);
       passwordmanager.addLogin(newSignon);
       var fv = document.getElementById("filter").value;
-      var scr = signonsTree.treeBoxObject.getFirstVisibleRow();
       setFilter("");
       setFilter(fv);
-      signonsTree.treeBoxObject.scrollToRow(scr);
+      signonsTreeView.selection.clearSelection();
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).

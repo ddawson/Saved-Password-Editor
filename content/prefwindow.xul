@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2011  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -33,6 +33,9 @@
       <preference id="pref-rename-menuitem-to"
                   name="extensions.savedpasswordeditor.rename_menuitem_to"
                   type="string"/>
+      <preference id="pref-preselect-current-site"
+                  name="extensions.savedpasswordeditor.preselect_current_site"
+                  type="bool"/>
       <preference id="pref-alwaysshowpasswords"
                   name="extensions.savedpasswordeditor.always_show_passwords"
                   type="bool"/>
@@ -54,6 +57,9 @@
                tooltiptext="&renameMenuitemTo.tooltip;"
                preference="pref-rename-menuitem-to"/>
     </hbox>
+    <checkbox id="preselectcurrentsite_ck" label="&preselectCurrentSite.label;"
+              tooltiptext="&preselectCurrentSite.tooltip;"
+              preference="pref-preselect-current-site"/>
     <checkbox id="alwaysshowpasswords_ck" label="&alwaysShowPasswords.label;"
               tooltiptext="&alwaysShowPasswords.tooltip;"
               preference="pref-alwaysshowpasswords"
