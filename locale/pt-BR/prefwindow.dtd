@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas e janela do complemento como um atalho para o gerenciados de senhas">
 <!ENTITY renameMenuitemTo.label "Renomear o atalho para:">
 <!ENTITY renameMenuitemTo.tooltip "Entre um nome para o atalho (diferente de &quot;Senhas Salvas&quot;, para não ser tão óbvio). Deixe em branco para usar o nome &quot;Senhas Salvas&quot;. Aviso: isto não substitui uma segurança adequada; você deve usar uma senha mestre quando possível para proteger suas senhas.">
+<!ENTITY preselectCurrentSite.label "Pre-selecionar a página atual">
+<!ENTITY preselectCurrentSite.tooltip "Ao abrir o Saved Passwords a página visitada nesta aba será selecionada e mostrada.">
 <!ENTITY alwaysShowPasswords.label "Sempre exibir senhas">
 <!ENTITY alwaysShowPasswords.tooltip "Se ativada, O Editor de Senhas Salvas fará com que a coluna Senha seja exibida ao abrir a janela Senhas Salvas e exibirá a senha ao abrir o editor.">
 <!ENTITY alwaysPromptForMasterPassword.label "Sempre pedir senha mestre">

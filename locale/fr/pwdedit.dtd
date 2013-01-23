@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Annoté">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Un identifiant qui nécessite une chaîne ajoutée au nom d'hôte pour s'identifier (ex. authentification HTTP)">
-<!ENTITY type_other.label "Autre">
-<!ENTITY type_other.accesskey "u">
-<!ENTITY type_other.tooltip "Un identifiant qui nécessite seulement un hôte, un nom d'utilisateur et un mot de passe">
 <!ENTITY hostname.label "Hôte">
 <!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (e.g. http://www.exemple.com)">
 <!ENTITY formSubmitURL.label "Soumettre un préfixe">

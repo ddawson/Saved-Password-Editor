@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Skomentowany">
 <!ENTITY type_annotated.accesskey "a">
 <!ENTITY type_annotated.tooltip "Login, który wymaga dodatkowego ciągu do hosta w celu identyfikacji usługi (np. uwierzytelnianie HTTP)">
-<!ENTITY type_other.label "Inny">
-<!ENTITY type_other.accesskey "I">
-<!ENTITY type_other.tooltip "Login, który wymaga tylko hosta, nazwy użytkownika i hasła">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protokół/nazwa hosta, z którym działa hasło (np. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Przekaż prefiks">

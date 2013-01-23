@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Anmerkung">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Anmeldedaten, die zusätlich zum Hostnamen eine Zeichenkette zur Identifizierung benötigen (z.B. HTTP-Authentifizierung)">
-<!ENTITY type_other.label "Anderer">
-<!ENTITY type_other.accesskey "n">
-<!ENTITY type_other.tooltip "Anmeldedaten, die nur den Hostnamen, den Benutzernamen und ein Passwort benötigen">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protokoll/Hostname, für das/den das Passwort gilt (z.B. http://www.beispiel.de)">
 <!ENTITY formSubmitURL.label "Übermittlungspräfix">

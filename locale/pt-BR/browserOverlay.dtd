@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Senhas Salvas">
 <!ENTITY savedpasswords.accesskey "S">
 <!ENTITY savedpasswords.tooltip "Abre a janela de Senhas Salvas">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Salvar informações de login">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "Acrescentar uma senha salva a este formulário">

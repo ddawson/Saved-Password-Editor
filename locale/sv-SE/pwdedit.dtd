@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Kommenterad">
 <!ENTITY type_annotated.accesskey "K">
 <!ENTITY type_annotated.tooltip "En inloggning som kräver en sträng i anslutning till värden för att identifiera tjänsten (t.ex. HTTP-autentisering)">
-<!ENTITY type_other.label "Annan">
-<!ENTITY type_other.accesskey "A">
-<!ENTITY type_other.tooltip "En inloggning som endast kräver en värd, ett användarnamn och ett lösenord">
 <!ENTITY hostname.label "Värd">
 <!ENTITY hostname.tooltip "Protokoll/värdnamn för vilket lösenordet gäller (t.ex. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Adressprefix">

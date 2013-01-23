@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Jegyzetelt">
 <!ENTITY type_annotated.accesskey "J">
 <!ENTITY type_annotated.tooltip "A kiszolgáló a bejelentkezéshez további szöveget igényel az azonosítás érdekében (pl. HTTP azonosítás)">
-<!ENTITY type_other.label "Más típus">
-<!ENTITY type_other.accesskey "t">
-<!ENTITY type_other.tooltip "Bejelentkezés, amely csak kiszolgálót, felhaszálónevet és jelszót igényel">
 <!ENTITY hostname.label "Kiszolgáló">
 <!ENTITY hostname.tooltip "Protokol/kiszolgáló amelyen a jelszó lesz használva (pl. http://www.pelda.com)">
 <!ENTITY formSubmitURL.label "Előtag elküldése">

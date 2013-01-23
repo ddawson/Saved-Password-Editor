@@ -11,10 +11,16 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
+
+
 -->
 <!ENTITY locale "zh-CN">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
+
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,6 +38,9 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
+
+
 -->
 <!ENTITY welcometospe "欢迎使用已保存密码编辑器">
 <!-- Paragraph 1, Firefox version -->
@@ -41,6 +50,9 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
+
+
 -->
 <!ENTITY welcomepara1_sm "感谢您使用<a id='addonlink'>已保存密码编辑器</a>！要使用编辑功能，请打开工具 &gt; 选项 或者 编辑 &gt; 首选项(依操作系统而定)，导航至“隐私 &amp; 安全”下的“密码”面板，点击“管理保存的密码”按钮。也可以从工具菜单中快速打开已保存密码。为了方便使用，您可以添加一个工具栏按钮；右键点击工具栏并选择“定制...”即可。弹出的对话框中现在新包含了“编辑”和“新建”按钮。已保存密码对话框现已在菜单按钮和上下文菜单中包含了添加和编辑密码的命令。">
 <!-- Paragraph 2 -->

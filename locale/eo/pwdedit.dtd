@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Komentita">
 <!ENTITY type_annotated.accesskey "K">
 <!ENTITY type_annotated.tooltip "Ensaluto, kiu bezonas signoĉenon aldone al la gastiga komputilo por identigi la servon (ekz. HTTP-aŭtentikigon)">
-<!ENTITY type_other.label "Alia">
-<!ENTITY type_other.accesskey "A">
-<!ENTITY type_other.tooltip "Ensaluto, kiu bezonas nur gastigan komputilon, uzantnomon kaj pasvorton">
 <!ENTITY hostname.label "Gastiga servilo">
 <!ENTITY hostname.tooltip "Protokolo/nomo de la gastiga servilo, al kiu la pasvorto estas aplikata (ekz. http://www.ekzemplo.com)">
 <!ENTITY formSubmitURL.label "Senda prefikso">

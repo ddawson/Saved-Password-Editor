@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Komentowany">
 <!ENTITY type_annotated.accesskey "K">
 <!ENTITY type_annotated.tooltip "Přizjewjenje, kotrež sej rjećazk znamješkow přidatnje k hostej wužaduje, zo by słužbu (na př. HTTP-awtentifikaciju) identifikowało">
-<!ENTITY type_other.label "Druhi">
-<!ENTITY type_other.accesskey "D">
-<!ENTITY type_other.tooltip "Přizjewjenje, kotrež sej jenož host, wužiwarske mjeno a hesło wužaduje">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protokol/hostowe mjeno, na kotrež so hesło wužiwa (na př. http://www.přikład.com)">
 <!ENTITY formSubmitURL.label "Słanski prefiks">

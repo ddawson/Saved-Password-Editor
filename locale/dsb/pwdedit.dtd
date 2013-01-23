@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Komentar">
 <!ENTITY type_annotated.accesskey "K">
 <!ENTITY type_annotated.tooltip "Pśizjawjenje, kótarež pomina se znamuškowy rjeśazk pśidatnje k hostoju, aby identficěrowało słužbu (na pś. HTTP-awtentifikacija)">
-<!ENTITY type_other.label "Drugi">
-<!ENTITY type_other.accesskey "D">
-<!ENTITY type_other.tooltip "Pśizjawjenje, kótarež pomina se jano host, wužywarske mě a gronidło.">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protokol/hostowe mě, na kótarež se gronidło nałožujo (na pś. http://www.pśikład.de)">
 <!ENTITY formSubmitURL.label "Słański prefiks">

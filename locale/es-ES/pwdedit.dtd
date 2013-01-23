@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Agregado">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Un login que requiere de cierto texto en conjunto con el dominio para identificar el servicio (p.ej. HTTP verificado)">
-<!ENTITY type_other.label "Otro">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "Un login que solamente  requiere de dominio, nombre de usuario y contraseña">
 <!ENTITY hostname.label "Dominio">
 <!ENTITY hostname.tooltip "Dominio al cual se aplica la contraseña (ej. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Prefijo">

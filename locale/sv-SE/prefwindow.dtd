@@ -2,13 +2,15 @@
 <!ENTITY displayMenuitem.label "Inkludera genväg i menyer">
 <!ENTITY displayMenuitem.tooltip "Lägger till &quot;Sparade lösenord&quot; i Verktyg-menyn och Windows/Linux Firefoxmeny som en genväg till lösenordshanteraren">
 <!ENTITY renameMenuitemTo.label "Byt namn på genväg till:">
-<!ENTITY renameMenuitemTo.tooltip "Här kan du ge menygenvägen &quot;Sparade lösenord&quot; ett annat namn, för att göra det mindre tydligt för andra som använder din dator. Ta bort värdet och lämna tomt för at gå tillbaka till &quot;Sparade lösenord&quot;. Varning: Det här ersätter inte riktiga säkerhetslösningar! Du bör använda ett huvudlösenord om du vill skydda dina lösenord.">
+<!ENTITY renameMenuitemTo.tooltip "Här kan du ge menygenvägen &quot;Sparade lösenord&quot; ett annat namn, för att göra det mindre tydligt för andra som använder din dator. Ta bort värdet och lämna tomt för att gå tillbaka till &quot;Sparade lösenord&quot;. Varning: Det här ersätter inte riktiga säkerhetslösningar! Du bör använda ett huvudlösenord om du vill skydda dina lösenord.">
+<!ENTITY preselectCurrentSite.label "Förhandsvälj aktuell webbplats i &quot;Sparade lösenord&quot;">
+<!ENTITY preselectCurrentSite.tooltip "När &quot;Sparade lösenord&quot; öppnas kommer Saved Password Editor omedelbart att välja och rulla till den webbplats som besöks i den aktuella webbläsarfliken.">
 <!ENTITY alwaysShowPasswords.label "Visa alltid lösenord">
 <!ENTITY alwaysShowPasswords.tooltip "Om detta alternativ markeras kommer Saved Password Editor att visa kolumnen Lösenord när fönstret &quot;Sparade lösenord&quot; öppnas och visa lösenordet när redigeringsrutan öppnas.">
 <!ENTITY alwaysPromptForMasterPassword.label "Fråga alltid efter huvudlösenord">
 <!ENTITY alwaysPromptForMasterPassword.tooltip "Ber dig att ange huvudlösenord när lösenord visas öppet i &quot;Sparade lösenord&quot;. Om alternativet markeras orsakar detta minst en dubbelt ställd fråga per session. Om det avmarkeras kommer du alltsom oftast inte att tillfrågas om huvudlösenord.">
 <!ENTITY passwordfield_caption.label "Lösenordsfält i redigeringsfönstret">
-<!ENTITY passwordfield_alwayshide.label "Göm alltid lösenord när redigeringsfönstret öppnas">
+<!ENTITY passwordfield_alwayshide.label "Dölj alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_alwaysshow.label "Visa alltid lösenord när redigeringsfönstret öppnas">
 <!ENTITY passwordfield_rememberlast.label "Kom ihåg senaste status">
 <!ENTITY passwordfield_rememberlast.tooltip "Kom ihåg visningsläget tills nästa gång fönstret öppnas">

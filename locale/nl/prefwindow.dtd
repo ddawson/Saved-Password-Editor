@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” als een snelkoppeling naar de wachtwoordbeheerder toe aan de menu’s Extra en het Firefoxmenu in Windows en Linux.">
 <!ENTITY renameMenuitemTo.label "Snelkoppeling hernoemen naar:">
 <!ENTITY renameMenuitemTo.tooltip "Voer hier iets in om de snelkoppeling anders te noemen dan “Opgeslagen wachtwoorden”, als u het wat onopvallender wilt maken. Wis de waarde om “Opgeslagen wachtwoorden” weer te gebruiken. Waarschuwing: dit is geen vervanging voor een goede beveiliging; u dient indien mogelijk een hoofdwachtwoord in te stellen om uw wachtwoorden te beschermen.">
+<!ENTITY preselectCurrentSite.label "Huidige website preselecteren in Opgeslagen wachtwoorden">
+<!ENTITY preselectCurrentSite.tooltip "Bij openen van Opgeslagen wachtwoorden selecteert dit inmiddellijk de in het huidige browsertabblad bezochte website en scrollt ernaartoe.">
 <!ENTITY alwaysShowPasswords.label "Wachtwoorden altijd weergeven">
 <!ENTITY alwaysShowPasswords.tooltip "Indien aangevinkt zal Saved Password Editor de kolom Wachtwoord laten zien als het dialoogvenster Opgeslagen wachtwoorden wordt geopend, en het wachtwoord weergeven als het bewerkingsvenster wordt geopend.">
 <!ENTITY alwaysPromptForMasterPassword.label "Altijd vragen om hoofdwachtwoord">

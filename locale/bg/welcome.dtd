@@ -1,7 +1,50 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
 <!ENTITY locale "bg">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
 <!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
 <!ENTITY welcometospe "Добре дошли в Редактора за пароли!">
+<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Благодарим Ви, че използвате <a id='addonlink'>Редактора на запазени пароли</a>. За да влезете в екрана за редактиране, отидете на Инструменти/Настройки или на Редактиране/Преференции (в зависимост от вашата операционна система), изберете панела &quot;Сигурност&quot;, след това щракнете на бутона &quot;Показване на паролите...&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. Бутонът в лентата с инструменти е за Ваше удобство. За да го отворите, изберете Изглед/Ленти с инструменти/Настройване..., или щракнете с десния бутон в лентата с инструменти и изберете &quot;Настройване...&quot;. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Благодарим Ви, че използвате <a id='addonlink'>Редактора на пароли</a>. За да влезете в екрана за редактиране, отидете на Tools/Options или на Edit/Preferences (в зависимост от вашата операционна система), панела &quot;Privacy &amp; Security&quot;, а след това щракнете върху бутона &quot;Manage Stored Passwords&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. За Ваше удобство добавката има собствен бутон в лентата с инструменти. За да го използвате, щракнете с десния бутон в лентата с инструменти и изберете &quot;Customize…&quot;. След това поставете бутона върху лентата. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Имайте предвид, че диалоговият прозорец &quot;Запазени пароли&quot; е съставна част от <span id='appname'></span> и не е в това разширение, с изключение на два допълнителни бутона. Бутонът в лентата с инструменти е предоставен само за удобство, с надеждата, че някои потребители на това разширение ще искат да имат  по-чест достъп до диалоговия прозорец, отколкото по друг начин.">
+<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "Можете да редактирате данните за вход и чрез контекстното меню на някое от полетата на входната форма.">

@@ -1,7 +1,50 @@
+<!-- LOCALE
+
+     Format: language-COUNTRY according to RFC 1766
+     ( http://www.ietf.org/rfc/rfc1766.txt ). COUNTRY is for dialectal
+     variation and is not necessary for locales without such variation. You can
+     probably copy the locale tag of your localized Mozilla application
+     (Firefox, etc.). Examples:
+
+     en-US  - English in US
+     en-GB  - English in Great Britain
+     de-DE  - German in Germany
+     ru     - Russian (no specific country)
+
+-->
 <!ENTITY locale "pt-PT">
+<!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
+     Generally, this should follow the direction of your writing system. 
+-->
 <!ENTITY layoutdirection "LTR">
+<!-- WELCOME PAGE
+
+     This needs a little care. There is some embedded markup (sorry about
+     that). Of course, don't translate any text inside tags. The & lt; and
+     & gt; codes produce < and > respectively, but don't reverse them; that
+     will be done automatically for right-to-left text. & quot; produces a
+     double quote character. Please substitute whatever is appropriate in your
+     locale, but if you are editing this file directly, as opposed to using
+     BabelZilla's interface, anything other than <, >, ", ', and & must be in
+     UTF-8 or use numerical entities (e.g. & #x89ab;); named entities other
+     than the ones for those five characters (& lt; & gt; & quot; & apos;
+     & amp;) are NOT defined in this context. Double quote characters must be
+     encoded as & quot; (again, if you are editing directly), since the
+     strings are already double-quote delimited.
+
+-->
 <!ENTITY welcometospe "Bem vindo ao Editor de Senhas guardadas">
+<!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode usar a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), seleccionando o painel &quot;segurança&quot; e clicar no botão &quot;Senhas guardadas…&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, seleccione Ver &gt; Barra de ferramentas &gt; Personalizar…, ou clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">
+<!-- Paragraph 1, SeaMonkey version -->
+<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
+     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
+           among other things XXXXX
+     XXXXX Be careful if you copy and paste. XXXXX 
+-->
 <!ENTITY welcomepara1_sm "Obrigado por usar o <a id='addonlink'>Editor de Senhas guardadas</a>. Pode ir para a funcionalidade de edição indo a Ferramentas &gt; Opções ou Editar &gt; Preferências (dependendo do seu sistema operativo), indo ao painel &quot;Senhas&quot; em &quot;Privacidade e segurança&quot;, depois clicar no botão &quot;Gerir senhas guardadas&quot;. O diálogo contém os botões &quot;Editar&quot; e &quot;Novo&quot;. Está também disponível um botão na barra de ferramentas. Para aceder, clique direito na barra de ferramentas e seleccione &quot;Personalizar…&quot;">
+<!-- Paragraph 2 -->
+<!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Tenha em atenção que o diálogo Senhas guardadas é um componente base do <span id='appname'></span>, e não é fornecido por esta extensão, excepto pelos dois botões fornecidos. A barra de ferramentas é fornecida por conveniência, na expectativa que alguns utilizadores desta extensão desejam aceder ao diálogo com muita mais frequência que a normal.">
+<!-- Paragraph 3 -->
 <!ENTITY welcomepara3 "You may also manipulate logins associated with a particular web form by right-clicking on any of its fields and selecting an action.">

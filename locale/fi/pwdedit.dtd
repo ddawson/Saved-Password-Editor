@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Kirjautuminen selittein">
 <!ENTITY type_annotated.accesskey "s">
 <!ENTITY type_annotated.tooltip "Kirjautuminen, jossa isännän lisäksi vaaditaan merkkijono palvelun tunnistamiseksi (esim. HTTP-varmennus)">
-<!ENTITY type_other.label "Muu">
-<!ENTITY type_other.accesskey "m">
-<!ENTITY type_other.tooltip "Kirjautuminen, jossa vaaditaan ainoastaan isäntä, käyttäjätunnus ja salasana">
 <!ENTITY hostname.label "Isäntä">
 <!ENTITY hostname.tooltip "Protokolla/isäntäkoneen nimi, johon salasana liitetään (esim. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Lähetyksen etuliite">

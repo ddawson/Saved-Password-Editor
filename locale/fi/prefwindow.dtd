@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Lisää ”Tallennetut salasanat”-pikavalinnan Työkalut-valikkoon sekä Windowsin/Linuxin Firefox-valikkoon">
 <!ENTITY renameMenuitemTo.label "Vaihda pikavalinnan nimeksi:">
 <!ENTITY renameMenuitemTo.tooltip "Voit syöttää tähän vaihtoehtoisen nimen ”Tallennetut salasanat”-pikavalinnalle, jos haluat hämätä muita käyttäjiä. Poista arvo palauttaaksesi oletusnimen. Varoitus: tämä toiminto ei korvaa kunnon tietoturvatoimenpiteitä; käytä pääsalasanaa aina, kun se on mahdollista.">
+<!ENTITY preselectCurrentSite.label "Valitse nykyinen sivusto tallennetuista salasanoista">
+<!ENTITY preselectCurrentSite.tooltip "Valitse ja vieritä näkyville selaimen nykyisessä välilehdessä avoinna oleva sivusto, kun tallennettujen salasanojen valintaikkuna avataan.">
 <!ENTITY alwaysShowPasswords.label "Näytä aina salasanat">
 <!ENTITY alwaysShowPasswords.tooltip "Jos tämä kohta on valittuna, salasanojen muokkausohjelma pakottaa salasanasarakkeen näkyviin tallennettujen salasanojen valintaikkunnassa tai muokkausikkunnassa.">
 <!ENTITY alwaysPromptForMasterPassword.label "Kysy aina pääsalasana">

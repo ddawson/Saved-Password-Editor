@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Senhas guardadas">
 <!ENTITY savedpasswords.accesskey "g">
 <!ENTITY savedpasswords.tooltip "Abrir o diálogo das senhas guardadas">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Save login info">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "Add a saved password for this form">

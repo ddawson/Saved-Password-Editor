@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Geannoteerd">
 <!ENTITY type_annotated.accesskey "a">
 <!ENTITY type_annotated.tooltip "Een aanmelding waarbij een tekstdeel bij de host moet staan om de dienst te identificeren (b.v. HTTP-aanmelding)">
-<!ENTITY type_other.label "Overig">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "Een aanmelding waarvoor alleen een host, gebruikersnaam en wachtwoord nodig is">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Protocol/hostnaam waar het wachtwoord op van toepassing is (b.v. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Indieningsprefix">

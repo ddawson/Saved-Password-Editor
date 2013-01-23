@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Анотация">
 <!ENTITY type_annotated.accesskey "А">
 <!ENTITY type_annotated.tooltip "Входна форма изискваща идентификация на услугата (напр. HTTP удостоверяване)">
-<!ENTITY type_other.label "Друго">
-<!ENTITY type_other.accesskey "Д">
-<!ENTITY type_other.tooltip "Входна форма изискваща само име на хост, потребител и парола">
 <!ENTITY hostname.label "Хост">
 <!ENTITY hostname.tooltip "Протокол/Име на хост за който е приложена паролата (напр. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Подаване на префикс">

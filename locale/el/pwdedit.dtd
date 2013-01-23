@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Σύνδεση με σχόλιο">
 <!ENTITY type_annotated.accesskey "ν">
 <!ENTITY type_annotated.tooltip "Μια σύνδεση που απαιτεί και μια συμβολοσειρά εκτός από τον κεντρικό υπολογιστή για τον προσδιορισμό της υπηρεσίας (π.χ. επαλήθευση ταυτότητας HTTP)">
-<!ENTITY type_other.label "Άλλη σύνδεση">
-<!ENTITY type_other.accesskey "λ">
-<!ENTITY type_other.tooltip "Μια σύνδεση που απαιτεί μόνο όνομα κεντρικού υπολογιστή, όνομα χρήστη και κωδικό πρόσβασης">
 <!ENTITY hostname.label "Κεντρικός υπολογιστής">
 <!ENTITY hostname.tooltip "Πρωτόκολλο/όνομα κεντρικού υπολογιστή για το οποίο ισχύει ο κωδικός πρόσβασης (π.χ. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Πρόθεμα υποβολής">

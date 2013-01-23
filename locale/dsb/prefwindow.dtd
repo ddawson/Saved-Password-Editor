@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Pśidawa zapisk &quot;Składowane gronidła&quot; menijoju Rědy a menijoju pód tłocaškom Firefox ako spěšny wótkaz  k zastojnikoju gronidłow">
 <!ENTITY renameMenuitemTo.label "Skrotconku pśemjeniś do:">
 <!ENTITY renameMenuitemTo.tooltip "Zapódajśo něco how, aby wy druge skrotconku nježli za &quot;Skłaźone gronidła&quot; wubrał, jolic cośo to za njewopšawnjonych mjenjej widobnje cynił. Wulašujśo gódnotu, aby wy zasej &quot;Skłaźone gronidła&quot; wužywał. Glědajśo: to njejo narownanje za napšawdnu wěstotu; wy by měł głowne gronidło wužywaś, jolic to jo móžno, jolic musyśo swóje gronidła šćitaś.">
+<!ENTITY preselectCurrentSite.label "Aktualne sedło w &quot;Skaźone gronidła&quot; do togo wubraś">
+<!ENTITY preselectCurrentSite.tooltip "Gaž Skłaźone gronidła se wócynjaju, to wubjerjo ned woglědane sedło a buźo k sedłoju w aktualnem rejtarku wobglědowaka kulaś.">
 <!ENTITY alwaysShowPasswords.label "Gronidła pśecej pokazaś">
 <!ENTITY alwaysShowPasswords.tooltip "Jolic to jo zmóžnjone, Saved passwords Editor pokažo słup gronidłow, gaž dialog skłaźonych gronidłow se wócynja a pokažo gronidło, gaž dialog editora se wócynja.">
 <!ENTITY alwaysPromptForMasterPassword.label "Pśecej głowne gronidło se pominaś">

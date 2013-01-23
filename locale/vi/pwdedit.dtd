@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Chú thích">
 <!ENTITY type_annotated.accesskey "C">
 <!ENTITY type_annotated.tooltip "Việc đăng nhập cần một chuỗi, đi kèm với máy chủ để nhận diện dịch vụ (ví dụ: xác thực HTTP)">
-<!ENTITY type_other.label "Khác">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "Việc đăng nhập chỉ cần một máy chủ, tên đăng nhập và mật khẩu">
 <!ENTITY hostname.label "Máy chủ">
 <!ENTITY hostname.tooltip "Giao thức/tên máy chủ mà mật khẩu được áp dụng (ví dụ: http://www.example.com)">
 <!ENTITY formSubmitURL.label "Nhập tiền tố">

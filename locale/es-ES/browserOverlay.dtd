@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Contraseñas guardadas">
 <!ENTITY savedpasswords.accesskey "g">
 <!ENTITY savedpasswords.tooltip "Abrir el administrador de contraseñas guardadas">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Guardar datos de acceso">
 <!ENTITY ctx_savelogininfo.accesskey "G">
 <!ENTITY ctx_savelogininfo.tooltip "Agregar una contraseña guardada para esta forma">

@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "註釋">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "此登入類型需要一組字串使主機能夠辨識伺服器（例：HTTP authentication）">
-<!ENTITY type_other.label "其他">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "此登入類型的設定僅需要主機、使用者名稱與密碼">
 <!ENTITY hostname.label "主機（Host）">
 <!ENTITY hostname.tooltip "密碼要套用的協定/主機名稱（例：http://www.example.com）">
 <!ENTITY formSubmitURL.label "提交前置詞（Prefix）">

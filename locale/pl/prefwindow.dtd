@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Dodaje pozycję &quot;Zapamiętane hasła&quot; do menu Narzędzia i okna aplikacji jako skrót do menadżera haseł">
 <!ENTITY renameMenuitemTo.label "Zmień nazwę skrótu:">
 <!ENTITY renameMenuitemTo.tooltip "Wpisz tu cokolwiek by nazwać skrót inaczej niż &quot;Saved Passwords&quot;. Wymazując zawartość powrócisz do &quot;Saved Passwords&quot;.">
+<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
 <!ENTITY alwaysShowPasswords.label "Zawsze pokazuj hasła">
 <!ENTITY alwaysShowPasswords.tooltip "Jeśli zaznaczono, kolumna z hasłami będzie widoczna w oknie dialogowym i widoczne będzie też hasło w oknie edytora.">
 <!ENTITY alwaysPromptForMasterPassword.label "Zawsze pytaj o hasło główne">

@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "注释">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "要求向主机发送附加字符串以识别服务的登录(例如 HTTP 身份验证)">
-<!ENTITY type_other.label "其它">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "仅要求主机、用户名和密码的登录">
 <!ENTITY hostname.label "主机">
 <!ENTITY hostname.tooltip "密码应用到的协议/主机(例如 http://www.example.com)">
 <!ENTITY formSubmitURL.label "提交前缀">

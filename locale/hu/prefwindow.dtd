@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "&quot;Mentett jelszavak&quot; menüpont hozzáadása az eszközök menühöz és a Windows/Linux menühöz mint gyorsbillentyű a jelszókezelőhöz">
 <!ENTITY renameMenuitemTo.label "Rövidítés átnevezése erre:">
 <!ENTITY renameMenuitemTo.tooltip "Írjon be ide valamit a rövidítés előhívásához a &quot;Saved Passwords&quot; kivételével, ha egyszerűsíteni kívánja azt. Törölje az értéket a &quot;Saved Passwords&quot; visszaállításához. Figyelem: ez nem helyettesíti a biztonságosságot; használja a mesterjelszót (ha lehetséges) a jelszavainak megóvása érdekében.">
+<!ENTITY preselectCurrentSite.label "Jelenlegi webcím auto-kijelölése">
+<!ENTITY preselectCurrentSite.tooltip "Automatikus váltás a mentett jelszavakban a jelenlegi megnyitott lap webcímére.">
 <!ENTITY alwaysShowPasswords.label "Jelszavak megjelenítése mindig">
 <!ENTITY alwaysShowPasswords.tooltip "Ha megjelölve, a Saved Password Editor megkísérli megjeleníteni a Jelszókezelő ablak megnyitásakor a jelszavak oszlopot.">
 <!ENTITY alwaysPromptForMasterPassword.label "Mindig kérje a mesterjelszót">

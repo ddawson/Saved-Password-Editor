@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Записани пароли">
 <!ENTITY savedpasswords.accesskey "п">
 <!ENTITY savedpasswords.tooltip "Отваря диалог със записаните пароли">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Запази входната информация">
 <!ENTITY ctx_savelogininfo.accesskey "З">
 <!ENTITY ctx_savelogininfo.tooltip "Добави запазена парола към тази форма">

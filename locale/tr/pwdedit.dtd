@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Ekleme">
 <!ENTITY type_annotated.accesskey "H">
 <!ENTITY type_annotated.tooltip "Giriş kimlik doğrulama bilgileri barındırmak için ek girdiler istiyor (ö.r. HTTP doğrulama)">
-<!ENTITY type_other.label "Diğer">
-<!ENTITY type_other.accesskey "d">
-<!ENTITY type_other.tooltip "Giriş sadece host,kullanıcı adı ve şifre istiyor">
 <!ENTITY hostname.label "Host">
 <!ENTITY hostname.tooltip "Şifre içeren Protokol/hostadı (ö.r. http://www.ornek.com)">
 <!ENTITY formSubmitURL.label "Sayfa öneki">

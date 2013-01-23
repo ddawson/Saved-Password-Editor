@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Сачуване лозинке">
 <!ENTITY savedpasswords.accesskey "С">
 <!ENTITY savedpasswords.tooltip "Отворите сачуване лозинке">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Сачувај податке за пријаву">
 <!ENTITY ctx_savelogininfo.accesskey "ч">
 <!ENTITY ctx_savelogininfo.tooltip "Додајте сачувану лозинку за овај образац">

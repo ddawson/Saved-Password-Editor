@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Aldonas enskribon &quot;Konservitaj pasvortoj&quot; al la menuo &quot;Ilaro&quot; kaj la menuo sub la butono Firefox kiel fulmoligilo al la pasvorta administrilo">
 <!ENTITY renameMenuitemTo.label "Renomi fulmoklavon al:">
 <!ENTITY renameMenuitemTo.tooltip "Enigu ion ĉi tie por elekti alian fulmoklavon ol por &quot;Konservitaj pasvortoj&quot;, se vi volas iomete malevidentigi ĝin por entrudantoj. Forigu la valoron por denove uzi &quot;Konservitaj pasvortoj&quot;. Atentu: tio ne estas anstataŭo por fakta sekureco; vi uzu ĉefpasvorton, se tio estas ebla, se vi devas protekti viajn pasvortojn.">
+<!ENTITY preselectCurrentSite.label "Antaŭelekti aktualan retejon en Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "Kiam konservitaj pasvortoj malfermiĝas, tio tuj elektos la vizititan retejon kaj rulumos al la aktuala foliumila langeto.">
 <!ENTITY alwaysShowPasswords.label "Ĉiam montri pasvortojn">
 <!ENTITY alwaysShowPasswords.tooltip "Se tio estas ebligita, Saved Password Editor montros la pasvortan kolonon, kiam la dialogo de konservitaj pasvortoj malfermiĝas kaj la pasvorton, kiam la redaktila dialogo malfermiĝas.">
 <!ENTITY alwaysPromptForMasterPassword.label "Ĉiam postuli ĉefpasvorton">

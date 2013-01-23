@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Anotado">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Um login que requer uma linha adicional no host para identificar o serviço(por exemplo, autenticação HTTP)">
-<!ENTITY type_other.label "Outro">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "Um login que requer apenas um host, nome de usuário e senha">
 <!ENTITY hostname.label "Domínio">
 <!ENTITY hostname.tooltip "Domínio ao qual se aplica a senha (e.g. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Pré-definição da Entrada">

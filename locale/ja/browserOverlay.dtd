@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "保存されているパスワード">
 <!ENTITY savedpasswords.accesskey "v">
 <!ENTITY savedpasswords.tooltip "保存されているパスワードのダイアログを開きます">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "ログイン情報を保存">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "このフォームの保存されたパスワードを追加します">

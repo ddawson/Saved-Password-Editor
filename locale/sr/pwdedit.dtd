@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "Прибележно">
 <!ENTITY type_annotated.accesskey "П">
 <!ENTITY type_annotated.tooltip "Пријава која захтева ниску заједно са сервером за проверу идентитета домаћина (нпр. HTTP идентификација)">
-<!ENTITY type_other.label "Друго">
-<!ENTITY type_other.accesskey "Д">
-<!ENTITY type_other.tooltip "Пријава која захтева само домаћина, корисничко име и лозинку">
 <!ENTITY hostname.label "Домаћин">
 <!ENTITY hostname.tooltip "Протокол/домаћин на којем се лозинка примењује (нпр. http://www.primer.com)">
 <!ENTITY formSubmitURL.label "Префикс слања">

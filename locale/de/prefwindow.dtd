@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Fügt &quot;Gespeicherte Passwörter&quot; zum Aufruf der Passwortverwaltung dem Extras-Menü und dem Firefox-Button unter Windows und Linux hinzu">
 <!ENTITY renameMenuitemTo.label "Kürzel umbenennen in:">
 <!ENTITY renameMenuitemTo.tooltip "Geben Sie hier etwas ein, um dem Kürzel einen anderen Namen als &quot;Gespeicherte Passwörter&quot; zu geben, wenn Sie es Dritten gegenüber nicht so offensichtlich machen möchten. Löschen Sie den Wert, um wieder &quot;Gespeicherte Passwörter&quot; zu nutzen. Warnung: Dies ist kein Ersatz für akzeptable Sicherheit; Sie sollten ein Hauptpasswort verwenden, wenn möglich, wenn Sie Ihre Passwörter schützen möchten.">
+<!ENTITY preselectCurrentSite.label "Derzeitige Seite in &quot;Gespeicherte Passwörter&quot; vorauswählen">
+<!ENTITY preselectCurrentSite.tooltip "Beim Öffnen der gespeicherten Passwörter wird dies umgehend zu der momentan angezeigten Website scrollen.">
 <!ENTITY alwaysShowPasswords.label "Passwörter immer zeigen">
 <!ENTITY alwaysShowPasswords.tooltip "Wenn aktiviert, wird der Passworteditor die Passwortspalte anzeigen, wenn der Dialog für gespeicherte Passwörter geöffnet wird, und das Passwort anzeigen, wenn der Änderungsdialog geöffnet wird.">
 <!ENTITY alwaysPromptForMasterPassword.label "Immer nach dem Hauptpasswort fragen">

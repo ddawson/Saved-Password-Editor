@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Přidawa zapisk &quot;Składowane hesła&quot; menijej Nastroje a menijej pod tłóčatkom Firefox jako spěšny wotkaz  k zrjadowakej hesłow">
 <!ENTITY renameMenuitemTo.label "Skrótšenki přemjenować do:">
 <!ENTITY renameMenuitemTo.tooltip "Zapodajće něšto tu, zo byšće druhe skrótšenku wubrał, hač za &quot;Składowane hesła&quot;, jeli chceće ju za njewoprawnjenych mjenje wočiwidnje činił. Zhašaj hódnotu, zo byšće zaso &quot;Składowane hesła&quot; wužiwał. Kedźbu: to njeje narunanje za woprawdźitu wěstotu; wy měł hłowne hesło wužiwać, jeli to je móžno, jeli dyrbiće swoje hesła škitać.">
+<!ENTITY preselectCurrentSite.label "Aktualne sydło w Saved password do toho wubrać">
+<!ENTITY preselectCurrentSite.tooltip "Hdyž so składowane hesła wočinjeja, to wubjerje hnydom wopytane sydło a budźe k aktualnemu rajtarkej wobhladowaka kuleć.">
 <!ENTITY alwaysShowPasswords.label "Hesła přeco pokazać">
 <!ENTITY alwaysShowPasswords.tooltip "Jeli to je zmóžnjeny, Saved Passwords Editor pokaza hesłowu špaltu, hdyž dialog składowanych hesłow so wočinja a pokaza hesło, hdyž dialog editora so wočinja.">
 <!ENTITY alwaysPromptForMasterPassword.label "Přeco hłowne hesło žadać">

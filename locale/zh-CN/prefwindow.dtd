@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "在工具菜单和 Windows/Linux 下的 Firefox 菜单中添加“已保存密码”项，作为密码管理器的快捷方式。">
 <!ENTITY renameMenuitemTo.label "更改快捷方式名称为：">
 <!ENTITY renameMenuitemTo.tooltip "在此输入文字更改快捷方式名为“已保存密码”之外的其它名字，以防无关者轻易发现。清空此处文本继续使用“已保存密码”为名称。警告：这并不能替代适当的安全措施，如果你需要保护你的密码，需要使用主密码。">
+<!ENTITY preselectCurrentSite.label "在已保存密码中预先选中当前站点">
+<!ENTITY preselectCurrentSite.tooltip "打开已保存密码时，立即选中并滚动到当前浏览器标签中浏览的站点。">
 <!ENTITY alwaysShowPasswords.label "总是显示密码">
 <!ENTITY alwaysShowPasswords.tooltip "选中此项后，当已保存密码对话打开时，已保存密码编辑器会显示密码列，当编辑器对话打开时，会显示密码。">
 <!ENTITY alwaysPromptForMasterPassword.label "总是提示输入主密码">

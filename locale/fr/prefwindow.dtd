@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
 <!ENTITY renameMenuitemTo.label "Renommer le raccourci en :">
 <!ENTITY renameMenuitemTo.tooltip "Saisissez ici un autre nom de raccourci que ;Saved Passwords&quot; si vous voulez le rendre moins évident pour les intrus. Effacer cette valeur si vous voulez revenir à ;Saved Passwords&quot;. Attention : ceci n'assure nullement une sécurité particulière. vous devriez utiliser un mot de passe principal autant que possible si vous avez besoin de protéger vos mots de passe.">
+<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
 <!ENTITY alwaysShowPasswords.label "Toujours afficher les mots de passe">
 <!ENTITY alwaysShowPasswords.tooltip "Si la case est cochée, Saved Password Editor affichera la colonne des mots de passe à l'ouverture de la fenêtre de l'extension, et le mot de passe sera affiché quand la fenêtre d'édition sera ouverte.">
 <!ENTITY alwaysPromptForMasterPassword.label "Toujours demander le mot de passe principal">

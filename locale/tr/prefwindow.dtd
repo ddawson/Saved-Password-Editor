@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows/Linux program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
 <!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır:">
 <!ENTITY renameMenuitemTo.tooltip "Buraya &quot;Kayıtlı Şifreler&quot;, haricinde birşeyi kısayoldan çağırmak için birşeyler girin.İstemiyorsan &quot;Kayıtlı Şifrelere&quot;. dönmek için kutudaki değeri silin. Uyarı: Bu güvenlik için değil; şifreni koruman gerekiyorsa master şifresi kullanmalısın.">
+<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
 <!ENTITY alwaysShowPasswords.label "Şifreleri her zaman göster">
 <!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Kayıtlı Şifre Editörü ile ilgili tüm diyalog pencerelerinde Şifre satırı gösterilir.">
 <!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifreyi sor">

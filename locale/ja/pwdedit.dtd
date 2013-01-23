@@ -6,9 +6,6 @@
 <!ENTITY type_annotated.label "アノテーション">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "サービスを特定するためホストに文字列を追加する必要があるログイン (HTTP 認証など)">
-<!ENTITY type_other.label "その他">
-<!ENTITY type_other.accesskey "O">
-<!ENTITY type_other.tooltip "ホスト、ユーザ名、パスワードのみが必要なログイン">
 <!ENTITY hostname.label "ホスト">
 <!ENTITY hostname.tooltip "パスワードを適用するプロトコル/ホスト名 (例、http://www.example.com)">
 <!ENTITY formSubmitURL.label "送信 URL のプレフィクス">

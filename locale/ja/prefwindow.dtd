@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "[ツール] メニューと Windows アプリメニューに、パスワードマネージャを開く [保存されているパスワード] メニューを追加します">
 <!ENTITY renameMenuitemTo.label "ショートカットを名前変更:">
 <!ENTITY renameMenuitemTo.tooltip "ショートカット名を &quot;Saved Passwords&quot; から変更します。この文字列を削除して空欄にすると初期値の &quot;Saved Passwords&quot; に戻ります。警告: この設定は適切なセキュリティのための代替にはなりません。パスワードを保護する必要がある時はマスターパスワードを使用してください。">
+<!ENTITY preselectCurrentSite.label "保存されたパスワードから現在のサイトを選択する">
+<!ENTITY preselectCurrentSite.tooltip "保存されたパスワードを開いた時、現在のブラウザタブ表示しているサイトの項目へスクロールして選択します。">
 <!ENTITY alwaysShowPasswords.label "パスワードを常に表示する">
 <!ENTITY alwaysShowPasswords.tooltip "チェックを入れると、保存されたパスワードダイアログを開いた時に常にパスワードの列が表示されるようになります。">
 <!ENTITY alwaysPromptForMasterPassword.label "常にマスターパスワードの入力を求める">
