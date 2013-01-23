@@ -31,17 +31,16 @@ window.addEventListener(
   "load",
   function (ev) {
     if (spEditor.prefs.getBoolPref("always_show_passwords")) {
-      if (spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
-          && !masterPasswordLogin(function () true))
-        return;
-
-      showingPasswords = true;
-      document.getElementById("togglePasswords").label
-        = kSignonBundle.getString("hidePasswords");
-      document.getElementById("togglePasswords").accessKey
-        = kSignonBundle.getString("hidePasswordsAccessKey");
-      document.getElementById("passwordCol").hidden = false;
-      _filterPasswords();
+      if (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
+          || masterPasswordLogin(function () true)) {
+        showingPasswords = true;
+        document.getElementById("togglePasswords").label
+          = kSignonBundle.getString("hidePasswords");
+        document.getElementById("togglePasswords").accessKey
+          = kSignonBundle.getString("hidePasswordsAccessKey");
+        document.getElementById("passwordCol").hidden = false;
+        _filterPasswords();
+      }
     }
 
     if (spEditor.prefs.getBoolPref("preselect_current_site")) {
@@ -63,6 +62,16 @@ window.addEventListener(
           }
       }
     }
+
+    var menuBtnAnon =
+      document.getAnonymousNodes(document.getElementById("speMenuBtn"));
+    var innerBtn = menuBtnAnon[1], dropMarker = menuBtnAnon[2];
+    innerBtn.removeAttribute("class");
+    dropMarker.removeAttribute("class");
+    var innerBtnCS = getComputedStyle(innerBtn),
+        dropMarkerStl = dropMarker.style;
+    dropMarkerStl.marginTop = innerBtnCS.marginTop;
+    dropMarkerStl.marginBottom = innerBtnCS.marginBottom;
   },
   false);
 

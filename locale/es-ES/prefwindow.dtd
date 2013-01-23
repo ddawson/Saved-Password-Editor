@@ -3,6 +3,8 @@
 <!ENTITY displayMenuitem.tooltip "Agrega &quot;Contraseñas guardadas&quot; al menú Herramientas y al menú de Firefox en Windows/Linux como acceso directo al administrador de contraseñas guardadas">
 <!ENTITY renameMenuitemTo.label "Nuevo nombre de acceso directo:">
 <!ENTITY renameMenuitemTo.tooltip "Escribir algo para nombrar acceso directo de modo que no sea &quot;Contraseñas guardadas&quot;, en caso de desear hacerlo menos obvio. Eliminar valor para restaurar uso de &quot;Contraseñas guardadas&quot;. Advertencia: no es un sustituto apropiado de seguridad; de ser posible, se sugiere utilizar una contraseña maestra para proteger las contraseñas.">
+<!ENTITY preselectCurrentSite.label "Pre-elegir sitio actual en Contraseñas Guardadas">
+<!ENTITY preselectCurrentSite.tooltip "Al abrir Contraseñas Guardadas, elegir y llegar al sitio visitado en la ventana actual del navegador.">
 <!ENTITY alwaysShowPasswords.label "Mostrar siempre contraseñas">
 <!ENTITY alwaysShowPasswords.tooltip "De habilitarse, Saved Password Editor muestra la columna de contraseñas al abrir el administrador de contraseñas guardadas, al igual que la contraseña al abrir editor.">
 <!ENTITY alwaysPromptForMasterPassword.label "Mostrar siempre contraseña maestra">
