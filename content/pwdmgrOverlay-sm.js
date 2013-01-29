@@ -24,6 +24,21 @@ document.addEventListener(
   },
   false);
 
+window.addEventListener(
+  "load",
+  function _loadHandler () {
+    var menuBtnAnon =
+      document.getAnonymousNodes(document.getElementById("speMenuBtn"));
+    var innerBtn = menuBtnAnon[1], dropMarker = menuBtnAnon[2];
+    innerBtn.removeAttribute("class");
+    dropMarker.removeAttribute("class");
+    var innerBtnCS = getComputedStyle(innerBtn),
+        dropMarkerStl = dropMarker.style;
+    dropMarkerStl.marginTop = innerBtnCS.marginTop;
+    dropMarkerStl.marginBottom = innerBtnCS.marginBottom;
+  },
+  false);
+
 document.getElementById("passwordsTree").addEventListener(
   "select",
   function (ev) {
