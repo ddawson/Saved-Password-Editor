@@ -5,10 +5,10 @@
 <!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Giriş bilgisini kaydet">
 <!ENTITY ctx_savelogininfo.accesskey "K">
-<!ENTITY ctx_savelogininfo.tooltip "Bu form için parola ekle">
+<!ENTITY ctx_savelogininfo.tooltip "Bu form için kayıtlı şifre ekle">
 <!ENTITY ctx_editlogininfo.label "Giriş bilgisini düzenle">
 <!ENTITY ctx_editlogininfo.accesskey "D">
-<!ENTITY ctx_editlogininfo.tooltip "Bu form için kaydedilen parolayı düzenle">
+<!ENTITY ctx_editlogininfo.tooltip "Bu form için kaydedilen şifreyi düzenle">
 <!ENTITY ctx_deletelogininfo.label "Giriş bilgisini sil">
 <!ENTITY ctx_deletelogininfo.accesskey "S">
-<!ENTITY ctx_deletelogininfo.tooltip "Bu form için kaydedilen parolayı sil">
+<!ENTITY ctx_deletelogininfo.tooltip "Bu form için kaydedilen şifreyi sil">

@@ -1,18 +1,18 @@
 <!ENTITY prefwindow.title "Kayıtlı Şifre Editör seçenekleri">
-<!ENTITY displayMenuitem.label "Kısayolu menülere ekle">
-<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; Araçlara ve Windows/Linux program menüsüne şifre yöneticisine ulaşmak için kısayol olarak ekler">
+<!ENTITY displayMenuitem.label "Kısayolu menülerde bulundur">
+<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; şifre yöneticisine ulaşmak için Araçlara ve Windows/Linux program menüsüne kısayol olarak ekler">
 <!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır:">
 <!ENTITY renameMenuitemTo.tooltip "Buraya &quot;Kayıtlı Şifreler&quot;, haricinde birşeyi kısayoldan çağırmak için birşeyler girin.İstemiyorsan &quot;Kayıtlı Şifrelere&quot;. dönmek için kutudaki değeri silin. Uyarı: Bu güvenlik için değil; şifreni koruman gerekiyorsa master şifresi kullanmalısın.">
-<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
-<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
+<!ENTITY preselectCurrentSite.label "Açılı siteyi Kayıtlı Şifrelerde önceden seç">
+<!ENTITY preselectCurrentSite.tooltip "Kayıtlı Şifreleri açarken,otomatik olarak siteyi seçip şuanki sekme konumunda siteye girecek.">
 <!ENTITY alwaysShowPasswords.label "Şifreleri her zaman göster">
-<!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Kayıtlı Şifre Editörü ile ilgili tüm diyalog pencerelerinde Şifre satırı gösterilir.">
+<!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Şifre kısmı tüm Kayıtlı Şifre Editörü penceresi açılışında gösterilir.">
 <!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifreyi sor">
 <!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleşince, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok işlemde şifre sorulmayacaktır.">
-<!ENTITY passwordfield_caption.label "Editör penceresindeki şifre alanı">
+<!ENTITY passwordfield_caption.label "Editör alanıdaki şifre alanı">
 <!ENTITY passwordfield_alwayshide.label "Editörü açarken şifreyi her zaman gizle">
 <!ENTITY passwordfield_alwaysshow.label "Editörü açarken şifreyi her zaman göster">
 <!ENTITY passwordfield_rememberlast.label "Son hali hatırla">
 <!ENTITY passwordfield_rememberlast.tooltip "Pencerenin en son hali nasılsa aynısını gizle veya göster">
 <!ENTITY passwordfield_followspwin.label "Kayıtlı şifreler listesini izle">
-<!ENTITY passwordfield_followspwin.tooltip "Kayıtlı şifreler listesinde sadece şimdi pencerede görülen şifreler varsa göster">
+<!ENTITY passwordfield_followspwin.tooltip "Kayıtlı şifreler listesinde sadece şimdiki pencerede görülen şifreleri göster">
