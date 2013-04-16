@@ -3,14 +3,14 @@
 <!ENTITY type_form.label "Веб-форма">
 <!ENTITY type_form.accesskey "В">
 <!ENTITY type_form.tooltip "Форма на веб-странице">
-<!ENTITY type_annotated.label "Простая запись">
+<!ENTITY type_annotated.label "Аннотированная запись">
 <!ENTITY type_annotated.accesskey "A">
-<!ENTITY type_annotated.tooltip "A login that requires a string in addition to the host to identify the service (e.g. HTTP authentication)">
+<!ENTITY type_annotated.tooltip "Логин и пароль требующие дополнительную строку для идентификации службы (например HTTP authentication)">
 <!ENTITY hostname.label "Сервер">
-<!ENTITY hostname.tooltip "Протокол/имя сервера, к которому применяется пароль (например, http://www.example.com)">
+<!ENTITY hostname.tooltip "Протокол/имя сервера, к которому применяется пароль (например http://www.example.com)">
 <!ENTITY formSubmitURL.label "Префикс адресата">
 <!ENTITY formSubmitURL.tooltip "Префикс формы передачи адреса">
-<!ENTITY annotation.label "Запись">
+<!ENTITY annotation.label "Аннотация">
 <!ENTITY annotation.tooltip "Дополнительная строка определяющая способ аутентификации (например HTTP realm)">
 <!ENTITY username.label "Имя пользователя">
 <!ENTITY username.tooltip "Запоминать имя пользователя">
