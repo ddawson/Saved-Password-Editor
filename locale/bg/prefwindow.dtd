@@ -1,17 +1,17 @@
 <!ENTITY prefwindow.title "Настройки на редактора">
 <!ENTITY displayMenuitem.label "Включи Редактора в меню Инструменти">
 <!ENTITY displayMenuitem.tooltip "Добавя &quot;Запазени пароли&quot; към менюто Инструменти за бързо стартиране на редактора">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
+<!ENTITY renameMenuitemTo.label "Преименуване на отметката:">
 <!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
 <!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
-<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
+<!ENTITY preselectCurrentSite.tooltip "Когато се отваря прозореца на приставката, да се избере и покажат данните за текущо отвореният сайт.">
+<!ENTITY alwaysShowPasswords.label "Винаги показвай паролите">
+<!ENTITY alwaysShowPasswords.tooltip "Ако е отметнато, ще се показва колоната с паролите при отваряне на диалоговия прозорец">
+<!ENTITY alwaysPromptForMasterPassword.label "Винаги питай за главната парола">
 <!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
 <!ENTITY passwordfield_caption.label "Поле за парола в редактиращия прозорец">
-<!ENTITY passwordfield_alwayshide.label "Винаги скривай паролата, когато отваряш полето за редактиране">
-<!ENTITY passwordfield_alwaysshow.label "Винаги показвай паролата когато отваряш полето за редактиране">
+<!ENTITY passwordfield_alwayshide.label "Винаги скривай паролата, когато се отваря полето за редактиране">
+<!ENTITY passwordfield_alwaysshow.label "Винаги показвай паролата, когато отваряш полето за редактиране">
 <!ENTITY passwordfield_rememberlast.label "Запомни последното положение">
 <!ENTITY passwordfield_rememberlast.tooltip "Покажи или скрий същото, както когато беше беше отворен предишния път прозорецът">
 <!ENTITY passwordfield_followspwin.label "Следвай запаметения списък с паролите">

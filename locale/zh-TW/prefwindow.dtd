@@ -8,7 +8,7 @@
 <!ENTITY alwaysShowPasswords.label "總是顯示密碼">
 <!ENTITY alwaysShowPasswords.tooltip "勾選後，Saved Password Editor 會強制顯示密碼管理員中的密碼欄，編輯密碼視窗中的密碼也會顯示為明碼。">
 <!ENTITY alwaysPromptForMasterPassword.label "總是要求主控密碼">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "在密碼管理員中顯示密碼之前，先提示輸入主控密碼。啟用這個選項後，必然會導致每個瀏覽階段最少會出現一次重複提示。若停用此選項，大部分情況都不會提示您輸入主控密碼。">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "在密碼管理員中顯示密碼之前，先提示輸入主控密碼。啟用這個選項後，必然會導致每個瀏覽階段最少出現一次重複提示。若停用此選項，大部分情況都不會提示您輸入主控密碼。">
 <!ENTITY passwordfield_caption.label "編輯視窗中的密碼欄位">
 <!ENTITY passwordfield_alwayshide.label "開啟編輯視窗時總是隱藏密碼">
 <!ENTITY passwordfield_alwaysshow.label "開啟編輯視窗時總是顯示密碼">

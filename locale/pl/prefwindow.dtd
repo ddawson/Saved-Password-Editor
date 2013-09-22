@@ -2,9 +2,9 @@
 <!ENTITY displayMenuitem.label "Umieść skrót w menu">
 <!ENTITY displayMenuitem.tooltip "Dodaje pozycję &quot;Zapamiętane hasła&quot; do menu Narzędzia i okna aplikacji jako skrót do menadżera haseł">
 <!ENTITY renameMenuitemTo.label "Zmień nazwę skrótu:">
-<!ENTITY renameMenuitemTo.tooltip "Wpisz tu cokolwiek by nazwać skrót inaczej niż &quot;Saved Passwords&quot;. Wymazując zawartość powrócisz do &quot;Saved Passwords&quot;.">
-<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
-<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
+<!ENTITY renameMenuitemTo.tooltip "Wpisz tu cokolwiek by nazwać skrót inaczej niż &quot;Zapamiętane hasła&quot;. Wymazując zawartość powrócisz do &quot;Zapamiętane hasła&quot;.">
+<!ENTITY preselectCurrentSite.label "Zaznacz z wyprzedzeniem bieżącą stronę w oknie zapamiętanych haseł">
+<!ENTITY preselectCurrentSite.tooltip "Podczas otwierania okna zapamiętanych haseł, nastąpi niezwłoczne zaznaczenie i przejście do witryny odwiedzanej w bieżącej karcie przeglądarki.">
 <!ENTITY alwaysShowPasswords.label "Zawsze pokazuj hasła">
 <!ENTITY alwaysShowPasswords.tooltip "Jeśli zaznaczono, kolumna z hasłami będzie widoczna w oknie dialogowym i widoczne będzie też hasło w oknie edytora.">
 <!ENTITY alwaysPromptForMasterPassword.label "Zawsze pytaj o hasło główne">
@@ -13,6 +13,6 @@
 <!ENTITY passwordfield_alwayshide.label "Zawsze ukrywaj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_alwaysshow.label "Zawsze pokazuj hasło podczas otwierania okna edytora">
 <!ENTITY passwordfield_rememberlast.label "Pamiętaj ostatni stan">
-<!ENTITY passwordfield_rememberlast.tooltip "Show or hide the same as the last time the window was open">
-<!ENTITY passwordfield_followspwin.label "Follow Saved Passwords list">
-<!ENTITY passwordfield_followspwin.tooltip "Show if and only if passwords are currently shown in Saved Passwords window">
+<!ENTITY passwordfield_rememberlast.tooltip "Pokazuje lub ukrywa, tak jak podczas ostatniego otwarcia okna edytora">
+<!ENTITY passwordfield_followspwin.label "Śledzenie listy zapamiętanych haseł">
+<!ENTITY passwordfield_followspwin.tooltip "Ta opcja działa wtedy i tylko wtedy, gdy hasła są aktualnie pokazywane w oknie zapamiętanych haseł">

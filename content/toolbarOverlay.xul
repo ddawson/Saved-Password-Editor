@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -21,10 +21,7 @@
           "chrome://savedpasswordeditor/locale/browserOverlay.dtd">
 
 <overlay xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
-  <script type="application/javascript"><![CDATA[
-    Components.utils.import(
-      "resource://savedpasswordeditor/SavedPasswordEditor.jsm");
-  ]]></script>
+  <script type="application/javascript" src="toolbarOverlay.js"/>
 
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton id="savedpasswordeditor-button"
