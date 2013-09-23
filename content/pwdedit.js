@@ -390,4 +390,6 @@ function setNewSignon () {
     window.arguments[3].callback(newProps);
   else
     window.arguments[3].newSignon = newProps;
+
+  return true;
 }

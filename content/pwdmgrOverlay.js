@@ -159,7 +159,7 @@ const spEditor = {
 
   _mergeSignonProps: function (oldSignon, newProps) {
     var merged = {};
-    for (prop in newProps)
+    for (let prop in newProps)
       if (newProps[prop] === undefined)
         merged[prop] = oldSignon[prop];
       else
