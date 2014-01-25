@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2014  Daniel Dawson <ddawson@icehouse.net>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -26,6 +26,7 @@
   <toolbarpalette id="BrowserToolbarPalette">
     <toolbarbutton id="savedpasswordeditor-button"
                    class="toolbarbutton-1 chromeclass-toolbar-additional"
+                   persist="class" removable="true"
                    label="&savedpasswords.label;"
                    tooltiptext="&savedpasswords.tooltip;"
                    oncommand="SavedPasswordEditor.openSavedPasswords();"/>
