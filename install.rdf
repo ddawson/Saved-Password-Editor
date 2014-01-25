@@ -5,9 +5,9 @@
     <id>savedpasswordeditor@daniel.dawson</id>
     <type>2</type>
     <name>Saved Password Editor</name>
-    <version>2.7.1</version>
+    <version>2.7.2</version>
     <description>Adds the ability to create and edit entries in the password manager.</description>
-    <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+    <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
     <contributor>PlastikManiac (key icon) - http://plastikmaniac.deviantart.com/</contributor>
 
     <iconURL>chrome://savedpasswordeditor/skin/key32.png</iconURL>
@@ -19,7 +19,7 @@
       <RDF:Description>
         <id>{ec8030f7-c20a-464f-9b0e-13a3a9e97384}</id> <!-- Firefox -->
         <minVersion>17.0</minVersion>
-        <maxVersion>27.0</maxVersion>
+        <maxVersion>29.0</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -27,7 +27,7 @@
       <RDF:Description>
         <id>{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}</id> <!-- SeaMonkey -->
         <minVersion>2.14</minVersion>
-        <maxVersion>2.24</maxVersion>
+        <maxVersion>2.26</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -35,7 +35,7 @@
       <RDF:Description>
         <id>{3550f703-e582-4d05-9a08-453d09bdfdc6}</id> <!-- Thunderbird -->
         <minVersion>17.0</minVersion>
-        <maxVersion>27.0</maxVersion>
+        <maxVersion>29.0</maxVersion>
       </RDF:Description>
     </targetApplication>
 
@@ -51,7 +51,7 @@
       <RDF:Description>
         <locale>bg</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>ExaFlop</translator>
         <translator>arris</translator>
@@ -61,7 +61,7 @@
       <RDF:Description>
         <locale>de</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>/usr/bin/tux</translator>
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
@@ -69,7 +69,7 @@
       <RDF:Description>
         <locale>dsb</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>milupo</translator>
         <description>Staja móžnosć k dispoziciji, zapiski w zastojniku gronidłow napóraś a wobźěłaś.</description>
@@ -77,7 +77,7 @@
       <RDF:Description>
         <locale>el</locale>
         <name>Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (εικονίδιο κλειδιού)</contributor>
         <translator>Γιώργος Μαλαμάς "Grg68"</translator>
         <description>Προσθέτει τη δυνατότητα να δημιουργήσετε και να επεξεργαστείτε καταχωρίσεις κωδικών πρόσβασης στο διαχειριστή κωδικών πρόσβασης.</description>
@@ -85,7 +85,7 @@
       <RDF:Description>
         <locale>eo</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>milupo</translator>
         <description>Disponigas eblecon krei kaj redakti enskribojn en la pasvorta administrilo.</description>
@@ -93,7 +93,7 @@
       <RDF:Description>
         <locale>es-ES</locale>
         <name>Saved password editor (Editor de contraseñas)</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</description>
@@ -101,7 +101,7 @@
       <RDF:Description>
         <locale>fi</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Jiipee</translator>
         <description>Lisää mahdollisuuden luoda ja muokata kirjautumistietoja salasanojen hallinnassa.</description>
@@ -109,7 +109,7 @@
       <RDF:Description>
         <locale>fr</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Goofy</translator>
         <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
@@ -117,7 +117,7 @@
       <RDF:Description>
         <locale>hsb</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>milupo</translator>
         <description>Staja móžnosć k dispoziciji, zapiski w zrjadowaku hesłow wutworić a wobdźěłać.</description>
@@ -125,7 +125,7 @@
       <RDF:Description>
         <locale>hu</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>MIKES KASZMÁN István "Cashman"</translator>
         <description>Jelszavak szerkesztése a jelszókezelőben.</description>
@@ -133,7 +133,7 @@
       <RDF:Description>
         <locale>id-ID</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>XCen</translator>
         <description>Menambahkan kemampuan untuk membuat dan menyunting entri kata sandi di pengatur kata sandi.</description>
@@ -141,7 +141,7 @@
       <RDF:Description>
         <locale>ja</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Masahiko Imanaka "mar"</translator>
         <description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</description>
@@ -149,7 +149,7 @@
       <RDF:Description>
         <locale>nl</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>markh</translator>
         <description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</description>
@@ -157,7 +157,7 @@
       <RDF:Description>
         <locale>pl</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Marcin Borowczyk "MarcinB"</translator>
         <description>Dodaje możliwość tworzenia i edytowania wpisów haseł w menadżerze haseł.</description>
@@ -165,7 +165,7 @@
       <RDF:Description>
         <locale>pt-BR</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Edgard Dias Magalhaes "edgard.magalhaes"</translator>
         <description>Acrescenta a capacidade de criar e editar entradas de senhas no gerenciador de senhas.</description>
@@ -173,7 +173,7 @@
       <RDF:Description>
         <locale>pt-PT</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Carlos Simão "lloco"</translator>
         <description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</description>
@@ -181,7 +181,7 @@
       <RDF:Description>
         <locale>ru</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Пирятинский Виталий "PiVV"</translator>
         <description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</description>
@@ -189,7 +189,7 @@
       <RDF:Description>
         <locale>sr</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Charmed94</translator>
         <translator>ДакСРБИЈА</translator>
@@ -199,7 +199,7 @@
       <RDF:Description>
         <locale>sv-SE</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Mikael Hiort af Ornäs "Lakrits"</translator>
         <description>Lägger till funktioner för att skapa och redigera lösenordsposter i lösenordshanteraren.</description>
@@ -207,7 +207,7 @@
       <RDF:Description>
         <locale>tr</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Anil Kilic - www.guncem.net "ua_anil"</translator>
         <translator>nikneyim</translator>
@@ -217,7 +217,7 @@
       <RDF:Description>
         <locale>vi</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh"</translator>
         <description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</description>
@@ -225,7 +225,7 @@
       <RDF:Description>
         <locale>zh-CN</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Loviny</translator>
         <translator>yfdyh000 &lt;yfdyh000@gmail.com&gt;</translator>
@@ -236,7 +236,7 @@
       <RDF:Description>
         <locale>zh-TW</locale>
         <name>Saved Password Editor</name>
-        <creator>Daniel Dawson &lt;ddawson@icehouse.net&gt;</creator>
+        <creator>Daniel Dawson &lt;danielcdawson@gmail.com&gt;</creator>
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Velociraptor</translator>
         <description>在密碼管理員中加入新增與編輯密碼的功能。</description>

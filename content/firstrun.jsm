@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -27,7 +27,7 @@ var EXPORTED_SYMBOLS = [];
         SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
         THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
         PREFNAME = "currentVersion",
-        THISVERSION = "2.7.1",
+        THISVERSION = "2.7.2",
         UNPERSISTVERSION = "2.6pre1",
         WELCOMEVERSION = "2.5pre1",
         CONTENT = "chrome://savedpasswordeditor/content/",
@@ -95,6 +95,11 @@ var EXPORTED_SYMBOLS = [];
   }
 
   function set_welcome () {
+    try {
+      Cu.import("resource:///modules/CustomizableUI.jsm", {});
+      return;  /* Don't do it on Australis */
+    } catch (e) {}
+
     timer = Cc["@mozilla.org/timer;1"].createInstance(Ci.nsITimer);
     timer.initWithCallback({ notify: function () { welcome(); } },
                            500, Ci.nsITimer.TYPE_ONE_SHOT);

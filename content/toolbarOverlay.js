@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <ddawson@icehouse.net>
+    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -45,22 +45,34 @@ window.addEventListener(
       var addedButtonTo = [];
 
     if (addedButtonTo.indexOf(wtype) == -1) {
-      let toolbar, before;
-      for each ([tbId, beforeId] in btnPos[wtype]) {
-        toolbar = document.getElementById(tbId);
-        if (!toolbar) continue;
-        before = beforeId ? document.getElementById(beforeId) : null;
-        break;
+      if (document.getElementById("PanelUI-menu-button")) {
+        /* Australis */
+
+        var btn = document.getElementById(btnId);
+        if (!btn || btn.parentNode.place == "palette")
+          CustomizableUI.addWidgetToArea("savedpasswordeditor-button",
+                                         "nav-bar");
+      } else {
+        /* Old-style toolbar */
+
+        let toolbar, before;
+        for each ([tbId, beforeId] in btnPos[wtype]) {
+          toolbar = document.getElementById(tbId);
+          if (!toolbar) continue;
+          before = beforeId ? document.getElementById(beforeId) : null;
+          break;
+        }
+
+        if (!toolbar) return;
+
+        var btn = document.getElementById(btnId);
+        if (!btn || btn.parentNode.tagName == "toolbarpalette") {
+          toolbar.insertItem(btnId, before);
+          toolbar.setAttribute("currentset", toolbar.currentSet);
+          document.persist(toolbar.id, "currentset");
+        }
       }
 
-      if (!toolbar) return;
-
-      var btn = document.getElementById(btnId);
-      if (!btn || btn.parentNode.tagName == "toolbarpalette") {
-        toolbar.insertItem(btnId, before);
-        toolbar.setAttribute("currentset", toolbar.currentSet);
-        document.persist(toolbar.id, "currentset");
-      }
       addedButtonTo.push(wtype);
       prefs.setCharPref(prefName, addedButtonTo.join(","));
     }
