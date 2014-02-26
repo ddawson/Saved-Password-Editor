@@ -58,6 +58,8 @@
         <translator>pl99</translator>
         <description>Добавя възможност за създаване и редактиране на пароли в менажерът за пароли на браузъра.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>de</locale>
         <name>Saved Password Editor</name>
@@ -66,6 +68,8 @@
         <translator>/usr/bin/tux</translator>
         <description>Stellt eine Möglichkeit zur Verfügung, gespeicherte Passwörter im Passwortmanager zu ändern und neue hinzuzufügen.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>dsb</locale>
         <name>Saved Password Editor</name>
@@ -74,6 +78,8 @@
         <translator>milupo</translator>
         <description>Staja móžnosć k dispoziciji, zapiski w zastojniku gronidłow napóraś a wobźěłaś.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>el</locale>
         <name>Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης</name>
@@ -82,6 +88,8 @@
         <translator>Γιώργος Μαλαμάς "Grg68"</translator>
         <description>Προσθέτει τη δυνατότητα να δημιουργήσετε και να επεξεργαστείτε καταχωρίσεις κωδικών πρόσβασης στο διαχειριστή κωδικών πρόσβασης.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>eo</locale>
         <name>Saved Password Editor</name>
@@ -90,6 +98,8 @@
         <translator>milupo</translator>
         <description>Disponigas eblecon krei kaj redakti enskribojn en la pasvorta administrilo.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>es-ES</locale>
         <name>Saved password editor (Editor de contraseñas)</name>
@@ -98,6 +108,8 @@
         <translator>Ricardo A. Rivas &lt;rivica@gmail.com&gt;</translator>
         <description>Agrega la capacidad de crear y editar el contenido del administrador de contraseñas.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>fi</locale>
         <name>Saved Password Editor</name>
@@ -106,6 +118,8 @@
         <translator>Jiipee</translator>
         <description>Lisää mahdollisuuden luoda ja muokata kirjautumistietoja salasanojen hallinnassa.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>fr</locale>
         <name>Saved Password Editor</name>
@@ -114,6 +128,8 @@
         <translator>Goofy</translator>
         <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>hsb</locale>
         <name>Saved Password Editor</name>
@@ -122,6 +138,8 @@
         <translator>milupo</translator>
         <description>Staja móžnosć k dispoziciji, zapiski w zrjadowaku hesłow wutworić a wobdźěłać.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>hu</locale>
         <name>Saved Password Editor</name>
@@ -130,6 +148,8 @@
         <translator>MIKES KASZMÁN István "Cashman"</translator>
         <description>Jelszavak szerkesztése a jelszókezelőben.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>id-ID</locale>
         <name>Saved Password Editor</name>
@@ -138,6 +158,8 @@
         <translator>XCen</translator>
         <description>Menambahkan kemampuan untuk membuat dan menyunting entri kata sandi di pengatur kata sandi.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>ja</locale>
         <name>Saved Password Editor</name>
@@ -146,6 +168,8 @@
         <translator>Masahiko Imanaka "mar"</translator>
         <description>パスワードマネージャにパスワードエントリを作成、編集する機能を追加します。</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>nl</locale>
         <name>Saved Password Editor</name>
@@ -154,6 +178,8 @@
         <translator>markh</translator>
         <description>Voegt de mogelijkheid om wachtwoorden te maken en te bewerken toe aan de wachtwoordbeheerder.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>pl</locale>
         <name>Saved Password Editor</name>
@@ -162,6 +188,8 @@
         <translator>Marcin Borowczyk "MarcinB"</translator>
         <description>Dodaje możliwość tworzenia i edytowania wpisów haseł w menadżerze haseł.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>pt-BR</locale>
         <name>Saved Password Editor</name>
@@ -170,6 +198,8 @@
         <translator>Edgard Dias Magalhaes "edgard.magalhaes"</translator>
         <description>Acrescenta a capacidade de criar e editar entradas de senhas no gerenciador de senhas.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>pt-PT</locale>
         <name>Saved Password Editor</name>
@@ -178,6 +208,8 @@
         <translator>Carlos Simão "lloco"</translator>
         <description>Adiciona a habilidade de criar ou editar as senhas no gestor de senhas.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>ru</locale>
         <name>Saved Password Editor</name>
@@ -186,6 +218,8 @@
         <translator>Пирятинский Виталий "PiVV"</translator>
         <description>Добавляет возможность создания и редактирования паролей в менеджере паролей.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>sr</locale>
         <name>Saved Password Editor</name>
@@ -196,6 +230,8 @@
         <translator>Rancher</translator>
         <description>Додаје могућност прављења и мењања лозинки у управљачу лозинкама.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>sv-SE</locale>
         <name>Saved Password Editor</name>
@@ -204,6 +240,8 @@
         <translator>Mikael Hiort af Ornäs "Lakrits"</translator>
         <description>Lägger till funktioner för att skapa och redigera lösenordsposter i lösenordshanteraren.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>tr</locale>
         <name>Saved Password Editor</name>
@@ -214,6 +252,8 @@
         <translator>omrakin</translator>
         <description>Şifre yöneticisindeki şifrelere yaratma ve değiştirme yetenekleri ekler.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>vi</locale>
         <name>Saved Password Editor</name>
@@ -222,6 +262,8 @@
         <translator>Nguyễn Hoàng Long at timelinelive.blogspot.com "longnh"</translator>
         <description>Thêm tính năng tạo và thay đổi các mật khẩu trong cửa sổ quản lý mật khẩu.</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>zh-CN</locale>
         <name>Saved Password Editor</name>
@@ -233,6 +275,8 @@
         <translator>Wang.H.K "whknnn"</translator>
         <description>在「已保存密码」管理中增加新建与编辑密码的功能。</description>
       </RDF:Description>
+    </localized>
+    <localized>
       <RDF:Description>
         <locale>zh-TW</locale>
         <name>Saved Password Editor</name>
