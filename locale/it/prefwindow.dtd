@@ -1,0 +1,18 @@
+<!ENTITY prefwindow.title "Preferenze di Saved Password Editor">
+<!ENTITY displayMenuitem.label "Inserisce nel menu la scorciatoia &quot;Password salvate&quot;">
+<!ENTITY displayMenuitem.tooltip "Come scorciatoia per il Password Manager aggiunge la voce &quot;Password salvate&quot; al menu Strumenti di Firefox in Windows o Linux.">
+<!ENTITY renameMenuitemTo.label "Rinomina la scorciatoia in:">
+<!ENTITY renameMenuitemTo.tooltip "Permette di dare un nome diverso da &quot;Password salvate&quot; alla scorciatoia rendendone la funzione meno ovvia ai ficcanaso. Cancellando il valore inserito, si ritorna al valore predefinito di &quot;Password salvate&quot;. Attenzione: questo trucco non sostituisce un vero sistema di sicurezza! Per proteggere le proprie password infatti è opportuno usare una password principale.">
+<!ENTITY preselectCurrentSite.label "Preseleziona il sito corrente in Password salvate">
+<!ENTITY preselectCurrentSite.tooltip "Quando si seleziona &quot;Password salvate&quot;, si apre immediatamente il Password Manager che scorre l'elenco delle password salvate fino a raggiungere quelle presenti nel sito esplorato dalla scheda corrente del browser.">
+<!ENTITY alwaysShowPasswords.label "Mostra sempre le password">
+<!ENTITY alwaysShowPasswords.tooltip "Se l'opzione è selezionata, aprendo la finestra di dialogo di &quot;Password salvate&quot; il componente aggiuntivo Saved Password Editor visualizza il campo Password e la sua finestra di dialogo mostra le password.">
+<!ENTITY alwaysPromptForMasterPassword.label "Richiedi sempre la password principale">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Viene richiesto sempre l'inserimento della password principale per visualizzare le password in Password salvate. Se si abilita questa opzione si ha inevitabilmente una doppia richiesta di inserimento della password principale, almeno una volta per sessione. Se invece si disabilita, nella maggior parte dei casi, non viene effettuata alcuna richiesta.">
+<!ENTITY passwordfield_caption.label "Campo password nella finestra dell'editor">
+<!ENTITY passwordfield_alwayshide.label "Nasconde sempre la password quando si apre la finestra dell'editor">
+<!ENTITY passwordfield_alwaysshow.label "Mostra sempre la password quando si apre la finestra dell'editor">
+<!ENTITY passwordfield_rememberlast.label "Ricorda l'ultimo stato">
+<!ENTITY passwordfield_rememberlast.tooltip "Mostra o nasconde le password a seconda di quale era la situazione l'ultima volta che la finestra è stata aperta">
+<!ENTITY passwordfield_followspwin.label "Segue l'elenco della Password salvate">
+<!ENTITY passwordfield_followspwin.tooltip "Mostra le password se, e solo se, esse sono attualmente visualizzate nella finestra richiamata da Password salvate">

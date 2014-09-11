@@ -1,0 +1,36 @@
+<!ENTITY savedpasswordeditor.title "Saved Password Editor">
+<!ENTITY signontype.label "Tipo">
+<!ENTITY type_form.label "Modulo Web">
+<!ENTITY type_form.accesskey "W">
+<!ENTITY type_form.tooltip "Modulo di autenticazione contenuto in una pagina web">
+<!ENTITY type_annotated.label "Annotazione">
+<!ENTITY type_annotated.accesskey "A">
+<!ENTITY type_annotated.tooltip "Accesso che richiede l'inserimento di una stringa in aggiunta al server per identificare il servizio (per esempio una autenticazione HTTP)">
+<!ENTITY hostname.label "Server">
+<!ENTITY hostname.tooltip "Protocollo/nome del server cui è associata la password (per esempio http://www.example.com)">
+<!ENTITY formSubmitURL.label "Prefisso di invio">
+<!ENTITY formSubmitURL.tooltip "Prefisso dell'indirizzo di invio del modulo">
+<!ENTITY annotation.label "Annotazione">
+<!ENTITY annotation.tooltip "Stringa aggiuntiva per identificare il servizio su cui ci si deve autenticare (per es. HTTP realm)">
+<!ENTITY username.label "Nome utente">
+<!ENTITY username.tooltip "Nome utente da memorizzare">
+<!ENTITY password.label "Password">
+<!ENTITY password.tooltip "Password da memorizzare">
+<!ENTITY usernameField.label "Nome del campo 'Nome utente'">
+<!ENTITY usernameField.tooltip "Nome da attribuire al campo 'Nome utente' perché corrisponda a quello del modulo">
+<!ENTITY passwordField.label "Nome del campo 'Password'">
+<!ENTITY passwordField.tooltip "Nome da attribuire al campo 'Password' perché corrisponda a quello del modulo">
+<!ENTITY showPassword.label "Mostra">
+<!ENTITY showPassword.accesskey "M">
+<!ENTITY showPassword.tooltip "Mostra/nasconde la password">
+<!ENTITY hidePassword.label "Nasconde">
+<!ENTITY hidePassword.accesskey "N">
+<!ENTITY guessfrompage.label "Cerca di indovinare in base alla pagina corrente">
+<!ENTITY guessfrompage.accesskey "I">
+<!ENTITY guessfrompage.tooltip "Riempie il modulo in base al modulo di accesso probabile per la pagina corrente">
+<!ENTITY prevform.label "Modulo precedente">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Prova il modulo precedente della pagina">
+<!ENTITY nextform.label "Modulo successivo">
+<!ENTITY nextform.accesskey "s">
+<!ENTITY nextform.tooltip "Prova il modulo successivo della pagina">
