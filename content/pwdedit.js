@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -82,6 +82,22 @@ window.addEventListener(
     if (oldSignons.length > 1) {
       el("type_group").style.display = "none";
       el("type_caption").style.display = "none";
+
+      let haveWebLogin = false, haveAnnotatedLogin = false;
+      for (let i = 0; i < oldSignons.length; i++) {
+        if (oldSignons[i].httpRealm)
+          haveAnnotatedLogin = true;
+        else
+          haveWebLogin = true;
+      }
+
+      if (haveAnnotatedLogin)
+        el("formSubmitURL_lbl").disabled = el("formSubmitURL_text").disabled =
+          true;
+      if (haveWebLogin)
+        el("httpRealm_lbl").disabled = el("httpRealm_text").disabled =
+          true;
+
     } else {
       let type;
       if (!oldSignons[0].httpRealm)
@@ -358,9 +374,11 @@ function setNewSignon () {
 
   if (type == -1) {
     newProps.formSubmitURL =
-      formSubmitURL.indefinite ? undefined : formSubmitURL.qvalue;
+      formSubmitURL.indefinite ? undefined : formSubmitURL.disabled ? null :
+      formSubmitURL.qvalue;
     newProps.httpRealm =
-      httpRealm.indefinite ? undefined : httpRealm.qvalue;
+      httpRealm.indefinite ? undefined : httpRealm.disabled ? null :
+      httpRealm.qvalue;
     newProps.usernameField =
       usernameField.indefinite ? undefined : usernameField.qvalue;
     newProps.passwordField =
@@ -376,9 +394,29 @@ function setNewSignon () {
     newProps.usernameField = newProps.passwordField = "";
   }
 
+  if (!newProps.hostname && newProps.hostname !== undefined) {
+    Cc["@mozilla.org/embedcomp/prompt-service;1"].
+      getService(Ci.nsIPromptService).
+      alert(window, genStrBundle.getString("error"),
+            peStrBundle.getString("emptyhost"));
+    return false;
+  }
+
+  if ((type == 0 && !newProps.formSubmitURL
+       && newProps.formSubmitURL !== undefined)
+      || (type == 1 && !newProps.httpRealm
+          && newProps.httpRealm !== undefined)) {
+    Cc["@mozilla.org/embedcomp/prompt-service;1"].
+      getService(Ci.nsIPromptService).
+      alert(window, genStrBundle.getString("error"),
+            peStrBundle.getString("emptysecondary"));
+    return false;
+  }
+
   if (oldSignons.length > 1 && newProps.hostname !== undefined
       && newProps.username !== undefined
-      && (newProps.formSubmitURL !== undefined || newProps.httpRealm !== undefined)) {
+      && (newProps.formSubmitURL !== undefined
+          || newProps.httpRealm !== undefined)) {
     Cc["@mozilla.org/embedcomp/prompt-service;1"].
       getService(Ci.nsIPromptService).
       alert(window, genStrBundle.getString("error"),
@@ -386,9 +424,12 @@ function setNewSignon () {
     return false;
   }
 
-  if (window.arguments[3].callback)
-    window.arguments[3].callback(newProps);
-  else
+  if (window.arguments[3].callback) {
+    let parentWindow = null;
+    if (window.arguments[3].parentWindow)
+      parentWindow = window.arguments[3].parentWindow;
+    window.arguments[3].callback(newProps, parentWindow);
+  } else
     window.arguments[3].newSignon = newProps;
 
   return true;

@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -189,13 +189,22 @@ const spEditor = {
 
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
-    for (let i = 0; i < selSignons.length; i++)
-      passwordmanager.modifyLogin(
-        selSignons[i], this._mergeSignonProps(selSignons[i], ret.newSignon));
-    var fv = document.getElementById("filter").value;
-    setFilter("");
-    setFilter(fv);
-    signonsTreeView.selection.clearSelection();
+
+    try {
+      for (let i = 0; i < selSignons.length; i++)
+        passwordmanager.modifyLogin(
+          selSignons[i], this._mergeSignonProps(selSignons[i], ret.newSignon));
+      var fv = document.getElementById("filter").value;
+      setFilter("");
+      setFilter(fv);
+      signonsTreeView.selection.clearSelection();
+    } catch (e) {
+      Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
+        getService(Components.interfaces.nsIPromptService).
+        alert(window, this.genStrBundle.getString("error"),
+              this.pmoStrBundle.getFormattedString("badnewentry",
+                                                   [e.message]));
+    }
   },
 
   cloneSignon: function () {

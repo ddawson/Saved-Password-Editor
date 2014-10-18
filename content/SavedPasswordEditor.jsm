@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -143,7 +143,7 @@ var SavedPasswordEditor = {
       }
     }
 
-    var ret = { newSignon: null, callback: _finish };
+    var ret = { newSignon: null, callback: _finish, parentWindow: null };
     aWindow.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome",
@@ -151,7 +151,7 @@ var SavedPasswordEditor = {
     this.curInfo = null;
   },
 
-  _finishEdit: function (aNewSignon) {
+  _finishEdit: function (aNewSignon, aParentWindow) {
     if (!aNewSignon) return;
 
     var newSignon = Cc["@mozilla.org/login-manager/loginInfo;1"].
@@ -160,8 +160,16 @@ var SavedPasswordEditor = {
                    aNewSignon.httpRealm, aNewSignon.username,
                    aNewSignon.password, aNewSignon.usernameField,
                    aNewSignon.passwordField);
-    pwdSvc.modifyLogin(SavedPasswordEditor.oldSignon, newSignon);
-    showAlert(genStrBundle.GetStringFromName("logininfochanged"));
+    try {
+      pwdSvc.modifyLogin(SavedPasswordEditor.oldSignon, newSignon);
+      showAlert(genStrBundle.GetStringFromName("logininfochanged"));
+    } catch (e) {
+      let window = target.ownerDocument.defaultView;
+      promptSvc.alert(
+        aParentWindow,
+        genStrBundle.GetStringFromName("error"),
+        genStrBundle.formatStringFromName("failed", [e.message], 1));
+    }
   },
 
   _handleDisambigSelection: function (aEvt) {
@@ -184,7 +192,7 @@ var SavedPasswordEditor = {
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
         "centerscreen,dependent,dialog,chrome",
         [spe._signonMap[target.label]], 1, false,
-        { newSignon: null, callback: spe._finishEdit });
+        { newSignon: null, callback: spe._finishEdit, parentWindow: window });
 
     spe._deleting = false;
   },
@@ -234,7 +242,8 @@ var SavedPasswordEditor = {
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
         "centerscreen,dependent,dialog,chrome",
         [signons[0]], 1, false,
-        { newSignon: null, callback: this._finishEdit });
+        { newSignon: null, callback: this._finishEdit,
+          parentWindow: aWindow });
     } else
       this._showDisambig(aWindow, signons);
   },
