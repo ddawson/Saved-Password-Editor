@@ -8,8 +8,8 @@
 <!ENTITY type_annotated.tooltip "Μια σύνδεση που απαιτεί και μια συμβολοσειρά εκτός από τον κεντρικό υπολογιστή για τον προσδιορισμό της υπηρεσίας (π.χ. επαλήθευση ταυτότητας HTTP)">
 <!ENTITY hostname.label "Κεντρικός υπολογιστής">
 <!ENTITY hostname.tooltip "Πρωτόκολλο/όνομα κεντρικού υπολογιστή για το οποίο ισχύει ο κωδικός πρόσβασης (π.χ. http://www.example.com)">
-<!ENTITY formSubmitURL.label "Πρόθεμα υποβολής">
-<!ENTITY formSubmitURL.tooltip "Πρόθεμα διεύθυνσης υποβολής της φόρμας">
+<!ENTITY formSubmitURL.label "Πρόθημα υποβολής">
+<!ENTITY formSubmitURL.tooltip "Πρόθημα διεύθυνσης υποβολής της φόρμας">
 <!ENTITY annotation.label "Σχόλιο">
 <!ENTITY annotation.tooltip "Επιπρόσθετη συμβολοσειρά προσδιορισμού της υπηρεσίας επαλήθευσης ταυτότητας (π.χ. Τομέας HTTP)">
 <!ENTITY username.label "Όνομα χρήστη">

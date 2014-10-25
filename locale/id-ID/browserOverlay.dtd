@@ -3,12 +3,12 @@
 <!ENTITY savedpasswords.accesskey "s">
 <!ENTITY savedpasswords.tooltip "Buka dialog Simpanan Kata Sandi">
 <!-- Context menu -->
-<!ENTITY ctx_savelogininfo.label "Save login info">
-<!ENTITY ctx_savelogininfo.accesskey "S">
-<!ENTITY ctx_savelogininfo.tooltip "Add a saved password for this form">
-<!ENTITY ctx_editlogininfo.label "Edit login info">
-<!ENTITY ctx_editlogininfo.accesskey "E">
-<!ENTITY ctx_editlogininfo.tooltip "Edit a saved password for this form">
-<!ENTITY ctx_deletelogininfo.label "Delete login info">
-<!ENTITY ctx_deletelogininfo.accesskey "D">
-<!ENTITY ctx_deletelogininfo.tooltip "Delete a saved password for this form">
+<!ENTITY ctx_savelogininfo.label "Simpan info login">
+<!ENTITY ctx_savelogininfo.accesskey "s">
+<!ENTITY ctx_savelogininfo.tooltip "Tambahkan kata sandi tersimpan untuk formulir ini">
+<!ENTITY ctx_editlogininfo.label "Sunting info login">
+<!ENTITY ctx_editlogininfo.accesskey "l">
+<!ENTITY ctx_editlogininfo.tooltip "Sunting kata sandi tersimpan untuk formulir ini">
+<!ENTITY ctx_deletelogininfo.label "Hapus info login">
+<!ENTITY ctx_deletelogininfo.accesskey "i">
+<!ENTITY ctx_deletelogininfo.tooltip "Hapus kata sandi tersimpan untuk formulir ini">

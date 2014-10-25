@@ -1,7 +1,7 @@
 <!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Αποθηκευμένοι κωδικοί πρόσβασης">
 <!ENTITY savedpasswords.accesskey "π">
-<!ENTITY savedpasswords.tooltip "Άνοιγμα του πλαισίου διαλόγου &quot;Αποθηκευμένοι κωδικοί&quot;">
+<!ENTITY savedpasswords.tooltip "Άνοιγμα του πλαισίου διαλόγου «Αποθηκευμένοι κωδικοί»">
 <!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Αποθήκευση πληροφοριών σύνδεσης">
 <!ENTITY ctx_savelogininfo.accesskey "ο">

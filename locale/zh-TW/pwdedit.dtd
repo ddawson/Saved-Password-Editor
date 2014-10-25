@@ -8,8 +8,8 @@
 <!ENTITY type_annotated.tooltip "此登入類型需要一組字串使主機能夠辨識伺服器（例：HTTP authentication）">
 <!ENTITY hostname.label "主機（Host）">
 <!ENTITY hostname.tooltip "密碼要套用的協定/主機名稱（例：http://www.example.com）">
-<!ENTITY formSubmitURL.label "提交前置詞（Prefix）">
-<!ENTITY formSubmitURL.tooltip "表單送出目標位址的前置詞">
+<!ENTITY formSubmitURL.label "送出前綴（Prefix）">
+<!ENTITY formSubmitURL.tooltip "表單送出目標位址的前綴字串">
 <!ENTITY annotation.label "註釋">
 <!ENTITY annotation.tooltip "以附加的字串辨識要認證的伺服器（例：HTTP realm）">
 <!ENTITY username.label "使用者名稱">

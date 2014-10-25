@@ -8,8 +8,8 @@
 <!ENTITY type_annotated.tooltip "Accesso che richiede l'inserimento di una stringa in aggiunta al server per identificare il servizio (per esempio una autenticazione HTTP)">
 <!ENTITY hostname.label "Server">
 <!ENTITY hostname.tooltip "Protocollo/nome del server cui è associata la password (per esempio http://www.example.com)">
-<!ENTITY formSubmitURL.label "Prefisso di invio">
-<!ENTITY formSubmitURL.tooltip "Prefisso dell'indirizzo di invio del modulo">
+<!ENTITY formSubmitURL.label "Prefisso di Invio">
+<!ENTITY formSubmitURL.tooltip "Prefisso dell'indirizzo di Invio del modulo">
 <!ENTITY annotation.label "Annotazione">
 <!ENTITY annotation.tooltip "Stringa aggiuntiva per identificare il servizio su cui ci si deve autenticare (per es. HTTP realm)">
 <!ENTITY username.label "Nome utente">

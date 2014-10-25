@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "it-IT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,6 +34,7 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Benvenuti in Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
@@ -41,6 +44,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
 <!ENTITY welcomepara1_sm "Grazie per l'uso di <a id='addonlink'>Saved Password Editor</a>. Si può accedere alle funzioni di modifica andando in Strumenti  -&gt; Opzioni, o in Modifica -&gt; Preferenze (in funzione del sistema operativo usato) o andando alla voce &quot;Password&quot; sotto &quot;Privacy &amp; Sicurezza&quot; e selezionando &quot;Gestione della password immagazzinate&quot;. Alternativamente si può semplicemente accedere alle Password salvate dal menu Strumenti. È anche disponibile un pulsante da aggiungere alla barra degli strumenti; per accedervi, fare clic col pulsante destro del mouse sulla barra degli strumenti e selezionare &quot;Personalizza…&quot;. La finestra di dialogo 'Password salvate' conterrà i comandi per aggiungere/modificare le password usando un pulsante o mediante il menu contestuale.">
 <!-- Paragraph 2 -->

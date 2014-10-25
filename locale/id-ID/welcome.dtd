@@ -47,4 +47,4 @@
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
 <!ENTITY welcomepara2 "Perhatikan bahwa dialog Simpanan Kata Sandi merupakan komponen dasar dari <span id='appname'></span>, dan tidak disediakan oleh ekstensi ini, kecuali untuk fungsi-fungsi yang ditambahkan yang disebutkan di atas. Tombol toolbar disediakan hanya untuk kemudahan, dengan perkiraan bahwa beberapa pengguna ekstensi ini akan mengakses dialog lebih sering daripada mereka yang tidak.">
 <!-- Paragraph 3 -->
-<!ENTITY welcomepara3 "You may also manipulate logins associated with a particular web form by right-clicking on any of its fields and selecting an action.">
+<!ENTITY welcomepara3 "Anda juga bisa memanipulasi login yang berkaitan dengan formulir web tertentu dengan cara mengklik kanan pada bagian kolom mana saja dan pilih tindakan yang Anda ingin lakukan.">

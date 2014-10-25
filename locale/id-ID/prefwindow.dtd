@@ -1,14 +1,14 @@
 <!ENTITY prefwindow.title "Preferensi Editor Simpanan Kata Sandi">
 <!ENTITY displayMenuitem.label "Masukkan jalan pintas di menu">
 <!ENTITY displayMenuitem.tooltip "Tambahkan &quot;Simpanan Kata Sandi&quot; ke menu Peralatan dan menu aplikasi Windows sebagai jalan pintas ke pengatur kata sandi">
-<!ENTITY renameMenuitemTo.label "Rename shortcut to:">
-<!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY renameMenuitemTo.label "Ubah nama jalan pintas ke:">
+<!ENTITY renameMenuitemTo.tooltip "Ketikkan sesuatu di sini untuk memanggil jalan pintas, sesuatu yang lain daripada &quot;Saved Passwords&quot;, jika Anda ingin membuatnya tidak lebih terlihat oleh orang lain. Hapus nilai untuk kembali untuk menggunakan &quot;Saved Passwords&quot;. Peringatan: ini bukanlah pengganti untuk keamananan yang baik; Anda harus menggunakan kata sandi utama sebisa mungkin untuk melindungi kata sandi Anda.">
 <!ENTITY preselectCurrentSite.label "Pilih situs ini di Simpanan Kata Sandi">
 <!ENTITY preselectCurrentSite.tooltip "Ketika membuka Simpanan Kata Sandi, situs yang dikunjungi akan langsung dipilih di tab browser.">
-<!ENTITY alwaysShowPasswords.label "Always show passwords">
-<!ENTITY alwaysShowPasswords.tooltip "If checked, Saved Password Editor will cause the Password column to be shown when the Saved Passwords dialog opens and show the password when the editor dialog opens.">
-<!ENTITY alwaysPromptForMasterPassword.label "Always prompt for master password">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Prompts for master password when showing passwords in Saved Passwords. If enabled, this unavoidably causes a double prompt at least once per session. If disabled, in most cases you will not be prompted for the master password.">
+<!ENTITY alwaysShowPasswords.label "Selalu tampilkan kata sandi">
+<!ENTITY alwaysShowPasswords.tooltip "Jika dicentang, Editor Simpanan Kata Sandi akan menampilkan kolom Kata Sandi ketika dialog Simpanan Kata Sandi muncul dan menunjukkan kata sandi ketika dialog editor muncul.">
+<!ENTITY alwaysPromptForMasterPassword.label "Selalu tanya untuk kata sandi utama">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Tanyakan untuk kata sandi utama ketika menampilkan kata sandi di Simpanan Kata Sandi. Jika diaktifkan, ini mengakibatkan pertanyaan dua kali sedikitnya sekali per sesi. Jika dinonaktifkan, kebanyakan kasus Anda tidak akan ditanya lagi mengenai kata sandi utama.">
 <!ENTITY passwordfield_caption.label "Kolom kata sandi di jendela editor">
 <!ENTITY passwordfield_alwayshide.label "Selalu sembunyikan kata sandi ketika membuka jendela editor">
 <!ENTITY passwordfield_alwaysshow.label "Selalu tampilkan kata sandi ketika membuka jendela editor">

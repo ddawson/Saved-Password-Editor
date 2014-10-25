@@ -14,10 +14,12 @@
 
 
 
+
 -->
 <!ENTITY locale "zh-CN">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -41,6 +43,7 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "欢迎使用已保存密码编辑器">
 <!-- Paragraph 1, Firefox version -->
@@ -50,6 +53,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 
