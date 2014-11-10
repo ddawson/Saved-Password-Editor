@@ -263,9 +263,18 @@ function guessParameters () {
 
       // Construct the submit prefix
       let formAction = form.getAttribute("action");
-      let res = /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction);
+      let res;
+      if (formAction && formAction.startsWith("javascript:"))
+        res = "javascript:";
+      else {
+        res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)
+                         : [ null, hostname ];
+        if (!res) return false;
+        res = res[1];
+      }
+
       loginForms.push({
-        hostname: hostname, formSubmitURL: res ? res[1] : hostname,
+        hostname: hostname, formSubmitURL: res,
         username: unameField.value, password: pwdField.value,
         usernameField: unameField.getAttribute("name"),
         passwordField: pwdField.getAttribute("name") });

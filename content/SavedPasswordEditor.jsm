@@ -109,8 +109,15 @@ var SavedPasswordEditor = {
     if (!usernameField) return false;
 
     var formAction = form.action;
-    var res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)[1]
-                         : hostname;
+    var res;
+    if (formAction && formAction.startsWith("javascript:"))
+      res = "javascript:";
+    else {
+      res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)
+                           : [ null, hostname ];
+      if (!res) return false;
+      res = res[1];
+    }
 
     this.curInfo = {
       hostname: hostname,
