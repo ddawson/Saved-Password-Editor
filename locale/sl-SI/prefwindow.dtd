@@ -1,0 +1,18 @@
+<!ENTITY prefwindow.title "Nastavitve Saved Password Editor">
+<!ENTITY displayMenuitem.label "Vključi bližnjico v menijih">
+<!ENTITY displayMenuitem.tooltip "Doda &quot;Shranjena gesla&quot; v meni Orodja in Firefoxov meni za Windows/Linux kot bližnjico za upravitelja gesel">
+<!ENTITY renameMenuitemTo.label "Preimenuj bližnjico v:">
+<!ENTITY renameMenuitemTo.tooltip "Tu vnesite ime bližnjice (ne &quot;Shranjena gesla&quot;), če ga želite narediti manj dovzetnega za vsiljivce. Izbrišite to vrednost za povrnitev na &quot;Shranjena gesla&quot;. Opozorilo: to ni nadomestilo za ustrezno varnost; po možnosti uporabite glavno geslo, če je potrebno zaščititi vaša gesla.">
+<!ENTITY preselectCurrentSite.label "Predhodno izberi trenutno stran v shranjenih geslih">
+<!ENTITY preselectCurrentSite.tooltip "Ob odpiranju shranjenih gesel bo to takoj izbralo in se pomaknilo na obiskano stran v trenutnem brskalnikovem zavihku.">
+<!ENTITY alwaysShowPasswords.label "Vedno prikaži gesla">
+<!ENTITY alwaysShowPasswords.tooltip "Če je označeno, bo Saved Password Editor prikazal stolpec Gesla ob odpiranju pogovornega okno shranjenih gesel in geslo ob odpiranju pogovornega okna urejevalnika.">
+<!ENTITY alwaysPromptForMasterPassword.label "Vedno pozovi za glavno geslo">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Pozove za glavno geslo ob prikazu shranjenih gesel. Če je omogočeno, to neizogibno povzroči dvojni poziv najmanj enkrat na sejo. Če je onemogočeno, v večini primerov ne boste pozvani za glavno geslo.">
+<!ENTITY passwordfield_caption.label "Polje gesla v oknu urejevalnika">
+<!ENTITY passwordfield_alwayshide.label "Vedno skrij geslo ob odpiranju okna urejevalnika">
+<!ENTITY passwordfield_alwaysshow.label "Vedno prikaži geslo ob odpiranju okna urejevalnika">
+<!ENTITY passwordfield_rememberlast.label "Zapomni si zadnje stanje">
+<!ENTITY passwordfield_rememberlast.tooltip "Prikaži ali skrij isto kot ob zadnjem odpiranju okna">
+<!ENTITY passwordfield_followspwin.label "Sledi seznamu shranjenih gesel">
+<!ENTITY passwordfield_followspwin.tooltip "Prikaži samo, če so gesla trenutno prikazana v oknu shranjenih gesel">

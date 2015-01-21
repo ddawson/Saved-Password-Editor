@@ -240,7 +240,7 @@ function guessParameters () {
       let form = forms.snapshotItem(i), pwdField = null, j;
       for (j = 0; j < form.elements.length; j++) {
         let element = form.elements[j];
-        if (element instanceof Ci.nsIDOMHTMLInputElement
+        if (element instanceof HTMLInputElement
             && element.type == "password") {
           pwdField = element;
           break;
@@ -251,7 +251,7 @@ function guessParameters () {
       let unameField = null;
       for (j = j - 1; j >= 0; j--) {
         let element = form.elements[j];
-        if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
+        if (!element instanceof HTMLInputElement) continue;
         let elType = (element.getAttribute("type") || "").toLowerCase();
         if (!elType || elType == "text" || elType == "email" || elType == "url"
             || elType == "tel" || elType == "number") {
@@ -262,7 +262,7 @@ function guessParameters () {
       if (!unameField) continue;
 
       // Construct the submit prefix
-      let formAction = form.getAttribute("action");
+      let formAction = form.action;
       let res;
       if (formAction && formAction.startsWith("javascript:"))
         res = "javascript:";

@@ -1,0 +1,12 @@
+<!ENTITY savedpasswords.label "Shranjena gesla">
+<!ENTITY savedpasswords.accesskey "S">
+<!ENTITY savedpasswords.tooltip "Odpri pogovorno okno shranjenih gesel">
+<!ENTITY ctx_savelogininfo.label "Shrani podatke o prijavi">
+<!ENTITY ctx_savelogininfo.accesskey "S">
+<!ENTITY ctx_savelogininfo.tooltip "Dodaj shranjeno geslo za ta obrazec">
+<!ENTITY ctx_editlogininfo.label "Uredi podatke o prijavi">
+<!ENTITY ctx_editlogininfo.accesskey "U">
+<!ENTITY ctx_editlogininfo.tooltip "Uredi shranjeno geslo za ta obrazec">
+<!ENTITY ctx_deletelogininfo.label "Izbriši podatke o prijavi">
+<!ENTITY ctx_deletelogininfo.accesskey "z">
+<!ENTITY ctx_deletelogininfo.tooltip "Izbriši shranjeno geslo za ta obrazec">

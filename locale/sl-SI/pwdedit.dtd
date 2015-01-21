@@ -1,0 +1,36 @@
+<!ENTITY savedpasswordeditor.title "Urejevalnik shranjenih gesel">
+<!ENTITY signontype.label "Vrsta">
+<!ENTITY type_form.label "Spletni obrazec">
+<!ENTITY type_form.accesskey "S">
+<!ENTITY type_form.tooltip "Obrazec na spletni strani">
+<!ENTITY type_annotated.label "Z opombami">
+<!ENTITY type_annotated.accesskey "Z">
+<!ENTITY type_annotated.tooltip "Prijava, ki za prepoznavo storitve poleg gostitelja zahteva tudi niz (npr. overitev HTTP)">
+<!ENTITY hostname.label "Gostitelj">
+<!ENTITY hostname.tooltip "Protokol/ime gostitelja, na katerega se nanaša geslo (npr: http://www.example.com)">
+<!ENTITY formSubmitURL.label "Predpona za pošiljanje">
+<!ENTITY formSubmitURL.tooltip "Predpona naslova obrazca za pošiljanje">
+<!ENTITY annotation.label "Opomba">
+<!ENTITY annotation.tooltip "Dodaten niz za prepoznavo storitve, katero je potrebno overiti (npr. območje HTTP)">
+<!ENTITY username.label "Uporabniško ime">
+<!ENTITY username.tooltip "Uporabniško ime, ki si ga je potrebno zapomniti">
+<!ENTITY password.label "Geslo">
+<!ENTITY password.tooltip "Geslo, ki si ga je potrebno zapomniti">
+<!ENTITY usernameField.label "Ime polja za uporabniško ime">
+<!ENTITY usernameField.tooltip "Atribut imena za ustrezno polje uporabniškega imena v obrazcu">
+<!ENTITY passwordField.label "Ime polja za geslo">
+<!ENTITY passwordField.tooltip "Atribut imena za ustrezno polje gesla v obrazcu">
+<!ENTITY showPassword.label "Prikaži">
+<!ENTITY showPassword.accesskey "P">
+<!ENTITY showPassword.tooltip "Preklopi vidnost gesel">
+<!ENTITY hidePassword.label "Skrij">
+<!ENTITY hidePassword.accesskey "S">
+<!ENTITY guessfrompage.label "Ugani iz trenutne strani">
+<!ENTITY guessfrompage.accesskey "U">
+<!ENTITY guessfrompage.tooltip "Izpolni ta obrazec glede na verjeten obrazec za prijavo trenutne strani">
+<!ENTITY prevform.label "Prejšnji obrazec">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Poskusi s prejšnjim obrazcem iz strani">
+<!ENTITY nextform.label "Naslednji obrazec">
+<!ENTITY nextform.accesskey "N">
+<!ENTITY nextform.tooltip "Poskusi z naslednjim obrazcem iz strani">

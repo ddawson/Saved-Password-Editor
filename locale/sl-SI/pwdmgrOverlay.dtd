@@ -1,0 +1,6 @@
+<!ENTITY newentry.label "Novo">
+<!ENTITY newentry.accesskey "o">
+<!ENTITY editentry.label "Uredi">
+<!ENTITY editentry.accesskey "U">
+<!ENTITY cloneentry.label "Kloniraj">
+<!ENTITY cloneentry.accesskey "r">
