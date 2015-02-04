@@ -26,21 +26,21 @@
 
   <menupopup id="contentAreaContextMenu">
     <menuseparator id="savedpasswordeditor-ctxmenuseparator"
-                   insertbefore="context-sep-selectall"/>
+                   insertbefore="inspect-separator"/>
     <menuitem id="savedpasswordeditor-savelogininfo"
-              insertbefore="context-sep-selectall"
+              insertbefore="inspect-separator"
               label="&ctx_savelogininfo.label;"
               accesskey="&ctx_savelogininfo.accesskey;"
               tooltiptext="&ctx_savelogininfo.tooltip;"
               oncommand="SavedPasswordEditor.saveLoginInfo(window);"/>
     <menuitem id="savedpasswordeditor-editlogininfo"
-              insertbefore="context-sep-selectall"
+              insertbefore="inspect-separator"
               label="&ctx_editlogininfo.label;"
               accesskey="&ctx_editlogininfo.accesskey;"
               tooltiptext="&ctx_editlogininfo.tooltip;"
               oncommand="SavedPasswordEditor.editLoginInfo(window);"/>
     <menuitem id="savedpasswordeditor-deletelogininfo"
-              insertbefore="context-sep-selectall"
+              insertbefore="inspect-separator"
               label="&ctx_deletelogininfo.label;"
               accesskey="&ctx_deletelogininfo.accesskey;"
               tooltiptext="&ctx_deletelogininfo.tooltip;"
