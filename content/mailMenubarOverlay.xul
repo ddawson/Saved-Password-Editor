@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2012  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -25,38 +25,35 @@
     Components.utils.import(
       "resource://savedpasswordeditor/SavedPasswordEditor.jsm");
   ]]></script>
-  <menupopup id="menu_ToolsPopup">
-    <menuitem id="savedpasswordeditor-toolsmenuitem"
-              class="menuitem-iconic"
-              standardlabel="&savedpasswords.label;"
-              standardtooltiptext="&savedpasswords.tooltip;"
-              standardaccesskey="&savedpasswords.accesskey;"
-              oncommand="SavedPasswordEditor.openSavedPasswords();"/>
-  </menupopup>
+
+  <commandset>
+    <command id="savedpasswordeditor-command-opensavedpasswords"
+             oncommand="SavedPasswordEditor.openSavedPasswords();"/>
+  </commandset>
+
+  <keyset id="mainKeyset">
+    <key id="savedpasswordeditor-key-opensavedpasswords" disabled="true"
+         command="savedpasswordeditor-command-opensavedpasswords"
+         key="" keycode="" modifiers=""/>
+  </keyset>
+
   <menupopup id="taskPopup">
     <menuitem id="savedpasswordeditor-toolsmenuitem"
+              key="savedpasswordeditor-key-opensavedpasswords"
               class="menuitem-iconic"
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
               standardaccesskey="&savedpasswords.accesskey;"
-              oncommand="SavedPasswordEditor.openSavedPasswords();"/>
-  </menupopup>
-  <menupopup id="tools-menupopup">
-    <menuitem id="savedpasswordeditor-toolsmenuitem"
-              class="menuitem-iconic"
-              standardlabel="&savedpasswords.label;"
-              standardtooltiptext="&savedpasswords.tooltip;"
-              standardaccesskey="&savedpasswords.accesskey;"
-              oncommand="SavedPasswordEditor.openSavedPasswords();"/>
+              command="savedpasswordeditor-command-opensavedpasswords"/>
   </menupopup>
   <vbox id="appmenuSecondaryPane">
     <menuitem id="savedpasswordeditor-appmenuitem"
+              key="savedpasswordeditor-key-opensavedpasswords"
               class="menuitem-iconic"
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
               insertafter="appmenu_addons"
               oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </vbox>
-  <script type="text/javascript"
-          src="chrome://savedpasswordeditor/content/menubarOverlay.js"/>
+  <script type="text/javascript" src="menubarOverlay.js"/>
 </overlay>

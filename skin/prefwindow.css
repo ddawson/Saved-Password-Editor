@@ -1,5 +1,4 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<!--
+/*
     Saved Password Editor, extension for Gecko applications
     Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
@@ -15,24 +14,21 @@
 
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
--->
+*/
 
-<!DOCTYPE html SYSTEM "chrome://savedpasswordeditor/locale/welcome.dtd">
+@namespace
+  url("http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul");
 
-<?xml-stylesheet type="text/css"
-  href="chrome://savedpasswordeditor/skin/welcome.css"?>
+#opensp_keypressrecv {
+  -moz-appearance: none;
+  border-style: none;
+  margin: 0px;
+  width: 0px;
+  min-width: 0px;
+}
 
-<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="&locale;" lang="&locale;"
-      dir="&layoutdirection;">
-  <head>
-    <script type="text/javascript" src="welcome.js"/>
-    <link rel="icon" href="chrome://savedpasswordeditor/skin/key16.png"/>
-    <title>&welcometospe;</title>
-  </head>
-  <body>
-    <h1>&welcometospe;</h1>
-    <p>&welcomepara1_sm;</p>
-    <p>&welcomepara2;</p>
-    <p>&welcomepara3;</p>
-  </body>
-</html>
+#opensp_keypressrecv * {
+  border-style: none;
+  margin: 0px;
+  width: 0px;
+}

@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -18,6 +18,8 @@
 -->
 
 <?xml-stylesheet href="chrome://global/skin/" type="text/css"?>
+<?xml-stylesheet href="chrome://savedpasswordeditor/skin/prefwindow.css"
+  type="text/css"?>
 
 <!DOCTYPE prefwindow SYSTEM
           "chrome://savedpasswordeditor/locale/prefwindow.dtd">
@@ -33,6 +35,12 @@
       <preference id="pref-rename-menuitem-to"
                   name="extensions.savedpasswordeditor.rename_menuitem_to"
                   type="string"/>
+      <preference id="pref-savedpasswords-shortcut-modifiers"
+                  name="extensions.savedpasswordeditor.openspkeymodifiers"
+                  type="string"/>
+      <preference id="pref-savedpasswords-shortcut-key"
+                  name="extensions.savedpasswordeditor.openspkey"
+                  type="string"/>
       <preference id="pref-preselect-current-site"
                   name="extensions.savedpasswordeditor.preselect_current_site"
                   type="bool"/>
@@ -46,28 +54,53 @@
                   name="extensions.savedpasswordeditor.showpassword"
                   type="int"/>
     </preferences>
-    <checkbox id="displayMenuitem_ck" label="&displayMenuitem.label;"
-              tooltiptext="&displayMenuitem.tooltip;"
-              preference="pref-display-menuitem"
-              oncommand="toggle_displayMenuitem();"/>
-    <hbox id="renameMenuitem_row" align="center" class="indent">
-      <label id="renameMenuitem_lbl" value="&renameMenuitemTo.label;"
-             tooltiptext="&renameMenuitemTo.tooltip;"/>
-      <textbox id="renameMenuitem_text"
-               tooltiptext="&renameMenuitemTo.tooltip;"
-               preference="pref-rename-menuitem-to"/>
-    </hbox>
-    <checkbox id="preselectcurrentsite_ck" label="&preselectCurrentSite.label;"
-              tooltiptext="&preselectCurrentSite.tooltip;"
-              preference="pref-preselect-current-site"/>
-    <checkbox id="alwaysshowpasswords_ck" label="&alwaysShowPasswords.label;"
-              tooltiptext="&alwaysShowPasswords.tooltip;"
-              preference="pref-alwaysshowpasswords"
-              oncommand="toggle_alwaysShowPasswords();"/>
-    <checkbox id="forcepromptformasterpassword_ck" class="indent"
-              label="&alwaysPromptForMasterPassword.label;"
-              tooltiptext="&alwaysPromptForMasterPassword.tooltip;"
-              preference="pref-forcepromptformasterpassword"/>
+    <groupbox>
+      <caption label="&opensp_group.caption;"/>
+      <checkbox id="displayMenuitem_ck" label="&displayMenuitem.label;"
+                tooltiptext="&displayMenuitem.tooltip;"
+                preference="pref-display-menuitem"
+                oncommand="toggle_displayMenuitem();"/>
+      <hbox id="renameMenuitem_row" align="center" class="indent">
+        <label id="renameMenuitem_lbl" value="&renameMenuitemTo.label;"
+               tooltiptext="&renameMenuitemTo.tooltip;"/>
+        <textbox id="renameMenuitem_text"
+                 tooltiptext="&renameMenuitemTo.tooltip;"
+                 preference="pref-rename-menuitem-to"/>
+      </hbox>
+      <hbox id="opensp_shortcut_box" align="center">
+        <label control="opensp_shortcut_modifiers"
+               value="&opensp_shortcut.label;"
+               tooltiptext="&opensp_shortcut.tooltip;"/>
+        <textbox id="opensp_shortcut_modifiers" flex="1"
+                 tooltiptext="&opensp_shortcut_modifiers.tooltip;"
+                 preference="pref-savedpasswords-shortcut-modifiers"/>
+        <textbox id="opensp_shortcut_key" size="10"
+                 tooltiptext="&opensp_shortcut_key.tooltip;"
+                 preference="pref-savedpasswords-shortcut-key"
+                 onsynctopreference="return synctopref();"/>
+        <button id="opensp_shortcut_capturebtn"
+                label="&captureshortcut.label;"
+                tooltiptext="&captureshortcut.tooltip;"
+                oncommand="captureshortcut(event);"/>
+        <button id="opensp_keypressrecv" tabindex="-1"/>
+      </hbox>
+      <label id="entershortcut_lbl" value="&entershortcut.label;"/>
+    </groupbox>
+    <groupbox>
+      <caption label="&modstosavedpasswords.caption;"/>
+      <checkbox id="preselectcurrentsite_ck"
+                label="&preselectCurrentSite.label;"
+                tooltiptext="&preselectCurrentSite.tooltip;"
+                preference="pref-preselect-current-site"/>
+      <checkbox id="alwaysshowpasswords_ck" label="&alwaysShowPasswords.label;"
+                tooltiptext="&alwaysShowPasswords.tooltip;"
+                preference="pref-alwaysshowpasswords"
+                oncommand="toggle_alwaysShowPasswords();"/>
+      <checkbox id="forcepromptformasterpassword_ck" class="indent"
+                label="&alwaysPromptForMasterPassword.label;"
+                tooltiptext="&alwaysPromptForMasterPassword.tooltip;"
+                preference="pref-forcepromptformasterpassword"/>
+    </groupbox>
     <groupbox>
       <caption label="&passwordfield_caption.label;"/>
       <radiogroup id="showPassword_rg" preference="pref-showpassword">
