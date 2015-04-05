@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2013  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -19,7 +19,10 @@
 document.addEventListener(
   "DOMContentLoaded",
   function dclHandler (ev) {
-    spEditor.strBundle = document.getElementById("savedpwdedit-stringbundle");
+    spEditor.genStrBundle =
+      document.getElementById("savedpwdedit-gen-stringbundle");
+    spEditor.pmoStrBundle =
+      document.getElementById("savedpwdedit-overlay-stringbundle");
     document.removeEventListener("DOMContentLoaded", dclHandler, false);
   },
   false);
@@ -44,8 +47,8 @@ document.getElementById("passwordsTree").addEventListener(
   function (ev) {
     var selections = gDataman.getTreeSelections(gPasswords.tree);
     if (selections.length > 0) {
-      document.getElementById("key_editSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
+      document.getElementById("visit_site").removeAttribute("disabled");
       document.getElementById("speMenuBtn_editSignon").
         removeAttribute("disabled");
       if (!spEditor.userChangedMenuBtn) {
@@ -55,25 +58,19 @@ document.getElementById("passwordsTree").addEventListener(
       }
     } else if (!spEditor.refreshing) {
       document.getElementById("speMenuBtn").command = "new_signon";
-      document.getElementById("speMenuBtn").
-        setAttribute("icon", "add");
-      document.getElementById("key_editSignon").
-        setAttribute("disabled", "true");
-      document.getElementById("edit_signon").
-        setAttribute("disabled", "true");
+      document.getElementById("speMenuBtn").setAttribute("icon", "add");
+      document.getElementById("edit_signon").setAttribute("disabled", "true");
+      document.getElementById("visit_site").setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_editSignon").
         setAttribute("disabled", "true");
       spEditor.userChangedMenuBtn = false;
     }
 
     if (selections.length == 1) {
-      document.getElementById("key_cloneSignon").removeAttribute("disabled");
       document.getElementById("clone_signon").removeAttribute("disabled");
       document.getElementById("speMenuBtn_cloneSignon").
         removeAttribute("disabled");
     } else if (!spEditor.refreshing) {
-      document.getElementById("key_cloneSignon").
-        setAttribute("disabled", "true");
       document.getElementById("clone_signon").
         setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_cloneSignon").
@@ -228,6 +225,35 @@ const spEditor = {
 
     var ret = { newSignon: null, callback: this.mcbWrapper(__finish) };
     this.openSPEDialog([], 0, gPasswords.showPasswords, ret);
+  },
+
+  visitSite: function () {
+    var selections = gDataman.getTreeSelections(gPasswords.tree);
+    if (selections.length == 0) return;
+    var selSignons =
+      selections.map(function (el) gPasswords.displayedSignons[el]);
+
+    var curWin =
+        Components.classes["@mozilla.org/appshell/window-mediator;1"].
+        getService(Components.interfaces.nsIWindowMediator).
+        getMostRecentWindow("navigator:browser");
+
+    let error = false;
+    for (let signon of selSignons) {
+      try {
+        curWin.openURL(signon.hostname);
+      } catch (e if e.name == "NS_ERROR_MALFORMED_URI") {
+        error = true;
+      }
+    }
+
+    if (error) {
+      Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
+        getService(Components.interfaces.nsIPromptService).
+        alert(window, this.genStrBundle.getString("error"),
+              this.pmoStrBundle.getString(
+                selSignons.length == 1 ? "badurl" : "badmulturl"));
+    }
   },
 }
 

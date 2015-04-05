@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -20,7 +20,7 @@
   let shortcutKey, shortcutKeycode, shortcutModifiers;
   let Cc = Components.classes, Ci = Components.interfaces;
   let prefsSvc = Cc["@mozilla.org/preferences-service;1"]
-    .getService(Ci.nsIPrefBranch);
+    .getService(Ci.nsIPrefService);
   let prefs = prefsSvc.getBranch("extensions.savedpasswordeditor.");
 
   let observe = function (aSubject, aTopic, aData) {

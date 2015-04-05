@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -291,7 +291,7 @@ function guessParameters () {
   var curWin =
       Cc["@mozilla.org/appshell/window-mediator;1"].
       getService(Ci.nsIWindowMediator).
-      getMostRecentWindow("navigator:browser").getBrowser().contentWindow;
+      getMostRecentWindow("navigator:browser").gBrowser.contentWindow;
 
   // Attempt to find login form(s)
   loginForms = [];

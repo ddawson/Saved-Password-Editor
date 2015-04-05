@@ -25,9 +25,9 @@
 <overlay id="savedpasswordeditorOverlay"
          xmlns="http://www.mozilla.org/keymaster/gatekeeper/there.is.only.xul">
   <stringbundleset>
-    <stringbundle id="general-stringbundle"
+    <stringbundle id="savedpwdedit-gen-stringbundle"
                   src="chrome://savedpasswordeditor/locale/spe.properties"/>
-    <stringbundle id="pwdmgrOverlay-stringbundle"
+    <stringbundle id="savedpwdedit-overlay-stringbundle"
       src="chrome://savedpasswordeditor/locale/pwdmgrOverlay.properties"/>
   </stringbundleset>
 
@@ -43,22 +43,15 @@
     <command id="new_signon"
              label="&newentry.label;" accesskey="&newentry.accesskey;"
              oncommand="spEditor.newSignon();"/>
+    <command id="visit_site"
+             label="&visitsite.label;" accesskey="&visitsite.accesskey;"
+             oncommand="spEditor.visitSite();" disabled="true"/>
   </commandset>
-
-  <keyset>
-    <key id="key_editSignon" key="&editentry.accesskey;"
-         modifiers="access" oncommand="spEditor.editSignon();"
-         disabled="true"/>
-    <key id="key_cloneSignon" key="&cloneentry.accesskey;"
-         modifiers="access" oncommand="spEditor.cloneSignon();"
-         disabled="true"/>
-    <key id="key_newSignon" key="&newentry.accesskey;"
-         modifiers="access" oncommand="spEditor.newSignon();"/>
-  </keyset>
 
   <menupopup id="passwordsTreeContextMenu">
     <menuitem id="menu_editSignon" command="edit_signon"/>
     <menuitem id="menu_cloneSignon" command="clone_signon"/>
+    <menuitem id="menu_visitSite" command="visit_site"/>
   </menupopup>
 
   <hbox id="passwordButtons">

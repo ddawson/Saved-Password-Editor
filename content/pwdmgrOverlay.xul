@@ -43,17 +43,18 @@
     <command id="new_signon"
              label="&newentry.label;" accesskey="&newentry.accesskey;"
              oncommand="spEditor.newSignon();"/>
+    <command id="visit_site"
+             label="&visitsite.label;" accesskey="&visitsite.accesskey;"
+             oncommand="spEditor.visitSite();" disabled="true"/>
   </commandset>
 
   <keyset>
     <key id="key_editSignon" key="&editentry.accesskey;"
-         modifiers="access" oncommand="spEditor.editSignon();"
-         disabled="true"/>
+         modifiers="access" command="edit_signon" disabled="true"/>
     <key id="key_cloneSignon" key="&cloneentry.accesskey;"
-         modifiers="access" oncommand="spEditor.cloneSignon();"
-         disabled="true"/>
+         modifiers="access" command="clone_signon" disabled="true"/>
     <key id="key_newSignon" key="&newentry.accesskey;"
-         modifiers="access" oncommand="spEditor.newSignon();"/>
+         modifiers="access" command="new_signon"/>
   </keyset>
 
   <window id="SignonViewerDialog">
@@ -61,6 +62,7 @@
       <menupopup id="signonsTreeContextMenu">
         <menuitem id="menu_editSignon" command="edit_signon"/>
         <menuitem id="menu_cloneSignon" command="clone_signon"/>
+        <menuitem id="menu_visitSite" command="visit_site"/>
       </menupopup>
     </popupset>
   </window>

@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -49,7 +49,7 @@ window.addEventListener(
       let brWin = wm.getMostRecentWindow("navigator:browser");
 
       if (brWin) {
-        let loc = brWin.getBrowser().contentWindow.location;
+        let loc = brWin.gBrowser.contentWindow.location;
         let hostname = loc.protocol + "//" + loc.host;
         let col = getColumnByName("hostname");
         for (let i = 0; i < signonsTreeView.rowCount; i++)
@@ -84,6 +84,7 @@ document.getElementById("signonsTree").addEventListener(
         && (!window.hasOwnProperty("gSelectUserInUse") || !gSelectUserInUse)) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
       document.getElementById("edit_signon").removeAttribute("disabled");
+      document.getElementById("visit_site").removeAttribute("disabled");
       document.getElementById("speMenuBtn_editSignon").
         removeAttribute("disabled");
       if (!spEditor.userChangedMenuBtn) {
@@ -93,12 +94,11 @@ document.getElementById("signonsTree").addEventListener(
       }
     } else {
       document.getElementById("speMenuBtn").command = "new_signon";
-      document.getElementById("speMenuBtn").
-        setAttribute("icon", "add");
+      document.getElementById("speMenuBtn").setAttribute("icon", "add");
       document.getElementById("key_editSignon").
         setAttribute("disabled", "true");
-      document.getElementById("edit_signon").
-        setAttribute("disabled", "true");
+      document.getElementById("edit_signon").setAttribute("disabled", "true");
+      document.getElementById("visit_site").setAttribute("disabled", "true");
       document.getElementById("speMenuBtn_editSignon").
         setAttribute("disabled", "true");
       spEditor.userChangedMenuBtn = false;
@@ -264,6 +264,51 @@ const spEditor = {
         alert(window, this.genStrBundle.getString("error"),
               this.pmoStrBundle.getFormattedString("badnewentry",
                                                    [e.message]));
+    }
+  },
+
+  visitSite: function () {
+    var selections = GetTreeSelections(signonsTree);
+    if (selections.length < 1) return;
+    var table =
+      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
+    var selSignons = selections.map(function (el) table[el]);
+
+    var curWin =
+        Components.classes["@mozilla.org/appshell/window-mediator;1"].
+        getService(Components.interfaces.nsIWindowMediator).
+        getMostRecentWindow("navigator:browser");
+
+    if (curWin) {
+      let error = false;
+      for (let signon of selSignons) {
+        try {
+          curWin.openURL(signon.hostname);
+        } catch (e if e.name == "NS_ERROR_MALFORMED_URI") {
+          error = true;
+        }
+      }
+
+      if (error) {
+        Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
+          getService(Components.interfaces.nsIPromptService).
+          alert(window, this.genStrBundle.getString("error"),
+                this.pmoStrBundle.getString(
+                  selSignons.length == 1 ? "badurl" : "badmulturl"));
+      }
+
+      curWin.focus();
+    } else {
+      let ioSvc = Components.classes["@mozilla.org/network/io-service;1"].
+        getService(Components.interfaces.nsIIOService);
+      let extProtSvc = Components.classes[
+        "@mozilla.org/uriloader/external-protocol-service;1"].
+        getService(Components.interfaces.nsIExternalProtocolService);
+
+      for (let signon of selSignons) {
+        let uri = ioSvc.newURI(signon.hostname, null, null);
+        extProtSvc.loadURI(uri, null);
+      }
     }
   },
 }

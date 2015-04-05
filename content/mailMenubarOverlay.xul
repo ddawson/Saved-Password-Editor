@@ -31,7 +31,7 @@
              oncommand="SavedPasswordEditor.openSavedPasswords();"/>
   </commandset>
 
-  <keyset id="mainKeyset">
+  <keyset>
     <key id="savedpasswordeditor-key-opensavedpasswords" disabled="true"
          command="savedpasswordeditor-command-opensavedpasswords"
          key="" keycode="" modifiers=""/>
@@ -53,7 +53,7 @@
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
               insertafter="appmenu_addons"
-              oncommand="SavedPasswordEditor.openSavedPasswords();"/>
+              command="savedpasswordeditor-command-opensavedpasswords"/>
   </vbox>
   <script type="text/javascript" src="menubarOverlay.js"/>
 </overlay>
