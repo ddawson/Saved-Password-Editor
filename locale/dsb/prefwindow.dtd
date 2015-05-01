@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
+<!ENTITY opensp_group.caption "Tastowa skrotconka za skłaźone gronidła">
 <!ENTITY displayMenuitem.label "Skrotconku do menijow zapśimjeś">
 <!ENTITY displayMenuitem.tooltip "Pśidawa zapisk &quot;Składowane gronidła&quot; menijoju Rědy a menijoju pód tłocaškom Firefox ako spěšny wótkaz  k zastojnikoju gronidłow">
 <!ENTITY renameMenuitemTo.label "Skrotconku pśemjeniś do:">
 <!ENTITY renameMenuitemTo.tooltip "Zapódajśo něco how, aby wy druge skrotconku nježli za &quot;Skłaźone gronidła&quot; wubrał, jolic cośo to za njewopšawnjonych mjenjej widobnje cynił. Wulašujśo gódnotu, aby wy zasej &quot;Skłaźone gronidła&quot; wužywał. Glědajśo: to njejo narownanje za napšawdnu wěstotu; wy by měł głowne gronidło wužywaś, jolic to jo móžno, jolic musyśo swóje gronidła šćitaś.">
+<!ENTITY opensp_shortcut.label "Tastowa skrotconka">
+<!ENTITY opensp_shortcut.tooltip "Tastowa kombinacija, kótarež ma se tłocyś, aby se skłaźone gronidła wócynili">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Wóźeńske tasty, kótarež muse se stłocone źaržaś, gaž se głowna tasta tłocy (lisćina źělona pśez komu abo úrozne znamje za slědujuce tasty: Umsch, Alt, Meta, Strg). Wužywanje &quot;Umsch&quot; musy pominanjam wašeje tastatury wótpowědowaś.">
+<!ENTITY opensp_shortcut_key.tooltip "Głowna tasta kombinacije. Musy wužywanjeju &quot;Umsch&quot; we wóźeńskich tastach wótpowědowaś.">
+<!ENTITY captureshortcut.label "Nagraś">
+<!ENTITY captureshortcut.tooltip "Klikniśo, aby tastowu kombinaciju ze swójeje tastatury nagrał">
+<!ENTITY entershortcut.label "Pšosym tłocćo něnto swóju póžedanu tastowu kombinaciju.">
+<!ENTITY modstosavedpasswords.caption "Změny na woknje skłaźonych gronidłow">
 <!ENTITY preselectCurrentSite.label "Aktualne sedło w &quot;Skaźone gronidła&quot; do togo wubraś">
 <!ENTITY preselectCurrentSite.tooltip "Gaž Skłaźone gronidła se wócynjaju, to wubjerjo ned woglědane sedło a buźo k sedłoju w aktualnem rejtarku wobglědowaka kulaś.">
 <!ENTITY alwaysShowPasswords.label "Gronidła pśecej pokazaś">

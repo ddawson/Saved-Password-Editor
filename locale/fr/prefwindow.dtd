@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
+<!ENTITY opensp_group.caption "Saved Passwords shortcut">
 <!ENTITY displayMenuitem.label "Inclure le raccourci dans les menus">
 <!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
 <!ENTITY renameMenuitemTo.label "Renommer le raccourci en :">
 <!ENTITY renameMenuitemTo.tooltip "Saisissez ici un autre nom de raccourci que ;Saved Passwords&quot; si vous voulez le rendre moins évident pour les intrus. Effacer cette valeur si vous voulez revenir à ;Saved Passwords&quot;. Attention : ceci n'assure nullement une sécurité particulière. vous devriez utiliser un mot de passe principal autant que possible si vous avez besoin de protéger vos mots de passe.">
+<!ENTITY opensp_shortcut.label "Keyboard shortcut">
+<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
+<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
+<!ENTITY captureshortcut.label "Capture">
+<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
+<!ENTITY entershortcut.label "Please press your desired key combination now.">
+<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
 <!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
 <!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
 <!ENTITY alwaysShowPasswords.label "Toujours afficher les mots de passe">

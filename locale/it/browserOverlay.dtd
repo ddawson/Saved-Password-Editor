@@ -9,6 +9,6 @@
 <!ENTITY ctx_editlogininfo.label "Modifica informazioni di accesso">
 <!ENTITY ctx_editlogininfo.accesskey "M">
 <!ENTITY ctx_editlogininfo.tooltip "Modifica le informazioni di accesso per questo modulo">
-<!ENTITY ctx_deletelogininfo.label "Cancella informazioni di accesso">
+<!ENTITY ctx_deletelogininfo.label "Elimina le informazioni di accesso">
 <!ENTITY ctx_deletelogininfo.accesskey "n">
-<!ENTITY ctx_deletelogininfo.tooltip "Cancella le informazioni di accesso per questo modulo">
+<!ENTITY ctx_deletelogininfo.tooltip "Elimina le informazioni di accesso per questo modulo">

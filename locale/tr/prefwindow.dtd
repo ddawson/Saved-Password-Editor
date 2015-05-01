@@ -1,18 +1,28 @@
 <!ENTITY prefwindow.title "Kayıtlı Şifre Editör seçenekleri">
+<!ENTITY opensp_group.caption "Kayıtlı Şifreler kısayolu">
 <!ENTITY displayMenuitem.label "Kısayolu menülerde bulundur">
-<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; şifre yöneticisine ulaşmak için Araçlara ve Windows/Linux program menüsüne kısayol olarak ekler">
-<!ENTITY renameMenuitemTo.label "Kısayolu yeniden adlandır:">
+<!ENTITY displayMenuitem.tooltip "&quot;Kayıtlı Şifreleri&quot; şifre yöneticisine ulaşmak için Araçlara ve Windows/Linux Firefox menüsüne şifre yöneticisi kısayolu olarak ekler">
+<!ENTITY renameMenuitemTo.label "Kısayolu adlandır:">
 <!ENTITY renameMenuitemTo.tooltip "Buraya &quot;Kayıtlı Şifreler&quot;, haricinde birşeyi kısayoldan çağırmak için birşeyler girin.İstemiyorsan &quot;Kayıtlı Şifrelere&quot;. dönmek için kutudaki değeri silin. Uyarı: Bu güvenlik için değil; şifreni koruman gerekiyorsa master şifresi kullanmalısın.">
-<!ENTITY preselectCurrentSite.label "Açılı siteyi Kayıtlı Şifrelerde önceden seç">
-<!ENTITY preselectCurrentSite.tooltip "Kayıtlı Şifreleri açarken,otomatik olarak siteyi seçip şuanki sekme konumunda siteye girecek.">
+<!ENTITY opensp_shortcut.label "Klavye kısayolu">
+<!ENTITY opensp_shortcut.tooltip "Kayıtlı Şifreleri açmak için tuş kombinasyonu">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Tuş ayarlayıcı ana tuşa basılırken mutlaka basılı tutulmalı (nokta veya boşluk-tuşu belirtenen listenin dışında:shift alt meta control). Tuşun of &quot;shift&quot; kullanımına uyulmalı.">
+<!ENTITY opensp_shortcut_key.tooltip "Kombinasyonun Ana tuşu.Değişkenlerin &quot;shift&quot; kullanımına uyulmalı.">
+<!ENTITY captureshortcut.label "Oluştur">
+<!ENTITY captureshortcut.tooltip "Tuş kombinasyonu klavyeden oluşturmak için tıkla">
+<!ENTITY entershortcut.label "Lütfen istediğin tuş kombinasyonunu tuşla.">
+<!ENTITY modstosavedpasswords.caption "Kayıtlı Şifreler ekranında değişiklikler">
+<!ENTITY preselectCurrentSite.label "Şuanki açılı siteyi Kayıtlı Şifrelerde önceden seç">
+<!ENTITY preselectCurrentSite.tooltip "Kayıtlı Şifreleri açarken,sekmedeki ziyaret edilen siteyi otomatik seçecek.">
 <!ENTITY alwaysShowPasswords.label "Şifreleri her zaman göster">
 <!ENTITY alwaysShowPasswords.tooltip "Seçilirse, Şifre kısmı tüm Kayıtlı Şifre Editörü penceresi açılışında gösterilir.">
 <!ENTITY alwaysPromptForMasterPassword.label "Her zaman ana şifreyi sor">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleşince, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok işlemde şifre sorulmayacaktır.">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Kayıtlı Şifreler görüntülenmek istediğinde ana şifreyi zorunlu kılar. Etkinleşince, her oturumda şifrenin girilmesi gerekir. Kapatıldığında, birçok durumda ana şifre sorulmayacaktır.">
 <!ENTITY passwordfield_caption.label "Editör alanıdaki şifre alanı">
 <!ENTITY passwordfield_alwayshide.label "Editörü açarken şifreyi her zaman gizle">
 <!ENTITY passwordfield_alwaysshow.label "Editörü açarken şifreyi her zaman göster">
 <!ENTITY passwordfield_rememberlast.label "Son hali hatırla">
-<!ENTITY passwordfield_rememberlast.tooltip "Pencerenin en son hali nasılsa aynısını gizle veya göster">
+<!ENTITY passwordfield_rememberlast.tooltip "Pencerenin en son hali nasılsa aynısını gizler veya gösterir">
 <!ENTITY passwordfield_followspwin.label "Kayıtlı şifreler listesini izle">
-<!ENTITY passwordfield_followspwin.tooltip "Kayıtlı şifreler listesinde sadece şimdiki pencerede görülen şifreleri göster">
+<!ENTITY passwordfield_followspwin.tooltip "Kayıtlı şifreler listesinde sadece şimdiki pencerede görülen şifreleri gösterir">

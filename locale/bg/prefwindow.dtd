@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Настройки на редактора">
+<!ENTITY opensp_group.caption "Клавишна комбинация за програмата">
 <!ENTITY displayMenuitem.label "Включи Редактора в меню Инструменти">
-<!ENTITY displayMenuitem.tooltip "Добавя &quot;Запазени пароли&quot; към менюто Инструменти за бързо стартиране на редактора">
+<!ENTITY displayMenuitem.tooltip "Добавя &quot;Запазени пароли&quot; към меню Инструменти за бързо стартиране на редактора">
 <!ENTITY renameMenuitemTo.label "Преименуване на отметката:">
 <!ENTITY renameMenuitemTo.tooltip "Enter something here to call the shortcut something other than &quot;Saved Passwords&quot;, if you want to make it less obvious to meddlers. Erase the value to return to using &quot;Saved Passwords&quot;. Warning: this is not a substitute for proper security; you should use a master password when possible if you need to protect your passwords.">
+<!ENTITY opensp_shortcut.label "Клавишна комбинация">
+<!ENTITY opensp_shortcut.tooltip "Комбинация от клавиши, която отваря Saved Passwords">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Клавиши, които трябва да бъдат задържани при натискането на основния клавиш (списък разделен с интервал или запетая: shift alt meta control). Използването на &quot;shift&quot; трябва да отговаря на изискванията на Вашата клавиатура.">
+<!ENTITY opensp_shortcut_key.tooltip "Основен клавиш на комбинацията. Трябва да отговаря на използването на &quot;shift&quot;.">
+<!ENTITY captureshortcut.label "Запис">
+<!ENTITY captureshortcut.tooltip "Натиснете за запис на клавишна комбинация от клавиатрата">
+<!ENTITY entershortcut.label "Моля, натиснете комбинацията от клавиши сега.">
+<!ENTITY modstosavedpasswords.caption "Промени в прозореца на Saved Passwords">
 <!ENTITY preselectCurrentSite.label "Избиране на текущия сайт в Saved Passwords.">
 <!ENTITY preselectCurrentSite.tooltip "Когато се отваря прозореца на приставката, да се избере и покажат данните за текущо отвореният сайт.">
 <!ENTITY alwaysShowPasswords.label "Винаги показвай паролите">

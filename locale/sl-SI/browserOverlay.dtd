@@ -1,6 +1,8 @@
+<!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Shranjena gesla">
 <!ENTITY savedpasswords.accesskey "S">
 <!ENTITY savedpasswords.tooltip "Odpri pogovorno okno shranjenih gesel">
+<!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Shrani podatke o prijavi">
 <!ENTITY ctx_savelogininfo.accesskey "S">
 <!ENTITY ctx_savelogininfo.tooltip "Dodaj shranjeno geslo za ta obrazec">

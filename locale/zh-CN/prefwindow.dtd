@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "已保存密码编辑器首选项">
+<!ENTITY opensp_group.caption "Saved Passwords shortcut">
 <!ENTITY displayMenuitem.label "在工具菜单中添加快捷方式">
 <!ENTITY displayMenuitem.tooltip "在工具菜单和 Windows/Linux 下的 Firefox 菜单中添加“已保存密码”项，作为密码管理器的快捷方式。">
 <!ENTITY renameMenuitemTo.label "更改快捷方式名称为：">
 <!ENTITY renameMenuitemTo.tooltip "在此输入文字更改快捷方式名为“已保存密码”之外的其它名字，以防无关者轻易发现。清空此处文本继续使用“已保存密码”为名称。警告：这并不能替代适当的安全措施，如果你需要保护你的密码，需要使用主密码。">
+<!ENTITY opensp_shortcut.label "Keyboard shortcut">
+<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
+<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
+<!ENTITY captureshortcut.label "Capture">
+<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
+<!ENTITY entershortcut.label "Please press your desired key combination now.">
+<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
 <!ENTITY preselectCurrentSite.label "在已保存密码中预先选中当前站点">
 <!ENTITY preselectCurrentSite.tooltip "打开已保存密码时，立即选中并滚动到当前浏览器标签中浏览的站点。">
 <!ENTITY alwaysShowPasswords.label "总是显示密码">

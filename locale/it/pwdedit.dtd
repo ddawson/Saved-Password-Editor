@@ -2,7 +2,7 @@
 <!ENTITY signontype.label "Tipo">
 <!ENTITY type_form.label "Modulo Web">
 <!ENTITY type_form.accesskey "W">
-<!ENTITY type_form.tooltip "Modulo di autenticazione contenuto in una pagina web">
+<!ENTITY type_form.tooltip "Modulo di autenticazione presente in una pagina web">
 <!ENTITY type_annotated.label "Annotazione">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Accesso che richiede l'inserimento di una stringa in aggiunta al server per identificare il servizio (per esempio una autenticazione HTTP)">

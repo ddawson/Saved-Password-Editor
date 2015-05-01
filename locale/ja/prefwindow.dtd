@@ -1,18 +1,28 @@
 <!ENTITY prefwindow.title "Saved Password Editor 設定">
+<!ENTITY opensp_group.caption "Saved Passwords ショートカット">
 <!ENTITY displayMenuitem.label "メニューにショートカットメニューを追加する">
-<!ENTITY displayMenuitem.tooltip "[ツール] メニューと Windows アプリメニューに、パスワードマネージャを開く [保存されているパスワード] メニューを追加します">
+<!ENTITY displayMenuitem.tooltip "[ツール] メニューと Windows アプリメニューに、パスワードマネージャを開く [保存したパスワード] メニューを追加します">
 <!ENTITY renameMenuitemTo.label "ショートカットを名前変更:">
 <!ENTITY renameMenuitemTo.tooltip "ショートカット名を &quot;Saved Passwords&quot; から変更します。この文字列を削除して空欄にすると初期値の &quot;Saved Passwords&quot; に戻ります。警告: この設定は適切なセキュリティのための代替にはなりません。パスワードを保護する必要がある時はマスターパスワードを使用してください。">
-<!ENTITY preselectCurrentSite.label "保存されたパスワードから現在のサイトを選択する">
-<!ENTITY preselectCurrentSite.tooltip "保存されたパスワードを開いた時、現在のブラウザタブ表示しているサイトの項目へスクロールして選択します。">
+<!ENTITY opensp_shortcut.label "キーボードショートカット">
+<!ENTITY opensp_shortcut.tooltip "Saved Passwords を開くキーの組み合わせです">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "修飾キーはメインキーを押すときに一緒に押されているキーです (次の修飾キーをカンマ区切りまたはスペース区切りのリストで記入してください: shift alt meta control)。&quot;shift&quot; キーは、ご使用のキーボードに合わせて用いてください。">
+<!ENTITY opensp_shortcut_key.tooltip "メインキーの組み合わせです。&quot;shift&quot; キーを使用した文字と一致させてください。">
+<!ENTITY captureshortcut.label "キー取得">
+<!ENTITY captureshortcut.tooltip "クリックすると、キーボードからキーの組み合わせを取得します">
+<!ENTITY entershortcut.label "キーボードでキーの組み合わせを押してください。">
+<!ENTITY modstosavedpasswords.caption "Saved Passwords ウィンドウの設定">
+<!ENTITY preselectCurrentSite.label "Saved Passwords から現在のサイトを選択する">
+<!ENTITY preselectCurrentSite.tooltip "Saved Passwords を開いた時、現在のブラウザタブ表示しているサイトの項目へスクロールして選択します。">
 <!ENTITY alwaysShowPasswords.label "パスワードを常に表示する">
-<!ENTITY alwaysShowPasswords.tooltip "チェックを入れると、保存されたパスワードダイアログを開いた時に常にパスワードの列が表示されるようになります。">
+<!ENTITY alwaysShowPasswords.tooltip "チェックを入れると、Saved Passwords ダイアログを開いた時に常にパスワードの列が表示されるようになります。">
 <!ENTITY alwaysPromptForMasterPassword.label "常にマスターパスワードの入力を求める">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "保存されたパスワードダイアログでパスワードを表示する時にマスターパスワードの入力が求めらます。この設定を有効にすると、一度のセッションごとに二回求められ、避けることはできません。無効にすると、マスターパスワードの入力は求められません。">
-<!ENTITY passwordfield_caption.label "編集ウィンドウのパスワードフィールド">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Saved Passwords ダイアログでパスワードを表示する時にマスターパスワードの入力が求めらます。この設定を有効にすると、一度のセッションごとに 2 回求められ、避けることはできません。無効にすると、マスターパスワードの入力は求められません。">
+<!ENTITY passwordfield_caption.label "編集ウィンドウのパスワード欄">
 <!ENTITY passwordfield_alwayshide.label "編集ウィンドウを開いた時、常にパスワードを隠す">
 <!ENTITY passwordfield_alwaysshow.label "編集ウィンドウを開いた時、常にパスワードを表示する">
 <!ENTITY passwordfield_rememberlast.label "最後の表示状態を記憶する">
 <!ENTITY passwordfield_rememberlast.tooltip "前回開いた時と同じ状態で表示します">
-<!ENTITY passwordfield_followspwin.label "保存されたパスワードのリスト表示に従う">
-<!ENTITY passwordfield_followspwin.tooltip "保存されたパスワードのウィンドウでパスワードが表示されている場合に表示します">
+<!ENTITY passwordfield_followspwin.label "Saved Passwords のリスト表示に従う">
+<!ENTITY passwordfield_followspwin.tooltip "Saved Passwords のウィンドウでパスワードが表示されている場合に表示します">

@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Các thiết đặt Saved Password Editor">
+<!ENTITY opensp_group.caption "Saved Passwords shortcut">
 <!ENTITY displayMenuitem.label "Đặt lệnh tắt trên thanh Công Cụ">
 <!ENTITY displayMenuitem.tooltip "Thêm &quot;Saved Passwords&quot; vào trình đơn Tools và trình đơn Firefox của Windows/Linux để làm lệnh tắt gọi trình quản lý mật khẩu">
 <!ENTITY renameMenuitemTo.label "Đổi tên đường dẫn tắt thành:">
 <!ENTITY renameMenuitemTo.tooltip "Điền gì đó vào đây để gọi đường dẫn tắt khác với &quot;Saved Passwords&quot;, nếu bạn muốn những người khác không tò mò xem trộm. Xóa giá trị để trở lại dùng &quot;Saved Passwords&quot;. Lưu ý: đây không phải là cách giúp thay thế cho việc tăng cường bảo mật; bạn nên dùng mật khẩu chủ nếu bạn muốn bảo vệ các mật khẩu của mình.">
+<!ENTITY opensp_shortcut.label "Keyboard shortcut">
+<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
+<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
+<!ENTITY captureshortcut.label "Capture">
+<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
+<!ENTITY entershortcut.label "Please press your desired key combination now.">
+<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
 <!ENTITY preselectCurrentSite.label "Chọn trước trang hiện tại trong Saved Passwords">
 <!ENTITY preselectCurrentSite.tooltip "Khi mở Saved Passwords, cái này sẽ lập tức chọn và cuộn tới trang đã xem trong chính thẻ hiện tại.">
 <!ENTITY alwaysShowPasswords.label "Luôn hiển thị các mật khẩu">

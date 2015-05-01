@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Nastavitve Saved Password Editor">
+<!ENTITY opensp_group.caption "Bližnjica za shranjena gesla">
 <!ENTITY displayMenuitem.label "Vključi bližnjico v menijih">
 <!ENTITY displayMenuitem.tooltip "Doda &quot;Shranjena gesla&quot; v meni Orodja in Firefoxov meni za Windows/Linux kot bližnjico za upravitelja gesel">
 <!ENTITY renameMenuitemTo.label "Preimenuj bližnjico v:">
 <!ENTITY renameMenuitemTo.tooltip "Tu vnesite ime bližnjice (ne &quot;Shranjena gesla&quot;), če ga želite narediti manj dovzetnega za vsiljivce. Izbrišite to vrednost za povrnitev na &quot;Shranjena gesla&quot;. Opozorilo: to ni nadomestilo za ustrezno varnost; po možnosti uporabite glavno geslo, če je potrebno zaščititi vaša gesla.">
+<!ENTITY opensp_shortcut.label "Tipkovna bližnjica">
+<!ENTITY opensp_shortcut.tooltip "Kombinacija tipk, ki naj se pritisne za odpiranje shranjenih gesel">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Spremenilne tipke, ki jih je potrebno držati med pritiskom glavne tipke (seznam naslednjih tipk ločenih z vejico ali presledkom: shift alt meta control). Uporaba tipke &quot;shift&quot; se mora ujemati z zahtevami vaše tipkovnice.">
+<!ENTITY opensp_shortcut_key.tooltip "Glavna tipka kombinacije. Se mora ujemati z uporabo tipke &quot;shift&quot; v spremenilnih tipkah.">
+<!ENTITY captureshortcut.label "Zajem">
+<!ENTITY captureshortcut.tooltip "Kliknite za zajetje kombinacije tipk s tipkovnice">
+<!ENTITY entershortcut.label "Pritisnite želeno kombinacijo tipk zdaj.">
+<!ENTITY modstosavedpasswords.caption "Spremembe okna shranjenih gesel">
 <!ENTITY preselectCurrentSite.label "Predhodno izberi trenutno stran v shranjenih geslih">
 <!ENTITY preselectCurrentSite.tooltip "Ob odpiranju shranjenih gesel bo to takoj izbralo in se pomaknilo na obiskano stran v trenutnem brskalnikovem zavihku.">
 <!ENTITY alwaysShowPasswords.label "Vedno prikaži gesla">

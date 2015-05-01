@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "Р">
 <!ENTITY cloneentry.label "Клониране">
 <!ENTITY cloneentry.accesskey "К">
+<!ENTITY visitsite.label "Вижте сайта">
+<!ENTITY visitsite.accesskey "В">

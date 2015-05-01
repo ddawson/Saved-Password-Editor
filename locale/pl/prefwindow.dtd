@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Preferencje edytora zapamiętanych haseł">
+<!ENTITY opensp_group.caption "Saved Passwords shortcut">
 <!ENTITY displayMenuitem.label "Umieść skrót w menu">
 <!ENTITY displayMenuitem.tooltip "Dodaje pozycję &quot;Zapamiętane hasła&quot; do menu Narzędzia i okna aplikacji jako skrót do menadżera haseł">
 <!ENTITY renameMenuitemTo.label "Zmień nazwę skrótu:">
 <!ENTITY renameMenuitemTo.tooltip "Wpisz tu cokolwiek by nazwać skrót inaczej niż &quot;Zapamiętane hasła&quot;. Wymazując zawartość powrócisz do &quot;Zapamiętane hasła&quot;.">
+<!ENTITY opensp_shortcut.label "Keyboard shortcut">
+<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
+<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
+<!ENTITY captureshortcut.label "Capture">
+<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
+<!ENTITY entershortcut.label "Please press your desired key combination now.">
+<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
 <!ENTITY preselectCurrentSite.label "Zaznacz z wyprzedzeniem bieżącą stronę w oknie zapamiętanych haseł">
 <!ENTITY preselectCurrentSite.tooltip "Podczas otwierania okna zapamiętanych haseł, nastąpi niezwłoczne zaznaczenie i przejście do witryny odwiedzanej w bieżącej karcie przeglądarki.">
 <!ENTITY alwaysShowPasswords.label "Zawsze pokazuj hasła">

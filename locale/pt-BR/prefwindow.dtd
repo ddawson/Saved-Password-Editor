@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Preferências do Editor de Senhas Salvas">
+<!ENTITY opensp_group.caption "Atalho do Saved Passwords">
 <!ENTITY displayMenuitem.label "Incluir atalhos nos menus">
 <!ENTITY displayMenuitem.tooltip "Acrescenta &quot;Senhas Salvas&quot; ao menu Ferramentas e janela do complemento como um atalho para o gerenciados de senhas">
 <!ENTITY renameMenuitemTo.label "Renomear o atalho para:">
 <!ENTITY renameMenuitemTo.tooltip "Entre um nome para o atalho (diferente de &quot;Senhas Salvas&quot;, para não ser tão óbvio). Deixe em branco para usar o nome &quot;Senhas Salvas&quot;. Aviso: isto não substitui uma segurança adequada; você deve usar uma senha mestre quando possível para proteger suas senhas.">
+<!ENTITY opensp_shortcut.label "Atalho de teclado">
+<!ENTITY opensp_shortcut.tooltip "Combinação de teclas para abrir senhas salvas">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Teclas modificadoras que devem ser usadas ao pressionar a tecla principal (separadas por vírgula ou espaço seguidas de: shift alt meta control). O uso do &quot;shift&quot; deve atender aos requisitos de seu teclado.">
+<!ENTITY opensp_shortcut_key.tooltip "A tecla principal da combinação. Deve coincidir com o uso de &quot;shift&quot; nos modificadores.">
+<!ENTITY captureshortcut.label "Capturar">
+<!ENTITY captureshortcut.tooltip "Clique para capturar uma combinação de teclas de seu teclado">
+<!ENTITY entershortcut.label "Por favor, pressione a combinação de teclas desejada agora.">
+<!ENTITY modstosavedpasswords.caption "Janela de modificações para senhas salvas">
 <!ENTITY preselectCurrentSite.label "Pre-selecionar a página atual">
 <!ENTITY preselectCurrentSite.tooltip "Ao abrir o Saved Passwords a página visitada nesta aba será selecionada e mostrada.">
 <!ENTITY alwaysShowPasswords.label "Sempre exibir senhas">

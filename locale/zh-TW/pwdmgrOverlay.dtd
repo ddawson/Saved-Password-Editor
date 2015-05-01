@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "複製">
 <!ENTITY cloneentry.accesskey "l">
+<!ENTITY visitsite.label "前往網站">
+<!ENTITY visitsite.accesskey "V">

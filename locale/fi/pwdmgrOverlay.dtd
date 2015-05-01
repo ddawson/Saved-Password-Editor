@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "M">
 <!ENTITY cloneentry.label "Kloonaa">
 <!ENTITY cloneentry.accesskey "l">
+<!ENTITY visitsite.label "Vieraile sivusto(i)lla">
+<!ENTITY visitsite.accesskey "V">

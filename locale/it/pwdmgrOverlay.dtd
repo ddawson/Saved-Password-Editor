@@ -3,6 +3,7 @@
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
 
+
 -->
 <!ENTITY newentry.label "Nuovo">
 <!ENTITY newentry.accesskey "N">
@@ -10,3 +11,5 @@
 <!ENTITY editentry.accesskey "o">
 <!ENTITY cloneentry.label "Clona">
 <!ENTITY cloneentry.accesskey "l">
+<!ENTITY visitsite.label "Visita il/i sito/i">
+<!ENTITY visitsite.accesskey "V">

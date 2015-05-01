@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Agordoj de Saved Password Editor">
+<!ENTITY opensp_group.caption "Fulmoklavo por konservitaj pasvortoj">
 <!ENTITY displayMenuitem.label "Inkluzivi fulmklavojn en menuoj">
 <!ENTITY displayMenuitem.tooltip "Aldonas enskribon &quot;Konservitaj pasvortoj&quot; al la menuo &quot;Ilaro&quot; kaj la menuo sub la butono Firefox kiel fulmoligilo al la pasvorta administrilo">
 <!ENTITY renameMenuitemTo.label "Renomi fulmoklavon al:">
 <!ENTITY renameMenuitemTo.tooltip "Enigu ion ĉi tie por elekti alian fulmoklavon ol por &quot;Konservitaj pasvortoj&quot;, se vi volas iomete malevidentigi ĝin por entrudantoj. Forigu la valoron por denove uzi &quot;Konservitaj pasvortoj&quot;. Atentu: tio ne estas anstataŭo por fakta sekureco; vi uzu ĉefpasvorton, se tio estas ebla, se vi devas protekti viajn pasvortojn.">
+<!ENTITY opensp_shortcut.label "Fulmoklavo">
+<!ENTITY opensp_shortcut.tooltip "Klavkombino, kiu estu presata, por ke konservitaj pasvortu malfermiĝu">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Modifaj klavoj, kiuj devas esti detenataj, kiam la ĉefa klavo estas premata (listo perkome aŭ perspace disigita por sekvantaj modifaj klavoj: shift, alt, meta, control). Uzado de &quot;shift&quot; devas kongrui al la postuloj de via klavaro.">
+<!ENTITY opensp_shortcut_key.tooltip "La ĉefa klavo de la kombino. Ĝi devas kongrui kun la uzadon de &quot;shift&quot; en la modifaj klavoj.">
+<!ENTITY captureshortcut.label "Kapti">
+<!ENTITY captureshortcut.tooltip "Klaku por kapti klavkombinon el via klavaro">
+<!ENTITY entershortcut.label "Bonvolu premi nun vian deziratan klavkombinon.">
+<!ENTITY modstosavedpasswords.caption "Ŝanĝoj en la fenestro de kosnervitaj pasvortoj">
 <!ENTITY preselectCurrentSite.label "Antaŭelekti aktualan retejon en Saved Passwords">
 <!ENTITY preselectCurrentSite.tooltip "Kiam konservitaj pasvortoj malfermiĝas, tio tuj elektos la vizititan retejon kaj rulumos al la aktuala foliumila langeto.">
 <!ENTITY alwaysShowPasswords.label "Ĉiam montri pasvortojn">

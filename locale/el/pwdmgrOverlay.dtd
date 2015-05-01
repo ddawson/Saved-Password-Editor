@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "Ε">
 <!ENTITY cloneentry.label "Κλωνοποίηση">
 <!ENTITY cloneentry.accesskey "ω">
+<!ENTITY visitsite.label "Visit site(s)">
+<!ENTITY visitsite.accesskey "V">

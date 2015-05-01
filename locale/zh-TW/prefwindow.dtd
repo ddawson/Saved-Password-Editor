@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Saved Password Editor 偏好設定">
+<!ENTITY opensp_group.caption "Saved Passwords 捷徑">
 <!ENTITY displayMenuitem.label "在選單內加入捷徑">
 <!ENTITY displayMenuitem.tooltip "將「已存密碼」加入工具選單及 Windows/Linux 程式功能表作為密碼管理員的捷徑">
 <!ENTITY renameMenuitemTo.label "重新命名捷徑:">
 <!ENTITY renameMenuitemTo.tooltip "若您想讓預設的「已存密碼」看起來低調一點，請在此輸入自訂的名稱。清空本欄位會使捷徑名還原為「已存密碼」。請注意：本功能無法確保安全性，若您感到有必要保護好自己的密碼，請使用主控密碼。">
+<!ENTITY opensp_shortcut.label "鍵盤快捷鍵">
+<!ENTITY opensp_shortcut.tooltip "用於開啟 Saved Passwords 的按鍵組合">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "在按下主要按鍵時，必須一直按著不放的輔助按鍵(Modifier Key, shift、alt、meta、ctrl 這些鍵，以半形逗號或空白分隔)。">
+<!ENTITY opensp_shortcut_key.tooltip "按鍵組合中的主要按鍵，需符合大小寫。">
+<!ENTITY captureshortcut.label "抓取按鍵">
+<!ENTITY captureshortcut.tooltip "點此按鈕來從鍵盤抓取按鍵組合">
+<!ENTITY entershortcut.label "現在，請按下您想使用的按鍵組合">
+<!ENTITY modstosavedpasswords.caption "變更至 Saved Passwords 視窗">
 <!ENTITY preselectCurrentSite.label "在已存密碼視窗中預選目前網頁">
 <!ENTITY preselectCurrentSite.tooltip "開啟已存密碼視窗時，登入資料清單會直接選定並捲動到瀏覽器分頁當前的網站。">
 <!ENTITY alwaysShowPasswords.label "總是顯示密碼">

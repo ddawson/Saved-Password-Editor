@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "b">
 <!ENTITY cloneentry.label "Klonować">
 <!ENTITY cloneentry.accesskey "l">
+<!ENTITY visitsite.label "Sydła wopytać">
+<!ENTITY visitsite.accesskey "o">

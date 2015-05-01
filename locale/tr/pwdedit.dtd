@@ -31,6 +31,6 @@
 <!ENTITY prevform.label "Önceki form">
 <!ENTITY prevform.accesskey "O">
 <!ENTITY prevform.tooltip "Sayfadan geçmiş formu dene">
-<!ENTITY nextform.label "İlerki form">
+<!ENTITY nextform.label "Sıradaki form">
 <!ENTITY nextform.accesskey "I">
 <!ENTITY nextform.tooltip "Sayfadan ilerki formu dene">

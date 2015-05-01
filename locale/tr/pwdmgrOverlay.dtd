@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "D">
 <!ENTITY cloneentry.label "Çoğalt">
 <!ENTITY cloneentry.accesskey "K">
+<!ENTITY visitsite.label "Siteye git(s)">
+<!ENTITY visitsite.accesskey "G">

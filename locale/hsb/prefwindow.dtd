@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Nastajenja Saved Password Editor">
+<!ENTITY opensp_group.caption "Tastowa skrótšenka za składowane hesła">
 <!ENTITY displayMenuitem.label "Skrótšenku do menijow zapřijeć">
 <!ENTITY displayMenuitem.tooltip "Přidawa zapisk &quot;Składowane hesła&quot; menijej Nastroje a menijej pod tłóčatkom Firefox jako spěšny wotkaz  k zrjadowakej hesłow">
 <!ENTITY renameMenuitemTo.label "Skrótšenki přemjenować do:">
 <!ENTITY renameMenuitemTo.tooltip "Zapodajće něšto tu, zo byšće druhe skrótšenku wubrał, hač za &quot;Składowane hesła&quot;, jeli chceće ju za njewoprawnjenych mjenje wočiwidnje činił. Zhašaj hódnotu, zo byšće zaso &quot;Składowane hesła&quot; wužiwał. Kedźbu: to njeje narunanje za woprawdźitu wěstotu; wy měł hłowne hesło wužiwać, jeli to je móžno, jeli dyrbiće swoje hesła škitać.">
+<!ENTITY opensp_shortcut.label "Tastowa skrótšenka">
+<!ENTITY opensp_shortcut.tooltip "Tastowa kombinacija, kotraž ma so tłóčić, zo bychu so składowane hesła wočinili">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Wodźenske tasty, kotrež dyrbja so stłóčene dźeržeć, hdyž so hłowna tasta tłóči (lisćina dźělena přez komu abo mjezeru ze slědowacymi tastami: Umsch, Alt, Meta, Strg). Wužiwanje &quot;Umsch&quot; dyrbja potrěbnsćam wašeje tastatury wotpowědować.">
+<!ENTITY opensp_shortcut_key.tooltip "Hłowna tastowa kombinacija. Dyrbi wužiwajun &quot;Umsch&quot; we wodźenskich tastach wotpowědować.">
+<!ENTITY captureshortcut.label "Natočić">
+<!ENTITY captureshortcut.tooltip "Klikńće, zo byšće tastowu kombinaciju ze swojeje tastatury natočił">
+<!ENTITY entershortcut.label "Prošu tłóčće nětko swoju požadanu tastowu kombinaciju.">
+<!ENTITY modstosavedpasswords.caption "Změny na woknje składowanych hesłow">
 <!ENTITY preselectCurrentSite.label "Aktualne sydło w Saved password do toho wubrać">
 <!ENTITY preselectCurrentSite.tooltip "Hdyž so składowane hesła wočinjeja, to wubjerje hnydom wopytane sydło a budźe k aktualnemu rajtarkej wobhladowaka kuleć.">
 <!ENTITY alwaysShowPasswords.label "Hesła přeco pokazać">

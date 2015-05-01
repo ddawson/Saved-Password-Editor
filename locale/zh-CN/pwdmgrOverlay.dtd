@@ -6,6 +6,7 @@
 
 
 
+
 -->
 <!ENTITY newentry.label "新建">
 <!ENTITY newentry.accesskey "N">
@@ -13,3 +14,5 @@
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "克隆">
 <!ENTITY cloneentry.accesskey "L">
+<!ENTITY visitsite.label "Visit site(s)">
+<!ENTITY visitsite.accesskey "V">

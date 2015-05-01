@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Поставке">
+<!ENTITY opensp_group.caption "Пречица за сачуване лозинке">
 <!ENTITY displayMenuitem.label "Додај пречицу у мениje">
 <!ENTITY displayMenuitem.tooltip "Додаје „Сачуване лозинке“ у алатке и мени за програме виндоуза као пречицу до управљача лозинкама">
 <!ENTITY renameMenuitemTo.label "Преименуј пречицу у:">
 <!ENTITY renameMenuitemTo.tooltip "Овде можете унети неки други натпис уместо „Сачуване лозинке”, ако желите спречити да вам другу њушкају по лозинкама. Избришите целу вредност да бисте вратили натпис „Сачуване лозинке”. УПОЗОРЕЊЕ: ово није довољно да бисте заштитили своје лозинке. Користите главну лозинку, ако желите сигурну заштиту.">
+<!ENTITY opensp_shortcut.label "Пречица на тастатури">
+<!ENTITY opensp_shortcut.tooltip "Комбинација типки која отвара сачуване лозинке">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Модификатор кључа мора бити притиснут док се притиска главна типка (списак појмова одвојених зарезима или размацима од: shift alt meta control). дА бисте користили шифт, морате задовољити захтеве тастатуре.">
+<!ENTITY opensp_shortcut_key.tooltip "Главна типка у комбинацији. Мора се поклапати са коришћењем шифта у модификацијама">
+<!ENTITY captureshortcut.label "Сними">
+<!ENTITY captureshortcut.tooltip "Кликните да бисте снимили комбинацију типки на тастатури">
+<!ENTITY entershortcut.label "Сада притисните жељену комбинацију типки.">
+<!ENTITY modstosavedpasswords.caption "Измене у прозору са сачуваним лозинкама">
 <!ENTITY preselectCurrentSite.label "Унапред изабери тренутну страницу у сачуваним лозинкама">
 <!ENTITY preselectCurrentSite.tooltip "Када отварате сачуване лозинке, ово ће аутоматски изабрати и спустити на страницу која је отворена у тренутном језичку,">
 <!ENTITY alwaysShowPasswords.label "Увек прикажи лозинку">

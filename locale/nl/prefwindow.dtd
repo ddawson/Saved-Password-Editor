@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Saved Password Editor-voorkeuren">
+<!ENTITY opensp_group.caption "Snelkoppeling Opgeslagen wachtwoorden">
 <!ENTITY displayMenuitem.label "Snelkoppeling in menu’s opnemen">
 <!ENTITY displayMenuitem.tooltip "Voegt “Opgeslagen wachtwoorden” als een snelkoppeling naar de wachtwoordbeheerder toe aan de menu’s Extra en het Firefoxmenu in Windows en Linux.">
 <!ENTITY renameMenuitemTo.label "Snelkoppeling hernoemen naar:">
 <!ENTITY renameMenuitemTo.tooltip "Voer hier iets in om de snelkoppeling anders te noemen dan “Opgeslagen wachtwoorden”, als u het wat onopvallender wilt maken. Wis de waarde om “Opgeslagen wachtwoorden” weer te gebruiken. Waarschuwing: dit is geen vervanging voor een goede beveiliging; u dient indien mogelijk een hoofdwachtwoord in te stellen om uw wachtwoorden te beschermen.">
+<!ENTITY opensp_shortcut.label "Sneltoets">
+<!ENTITY opensp_shortcut.tooltip "Toetscombinatie om Opgeslagen wachtwoorden te openen">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Toetsmodifiers die moeten worden ingedrukt bij indrukken van de hoofdtoets (komma- of spatiegescheiden lijst van de volgende: shift alt meta control). Het gebruik van “shift” moet met de vereisten van uw toetsenbord overeenkomen.">
+<!ENTITY opensp_shortcut_key.tooltip "De hoofdtoets van de combinatie. Dient met het gebruik van “shift” in de modifiers overeen te komen.">
+<!ENTITY captureshortcut.label "Opnemen">
+<!ENTITY captureshortcut.tooltip "Klik om een toetscombinatie van uw toetsenbord op te nemen">
+<!ENTITY entershortcut.label "Druk nu uw gewenste toetsencombinatie.">
+<!ENTITY modstosavedpasswords.caption "Aanpassingen aan het venster Opgeslagen wachtwoorden">
 <!ENTITY preselectCurrentSite.label "Huidige website preselecteren in Opgeslagen wachtwoorden">
 <!ENTITY preselectCurrentSite.tooltip "Bij openen van Opgeslagen wachtwoorden selecteert dit inmiddellijk de in het huidige browsertabblad bezochte website en scrollt ernaartoe.">
 <!ENTITY alwaysShowPasswords.label "Wachtwoorden altijd weergeven">

@@ -9,3 +9,5 @@
 <!ENTITY editentry.accesskey "k">
 <!ENTITY cloneentry.label "Kopiëren">
 <!ENTITY cloneentry.accesskey "p">
+<!ENTITY visitsite.label "Website(s) bezoeken">
+<!ENTITY visitsite.accesskey "z">

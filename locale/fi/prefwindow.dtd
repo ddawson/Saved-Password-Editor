@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Tallennettujen salasanojen muokkausohjelman asetukset">
+<!ENTITY opensp_group.caption "Tallennettujen salasanojen pikavalinta">
 <!ENTITY displayMenuitem.label "Lisää pikavalinta valikoihin">
 <!ENTITY displayMenuitem.tooltip "Lisää ”Tallennetut salasanat”-pikavalinnan Työkalut-valikkoon sekä Windowsin/Linuxin Firefox-valikkoon">
 <!ENTITY renameMenuitemTo.label "Vaihda pikavalinnan nimeksi:">
 <!ENTITY renameMenuitemTo.tooltip "Voit syöttää tähän vaihtoehtoisen nimen ”Tallennetut salasanat”-pikavalinnalle, jos haluat hämätä muita käyttäjiä. Poista arvo palauttaaksesi oletusnimen. Varoitus: tämä toiminto ei korvaa kunnon tietoturvatoimenpiteitä; käytä pääsalasanaa aina, kun se on mahdollista.">
+<!ENTITY opensp_shortcut.label "Pikanäppäin">
+<!ENTITY opensp_shortcut.tooltip "Näppäinyhdistelmä, jota painamalla avataan Tallennetut salasanat">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Apunäppäimet, joita tulee pitää alas painettuna, kun päänäppäintä painetaan (pilkuin tai välilyönnein eroteltu luettelo seuraavista: shift alt meta control). &quot;shift&quot;-näppäimen käytön tulee vastata näppäimistösi vaatimuksia.">
+<!ENTITY opensp_shortcut_key.tooltip "Yhdistelmän päänäppäin. Pitää vastata &quot;shift&quot;-apunäppäimen käyttöä.">
+<!ENTITY captureshortcut.label "Sieppaa">
+<!ENTITY captureshortcut.tooltip "Napsauta siepataksesi näppäinyhdistelmän näppäimistöltäsi">
+<!ENTITY entershortcut.label "Paina nyt haluttua näppäinyhdistelmää.">
+<!ENTITY modstosavedpasswords.caption "Muutokset Tallennettujen salasanojen ikkunaan">
 <!ENTITY preselectCurrentSite.label "Valitse nykyinen sivusto tallennetuista salasanoista">
 <!ENTITY preselectCurrentSite.tooltip "Valitse ja vieritä näkyville selaimen nykyisessä välilehdessä avoinna oleva sivusto, kun tallennettujen salasanojen valintaikkuna avataan.">
 <!ENTITY alwaysShowPasswords.label "Näytä aina salasanat">

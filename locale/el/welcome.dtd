@@ -12,10 +12,12 @@
      ru     - Russian (no specific country)
 
 
+
 -->
 <!ENTITY locale "el">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 -->
 <!ENTITY layoutdirection "LTR">
@@ -35,6 +37,7 @@
      strings are already double-quote delimited.
 
 
+
 -->
 <!ENTITY welcometospe "Καλώς ήλθατε στον Επεξεργαστή αποθηκευμένων κωδικών πρόσβασης (Saved Password Editor)">
 <!-- Paragraph 1, Firefox version -->
@@ -44,6 +47,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 -->
 <!ENTITY welcomepara1_sm "Σας ευχαριστούμε για τη χρήση της επέκτασης <a id='addonlink'>«Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης»</a>. Μπορείτε να έχετε πρόσβαση στη λειτουργία επεξεργασίας μεταβαίνοντας στο μενού «Εργαλεία &gt; Επιλογές», ή στο μενού «Επεξεργασία &gt; Προτιμήσεις» (ανάλογα με το λειτουργικό σας σύστημα), περιηγούμενοι στο τμήμα παραθύρου «Κωδικοί» σε «Ιδιωτικό απόρρητο &amp; Ασφάλεια» και στη συνέχεια, κάνοντας κλικ στο κουμπί «Διαχείριση Αποθηκευμένων Κωδικών». Επίσης, μπορείτε απλά να έχετε πρόσβαση στους αποθηκευμένους κωδικούς από το μενού «Εργαλεία». Για ευκολία σας, διατίθεται επίσης και ένα κουμπί εργαλειοθήκης· για πρόσβαση σε αυτό, κάντε δεξί κλικ στην εργαλειοθήκη και επιλέξτε «Προσαρμογή...». Το πλαίσιο διαλόγου «Αποθηκευμένοι κωδικοί» περιέχει τώρα εντολές για την προσθήκη και επεξεργασία κωδικών πρόσβασης, σε ένα κουμπί-μενού και στο μενού περιεχομένου.">

@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Einstellungen für den Passworteditor">
+<!ENTITY opensp_group.caption "Tastenkürzel für gespeicherte Passwörter">
 <!ENTITY displayMenuitem.label "Schnellzugriff in Menüs einfügen">
 <!ENTITY displayMenuitem.tooltip "Fügt &quot;Gespeicherte Passwörter&quot; zum Aufruf der Passwortverwaltung dem Extras-Menü und dem Firefox-Button unter Windows und Linux hinzu">
 <!ENTITY renameMenuitemTo.label "Kürzel umbenennen in:">
 <!ENTITY renameMenuitemTo.tooltip "Geben Sie hier etwas ein, um dem Kürzel einen anderen Namen als &quot;Gespeicherte Passwörter&quot; zu geben, wenn Sie es Dritten gegenüber nicht so offensichtlich machen möchten. Löschen Sie den Wert, um wieder &quot;Gespeicherte Passwörter&quot; zu nutzen. Warnung: Dies ist kein Ersatz für akzeptable Sicherheit; Sie sollten ein Hauptpasswort verwenden, wenn möglich, wenn Sie Ihre Passwörter schützen möchten.">
+<!ENTITY opensp_shortcut.label "Tastenkürzel">
+<!ENTITY opensp_shortcut.tooltip "Tastenkombination, um gespeicherte Passwörter zu öffnen">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Tastenmodifikatoren, die gedrückt werden müssen, wenn die Haupttaste gedrückt wird (komma- oder leerzeichengetrennte Liste aus den folgenden: shift alt meta control). Die Benutzung der Umschalttaste muss zu den Anforderungen Ihrer Tastatur passen.">
+<!ENTITY opensp_shortcut_key.tooltip "Die Haupttaste der Kombination. Muss zur Verwendung von &quot;shift&quot; in den Modifikatoren passen.">
+<!ENTITY captureshortcut.label "Erfassen">
+<!ENTITY captureshortcut.tooltip "Klicken, um eine Tastenkombination von Ihrer Tastatur zu erfassen">
+<!ENTITY entershortcut.label "Bitte betätigen Sie jetzt Ihre gewünschte Tastenkombination.">
+<!ENTITY modstosavedpasswords.caption "Änderungen am Gespeicherte-Passwörter-Fenster">
 <!ENTITY preselectCurrentSite.label "Derzeitige Seite in &quot;Gespeicherte Passwörter&quot; vorauswählen">
 <!ENTITY preselectCurrentSite.tooltip "Beim Öffnen der gespeicherten Passwörter wird dies umgehend zu der momentan angezeigten Website scrollen.">
 <!ENTITY alwaysShowPasswords.label "Passwörter immer zeigen">
