@@ -1,8 +1,18 @@
 <!ENTITY prefwindow.title "Preferencias de Saved Password Editor">
+<!ENTITY opensp_group.caption "Acceso directo a Contraseñas guardadas">
 <!ENTITY displayMenuitem.label "Incluir acceso directo en menúes">
 <!ENTITY displayMenuitem.tooltip "Agrega &quot;Contraseñas guardadas&quot; al menú Herramientas y al menú de Firefox en Windows/Linux como acceso directo al administrador de contraseñas guardadas">
 <!ENTITY renameMenuitemTo.label "Nuevo nombre de acceso directo:">
-<!ENTITY renameMenuitemTo.tooltip "Escribir algo para nombrar acceso directo de modo que no sea &quot;Contraseñas guardadas&quot;, en caso de desear hacerlo menos obvio. Eliminar valor para restaurar uso de &quot;Contraseñas guardadas&quot;. Advertencia: no es un sustituto apropiado de seguridad; de ser posible, se sugiere utilizar una contraseña maestra para proteger las contraseñas.">
+<!ENTITY renameMenuitemTo.tooltip "Escribir algo para nombrar acceso directo de modo que no sea &quot;Contraseñas guardadas&quot;, en caso de desear hacerlo menos obvio. Eliminar valor para restaurar uso de &quot;Contraseñas guardadas&quot;. Advertencia: no es un sustituto apropiado de seguridad. De ser posible, se sugiere utilizar una contraseña maestra para proteger las contraseñas.">
+<!ENTITY opensp_shortcut.label "Acceso directo de teclado">
+<!ENTITY opensp_shortcut.tooltip "Teclas a pulsar para abrir Contraseñas guardadas">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Modificadores que deben estar oprimidos al pulsar la tecla principal (lista de los siguientes separados por comas o espacios: shift alt meta control). El uso de &quot;shift&quot; debe adaptarse al teclado del sistema.">
+<!ENTITY opensp_shortcut_key.tooltip "Tecla principal del combinado. Debe adaptarse al uso de &quot;shift&quot; en los modificadores.">
+<!ENTITY captureshortcut.label "Capturar">
+<!ENTITY captureshortcut.tooltip "Pulsar para capturar el combinado de teclas">
+<!ENTITY entershortcut.label "Pulsar el combinado deseado de teclas.">
+<!ENTITY modstosavedpasswords.caption "Modificaciones de la ventana de Contraseñas guardadas">
 <!ENTITY preselectCurrentSite.label "Pre-elegir sitio actual en Contraseñas Guardadas">
 <!ENTITY preselectCurrentSite.tooltip "Al abrir Contraseñas Guardadas, elegir y llegar al sitio visitado en la ventana actual del navegador.">
 <!ENTITY alwaysShowPasswords.label "Mostrar siempre contraseñas">
