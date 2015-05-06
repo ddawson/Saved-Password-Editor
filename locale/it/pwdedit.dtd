@@ -11,7 +11,7 @@
 <!ENTITY formSubmitURL.label "Prefisso di Invio">
 <!ENTITY formSubmitURL.tooltip "Prefisso dell'indirizzo di Invio del modulo">
 <!ENTITY annotation.label "Annotazione">
-<!ENTITY annotation.tooltip "Stringa aggiuntiva per identificare il servizio su cui ci si deve autenticare (per es. HTTP realm)">
+<!ENTITY annotation.tooltip "Stringa aggiuntiva per identificare il servizio sul quale ci si deve autenticare (per es. HTTP realm)">
 <!ENTITY username.label "Nome utente">
 <!ENTITY username.tooltip "Nome utente da memorizzare">
 <!ENTITY password.label "Password">
