@@ -194,11 +194,11 @@ var SavedPasswordEditor = {
           genStrBundle.formatStringFromName("failed", [e.message], 1));
       }
     } else {
-      this.oldSignon = spe._signonMap[target.label];
+      SavedPasswordEditor.oldSignon = spe._signonMap[target.label];
       window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
         "centerscreen,dependent,dialog,chrome",
-        [this.oldSignon], 1, false,
+        [SavedPasswordEditor.oldSignon], 1, false,
         { newSignon: null, callback: spe._finishEdit, parentWindow: window });
     }
 
@@ -245,7 +245,7 @@ var SavedPasswordEditor = {
         genStrBundle.GetStringFromName("error"),
         genStrBundle.GetStringFromName("nologinstoedit"));
     } else if (signons.length == 1) {
-      this.oldSignon = signons[0];
+      SavedPasswordEditor.oldSignon = signons[0];
       aWindow.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
         "centerscreen,dependent,dialog,chrome",
