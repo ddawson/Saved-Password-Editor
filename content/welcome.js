@@ -16,10 +16,10 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
-const Cc = Components.classes,
-      Ci = Components.interfaces,
-      SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
+const SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}";
+
+Components.utils.import("resource://gre/modules/Services.jsm");
 
 window.addEventListener(
   "load",
@@ -27,8 +27,7 @@ window.addEventListener(
     var appId;
 
     function openSecPane () {
-      var wm = Cc["@mozilla.org/appshell/window-mediator;1"].
-                 getService(Ci.nsIWindowMediator);
+      var wm = Services.wm;
       if (appId == THUNDERBIRD)
           wm.getMostRecentWindow("mail:3pane").
             openOptionsDialog("paneSecurity");
@@ -38,15 +37,13 @@ window.addEventListener(
     }
 
     function openPwdPane () {
-      var chromeWin = Cc["@mozilla.org/appshell/window-mediator;1"].
-                        getService(Ci.nsIWindowMediator).
-                        getMostRecentWindow("navigator:browser");
+      var chromeWin = Services.wm.getMostRecentWindow("navigator:browser");
       chromeWin.goPreferences("passwords_pane");
     }
 
     function el (name) document.getElementById(name);
 
-    appId = Cc["@mozilla.org/xre/app-info;1"].getService(Ci.nsIXULAppInfo).ID;
+    appId = Services.appinfo.ID;
     var appName = "firefox";
     switch (appId) {
     case THUNDERBIRD:
@@ -59,7 +56,7 @@ window.addEventListener(
     el("addonlink").setAttribute(
       "href", "https://addons.mozilla.org/" + appName
               + "/addon/saved-password-editor/");
-    el("appname").textContent = Application.name;
+    el("appname").textContent = Services.appinfo.name;
     window.removeEventListener("load", loadHandler, false);
   },
   false);
