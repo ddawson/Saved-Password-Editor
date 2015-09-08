@@ -1,18 +1,18 @@
 <!ENTITY prefwindow.title "Mentett jelszavak - szerkesztő">
-<!ENTITY opensp_group.caption "Saved Passwords shortcut">
+<!ENTITY opensp_group.caption "Mentett jelszavak gyorsbillentyű">
 <!ENTITY displayMenuitem.label "Gyorsbillentyű megjelenítése a menükben">
 <!ENTITY displayMenuitem.tooltip "&quot;Mentett jelszavak&quot; menüpont hozzáadása az eszközök menühöz és a Windows/Linux menühöz mint gyorsbillentyű a jelszókezelőhöz">
 <!ENTITY renameMenuitemTo.label "Rövidítés átnevezése erre:">
 <!ENTITY renameMenuitemTo.tooltip "Írjon be ide valamit a rövidítés előhívásához a &quot;Saved Passwords&quot; kivételével, ha egyszerűsíteni kívánja azt. Törölje az értéket a &quot;Saved Passwords&quot; visszaállításához. Figyelem: ez nem helyettesíti a biztonságosságot; használja a mesterjelszót (ha lehetséges) a jelszavainak megóvása érdekében.">
-<!ENTITY opensp_shortcut.label "Keyboard shortcut">
-<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!ENTITY opensp_shortcut.label "Gyorsbillentyű">
+<!ENTITY opensp_shortcut.tooltip "Billentyűkombináció a mentett jelszavak megnyitásához">
 <!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
-<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
-<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
-<!ENTITY captureshortcut.label "Capture">
-<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
-<!ENTITY entershortcut.label "Please press your desired key combination now.">
-<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
+<!ENTITY opensp_shortcut_modifiers.tooltip "Modifikációs billentyűk, melyeket a fő billentyűvel egyszerre kell lenyomni (vessző- vagy szóközzel elválasztott lista az alábbiakkal: shift, alt és ctrl). A &quot;shift&quot; használatának egyeznie kell a billentyűzet igényeivel.">
+<!ENTITY opensp_shortcut_key.tooltip "A kombináció fő billentyűje. Használatának egyeznie kell a &quot;shift&quot; modifikációs billentyűvel.">
+<!ENTITY captureshortcut.label "Felvétel">
+<!ENTITY captureshortcut.tooltip "Kattintson a billentyűkombináció felvételéhez a billentyűzetről">
+<!ENTITY entershortcut.label "Kérem nyomja le a választott billentyűkombinációt most.">
+<!ENTITY modstosavedpasswords.caption "Változások a mentett jelszavak ablakhoz">
 <!ENTITY preselectCurrentSite.label "Jelenlegi webcím auto-kijelölése">
 <!ENTITY preselectCurrentSite.tooltip "Automatikus váltás a mentett jelszavakban a jelenlegi megnyitott lap webcímére.">
 <!ENTITY alwaysShowPasswords.label "Jelszavak megjelenítése mindig">

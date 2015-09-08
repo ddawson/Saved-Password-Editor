@@ -1,0 +1,28 @@
+<!ENTITY prefwindow.title "Налаштування Редактора Збережених Паролів">
+<!ENTITY opensp_group.caption "Елементи Збережених Паролів">
+<!ENTITY displayMenuitem.label "Включити елемент в меню">
+<!ENTITY displayMenuitem.tooltip "Додає елемент &quot;Збережені Паролі&quot; в меню Інструменти та меню Firefox для Windows/Linux для швидкого виклику менеджера паролів">
+<!ENTITY renameMenuitemTo.label "Перейменувати елемент на:">
+<!ENTITY renameMenuitemTo.tooltip "Введіть щось тут для виклику ярлика іншого ніж &quot;Збережені паролі&quot;, якщо ви хочете зробити його менш надокучливим. Зітріть значення для повернення використання &quot;Збережених паролів&quot;. Увага: це не заміна належної безпеки; якщо вам необхідно захистити свої паролі, ви повинні використовувати головний пароль, коли це можливо.">
+<!ENTITY opensp_shortcut.label "Комбінація клавіш">
+<!ENTITY opensp_shortcut.tooltip "Комбінація клавіш для відкриття збережених паролів">
+<!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
+<!ENTITY opensp_shortcut_modifiers.tooltip "Змінні клавіші, які повинні бути натиснуті при натисканні головної клавіші (список, розділений комами чи пробілами з наступними значеннями: shift alt meta control). Використання &quot;shift&quot; повинно відповідати вимогам вашої клавіатури.">
+<!ENTITY opensp_shortcut_key.tooltip "Головна клавіша комбінації. Повинна відповідати використанню &quot;shift&quot; у змінних.">
+<!ENTITY captureshortcut.label "Захопити">
+<!ENTITY captureshortcut.tooltip "Натисніть для захоплення комбінації клавіш з клавіатури">
+<!ENTITY entershortcut.label "Натисніть свою бажану комбінацію клавіш.">
+<!ENTITY modstosavedpasswords.caption "Змінні для вікна Збережених паролів">
+<!ENTITY preselectCurrentSite.label "Попередній вибір поточного сайта в Збережених паролях">
+<!ENTITY preselectCurrentSite.tooltip "При відкритті Збережених паролів буде одразу здійснено вибір і перехід до сайту, який відкрито в поточній вкладці браузера.">
+<!ENTITY alwaysShowPasswords.label "Завжди показувати паролі">
+<!ENTITY alwaysShowPasswords.tooltip "Якщо відмічено, Редактор Збережених Паролів спричинить показ стовпчика Пароля при відкритті діалогу Збережених Паролів та показ пароля при відкритті діалогу редактора.">
+<!ENTITY alwaysPromptForMasterPassword.label "Завжди запитувати головний пароль">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Запити головного пароля при показі паролів у Збережених Паролях. Увімкнення спричинить подвійний запит щонайменше один раз за сеанс. Якщо вимкнено, в більшості випадків не буде здійснюватись запит головного пароля.">
+<!ENTITY passwordfield_caption.label "Поле пароля у вікні редактора">
+<!ENTITY passwordfield_alwayshide.label "Завжди приховувати пароль при відкритті вікна редактора">
+<!ENTITY passwordfield_alwaysshow.label "Завжди показувати пароль при відкритті вікна редактора">
+<!ENTITY passwordfield_rememberlast.label "Пам'ятати останній стан">
+<!ENTITY passwordfield_rememberlast.tooltip "Показувати чи приховувати так само, як при останньому відкритті вікна">
+<!ENTITY passwordfield_followspwin.label "Стежити за списком Збережених Паролів">
+<!ENTITY passwordfield_followspwin.tooltip "Показувати лише якщо паролі в даний момент показані у вікні Збережених Паролів">

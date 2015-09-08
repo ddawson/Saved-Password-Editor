@@ -1,0 +1,14 @@
+<!-- Open Saved Passwords -->
+<!ENTITY savedpasswords.label "Збережені паролі">
+<!ENTITY savedpasswords.accesskey "п">
+<!ENTITY savedpasswords.tooltip "Відкрити діалог збережених паролів">
+<!-- Context menu -->
+<!ENTITY ctx_savelogininfo.label "Зберегти інформацію входу">
+<!ENTITY ctx_savelogininfo.accesskey "З">
+<!ENTITY ctx_savelogininfo.tooltip "Додати збережений пароль для цієї форми">
+<!ENTITY ctx_editlogininfo.label "Змінити інформацію входу">
+<!ENTITY ctx_editlogininfo.accesskey "м">
+<!ENTITY ctx_editlogininfo.tooltip "Змінити збережений пароль для цієї форми">
+<!ENTITY ctx_deletelogininfo.label "Вилучити інформацію входу">
+<!ENTITY ctx_deletelogininfo.accesskey "В">
+<!ENTITY ctx_deletelogininfo.tooltip "Вилучити збережений пароль для цієї форми">

@@ -1,0 +1,36 @@
+<!ENTITY savedpasswordeditor.title "Редактор збережених паролів">
+<!ENTITY signontype.label "Тип">
+<!ENTITY type_form.label "Веб-форма">
+<!ENTITY type_form.accesskey "В">
+<!ENTITY type_form.tooltip "Форма на веб-сторінці">
+<!ENTITY type_annotated.label "Анотований">
+<!ENTITY type_annotated.accesskey "А">
+<!ENTITY type_annotated.tooltip "Логін, який потребує рядок на додаток до хосту для даних служби (н-д HTTP автентифікація)">
+<!ENTITY hostname.label "Хост">
+<!ENTITY hostname.tooltip "Ім'я протоколу/хосту">
+<!ENTITY formSubmitURL.label "Відправляти префікс">
+<!ENTITY formSubmitURL.tooltip "Префікс адреси відправлення форми">
+<!ENTITY annotation.label "Анотація">
+<!ENTITY annotation.tooltip "Додатковий рядок, який визначає службу для засвідчення (н-д HTTP область)">
+<!ENTITY username.label "Ім'я користувача">
+<!ENTITY username.tooltip "Ім'я користувача для запам'ятовування">
+<!ENTITY password.label "Пароль">
+<!ENTITY password.tooltip "Пароль для запам'ятовування">
+<!ENTITY usernameField.label "Назва поля імені користувача">
+<!ENTITY usernameField.tooltip "Атрибут назви для відповідного поля імені користувача в формі">
+<!ENTITY passwordField.label "Назва поля пароля">
+<!ENTITY passwordField.tooltip "Атрибут назви для відповідного поля пароля в формі">
+<!ENTITY showPassword.label "Показати">
+<!ENTITY showPassword.accesskey "П">
+<!ENTITY showPassword.tooltip "Перемкнути видимість пароля">
+<!ENTITY hidePassword.label "Приховати">
+<!ENTITY hidePassword.accesskey "х">
+<!ENTITY guessfrompage.label "Визначення з поточної сторінки">
+<!ENTITY guessfrompage.accesskey "В">
+<!ENTITY guessfrompage.tooltip "Заповнити цю форму базуючись на можливій формі входу на поточній сторінці">
+<!ENTITY prevform.label "Попередня форма">
+<!ENTITY prevform.accesskey "о">
+<!ENTITY prevform.tooltip "Спробувати попередню форму зі сторінки">
+<!ENTITY nextform.label "Наступна форма">
+<!ENTITY nextform.accesskey "Н">
+<!ENTITY nextform.tooltip "Спробувати наступну форму зі сторінки">
