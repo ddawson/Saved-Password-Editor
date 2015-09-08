@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2014  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -171,7 +171,6 @@ var SavedPasswordEditor = {
       pwdSvc.modifyLogin(SavedPasswordEditor.oldSignon, newSignon);
       showAlert(genStrBundle.GetStringFromName("logininfochanged"));
     } catch (e) {
-      let window = target.ownerDocument.defaultView;
       promptSvc.alert(
         aParentWindow,
         genStrBundle.GetStringFromName("error"),
@@ -194,12 +193,14 @@ var SavedPasswordEditor = {
           genStrBundle.GetStringFromName("error"),
           genStrBundle.formatStringFromName("failed", [e.message], 1));
       }
-    } else
+    } else {
+      this.oldSignon = spe._signonMap[target.label];
       window.openDialog(
         "chrome://savedpasswordeditor/content/pwdedit.xul", "",
         "centerscreen,dependent,dialog,chrome",
-        [spe._signonMap[target.label]], 1, false,
+        [this.oldSignon], 1, false,
         { newSignon: null, callback: spe._finishEdit, parentWindow: window });
+    }
 
     spe._deleting = false;
   },
