@@ -41,6 +41,9 @@
       <preference id="pref-savedpasswords-shortcut-key"
                   name="extensions.savedpasswordeditor.openspkey"
                   type="string"/>
+      <preference id="pref-confirm-ctxmenu-delete"
+                  name="extensions.savedpasswordeditor.confirm_ctxmenu_delete"
+                  type="bool"/>
       <preference id="pref-preselect-current-site"
                   name="extensions.savedpasswordeditor.preselect_current_site"
                   type="bool"/>
@@ -85,6 +88,12 @@
         <button id="opensp_keypressrecv" tabindex="-1"/>
       </hbox>
       <label id="entershortcut_lbl" value="&entershortcut.label;"/>
+    </groupbox>
+    <groupbox>
+      <caption label="&webpages.caption;"/>
+      <checkbox id="promptforctxmenudelete_ck"
+                label="&promptforctxmenudelete.label;"
+                preference="pref-confirm-ctxmenu-delete"/>
     </groupbox>
     <groupbox>
       <caption label="&modstosavedpasswords.caption;"/>

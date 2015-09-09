@@ -1,5 +1,6 @@
 pref("extensions.savedpasswordeditor.display_menuitem", true);
 pref("extensions.savedpasswordeditor.rename_menuitem_to", "");
+pref("extensions.savedpasswordeditor.confirm_ctxmenu_delete", true);
 pref("extensions.savedpasswordeditor.openspkey", "");
 pref("extensions.savedpasswordeditor.openspkeycode", 0);
 pref("extensions.savedpasswordeditor.openspkeymodifiers", "");

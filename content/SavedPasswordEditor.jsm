@@ -269,8 +269,24 @@ var SavedPasswordEditor = {
         genStrBundle.GetStringFromName("nologinstodelete"));
     } else if (signons.length == 1) {
       try {
-        pwdSvc.removeLogin(signons[0]);
-        showAlert(genStrBundle.GetStringFromName("logininfodeleted"));
+        let res;
+        if (prefs.getBoolPref("confirm_ctxmenu_delete")) {
+          let cs = { value: false };
+          res = promptSvc.confirmEx(
+            aWindow, genStrBundle.GetStringFromName("deletinglogininfo"),
+            genStrBundle.GetStringFromName("deletingareyousure"),
+            promptSvc.STD_YES_NO_BUTTONS | promptSvc.BUTTON_POS_1_DEFAULT
+            | promptSvc.BUTTON_DELAY_ENABLE, null, null, null,
+            genStrBundle.GetStringFromName("deletingdontask"), cs);
+          if (res == 0 && cs.value)
+            prefs.setBoolPref("confirm_ctxmenu_delete", false);
+        } else
+          res = 0;
+
+        if (res == 0) {
+          pwdSvc.removeLogin(signons[0]);
+          showAlert(genStrBundle.GetStringFromName("logininfodeleted"));
+        }
       } catch (e) {
         promptSvc.alert(
           aWindow,
