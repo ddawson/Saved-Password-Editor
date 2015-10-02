@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Kapti">
 <!ENTITY captureshortcut.tooltip "Klaku por kapti klavkombinon el via klavaro">
 <!ENTITY entershortcut.label "Bonvolu premi nun vian deziratan klavkombinon.">
+<!ENTITY webpages.caption "Retpaĝoj">
+<!ENTITY promptforctxmenudelete.label "Sciigo, kiam salutinformoj estas forigataj el la kunteksta menuo (alklaku retpaĝon per la dekstra musklavo)">
 <!ENTITY modstosavedpasswords.caption "Ŝanĝoj en la fenestro de kosnervitaj pasvortoj">
 <!ENTITY preselectCurrentSite.label "Antaŭelekti aktualan retejon en Saved Passwords">
 <!ENTITY preselectCurrentSite.tooltip "Kiam konservitaj pasvortoj malfermiĝas, tio tuj elektos la vizititan retejon kaj rulumos al la aktuala foliumila langeto.">

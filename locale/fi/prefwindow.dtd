@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Sieppaa">
 <!ENTITY captureshortcut.tooltip "Napsauta siepataksesi näppäinyhdistelmän näppäimistöltäsi">
 <!ENTITY entershortcut.label "Paina nyt haluttua näppäinyhdistelmää.">
+<!ENTITY webpages.caption "Verkkosivut">
+<!ENTITY promptforctxmenudelete.label "Pyydä vahvistusta poistettaessa kirjautumistietoja pudotusvalikosta (hiiren oikea painike verkkosivulla)">
 <!ENTITY modstosavedpasswords.caption "Muutokset Tallennettujen salasanojen ikkunaan">
 <!ENTITY preselectCurrentSite.label "Valitse nykyinen sivusto tallennetuista salasanoista">
 <!ENTITY preselectCurrentSite.tooltip "Valitse ja vieritä näkyville selaimen nykyisessä välilehdessä avoinna oleva sivusto, kun tallennettujen salasanojen valintaikkuna avataan.">

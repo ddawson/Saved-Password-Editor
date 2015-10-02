@@ -3,6 +3,7 @@
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
 
+
 -->
 <!ENTITY newentry.label "Agregar">
 <!ENTITY newentry.accesskey "A">

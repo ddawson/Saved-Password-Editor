@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Сними">
 <!ENTITY captureshortcut.tooltip "Кликните да бисте снимили комбинацију типки на тастатури">
 <!ENTITY entershortcut.label "Сада притисните жељену комбинацију типки.">
+<!ENTITY webpages.caption "Веб странице">
+<!ENTITY promptforctxmenudelete.label "Питај ме за потврду приликом брисања информација о пријави помоћу приручног менија (десног клика на веб страницу)">
 <!ENTITY modstosavedpasswords.caption "Измене у прозору са сачуваним лозинкама">
 <!ENTITY preselectCurrentSite.label "Унапред изабери тренутну страницу у сачуваним лозинкама">
 <!ENTITY preselectCurrentSite.tooltip "Када отварате сачуване лозинке, ово ће аутоматски изабрати и спустити на страницу која је отворена у тренутном језичку,">

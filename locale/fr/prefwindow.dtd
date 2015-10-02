@@ -1,20 +1,22 @@
 <!ENTITY prefwindow.title "Préférences de l'extension Save Password Editor">
-<!ENTITY opensp_group.caption "Saved Passwords shortcut">
+<!ENTITY opensp_group.caption "Raccourci de l'extension Saved Passwords">
 <!ENTITY displayMenuitem.label "Inclure le raccourci dans les menus">
 <!ENTITY displayMenuitem.tooltip "Ajoute « Mots de passe enregistrés » au menu Outils et au menu des applications Windows comme raccourci pour accéder au gestionnaire de mots de passe">
 <!ENTITY renameMenuitemTo.label "Renommer le raccourci en :">
 <!ENTITY renameMenuitemTo.tooltip "Saisissez ici un autre nom de raccourci que ;Saved Passwords&quot; si vous voulez le rendre moins évident pour les intrus. Effacer cette valeur si vous voulez revenir à ;Saved Passwords&quot;. Attention : ceci n'assure nullement une sécurité particulière. vous devriez utiliser un mot de passe principal autant que possible si vous avez besoin de protéger vos mots de passe.">
-<!ENTITY opensp_shortcut.label "Keyboard shortcut">
-<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!ENTITY opensp_shortcut.label "Raccourci clavier">
+<!ENTITY opensp_shortcut.tooltip "Combinaison de touches pour ouvrir Saved Passwords">
 <!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
-<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
-<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
+<!ENTITY opensp_shortcut_modifiers.tooltip "Les touches de sélection doivent être maintenues quand on enfonce la touche principale (liste d'éléments séparés par une virgule ou un espace pour : shift alt meta control). L'utilisation de &quot;shift&quot; doit être conforme à la configuration de votre clavier.">
+<!ENTITY opensp_shortcut_key.tooltip "La touche principale de la combinaison. Elle doit coïncider avec l'usage de &quot;shift&quot; dans les touches de sélection.">
 <!ENTITY captureshortcut.label "Capture">
-<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
-<!ENTITY entershortcut.label "Please press your desired key combination now.">
-<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
-<!ENTITY preselectCurrentSite.label "Preselect current site in Saved Passwords">
-<!ENTITY preselectCurrentSite.tooltip "When opening Saved Passwords, this will immediately select and scroll to the site visited in the current browser tab.">
+<!ENTITY captureshortcut.tooltip "Cliquez pour capturer une combinaison de touches de votre clavier">
+<!ENTITY entershortcut.label "Veuillez appuyer sur la combinaison de touches maintenant.">
+<!ENTITY webpages.caption "Pages web">
+<!ENTITY promptforctxmenudelete.label "Demander avant de supprimer les informations d'identifiants du menu contextuel (clic droit sur la page web)">
+<!ENTITY modstosavedpasswords.caption "Modifications de la fenêtre de Saved Passwords">
+<!ENTITY preselectCurrentSite.label "Présélectionnez le site courant dans Saved Passwords">
+<!ENTITY preselectCurrentSite.tooltip "À l'ouverture de Saved Passwords, cela sélectionnera et atteindra immédiatement le site visité dans l'onglet courant du navigateur.">
 <!ENTITY alwaysShowPasswords.label "Toujours afficher les mots de passe">
 <!ENTITY alwaysShowPasswords.tooltip "Si la case est cochée, Saved Password Editor affichera la colonne des mots de passe à l'ouverture de la fenêtre de l'extension, et le mot de passe sera affiché quand la fenêtre d'édition sera ouverte.">
 <!ENTITY alwaysPromptForMasterPassword.label "Toujours demander le mot de passe principal">

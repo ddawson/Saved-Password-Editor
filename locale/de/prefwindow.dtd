@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Erfassen">
 <!ENTITY captureshortcut.tooltip "Klicken, um eine Tastenkombination von Ihrer Tastatur zu erfassen">
 <!ENTITY entershortcut.label "Bitte betätigen Sie jetzt Ihre gewünschte Tastenkombination.">
+<!ENTITY webpages.caption "Webseiten">
+<!ENTITY promptforctxmenudelete.label "Fragen, wenn Anmeldeinformationen aus dem Kontextmenü (Rechtsklick auf einer Webseite) gelöscht werden sollen">
 <!ENTITY modstosavedpasswords.caption "Änderungen am Gespeicherte-Passwörter-Fenster">
 <!ENTITY preselectCurrentSite.label "Derzeitige Seite in &quot;Gespeicherte Passwörter&quot; vorauswählen">
 <!ENTITY preselectCurrentSite.tooltip "Beim Öffnen der gespeicherten Passwörter wird dies umgehend zu der momentan angezeigten Website scrollen.">

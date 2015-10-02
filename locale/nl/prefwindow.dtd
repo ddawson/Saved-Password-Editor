@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Opnemen">
 <!ENTITY captureshortcut.tooltip "Klik om een toetscombinatie van uw toetsenbord op te nemen">
 <!ENTITY entershortcut.label "Druk nu uw gewenste toetsencombinatie.">
+<!ENTITY webpages.caption "Webpagina’s">
+<!ENTITY promptforctxmenudelete.label "Vragen bij verwijderen aanmeldinformatie vanuit het contextmenu (rechtsklikken op webpagina)">
 <!ENTITY modstosavedpasswords.caption "Aanpassingen aan het venster Opgeslagen wachtwoorden">
 <!ENTITY preselectCurrentSite.label "Huidige website preselecteren in Opgeslagen wachtwoorden">
 <!ENTITY preselectCurrentSite.tooltip "Bij openen van Opgeslagen wachtwoorden selecteert dit inmiddellijk de in het huidige browsertabblad bezochte website en scrollt ernaartoe.">

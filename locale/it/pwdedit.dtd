@@ -5,9 +5,9 @@
 <!ENTITY type_form.tooltip "Modulo di autenticazione presente in una pagina web">
 <!ENTITY type_annotated.label "Annotazione">
 <!ENTITY type_annotated.accesskey "A">
-<!ENTITY type_annotated.tooltip "Accesso che richiede l'inserimento di una stringa in aggiunta al server per identificare il servizio (per esempio una autenticazione HTTP)">
+<!ENTITY type_annotated.tooltip "Accesso che richiede l'inserimento di una stringa (in aggiunta al server) per identificare il servizio (per es. una autenticazione HTTP)">
 <!ENTITY hostname.label "Server">
-<!ENTITY hostname.tooltip "Protocollo/nome del server cui è associata la password (per esempio http://www.example.com)">
+<!ENTITY hostname.tooltip "Protocollo/nome del server cui è associata la password (per es. http://www.example.com)">
 <!ENTITY formSubmitURL.label "Prefisso di Invio">
 <!ENTITY formSubmitURL.tooltip "Prefisso dell'indirizzo di Invio del modulo">
 <!ENTITY annotation.label "Annotazione">

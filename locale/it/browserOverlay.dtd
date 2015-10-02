@@ -1,14 +1,14 @@
 <!-- Open Saved Passwords -->
 <!ENTITY savedpasswords.label "Password salvate">
-<!ENTITY savedpasswords.accesskey "v">
-<!ENTITY savedpasswords.tooltip "Apre la finestra di dialogo di Password salvate">
+<!ENTITY savedpasswords.accesskey "P">
+<!ENTITY savedpasswords.tooltip "Apre la finestra di dialogo di 'Password salvate'">
 <!-- Context menu -->
 <!ENTITY ctx_savelogininfo.label "Salva le informazioni di accesso">
 <!ENTITY ctx_savelogininfo.accesskey "v">
-<!ENTITY ctx_savelogininfo.tooltip "Aggiunge le informazioni di accesso per questo modulo">
+<!ENTITY ctx_savelogininfo.tooltip "Aggiunge una password salvata per questo modulo">
 <!ENTITY ctx_editlogininfo.label "Modifica le informazioni di accesso">
 <!ENTITY ctx_editlogininfo.accesskey "M">
-<!ENTITY ctx_editlogininfo.tooltip "Modifica le informazioni di accesso per questo modulo">
+<!ENTITY ctx_editlogininfo.tooltip "Modifica la password salvata per questo modulo">
 <!ENTITY ctx_deletelogininfo.label "Elimina le informazioni di accesso">
 <!ENTITY ctx_deletelogininfo.accesskey "n">
-<!ENTITY ctx_deletelogininfo.tooltip "Elimina le informazioni di accesso per questo modulo">
+<!ENTITY ctx_deletelogininfo.tooltip "Elimina la password salvata per questo modulo">

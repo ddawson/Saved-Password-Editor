@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Захопити">
 <!ENTITY captureshortcut.tooltip "Натисніть для захоплення комбінації клавіш з клавіатури">
 <!ENTITY entershortcut.label "Натисніть свою бажану комбінацію клавіш.">
+<!ENTITY webpages.caption "Веб-сторінки">
+<!ENTITY promptforctxmenudelete.label "Запит при вилученні інформації входу з контекстного меню (права клавіша на веб-сторінці)">
 <!ENTITY modstosavedpasswords.caption "Змінні для вікна Збережених паролів">
 <!ENTITY preselectCurrentSite.label "Попередній вибір поточного сайта в Збережених паролях">
 <!ENTITY preselectCurrentSite.tooltip "При відкритті Збережених паролів буде одразу здійснено вибір і перехід до сайту, який відкрито в поточній вкладці браузера.">

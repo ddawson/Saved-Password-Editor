@@ -5,13 +5,13 @@
 <!ENTITY type_form.tooltip "網頁中的表單">
 <!ENTITY type_annotated.label "註釋">
 <!ENTITY type_annotated.accesskey "A">
-<!ENTITY type_annotated.tooltip "此登入類型需要一組字串使主機能夠辨識伺服器（例：HTTP authentication）">
-<!ENTITY hostname.label "主機（Host）">
-<!ENTITY hostname.tooltip "密碼要套用的協定/主機名稱（例：http://www.example.com）">
-<!ENTITY formSubmitURL.label "送出前綴（Prefix）">
+<!ENTITY type_annotated.tooltip "此登入類型需要一組字串使主機能夠辨識伺服器 (例：HTTP authentication)">
+<!ENTITY hostname.label "主機 (Host)">
+<!ENTITY hostname.tooltip "密碼要套用的協定/主機名稱 (例：http://www.example.com)">
+<!ENTITY formSubmitURL.label "送出前綴 (Prefix)">
 <!ENTITY formSubmitURL.tooltip "表單送出目標位址的前綴字串">
 <!ENTITY annotation.label "註釋">
-<!ENTITY annotation.tooltip "以附加的字串辨識要認證的伺服器（例：HTTP realm）">
+<!ENTITY annotation.tooltip "以附加的字串辨識要認證的伺服器 (例：HTTP realm)">
 <!ENTITY username.label "使用者名稱">
 <!ENTITY username.tooltip "要記憶的使用者名稱">
 <!ENTITY password.label "密碼">

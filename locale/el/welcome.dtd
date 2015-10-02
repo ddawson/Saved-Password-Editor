@@ -13,10 +13,12 @@
 
 
 
+
 -->
 <!ENTITY locale "el">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 -->
@@ -38,6 +40,7 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "Καλώς ήλθατε στον Επεξεργαστή αποθηκευμένων κωδικών πρόσβασης (Saved Password Editor)">
 <!-- Paragraph 1, Firefox version -->
@@ -47,6 +50,7 @@
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 
 
 -->

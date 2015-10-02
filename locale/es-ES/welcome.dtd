@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "es-ES">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,15 +34,17 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Bienvenido(a) a Saved password editor">
 <!-- Paragraph 1, Firefox version -->
 <!ENTITY welcomepara1_fx "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo). Se selecciona el panel &quot;Seguridad&quot; y luego el comando &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas o (en Firefox 4 y posteriores en Windows y Linux) el menú de Firefox. Se puede usar a conveniencia un comando de la barra de herramientas. Para hallarlo, elegir Ver &gt; Barras de herramientas &gt; Personalizar… o hacer clic derecho en la barra y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas en un comando de menú y el menú contextual.">
 <!-- Paragraph 1, SeaMonkey version -->
-<!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
-     XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
-           among other things XXXXX
-     XXXXX Be careful if you copy and paste. XXXXX 
+<!-- TRADUCTORES: ADVERTENCIA
+     SeaMonkey NO CONTIENE Ver > Barras de herramientas > Personalizar…
+           entre otros elementos
+     Se debe tener cuidado al copiar y pegar. 
+
 -->
 <!ENTITY welcomepara1_sm "Gracias por utilizar <a id='addonlink'>Saved Password Editor</a>. Se puede usar la función de edición mediante el menú Herramientas &gt; Opciones, o Editar &gt; Preferencias (según el sistema operativo). Se elige el panel &quot;Contraseñas&quot; bajo &quot;Privacidad &amp; Seguridad&quot; y luego se pulsa el comando &quot;Administrar contraseñas guardadas&quot;. También es posible llegar a las contraseñas mediante el menú Herramientas. Asimismo se puede utilizar a conveniencia un comando de barra de herramientas. Al efecto, hacer clic derecho en la barra de herramientas y elegir &quot;Personalizar…&quot;. El administrador de contraseñas guardadas contendrá un comando de menú con opciones para agregar y editar contraseñas en un comando de menú y el menú contextual.">
 <!-- Paragraph 2 -->

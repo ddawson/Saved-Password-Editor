@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "キー取得">
 <!ENTITY captureshortcut.tooltip "クリックすると、キーボードからキーの組み合わせを取得します">
 <!ENTITY entershortcut.label "キーボードでキーの組み合わせを押してください。">
+<!ENTITY webpages.caption "Web ページ">
+<!ENTITY promptforctxmenudelete.label "コンテキストメニュー (Web ページ上で右クリック) からログイン情報を削除する場合は確認する">
 <!ENTITY modstosavedpasswords.caption "Saved Passwords ウィンドウの設定">
 <!ENTITY preselectCurrentSite.label "Saved Passwords から現在のサイトを選択する">
 <!ENTITY preselectCurrentSite.tooltip "Saved Passwords を開いた時、現在のブラウザタブ表示しているサイトの項目へスクロールして選択します。">

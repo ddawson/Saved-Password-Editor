@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Capture">
 <!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
 <!ENTITY entershortcut.label "Please press your desired key combination now.">
+<!ENTITY webpages.caption "Web pages">
+<!ENTITY promptforctxmenudelete.label "Prompt when deleting login info from context menu (right-click on web page)">
 <!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
 <!ENTITY preselectCurrentSite.label "Chọn trước trang hiện tại trong Saved Passwords">
 <!ENTITY preselectCurrentSite.tooltip "Khi mở Saved Passwords, cái này sẽ lập tức chọn và cuộn tới trang đã xem trong chính thẻ hiện tại.">

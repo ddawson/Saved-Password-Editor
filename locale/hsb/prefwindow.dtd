@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Natočić">
 <!ENTITY captureshortcut.tooltip "Klikńće, zo byšće tastowu kombinaciju ze swojeje tastatury natočił">
 <!ENTITY entershortcut.label "Prošu tłóčće nětko swoju požadanu tastowu kombinaciju.">
+<!ENTITY webpages.caption "Webstrony">
+<!ENTITY promptforctxmenudelete.label "Zdźělenka, hdyž so přizjewjenske informacije z kontekstoweho menija zhašeja (kliknjenje z prawej tastu myški na webstronu)">
 <!ENTITY modstosavedpasswords.caption "Změny na woknje składowanych hesłow">
 <!ENTITY preselectCurrentSite.label "Aktualne sydło w Saved password do toho wubrać">
 <!ENTITY preselectCurrentSite.tooltip "Hdyž so składowane hesła wočinjeja, to wubjerje hnydom wopytane sydło a budźe k aktualnemu rajtarkej wobhladowaka kuleć.">

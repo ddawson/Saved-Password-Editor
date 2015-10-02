@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Zajem">
 <!ENTITY captureshortcut.tooltip "Kliknite za zajetje kombinacije tipk s tipkovnice">
 <!ENTITY entershortcut.label "Pritisnite želeno kombinacijo tipk zdaj.">
+<!ENTITY webpages.caption "Spletne strani">
+<!ENTITY promptforctxmenudelete.label "Pozovi ob izbrisu podatkov o prijavi iz vsebinskega menija (desni klik na spletno stran)">
 <!ENTITY modstosavedpasswords.caption "Spremembe okna shranjenih gesel">
 <!ENTITY preselectCurrentSite.label "Predhodno izberi trenutno stran v shranjenih geslih">
 <!ENTITY preselectCurrentSite.tooltip "Ob odpiranju shranjenih gesel bo to takoj izbralo in se pomaknilo na obiskano stran v trenutnem brskalnikovem zavihku.">

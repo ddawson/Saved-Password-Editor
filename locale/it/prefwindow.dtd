@@ -1,28 +1,30 @@
 <!ENTITY prefwindow.title "Preferenze di Saved Password Editor">
 <!ENTITY opensp_group.caption "Scorciatoie di &quot;Password salvate&quot;">
-<!ENTITY displayMenuitem.label "Inserisce la voce &quot;Password salvate&quot; nel menu">
+<!ENTITY displayMenuitem.label "Inserisce la voce &quot;Password salvate&quot; nel menu di Firefox">
 <!ENTITY displayMenuitem.tooltip "Aggiunge al menu Strumenti di Firefox (Windows e Linux) la voce &quot;Password salvate&quot; come scorciatoia per il Password Manager">
 <!ENTITY renameMenuitemTo.label "Rinomina la scorciatoia in:">
-<!ENTITY renameMenuitemTo.tooltip "Permette di dare un nome diverso da &quot;Password salvate&quot; alla scorciatoia rendendone la funzione meno ovvia per i ficcanaso. Cancellando il valore inserito, si ritorna al valore predefinito cioè &quot;Password salvate&quot;. Attenzione: questo trucco non sostituisce un vero sistema di sicurezza! Per proteggere le proprie password infatti è opportuno usare una password principale.">
+<!ENTITY renameMenuitemTo.tooltip "Permette di dare un nome diverso da &quot;Password salvate&quot; alla scorciatoia rendendone la funzione meno ovvia ai ficcanaso. Cancellando il valore inserito, si ritorna al valore predefinito cioè &quot;Password salvate&quot;. Attenzione: questo trucco non sostituisce un vero sistema di sicurezza! Per proteggere le proprie password infatti è opportuno usare una password principale.">
 <!ENTITY opensp_shortcut.label "Scorciatoia da tastiera">
 <!ENTITY opensp_shortcut.tooltip "Combinazione di tasti da premere per aprire &quot;Password salvate&quot;">
 <!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
-<!ENTITY opensp_shortcut_modifiers.tooltip "Tasti modificatori che debbono essere tenuti premuti contemporaneamente al tasto principale. Si tratta del segunete elenco di voci separate da virgole o da spazi: shift alt meta control. L'uso di &quot;shift&quot; deve corrispondere ai requisiti della propria tastiera.">
+<!ENTITY opensp_shortcut_modifiers.tooltip "Tasti modificatori che debbono essere tenuti premuti contemporaneamente al tasto principale. Si tratta del seguente elenco di voci, separate da virgole o da spazi: shift alt meta control. L'uso di &quot;shift&quot; deve corrispondere ai requisiti della propria tastiera.">
 <!ENTITY opensp_shortcut_key.tooltip "Tasto principale della combinazione. Deve corrispondere all'eventuale uso di &quot;shift&quot; nei tasti modificatori">
 <!ENTITY captureshortcut.label "Cattura">
 <!ENTITY captureshortcut.tooltip "Fare clic per catturare una combinazione di tasti dalla propria tastiera">
 <!ENTITY entershortcut.label "Premere ora la combinazione di tasti scelta">
+<!ENTITY webpages.caption "Pagine Web">
+<!ENTITY promptforctxmenudelete.label "Richiede sempre la conferma quando si cancellano dal menu contestuale le informazioni relative all'accesso (facendo clic col pulsante dx del mouse sulla pagina web)">
 <!ENTITY modstosavedpasswords.caption "Modifiche alla finestra &quot;Password salvate&quot;">
 <!ENTITY preselectCurrentSite.label "Preseleziona il sito corrente in Password salvate">
 <!ENTITY preselectCurrentSite.tooltip "Quando si apre la finestra &quot;Password salvate&quot;, ne viene immediatamente selezionato e scorso l'elenco fino a raggiungere il sito corrispondente a quello aperto nella scheda corrente del browser.">
 <!ENTITY alwaysShowPasswords.label "Mostra sempre le password">
-<!ENTITY alwaysShowPasswords.tooltip "Se l'opzione è selezionata, quando si apre la finestra di dialogo &quot;Password salvate&quot;, l'estensione Saved Password Editor visualizza la colonna &quot;Password&quot; e quando si apre la finestra dell'editor mostra la password">
-<!ENTITY alwaysPromptForMasterPassword.label "Richiede sempre la password principale">
-<!ENTITY alwaysPromptForMasterPassword.tooltip "Richiede sempre l'inserimento della password principale per visualizzare le password presenti in &quot;Password salvate&quot;. Abilitando questa opzione inevitabilmente compare una doppia richiesta di inserimento della password principale, almeno una volta per sessione. Se si disabilita, nella maggior parte dei casi non si ha alcuna richiesta.">
+<!ENTITY alwaysShowPasswords.tooltip "Se l'opzione è selezionata, quando si apre la finestra di dialogo &quot;Password salvate&quot;, l'estensione Saved Password Editor visualizza la colonna &quot;Password&quot; e, quando si apre la finestra dell'editor, mostra la password">
+<!ENTITY alwaysPromptForMasterPassword.label "Richiede sempre l'inserimento della password principale">
+<!ENTITY alwaysPromptForMasterPassword.tooltip "Richiede sempre l'inserimento della password principale per visualizzare le password presenti in &quot;Password salvate&quot;. Abilitando questa opzione inevitabilmente si ha una doppia richiesta di inserimento della password principale, almeno una volta per sessione. Se si disabilita, nella maggior parte dei casi, non compare alcuna richiesta.">
 <!ENTITY passwordfield_caption.label "Campo password nella finestra dell'editor">
 <!ENTITY passwordfield_alwayshide.label "Quando si apre la finestra dell'editor, nasconde sempre la password">
 <!ENTITY passwordfield_alwaysshow.label "Quando si apre la finestra dell'editor, mostra sempre la password">
 <!ENTITY passwordfield_rememberlast.label "Ricorda l'ultimo stato">
-<!ENTITY passwordfield_rememberlast.tooltip "Mostra o nasconde le password a seconda della situazione che era presente l'ultima volta che la finestra è stata aperta">
+<!ENTITY passwordfield_rememberlast.tooltip "Mostra o nasconde le password a seconda della situazione presente l'ultima volta che la finestra è stata aperta">
 <!ENTITY passwordfield_followspwin.label "Segue l'elenco delle &quot;Password salvate&quot;">
 <!ENTITY passwordfield_followspwin.tooltip "Mostra le password se, e solo se, esse sono attualmente visualizzate nella finestra richiamata da &quot;Password salvate&quot;">

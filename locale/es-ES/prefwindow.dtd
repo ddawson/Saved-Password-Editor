@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Capturar">
 <!ENTITY captureshortcut.tooltip "Pulsar para capturar el combinado de teclas">
 <!ENTITY entershortcut.label "Pulsar el combinado deseado de teclas.">
+<!ENTITY webpages.caption "Sitios de Internet">
+<!ENTITY promptforctxmenudelete.label "Avisar al borrar detalles de login de menú contextal (clic derecho en sitio)">
 <!ENTITY modstosavedpasswords.caption "Modificaciones de la ventana de Contraseñas guardadas">
 <!ENTITY preselectCurrentSite.label "Pre-elegir sitio actual en Contraseñas Guardadas">
 <!ENTITY preselectCurrentSite.tooltip "Al abrir Contraseñas Guardadas, elegir y llegar al sitio visitado en la ventana actual del navegador.">

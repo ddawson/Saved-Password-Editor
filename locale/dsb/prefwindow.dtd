@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Nagraś">
 <!ENTITY captureshortcut.tooltip "Klikniśo, aby tastowu kombinaciju ze swójeje tastatury nagrał">
 <!ENTITY entershortcut.label "Pšosym tłocćo něnto swóju póžedanu tastowu kombinaciju.">
+<!ENTITY webpages.caption "Webboki">
+<!ENTITY promptforctxmenudelete.label "Powěźeńka, gaž pśizjawjeńske informacije lašuju se z kontekstowego menij (klikniśo z pšaweju tastu myški na webbok)">
 <!ENTITY modstosavedpasswords.caption "Změny na woknje skłaźonych gronidłow">
 <!ENTITY preselectCurrentSite.label "Aktualne sedło w &quot;Skaźone gronidła&quot; do togo wubraś">
 <!ENTITY preselectCurrentSite.tooltip "Gaž Skłaźone gronidła se wócynjaju, to wubjerjo ned woglědane sedło a buźo k sedłoju w aktualnem rejtarku wobglědowaka kulaś.">

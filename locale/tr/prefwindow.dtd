@@ -12,6 +12,8 @@
 <!ENTITY captureshortcut.label "Oluştur">
 <!ENTITY captureshortcut.tooltip "Tuş kombinasyonu klavyeden oluşturmak için tıkla">
 <!ENTITY entershortcut.label "Lütfen istediğin tuş kombinasyonunu tuşla.">
+<!ENTITY webpages.caption "İnternet sayfaları">
+<!ENTITY promptforctxmenudelete.label "Prompt when deleting login info from context menu (right-click on web page)">
 <!ENTITY modstosavedpasswords.caption "Kayıtlı Şifreler ekranında değişiklikler">
 <!ENTITY preselectCurrentSite.label "Şuanki açılı siteyi Kayıtlı Şifrelerde önceden seç">
 <!ENTITY preselectCurrentSite.tooltip "Kayıtlı Şifreleri açarken,sekmedeki ziyaret edilen siteyi otomatik seçecek.">
