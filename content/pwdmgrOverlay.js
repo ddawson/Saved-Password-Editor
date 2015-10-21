@@ -121,7 +121,7 @@ document.getElementById("signonsTree").addEventListener(
   },
   false);
 
-const spEditor = {
+var spEditor = {
   genStrBundle: null,
   pmoStrBundle: null,
   prefs: Components.classes["@mozilla.org/preferences-service;1"].
