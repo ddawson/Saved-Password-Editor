@@ -46,5 +46,14 @@
               standardaccesskey="&savedpasswords.accesskey;"
               command="savedpasswordeditor-command-opensavedpasswords"/>
   </menupopup>
+  <vbox id="appmenuSecondaryPane">
+    <menuitem id="savedpasswordeditor-appmenuitem"
+              key="savedpasswordeditor-key-opensavedpasswords"
+              class="menuitem-iconic"
+              standardlabel="&savedpasswords.label;"
+              standardtooltiptext="&savedpasswords.tooltip;"
+              insertafter="appmenu_addons"
+              command="savedpasswordeditor-command-opensavedpasswords"/>
+  </vbox>
   <script type="text/javascript" src="menubarOverlay.js"/>
 </overlay>
