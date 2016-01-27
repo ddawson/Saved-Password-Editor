@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2016  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -41,6 +41,9 @@
     <menuitem id="savedpasswordeditor-toolsmenuitem"
               key="savedpasswordeditor-key-opensavedpasswords"
               class="menuitem-iconic"
+              label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
+              accesskey="&savedpasswords.accesskey;"
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
               standardaccesskey="&savedpasswords.accesskey;"
@@ -50,10 +53,12 @@
     <menuitem id="savedpasswordeditor-appmenuitem"
               key="savedpasswordeditor-key-opensavedpasswords"
               class="menuitem-iconic"
+              label="&savedpasswords.label;"
+              tooltiptext="&savedpasswords.tooltip;"
               standardlabel="&savedpasswords.label;"
               standardtooltiptext="&savedpasswords.tooltip;"
               insertafter="appmenu_addons"
               command="savedpasswordeditor-command-opensavedpasswords"/>
   </vbox>
-  <script type="text/javascript" src="menubarOverlay.js"/>
+<script type="text/javascript" src="menubarOverlay.js"/>
 </overlay>

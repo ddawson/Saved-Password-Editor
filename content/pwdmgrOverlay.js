@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2016  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -31,12 +31,13 @@ window.addEventListener(
   "load",
   function (ev) {
     if (spEditor.prefs.getBoolPref("always_show_passwords")) {
-      if (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
-          || masterPasswordLogin(function () true)) {
+      let togglePasswords = document.getElementById("togglePasswords");
+      if (togglePasswords &&
+          (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
+           || masterPasswordLogin(function () true))) {
         showingPasswords = true;
-        document.getElementById("togglePasswords").label
-          = kSignonBundle.getString("hidePasswords");
-        document.getElementById("togglePasswords").accessKey
+        togglePasswords.label = kSignonBundle.getString("hidePasswords");
+        togglePasswords.accessKey
           = kSignonBundle.getString("hidePasswordsAccessKey");
         document.getElementById("passwordCol").hidden = false;
         _filterPasswords();
