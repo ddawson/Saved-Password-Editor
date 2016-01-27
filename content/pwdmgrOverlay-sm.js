@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2016  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -79,7 +79,7 @@ document.getElementById("passwordsTree").addEventListener(
   },
   false);
 
-const spEditor = {
+var spEditor = {
   strBundle: null,
   prefs: Components.classes["@mozilla.org/preferences-service;1"].
          getService(Components.interfaces.nsIPrefService).

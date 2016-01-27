@@ -36,9 +36,15 @@ window.addEventListener(
           (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
            || masterPasswordLogin(function () true))) {
         showingPasswords = true;
-        togglePasswords.label = kSignonBundle.getString("hidePasswords");
-        togglePasswords.accessKey
-          = kSignonBundle.getString("hidePasswordsAccessKey");
+        if (window.getLegacyString) {
+	  togglePasswords.label = getLegacyString("hidePasswords");
+          togglePasswords.accessKey
+            = getLegacyString("hidePasswordsAccessKey");
+	} else {
+          togglePasswords.label = kSignonBundle.getString("hidePasswords");
+          togglePasswords.accessKey
+            = kSignonBundle.getString("hidePasswordsAccessKey");
+        }
         document.getElementById("passwordCol").hidden = false;
         _filterPasswords();
       }
