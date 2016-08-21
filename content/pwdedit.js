@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2016  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,6 +15,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+"use strict";
 
 function el (name) document.getElementById(name);
 
@@ -67,8 +69,8 @@ window.addEventListener(
 
     var props = [ "hostname", "formSubmitURL", "httpRealm",
                   "username", "password", "usernameField", "passwordField" ];
-    for (let i in props) {
-      let propName = props[i], tbox = el(propName + "_text");
+    for (let propName of props) {
+      let tbox = el(propName + "_text");
       if (compositeSignon[propName] !== undefined) {
         tbox.indefinite = false;
         tbox.autoreindef = false;
@@ -159,10 +161,8 @@ function intersectSignonProps (signons) {
   var intersection = new Object();
   var propList = [ "hostname", "formSubmitURL", "httpRealm", "username",
                    "password", "usernameField", "passwordField" ];
-  for (var i = 0; i < signons.length; i++) {
-    let signon = signons[i];
-    for (var j = 0; j < propList.length; j++) {
-      let prop = propList[j];
+  for (let signon of signons) {
+    for (let prop of propList) {
       if (!intersection.hasOwnProperty(prop))
         intersection[prop] = signon[prop] !== undefined ? signon[prop] : null;
       else if (signon[prop] != intersection[prop])
@@ -225,101 +225,47 @@ function togglePasswordView () {
 }
 
 function guessParameters () {
-  function walkTree (win) {
-    var curDoc = win.document;
-    if (!(curDoc instanceof HTMLDocument)) return;
+  // Locate the message manager for the last seen tab
+  var browserMM =
+    Cc["@mozilla.org/appshell/window-mediator;1"]
+    .getService(Ci.nsIWindowMediator).getMostRecentWindow("navigator:browser")
+    .gBrowser.selectedBrowser.messageManager;
 
-    // Get the host prefix;
-    var curLocation = win.location;
-    var hostname = curLocation.protocol + "//" + curLocation.host;
-
-    // Locate likely login forms and their fields
-    var forms = curDoc.evaluate("//xhtml:form", curDoc, _htmlNamespaceResolver,
-                                XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
-    for (var i = 0; i < forms.snapshotLength; i++) {
-      let form = forms.snapshotItem(i), pwdField = null, j;
-      for (j = 0; j < form.elements.length; j++) {
-        let element = form.elements[j];
-        if (element instanceof HTMLInputElement
-            && element.type == "password") {
-          pwdField = element;
-          break;
-        }
-      }
-      if (!pwdField) continue;
-
-      let unameField = null;
-      for (j = j - 1; j >= 0; j--) {
-        let element = form.elements[j];
-        if (!element instanceof HTMLInputElement) continue;
-        let elType = (element.getAttribute("type") || "").toLowerCase();
-        if (!elType || elType == "text" || elType == "email" || elType == "url"
-            || elType == "tel" || elType == "number") {
-          unameField = element;
-          break;
-        }
-      }
-      if (!unameField) continue;
-
-      // Construct the submit prefix
-      let formAction = form.action;
-      let res;
-      if (formAction && formAction.startsWith("javascript:"))
-        res = "javascript:";
-      else {
-        res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)
-                         : [ null, hostname ];
-        if (!res) return false;
-        res = res[1];
-      }
-
-      loginForms.push({
-        hostname: hostname, formSubmitURL: res,
-        username: unameField.value, password: pwdField.value,
-        usernameField: unameField.getAttribute("name"),
-        passwordField: pwdField.getAttribute("name") });
-    }
-
-    // See if any frame or iframe contains a login form
-    var frames = win.frames;
-    for (var i = 0; i < frames.length; i++) {
-      walkTree(frames[i]);
-    }
-  }
-
-  // Locate the browser object for the last seen tab
-  var curWin =
-      Cc["@mozilla.org/appshell/window-mediator;1"].
-      getService(Ci.nsIWindowMediator).
-      getMostRecentWindow("navigator:browser").gBrowser.contentWindow;
-
-  // Attempt to find login form(s)
-  loginForms = [];
+  // Save existing username and password in editor
   oldUsername = el("username_text").value;
   oldPassword = el("password_text").value;
 
-  walkTree(curWin);
-  if (loginForms.length == 0) {
-    Cc["@mozilla.org/embedcomp/prompt-service;1"].
-      getService(Ci.nsIPromptService).
-      alert(window, genStrBundle.getString("error"),
-            peStrBundle.getString("nologinform"));
-    return;
-  }
+  // Ask frame script to find login form(s)
+  var resultHandler = {
+    receiveMessage ({ data: aLoginForms }) {
+      browserMM.removeMessageListener(
+        "SavedPasswordEditor.loginformsresults", resultHandler);
 
-  if (loginForms.length > 1) {
-    el("prevForm_btn").hidden = false;
-    el("nextForm_btn").hidden = false;
-  } else {
-    el("prevForm_btn").hidden = true;
-    el("nextForm_btn").hidden = true;
-  }
+      if (aLoginForms.length == 0) {
+        Cc["@mozilla.org/embedcomp/prompt-service;1"].
+          getService(Ci.nsIPromptService).
+          alert(window, genStrBundle.getString("error"),
+                peStrBundle.getString("nologinform"));
+        return;
+      }
 
-  _fillFromForm(0);
+      if (aLoginForms.length > 1) {
+        el("prevForm_btn").hidden = false;
+        el("nextForm_btn").hidden = false;
+      } else {
+        el("prevForm_btn").hidden = true;
+        el("nextForm_btn").hidden = true;
+      }
+
+      loginForms = aLoginForms;
+      _fillFromForm(0);
+    },
+  };
+
+  browserMM.addMessageListener(
+    "SavedPasswordEditor:loginformsresults", resultHandler);
+  browserMM.sendAsyncMessage("SavedPasswordEditor:scanforloginforms");
 }
-
-function _htmlNamespaceResolver (aPrefix)
-  aPrefix == "xhtml" ? "http://www.w3.org/1999/xhtml" : null
 
 function _fillFromForm (aIdx) {
   curLoginIdx = aIdx;
@@ -336,7 +282,7 @@ function _fillFromForm (aIdx) {
     el("password_text").value = loginForm.password;
   }
 
-  for each (let prfx in ["hostname", "formSubmitURL", "username", "password",
+  for (let prfx of ["hostname", "formSubmitURL", "username", "password",
                          "usernameField", "passwordField"]) {
     let chgEvt = document.createEvent("Event");
     chgEvt.initEvent("change", true, true);

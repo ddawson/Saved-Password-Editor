@@ -1,6 +1,6 @@
 /*
     Saved Password Editor, extension for Gecko applications
-    Copyright (C) 2015  Daniel Dawson <danielcdawson@gmail.com>
+    Copyright (C) 2016  Daniel Dawson <danielcdawson@gmail.com>
 
     This program is free software: you can redistribute it and/or modify
     it under the terms of the GNU General Public License as published by
@@ -15,6 +15,8 @@
     You should have received a copy of the GNU General Public License
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
+
+"use strict";
 
 const Cc = Components.classes,
       Ci = Components.interfaces,
@@ -75,59 +77,8 @@ var SavedPasswordEditor = {
           "chrome,titlebar,toolbar,centerscreen,resizable", null);
   },
 
-  contextMenuShowing: function (aElement) {
-    if (aElement instanceof Ci.nsIDOMHTMLInputElement && aElement.form) {
-      var form = aElement.form;
-    } else
-      return false;
-
-    var curDoc = aElement.ownerDocument;
-    var curLocation = curDoc.defaultView.location;
-    var hostname = curLocation.protocol + "//" + curLocation.host;
-    var passwordField = null;
-    for (var i = 0; i < form.elements.length; i++) {
-      let element = form.elements[i];
-      if (element instanceof Ci.nsIDOMHTMLInputElement
-          && element.type.toLowerCase() == "password") {
-        passwordField = element;
-        break;
-      }
-    }
-    if (!passwordField) return false;
-
-    var usernameField = null;
-    for (i = i - 1; i >= 0; i--) {
-      let element = form.elements[i];
-      if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
-      let elType = (element.getAttribute("type") || "").toLowerCase();
-      if (!elType || elType == "text" || elType == "email" || elType == "url"
-          || elType == "tel" || elType == "number") {
-        usernameField = element;
-        break;
-      }
-    }
-    if (!usernameField) return false;
-
-    var formAction = form.action;
-    var res;
-    if (formAction && formAction.startsWith("javascript:"))
-      res = "javascript:";
-    else {
-      res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)
-                           : [ null, hostname ];
-      if (!res) return false;
-      res = res[1];
-    }
-
-    this.curInfo = {
-      hostname: hostname,
-      formSubmitURL: res,
-      username: usernameField.value,
-      password: passwordField.value,
-      usernameField: usernameField.name,
-      passwordField: passwordField.name,
-    };
-    return true;
+  updateLoginInfo (aLoginInfo) {
+    this.curInfo = aLoginInfo;
   },
 
   saveLoginInfo: function (aWindow, aEvt) {

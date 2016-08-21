@@ -16,16 +16,17 @@
     along with this program.  If not, see <http://www.gnu.org/licenses/>.
 */
 
+"use strict";
+
 var EXPORTED_SYMBOLS = [];
 
 const Cc = Components.classes,
       Ci = Components.interfaces,
       Cu = Components.utils,
-      FIREFOX = "{ec8030f7-c20a-464f-9b0e-13a3a9e97384}",
       SEAMONKEY = "{92650c4d-4b8e-4d2a-b7eb-24ecf4f6b63a}",
       THUNDERBIRD = "{3550f703-e582-4d05-9a08-453d09bdfdc6}",
       PREFNAME = "currentVersion",
-      THISVERSION = "2.9.6",
+      THISVERSION = "2.10pre1",
       WELCOMEVERSION = "2.5pre1",
       CONTENT = "chrome://savedpasswordeditor/content/",
       WELCOMEURL = CONTENT + "welcome.xhtml",
@@ -40,11 +41,6 @@ function welcome () {
               getService(Ci.nsIXULAppInfo).ID;
 
   switch (appId) {
-  case FIREFOX:
-    var curWin = wm.getMostRecentWindow("navigator:browser");
-    curWin.gBrowser.selectedTab = curWin.gBrowser.addTab(WELCOMEURL);
-    break;
-
   case SEAMONKEY:
     var curWin = wm.getMostRecentWindow("navigator:browser");
 
