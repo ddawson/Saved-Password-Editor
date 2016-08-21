@@ -19,7 +19,6 @@
 "use strict";
 
 const Cu = Components.utils;
-Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://savedpasswordeditor/SavedPasswordEditor.jsm");
 
 window.messageManager.loadFrameScript(
@@ -40,8 +39,6 @@ addEventListener(
 
     var contextshowingHandler = {
       receiveMessage ({ data }) {
-        Services.console.logStringMessage(
-	  `SPE: Got login info ${data}`);
         SavedPasswordEditor.updateLoginInfo(data);
         let idList = ["ctxmenuseparator",
                       "savelogininfo", "editlogininfo", "deletelogininfo"];
