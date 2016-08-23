@@ -20,12 +20,15 @@
 
 var EXPORTED_SYMBOLS = ["SavedPasswordEditor"];
 
-const Ci = Components.interfaces, Cu = Components.utils;
-Cu.import("resource://gre/modules/Services.jsm");
+const htmlNamespaceResolver =
+  aPrefix => aPrefix == "xhtml" ? "http://www.w3.org/1999/xhtml" : null;
 
 var SavedPasswordEditor = {
   getFormData (aElement) {
-    if (aElement instanceof Ci.nsIDOMHTMLInputElement && aElement.form) {
+    const HTMLInputElement =
+      aElement.ownerDocument.defaultView.HTMLInputElement;
+
+    if (aElement instanceof HTMLInputElement && aElement.form) {
       var form = aElement.form;
     } else
       return null;
@@ -36,7 +39,7 @@ var SavedPasswordEditor = {
     var passwordField = null;
     for (var i = 0; i < form.elements.length; i++) {
       let element = form.elements[i];
-      if (element instanceof Ci.nsIDOMHTMLInputElement
+      if (element instanceof HTMLInputElement
           && element.type.toLowerCase() == "password") {
         passwordField = element;
         break;
@@ -47,7 +50,7 @@ var SavedPasswordEditor = {
     var usernameField = null;
     for (i = i - 1; i >= 0; i--) {
       let element = form.elements[i];
-      if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
+      if (!element instanceof HTMLInputElement) continue;
       let elType = (element.getAttribute("type") || "").toLowerCase();
       if (!elType || elType == "text" || elType == "email" || elType == "url"
           || elType == "tel" || elType == "number") {
@@ -78,13 +81,13 @@ var SavedPasswordEditor = {
     };
   },
 
-  _htmlNamespaceResolver: (aPrefix) =>
-    aPrefix == "xhtml" ? "http://www.w3.org/1999/xhtml" : null,
+  scanForLoginForms ({ target: aMM }) {
+    const HTMLDocument = aMM.content.HTMLDocument,
+          HTMLInputElement = aMM.content.HTMLInputElement;
 
-  scanForLoginForms (aWindow) {
     function walkTree (aWindow) {
       var curDoc = aWindow.document;
-      if (!(curDoc instanceof Ci.nsIDOMHTMLDocument)) return;
+      if (!(curDoc instanceof HTMLDocument)) return [];
 
       // Get the host prefix;
       var curLocation = aWindow.location;
@@ -93,13 +96,13 @@ var SavedPasswordEditor = {
       // Locate likely login forms and their fields
       var loginForms = [];
       var forms = curDoc.evaluate(
-        "//xhtml:form", curDoc, SavedPasswordEditor._htmlNamespaceResolver,
-        Ci.nsIDOMXPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
+        "//xhtml:form", curDoc, htmlNamespaceResolver,
+        aWindow.XPathResult.ORDERED_NODE_SNAPSHOT_TYPE, null);
       for (var i = 0; i < forms.snapshotLength; i++) {
         let form = forms.snapshotItem(i), pwdField = null, j;
         for (j = 0; j < form.elements.length; j++) {
           let element = form.elements[j];
-          if (element instanceof Ci.nsIDOMHTMLInputElement
+          if (element instanceof HTMLInputElement
               && element.type == "password") {
             pwdField = element;
             break;
@@ -110,7 +113,7 @@ var SavedPasswordEditor = {
         let unameField = null;
         for (j = j - 1; j >= 0; j--) {
           let element = form.elements[j];
-          if (!element instanceof Ci.nsIDOMHTMLInputElement) continue;
+          if (!element instanceof HTMLInputElement) continue;
           let elType = (element.getAttribute("type") || "").toLowerCase();
           if (!elType || elType == "text" || elType == "email"
               || elType == "url" || elType == "tel" || elType == "number") {
@@ -128,7 +131,7 @@ var SavedPasswordEditor = {
         else {
           res = formAction ? /^([0-9-_A-Za-z]+:\/\/[^/]+)\//.exec(formAction)
                            : [ null, hostname ];
-          if (!res) return false;
+          if (!res) continue;
           res = res[1];
         }
 
@@ -149,6 +152,7 @@ var SavedPasswordEditor = {
       return loginForms;
     }
 
-    return walkTree(aWindow);
+    aMM.sendAsyncMessage(
+      "SavedPasswordEditor:loginformsresults", walkTree(aMM.content));
   },
 };

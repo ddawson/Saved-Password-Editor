@@ -1,36 +1,36 @@
 <!ENTITY savedpasswordeditor.title "Saved Password Editor">
 <!ENTITY signontype.label "Type">
-<!ENTITY type_form.label "Formulaire Web">
+<!ENTITY type_form.label "Formulaire web">
 <!ENTITY type_form.accesskey "W">
 <!ENTITY type_form.tooltip "Un formulaire inclus dans une page web">
 <!ENTITY type_annotated.label "Annoté">
 <!ENTITY type_annotated.accesskey "A">
-<!ENTITY type_annotated.tooltip "Un identifiant qui nécessite une chaîne ajoutée au nom d'hôte pour s'identifier (ex. authentification HTTP)">
+<!ENTITY type_annotated.tooltip "Une connexion qui nécessite une chaîne en plus du nom d'hôte pour identifier le service (authentification HTTP, par exemple)">
 <!ENTITY hostname.label "Hôte">
-<!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (e.g. http://www.exemple.com)">
-<!ENTITY formSubmitURL.label "Soumettre un préfixe">
-<!ENTITY formSubmitURL.tooltip "Préfixe de l'adresse pour soumettre un formulaire">
+<!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (http://www.exemple.fr par exemple)">
+<!ENTITY formSubmitURL.label "Préfixe de soumission">
+<!ENTITY formSubmitURL.tooltip "Préfixe de l'adresse de soumission du formulaire">
 <!ENTITY annotation.label "Annotation">
-<!ENTITY annotation.tooltip "Une chaîne supplémentaire pour identifier le service d'authentification de (ex. HTTP)">
+<!ENTITY annotation.tooltip "Chaîne supplémentaire identifiant le service auprès duquel s'identifier (HTTP realm, par exemple)">
 <!ENTITY username.label "Nom d'utilisateur">
-<!ENTITY username.tooltip "Nom d'utilisateur à retenir">
+<!ENTITY username.tooltip "Le nom d'utilisateur à retenir">
 <!ENTITY password.label "Mot de passe">
-<!ENTITY password.tooltip "Mot de passe à retenir">
+<!ENTITY password.tooltip "Le mot de passe à retenir">
 <!ENTITY usernameField.label "Champ du nom d'utilisateur">
-<!ENTITY usernameField.tooltip "L'attribut du nom pour le champ de saisie du nom d'utilisateur">
+<!ENTITY usernameField.tooltip "L'attribut du nom pour le champ du nom d'utilisateur approprié du formulaire">
 <!ENTITY passwordField.label "Nom du champ de mot de passe">
-<!ENTITY passwordField.tooltip "L'attribut du nom pour le champ de saisie du mot de passe">
+<!ENTITY passwordField.tooltip "L'attribut du nom pour le champ de mot de passe approprié du formulaire">
 <!ENTITY showPassword.label "Afficher">
 <!ENTITY showPassword.accesskey "A">
 <!ENTITY showPassword.tooltip "Afficher/masquer le mot de passe">
 <!ENTITY hidePassword.label "Masquer">
 <!ENTITY hidePassword.accesskey "M">
-<!ENTITY guessfrompage.label "Essai pour la page courante">
-<!ENTITY guessfrompage.accesskey "E">
-<!ENTITY guessfrompage.tooltip "Remplit ce champ en essayant l'identifiant probable de la page courante">
+<!ENTITY guessfrompage.label "Deviner depuis la page actuelle">
+<!ENTITY guessfrompage.accesskey "D">
+<!ENTITY guessfrompage.tooltip "Remplit ce champ en essayant le formulaire de connexion probable de la page actuelle">
 <!ENTITY prevform.label "Formulaire précédent">
-<!ENTITY prevform.accesskey "p">
-<!ENTITY prevform.tooltip "Essayer le formulaire précédent de la page">
+<!ENTITY prevform.accesskey "P">
+<!ENTITY prevform.tooltip "Essaye le formulaire précédent de la page">
 <!ENTITY nextform.label "Formulaire suivant">
 <!ENTITY nextform.accesskey "S">
-<!ENTITY nextform.tooltip "Essayer le formulaire suivant de la page">
+<!ENTITY nextform.tooltip "Essaye le formulaire suivant de la page">

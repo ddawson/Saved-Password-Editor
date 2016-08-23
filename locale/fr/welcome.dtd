@@ -9,7 +9,7 @@
      en-US  - English in US
      en-GB  - English in Great Britain
      de-DE  - German in Germany
-     ru     - Russian (no specific country)
+     ru     - Russian (no specific country)     
 
 -->
 <!ENTITY locale "fr">
@@ -33,18 +33,18 @@
      strings are already double-quote delimited.
 
 -->
-<!ENTITY welcometospe "Bienvenue dans l'extension Saved Password Editor">
+<!ENTITY welcometospe "Bienvenue dans Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis le panneau &quot;Sécurité&quot;, puis en cliquant sur le bouton &quot;Mots de passe enregistrés…&quot;. Vous pouvez aussi simplement accéder à l'extension Save Passwords depuis le menu Outils ou encore (avec Firefox 4 sous Windows) par le menu des applications. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot;. La fenêtre de dialogue de l'extension Saved Passwords comporte un bouton de menu avec des commandes pour ajouter/modifier les mots de passe, le menu contextuel contient aussi les commandes « Modifier » et « Cloner ».">
+<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en sélectionnant le panneau « Sécurité », puis en cliquant sur le bouton « Identifiants enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils ou (avec Firefox 4 ou supérieur sous Windows et Linux) le menu Firefox. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
 <!-- Paragraph 1, SeaMonkey version -->
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
 -->
-<!ENTITY welcomepara1_sm "Merci d'utiliser l'extension <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), puis naviguez jusqu'au panneau &quot;Mots de passe&quot; dans la catégorie &quot;Confidentialité et sécurité&quot;, puis cliquez sur le bouton &quot;Mots de passe enregistrés…&quot;. Vous pouvez aussi simplement accéder à l'extension Save Passwords depuis le menu Outils. Un bouton de la barre d'outils est également disponible pour vous rendre service. Pour y accéder cliquez droit dans la barre d'outils et choisissez &quot;Personnaliser…&quot; La fenêtre de dialogue de l'extension Saved Passwords comporte un bouton de menu avec des commandes et un menu contextuel pour ajouter/modifier les mots de passe.">
+<!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en naviguant jusqu'au panneau « Mots de passe » dans la catégorie « Confidentialité et sécurité », puis en cliquant sur le bouton « Mots de passe enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
 <!-- Paragraph 2 -->
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Notez que le dialogue des mots de passe enregistrés est un composant de base de <span id='appname'></span>, et qu'il n'est pas fourni avec l'extension, sauf les deux boutons ajoutés. Le bouton de la barre d'outils n'est fourni que pour votre confort, dans l'espoir que certains utilisateurs de cette extension voudront accéder au dialogue beaucoup plus souvent qu'avec une autre solution.">
+<!ENTITY welcomepara2 "Notez que la fenêtre du gestionnaire des identifiants est un composant de base de <span id='appname'/>, et qu'il n'est pas fourni par ce module, en dehors des susmentionnées fonctionnalités ajoutées. Le bouton de barre d'outils est uniquement fourni pour votre confort, dans l'idée que certains utilisateurs de ce module voudront accéder au gestioçnnaire des identifiants beaucoup plus souvent qu'ils ne l'auraient fait autrement.">
 <!-- Paragraph 3 -->
-<!ENTITY welcomepara3 "Vous pouvez également gérer les informations de connexion associées à un formulaire particulier en cliquant droit sur un champ quelconque et en choisissant une action.">
+<!ENTITY welcomepara3 "Vous pouvez également gérer les informations de connexion associées à un formulaire web en particulier, en effectuant un clic droit sur n'importe lequel de ses champs puis en choisissant une action.">

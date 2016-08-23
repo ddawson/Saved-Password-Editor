@@ -5,9 +5,9 @@
 -->
 <!ENTITY newentry.label "Nouveau">
 <!ENTITY newentry.accesskey "N">
-<!ENTITY editentry.label "Modifier">
-<!ENTITY editentry.accesskey "M">
-<!ENTITY cloneentry.label "Cloner">
-<!ENTITY cloneentry.accesskey "o">
+<!ENTITY editentry.label "Éditer">
+<!ENTITY editentry.accesskey "T">
+<!ENTITY cloneentry.label "Dupliquer">
+<!ENTITY cloneentry.accesskey "D">
 <!ENTITY visitsite.label "Visiter le ou les sites">
 <!ENTITY visitsite.accesskey "V">

@@ -12,8 +12,8 @@
 <!ENTITY captureshortcut.label "Felvétel">
 <!ENTITY captureshortcut.tooltip "Kattintson a billentyűkombináció felvételéhez a billentyűzetről">
 <!ENTITY entershortcut.label "Kérem nyomja le a választott billentyűkombinációt most.">
-<!ENTITY webpages.caption "Web pages">
-<!ENTITY promptforctxmenudelete.label "Prompt when deleting login info from context menu (right-click on web page)">
+<!ENTITY webpages.caption "Weboldalak">
+<!ENTITY promptforctxmenudelete.label "Rákérdezés bejelentkezési infó törlésekor a helyi menüből (jobb-kattintás a weboldalon)">
 <!ENTITY modstosavedpasswords.caption "Változások a mentett jelszavak ablakhoz">
 <!ENTITY preselectCurrentSite.label "Jelenlegi webcím auto-kijelölése">
 <!ENTITY preselectCurrentSite.tooltip "Automatikus váltás a mentett jelszavakban a jelenlegi megnyitott lap webcímére.">

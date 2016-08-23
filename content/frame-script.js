@@ -23,27 +23,20 @@ Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://savedpasswordeditor/SavedPasswordEditor-frame.jsm");
 
 Services.obs.addObserver(
-  {
-    observe (aSubject) {
-      if (aSubject.wrappedJSObject) aSubject = aSubject.wrappedJSObject;
-      var target = aSubject.event.target;
-      if (Ci.nsIDOMXULElement
-          && target instanceof Ci.nsIDOMXULElement)  // SeaMonkey, why?
-        target = target.triggerNode;
+  function (aSubject) {
+    if (aSubject.wrappedJSObject) aSubject = aSubject.wrappedJSObject;
+    var target = aSubject.event.target;
+    if (Ci.nsIDOMXULElement
+        && target instanceof Ci.nsIDOMXULElement)  // SeaMonkey, why?
+      target = target.triggerNode;
 
-      dump(`SPE: target = ${target}\n`);
-      sendSyncMessage(
-        "SavedPasswordEditor:contextshowing",
-        SavedPasswordEditor.getFormData(target));
-    },
-  }, "content-contextmenu", false);
+    sendSyncMessage(
+      "SavedPasswordEditor:contextshowing",
+      SavedPasswordEditor.getFormData(target));
+  },
+  "content-contextmenu",
+  false);
 
 addMessageListener(
   "SavedPasswordEditor:scanforloginforms",
-  {
-    receiveMessage () {
-      sendAsyncMessage(
-        "SavedPasswordEditor:loginformsresults",
-	SavedPasswordEditor.scanForLoginForms(content));
-    },
-  });
+  SavedPasswordEditor.scanForLoginForms);
