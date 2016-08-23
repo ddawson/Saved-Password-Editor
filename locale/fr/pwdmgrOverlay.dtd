@@ -5,7 +5,7 @@
 -->
 <!ENTITY newentry.label "Nouveau">
 <!ENTITY newentry.accesskey "N">
-<!ENTITY editentry.label "Éditer">
+<!ENTITY editentry.label "Ã‰diter">
 <!ENTITY editentry.accesskey "T">
 <!ENTITY cloneentry.label "Dupliquer">
 <!ENTITY cloneentry.accesskey "D">
