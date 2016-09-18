@@ -26,7 +26,7 @@ Cu.import("resource://gre/modules/XPCOMUtils.jsm");
 var EXPORTED_SYMBOLS = ["SavedPasswordEditor"];
 
 XPCOMUtils.defineLazyGetter(
-  this, "prefs", function ()
+  this, "prefs", () =>
     Cc["@mozilla.org/preferences-service;1"].
       getService(Ci.nsIPrefService).
       getBranch("extensions.savedpasswordeditor."));
@@ -43,15 +43,15 @@ XPCOMUtils.defineLazyServiceGetter(
   this, "promptSvc",
   "@mozilla.org/embedcomp/prompt-service;1", "nsIPromptService");
 XPCOMUtils.defineLazyGetter(
-  this, "genStrBundle", function ()
+  this, "genStrBundle", () =>
     stringSvc.createBundle(
       "chrome://savedpasswordeditor/locale/spe.properties"));
 XPCOMUtils.defineLazyGetter(
-  this, "pmoStrBundle", function ()
+  this, "pmoStrBundle", () =>
     stringSvc.createBundle(
       "chrome://savedpasswordeditor/locale/pwdmgrOverlay.properties"));
 
-function el (aWindow, aId) aWindow.document.getElementById(aId)
+const el = (aWindow, aId) => aWindow.document.getElementById(aId);
 
 function showAlert (aMsg) {
   alertsSvc.showAlertNotification(
@@ -161,7 +161,7 @@ var SavedPasswordEditor = {
     while (dp.hasChildNodes()) dp.removeChild(dp.firstChild);
 
     this._signonMap = {};
-    for each (let signon in aSignons) {
+    for (const signon of aSignons) {
       this._signonMap[signon.username] = signon;
       let mi = aWindow.document.createElement("menuitem");
       mi.setAttribute("label", signon.username);

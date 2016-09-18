@@ -46,9 +46,8 @@ function welcome () {
 
     if (!curWin) {
       var cmdLine = {
-        handleFlagWithParam: function (flag, caseSensitive)
-          flag == "browser" ? WELCOMEURL_SM : null,
-        handleFlag: function (flag, caseSensitive) false,
+        handleFlagWithParam: flag => flag == "browser" ? WELCOMEURL_SM : null,
+        handleFlag: () => false,
         preventDefault: true
       };
 

@@ -36,7 +36,7 @@ window.addEventListener(
       let togglePasswords = document.getElementById("togglePasswords");
       if (togglePasswords &&
           (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
-           || masterPasswordLogin(function () true))) {
+           || masterPasswordLogin(() => true))) {
         showingPasswords = true;
         if (window.getLegacyString) {
 	  togglePasswords.label = getLegacyString("hidePasswords");
@@ -189,7 +189,7 @@ var spEditor = {
     if (selections.length < 1) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
-    var selSignons = selections.map(function (el) table[el]);
+    var selSignons = selections.map(el => table[el]);
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
@@ -281,7 +281,7 @@ var spEditor = {
     if (selections.length < 1) return;
     var table =
       signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
-    var selSignons = selections.map(function (el) table[el]);
+    var selSignons = selections.map(el => table[el]);
 
     var curWin =
         Components.classes["@mozilla.org/appshell/window-mediator;1"].

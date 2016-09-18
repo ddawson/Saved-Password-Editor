@@ -123,7 +123,7 @@
         <contributor>PlastikManiac (key icon)</contributor>
         <translator>Goofy</translator>
 	<translator>BlackJack "boblosthisphone"</translator>
-        <description>Vous permet de créer et modifier vos identifiants dans le gestionnaire de mots de passe.</description>
+        <description>Ajoute la possibilité de créer et éditer des entrées dans le gestionnaire des identifiants.</description>
       </RDF:Description>
     </localized>
     <localized>

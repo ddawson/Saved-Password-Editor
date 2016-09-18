@@ -18,7 +18,7 @@
 
 "use strict";
 
-function el (name) document.getElementById(name);
+const el = aEl => document.getElementById(aEl);
 
 const Cc = Components.classes,
       Ci = Components.interfaces,
@@ -69,7 +69,7 @@ window.addEventListener(
 
     var props = [ "hostname", "formSubmitURL", "httpRealm",
                   "username", "password", "usernameField", "passwordField" ];
-    for (let propName of props) {
+    for (const propName of props) {
       let tbox = el(propName + "_text");
       if (compositeSignon[propName] !== undefined) {
         tbox.indefinite = false;
@@ -157,12 +157,12 @@ function afterLoadHandler () {
   }
 }
 
-function intersectSignonProps (signons) {
-  var intersection = new Object();
-  var propList = [ "hostname", "formSubmitURL", "httpRealm", "username",
-                   "password", "usernameField", "passwordField" ];
-  for (let signon of signons) {
-    for (let prop of propList) {
+function intersectSignonProps (aSignons) {
+  const intersection = {};
+  const propList = [ "hostname", "formSubmitURL", "httpRealm", "username",
+                     "password", "usernameField", "passwordField" ];
+  for (const signon of aSignons) {
+    for (const prop of propList) {
       if (!intersection.hasOwnProperty(prop))
         intersection[prop] = signon[prop] !== undefined ? signon[prop] : null;
       else if (signon[prop] != intersection[prop])

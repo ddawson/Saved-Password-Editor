@@ -43,7 +43,7 @@ window.addEventListener(
       chromeWin.goPreferences("passwords_pane");
     }
 
-    function el (name) document.getElementById(name);
+    var el = name => document.getElementById(name);
 
     appId = Services.appinfo.ID;
     var appName = "firefox";

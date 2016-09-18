@@ -118,7 +118,7 @@ var spEditor = {
 
   mcbWrapper: function (method) {
     var myThis = this;
-    return function () method.apply(myThis, arguments);
+    return function () { return method.apply(myThis, arguments); };
   },
 
   showErrorAlert: function (e) {
@@ -175,7 +175,7 @@ var spEditor = {
     var selections = gDataman.getTreeSelections(gPasswords.tree);
     if (selections.length == 0) return;
     var selSignons =
-      selections.map(function (el) gPasswords.displayedSignons[el]);
+      selections.map(el => gPasswords.displayedSignons[el]);
 
     function __finish (newSignon) {
       try {
@@ -233,7 +233,7 @@ var spEditor = {
     var selections = gDataman.getTreeSelections(gPasswords.tree);
     if (selections.length == 0) return;
     var selSignons =
-      selections.map(function (el) gPasswords.displayedSignons[el]);
+      selections.map(el => gPasswords.displayedSignons[el]);
 
     var curWin =
         Components.classes["@mozilla.org/appshell/window-mediator;1"].
