@@ -161,7 +161,7 @@ var SavedPasswordEditor = {
     while (dp.hasChildNodes()) dp.removeChild(dp.firstChild);
 
     this._signonMap = {};
-    for (const signon of aSignons) {
+    for (let signon of aSignons) {
       this._signonMap[signon.username] = signon;
       let mi = aWindow.document.createElement("menuitem");
       mi.setAttribute("label", signon.username);

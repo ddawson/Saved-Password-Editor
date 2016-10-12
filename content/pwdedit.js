@@ -69,7 +69,7 @@ window.addEventListener(
 
     var props = [ "hostname", "formSubmitURL", "httpRealm",
                   "username", "password", "usernameField", "passwordField" ];
-    for (const propName of props) {
+    for (let propName of props) {
       let tbox = el(propName + "_text");
       if (compositeSignon[propName] !== undefined) {
         tbox.indefinite = false;
@@ -161,8 +161,8 @@ function intersectSignonProps (aSignons) {
   const intersection = {};
   const propList = [ "hostname", "formSubmitURL", "httpRealm", "username",
                      "password", "usernameField", "passwordField" ];
-  for (const signon of aSignons) {
-    for (const prop of propList) {
+  for (let signon of aSignons) {
+    for (let prop of propList) {
       if (!intersection.hasOwnProperty(prop))
         intersection[prop] = signon[prop] !== undefined ? signon[prop] : null;
       else if (signon[prop] != intersection[prop])

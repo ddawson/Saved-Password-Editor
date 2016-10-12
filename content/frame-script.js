@@ -22,10 +22,10 @@ const Ci = Components.interfaces, Cu = Components.utils;
 Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://savedpasswordeditor/SavedPasswordEditor-frame.jsm");
 
-Services.obs.addObserver(
-  function (aSubject) {
-    if (aSubject.wrappedJSObject) aSubject = aSubject.wrappedJSObject;
-    var target = aSubject.event.target;
+addEventListener(
+  "contextmenu",
+  function (aEvent) {
+    var target = aEvent.target;
     if (Ci.nsIDOMXULElement
         && target instanceof Ci.nsIDOMXULElement)  // SeaMonkey, why?
       target = target.triggerNode;
@@ -34,7 +34,6 @@ Services.obs.addObserver(
       "SavedPasswordEditor:contextshowing",
       SavedPasswordEditor.getFormData(target));
   },
-  "content-contextmenu",
   false);
 
 addMessageListener(

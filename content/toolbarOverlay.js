@@ -58,7 +58,7 @@ window.addEventListener(
         /* Old-style toolbar */
 
         let toolbar, before;
-        for (const [tbId, beforeId] of btnPos[wtype]) {
+        for (let [tbId, beforeId] of btnPos[wtype]) {
           toolbar = document.getElementById(tbId);
           if (!toolbar) continue;
           before = beforeId ? document.getElementById(beforeId) : null;
