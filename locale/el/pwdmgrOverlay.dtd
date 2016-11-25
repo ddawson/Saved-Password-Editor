@@ -8,6 +8,6 @@
 <!ENTITY editentry.label "Επεξεργασία">
 <!ENTITY editentry.accesskey "Ε">
 <!ENTITY cloneentry.label "Κλωνοποίηση">
-<!ENTITY cloneentry.accesskey "ω">
-<!ENTITY visitsite.label "Visit site(s)">
-<!ENTITY visitsite.accesskey "V">
+<!ENTITY cloneentry.accesskey "λ">
+<!ENTITY visitsite.label "Επίσκεψη τοποθεσίας(σιών)">
+<!ENTITY visitsite.accesskey "π">

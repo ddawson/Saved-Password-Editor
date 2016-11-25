@@ -369,6 +369,7 @@ function setNewSignon () {
   }
 
   if (oldSignons.length > 1 && newProps.hostname !== undefined
+      && newProps.httpRealm !== undefined
       && newProps.username !== undefined
       && (newProps.formSubmitURL !== undefined
           || newProps.httpRealm !== undefined)) {

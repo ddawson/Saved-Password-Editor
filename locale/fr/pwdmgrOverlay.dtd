@@ -3,9 +3,9 @@
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
 -->
-<!ENTITY newentry.label "Nouveau">
-<!ENTITY newentry.accesskey "N">
-<!ENTITY editentry.label "Éditer">
+<!ENTITY newentry.label "Ajouter">
+<!ENTITY newentry.accesskey "A">
+<!ENTITY editentry.label "Édition avancée">
 <!ENTITY editentry.accesskey "T">
 <!ENTITY cloneentry.label "Dupliquer">
 <!ENTITY cloneentry.accesskey "D">

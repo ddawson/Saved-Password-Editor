@@ -21,36 +21,55 @@
 document.addEventListener(
   "DOMContentLoaded",
   function dclHandler (ev) {
+    spEditor.signonBundle = document.getElementById("signonBundle");
     spEditor.genStrBundle =
       document.getElementById("savedpwdedit-gen-stringbundle");
     spEditor.pmoStrBundle =
       document.getElementById("savedpwdedit-overlay-stringbundle");
+    spEditor.signonsTree = document.getElementById("signonsTree");
     document.removeEventListener("DOMContentLoaded", dclHandler, false);
   },
   false);
 
+function checkPasswordsShowing () {
+  if (window.hasOwnProperty("showingPasswords"))
+    return showingPasswords;
+  else
+    // New versions have the variable hidden away; no way to keep it in sync
+    return !document.getElementById("passwordCol").hidden;
+}
+
+function showPasswords () {
+  if (!checkPasswordsShowing()) {
+    let togglePasswords = document.getElementById("togglePasswords");
+
+    if (togglePasswords &&
+        (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
+         || masterPasswordLogin(() => true))) {
+      if (window.hasOwnProperty("showingPasswords"))
+        showingPasswords = true;
+
+      if (window.getLegacyString) {
+        togglePasswords.label = getLegacyString("hidePasswords");
+        togglePasswords.accessKey = getLegacyString("hidePasswordsAccessKey");
+      } else {
+        togglePasswords.label =
+	  spEditor.signonBundle.getString("hidePasswords");
+        togglePasswords.accessKey =
+	  spEditor.signonBundle.getString("hidePasswordsAccessKey");
+      }
+
+      document.getElementById("passwordCol").hidden = false;
+      _filterPasswords();
+    }
+  }
+}
+
 window.addEventListener(
   "load",
   function (ev) {
-    if (spEditor.prefs.getBoolPref("always_show_passwords")) {
-      let togglePasswords = document.getElementById("togglePasswords");
-      if (togglePasswords &&
-          (!spEditor.prefs.getBoolPref("force_prompt_for_masterPassword")
-           || masterPasswordLogin(() => true))) {
-        showingPasswords = true;
-        if (window.getLegacyString) {
-	  togglePasswords.label = getLegacyString("hidePasswords");
-          togglePasswords.accessKey
-            = getLegacyString("hidePasswordsAccessKey");
-	} else {
-          togglePasswords.label = kSignonBundle.getString("hidePasswords");
-          togglePasswords.accessKey
-            = kSignonBundle.getString("hidePasswordsAccessKey");
-        }
-        document.getElementById("passwordCol").hidden = false;
-        _filterPasswords();
-      }
-    }
+    if (spEditor.prefs.getBoolPref("always_show_passwords"))
+      showPasswords();
 
     if (spEditor.prefs.getBoolPref("preselect_current_site")) {
       let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
@@ -61,12 +80,13 @@ window.addEventListener(
         let loc = brWin.gBrowser.contentWindow.location;
         let hostname = loc.protocol + "//" + loc.host;
         let col = getColumnByName("hostname");
-        for (let i = 0; i < signonsTreeView.rowCount; i++)
-          if (signonsTreeView.getCellText(i, col) == hostname) {
-            signonsTreeView.selection.select(i);
-            setTimeout(function () {
-                         signonsTree.treeBoxObject.ensureRowIsVisible(i);
-                       }, 0);
+        for (let i = 0; i < spEditor.signonsTree.view.rowCount; i++)
+          if (spEditor.signonsTree.view.getCellText(i, col) == hostname) {
+            spEditor.signonsTree.view.selection.select(i);
+            setTimeout(
+	      function () {
+                spEditor.signonsTree.treeBoxObject.ensureRowIsVisible(i);
+              }, 0);
             break;
           }
       }
@@ -88,7 +108,7 @@ document.getElementById("signonsTree").addEventListener(
   "select",
   function (ev) {
     if (!spEditor.selectionsEnabled) return;
-    var selections = GetTreeSelections(signonsTree);
+    var selections = GetTreeSelections(spEditor.signonsTree);
     if (selections.length > 0
         && (!window.hasOwnProperty("gSelectUserInUse") || !gSelectUserInUse)) {
       document.getElementById("key_editSignon").removeAttribute("disabled");
@@ -131,8 +151,10 @@ document.getElementById("signonsTree").addEventListener(
   false);
 
 var spEditor = {
+  signonBundle: null,
   genStrBundle: null,
   pmoStrBundle: null,
+  signonsTree: null,
   prefs: Components.classes["@mozilla.org/preferences-service;1"].
          getService(Components.interfaces.nsIPrefService).
          getBranch("extensions.savedpasswordeditor."),
@@ -183,30 +205,35 @@ var spEditor = {
     return newSignon;
   },
 
+  _getFilterSet: function () {
+    let filterField = document.getElementById("filter");
+    return _filterPasswords(filterField.value);
+  },
+
   editSignon: function () {
     this.selectionsEnabled = false;
-    var selections = GetTreeSelections(signonsTree);
+    var selections = GetTreeSelections(this.signonsTree);
     if (selections.length < 1) return;
-    var table =
-      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
+    let filterSet = this._getFilterSet();
+    var table = filterSet.length ? filterSet : signons;
     var selSignons = selections.map(el => table[el]);
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal",
-      selSignons, 1, showingPasswords, ret);
+      selSignons, 1, checkPasswordsShowing(), ret);
 
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
 
     try {
       for (let i = 0; i < selSignons.length; i++)
-        passwordmanager.modifyLogin(
+        Services.logins.modifyLogin(
           selSignons[i], this._mergeSignonProps(selSignons[i], ret.newSignon));
       var fv = document.getElementById("filter").value;
       setFilter("");
       setFilter(fv);
-      signonsTreeView.selection.clearSelection();
+      this.signonsTree.view.selection.clearSelection();
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
@@ -218,24 +245,24 @@ var spEditor = {
 
   cloneSignon: function () {
     this.selectionsEnabled = false;
-    var selections = GetTreeSelections(signonsTree);
+    var selections = GetTreeSelections(this.signonsTree);
     if (selections.length != 1) return;
-    var table =
-      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
+    let filterSet = this._getFilterSet();
+    var table = filterSet.length ? filterSet : signons;
     var signon = table[selections[0]];
     var ret = { newSignon: null, callback: null };
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal",
-      [signon], 2, showingPasswords, ret);
+      [signon], 2, checkPasswordsShowing(), ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
-      passwordmanager.addLogin(this._mergeSignonProps(signon, ret.newSignon));
+      Services.logins.addLogin(this._mergeSignonProps(signon, ret.newSignon));
       var fv = document.getElementById("filter").value;
       setFilter("");
       setFilter(fv);
-      signonsTreeView.selection.clearSelection();
+      this.signonsTree.view.selection.clearSelection();
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
@@ -251,7 +278,7 @@ var spEditor = {
     window.openDialog(
       "chrome://savedpasswordeditor/content/pwdedit.xul", "",
       "centerscreen,dependent,dialog,chrome,modal",
-      [], 0, showingPasswords, ret);
+      [], 0, checkPasswordsShowing(), ret);
     this.selectionsEnabled = true;
     if (!ret.newSignon) return;
     try {
@@ -262,11 +289,11 @@ var spEditor = {
                      ret.newSignon.httpRealm, ret.newSignon.username,
                      ret.newSignon.password, ret.newSignon.usernameField,
                      ret.newSignon.passwordField);
-      passwordmanager.addLogin(newSignon);
+      Services.logins.addLogin(newSignon);
       var fv = document.getElementById("filter").value;
       setFilter("");
       setFilter(fv);
-      signonsTreeView.selection.clearSelection();
+      this.signonsTree.view.selection.clearSelection();
     } catch (e) {
       Components.classes["@mozilla.org/embedcomp/prompt-service;1"].
         getService(Components.interfaces.nsIPromptService).
@@ -277,10 +304,10 @@ var spEditor = {
   },
 
   visitSite: function () {
-    var selections = GetTreeSelections(signonsTree);
+    var selections = GetTreeSelections(this.signonsTree);
     if (selections.length < 1) return;
-    var table =
-      signonsTreeView._filterSet.length ? signonsTreeView._filterSet : signons;
+    let filterSet = this._getFilterSet();
+    var table = filterSet.length ? filterSet : signons;
     var selSignons = selections.map(el => table[el]);
 
     var curWin =

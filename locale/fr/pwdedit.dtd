@@ -6,23 +6,23 @@
 <!ENTITY type_annotated.label "Annoté">
 <!ENTITY type_annotated.accesskey "A">
 <!ENTITY type_annotated.tooltip "Une connexion qui nécessite une chaîne en plus du nom d'hôte pour identifier le service (authentification HTTP, par exemple)">
-<!ENTITY hostname.label "Hôte">
+<!ENTITY hostname.label "Hôte :">
 <!ENTITY hostname.tooltip "Protocole/nom d'hôte auquel correspond le mot de passe (http://www.exemple.fr par exemple)">
-<!ENTITY formSubmitURL.label "Préfixe de soumission">
+<!ENTITY formSubmitURL.label "Préfixe de soumission :">
 <!ENTITY formSubmitURL.tooltip "Préfixe de l'adresse de soumission du formulaire">
-<!ENTITY annotation.label "Annotation">
-<!ENTITY annotation.tooltip "Chaîne supplémentaire identifiant le service auprès duquel s'identifier (HTTP realm, par exemple)">
-<!ENTITY username.label "Nom d'utilisateur">
-<!ENTITY username.tooltip "Le nom d'utilisateur à retenir">
-<!ENTITY password.label "Mot de passe">
-<!ENTITY password.tooltip "Le mot de passe à retenir">
-<!ENTITY usernameField.label "Champ du nom d'utilisateur">
-<!ENTITY usernameField.tooltip "L'attribut du nom pour le champ du nom d'utilisateur approprié du formulaire">
-<!ENTITY passwordField.label "Nom du champ de mot de passe">
-<!ENTITY passwordField.tooltip "L'attribut du nom pour le champ de mot de passe approprié du formulaire">
+<!ENTITY annotation.label "Annotation :">
+<!ENTITY annotation.tooltip "Chaîne supplémentaire pour identifier le service d'authentification (HTTP realm, par exemple)">
+<!ENTITY username.label "Nom d'utilisateur :">
+<!ENTITY username.tooltip "Nom d'utilisateur à retenir">
+<!ENTITY password.label "Mot de passe :">
+<!ENTITY password.tooltip "Mot de passe à retenir">
+<!ENTITY usernameField.label "Nom du champ pour le nom d'utilisateur :">
+<!ENTITY usernameField.tooltip "Nom du champ approprié du formulaire pour la saisie du nom d'utilisateur">
+<!ENTITY passwordField.label "Nom du champ pour le mot de passe :">
+<!ENTITY passwordField.tooltip "Nom du champ approprié du formulaire pour la saisie du mot de passe">
 <!ENTITY showPassword.label "Afficher">
 <!ENTITY showPassword.accesskey "A">
-<!ENTITY showPassword.tooltip "Afficher/masquer le mot de passe">
+<!ENTITY showPassword.tooltip "Affiche/masque le mot de passe">
 <!ENTITY hidePassword.label "Masquer">
 <!ENTITY hidePassword.accesskey "M">
 <!ENTITY guessfrompage.label "Deviner depuis la page actuelle">

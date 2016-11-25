@@ -82,7 +82,6 @@ document.getElementById("passwordsTree").addEventListener(
   false);
 
 var spEditor = {
-  strBundle: null,
   prefs: Components.classes["@mozilla.org/preferences-service;1"].
          getService(Components.interfaces.nsIPrefService).
          getBranch("extensions.savedpasswordeditor."),
@@ -128,9 +127,9 @@ var spEditor = {
       bag = prompt.QueryInterface(
         Components.interfaces.nsIWritablePropertyBag2);
     bag.setPropertyAsBool("allowTabModal", true);
-    prompt.alert(this.strBundle.getString("error"),
-                 this.strBundle.getFormattedString("badnewentry",
-                                                   [e.message]));
+    prompt.alert(this.genStrBundle.getString("error"),
+                 this.pmoStrBundle.getFormattedString("badnewentry",
+                                                      [e.message]));
   },
 
   SPE_WINDOW_NAME: "danieldawson:savedpasswordeditor",
@@ -162,7 +161,7 @@ var spEditor = {
 
   _mergeSignonProps: function (oldSignon, newProps) {
     var merged = {};
-    for (prop in newProps)
+    for (let prop in newProps)
       if (newProps[prop] === undefined)
         merged[prop] = oldSignon[prop];
       else

@@ -1,24 +1,24 @@
 <!ENTITY prefwindow.title "Προτιμήσεις για τον Επεξεργαστή αποθηκευμένων κωδικών πρόσβασης">
-<!ENTITY opensp_group.caption "Saved Passwords shortcut">
+<!ENTITY opensp_group.caption "Συντόμευση πλαισίου διαλόγου «Αποθηκευμένοι κωδικοί»">
 <!ENTITY displayMenuitem.label "Συμπερίληψη συντόμευσης στα μενού">
 <!ENTITY displayMenuitem.tooltip "Προσθήκη του στοιχείου μενού «Αποθηκευμένοι κωδικοί πρόσβασης» στο μενού «Εργαλεία» και στο μενού του Firefox σε Windows/Linux, ως συντόμευση προς το διαχειριστή κωδικών πρόσβασης.">
 <!ENTITY renameMenuitemTo.label "Μετονομασία συντόμευσης σε:">
 <!ENTITY renameMenuitemTo.tooltip "Εισάγετε κάτι εδώ για να ονομάσετε τη συντόμευση κάπως αλλιώς από «Αποθηκευμένοι κωδικοί πρόσβασης», αν θέλετε να την κάνετε λιγότερο προφανή σε παρεισδύοντες. Διαγράψτε την καταχώριση για επαναφορά χρήσης του ονόματος «Αποθηκευμένοι κωδικοί πρόσβασης». Προειδοποίηση: αυτό δεν υποκαθιστά τα ενδεδειγμένα μέτρα ασφαλείας· θα πρέπει να χρησιμοποιείτε έναν κύριο κωδικό πρόσβασης όταν είναι δυνατόν, εάν χρειάζεται να προστατεύσετε τους κωδικούς σας πρόσβασης.">
-<!ENTITY opensp_shortcut.label "Keyboard shortcut">
-<!ENTITY opensp_shortcut.tooltip "Key combination to press to open Saved Passwords">
+<!ENTITY opensp_shortcut.label "Συντόμευση πληκτρολογίου">
+<!ENTITY opensp_shortcut.tooltip "Συνδυασμός πλήκτρων για άνοιγμα του πλαισίου διαλόγου «Αποθηκευμένοι κωδικοί»">
 <!-- TRANSLATORS: "shift", "alt", "meta", and "control" must be copied exactly (excluding quotes). Please do not try to translate them. -->
-<!ENTITY opensp_shortcut_modifiers.tooltip "Key modifiers that must be held when pressing the main key (comma- or space-separated list from the following: shift alt meta control). The use of &quot;shift&quot; must match the requirements of your keyboard.">
-<!ENTITY opensp_shortcut_key.tooltip "The main key of the combination. Must match the use of &quot;shift&quot; in the modifiers.">
-<!ENTITY captureshortcut.label "Capture">
-<!ENTITY captureshortcut.tooltip "Click to capture a key combination from your keyboard">
-<!ENTITY entershortcut.label "Please press your desired key combination now.">
-<!ENTITY webpages.caption "Web pages">
-<!ENTITY promptforctxmenudelete.label "Prompt when deleting login info from context menu (right-click on web page)">
-<!ENTITY modstosavedpasswords.caption "Modifications to Saved Passwords window">
-<!ENTITY preselectCurrentSite.label "Προεπιλογή τρέχουσας τοποθεσίας στο παράθυρο «Αποθηκευμένοι κωδικοί»">
+<!ENTITY opensp_shortcut_modifiers.tooltip "Tροποποιητές πλήκτρων που πρέπει να είναι πατημένοι κατά το πάτημα του κύριου πλήκτρου (διαχωρισμένη με κόμματα ή διαστήματα λίστα από τα ακόλουθα: «shift», «alt», «meta» και «control»). Η χρήση του «shift» πρέπει να ταιριάζει με τις απαιτήσεις του πληκτρολογίου σας.">
+<!ENTITY opensp_shortcut_key.tooltip "Το κύριο πλήκτρο του συνδυασμού. Πρέπει να ταιριάζει με τη χρήση του «shift» στους τροποποιητές.">
+<!ENTITY captureshortcut.label "Σύλληψη">
+<!ENTITY captureshortcut.tooltip "Πατήστε το για σύλληψη ενός συνδυασμού πλήκτρων από το πληκτρολόγιο σας">
+<!ENTITY entershortcut.label "Πατήστε τον επιθυμητό σας συνδυασμό πλήκτρων τώρα.">
+<!ENTITY webpages.caption "Ιστοσελίδες">
+<!ENTITY promptforctxmenudelete.label "Διάλογος επιβεβαίωσης κατά τη διαγραφή πληροφοριών σύνδεσης από το μενού περιεχομένου (δεξί κλικ στην ιστοσελίδα)">
+<!ENTITY modstosavedpasswords.caption "Τροποποιήσεις στο πλαίσιο διαλόγου «Αποθηκευμένοι κωδικοί»">
+<!ENTITY preselectCurrentSite.label "Προεπιλογή τρέχουσας τοποθεσίας στο πλαίσιο διαλόγου «Αποθηκευμένοι κωδικοί»">
 <!ENTITY preselectCurrentSite.tooltip "Κατά το άνοιγμα του πλαισίου διαλόγου «Αποθηκευμένοι κωδικοί», θα γίνεται αμέσως κύλιση και επιλογή της τοποθεσίας που έχετε επισκεφτεί στην τρέχουσα καρτέλα του περιηγητή.">
 <!ENTITY alwaysShowPasswords.label "Πάντα εμφάνιση των κωδικών πρόσβασης">
-<!ENTITY alwaysShowPasswords.tooltip "Αν επιλεγεί, ο Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης θα προκαλέσει την εμφάνιση της στήλης κωδικών κατά το άνοιγμα του πλαισίου διαλόγου «Αποθηκευμένοι κωδικοί», όπως επίσης και την εμφάνιση του κωδικού πρόσβασης όταν ανοίγεται ο επεξεργαστής κωδικών πρόσβασης.">
+<!ENTITY alwaysShowPasswords.tooltip "Αν επιλεγεί, ο Επεξεργαστής αποθηκευμένων κωδικών πρόσβασης θα εμφανίσει τον κωδικό πρόσβασης όταν ανοίγεται το πλαίσιο διαλόγου επεξεργασίας.">
 <!ENTITY alwaysPromptForMasterPassword.label "Πάντα προτροπή για εισαγωγή του κύριου κωδικού πρόσβασης">
 <!ENTITY alwaysPromptForMasterPassword.tooltip "Σας ζητείται η εισαγωγή του κύριου κωδικού πρόσβασης όταν επιχειρείτε να εμφανίσετε τους κωδικούς στο πλαίσιο διαλόγου «Αποθηκευμένοι κωδικοί». Αν ενεργοποιηθεί, αναπόφευκτα προκαλείται μια διπλή προτροπή, τουλάχιστον μία φορά ανά συνεδρία. Αν απενεργοποιηθεί, στις περισσότερες περιπτώσεις δε θα σας ζητηθεί ο κύριος κωδικός πρόσβασης.">
 <!ENTITY passwordfield_caption.label "Πεδίο κωδικού πρόσβασης στο παράθυρο του επεξεργαστή">
