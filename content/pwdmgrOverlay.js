@@ -206,8 +206,13 @@ var spEditor = {
   },
 
   _getFilterSet: function () {
-    let filterField = document.getElementById("filter");
-    return _filterPasswords(filterField.value);
+    if (window.signons) {
+      let treeView = signonsTreeView;
+      return treeView._filterSet.length ? treeView._filterSet : signons;
+    } else {
+      let filterField = document.getElementById("filter");
+      return _filterPasswords(filterField.value);
+    }
   },
 
   editSignon: function () {
