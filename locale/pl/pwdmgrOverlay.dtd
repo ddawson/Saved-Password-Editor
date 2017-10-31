@@ -2,6 +2,7 @@
      the context menu introduced in Fx 4.0, my menu-button, and as shortcut
      keys for the whole window. Make sure your choices don't conflict in any of
      those contexts. 
+
 -->
 <!ENTITY newentry.label "Nowe">
 <!ENTITY newentry.accesskey "N">
@@ -9,5 +10,5 @@
 <!ENTITY editentry.accesskey "E">
 <!ENTITY cloneentry.label "Sklonuj">
 <!ENTITY cloneentry.accesskey "l">
-<!ENTITY visitsite.label "Visit site(s)">
-<!ENTITY visitsite.accesskey "V">
+<!ENTITY visitsite.label "Odwiedż stronę(y)">
+<!ENTITY visitsite.accesskey "O">

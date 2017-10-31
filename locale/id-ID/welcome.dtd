@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "id-ID">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Selamat datang di Editor Simpanan Kata Sandi">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Terima kasih telah menggunakan <a id='addonlink'>Editor Simpanan Kata Sandi</a>. Anda bisa mengakses fungsionalitas suntingan dengan pergi ke Peralatan &gt; Opsi, atau Edit &gt; Preferensi (tergantung sistem operasi Anda), pilih tab &quot;Keamanan&quot;, lalu klik pada tombol &quot;Simpanan Kata Sandi…&quot;. Anda bisa juga mengakses dengan mudah Simpanan Kata Sandi dari menu peralatan atau menu aplikasi (pada Firefox 4 di Windows). Tombol toolbar juga tersedia untuk kemudahan Anda; untuk mengaksesnya, pilih Tampilan &gt; Toolbar &gt; Kustomisasi…, atau klik kanan pada toolbar dan pilih &quot;Kustomisasi…&quot;. Dialog Simpanan Kata Sandi sekarang mengandung tombol menu dengan perintah-perintah untuk menambah dan menyunting kata sandi, dan pada Firefox 4.0, menu konteks juga mengandung perintah-perintah &quot;Edit&quot; dan &quot;Klon&quot;.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Terima kasih telah menggunakan <a id='addonlink'>Editor Simpanan Kata Sandi</a>. Anda bisa mengakses fungsionalitas suntingan dengan pergi ke Peralatan &gt; Opsi, atau Edit &gt; Preferensi (tergantung sistem operasi Anda), pilih tab &quot;Keamanan&quot;, lalu klik pada tombol &quot;Simpanan Kata Sandi…&quot;. Anda bisa juga mengakses dengan mudah Simpanan Kata Sandi dari menu peralatan atau menu aplikasi (pada Firefox 4 di Windows). Tombol toolbar juga tersedia untuk kemudahan Anda; untuk mengaksesnya, pilih Tampilan &gt; Toolbar &gt; Kustomisasi…, atau klik kanan pada toolbar dan pilih &quot;Kustomisasi…&quot;. Dialog Simpanan Kata Sandi sekarang mengandung tombol menu dengan perintah-perintah untuk menambah dan menyunting kata sandi, dan pada Firefox 4.0, menu konteks juga mengandung perintah-perintah &quot;Edit&quot; dan &quot;Klon&quot;.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Terima kasih telah menggunakan <a id='addonlink'>Editor Simpanan Kata Sandi</a>. Anda bisa mengakses fungsionalitas suntingan dengan pergi ke Peralatan &gt; Opsi, atau Edit &gt; Preferensi (tergantung sistem operasi Anda), navigasikan ke tab &quot;Kata Sandi&quot; di bawah &quot;Privacy &amp; Security&quot;, lalu klik pada tombol &quot;Atur Simpanan Kata Sandi&quot;. Anda bisa dengan mudah mengakses Simpanan Kata Sandi dari menu Peralatan. Tombol toolbar juga tersedia untuk kemudahan Anda; untuk mengaksesnya, klik kanan pada toolbar dan pilih &quot;Kustomisasi…&quot;. Dialog Simpanan Kata Sandi sekarang mengandung tombol menu dengan perintah-perintah untuk menambah dan menyunting kata sandi.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Terima kasih telah menggunakan <a id='addonlink'>Editor Simpanan Kata Sandi</a>. Anda bisa mengakses fungsionalitas suntingan dengan pergi ke Peralatan &gt; Opsi, atau Edit &gt; Preferensi (tergantung sistem operasi Anda), navigasikan ke tab &quot;Kata Sandi&quot; di bawah &quot;Privacy &amp; Security&quot;, lalu klik pada tombol &quot;Atur Simpanan Kata Sandi&quot;. Anda bisa dengan mudah mengakses Simpanan Kata Sandi dari menu Peralatan. Tombol toolbar juga tersedia untuk kemudahan Anda; untuk mengaksesnya, klik kanan pada toolbar dan pilih &quot;Kustomisasi…&quot;. Dialog Simpanan Kata Sandi sekarang mengandung tombol menu dengan perintah-perintah untuk menambah dan menyunting kata sandi.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Perhatikan bahwa dialog Simpanan Kata Sandi merupakan komponen dasar dari <span id='appname'></span>, dan tidak disediakan oleh ekstensi ini, kecuali untuk fungsi-fungsi yang ditambahkan yang disebutkan di atas. Tombol toolbar disediakan hanya untuk kemudahan, dengan perkiraan bahwa beberapa pengguna ekstensi ini akan mengakses dialog lebih sering daripada mereka yang tidak.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Perhatikan bahwa dialog Simpanan Kata Sandi merupakan komponen dasar dari <span id='appname'></span>, dan tidak disediakan oleh ekstensi ini, kecuali untuk fungsi-fungsi yang ditambahkan yang disebutkan di atas. Tombol toolbar disediakan hanya untuk kemudahan, dengan perkiraan bahwa beberapa pengguna ekstensi ini akan mengakses dialog lebih sering daripada mereka yang tidak.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Anda juga bisa memanipulasi login yang berkaitan dengan formulir web tertentu dengan cara mengklik kanan pada bagian kolom mana saja dan pilih tindakan yang Anda ingin lakukan.">

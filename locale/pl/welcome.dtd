@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "pl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Witaj w Edytorze zapamiętanych haseł">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;Bezpieczeństwo&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejsć poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł, także w Firefoksie 4.0 menu kontekstowe zawiera komendy &quot;Edytuj&quot; i &quot;Sklonuj&quot;.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;Bezpieczeństwo&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejsć poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł, także w Firefoksie 4.0 menu kontekstowe zawiera komendy &quot;Edytuj&quot; i &quot;Sklonuj&quot;.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;Bezpieczeństwo&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejść poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Dziękujemy za używanie <a id='addonlink'>Edytora zapamiętanych haseł</a>. Masz dostęp do funkcjonalnej edycji poprzez menu Narzędzia &gt; Opcje, lub Edycja &gt; Preferencje (w zależności od posiadanego systemu operacyjnego), wybierając zakładkę &quot;Bezpieczeństwo&quot;, następnie klikając na przycisk &quot;Zapamiętane hasła…&quot;. Prościej możesz wejść poprzez Zapamiętane hasła w menu Narzędzia lub (w przypadku Firefox 4 pod Windowsem) menu aplikacji. Przycisk paska narzędzi dla wygody jest także dostępny; aby mieć do niego dostęp, wybierz Widok &gt; Paski narzędzi &gt; Dostosuj…, lub prawy-klik na pasku narzędzi i wybierz &quot;Dostosuj…&quot;. Okno zapamiętanych haseł zawiera teraz przycisk-menu z komendami do dodawania i edytowania haseł.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Zauważ, że okno zapamiętanych haseł jest podstawą komponentu <span id='appname'></span> i nie jest dostarczane przez ten dodatek, z wyjątkiem wspomnianych powyżej dodanych funkcji. Przycisk paska narzędzi dostarczany jest tylko dla ułatwienia dostępu dla niektórych użytkowników tego dodatku, którzy będą chcieli zaglądać do okna haseł częściej niż zazwyczaj.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Zauważ, że okno zapamiętanych haseł jest podstawą komponentu <span id='appname'></span> i nie jest dostarczane przez ten dodatek, z wyjątkiem wspomnianych powyżej dodanych funkcji. Przycisk paska narzędzi dostarczany jest tylko dla ułatwienia dostępu dla niektórych użytkowników tego dodatku, którzy będą chcieli zaglądać do okna haseł częściej niż zazwyczaj.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Możesz także manipulować loginami powiązanymi z danym formularzem internetowym poprzez kliknięcie prawym przyciskiem myszy na którymkolwiek z jego pól i wybranie akcji.">

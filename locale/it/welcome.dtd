@@ -14,10 +14,12 @@
 
 
 
+
 -->
 <!ENTITY locale "it-IT">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 
 
 
@@ -41,11 +43,13 @@
 
 
 
+
 -->
 <!ENTITY welcometospe "Benvenuti in Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Vi ringraziamo per l'uso di <a id='addonlink'>Saved Password Editor</a>. Si può accedere alle funzioni di modifica andando in Strumenti  -&gt; Opzioni, o in Modifica -&gt; Preferenze (in funzione del sistema operativo usato) selezionando la voce &quot;Sicurezza&quot; e facendo clic sul pulsante &quot;Password salvate…&quot;. Alternativamente si può semplicemente accedere alle password salvate dal menu Strumenti o direttamente dal menu di Firefox (versioni 4+ di Windows e di Linux). È anche disponibile un pulsante che può essere aggiunto alla barra degli strumenti; per accedervi, selezionare Visualizza -&gt; Barre degli strumenti -&gt; Personalizza… o fare clic col pulsante destro del mouse sulla barra degli strumenti selezionando &quot;Personalizza…&quot;. La finestra di dialogo 'Password salvate' conterrà i comandi per aggiungere/modificare le password mediante l'uso di un pulsante o del menu contestuale.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Vi ringraziamo per l'uso di <a id='addonlink'>Saved Password Editor</a>. Si può accedere alle funzioni di modifica andando in Strumenti  -&gt; Opzioni, o in Modifica -&gt; Preferenze (in funzione del sistema operativo usato) selezionando la voce &quot;Sicurezza&quot; e facendo clic sul pulsante &quot;Password salvate…&quot;. Alternativamente si può semplicemente accedere alle password salvate dal menu Strumenti o direttamente dal menu di Firefox (versioni 4+ di Windows e di Linux). È anche disponibile un pulsante che può essere aggiunto alla barra degli strumenti; per accedervi, selezionare Visualizza -&gt; Barre degli strumenti -&gt; Personalizza… o fare clic col pulsante destro del mouse sulla barra degli strumenti selezionando &quot;Personalizza…&quot;. La finestra di dialogo 'Password salvate' conterrà i comandi per aggiungere/modificare le password mediante l'uso di un pulsante o del menu contestuale.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
@@ -53,10 +57,12 @@
 
 
 
+
 -->
-<!ENTITY welcomepara1_sm "Vi ringraziamo per l'uso di <a id='addonlink'>Saved Password Editor</a>. Si può accedere alle funzioni di modifica andando in Strumenti  -&gt; Opzioni, o in Modifica -&gt; Preferenze (in funzione del sistema operativo usato) o andando alla voce &quot;Password&quot; sotto &quot;Privacy &amp; Sicurezza&quot; e selezionando &quot;Gestione della password memorizzate&quot;. Alternativamente si può semplicemente accedere alle password salvate dal menu Strumenti. È anche disponibile un pulsante che può essere aggiunto alla barra degli strumenti; per accedervi, fare clic col pulsante destro del mouse sulla barra degli strumenti e selezionare &quot;Personalizza…&quot;. La finestra di dialogo 'Password salvate' conterrà i comandi per aggiungere/modificare le password mediante l'uso di un pulsante o del menu contestuale.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Vi ringraziamo per l'uso di <a id='addonlink'>Saved Password Editor</a>. Si può accedere alle funzioni di modifica andando in Strumenti  -&gt; Opzioni, o in Modifica -&gt; Preferenze (in funzione del sistema operativo usato) o andando alla voce &quot;Password&quot; sotto &quot;Privacy &amp; Sicurezza&quot; e selezionando &quot;Gestione della password memorizzate&quot;. Alternativamente si può semplicemente accedere alle password salvate dal menu Strumenti. È anche disponibile un pulsante che può essere aggiunto alla barra degli strumenti; per accedervi, fare clic col pulsante destro del mouse sulla barra degli strumenti e selezionare &quot;Personalizza…&quot;. La finestra di dialogo 'Password salvate' conterrà i comandi per aggiungere/modificare le password mediante l'uso di un pulsante o del menu contestuale.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Si noti che la finestra di dialogo 'Password salvate' è un componente di base di <span id='appname'/>, programma che non viene fornito con questa estensione, eccetto che per le funzioni di aggiunta menzionate sopra. Il pulsante sulla barra degli strumenti viene fornito solo per comodità, nella speranza che alcuni utilizzatori di questa estensione vogliano accedere alla finestra di dialogo molto più frequentemente di quanto lo facciano altrimenti.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Si noti che la finestra di dialogo 'Password salvate' è un componente di base di <span id='appname'/>, programma che non viene fornito con questa estensione, eccetto che per le funzioni di aggiunta menzionate sopra. Il pulsante sulla barra degli strumenti viene fornito solo per comodità, nella speranza che alcuni utilizzatori di questa estensione vogliano accedere alla finestra di dialogo molto più frequentemente di quanto lo facciano altrimenti.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Si può anche manipolare l'accesso associato ad un particolare modulo web facendo clic col pulsante destro del mouse su uno qualsiasi dei campi e selezionando un azione.">

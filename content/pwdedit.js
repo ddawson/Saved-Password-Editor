@@ -239,7 +239,7 @@ function guessParameters () {
   var resultHandler = {
     receiveMessage ({ data: aLoginForms }) {
       browserMM.removeMessageListener(
-        "SavedPasswordEditor.loginformsresults", resultHandler);
+        "SavedPasswordEditor:loginformsresults", resultHandler);
 
       if (aLoginForms.length == 0) {
         Cc["@mozilla.org/embedcomp/prompt-service;1"].

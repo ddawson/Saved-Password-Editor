@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "hsb">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Witajće do editora składowanych hesłow">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo rejtark &quot;Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła...&quot;. Móžeće tež prosće z menija Nastroje abo (we Firefox wot wersije 4 pod Windowsom) z tłóčatka Firefox přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, wubjerće Napohlad &gt; Gratowe lajsty &gt; Přiměrić..., abo klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow, a we Firefox wot wersije 4.0, kontekstowy meni wobsahuje přikazaj &quot;Wobdźěłać&quot; a &quot;Klonować&quot;.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo rejtark &quot;Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła...&quot;. Móžeće tež prosće z menija Nastroje abo (we Firefox wot wersije 4 pod Windowsom) z tłóčatka Firefox přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, wubjerće Napohlad &gt; Gratowe lajsty &gt; Přiměrić..., abo klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow, a we Firefox wot wersije 4.0, kontekstowy meni wobsahuje přikazaj &quot;Wobdźěłać&quot; a &quot;Klonować&quot;.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo &quot;Hesła&quot; na rejtarku &quot;Priwatnosć a Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła zrjadować&quot;. Móžeće tež prosće z menija Nastroje přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Dźakujemy so wam, zo wužiwaće <a id='addonlink'>Saved Password Editor</a>. Móžeće wobdźěłowansku funkcionalnosć wužiwać, hdyž dźeće k Nastroje &gt; Opcije abo Wobdźěłać &gt; Nastajenja (we wotwisnosći wot wašeho dźěłoweho systema), wuběrajo &quot;Hesła&quot; na rejtarku &quot;Priwatnosć a Wěstota&quot;. Klikńće potom na tłóčatko &quot;Składowane hesła zrjadować&quot;. Móžeće tež prosće z menija Nastroje přistup na składowane hesła měć. Tłóčatko gratoweje lajsty wam tež k dispoziciji steji; zo byšće jo wužiwał, klikńće z prawej myšowej tastu na gratowu lajstu a wubjerće &quot;Přiměrić...&quot;. Dialog składowanych hesłow nětko wobsahuje menijowe tłóčatko z přikazami za přidawanje a wobdźěłowanje hesłow.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Wobkedźbujće, zo dialog składowanych hesłow je zakładna komponenta z <span id='appname'></span>, a njesłuša k tutomu rozšěrjenju, nimo horjeka naspomnjenych přidatych funkcijow. Tłóčatko gratoweje lajsty steji jenož komfortabelnosće dla  k dispoziciji, wočakujo, zo někotři wužiwarjo chcedźa husćišo na tón dialog přistup měć, hač woni měli to hewak.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Wobkedźbujće, zo dialog składowanych hesłow je zakładna komponenta z <span id='appname'></span>, a njesłuša k tutomu rozšěrjenju, nimo horjeka naspomnjenych přidatych funkcijow. Tłóčatko gratoweje lajsty steji jenož komfortabelnosće dla  k dispoziciji, wočakujo, zo někotři wužiwarjo chcedźa husćišo na tón dialog přistup měć, hač woni měli to hewak.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Móžeće tež přizjewjenja manipulować, kotrež su z wosebitym webformularom zwjazane, kliknjo z prawej tastu na jeho pola a wuběrajo akciju.">

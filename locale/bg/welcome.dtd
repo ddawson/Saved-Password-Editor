@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "bg">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Добре дошли в Редактора за пароли!">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Благодарим Ви, че използвате <a id='addonlink'>Редактора на запазени пароли</a>. За да влезете в екрана за редактиране, отидете на Инструменти/Настройки или на Редактиране/Преференции (в зависимост от вашата операционна система), изберете панела &quot;Сигурност&quot;, след това щракнете на бутона &quot;Показване на паролите...&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. Бутонът в лентата с инструменти е за Ваше удобство. За да го отворите, изберете Изглед/Ленти с инструменти/Настройване..., или щракнете с десния бутон в лентата с инструменти и изберете &quot;Настройване...&quot;. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Благодарим Ви, че използвате <a id='addonlink'>Редактора на запазени пароли</a>. За да влезете в екрана за редактиране, отидете на Инструменти/Настройки или на Редактиране/Преференции (в зависимост от вашата операционна система), изберете панела &quot;Сигурност&quot;, след това щракнете на бутона &quot;Показване на паролите...&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. Бутонът в лентата с инструменти е за Ваше удобство. За да го отворите, изберете Изглед/Ленти с инструменти/Настройване..., или щракнете с десния бутон в лентата с инструменти и изберете &quot;Настройване...&quot;. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Благодарим Ви, че използвате <a id='addonlink'>Редактора на пароли</a>. За да влезете в екрана за редактиране, отидете на Tools/Options или на Edit/Preferences (в зависимост от вашата операционна система), панела &quot;Privacy &amp; Security&quot;, а след това щракнете върху бутона &quot;Manage Stored Passwords&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. За Ваше удобство добавката има собствен бутон в лентата с инструменти. За да го използвате, щракнете с десния бутон в лентата с инструменти и изберете &quot;Customize…&quot;. След това поставете бутона върху лентата. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Благодарим Ви, че използвате <a id='addonlink'>Редактора на пароли</a>. За да влезете в екрана за редактиране, отидете на Tools/Options или на Edit/Preferences (в зависимост от вашата операционна система), панела &quot;Privacy &amp; Security&quot;, а след това щракнете върху бутона &quot;Manage Stored Passwords&quot;. В диалоговия прозорец вече има нов бутон, който има няколко възможности - &quot;Нова&quot;, &quot;Редактиране&quot; и &quot;Клониране&quot;. За Ваше удобство добавката има собствен бутон в лентата с инструменти. За да го използвате, щракнете с десния бутон в лентата с инструменти и изберете &quot;Customize…&quot;. След това поставете бутона върху лентата. Също така можете да ползвате добавката и чрез контекстното меню на полетата за вход.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Имайте предвид, че диалоговият прозорец &quot;Запазени пароли&quot; е съставна част от <span id='appname'></span> и не е в това разширение, с изключение на два допълнителни бутона. Бутонът в лентата с инструменти е предоставен само за удобство, с надеждата, че някои потребители на това разширение ще искат да имат  по-чест достъп до диалоговия прозорец, отколкото по друг начин.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Имайте предвид, че диалоговият прозорец &quot;Запазени пароли&quot; е съставна част от <span id='appname'></span> и не е в това разширение, с изключение на два допълнителни бутона. Бутонът в лентата с инструменти е предоставен само за удобство, с надеждата, че някои потребители на това разширение ще искат да имат  по-чест достъп до диалоговия прозорец, отколкото по друг начин.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Можете да редактирате данните за вход и чрез контекстното меню на някое от полетата на входната форма.">

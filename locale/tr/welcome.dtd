@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "tr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
-<!ENTITY welcometospe "Kayıtlı Şifre Editörüne Hoşgeldiniz">
+<!ENTITY welcometospe "Kayıtlı Şifre Editörüne Hoşgeldin">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Saved Password Editor <a id='addonlink'>kullandığınız için teşekkürler</a>.Düzenleme fonksiyonuna şu şekilde ulaşılıyor, Araçlar&gt;Ayarlar, veya Düzenle&gt;Seçenekler (işletim sisteminize bağlı) Güvenlik paneline tıklayın,sonra Kayıtlı parolalara tıklayın.Kayıtlı Şifrelere kolayca  Araçlar menüsünden  yada (Firefox 4 ve sonrası Win/Linux) program menüsünden ulaşabilirsin. Ayrıca araç çubuğu tuşu kullanılabilir ;  ulaşmak için, Görünüm&gt;Araç çubukları&gt;Özelleştir...,  yada araç çubuğuna sağ tık &quot;Özelleştir…&quot; seçin. Kayıtlı Şifreler şifre ekleme ve düzenlemeleri menüde ve sağ tık menüsünde bulunuyor.">
+<!ENTITY forknotice "Önemli: Firefox başka yazılımlarda , Saved Password Editor yerini <a href='https://addons.mozilla.org/addon/classic-password-editor/'> Classic Password Editor aldı. Saved Password Editor gelecek sürümleri sadece Firefox için olacak, Firefox olmayan yazılımlardan silmeniz ve güncellemeleri almaya devam etmek için Classic Password Editor yüklemeniz önerilir.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Saved Password Editor <a id='addonlink'>kullandığınız için teşekkürler</a>.Düzenleme fonksiyonuna şuradan ulaşılıyor, Araçlar&gt;Ayarlar, veya Düzenle&gt;Seçenekler (işletim sisteminize bağlı), &quot;Güvenlik paneline tıklayın,sonra &quot;Kayıtlı parolalara tıklayın.Kayıtlı Şifrelere kolayca  Araçlar menüsünden ulaşabilirsin. Ayrıca araç çubuğu tuşu kullanılabilir ;  ulaşmak için, Görünüm&gt;Araç çubukları&gt;Özelleştir...,  yada araç çubuğuna sağ tık &quot;&quot;Özelleştir…&quot; seçin. Şifre ekleme ve düzenlemeleri menüde ve sağ tık menüsünde bulunuyor.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Saved Password Editor <a id='addonlink'>kullandığınız için teşekkürler</a>.Düzenleme foknsiyonuna şu şekilde ulaşılıyor. Araçlar &gt; Seçenekler, veya Düzenle &gt; Seçenekler (işletim sisteminize bağlı), Gizlilik&amp;Güvenlik menüsünden  Kayıtlı Şifrelere tıklayın. Kayıtlı Şifrelere kolayca Araçlar menüsünden  ulaşabilirsin.Ayrıca araç çubuğu tuşu kullanılabilir; ulaşmak için, Araç çubuğuna sağ tık sonra &quot;Özelleştir…&quot; seçin.Kayıtlı Şifreler şifre ekleme ve düzenlemeleri menüde ve sağ tık menüsünde bulunuyor.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Saved Password Editor <a id='addonlink'>kullandığınız için teşekkürler</a>.Düzenleme foknsiyonuna şu şekilde ulaşılıyor. Araçlar &gt; Seçenekler, veya Düzenle &gt; Seçenekler (işletim sisteminize bağlı), Gizlilik&amp;Güvenlik menüsünden  Kayıtlı Şifrelere tıklayın. Kayıtlı Şifrelere kolayca Araçlar menüsünden  ulaşabilirsin.Ayrıca araç çubuğu tuşu kullanılabilir; ulaşmak için, Araç çubuğuna sağ tık sonra &quot;Özelleştir…&quot; seçin.Kayıtlı Şifreler şifre ekleme ve düzenlemeleri menüde ve sağ tık menüsünde bulunuyor.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Not Kayıtlı Şifrelerin diyalog tabanı <span id='appname'></span> parçasıdır,yukarıda bahsi geçen eklenen fonksiyonlar hariç eklenti tarafından sağlanmıyor.Araç çubuğu sadece rahatlığınız için sağlanmıştır,tahminen eklentinin bazı kullanıcıları bu araca diğerinden daha sık ulaşmak isteyebilir.">
 <!-- Paragraph 3 -->
-<!ENTITY welcomepara3 "Girişler ilgili değişikliği bir web form sayfasınında herhangi bir yere sağ tıklayıp alanları doldurup değiştirebilirsin.">
+<!ENTITY welcomepara2 "Not Kayıtlı Şifrelerin diyalog tabanı <span id='appname'></span> parçasıdır,yukarıda bahsi geçen eklenen fonksiyonlar hariç eklenti tarafından sağlanmıyor.Araç çubuğu sadece rahatlık için sağlanmıştır,beklenti eklentinin bazı kullanıcıları bu araca diğerlerinden daha sık ulaşmak isteyebilir.">
+<!-- Paragraph 4 -->
+<!ENTITY welcomepara3 "İlgili girdinin bulunduğu web form sayfasında herhangi girişi  sağ tıklayıp alanları doldurup değiştirebilirsin.">

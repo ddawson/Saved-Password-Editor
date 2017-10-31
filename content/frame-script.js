@@ -19,12 +19,11 @@
 "use strict";
 
 const Ci = Components.interfaces, Cu = Components.utils;
-Cu.import("resource://gre/modules/Services.jsm");
 Cu.import("resource://savedpasswordeditor/SavedPasswordEditor-frame.jsm");
 
 addEventListener(
   "contextmenu",
-  function (aEvent) {
+  aEvent => {
     var target = aEvent.target;
     if (Ci.nsIDOMXULElement
         && target instanceof Ci.nsIDOMXULElement)  // SeaMonkey, why?
@@ -35,6 +34,14 @@ addEventListener(
       SavedPasswordEditor.getFormData(target));
   },
   false);
+
+addMessageListener(
+  "SavedPasswordEditor:getlocation",
+  () => {
+    let loc = content.location;
+    sendAsyncMessage("SavedPasswordEditor:returnlocation",
+                     `${loc.protocol}//${loc.host}`);
+  });
 
 addMessageListener(
   "SavedPasswordEditor:scanforloginforms",

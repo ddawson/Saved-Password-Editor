@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)     
 
+
 -->
 <!ENTITY locale "fr">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Bienvenue dans Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en sélectionnant le panneau « Sécurité », puis en cliquant sur le bouton « Identifiants enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en sélectionnant le panneau « Sécurité », puis en cliquant sur le bouton « Identifiants enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, choisissez Affichage &gt; Barres d'outils &gt; Personnaliser…, ou bien effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en naviguant jusqu'au panneau « Mots de passe » dans la catégorie « Confidentialité et sécurité », puis en cliquant sur le bouton « Mots de passe enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Merci d'utiliser <a id='addonlink'>Saved Password Editor</a>. Vous pouvez accéder à ses fonctionnalités d'édition en allant à Outils &gt; Options, ou Édition &gt; Préférences (selon votre système d'exploitation), en naviguant jusqu'au panneau « Mots de passe » dans la catégorie « Confidentialité et sécurité », puis en cliquant sur le bouton « Mots de passe enregistrés… ». Vous pouvez aussi simplement accéder au gestionnaire des identifiants depuis le menu Outils. Un bouton de barre d'outils est également à votre disposition ; pour y accéder, effectuez un clic droit sur une barre d'outils et choisissez « Personnaliser… ». La fenêtre du gestionnaire des identifiants comporte désormais des commandes pour ajouter et modifier les mots de passe depuis un bouton de menu et depuis le menu contextuel.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Notez que la fenêtre du gestionnaire des identifiants est un composant de base de <span id='appname'/>, et qu'il n'est pas fourni par ce module, en dehors des susmentionnées fonctionnalités ajoutées. Le bouton de barre d'outils est uniquement fourni pour votre confort, dans l'idée que certains utilisateurs de ce module voudront accéder au gestioçnnaire des identifiants beaucoup plus souvent qu'ils ne l'auraient fait autrement.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Notez que la fenêtre du gestionnaire des identifiants est un composant de base de <span id='appname'/>, et qu'il n'est pas fourni par ce module, en dehors des susmentionnées fonctionnalités ajoutées. Le bouton de barre d'outils est uniquement fourni pour votre confort, dans l'idée que certains utilisateurs de ce module voudront accéder au gestioçnnaire des identifiants beaucoup plus souvent qu'ils ne l'auraient fait autrement.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Vous pouvez également gérer les informations de connexion associées à un formulaire web en particulier, en effectuant un clic droit sur n'importe lequel de ses champs puis en choisissant une action.">

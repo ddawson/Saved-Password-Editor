@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "fi">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Tervetuloa tallennettujen salasanojen muokkausohjelmaan">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruutuun ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta tai (Firefox 4:ssä ja myöhemmissä versioissa Windowsissa ja Linuxissa) Firefox-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruutuun ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta tai (Firefox 4:ssä ja myöhemmissä versioissa Windowsissa ja Linuxissa) Firefox-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruudun ”Salasanat”-välilehdelle ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Kiitos, että käytät <a id='addonlink'>Tallennettujen salasanojen muokkausohjelmaa</a>. Pääset käyttämään muokkaustoimintoja valitsemalla ensin Työkalut &gt; Asetukset tai Muokkaa &gt; Asetukset (käyttöjärjestelmästä riippuen), menemällä ”Turvallisuus”-ruudun ”Salasanat”-välilehdelle ja napsauttamalla ”Tallennetut salasanat...” -painiketta. Voit myös siirtyä tallennettuihin salasanoihin suoraan Työkalut-valikon kautta. Työkalupalkkipainike on myös käytettävissäsi; saadaksesi painikkeen näkyviin valitse Näytä &gt; Työkalupalkit &gt; Muokkaa... tai napsauta työkalupalkkia hiiren oikealla painikkeella ja valitse ”Muokkaa...”. Tallennettujen salasanojen valintaikkuna sisältää nyt komennot salasanojen lisäämistä ja muokkaamista varten sekä valikkonäppäimen että pudotusvalikon kautta.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Huomaa, että tallennettujen salasanojen valintaikkuna on <span id='appname'></span>-sovelluksen peruskomponentti, eikä sen toteutus tule tämän laajennuksen kautta, lukuun ottamatta edellä mainittuja toimintoja. Työkalupalkkipainike on lisätty käyttömukavuuden parantamiseksi sillä oletuksella, että jotkut laajennuksen käyttäjät saattavat haluta käyttää valintaikkunaa paljon useammin kuin aiemmin.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Huomaa, että tallennettujen salasanojen valintaikkuna on <span id='appname'></span>-sovelluksen peruskomponentti, eikä sen toteutus tule tämän laajennuksen kautta, lukuun ottamatta edellä mainittuja toimintoja. Työkalupalkkipainike on lisätty käyttömukavuuden parantamiseksi sillä oletuksella, että jotkut laajennuksen käyttäjät saattavat haluta käyttää valintaikkunaa paljon useammin kuin aiemmin.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Voit myös muokata tiettyyn lomakkeeseen liittyviä kirjautumistietoja napsauttamalla jotakin sen kentistä oikealla painikkeella ja valitsemalla toiminnon.">

@@ -18,6 +18,8 @@
 
 "use strict";
 
+Components.utils.import("resource://gre/modules/Services.jsm");
+
 document.addEventListener(
   "DOMContentLoaded",
   function dclHandler (ev) {
@@ -54,9 +56,9 @@ function showPasswords () {
         togglePasswords.accessKey = getLegacyString("hidePasswordsAccessKey");
       } else {
         togglePasswords.label =
-	  spEditor.signonBundle.getString("hidePasswords");
+          spEditor.signonBundle.getString("hidePasswords");
         togglePasswords.accessKey =
-	  spEditor.signonBundle.getString("hidePasswordsAccessKey");
+          spEditor.signonBundle.getString("hidePasswordsAccessKey");
       }
 
       document.getElementById("passwordCol").hidden = false;
@@ -75,20 +77,30 @@ window.addEventListener(
       let wm = Components.classes["@mozilla.org/appshell/window-mediator;1"].
                getService(Components.interfaces.nsIWindowMediator);
       let brWin = wm.getMostRecentWindow("navigator:browser");
+      let browser = brWin.gBrowser.selectedBrowser;
 
       if (brWin) {
-        let loc = brWin.gBrowser.contentWindow.location;
-        let hostname = loc.protocol + "//" + loc.host;
-        let col = getColumnByName("hostname");
-        for (let i = 0; i < spEditor.signonsTree.view.rowCount; i++)
-          if (spEditor.signonsTree.view.getCellText(i, col) == hostname) {
-            spEditor.signonsTree.view.selection.select(i);
-            setTimeout(
-	      function () {
-                spEditor.signonsTree.treeBoxObject.ensureRowIsVisible(i);
-              }, 0);
-            break;
-          }
+        let returnHandler = ({ data: hostname }) => {
+          browser.messageManager.removeMessageListener(
+            "SavedPasswordEditor:returnlocation", returnHandler);
+          let col = getColumnByName("hostname");
+
+          for (let i = 0; i < spEditor.signonsTree.view.rowCount; i++)
+            if (spEditor.signonsTree.view.getCellText(i, {id:col.id})
+                == hostname) {
+              spEditor.signonsTree.view.selection.select(i);
+              setTimeout(
+                () => {
+                  spEditor.signonsTree.treeBoxObject.ensureRowIsVisible(i);
+                }, 0);
+              break;
+            }
+        };
+
+        browser.messageManager.addMessageListener(
+          "SavedPasswordEditor:returnlocation", returnHandler);
+        browser.messageManager.sendAsyncMessage(
+          "SavedPasswordEditor:getlocation");
       }
     }
 

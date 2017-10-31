@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "nl">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Welkom bij Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), het paneel Beveiliging te selecteren en vervolgens op de knop ‘Opgeslagen wachtwoorden…’ te klikken. U kunt ook eenvoudigweg de Opgeslagen wachtwoorden oproepen via het menu Extra of (in Firefox 4 en hoger voor Windows en Linux) het menu Toepassingen. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u Beeld &gt; Werkbalken &gt; Aanpassen… selecteren of rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop en een contextmenu met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
+<!ENTITY forknotice "BELANGRIJK: Ten behoeve van toepassingen anders dan Firefox wordt Saved Password Editor vervangen door <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Toekomstige versies van Saved Password Editor zullen alleen voor Firefox bestemd zijn, dus het wordt sterk aanbevolen om de add-on uit uw niet-Firefox-toepassingen te verwijderen en te vervangen door Classic Password Editor, zodat u ook in de toekomst updates blijft ontvangen.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), het paneel Beveiliging te selecteren en vervolgens op de knop ‘Opgeslagen wachtwoorden…’ te klikken. U kunt ook eenvoudigweg de Opgeslagen wachtwoorden oproepen via het menu Extra of (in Firefox 4 en hoger voor Windows en Linux) het menu Toepassingen. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u Beeld &gt; Werkbalken &gt; Aanpassen… selecteren of rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop en een contextmenu met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel Wachtwoorden navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. U kunt ook eenvoudigweg de Opgeslagen wachtwoorden oproepen via het menu Extra. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop en een contextmenu met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Bedankt voor het gebruik van <a id='addonlink'>Saved Password Editor</a>. U kunt de bewerkingsfuncties benaderen door naar Extra &gt; Opties te gaan, of naar Bewerken &gt; Voorkeuren (afhankelijk van uw besturingssysteem), naar het paneel Wachtwoorden navigeren en vervolgens op de knop ‘Opgeslagen wachtwoorden beheren’ klikken. U kunt ook eenvoudigweg de Opgeslagen wachtwoorden oproepen via het menu Extra. Voor uw gemak is er ook een werkbalkknop beschikbaar. Om deze te gebruiken kunt u rechtsklikken op de werkbalk en ‘Aanpassen…’ selecteren. Het dialoogvenster Opgeslagen wachtwoorden bevat nu een menuknop en een contextmenu met opdrachten voor het toevoegen en bewerken van wachtwoorden.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'/> en niet wordt geleverd door deze extensie, met uitzondering van de hierboven genoemde toegevoegde functies. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Merk op dat het dialoogvenster Opgeslagen wachtwoorden een basiscomponent is van <span id='appname'></span> en niet wordt geleverd door deze extensie, met uitzondering van de hierboven genoemde toegevoegde functies. De werkbalkknop wordt alleen voor uw gemak geboden, in de verwachting dat sommige gebruikers van deze extensie het dialoogvenster veel vaker zullen willen openen dan anders.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "U kunt ook aanmeldgegevens die horen bij een specifiek webformulier bewerken door met de rechtermuisknop op één van de velden te klikken en een actie te selecteren.">

@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "eo">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Bonvenon al Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Opcioj aŭ Modifi &gt; Preferoj (depende de via operaciumo), elektante la langeton &quot;Sekureco&quot;, alklakante la butonon &quot;Konservitaj pasvortoj…&quot;. Vi ankaŭ povas simple atingi Konservitaj pasvortoj el la menuo Iloj aŭ (ekde Firefox 4 sub Vindozo) el la menuo &quot;Firefox&quot;. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, elektu Vidi &gt; Ilaraj strioj &gt; Persone agordi…, aŭ alklaku la ilobreton per la dekstra musklavo kaj elektu &quot;Persone agordi…&quot;. La dialogo de konservitaj pasvortoj nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn kaj ekde Firefox 4 la kunteksta menuo ankaŭ enhavas la komandojn &quot;Redakti&quot; kaj &quot;Kloni&quot;.">
+<!ENTITY forknotice "IMPORTANT: For the sake of applications other than Firefox, Saved Password Editor is being replaced by <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Future versions of Saved Password Editor will be for Firefox only, so it is highly recommended to uninstall it from your non-Firefox applications and replace with Classic Password Editor, in order to continue receiving updates.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Opcioj aŭ Modifi &gt; Preferoj (depende de via operaciumo), elektante la langeton &quot;Sekureco&quot;, alklakante la butonon &quot;Konservitaj pasvortoj…&quot;. Vi ankaŭ povas simple atingi Konservitaj pasvortoj el la menuo Iloj aŭ (ekde Firefox 4 sub Vindozo) el la menuo &quot;Firefox&quot;. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, elektu Vidi &gt; Ilaraj strioj &gt; Persone agordi…, aŭ alklaku la ilobreton per la dekstra musklavo kaj elektu &quot;Persone agordi…&quot;. La dialogo de konservitaj pasvortoj nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn kaj ekde Firefox 4 la kunteksta menuo ankaŭ enhavas la komandojn &quot;Redakti&quot; kaj &quot;Kloni&quot;.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Agordoj... aŭ Redakti &gt; Agordoj... (depende de via operaciumo), navigante al la langeto &quot;Pasvortoj&quot;, sub &quot;Privateco &amp; sekureco&quot;, alklakante la butonon &quot;Administri konservitajn pasvortojn&quot;. Vi ankaŭ povas simple atingi Konservitaj pasvortoj el la menuo Iloj. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, alklaku la ilobreton per dekstra musklavo kaj elektu &quot;Akomodi…,&quot; La dialogo &quot;Konservitaj pasvortoj&quot; nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Dankon por uzi <a id='addonlink'>Saved Password Editor</a>. Vi povas atingi la redaktofunkcion tra Iloj &gt; Agordoj... aŭ Redakti &gt; Agordoj... (depende de via operaciumo), navigante al la langeto &quot;Pasvortoj&quot;, sub &quot;Privateco &amp; sekureco&quot;, alklakante la butonon &quot;Administri konservitajn pasvortojn&quot;. Vi ankaŭ povas simple atingi Konservitaj pasvortoj el la menuo Iloj. Ankaŭ ilobreta butono estas je via dispono; por atingi ĝin, alklaku la ilobreton per dekstra musklavo kaj elektu &quot;Akomodi…,&quot; La dialogo &quot;Konservitaj pasvortoj&quot; nun enhavas menubutonon kun komandoj por aldoni kaj redakti pasvortojn.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Konsideru, ke la dialogo &quot;Konservitaj pasvortoj&quot; estas baza komponanto de <span id='appname'></span> kaj ne estas provizata per ĉi tiu ĉetendaĵo, escepte por la supre menciitaj aldonitaj funkcioj. La ilobreta butono estas provizata je via dispono, ekspektante, ke kelkaj uzantoj de ĉi tiu etendaĵo volas atingi la dialogon multe pli ofte ol ili povus fari tion alikaze.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Konsideru, ke la dialogo &quot;Konservitaj pasvortoj&quot; estas baza komponanto de <span id='appname'></span> kaj ne estas provizata per ĉi tiu ĉetendaĵo, escepte por la supre menciitaj aldonitaj funkcioj. La ilobreta butono estas provizata je via dispono, ekspektante, ke kelkaj uzantoj de ĉi tiu etendaĵo volas atingi la dialogon multe pli ofte ol ili povus fari tion alikaze.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "Vi ankaŭ povas manipuli ensalutojn ligitajn kun aparta retformularo klikante dekstre al iu de ĝiaj kampoj kaj elektante agon.">

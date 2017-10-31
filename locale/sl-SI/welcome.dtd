@@ -11,10 +11,12 @@
      de-DE  - German in Germany
      ru     - Russian (no specific country)
 
+
 -->
 <!ENTITY locale "sl-SI">
 <!-- LAYOUT DIRECTION: "LTR" for left-to-right; "RTL" for right-to-left.
      Generally, this should follow the direction of your writing system. 
+
 -->
 <!ENTITY layoutdirection "LTR">
 <!-- WELCOME PAGE
@@ -32,19 +34,23 @@
      encoded as & quot; (again, if you are editing directly), since the
      strings are already double-quote delimited.
 
+
 -->
 <!ENTITY welcometospe "Dobrodošli v Saved Password Editor">
 <!-- Paragraph 1, Firefox version -->
-<!ENTITY welcomepara1_fx "Hvala, da uporabljate <a id='addonlink'>Saved Password Editor</a>. Do dodatnih možnosti lahko dostopate v Orodja &gt; Možnosti ali Uredi &gt; Nastavitve (odvisno od vašega operacijskega sistema), z izbiro podokna &quot;Varnost&quot; in s klikom na gumb &quot;Shranjena gesla …&quot;. Do shranjenih gesel lahko dostopate tudi v meniju Orodja ali (v Firefoxu 4 in kasnejših v Windowsu in Linuxu) Firefoxovem meniju. Priročno je na voljo tudi gumb orodne vrstice; za dostop do njega izberite Pogled &gt; Orodne vrstice &gt; Prilagodi … ali kliknite z  desnim miškinim gumbom na orodno vrstico in izberite &quot;Prilagodi …&quot;. Pogovorno okno shranjenih gesel sedaj vsebuje ukaze za dodajanje in urejanje gesel tako v gumbu menija kot vsebinskem meniju.">
+<!ENTITY forknotice "POMEMBNO: Za vse aplikacije, razen za Firefox, bo Saved Password Editor nadomestil <a href='https://addons.mozilla.org/addon/classic-password-editor/'>Classic Password Editor</a>. Prihodnje različice dodatka Saved Password Editor bodo na voljo samo še za Firefox, tako da priporočamo, da ga odstranite iz drugih aplikacij in namestite Classic Password Editor, da boste lahko še naprej prejemali posodobitve.">
 <!-- Paragraph 1, SeaMonkey version -->
+<!ENTITY welcomepara1_fx "Hvala, da uporabljate <a id='addonlink'>Saved Password Editor</a>. Do dodatnih možnosti lahko dostopate v Orodja &gt; Možnosti ali Uredi &gt; Nastavitve (odvisno od vašega operacijskega sistema), z izbiro podokna &quot;Varnost&quot; in s klikom na gumb &quot;Shranjena gesla …&quot;. Do shranjenih gesel lahko dostopate tudi v meniju Orodja ali (v Firefoxu 4 in kasnejših v Windowsu in Linuxu) Firefoxovem meniju. Priročno je na voljo tudi gumb orodne vrstice; za dostop do njega izberite Pogled &gt; Orodne vrstice &gt; Prilagodi … ali kliknite z  desnim miškinim gumbom na orodno vrstico in izberite &quot;Prilagodi …&quot;. Pogovorno okno shranjenih gesel sedaj vsebuje ukaze za dodajanje in urejanje gesel tako v gumbu menija kot vsebinskem meniju.">
 <!-- XXXXX TRANSLATORS: Please pay attention! XXXXX
      XXXXX SeaMonkey DOES NOT HAVE View > Toolbars > Customize…
            among other things XXXXX
      XXXXX Be careful if you copy and paste. XXXXX 
+
 -->
-<!ENTITY welcomepara1_sm "Hvala, da uporabljate <a id='addonlink'>Saved Password Editor</a>. Do dodatnih možnosti lahko dostopate v Orodja &gt; Možnosti ali Uredi &gt; Nastavitve (odvisno od vašega opracijskega sistema), z izbiro podokna &quot;Varnost&quot; in s klikom na gumb &quot;Shranjena gesla …&quot;. Do shranjenih gesel lahko dostopate tudi v meniju Orodja ali Firefoxovem meniju. Priročno je na voljo tudi gumb orodne vrstice; za dostop do njega izberite Pogled &gt; Orodne vrstice &gt; Prilagodi … ali desno kliknite na orodno vrstico in izberite &quot;Prilagodi …&quot;. Pogovorno okno shranjenih gesel sedaj vsebuje ukaze za dodajanje in urejnaje gesel tako v gumbu menija kot vsebinskem meniju.">
 <!-- Paragraph 2 -->
+<!ENTITY welcomepara1_sm "Hvala, da uporabljate <a id='addonlink'>Saved Password Editor</a>. Do dodatnih možnosti lahko dostopate v Orodja &gt; Možnosti ali Uredi &gt; Nastavitve (odvisno od vašega opracijskega sistema), z izbiro podokna &quot;Varnost&quot; in s klikom na gumb &quot;Shranjena gesla …&quot;. Do shranjenih gesel lahko dostopate tudi v meniju Orodja ali Firefoxovem meniju. Priročno je na voljo tudi gumb orodne vrstice; za dostop do njega izberite Pogled &gt; Orodne vrstice &gt; Prilagodi … ali desno kliknite na orodno vrstico in izberite &quot;Prilagodi …&quot;. Pogovorno okno shranjenih gesel sedaj vsebuje ukaze za dodajanje in urejnaje gesel tako v gumbu menija kot vsebinskem meniju.">
 <!-- The "span" element here is replaced by "Firefox", "Thunderbird", etc. -->
-<!ENTITY welcomepara2 "Upoštevajte, da je pogovorno okno shranjenih gesel osnovni sestavni del <span id='appname'></span>a in ne tega dodatka, razen dodatnih možnosti omenjenih zgoraj. Gumb orodne vrstice je dodan samo zaradi priročnosti v pričakovanju, da bodo nekateri uporabniki dostopali do pogovornega okna bolj pogosteje kot običajno.">
 <!-- Paragraph 3 -->
+<!ENTITY welcomepara2 "Upoštevajte, da je pogovorno okno shranjenih gesel osnovni sestavni del <span id='appname'></span>a in ne tega dodatka, razen dodatnih možnosti omenjenih zgoraj. Gumb orodne vrstice je dodan samo zaradi priročnosti v pričakovanju, da bodo nekateri uporabniki dostopali do pogovornega okna bolj pogosteje kot običajno.">
+<!-- Paragraph 4 -->
 <!ENTITY welcomepara3 "S prijavami povezanimi z določenimi spletnimi stranmi lahko upravljate tudi z desnim klikom na katerokoli polje strani in izbiro dejanja.">
